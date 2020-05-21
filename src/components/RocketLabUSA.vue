@@ -1,6 +1,6 @@
 <template>
   <div class="SpaceX">
-    <h1>{{ msg }}</h1>
+    <h3>{{ msg }}</h3>
     <p>{{ newData }}</p>
   </div>
 </template>
@@ -23,6 +23,7 @@ export default {
 <style scoped>
 h3 {
   margin: 40px 0 0;
+  color: var(--primary-dark);
 }
 ul {
   list-style-type: none;

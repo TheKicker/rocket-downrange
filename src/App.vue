@@ -27,6 +27,10 @@ export default {
 };
 </script>
 <style>
+:root {
+  --primary-dark: #404040;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +42,7 @@ export default {
   font-family: "Oswald", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: var(--primary-dark);
 }
 
 #nav,
