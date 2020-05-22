@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable prettier/prettier */
 <template>
   <div class="Roadster">
     <div class="row">
@@ -24,29 +26,35 @@
                     </div>
                     <div class="col">
                       <strong>Payload Mass:</strong>
-                      <div id="roadster-mass" class="mx-3"></div>
+                      <div id="roadster-mass" class="mx-3">{{results.launch_mass_lbs}} lbs</div>
                     </div>
                   </div>
 
                   <div class="row my-4">
                     <div class="col">
                       <strong>Orbit:</strong>
-                      <div id="roadster-orbit" class="mx-3"></div>
+                      <div id="roadster-orbit" class="mx-3">{{results.orbit_type}}</div>
                     </div>
                     <div class="col">
                       <strong>Speed:</strong>
-                      <div id="roadster-speed" class="mx-3"></div>
+                      <div id="roadster-speed" class="mx-3">{{(results.speed_mph).toFixed(2)}} MPH</div>
                     </div>
                   </div>
 
                   <div class="row my-4">
                     <div class="col">
                       <strong>Apoapsis:</strong>
-                      <div id="roadster-apoapsis" class="mx-3"></div>
+                      <div
+                        id="roadster-apoapsis"
+                        class="mx-3"
+                      >{{(results.apoapsis_au).toFixed(3)}} au</div>
                     </div>
                     <div class="col">
                       <strong>Periapsis:</strong>
-                      <div id="roadster-periapsis" class="mx-3"></div>
+                      <div
+                        id="roadster-periapsis"
+                        class="mx-3"
+                      >{{(results.periapsis_au).toFixed(3)}} au</div>
                     </div>
                   </div>
 
