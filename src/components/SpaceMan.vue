@@ -1,5 +1,3 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable prettier/prettier */
 <template>
   <div class="Roadster">
     <div class="row">
@@ -61,48 +59,56 @@
                   <div class="row my-4">
                     <div class="col">
                       <strong>Inclination:</strong>
-                      <div id="roadster-inclination" class="mx-3"></div>
+                      <div
+                        id="roadster-inclination"
+                        class="mx-3"
+                      >{{(results.inclination).toFixed(3)}} deg</div>
                     </div>
                     <div class="col">
                       <strong>Semi-Major Axis:</strong>
-                      <div id="roadster-semi-major-axis" class="mx-3"></div>
+                      <div
+                        id="roadster-semi-major-axis"
+                        class="mx-3"
+                      >{{(results.semi_major_axis_au).toFixed(3)}} au</div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-8 py-3 text-left">
-                <div id="roadster-summary"></div>
+                  <div class="row my-4">
+                    <div class="col">
+                      <strong>Orbital Period:</strong>
+                      <div id="roadster-period" class="mx-3">{{(results.period_days)}} days</div>
+                    </div>
+                    <div class="col">
+                      <strong>Eccentricity:</strong>
+                      <div
+                        id="roadster-eccentricity"
+                        class="mx-3"
+                      >{{(results.eccentricity).toFixed(2)}}</div>
+                    </div>
+                  </div>
+                  <div class="row my-4">
+                    <div class="col">
+                      <strong>Mars Distance:</strong>
+                      <div
+                        id="roadster-mars"
+                        class="mx-3"
+                      >{{(results.mars_distance_mi).toLocaleString()}} miles</div>
+                    </div>
+                    <div class="col">
+                      <strong>Earth Distance:</strong>
+                      <div
+                        id="roadster-earth"
+                        class="mx-3"
+                      >{{(results.earth_distance_mi).toLocaleString()}} miles</div>
+                    </div>
+                  </div>
 
-                <div class="row my-4">
-                  <div class="col">
-                    <strong>Orbital Period:</strong>
-                    <div id="roadster-period" class="mx-3"></div>
-                  </div>
-                  <div class="col">
-                    <strong>Eccentricity:</strong>
-                    <div id="roadster-eccentricity" class="mx-3"></div>
-                  </div>
-                </div>
-
-                <div class="row my-4">
-                  <div class="col">
-                    <strong>Mars Distance:</strong>
-                    <div id="roadster-mars" class="mx-3"></div>
-                  </div>
-                  <div class="col">
-                    <strong>Earth Distance:</strong>
-                    <div id="roadster-earth" class="mx-3"></div>
-                  </div>
-                </div>
-
-                <div class="row my-4">
-                  <div class="col">
-                    <div id="roadster-wiki"></div>
-                  </div>
-                  <div class="col">
-                    <div id="roadster-youtube"></div>
+                  <div class="row my-4">
+                    <div class="col">
+                      <div id="roadster-wiki"></div>
+                    </div>
+                    <div class="col">
+                      <div id="roadster-youtube"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -139,18 +145,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
 </style>

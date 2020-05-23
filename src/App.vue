@@ -20,9 +20,6 @@
             <li class="nav-item">
               <router-link class="nav-link" to="/">Home</router-link>
             </li>
-            <!-- <li class="nav-item">
-            <router-link class="nav-link" to="/about">About</router-link>
-            </li>-->
             <li class="nav-item">
               <router-link class="nav-link" to="/spacex">SpaceX</router-link>
             </li>
@@ -10036,5 +10033,9 @@ th {
 .card-title,
 .card-header {
   color: inherit;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 </style>
