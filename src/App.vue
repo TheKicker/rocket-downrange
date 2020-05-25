@@ -48,12 +48,12 @@
       <div class="container text-white my-4">
         <div>
           <p>
-            {{ copy }}
             <a
               class="text-white underline"
               href="https://www.cavlemasters.com"
               target="_blank"
-            >Cavan Lemasters</a>
+            >{{copy}} &copy;</a>
+            <br />API & all mission data belongs to the corresponding company.
           </p>
           <p style="font-family: 'Share Tech Mono', monospace;">made on earth by a human & coffee</p>
         </div>
@@ -67,14 +67,14 @@ export default {
     return {
       org: "Rocket Downrange",
       greeting: "",
-      copy: `${new Date()
+      copy: `Rocket Downrange developed by Cavan Lemasters ${new Date()
         .getFullYear()
-        .toString()}, Rocket Downrange developed by `
+        .toString()}`
     };
   },
   computed: {
     getGreeting: function() {
-      let h = new Date().getHours();
+      let h = new Date().getHours().toLocaleString();
 
       if (h >= 2 && h <= 6) {
         return "Whoa it's early!";
