@@ -16,19 +16,30 @@
             <p class="my-2">{{results.details}}</p>
           </div>
         </div>
-        <div class="row my-4">
-          <h6 class="col-6 text-center">Launch Vehicle: {{results.rocket.rocket_name}}</h6>
-          <h6
-            class="col-6 text-center"
-          >Landing Intent: {{results.rocket.first_stage.cores[0].landing_intent}} ({{results.rocket.first_stage.cores[0].landing_vehicle}})</h6>
-        </div>
+
         <div class="row my-4">
           <h6
             class="col-6 text-center"
           >Customer: {{results.rocket.second_stage.payloads[0].customers[0]}} ({{results.rocket.second_stage.payloads[0].nationality}})</h6>
+          <h6 class="col-6 text-center">Launch Vehicle: {{results.rocket.rocket_name}}</h6>
+        </div>
+
+        <div class="row my-4">
           <h6
             class="col-6 text-center"
-          >Orbit Type: {{results.rocket.second_stage.payloads[0].orbit}}</h6>
+          >Payload: {{results.rocket.second_stage.payloads[0].payload_type}}</h6>
+          <h6
+            class="col-6 text-center"
+          >Orbit: {{results.rocket.second_stage.payloads[0].orbit}}, {{results.rocket.second_stage.payloads[0].orbit_params.regime}}</h6>
+        </div>
+
+        <div class="row my-4">
+          <h6
+            class="col-6 text-center"
+          >Landing Intent: {{results.rocket.first_stage.cores[0].landing_intent}} ({{results.rocket.first_stage.cores[0].landing_vehicle}})</h6>
+          <h6
+            class="col-6 text-center"
+          >Launch Mass: {{(results.rocket.second_stage.payloads[0].payload_mass_lbs).toFixed(2)}} lbs</h6>
         </div>
         <hr />
         <p class="text-center">
