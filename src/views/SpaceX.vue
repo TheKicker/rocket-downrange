@@ -1,5 +1,6 @@
 <template>
   <div class="SpaceX">
+    <SpaceXinfo />
     <NextLaunch />
     <div class="card">
       <div class="card-header">Quote</div>
@@ -19,12 +20,14 @@
 
 <script>
 // @ is an alias to /src
+import SpaceXinfo from "@/components/SpaceX-info.vue";
 import NextLaunch from "@/components/SpaceX-NextLaunch.vue";
 import SpaceMan from "@/components/SpaceMan.vue";
 
 export default {
   name: "SpaceX",
   components: {
+    SpaceXinfo,
     NextLaunch,
     SpaceMan
   }

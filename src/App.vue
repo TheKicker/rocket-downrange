@@ -67,7 +67,7 @@ export default {
     return {
       org: "Rocket Downrange",
       greeting: "",
-      copy: `Rocket Downrange developed by Cavan Lemasters ${new Date()
+      copy: `Rocket Downrange developed by Cav Lemasters ${new Date()
         .getFullYear()
         .toString()}`
     };
