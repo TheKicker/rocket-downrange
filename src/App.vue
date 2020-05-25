@@ -35,7 +35,7 @@
               >Github</a>
             </li>
           </ul>
-          <h6 class="nav-item my-2 my-lg-0 text-white">{{ getGreeting }}</h6>
+          <h6 class="nav-item my-2 my-lg-0 text-white text-center">{{ getGreeting }}</h6>
         </div>
       </div>
     </nav>

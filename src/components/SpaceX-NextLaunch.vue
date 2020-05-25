@@ -1,15 +1,39 @@
 <template>
-  <div class="SpaceX-NextLaunch">
+  <div class="SpaceX-NextLaunch my-4">
     <div class="card">
       <div class="card-body">
-        <h1 class="card-title text-center">{{results.mission_name}}</h1>
-        <img class="mission-patch" :src="results.links.mission_patch" />
-        <h4
-          class="card-subtitle mb-2 text-muted"
-        >Flight #{{results.flight_number}}, Launch: {{(new Date(results.launch_date_utc)).toDateString()}}</h4>
-        <p class="card-text">{{results.details}}</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+        <h2 class="text-left">Next Mission:</h2>
+        <hr />
+        <h1 class="text-center my-4">{{results.mission_name}}, Flight #{{results.flight_number}}</h1>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <img :src="results.links.mission_patch" class="mission-patch" />
+          </div>
+          <div class="col-md-8 col-sm-12 my-2">
+            <h6 class="my-2">Launch Date: {{(new Date(results.launch_date_utc).toLocaleString())}}</h6>
+            <h6 class="my-2">Launch Site: {{results.launch_site.site_name_long}}</h6>
+            <hr />
+            <p class="my-2">{{results.details}}</p>
+          </div>
+        </div>
+        <div class="row my-4">
+          <h6 class="col-6 text-center">Launch Vehicle: {{results.rocket.rocket_name}}</h6>
+          <h6
+            class="col-6 text-center"
+          >Landing Intent: {{results.rocket.first_stage.cores[0].landing_intent}} ({{results.rocket.first_stage.cores[0].landing_vehicle}})</h6>
+        </div>
+        <div class="row my-4">
+          <h6
+            class="col-6 text-center"
+          >Customer: {{results.rocket.second_stage.payloads[0].customers[0]}} ({{results.rocket.second_stage.payloads[0].nationality}})</h6>
+          <h6
+            class="col-6 text-center"
+          >Orbit Type: {{results.rocket.second_stage.payloads[0].orbit}}</h6>
+        </div>
+        <hr />
+        <p class="text-center">
+          <i>Last Update: {{(new Date(results.last_date_update).toLocaleString())}}</i>
+        </p>
       </div>
     </div>
   </div>
@@ -40,7 +64,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .mission-patch {
-  height: 25rem;
+  height: 18rem;
   margin: auto;
 }
 p {

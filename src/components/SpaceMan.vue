@@ -1,5 +1,5 @@
 <template>
-  <div class="Roadster my-4">
+  <div class="Roadster">
     <div class="row">
       <div class="col-sm-12 mx-auto text-center bg-secondary mt-5 p-5 rounded">
         <h1 id="roadster-name">{{results.name}}</h1>
@@ -13,30 +13,30 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="https://farm5.staticflickr.com/4615/40143096241_11128929df_b.jpg"
+                :src="results.flickr_images[0]"
                 class="d-block w-100"
-                alt="..."
+                alt="Starman in front of a gorgeous shot of the Earth."
               />
             </div>
             <div class="carousel-item">
               <img
-                src="https://farm5.staticflickr.com/4702/40110298232_91b32d0cc0_b.jpg"
+                :src="results.flickr_images[1]"
                 class="d-block w-100"
-                alt="..."
+                alt="Perspective from just behind Starman looking towards the Earth featuring a Dont Panic hud on the car."
               />
             </div>
             <div class="carousel-item">
               <img
-                src="https://farm5.staticflickr.com/4676/40110297852_5e794b3258_b.jpg"
+                :src="results.flickr_images[2]"
                 class="d-block w-100"
-                alt="..."
+                alt="Perspective of the hood of the car looking back on Starman and Earth."
               />
             </div>
             <div class="carousel-item">
               <img
-                src="https://farm5.staticflickr.com/4745/40110304192_6e3e9a7a1b_b.jpg"
+                :src="results.flickr_images[3]"
                 class="d-block w-100"
-                alt="..."
+                alt="Perspective of the hood of the car looking back on Starman and Earth."
               />
             </div>
           </div>
@@ -112,12 +112,16 @@
 
           <ul class="list-group list-group-horizontal">
             <li class="list-group-item flex-fill">
-              <a href="https://en.wikipedia.org/wiki/Elon_Musk%27s_Tesla_Roadster">
+              <a
+                href="https://en.wikipedia.org/wiki/Elon_Musk%27s_Tesla_Roadster"
+                target="_blank"
+                rel="noopener"
+              >
                 <u>Wikipedia Entry</u>
               </a>
             </li>
             <li class="list-group-item flex-fill">
-              <a href="https://youtu.be/wbSwFU6tY1c">
+              <a href="https://youtu.be/wbSwFU6tY1c" target="_blank" rel="noopener">
                 <u>Broadcast Link</u>
               </a>
             </li>
