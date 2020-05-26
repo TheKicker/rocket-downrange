@@ -1,7 +1,8 @@
 <template>
-  <div class="SpaceX">
+  <div class="SpaceX container my-4">
     <SpaceXinfo />
     <NextLaunch />
+    <LatestLaunch />
     <div class="card">
       <div class="card-header">Quote</div>
       <div class="card-body">
@@ -15,6 +16,15 @@
       </div>
     </div>
     <SpaceMan msg="Where is Starman? " />
+    <br />
+    <hr />
+    <div class="text-center">
+      <a
+        href="https://github.com/r-spacex/SpaceX-API"
+        target="_blank"
+        rel="noopener"
+      >Link to SpaceX API Repository</a>
+    </div>
   </div>
 </template>
 
@@ -22,6 +32,7 @@
 // @ is an alias to /src
 import SpaceXinfo from "@/components/SpaceX-info.vue";
 import NextLaunch from "@/components/SpaceX-NextLaunch.vue";
+import LatestLaunch from "@/components/SpaceX-LatestLaunch.vue";
 import SpaceMan from "@/components/SpaceMan.vue";
 
 export default {
@@ -29,6 +40,7 @@ export default {
   components: {
     SpaceXinfo,
     NextLaunch,
+    LatestLaunch,
     SpaceMan
   }
 };

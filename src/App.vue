@@ -40,7 +40,7 @@
       </div>
     </nav>
 
-    <div id="container" class="container my-4">
+    <div>
       <router-view />
     </div>
 
@@ -74,7 +74,7 @@ export default {
   },
   computed: {
     getGreeting: function() {
-      let h = new Date().getHours().toLocaleString();
+      let h = new Date().getHours();
 
       if (h >= 2 && h <= 6) {
         return "Whoa it's early!";
@@ -91,6 +91,7 @@ export default {
   }
 };
 </script>
+
 <style>
 /*!
  * Bootswatch v4.5.0
@@ -10039,3 +10040,4 @@ th {
   -moz-osx-font-smoothing: grayscale;
 }
 </style>
+

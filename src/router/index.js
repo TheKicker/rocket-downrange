@@ -26,7 +26,7 @@ const routes = [
 	{
 		path: '/rocket-lab',
 		name: 'Rocket Lab',
-		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/Rocket-Lab.vue')
+		component: () => import(/* webpackChunkName: "Rocket-Lab" */ '../views/Rocket-Lab.vue')
 	}
 ];
 
