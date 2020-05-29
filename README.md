@@ -30,3 +30,13 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Dev Notes:
+
+Remove the url # issue - simple fix is to add mode:`history` to the Vue Router. 
+```
+const router = new VueRouter({
+	routes, mode: 'history'
+});
+```
