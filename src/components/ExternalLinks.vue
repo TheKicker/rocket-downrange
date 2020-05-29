@@ -12,9 +12,7 @@
           <div class="card-body">
             <h5 class="card-title text-dark">NASA</h5>
             <hr />
-            <p
-              class="card-text"
-            >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"></p>
             <p class="card-text text-center">
               <a
                 href="https://www.nasa.gov"
@@ -31,9 +29,7 @@
           <div class="card-body">
             <h5 class="card-title">SpaceX</h5>
             <hr />
-            <p
-              class="card-text"
-            >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"></p>
             <p class="card-text text-center">
               <a
                 href="https://www.spacex.com/"
@@ -50,9 +46,7 @@
           <div class="card-body">
             <h5 class="card-title">Rocket Labs</h5>
             <hr />
-            <p
-              class="card-text"
-            >This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"></p>
             <p class="card-text text-center">
               <a
                 href="https://www.rocketlabusa.com/"
@@ -71,9 +65,7 @@
           <div class="card-body">
             <h5 class="card-title text-dark">Kerbal Space Program</h5>
             <hr />
-            <p
-              class="card-text"
-            >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"></p>
             <p class="card-text text-center">
               <a
                 href="https://www.kerbalspaceprogram.com/"
@@ -90,9 +82,7 @@
           <div class="card-body">
             <h5 class="card-title">Reddit/r/spaceporn</h5>
             <hr />
-            <p
-              class="card-text"
-            >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"></p>
             <p class="card-text text-center">
               <a
                 href="https://www.reddit.com/r/spaceporn/"
@@ -109,9 +99,7 @@
           <div class="card-body">
             <h5 class="card-title">Space.com</h5>
             <hr />
-            <p
-              class="card-text"
-            >This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"></p>
             <p class="card-text text-center">
               <a
                 href="https://www.space.com/"
