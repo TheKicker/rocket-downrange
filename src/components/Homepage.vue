@@ -11,8 +11,8 @@
         </div>
       </div>
     </div>
-    <div class="container text-dark">
-      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="container-fluid text-dark">
+      <div class="position-relative overflow-hidden p-3 p-md-6 m-md-3 text-center bg-light">
         <div class="col-md-6 p-lg-5 mx-auto my-5">
           <h1 class="display-4 font-weight-normal">About Us</h1>
           <p
