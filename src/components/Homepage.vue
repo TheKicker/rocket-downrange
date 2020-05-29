@@ -16,7 +16,7 @@
         <hr />
       </div>
 
-      <div class="card-group m-4">
+      <div class="card-group m-4 width-limit mx-auto">
         <div class="card m-2">
           <img src="../assets/nasaVAB.jpg" class="card-img-top marketingImage" alt="..." />
           <div class="card-body">
@@ -75,7 +75,7 @@
         </div>
       </div>
 
-      <div class="card-group m-4">
+      <div class="card-group m-4 width-limit mx-auto">
         <div class="card m-2">
           <img src="../assets/kerbal.jpg" class="card-img-top marketingImage" alt="..." />
           <div class="card-body">
@@ -162,5 +162,9 @@ export default {
   justify-content: center;
   text-align: center;
   vertical-align: middle;
+}
+.width-limit {
+  max-width: 1632px;
+  margin: auto;
 }
 </style>
