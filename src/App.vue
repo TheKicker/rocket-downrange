@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
         <router-link class="navbar-brand" to="/">{{ org }}</router-link>
         <button
@@ -44,7 +44,7 @@
       <router-view />
     </div>
 
-    <div id="footer" class="navbar navbar-dark bg-dark">
+    <div id="footer" class="navbar navbar-dark bg-primary">
       <div class="container text-white my-4">
         <div>
           <p>

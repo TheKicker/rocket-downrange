@@ -10,21 +10,39 @@
             <img :src="results.links.mission_patch.original" class="mission-patch" />
           </div>
           <div class="col-md-8 col-sm-12 my-2">
-            <h6 class="my-2">Launch Date: {{(new Date(results.launch_date_utc).toLocaleString())}}</h6>
-            <h6 class="my-2">Launch Site: {{results.launch_site.name_long}}</h6>
+            <h6 class="my-2">
+              <span class="text-secondary">Launch Date:</span>
+              {{(new Date(results.launch_date_utc).toLocaleString())}}
+            </h6>
+            <h6 class="my-2">
+              <span class="text-secondary">Launch Site:</span>
+              {{results.launch_site.name_long}}
+            </h6>
             <hr />
             <p class="my-2">{{results.details}}</p>
           </div>
         </div>
 
         <div class="row my-4">
-          <h6 class="col-6 text-center">Customer: {{results.rocket.payloads[0].customer_name}}</h6>
-          <h6 class="col-6 text-center">Launch Vehicle: {{results.rocket.name}}</h6>
+          <h6 class="col-6 text-center">
+            <span class="text-secondary">Customer:</span>
+            {{results.rocket.payloads[0].customer_name}}
+          </h6>
+          <h6 class="col-6 text-center">
+            <span class="text-secondary">Launch Vehicle:</span>
+            {{results.rocket.name}}
+          </h6>
         </div>
 
         <div class="row my-4">
-          <h6 class="col-6 text-center">Payloads: {{(results.rocket.payloads).length}}</h6>
-          <h6 class="col-6 text-center">Orbit: {{results.rocket.payloads[0].orbit}}</h6>
+          <h6 class="col-6 text-center">
+            <span class="text-secondary">Payloads:</span>
+            {{(results.rocket.payloads).length}}
+          </h6>
+          <h6 class="col-6 text-center">
+            <span class="text-secondary">Orbit:</span>
+            {{results.rocket.payloads[0].orbit}}
+          </h6>
         </div>
 
         <hr />

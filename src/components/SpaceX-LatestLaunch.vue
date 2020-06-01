@@ -10,36 +10,50 @@
             <img :src="results.links.mission_patch" class="mission-patch" />
           </div>
           <div class="col-md-8 col-sm-12 my-2">
-            <h6 class="my-2">Launch Date: {{(new Date(results.launch_date_utc).toLocaleString())}}</h6>
-            <h6 class="my-2">Launch Site: {{results.launch_site.site_name_long}}</h6>
+            <h6 class="my-2 text-primary">
+              <span class="text-secondary">Launch Date:</span>
+              {{(new Date(results.launch_date_utc).toLocaleString())}}
+            </h6>
+            <h6 class="my-2">
+              <span class="text-secondary">Launch Site:</span>
+              {{results.launch_site.site_name_long}}
+            </h6>
             <hr />
             <p class="my-2">{{results.details}}</p>
           </div>
         </div>
 
         <div class="row my-4">
-          <h6
-            class="col-6 text-center"
-          >Customer: {{results.rocket.second_stage.payloads[0].customers[0]}} ({{results.rocket.second_stage.payloads[0].nationality}})</h6>
-          <h6 class="col-6 text-center">Launch Vehicle: {{results.rocket.rocket_name}}</h6>
+          <h6 class="col-6 text-center text-primary">
+            <span class="text-secondary">Customer:</span>
+            {{results.rocket.second_stage.payloads[0].customers[0]}} ({{results.rocket.second_stage.payloads[0].nationality}})
+          </h6>
+          <h6 class="col-6 text-center">
+            <span class="text-secondary">Launch Vehicle:</span>
+            {{results.rocket.rocket_name}}
+          </h6>
         </div>
 
         <div class="row my-4">
-          <h6
-            class="col-6 text-center"
-          >Payload: {{results.rocket.second_stage.payloads[0].payload_type}}</h6>
-          <h6
-            class="col-6 text-center"
-          >Orbit: {{results.rocket.second_stage.payloads[0].orbit}}, {{results.rocket.second_stage.payloads[0].orbit_params.regime}}</h6>
+          <h6 class="col-6 text-center">
+            <span class="text-secondary">Payload:</span>
+            {{results.rocket.second_stage.payloads[0].payload_type}}
+          </h6>
+          <h6 class="col-6 text-center">
+            <span class="text-secondary">Orbit:</span>
+            {{results.rocket.second_stage.payloads[0].orbit}}, {{results.rocket.second_stage.payloads[0].orbit_params.regime}}
+          </h6>
         </div>
 
         <div class="row my-4">
-          <h6
-            class="col-6 text-center"
-          >Landing Intent: {{results.rocket.first_stage.cores[0].landing_intent}} ({{results.rocket.first_stage.cores[0].landing_vehicle}})</h6>
-          <h6
-            class="col-6 text-center"
-          >Launch Mass: {{(results.rocket.second_stage.payloads[0].payload_mass_lbs).toFixed(2)}} lbs</h6>
+          <h6 class="col-6 text-center">
+            <span class="text-secondary">Landing Intent:</span>
+            {{results.rocket.first_stage.cores[0].landing_intent}} ({{results.rocket.first_stage.cores[0].landing_vehicle}})
+          </h6>
+          <h6 class="col-6 text-center">
+            <span class="text-secondary">Launch Mass:</span>
+            {{(results.rocket.second_stage.payloads[0].payload_mass_lbs).toFixed(2)}} lbs
+          </h6>
         </div>
         <hr />
         <p class="text-center">
@@ -77,6 +91,9 @@ export default {
 .mission-patch {
   height: 18rem;
   margin: auto;
+}
+.boldify {
+  color: black;
 }
 p {
   text-size-adjust: 1.1rem;

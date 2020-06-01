@@ -3,18 +3,23 @@
     <div class="jumbotron viewport100h">
       <div class="container text-center viewportText">
         <div class="my-5">
-          <h1 class="display-5">Rocket Downrange</h1>
+          <h1 id="text-shadow-dark" class="display-5 text-white">Rocket Downrange</h1>
           <hr class="my-4" />
-          <p class="lead">From a space nerd, for the space nerds. Ad Astra, Godspeed.</p>
+          <p
+            id="text-shadow-dark"
+            class="lead text-white"
+          >From a space nerd, for the space nerds. Godspeed.</p>
           <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
           <!-- <a class="btn btn-primary btn-md" href="#" role="button">Learn more</a> -->
         </div>
       </div>
     </div>
     <div class="container-fluid text-dark">
-      <div class="position-relative overflow-hidden p-3 p-md-6 m-md-3 text-center bg-light">
+      <div
+        class="position-relative overflow-hidden p-3 p-md-6 m-md-3 text-center bg-primary text-white"
+      >
         <div class="col-md-6 p-lg-5 mx-auto my-5">
-          <h1 class="display-4 font-weight-normal">About Us</h1>
+          <h1 class="display-4 font-weight-normal text-white">About Us</h1>
           <p
             class="lead font-weight-normal"
           >Breaking boundaries, setting standards and transforming humanity for the better. Space has always been the final frontier that keeps on giving. This site serves to be a side project that informs and inspires the next generation of explorers.</p>
@@ -68,8 +73,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#text-shadow-dark {
+  text-shadow: 1px 1px 1px black;
+}
 .marketingImage {
   height: 15rem;
+}
+.jumbotron {
+  background: url("../assets/adobe-stock-1.jpg") center center/cover;
 }
 .viewport100h {
   height: 100vh;
