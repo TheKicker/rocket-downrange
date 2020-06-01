@@ -2,7 +2,7 @@
   <div class="SpaceX-NextLaunch my-4">
     <div class="card">
       <div class="card-body">
-        <h2 class="text-left">Latest Mission:</h2>
+        <h2 class="text-left">Next Mission:</h2>
         <hr />
         <h1 class="text-center my-4">{{results.mission_name}}, Flight #{{results.flight_number}}</h1>
         <div class="row">
