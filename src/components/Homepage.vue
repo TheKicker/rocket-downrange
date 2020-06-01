@@ -24,8 +24,10 @@
             class="lead font-weight-normal"
           >Breaking boundaries, setting standards and transforming humanity for the better. Space has always been the final frontier that keeps on giving. This site serves to be a side project that informs and inspires the next generation of explorers.</p>
           <a
-            class="btn btn-outline-primary"
+            class="btn btn-outline-light my-4"
             href="https://github.com/TheKicker/rocket-downrange"
+            target="_blank"
+            rel="noopener"
           >See the Code</a>
         </div>
         <div class="product-device shadow-sm d-none d-md-block"></div>
