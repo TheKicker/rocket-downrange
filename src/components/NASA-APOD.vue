@@ -7,7 +7,14 @@
         <h1 class="text-center my-4">{{results.title}}</h1>
         <div class="row">
           <div class="mx-auto">
-            <img :src="results.url" class="NASA-apod" />
+            <a
+              :href="results.hdurl"
+              target="_blank"
+              rel="noopener"
+              alt="Click me for the HD version of this photograph!"
+            >
+              <img :src="results.url" class="NASA-apod" />
+            </a>
           </div>
         </div>
         <div class="row container mx-auto">
