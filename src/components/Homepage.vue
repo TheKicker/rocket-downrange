@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div class="jumbotron viewport100h">
+    <div class="jumbotron img-fluid viewport100h">
       <div class="container text-center viewportText">
         <div class="my-5">
           <h1 id="text-shadow-dark" class="display-5 text-white">Rocket Downrange</h1>

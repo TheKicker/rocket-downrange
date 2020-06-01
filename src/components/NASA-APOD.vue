@@ -13,7 +13,11 @@
               rel="noopener"
               alt="Click me for the HD version of this photograph!"
             >
-              <img :src="results.url" class="NASA-apod" />
+              <img
+                :src="results.url"
+                class="img-fluid"
+                alt="Click me for the HD version of this photograph!"
+              />
             </a>
           </div>
         </div>

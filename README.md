@@ -9,7 +9,7 @@ I hope the site serves you well and I am always open to critique/criticism,
 
 <hr>
 All mission data belongs to corresponding company.  Most of the images are not mine, sourced from Adobe Creative Cloud and other free graphics sites
-
+<br>
 <li> Hosted on Netlify, built with Vue.js, Axios, Bootstrap 4 and more! </hr>
 
 <hr>
