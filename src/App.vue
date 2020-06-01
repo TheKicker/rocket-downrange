@@ -50,7 +50,7 @@
           <p>
             <a
               class="text-white underline"
-              href="https://www.cavlemasters.com"
+              href="https://cavlemasters.com"
               target="_blank"
             >{{copy}} &copy;</a>
             <br />API & all mission data belongs to the corresponding company.
