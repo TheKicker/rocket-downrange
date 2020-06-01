@@ -55,7 +55,9 @@
             >{{copy}} &copy;</a>
             <br />API & all mission data belongs to the corresponding company.
           </p>
-          <p style="font-family: 'Share Tech Mono', monospace;">made on earth by a human & coffee</p>
+          <p
+            style="font-family: 'Share Tech Mono', monospace; text-transform: lowercase;"
+          >{{trademark}}</p>
         </div>
       </div>
     </div>
@@ -69,16 +71,17 @@ export default {
       greeting: "",
       copy: `Rocket Downrange developed by Cav Lemasters ${new Date()
         .getFullYear()
-        .toString()}`
+        .toString()}`,
+      trademark: "made on earth by a human & coffee"
     };
   },
   computed: {
     getGreeting: function() {
       let h = new Date().getHours();
 
-      if (h >= 2 && h <= 6) {
+      if (h >= 1 && h <= 6) {
         return "Whoa it's early!";
-      } else if (h <= 12) {
+      } else if (h < 12) {
         return "Good Morning!";
       } else if (h <= 18) {
         return "Good Afternoon!";

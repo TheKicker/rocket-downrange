@@ -81,6 +81,7 @@ export default {
 }
 .jumbotron {
   background: url("../assets/adobe-stock-1.jpg") center center/cover;
+  background-attachment: fixed;
 }
 .viewport100h {
   height: 100vh;
