@@ -8,31 +8,13 @@
           <p
             id="text-shadow-dark"
             class="lead text-white"
-          >From a space nerd, for the space nerds. Godspeed.</p>
+          >From a space nerd, for the space nerds. Ad Astra, Godspeed.</p>
           <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
           <!-- <a class="btn btn-primary btn-md" href="#" role="button">Learn more</a> -->
         </div>
       </div>
     </div>
-    <div class="container-fluid text-dark">
-      <div
-        class="position-relative overflow-hidden p-3 p-md-6 m-md-3 text-center bg-primary text-white"
-      >
-        <div class="col-md-6 p-lg-5 mx-auto my-5">
-          <h1 class="display-4 font-weight-normal text-white">About Us</h1>
-          <p
-            class="lead font-weight-normal"
-          >Breaking boundaries, setting standards and transforming humanity for the better. Space has always been the final frontier that keeps on giving. This site serves to be a side project that informs and inspires the next generation of explorers.</p>
-          <a
-            class="btn btn-outline-light my-4"
-            href="https://github.com/TheKicker/rocket-downrange"
-            target="_blank"
-            rel="noopener"
-          >See the Code</a>
-        </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-      </div>
+    <div class="container text-dark">
 
       <!-- <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
         <div
