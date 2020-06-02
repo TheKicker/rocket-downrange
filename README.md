@@ -38,12 +38,31 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-
-### Dev Notes:
+<hr>
+<div align="center">
+<h2>Developer Notes:</h2>
+</div>
 
 Remove the url # issue - simple fix is to add mode:`history` to the Vue Router. 
 ```
+// router/index.js
+
 const router = new VueRouter({
 	routes, mode: 'history'
 });
+```
+</br>
+<hr>
+</br>
+
+Added Vue-Meta for SEO enhancements/meta tags.  Purely experimental :) <a href="https://alligator.io/vuejs/vue-seo-tips/" target="_blank" rel="noopener">Vue Meta article </a>
+```
+npm install vue-meta
+```
+```
+// main.js file
+
+import Meta from 'vue-meta';
+
+Vue.use(Meta);
 ```

@@ -1,12 +1,31 @@
 <template>
   <div class="Links">
     <div>
-      <div class="text-center text-dark">
-        <h2>External Links</h2>
-        <hr />
+      <div class="text-center text-dark container">
+        <!-- <h2>External Links</h2>
+        <hr />-->
       </div>
 
       <div class="card-group m-4 width-limit mx-auto">
+        <div class="my-4 m-2">
+          <div class="position-relative overflow-hidden text-center bg-primary text-white">
+            <div class="col-md-6 p-lg-5 mx-auto my-5">
+              <h2 class="font-weight-normal text-white">About Rocket Downrange</h2>
+              <p
+                class="lead font-weight-normal"
+              >Breaking boundaries, setting standards and transforming humanity for the better. Space has always been the final frontier that keeps on giving. This site serves to be a side project that informs and inspires the next generation of explorers.</p>
+              <a
+                class="btn btn-outline-light my-4"
+                href="https://github.com/TheKicker/rocket-downrange"
+                target="_blank"
+                rel="noopener"
+              >{{code}}</a>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+          </div>
+        </div>
+
         <div class="card m-2">
           <img src="../assets/nasaVAB.jpg" class="card-img-top marketingImage" alt="..." />
           <div class="card-body">
@@ -120,7 +139,8 @@ export default {
   name: "ExternalLinks",
   data() {
     return {
-      Hello: "Hello World!"
+      Hello: "Hello World!",
+      code: "See the Code"
     };
   }
 };
