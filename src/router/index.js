@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
+import SpaceX from '../views/SpaceX.vue';
 
 Vue.use(VueRouter);
 
@@ -21,7 +22,7 @@ const routes = [
 	{
 		path: '/spacex',
 		name: 'SpaceX',
-		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/SpaceX.vue')
+		component: SpaceX
 	},
 	{
 		path: '/rocket-lab',
