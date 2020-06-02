@@ -66,3 +66,18 @@ import Meta from 'vue-meta';
 
 Vue.use(Meta);
 ```
+
+</br>
+<hr>
+</br>
+
+URLs were not working properly. So for example, rocketdownrange.com/spacex was returning a 404. Solved this by adding netlify.toml file and slight alteration to routes. 
+```
+// netlify.toml
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+```
