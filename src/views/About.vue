@@ -1,5 +1,18 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <Error404 />
   </div>
 </template>
+
+
+<script>
+// @ is an alias to /src
+import Error404 from "@/components/Error.vue";
+
+export default {
+  name: "About",
+  components: {
+    Error404
+  }
+};
+</script>
