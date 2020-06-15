@@ -11,14 +11,24 @@
               <img
                 :src="results.url"
                 class="img-fluid"
-                alt="An error occured, most often it is due to NASA's APOD being a link to a youtube video rather than a picture."
+                alt="An error occured, this media from NASA might be a Youtube video rather than picture. "
               />
             </a>
           </div>
         </div>
         <div class="row container mx-auto">
-          <div class="my-2">
-            <p class="my-2">{{results.explanation}}</p>
+          <div class="my-4">
+            <div class="mx-auto my-2">
+              <strong>
+                <a
+                  :href="results.url"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-block btn-light text-primary italic"
+                >Link from NASA.gov</a>
+              </strong>
+            </div>
+            <p class="my-2 text-primary">{{results.explanation}}</p>
           </div>
         </div>
         <hr />
