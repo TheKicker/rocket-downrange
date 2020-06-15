@@ -7,16 +7,11 @@
         <h1 class="text-center my-4">{{results.title}}</h1>
         <div class="row">
           <div class="mx-auto">
-            <a
-              :href="results.hdurl"
-              target="_blank"
-              rel="noopener"
-              alt="Click me for the HD version of this photograph!"
-            >
+            <a :href="results.hdurl" target="_blank" rel="noopener">
               <img
                 :src="results.url"
                 class="img-fluid"
-                alt="Click me for the HD version of this photograph!"
+                alt="An error occured, most often it is due to NASA's APOD being a link to a youtube video rather than a picture."
               />
             </a>
           </div>
