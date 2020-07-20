@@ -55,7 +55,7 @@
 </template>
 
 <script>
-let url = "https://rocketlab-api.now.sh/v1/launches/latest";
+var url = "https://rocketlab-api.now.sh/v1/launches/latest";
 window.axios = require("axios");
 
 export default {

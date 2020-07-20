@@ -133,7 +133,7 @@
 </template>
 
 <script>
-let url = "https://api.spacexdata.com/v3/roadster";
+var url = "https://api.spacexdata.com/v3/roadster";
 window.axios = require("axios");
 
 export default {

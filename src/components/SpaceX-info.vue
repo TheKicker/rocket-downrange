@@ -10,7 +10,7 @@
 </template>
 
 <script>
-let url = "https://api.spacexdata.com/v3/info";
+var url = "https://api.spacexdata.com/v3/info";
 window.axios = require("axios");
 
 export default {

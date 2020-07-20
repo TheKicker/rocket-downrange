@@ -65,7 +65,7 @@
 </template>
 
 <script>
-let url = "https://api.spacexdata.com/v3/launches/next";
+var url = "https://api.spacexdata.com/v3/launches/next";
 window.axios = require("axios");
 export default {
   name: "NextLaunch",
