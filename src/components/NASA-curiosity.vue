@@ -47,8 +47,6 @@ const day = new Date().getDate() - 7;
 const month = new Date().getMonth() + 1;
 const year = new Date().getFullYear();
 
-console.log(day, month, year);
-
 const api_key = "PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo";
 var url =
   "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=" +
@@ -65,9 +63,6 @@ window.axios = require("axios");
 
 export default {
   name: "NASAcuriosity",
-  props: {
-    msg: String
-  },
   data() {
     return {
       results: []

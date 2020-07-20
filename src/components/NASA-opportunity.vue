@@ -58,9 +58,6 @@ window.axios = require("axios");
 
 export default {
   name: "NASAopportunity",
-  props: {
-    msg: String
-  },
   data() {
     return {
       results: []

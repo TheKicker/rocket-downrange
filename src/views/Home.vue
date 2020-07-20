@@ -4,7 +4,6 @@
     <NASAapod />
     <NASAcuriosity />
     <NASAopportunity />
-    <About />
     <ExternalLinks />
   </div>
 </template>
