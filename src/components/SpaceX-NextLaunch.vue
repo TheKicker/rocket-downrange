@@ -67,12 +67,8 @@
 <script>
 let url = "https://api.spacexdata.com/v3/launches/next";
 window.axios = require("axios");
-console.log(results.links.mission_patch);
 export default {
   name: "NextLaunch",
-  props: {
-    msg: String
-  },
   data() {
     return {
       results: []
