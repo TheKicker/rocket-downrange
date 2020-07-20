@@ -60,7 +60,7 @@ var url =
   "-" +
   "&api_key=" +
   api_key;
-console.log(url);
+console.log("NASA Curiosity - " + url);
 window.axios = require("axios");
 
 export default {

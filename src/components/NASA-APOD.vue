@@ -43,7 +43,7 @@
 <script>
 const api_key = "PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo";
 var url = "https://api.nasa.gov/planetary/apod?api_key=" + api_key;
-console.log(url);
+console.log("NASA APOD - " + url);
 window.axios = require("axios");
 
 export default {

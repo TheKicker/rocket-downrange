@@ -47,14 +47,13 @@
 // const month = new Date().getMonth() + 1;
 // const year = new Date().getFullYear();
 const random_number = Math.floor(Math.random() * 5100);
-console.log("Random number is " + random_number);
 const api_key = "PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo";
 var url =
   "https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=" +
   random_number +
   "&api_key=" +
   api_key;
-console.log(url);
+console.log("NASA Oppy sol-" + random_number + " : " + url);
 window.axios = require("axios");
 
 export default {
