@@ -57,7 +57,10 @@
             <span class="text-secondary">Landing Intent:</span>
             {{valueCheckText(this.results.rocket.first_stage.cores[0].landing_intent)}} ({{valueCheckText(this.results.rocket.first_stage.cores[0].landing_vehicle)}})
           </h6>
-          <h6 v-if="null" class="col-6 text-center">
+          <h6
+            v-if="this.results.rocket.second_stage.payloads[0].payload_mass_lbs === null"
+            class="col-6 text-center"
+          >
             <span class="text-secondary">Launch Mass:</span>
             N/A
           </h6>
