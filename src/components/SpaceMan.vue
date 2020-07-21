@@ -64,68 +64,52 @@
             <h5 class="card-title">Date: {{(new Date(results.launch_date_utc)).toDateString()}}</h5>
             <p>{{results.details}}</p>
           </div>
-          <ul class="list-group list-group-horizontal">
-            <li
-              class="list-group-item flex-fill"
-            >Launch Mass: {{(results.launch_mass_lbs).toFixed(2)}} lbs</li>
-            <li class="list-group-item flex-fill">Orbit Type: {{results.orbit_type}}</li>
-          </ul>
-
-          <ul class="list-group list-group-horizontal">
-            <li class="list-group-item flex-fill">Apoapsis: {{(results.apoapsis_au).toFixed(4)}} au</li>
-            <li
-              class="list-group-item flex-fill"
-            >Periapsis: {{(results.periapsis_au).toFixed(4)}} au</li>
-          </ul>
-
-          <ul class="list-group list-group-horizontal">
-            <li
-              class="list-group-item flex-fill"
-            >Semi Major Axis: {{(results.semi_major_axis_au).toFixed(4)}} au</li>
-            <li
-              class="list-group-item flex-fill"
-            >Eccentricity: {{(results.eccentricity).toFixed(4)}}</li>
-          </ul>
-
-          <ul class="list-group list-group-horizontal">
-            <li
-              class="list-group-item flex-fill"
-            >Inclination: {{(results.inclination).toFixed(4)}} deg</li>
-            <li class="list-group-item flex-fill">Longitude: {{(results.longitude).toFixed(4)}}</li>
-          </ul>
-
-          <ul class="list-group list-group-horizontal">
-            <li class="list-group-item flex-fill">Speed: {{(results.speed_mph).toFixed(2)}} MPH</li>
-            <li
-              class="list-group-item flex-fill"
-            >Orbital Period: {{(results.period_days).toFixed(2)}} days</li>
-          </ul>
-
-          <ul class="list-group list-group-horizontal">
-            <li
-              class="list-group-item flex-fill"
-            >Earth Distance: {{(results.earth_distance_mi).toLocaleString()}} miles</li>
-            <li
-              class="list-group-item flex-fill"
-            >Mars Distance: {{(results.mars_distance_mi).toLocaleString()}} miles</li>
-          </ul>
-
-          <ul class="list-group list-group-horizontal">
-            <li class="list-group-item flex-fill">
-              <a
-                href="https://en.wikipedia.org/wiki/Elon_Musk%27s_Tesla_Roadster"
-                target="_blank"
-                rel="noopener"
-              >
-                <u>Wikipedia Entry</u>
-              </a>
-            </li>
-            <li class="list-group-item flex-fill">
-              <a href="https://youtu.be/wbSwFU6tY1c" target="_blank" rel="noopener">
-                <u>Broadcast Link</u>
-              </a>
-            </li>
-          </ul>
+          <div class="text-left px-4">
+            <div class="row my-2">
+              <div class="col">Launch Mass: {{(results.launch_mass_lbs).toFixed(2)}} lbs</div>
+              <div class="col">Orbit Type: {{results.orbit_type}}</div>
+            </div>
+            <div class="row my-2">
+              <div class="col">Apoapsis: {{(results.apoapsis_au).toFixed(4)}} au</div>
+              <div class="col">Periapsis: {{(results.periapsis_au).toFixed(4)}} au</div>
+            </div>
+            <div class="row my-2">
+              <div class="col">Semi Major Axis: {{(results.semi_major_axis_au).toFixed(4)}} au</div>
+              <div class="col">Eccentricity: {{(results.eccentricity).toFixed(4)}}</div>
+            </div>
+            <div class="row my-2">
+              <div class="col">Inclination: {{(results.inclination).toFixed(4)}} deg</div>
+              <div class="col">Longitude: {{(results.longitude).toFixed(4)}}</div>
+            </div>
+            <div class="row my-2">
+              <div class="col">Speed: {{(results.speed_mph).toFixed(2)}} MPH</div>
+              <div class="col">Orbital Period: {{(results.period_days).toFixed(2)}} days</div>
+            </div>
+            <div class="row my-2">
+              <div
+                class="col"
+              >Earth Distance: {{(results.earth_distance_mi).toLocaleString()}} miles</div>
+              <div class="col">Mars Distance: {{(results.mars_distance_mi).toLocaleString()}} miles</div>
+            </div>
+            <div class="row my-4 text-center">
+              <div class="col">
+                <a
+                  href="https://en.wikipedia.org/wiki/Elon_Musk%27s_Tesla_Roadster"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-dark"
+                >Wikipedia Entry</a>
+              </div>
+              <div class="col">
+                <a
+                  href="https://youtu.be/wbSwFU6tY1c"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-dark"
+                >Broadcast Replay</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
