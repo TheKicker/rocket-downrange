@@ -46,7 +46,7 @@
 const day = new Date().getDate() - 7;
 const month = new Date().getMonth() + 1;
 const year = new Date().getFullYear();
-
+const secure = "";
 const api_key = "PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo";
 window.axios = require("axios");
 

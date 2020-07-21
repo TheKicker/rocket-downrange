@@ -1,10 +1,10 @@
 <template>
   <div class="Info my-4">
     <div class="container-fluid text-center">
-      <h1>{{results.name}}</h1>
+      <h1>{{this.results.name}}</h1>
       <div
         class="row my-4"
-      >{{results.summary}} Based in {{results.headquarters.city}}, {{results.headquarters.state}}, the company employs over {{results.employees}} who design, operate and relaunch {{results.vehicles}} seperate vehicles.</div>
+      >SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets. Based in Hawthorne, California, the company employs over 7000 who design, operate and relaunch 3 seperate vehicles.</div>
     </div>
   </div>
 </template>
@@ -21,9 +21,12 @@ export default {
     };
   },
   mounted() {
-    window.axios.get(url).then(response => {
-      this.results = response.data;
-    });
+    window.axios
+      .get(url)
+      .then(response => {
+        this.results = response.data;
+      })
+      .catch(error => console.log(error));
   }
 };
 </script>
