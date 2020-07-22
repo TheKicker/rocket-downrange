@@ -68,11 +68,15 @@
 <script>
 var year = new Date().getFullYear();
 var month = new Date().getMonth() + 1;
-var day = new Date().getDate() - 1;
+var day = new Date().getDate();
+var day2 = new Date().getDate() - 1;
+console.log(year, month, day);
 const api_key = "PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo";
-var url = "https://api.nasa.gov/planetary/apod?api_key=" + api_key;
-var url2 =
+var url =
   `https://api.nasa.gov/planetary/apod?date=${year}-${month}-${day}&api_key=` +
+  api_key;
+var url2 =
+  `https://api.nasa.gov/planetary/apod?date=${year}-${month}-${day2}&api_key=` +
   api_key;
 console.log("NASA APOD 1 - " + url);
 console.log("NASA APOD 2 - " + url2);
