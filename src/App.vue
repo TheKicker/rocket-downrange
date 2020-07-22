@@ -140,7 +140,7 @@ export default {
   },
   methods: {
     persist() {
-      localStorage.username = this.name;
+      localStorage.username = this.username;
       console.log(`Name updated to ${username}.`);
     }
   }
