@@ -1,5 +1,8 @@
 <template>
   <div class="RocketLab container my-4">
+    <div class="m-4">
+      <!-- <h3 class="text-red">NOTE: I am using a fan-made API that is not updated by the company.</h3> -->
+    </div>
     <RocketLabinfo />
     <NextLaunch />
     <div class="card">

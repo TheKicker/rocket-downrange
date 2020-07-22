@@ -5,8 +5,7 @@
 </template>
 
 <script>
-let url =
-  "https://friendly-sammet-c73f41.netlify.app/.netlify/functions/products.json";
+let url = "https://api.spacexdata.com/v4/launches/latest";
 window.axios = require("axios");
 
 export default {

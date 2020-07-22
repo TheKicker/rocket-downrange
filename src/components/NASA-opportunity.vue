@@ -2,17 +2,16 @@
   <div class="APOD my-4 mx-4">
     <div class="card container">
       <div class="card-body p-3 p-md-6 m-md-3">
-        <h3
-          class="text-left text-secondary"
-        >Mars {{this.results.photos[0].rover.name}} Rover Picture of the Day:</h3>
+        <h5 class="text-left text-secondary">Mars Opportunity Rover Picture of the Day:</h5>
         <hr />
-        <h1 class="text-center my-4">Photo ID#{{this.results.photos[0].id}}</h1>
+        <h3 class="text-center my-4">Photo ID#{{this.results.photos[0].id}}</h3>
         <div class="row">
           <div class="mx-auto">
             <a :href="this.results.photos[0].img_src" target="_blank" rel="noopener">
               <img
                 :src="this.results.photos[0].img_src"
                 class="img-fluid"
+                style="max-height: 75vh;"
                 alt="An error occured, this media from NASA might be a Youtube video rather than picture. "
               />
             </a>
@@ -26,8 +25,8 @@
                   :href="this.results.photos[0].img_src"
                   target="_blank"
                   rel="noopener"
-                  class="btn btn-block btn-light text-primary italic"
-                >Link from NASA.gov</a>
+                  class="btn btn-block btn-outline-primary text-secondary italic"
+                >HD Link from NASA.gov</a>
               </strong>
             </div>
             <p
@@ -43,9 +42,8 @@
 
 
 <script>
-// const day = new Date().getDate() - 7;
-// const month = new Date().getMonth() + 1;
-// const year = new Date().getFullYear();
+// Oppy was operational for around 5100 sol days on Mars
+// Picture of the day is taken from a cache of these images
 const random_number = Math.floor(Math.random() * 5100);
 const api_key = "PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo";
 window.axios = require("axios");
@@ -65,9 +63,12 @@ export default {
       api_key;
     console.log("NASA Oppy sol-" + random_number + " : " + url);
 
-    window.axios.get(url).then(response => {
-      this.results = response.data;
-    });
+    window.axios
+      .get(url)
+      .then(response => {
+        this.results = response.data;
+      })
+      .catch(error => console.log(error));
   }
 };
 </script>

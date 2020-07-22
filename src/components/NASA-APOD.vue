@@ -2,16 +2,17 @@
   <div class="APOD my-4 mx-4">
     <div class="card container">
       <div class="card-body p-3 p-md-6 m-md-3">
-        <h3 class="text-left text-secondary">NASA Astronomy Picture of the Day:</h3>
+        <h5 class="text-left text-secondary">NASA Astronomy Picture of the Day:</h5>
         <hr />
-        <h1 v-if="results.title === null" class="text-center my-4">{{results2.title}}</h1>
-        <h1 v-else class="text-center my-4">{{results.title}}</h1>
+        <h3 v-if="results.title === null" class="text-center my-4">{{results2.title}}</h3>
+        <h3 v-else class="text-center my-4">{{results.title}}</h3>
         <div class="row">
           <div class="mx-auto">
             <a v-if="results.hdurl === null" :href="results2.hdurl" target="_blank" rel="noopener">
               <img
                 :src="results2.url"
                 class="img-fluid"
+                style="max-height: 75vh;"
                 alt="If this picture did not load - then an error occured, this media from NASA might be a Youtube video rather than picture. "
               />
             </a>
@@ -19,6 +20,7 @@
               <img
                 :src="results.url"
                 class="img-fluid"
+                style="max-height: 75vh;"
                 alt="If this picture did not load - then an error occured, this media from NASA might be a Youtube video rather than picture. "
               />
             </a>
@@ -33,15 +35,15 @@
                   :href="results2.url"
                   target="_blank"
                   rel="noopener"
-                  class="btn btn-block btn-light text-primary italic"
-                >Link from NASA.gov</a>
+                  class="btn btn-block btn-outline-primary text-secondary italic"
+                >HD Link from NASA.gov</a>
                 <a
                   v-else
                   :href="results.url"
                   target="_blank"
                   rel="noopener"
-                  class="btn btn-block btn-light text-primary italic"
-                >Link from NASA.gov</a>
+                  class="btn btn-block btn-outline-primary text-secondary italic"
+                >HD Link from NASA.gov</a>
               </strong>
             </div>
             <p
@@ -94,6 +96,8 @@ export default {
       .then(response => {
         this.results = response.data;
       })
+      .catch(error => console.log(error));
+    window.axios
       .get(url2)
       .then(response => {
         this.results2 = response.data;
