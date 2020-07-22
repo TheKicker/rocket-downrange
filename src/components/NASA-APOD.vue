@@ -70,7 +70,6 @@ var year = new Date().getFullYear();
 var month = new Date().getMonth() + 1;
 var day = new Date().getDate();
 var day2 = new Date().getDate() - 1;
-console.log(year, month, day);
 const api_key = "PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo";
 var url =
   `https://api.nasa.gov/planetary/apod?date=${year}-${month}-${day}&api_key=` +

@@ -35,10 +35,50 @@
               >Github</a>
             </li>
           </ul>
-          <h6 class="nav-item my-2 my-lg-0 text-white text-center">{{ getGreeting }}</h6>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            <h6 class="nav-item my-2 my-lg-0 text-white text-center">{{ getGreeting }} {{username}}</h6>
+          </button>
         </div>
       </div>
     </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Change username</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input v-model="username" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button
+              type="button"
+              @click="persist()"
+              class="btn btn-primary"
+              data-dismiss="modal"
+            >Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div>
       <router-view />
@@ -67,6 +107,7 @@
 export default {
   data() {
     return {
+      username: "Guest",
       org: "Rocket Downrange",
       greeting: "",
       copy: `Rocket Downrange developed by Cav Lemasters ${new Date()
@@ -75,21 +116,32 @@ export default {
       trademark: "made on earth by a human & coffee"
     };
   },
+  mounted() {
+    if (localStorage.username) {
+      this.username = localStorage.username;
+    }
+  },
   computed: {
     getGreeting: function() {
       let h = new Date().getHours();
 
       if (h >= 1 && h <= 6) {
-        return "Whoa it's early!";
+        return "Whoa it's early, ";
       } else if (h < 12) {
-        return "Good Morning!";
+        return "Good Morning, ";
       } else if (h <= 18) {
-        return "Good Afternoon!";
+        return "Good Afternoon, ";
       } else if (h <= 23) {
-        return "Good Evening!";
+        return "Good Evening, ";
       } else {
-        return "We're up late!";
+        return "We're up late, ";
       }
+    }
+  },
+  methods: {
+    persist() {
+      localStorage.username = this.name;
+      console.log(`Name updated to ${username}.`);
     }
   }
 };
