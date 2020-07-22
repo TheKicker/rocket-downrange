@@ -41,7 +41,7 @@
             data-toggle="modal"
             data-target="#exampleModal"
           >
-            <h6 class="nav-item my-2 my-lg-0 text-white text-center">{{ getGreeting }} {{username}}</h6>
+            <h6 class="nav-item my-2 my-lg-0 text-white text-center">{{ getGreeting }}, {{username}}</h6>
           </button>
         </div>
       </div>
@@ -107,7 +107,7 @@
 export default {
   data() {
     return {
-      username: "Guest",
+      username: "",
       org: "Rocket Downrange",
       greeting: "",
       copy: `Rocket Downrange developed by Cav Lemasters ${new Date()
@@ -119,6 +119,8 @@ export default {
   mounted() {
     if (localStorage.username) {
       this.username = localStorage.username;
+    } else {
+      this.username = "Guest";
     }
   },
   computed: {
@@ -126,15 +128,15 @@ export default {
       let h = new Date().getHours();
 
       if (h >= 1 && h <= 6) {
-        return "Whoa it's early, ";
+        return "Whoa it's early";
       } else if (h < 12) {
-        return "Good Morning, ";
+        return "Good Morning";
       } else if (h <= 18) {
-        return "Good Afternoon, ";
+        return "Good Afternoon";
       } else if (h <= 23) {
-        return "Good Evening, ";
+        return "Good Evening";
       } else {
-        return "We're up late, ";
+        return "We're up late";
       }
     }
   },
