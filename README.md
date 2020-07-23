@@ -5,12 +5,16 @@ Rocket Downrange is a site I am developing to showcase the advancements of human
 
 I hope the site serves you well and I am always open to critique/criticism, 
 
- -Cav
-<div align="center">
+ <a href="https://www.cavlemasters.com" target="_blank">- Cav Lemasters ( @TheKicker )</a>
+
+ <a href="https://www.cavlemasters.com/contact" target="_blank">Contact Me</a>
+<div align="left">
 <hr>
-All mission data belongs to corresponding company.  Most of the images are not mine, sourced from Adobe Creative Cloud and other free graphics sites
-<br>
-<li> Hosted on Netlify, built with Vue.js, Axios, Bootstrap 4 and more! </hr>
+All mission data belongs to corresponding company.  Most of the images are not mine, sourced from Adobe Creative Cloud and other free graphics sites.  Site will remain free, safe and an open playground for all. 
+</br>
+</br>
+Hosted on Netlify, built with Vue.js, Axios, Vue-Meta, Bootstrap 4 and more! 
+</hr>
 
 <hr>
 </div>
@@ -50,6 +54,7 @@ Remove the url # issue - simple fix is to add mode:`history` to the Vue Router.
 const router = new VueRouter({
 	routes, mode: 'history'
 });
+
 ```
 </br>
 <hr>
@@ -65,6 +70,7 @@ npm install vue-meta
 import Meta from 'vue-meta';
 
 Vue.use(Meta);
+
 ```
 
 </br>
@@ -80,6 +86,7 @@ URLs were not working properly. So for example, rocketdownrange.com/spacex was r
   to = "/index.html"
   status = 200
   force = false
+
 ```
 
 </br>
@@ -106,3 +113,27 @@ computed:{
 // then call secureURL within the image tag
 
 <img :src="secureURL" class="image-fluid"/>
+
+```
+
+</br>
+<hr>
+<div align="center">
+<h2>Known Issues (Work in Progress):</h2>
+</div>
+
+Having an issue on the 'Home' page of the site where an error in the console is logged for both Oppy and Curiousity API's.
+
+</br> For example, when I call <i> this.results.photos[0].img_src </i>
+
+```
+> Type Error: Cannot read property '0' of undefined
+      at (file-1.js:1)
+      at (file-2.js:1)
+      at (file-3.js:1)
+      at (file-4.js:1)
+      at (file-5.js:1)
+
+```
+
+I think I have tracked this down to how I am calling bits of information out of the endpoints for the JSON response.  The browser does not like the [0] added to return the first photo/details from the array.  I cannot however remove the zero because then the entire component vanishes.    
