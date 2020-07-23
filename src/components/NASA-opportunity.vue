@@ -72,10 +72,13 @@ export default {
   },
   computed: {
     secureURL: function() {
-      var unsecure_url = this.results.photos[0].img_src;
-      var secure_url = unsecure_url.slice(0, 4) + "s" + unsecure_url.slice(4);
-      // console.log("Oppy Secure Pic - ", secure_url);
-      return secure_url;
+      var baseURL = this.results.photos[0].img_src;
+      if (baseURL.slice(0, 5) != "https") {
+        var secure_url = baseURL.slice(0, 4) + "s" + baseURL.slice(4);
+        return secure_url;
+      } else {
+        return baseURL;
+      }
     }
   }
 };

@@ -81,3 +81,28 @@ URLs were not working properly. So for example, rocketdownrange.com/spacex was r
   status = 200
   force = false
 ```
+
+</br>
+<hr>
+</br>
+
+Had an issue where the site was displaying an unsecure connection.  Mistakenly thought this was a bad SSL Certificate but realized it was due to the API response.  Specifically the Opportunity and Curiousity API's would supply an unsecure link for the images. Fixed the issue by adding a computed property to check if https is enabled, if not add an s to the url.
+
+```
+// src/components/Opportunity.vue & Curiousity.vue
+
+computed:{
+  secureURL: function(){
+    var baseURL = this.results.photos[0].img_src;
+      if (baseURL.slice(0, 5) != "https") {
+        var secure_url = baseURL.slice(0, 4) + "s" + baseURL.slice(4);
+        return secure_url;
+      } else {
+        return baseURL;
+      }
+  }
+}
+
+// then call secureURL within the image tag
+
+<img :src="secureURL" class="image-fluid"/>
