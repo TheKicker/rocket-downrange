@@ -9,7 +9,7 @@
           <div class="mx-auto">
             <a :href="this.results.photos[0].img_src" target="_blank" rel="noopener">
               <img
-                :src="this.results.photos[0].img_src"
+                :src="secureURL"
                 class="img-fluid"
                 style="max-height: 75vh;"
                 alt="An error occured, this media from NASA might be a Youtube video rather than picture. "
@@ -69,6 +69,14 @@ export default {
         this.results = response.data;
       })
       .catch(error => console.log(error));
+  },
+  computed: {
+    secureURL: function() {
+      var unsecure_url = this.results.photos[0].img_src;
+      var secure_url = unsecure_url.slice(0, 4) + "s" + unsecure_url.slice(4);
+      // console.log("Oppy Secure Pic - ", secure_url);
+      return secure_url;
+    }
   }
 };
 </script>
