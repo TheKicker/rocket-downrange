@@ -78,7 +78,7 @@
               <div class="col">Eccentricity: {{(results.eccentricity).toFixed(4)}}</div>
             </div>
             <div class="row my-2">
-              <div class="col">Inclination: {{(results.inclination).toFixed(4)}} deg</div>
+              <div class="col">Inclination: {{(results.inclination).toFixed(4)}}º</div>
               <div class="col">Longitude: {{(results.longitude).toFixed(4)}}</div>
             </div>
             <div class="row my-2">

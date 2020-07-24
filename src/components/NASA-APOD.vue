@@ -32,14 +32,14 @@
               <strong>
                 <a
                   v-if="results.url === null"
-                  :href="results2.url"
+                  :href="results2.hdurl"
                   target="_blank"
                   rel="noopener"
                   class="btn btn-block btn-outline-primary text-secondary italic"
                 >HD Link from NASA.gov</a>
                 <a
                   v-else
-                  :href="results.url"
+                  :href="results.hdurl"
                   target="_blank"
                   rel="noopener"
                   class="btn btn-block btn-outline-primary text-secondary italic"
