@@ -65,13 +65,22 @@
             </button>
           </div>
           <div class="modal-body">
-            <input v-model="username" />
+            <div>
+              <label class="col-form-label" for="inputDefault">Enter a new name:</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Buzz Lightyear"
+                id="inputDefault"
+                v-model="username"
+              />
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button
               type="button"
-              @click="persist()"
+              @click="validate()"
               class="btn btn-primary"
               data-dismiss="modal"
             >Save changes</button>
@@ -143,7 +152,19 @@ export default {
   methods: {
     persist() {
       localStorage.username = this.username;
-      console.log(`Name updated to ${username}.`);
+    },
+    validate() {
+      // Regex validation
+      var regName = /^[a-z ,.'-]+$/i;
+      // Eventually need to add a way to revert to previous given name.
+      if (!regName.test(this.username)) {
+        alert("Please enter a proper name.");
+        return (this.username = "Guest");
+      } else {
+        console.log("Valid name given, saved. ");
+        return this.username;
+        persist();
+      }
     }
   }
 };

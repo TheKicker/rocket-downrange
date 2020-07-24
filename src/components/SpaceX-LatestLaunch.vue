@@ -99,7 +99,7 @@ export default {
   methods: {
     valueCheckText: function(apiResults) {
       if (apiResults === null) {
-        return (apiResults = "No data supplied.");
+        return (apiResults = " N/A ");
       } else {
         return apiResults;
       }
