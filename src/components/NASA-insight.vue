@@ -7,32 +7,34 @@
         <h3
           class="text-center my-4"
         >Elysium Planitia, Mars - {{Object.values(results)[0].Season}} Season</h3>
-        <iframe
-          src="https://mars.nasa.gov/embed/24729/"
-          width="100%"
-          height="400"
-          scrolling="no"
-          frameborder="0"
-        ></iframe>
-        <p>
-          NASA’s InSight Mars lander takes continuous weather measurements on the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator. Summaries of this data are available at
-          <a
-            href="https://mars.nasa.gov/insight/weather/"
-            target="_blank"
-          >mars.nasa.gov/insight/weather</a>. You can find out more about InSight on the
-          <a
-            href="https://en.wikipedia.org/wiki/InSight"
-            target="_blank"
-            rel="noopener"
-          >Wikipedia Entry</a> or watch it land on
-          <a
-            href="https://www.youtube.com/watch?v=C0lwFLPiZEE"
-            target="_blank"
-            rel="noopener"
-          >Youtube</a>.
-        </p>
-        <table class="table">
-          <thead class="thead-light">
+        <div class="container">
+          <iframe
+            src="https://mars.nasa.gov/embed/24729/"
+            width="100%"
+            height="400"
+            scrolling="no"
+            frameborder="0"
+          ></iframe>
+          <p>
+            NASA’s InSight Mars lander takes continuous weather measurements on the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator. Summaries of this data are available at
+            <a
+              href="https://mars.nasa.gov/insight/weather/"
+              target="_blank"
+            >mars.nasa.gov/insight/weather</a>. You can find out more about InSight on the
+            <a
+              href="https://en.wikipedia.org/wiki/InSight"
+              target="_blank"
+              rel="noopener"
+            >Wikipedia Entry</a> or watch it land on
+            <a
+              href="https://www.youtube.com/watch?v=C0lwFLPiZEE"
+              target="_blank"
+              rel="noopener"
+            >Youtube</a>.
+          </p>
+        </div>
+        <table class="table table-hover table-responsive-md">
+          <thead class="thead-dark">
             <tr>
               <th scope="col">Mars Sol Day</th>
               <th scope="col">Corresponding Earth Date</th>
@@ -116,6 +118,7 @@
         </table>
 
         <hr />
+        <p>As more data from a particular martian day is downlinked from the spacecraft (sometimes several days later), these values are recalculated, and consequently may change as more data is received on Earth.</p>
       </div>
     </div>
   </div>
