@@ -2,6 +2,7 @@
   <div class="home">
     <Homepage />
     <NASAapod />
+    <NASAinsight />
     <NASAcuriosity />
     <NASAopportunity />
     <ExternalLinks />
@@ -12,6 +13,7 @@
 // @ is an alias to /src
 import Homepage from "@/components/Homepage.vue";
 import NASAapod from "@/components/NASA-APOD.vue";
+import NASAinsight from "@/components/NASA-insight.vue";
 import NASAcuriosity from "@/components/NASA-curiosity.vue";
 import NASAopportunity from "@/components/NASA-opportunity.vue";
 import ExternalLinks from "@/components/ExternalLinks.vue";
@@ -21,6 +23,7 @@ export default {
   components: {
     Homepage,
     NASAapod,
+    NASAinsight,
     NASAcuriosity,
     NASAopportunity,
     ExternalLinks
