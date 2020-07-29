@@ -16,6 +16,7 @@
               data-netlify="true"
               data-netlify-recaptcha="true"
               netlify-honeypot="bot-field"
+              netlify
             >
               <div class="card border-primary rounded-0">
                 <div class="card-header p-0">
