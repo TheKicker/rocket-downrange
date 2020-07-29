@@ -65,6 +65,8 @@
                       <textarea
                         class="form-control"
                         placeholder="Write your message here!"
+                        name="message"
+                        id="message"
                         required
                       ></textarea>
                     </div>
