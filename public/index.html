@@ -35,9 +35,11 @@
 <body>
   <!-- A little help for the Netlify post-processing bots -->
   <form name="Contact" data-netlify="true" netlify-honeypot="bot-field" hidden method="POST">
-    <input type="text" id="name" name="name" />
-    <input type="text" id="subject" name="subject" />
-    <textarea name="message" id="message"></textarea>
+    <input type="text" id="name" name="name" required />
+    <input type="text" id="subject" name="subject" required />
+    <textarea name="message" id="message" required></textarea>
+    <p class="ohnohoney">Are you happy:<input name="bot-field"></p>
+    <button type="submit">submit</button>
   </form>
 
   <noscript>
