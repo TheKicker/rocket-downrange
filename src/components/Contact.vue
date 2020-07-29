@@ -83,11 +83,7 @@
                   </p>
 
                   <div class="text-center">
-                    <input
-                      type="submit"
-                      value="Submit"
-                      class="btn btn-block btn-outline-primary italic"
-                    />
+                    <button type="submit" class="btn btn-block btn-outline-primary italic">Submit</button>
                   </div>
                 </div>
               </div>
