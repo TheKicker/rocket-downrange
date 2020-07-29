@@ -42,10 +42,12 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+
 <hr>
 <div align="center">
 <h2>Developer Notes:</h2>
 </div>
+<hr>
 
 Remove the url # issue - simple fix is to add mode:`history` to the Vue Router. 
 ```
@@ -115,24 +117,18 @@ computed:{
 <img :src="secureURL" class="image-fluid"/>
 
 ```
-</br>
-<hr>
-</br>
 
-Added a form to the index page of the site for comments/suggestions, etc. Had an issue where the form wasnt working - per <a href="https://www.netlify.com/blog/2018/09/07/how-to-integrate-netlify-forms-in-a-vue-app/" target="_blank">this article</a> it's related to the default way Vue renders client side but the Netlify post processing bots expect HTML on site deploy.  Any <code> netlify </code> form attribute tags included in a Vue app would only be inserted into the DOM client-side, rather than in the HTML and thereby runs the risk of being totally overlooked by the build bots.
-
-```
-
-
-```
 
 </br>
 <hr>
 <div align="center">
 <h2>Known Issues (Work in Progress):</h2>
 </div>
+<hr>
 
 Having an issue on the 'Home' page of the site where an error in the console is logged for both Oppy and Curiousity API's.
+
+I think I have tracked this down to how I am calling bits of information out of the endpoints for the JSON response.  The browser does not like the [0] added to return the first photo/details from the array.  I cannot however remove the zero because then the entire component vanishes. 
 
 </br> For example, when I call <i> this.results.photos[0].img_src </i>
 
@@ -146,4 +142,32 @@ Having an issue on the 'Home' page of the site where an error in the console is 
 
 ```
 
-I think I have tracked this down to how I am calling bits of information out of the endpoints for the JSON response.  The browser does not like the [0] added to return the first photo/details from the array.  I cannot however remove the zero because then the entire component vanishes.    
+</br>
+<hr>
+</br>   
+
+Added a form to the index page of the site for comments/suggestions, etc. Had an issue where the form wasnt working - per <a href="https://www.netlify.com/blog/2018/09/07/how-to-integrate-netlify-forms-in-a-vue-app/" target="_blank">this article</a> it's related to the default way Vue renders client side but the Netlify post processing bots expect HTML on site deploy.  Any <code> netlify </code> form attribute tags included in a Vue app would only be inserted into the DOM client-side, rather than in the HTML and thereby runs the risk of being totally overlooked by the build bots.
+
+In the process of solving this by adding a static form for the Netlify build bots. The form now appears in the UI on Netlify's Dashboard but trying to submit the form results in a 404. 
+
+```
+// public/index.html
+
+<!-- A little help for the Netlify post-processing bots -->
+  <form method="POST" name="Contact" netlify-honeypot="bot-field" netlify hidden>
+    <input type="text" id="name" name="name" required />
+    <input type="text" id="subject" name="subject" required />
+    <textarea name="message" id="message" required></textarea>
+    <p class="ohnohoney">Are you happy:<input name="bot-field"></p>
+    <button type="submit" name="submit">submit</button>
+  </form>
+
+```
+
+```
+// @/src/components/Contact/vue
+
+<form>
+  Line 13-93
+</form>
+```
