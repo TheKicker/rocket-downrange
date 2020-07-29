@@ -115,6 +115,16 @@ computed:{
 <img :src="secureURL" class="image-fluid"/>
 
 ```
+</br>
+<hr>
+</br>
+
+Added a form to the index page of the site for comments/suggestions, etc. Had an issue where the form wasnt working - per <a href="https://www.netlify.com/blog/2018/09/07/how-to-integrate-netlify-forms-in-a-vue-app/" target="_blank">this article</a> it's related to the default way Vue renders client side but the Netlify post processing bots expect HTML on site deploy.  Any <code> netlify </code> form attribute tags included in a Vue app would only be inserted into the DOM client-side, rather than in the HTML and thereby runs the risk of being totally overlooked by the build bots.
+
+```
+
+
+```
 
 </br>
 <hr>
