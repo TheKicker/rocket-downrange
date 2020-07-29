@@ -34,10 +34,10 @@
 
 <body>
   <!-- A little help for the Netlify post-processing bots -->
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  <form name="Contact" data-netlify="true" netlify-honeypot="bot-field" hidden method="POST">
     <input type="text" id="name" name="name" />
     <input type="text" id="subject" name="subject" />
-    <textarea name="message" name="message" id="message"></textarea>
+    <textarea name="message" id="message"></textarea>
   </form>
 
   <noscript>
