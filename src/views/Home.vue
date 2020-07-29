@@ -6,6 +6,7 @@
     <NASAcuriosity />
     <NASAopportunity />
     <ExternalLinks />
+    <Contact />
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import NASAinsight from "@/components/NASA-insight.vue";
 import NASAcuriosity from "@/components/NASA-curiosity.vue";
 import NASAopportunity from "@/components/NASA-opportunity.vue";
 import ExternalLinks from "@/components/ExternalLinks.vue";
+import Contact from "@/components/Contact.vue";
 
 export default {
   name: "Home",
@@ -26,7 +28,8 @@ export default {
     NASAinsight,
     NASAcuriosity,
     NASAopportunity,
-    ExternalLinks
+    ExternalLinks,
+    Contact
   },
   metaInfo: {
     title: "Rocket Downrange | Home",

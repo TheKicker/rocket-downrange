@@ -4,6 +4,7 @@
       <div class="position-relative overflow-hidden text-center bg-primary text-white">
         <div class="col-md-6 p-lg-5 mx-auto my-5">
           <h2 class="font-weight-normal text-white">About Rocket Downrange</h2>
+          <hr color="white" />
           <p
             class="lead font-weight-normal"
           >Breaking boundaries, setting standards and transforming humanity for the better. Space has always been the final frontier that keeps on giving. This site serves to be a side project that informs and inspires the next generation of explorers.</p>
