@@ -11,19 +11,8 @@
           <br />
           <div class="my-4">
             <!--Form with header-->
-            <form
-              method="POST"
-              data-netlify="true"
-              name="Contact"
-              netlify-honeypot="bot-field"
-              netlify
-            >
+            <form method="POST" name="Contact" netlify-honeypot="bot-field" netlify>
               <div class="card border-primary rounded-0">
-                <div class="card-header p-0">
-                  <div class="bg-secondary text-white text-center py-2">
-                    <p class="m-0"></p>
-                  </div>
-                </div>
                 <div class="card-body p-3">
                   <!--Body-->
                   <div class="form-group">

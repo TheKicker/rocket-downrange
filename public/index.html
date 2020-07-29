@@ -33,22 +33,22 @@
 </head>
 
 <body>
+  <noscript>
+    <strong>We're sorry but Rocket Downrange doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+
+  <!-- built files will be auto injected -->
+  <div id="app"></div>
+
   <!-- A little help for the Netlify post-processing bots -->
-  <form name="Contact" data-netlify="true" netlify-honeypot="bot-field" hidden method="POST" netlify>
+  <form method="POST" name="Contact" netlify-honeypot="bot-field" netlify hidden>
     <input type="text" id="name" name="name" required />
     <input type="text" id="subject" name="subject" required />
     <textarea name="message" id="message" required></textarea>
     <p class="ohnohoney">Are you happy:<input name="bot-field"></p>
     <button type="submit" name="submit">submit</button>
   </form>
-
-  <noscript>
-    <strong>We're sorry but Rocket Downrange doesn't work properly without JavaScript enabled.
-      Please enable it to continue.</strong>
-  </noscript>
-  <div id="app"></div>
-  <!-- built files will be auto injected -->
-  <!-- Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157069745-3"></script>
