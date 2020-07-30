@@ -76,7 +76,7 @@
                   <p class="ohnohoney">
                     <label>
                       Are you happy:
-                      <input type="hidden" name="bot-field" value="Contact" />
+                      <input type="hidden" name="form-name" value="Contact" />
                     </label>
                   </p>
 
