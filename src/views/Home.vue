@@ -14,7 +14,7 @@
 <script>
 // @ is an alias to /src
 import Homepage from "@/components/Homepage.vue";
-import NASAperseverance from "@/components/NASAperseverance.vue";
+import NASAperseverance from "@/components/NASA-perseverance.vue";
 import NASAapod from "@/components/NASA-APOD.vue";
 import NASAinsight from "@/components/NASA-insight.vue";
 import NASAcuriosity from "@/components/NASA-curiosity.vue";
