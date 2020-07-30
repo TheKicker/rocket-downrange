@@ -8,6 +8,12 @@
           <p
             class="lead font-weight-normal"
           >If you love the site or think something needs changed - we want to know! Questions, comments, suggestions and more can be sent below. If you know of any free and interesting API's we should include in the site - include information about where to find necessary documentation and we'll get to it!</p>
+          <div>
+            <hr color="white" />
+            <p
+              class="lead font-weight-bold text-danger"
+            >NOTE: Contact Form does not work yet - fixing bugs and it will be operational soon! Thank you for your patience!</p>
+          </div>
           <br />
           <div class="my-4">
             <!--Form with header-->

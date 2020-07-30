@@ -7,14 +7,26 @@
         <h3 class="text-center my-4">Perseverance : Countdown to Mars</h3>
         <div class="row">
           <div class="mx-auto">
-            <a href="https://www.youtube.com/watch?v=JIB3JbIIbPU" target="_blank">
-              <button class="btn btn-block btn-outline-primary italic">Watch Now</button>
-            </a>
+            <img
+              src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/50164230653_d9cf74d82d_k_0.jpg"
+            />
           </div>
         </div>
         <div class="row container mx-auto">
-          <div class="my-4">
-            <div class="mx-auto my-2"></div>
+          <div class="my-4 row">
+            <div class="p-4 row mx-auto">
+              <a href="https://www.youtube.com/watch?v=JIB3JbIIbPU" target="_blank">
+                <button class="btn btn-block btn-outline-primary italic">Watch Now</button>
+              </a>
+            </div>
+            <div class="p-4 row mx-auto">
+              <a
+                href="https://www.nasa.gov/sites/default/files/atoms/files/mars_2020_launch_press_kit.pdf"
+                target="_blank"
+              >
+                <button class="btn btn-block btn-outline-primary italic">Press Kit</button>
+              </a>
+            </div>
           </div>
           <hr />
         </div>
