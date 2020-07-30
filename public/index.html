@@ -42,11 +42,11 @@
   <div id="app"></div>
 
   <!-- A little help for the Netlify post-processing bots -->
-  <form method="POST" name="Contact" netlify-honeypot="bot-field" netlify hidden>
+  <form method="POST" name="Contact" netlify-honeypot="bot-field" data-netlify="true" hidden>
     <input type="text" id="name" name="name" required />
     <input type="text" id="subject" name="subject" required />
     <textarea name="message" id="message" required></textarea>
-    <p class="ohnohoney">Are you happy:<input name="bot-field"></p>
+    <p class="ohnohoney">Are you happy:<input type="hidden" name="form-name" value="Contact" /></p>
     <button type="submit" name="submit">submit</button>
   </form>
 

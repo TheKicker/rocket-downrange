@@ -17,7 +17,7 @@
           <br />
           <div class="my-4">
             <!--Form with header-->
-            <form method="POST" name="Contact" netlify-honeypot="bot-field" netlify>
+            <form method="POST" name="Contact" netlify-honeypot="bot-field" data-netlify="true">
               <div class="card border-primary rounded-0">
                 <div class="card-body p-3">
                   <!--Body-->
@@ -76,7 +76,7 @@
                   <p class="ohnohoney">
                     <label>
                       Are you happy:
-                      <input name="bot-field" />
+                      <input type="hidden" name="form-name" value="Contact" />
                     </label>
                   </p>
 
