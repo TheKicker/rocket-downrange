@@ -119,6 +119,32 @@ computed:{
 ```
 
 
+Added a form to the index page of the site for comments/suggestions, etc. Had an issue where the form wasnt working - per <a href="https://www.netlify.com/blog/2018/09/07/how-to-integrate-netlify-forms-in-a-vue-app/" target="_blank">this article</a> it's related to the default way Vue renders client side but the Netlify post processing bots expect HTML on site deploy.  Any <code> netlify </code> form attribute tags included in a Vue app would only be inserted into the DOM client-side, rather than in the HTML and thereby runs the risk of being totally overlooked by the build bots.
+
+In the process of solving this by adding a static form for the Netlify build bots. Form does work - honestly no idea what I did but I think the issue was related to my honey-pot.  Rewrote that section and it became functional.  
+
+```
+// public/index.html
+
+ <!-- A little help for the Netlify post-processing bots -->
+  <form method="POST" name="Contact" netlify-honeypot="bot-field" data-netlify="true" hidden>
+    <input type="text" id="name" name="name" required />
+    <input type="text" id="subject" name="subject" required />
+    <textarea name="message" id="message" required></textarea>
+    <p class="ohnohoney">Are you happy:<input type="hidden" name="bot-field" value="Contact" /></p>
+    <button type="submit" name="submit">submit</button>
+  </form>
+
+```
+
+```
+// @/src/components/Contact/vue
+
+<form>
+  Line 13-93
+</form>
+```
+
 </br>
 <hr>
 <div align="center">
@@ -143,31 +169,3 @@ I think I have tracked this down to how I am calling bits of information out of 
 ```
 
 </br>
-<hr>
-</br>   
-
-Added a form to the index page of the site for comments/suggestions, etc. Had an issue where the form wasnt working - per <a href="https://www.netlify.com/blog/2018/09/07/how-to-integrate-netlify-forms-in-a-vue-app/" target="_blank">this article</a> it's related to the default way Vue renders client side but the Netlify post processing bots expect HTML on site deploy.  Any <code> netlify </code> form attribute tags included in a Vue app would only be inserted into the DOM client-side, rather than in the HTML and thereby runs the risk of being totally overlooked by the build bots.
-
-In the process of solving this by adding a static form for the Netlify build bots. The form now appears in the UI on Netlify's Dashboard but trying to submit the form results in a 404. 
-
-```
-// public/index.html
-
-<!-- A little help for the Netlify post-processing bots -->
-  <form method="POST" name="Contact" netlify-honeypot="bot-field" netlify hidden>
-    <input type="text" id="name" name="name" required />
-    <input type="text" id="subject" name="subject" required />
-    <textarea name="message" id="message" required></textarea>
-    <p class="ohnohoney">Are you happy:<input name="bot-field"></p>
-    <button type="submit" name="submit">submit</button>
-  </form>
-
-```
-
-```
-// @/src/components/Contact/vue
-
-<form>
-  Line 13-93
-</form>
-```
