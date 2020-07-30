@@ -2,13 +2,15 @@
   <div class="Perseverance my-4 mx-4">
     <div class="card container">
       <div class="card-body p-3 p-md-6 m-md-3">
-        <h5 class="text-left text-secondary">NASA Launch:</h5>
+        <h5 class="text-left text-secondary">NASA Special Event:</h5>
         <hr />
         <h3 class="text-center my-4">Perseverance : Countdown to Mars</h3>
         <div class="row">
           <div class="mx-auto">
             <img
               src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/50164230653_d9cf74d82d_k_0.jpg"
+              class="img-fluid"
+              style="max-height: 75vh;"
             />
           </div>
         </div>
