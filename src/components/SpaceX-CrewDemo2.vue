@@ -37,11 +37,11 @@
 </template>
 
 <script>
-console.log("SpaceX - Special Active");
+console.log("SpaceX Crew Dragon 2 - Active");
 window.axios = require("axios");
 
 export default {
-  name: "SPACEXspecial",
+  name: "SPACEXcrewdemo2",
   data() {
     return {
       results: []
