@@ -6,7 +6,7 @@
         <hr />
         <h3
           class="text-center my-4"
-        >Elysium Planitia, Mars - {{Object.values(results)[0].Season}} Season</h3>
+        >Elysium Planitia, Mars - {{Object.values(this.results)[0].Season}} Season</h3>
         <div class="container">
           <iframe
             src="https://mars.nasa.gov/embed/24729/"
@@ -47,73 +47,73 @@
             <!-- Section -->
             <tr>
               <th scope="row">
-                <strong>{{Object.keys(results)[0]}}</strong>
+                <strong>{{Object.keys(this.results)[0]}}</strong>
               </th>
-              <td>{{new Date(Object.values(results)[0].First_UTC).toDateString()}}</td>
-              <td>{{(celToFah(Object.values(results)[0].AT.av)).toFixed(2)}} ºF / {{(Object.values(results)[0].AT.av).toFixed(2)}} ºC</td>
-              <td>{{(Object.values(results)[0].PRE.av).toFixed(2)}} Pascals</td>
-              <td>{{(Object.values(results)[0].HWS.av).toFixed(2)}} m/s {{Object.values(results)[0].WD.most_common.compass_point}}</td>
+              <td>{{new Date(Object.values(this.results)[0].First_UTC).toDateString()}}</td>
+              <td>{{(celToFah(Object.values(this.results)[0].AT.av)).toFixed(2)}} ºF / {{(Object.values(this.results)[0].AT.av).toFixed(2)}} ºC</td>
+              <td>{{(Object.values(this.results)[0].PRE.av).toFixed(2)}} Pascals</td>
+              <td>{{(Object.values(this.results)[0].HWS.av).toFixed(2)}} m/s {{Object.values(this.results)[0].WD.most_common.compass_point}}</td>
             </tr>
             <!-- Section -->
             <tr>
               <th scope="row">
-                <strong>{{Object.keys(results)[1]}}</strong>
+                <strong>{{Object.keys(this.results)[1]}}</strong>
               </th>
-              <td>{{new Date(Object.values(results)[1].First_UTC).toDateString()}}</td>
-              <td>{{(celToFah(Object.values(results)[1].AT.av)).toFixed(2)}} ºF / {{(Object.values(results)[1].AT.av).toFixed(2)}} ºC</td>
-              <td>{{(Object.values(results)[1].PRE.av).toFixed(2)}} Pascals</td>
-              <td>{{(Object.values(results)[1].HWS.av).toFixed(2)}} m/s {{Object.values(results)[1].WD.most_common.compass_point}}</td>
+              <td>{{new Date(Object.values(this.results)[1].First_UTC).toDateString()}}</td>
+              <td>{{(celToFah(Object.values(this.results)[1].AT.av)).toFixed(2)}} ºF / {{(Object.values(this.results)[1].AT.av).toFixed(2)}} ºC</td>
+              <td>{{(Object.values(this.results)[1].PRE.av).toFixed(2)}} Pascals</td>
+              <td>{{(Object.values(this.results)[1].HWS.av).toFixed(2)}} m/s {{Object.values(this.results)[1].WD.most_common.compass_point}}</td>
             </tr>
             <!-- Section -->
             <tr>
               <th scope="row">
-                <strong>{{Object.keys(results)[2]}}</strong>
+                <strong>{{Object.keys(this.results)[2]}}</strong>
               </th>
-              <td>{{new Date(Object.values(results)[2].First_UTC).toDateString()}}</td>
-              <td>{{(celToFah(Object.values(results)[2].AT.av)).toFixed(2)}} ºF / {{(Object.values(results)[2].AT.av).toFixed(2)}} ºC</td>
-              <td>{{(Object.values(results)[2].PRE.av).toFixed(2)}} Pascals</td>
-              <td>{{(Object.values(results)[2].HWS.av).toFixed(2)}} m/s {{Object.values(results)[2].WD.most_common.compass_point}}</td>
+              <td>{{new Date(Object.values(this.results)[2].First_UTC).toDateString()}}</td>
+              <td>{{(celToFah(Object.values(this.results)[2].AT.av)).toFixed(2)}} ºF / {{(Object.values(this.results)[2].AT.av).toFixed(2)}} ºC</td>
+              <td>{{(Object.values(this.results)[2].PRE.av).toFixed(2)}} Pascals</td>
+              <td>{{(Object.values(this.results)[2].HWS.av).toFixed(2)}} m/s {{Object.values(this.results)[2].WD.most_common.compass_point}}</td>
             </tr>
             <!-- Section -->
             <tr>
               <th scope="row">
-                <strong>{{Object.keys(results)[3]}}</strong>
+                <strong>{{Object.keys(this.results)[3]}}</strong>
               </th>
-              <td>{{new Date(Object.values(results)[3].First_UTC).toDateString()}}</td>
-              <td>{{(celToFah(Object.values(results)[3].AT.av)).toFixed(2)}} ºF / {{(Object.values(results)[3].AT.av).toFixed(2)}} ºC</td>
-              <td>{{(Object.values(results)[3].PRE.av).toFixed(2)}} Pascals</td>
-              <td>{{(Object.values(results)[3].HWS.av).toFixed(2)}} m/s {{Object.values(results)[3].WD.most_common.compass_point}}</td>
+              <td>{{new Date(Object.values(this.results)[3].First_UTC).toDateString()}}</td>
+              <td>{{(celToFah(Object.values(this.results)[3].AT.av)).toFixed(2)}} ºF / {{(Object.values(this.results)[3].AT.av).toFixed(2)}} ºC</td>
+              <td>{{(Object.values(this.results)[3].PRE.av).toFixed(2)}} Pascals</td>
+              <td>{{(Object.values(this.results)[3].HWS.av).toFixed(2)}} m/s {{Object.values(this.results)[3].WD.most_common.compass_point}}</td>
             </tr>
             <!-- Section -->
             <tr>
               <th scope="row">
-                <strong>{{Object.keys(results)[4]}}</strong>
+                <strong>{{Object.keys(this.results)[4]}}</strong>
               </th>
-              <td>{{new Date(Object.values(results)[4].First_UTC).toDateString()}}</td>
-              <td>{{(celToFah(Object.values(results)[4].AT.av)).toFixed(2)}} ºF / {{(Object.values(results)[4].AT.av).toFixed(2)}} ºC</td>
-              <td>{{(Object.values(results)[4].PRE.av).toFixed(2)}} Pascals</td>
-              <td>{{(Object.values(results)[4].HWS.av).toFixed(2)}} m/s {{Object.values(results)[4].WD.most_common.compass_point}}</td>
+              <td>{{new Date(Object.values(this.results)[4].First_UTC).toDateString()}}</td>
+              <td>{{(celToFah(Object.values(this.results)[4].AT.av)).toFixed(2)}} ºF / {{(Object.values(this.results)[4].AT.av).toFixed(2)}} ºC</td>
+              <td>{{(Object.values(this.results)[4].PRE.av).toFixed(2)}} Pascals</td>
+              <td>{{(Object.values(this.results)[4].HWS.av).toFixed(2)}} m/s {{Object.values(this.results)[4].WD.most_common.compass_point}}</td>
             </tr>
             <!-- Section -->
             <tr>
               <th scope="row">
-                <strong>{{Object.keys(results)[5]}}</strong>
+                <strong>{{Object.keys(this.results)[5]}}</strong>
               </th>
-              <td>{{new Date(Object.values(results)[5].First_UTC).toDateString()}}</td>
-              <td>{{(celToFah(Object.values(results)[5].AT.av)).toFixed(2)}} ºF / {{(Object.values(results)[5].AT.av).toFixed(2)}} ºC</td>
-              <td>{{(Object.values(results)[5].PRE.av).toFixed(2)}} Pascals</td>
-              <td>{{(Object.values(results)[5].HWS.av).toFixed(2)}} m/s {{Object.values(results)[5].WD.most_common.compass_point}}</td>
+              <td>{{new Date(Object.values(this.results)[5].First_UTC).toDateString()}}</td>
+              <td>{{(celToFah(Object.values(this.results)[5].AT.av)).toFixed(2)}} ºF / {{(Object.values(this.results)[5].AT.av).toFixed(2)}} ºC</td>
+              <td>{{(Object.values(this.results)[5].PRE.av).toFixed(2)}} Pascals</td>
+              <td>{{(Object.values(this.results)[5].HWS.av).toFixed(2)}} m/s {{Object.values(this.results)[5].WD.most_common.compass_point}}</td>
             </tr>
             <!-- Section -->
-            <tr>
+            <!-- <tr>
               <th scope="row">
-                <strong>{{Object.keys(results)[6]}}</strong>
+                <strong>{{Object.keys(this.results)[6]}}</strong>
               </th>
-              <td>{{new Date(Object.values(results)[6].First_UTC).toDateString()}}</td>
-              <td>{{(celToFah(Object.values(results)[6].AT.av)).toFixed(2)}} ºF / {{(Object.values(results)[6].AT.av).toFixed(2)}} ºC</td>
-              <td>{{(Object.values(results)[6].PRE.av).toFixed(2)}} Pascals</td>
-              <td>{{(Object.values(results)[6].HWS.av).toFixed(2)}} m/s {{Object.values(results)[6].WD.most_common.compass_point}}</td>
-            </tr>
+              <td>{{new Date(Object.values(this.results)[6].First_UTC).toDateString()}}</td>
+              <td>{{(celToFah(Object.values(this.results)[6].AT.av)).toFixed(2)}} ºF / {{(Object.values(this.results)[6].AT.av).toFixed(2)}} ºC</td>
+              <td>{{(Object.values(this.results)[6].PRE.av).toFixed(2)}} Pascals</td>
+              <td>{{(Object.values(this.results)[6].HWS.av).toFixed(2)}} m/s {{Object.values(this.results)[6].WD.most_common.compass_point}}</td>
+            </tr>-->
           </tbody>
         </table>
 
@@ -137,6 +137,7 @@ export default {
   },
   mounted() {
     var url = `https://api.nasa.gov/insight_weather/?api_key=${api_key}&feedtype=json&ver=1.0`;
+    // var url = "https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0"
     console.log("NASA Insight - " + url);
     window.axios
       .get(url)
