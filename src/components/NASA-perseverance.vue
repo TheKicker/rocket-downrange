@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="row my-2">
+          <div class="row my-3">
             <p>
               NASA’s next mission to Mars — the Mars 2020 Perseverance rover mission — was launched from Cape
               Canaveral Air Force Station on July 30, 2020. Currently in transit, it will land in Jezero Crater on the Red Planet on Feb.

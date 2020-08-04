@@ -7,11 +7,7 @@
         <h3 class="text-center my-4">NASA & SpaceX - Crew Dragon Demo-2 Mission</h3>
         <div class="row">
           <div class="mx-auto">
-            <img
-              src="https://www.thesun.ie/wp-content/uploads/sites/3/2020/05/nasa-spacex-launch-1-1.jpg?strip=all&quality=100&w=1200&h=800&crop=1"
-              class="img-fluid"
-              style="max-height: 75vh;"
-            />
+            <img src="../assets/crew-demo-2.png" class="img-fluid" style="max-height: 65vh;" />
           </div>
         </div>
         <div class="container">

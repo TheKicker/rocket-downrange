@@ -2,38 +2,44 @@
   <div class="Insight my-4 mx-4">
     <div class="card container">
       <div class="card-body p-3 p-md-6 m-md-3">
-        <h5 class="text-left text-secondary">NASA's Insight Lander - Historical Weather Forecast:</h5>
+        <h5
+          class="text-left text-secondary"
+        >NASA's Insight Lander - 5 Day Historical Weather Report:</h5>
         <hr />
         <h3
           class="text-center my-4"
         >Elysium Planitia, Mars - {{Object.values(this.results)[0].Season}} Season</h3>
         <div class="container">
-          <iframe
-            src="https://mars.nasa.gov/embed/24729/"
-            width="100%"
-            height="400"
-            scrolling="no"
-            frameborder="0"
-          ></iframe>
-          <p>
-            NASA’s InSight Mars lander takes continuous weather measurements on the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator. Summaries of this data are available at
+          <div class="text-center">
             <a
-              href="https://mars.nasa.gov/insight/weather/"
-              target="_blank"
-            >mars.nasa.gov/insight/weather</a>. You can find out more about InSight on the
-            <a
-              href="https://en.wikipedia.org/wiki/InSight"
+              href="https://mars.nasa.gov/resources/24729/map-of-nasas-mars-landing-sites/"
               target="_blank"
               rel="noopener"
-            >Wikipedia Entry</a> or watch it land on
-            <a
-              href="https://www.youtube.com/watch?v=C0lwFLPiZEE"
-              target="_blank"
-              rel="noopener"
-            >Youtube</a>.
-          </p>
+            >
+              <img src="../assets/mars.jpg" class="rounded img-fluid" />
+            </a>
+          </div>
+          <div class="row my-3">
+            <p>
+              NASA’s InSight Mars lander takes continuous weather measurements on the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator. Summaries of this data are available at
+              <a
+                href="https://mars.nasa.gov/insight/weather/"
+                target="_blank"
+              >mars.nasa.gov/insight/weather</a>. You can find out more about InSight on the
+              <a
+                href="https://en.wikipedia.org/wiki/InSight"
+                target="_blank"
+                rel="noopener"
+              >Wikipedia Entry</a> or watch it land on
+              <a
+                href="https://www.youtube.com/watch?v=C0lwFLPiZEE"
+                target="_blank"
+                rel="noopener"
+              >Youtube</a>.
+            </p>
+          </div>
         </div>
-        <table class="table table-hover table-responsive-md">
+        <table class="table table-hover table-responsive-lg">
           <thead class="thead-dark">
             <tr>
               <th scope="col">Mars Sol Day</th>
@@ -45,7 +51,7 @@
           </thead>
           <tbody>
             <!-- Section -->
-            <tr>
+            <!-- <tr>
               <th scope="row">
                 <strong>{{Object.keys(this.results)[0]}}</strong>
               </th>
@@ -53,7 +59,7 @@
               <td>{{(celToFah(Object.values(this.results)[0].AT.av)).toFixed(2)}} ºF / {{(Object.values(this.results)[0].AT.av).toFixed(2)}} ºC</td>
               <td>{{(Object.values(this.results)[0].PRE.av).toFixed(2)}} Pascals</td>
               <td>{{(Object.values(this.results)[0].HWS.av).toFixed(2)}} m/s {{Object.values(this.results)[0].WD.most_common.compass_point}}</td>
-            </tr>
+            </tr>-->
             <!-- Section -->
             <tr>
               <th scope="row">
