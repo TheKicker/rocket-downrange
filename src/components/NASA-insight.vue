@@ -128,18 +128,16 @@
 <script>
 const api_key = "PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo";
 window.axios = require("axios");
-
 export default {
   name: "NASAinsight",
   data() {
     return {
-      results: []
+      results: ""
     };
   },
   mounted() {
     var url = `https://api.nasa.gov/insight_weather/?api_key=${api_key}&feedtype=json&ver=1.0`;
     console.log("NASA Insight - " + url);
-
     window.axios
       .get(url)
       .then(response => {

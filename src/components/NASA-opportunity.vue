@@ -52,7 +52,7 @@ export default {
   name: "NASAopportunity",
   data() {
     return {
-      results: []
+      results: ""
     };
   },
   mounted() {

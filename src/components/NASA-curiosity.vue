@@ -56,7 +56,7 @@ export default {
   name: "NASAcuriosity",
   data() {
     return {
-      results: []
+      results: ""
     };
   },
   mounted() {
