@@ -44,12 +44,12 @@ export default {
       {
         name: "description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more! "
+          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Featuring data from NASA, SpaceX, Rocket Lab, and Mars via Opportunity, Curiousity, Insight, and hopefully Perserverance! Built with Vue.JS, Netlify and more! "
       },
       {
         name: "keywords",
         content:
-          "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Launch Info, Space Industry"
+          "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Opportunity, Curiousity, Insight, Perserverance, Rovers, Mars, APOD"
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange" },
