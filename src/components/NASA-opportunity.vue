@@ -12,7 +12,7 @@
                 :src="secureURL"
                 class="img-fluid"
                 style="max-height: 75vh;"
-                alt="An error occured, this media from NASA might be a Youtube video rather than picture. "
+                alt="The NASA Opportunity Rover Picture of the Day, served directly from Mars! If this picture did not load - then an error occured, this media from NASA might be a Youtube video rather than picture. "
               />
             </a>
           </div>

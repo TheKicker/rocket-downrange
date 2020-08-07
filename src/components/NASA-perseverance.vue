@@ -11,6 +11,7 @@
               src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/50164230653_d9cf74d82d_k_0.jpg"
               class="img-fluid"
               style="max-height: 75vh;"
+              alt="NASA Special Event - the launch of their Perserverance Rover aboard a ULA Atlas V Rocket!  Currently in transit to Mars and expected to land in February 2021. If this picture did not load - then an error occured, this media from NASA might be a Youtube video rather than picture. "
             />
           </div>
         </div>

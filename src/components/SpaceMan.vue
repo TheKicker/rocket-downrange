@@ -15,28 +15,28 @@
               <img
                 :src="results.flickr_images[0]"
                 class="d-block w-100"
-                alt="Starman in front of a gorgeous shot of the Earth."
+                alt="SpaceX's Starman inside his cherry red Tesla Roadster - in front of a gorgeous shot of the Earth."
               />
             </div>
             <div class="carousel-item">
               <img
                 :src="results.flickr_images[1]"
                 class="d-block w-100"
-                alt="Perspective from just behind Starman looking towards the Earth featuring a Dont Panic hud on the car."
+                alt="SpaceX's Starman inside his cherry red Tesla Roadster - Perspective from just behind Starman looking towards the Earth featuring a Dont Panic hud on the car."
               />
             </div>
             <div class="carousel-item">
               <img
                 :src="results.flickr_images[2]"
                 class="d-block w-100"
-                alt="Perspective of the hood of the car looking back on Starman and Earth."
+                alt="SpaceX's Starman inside his cherry red Tesla Roadster - Perspective of the hood of the car looking back on Starman and Earth."
               />
             </div>
             <div class="carousel-item">
               <img
                 :src="results.flickr_images[3]"
                 class="d-block w-100"
-                alt="Perspective of the hood of the car looking back on Starman and Earth."
+                alt="SpaceX's Starman inside his cherry red Tesla Roadster - Perspective of the hood of the car looking back on Starman and Earth."
               />
             </div>
           </div>

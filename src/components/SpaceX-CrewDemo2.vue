@@ -7,7 +7,12 @@
         <h3 class="text-center my-4">NASA & SpaceX - Crew Dragon Demo-2 Mission</h3>
         <div class="row">
           <div class="mx-auto">
-            <img src="../assets/crew-demo-2.png" class="img-fluid" style="max-height: 65vh;" />
+            <img
+              src="../assets/crew-demo-2.png"
+              class="img-fluid"
+              style="max-height: 65vh;"
+              alt="SpaceX Special Event - the Crew Demo 2 Mission is a joint mission between SpaceX and NASA to get Bob Behnken and Douglas Hurley to the International Space Station. If this picture did not load - then an error occured, this media from NASA might be a Youtube video rather than picture. "
+            />
           </div>
         </div>
         <div class="container">

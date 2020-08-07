@@ -13,7 +13,7 @@
                 :src="results2.url"
                 class="img-fluid"
                 style="max-height: 75vh;"
-                alt="If this picture did not load - then an error occured, this media from NASA might be a Youtube video rather than picture. "
+                alt="The NASA Astronomy Picture of the Day! If this picture did not load - then an error occured, this media from NASA might be a Youtube video rather than picture. "
               />
             </a>
             <a v-else :href="results.hdurl" target="_blank" rel="noopener">
@@ -21,7 +21,7 @@
                 :src="results.url"
                 class="img-fluid"
                 style="max-height: 75vh;"
-                alt="If this picture did not load - then an error occured, this media from NASA might be a Youtube video rather than picture. "
+                alt="The NASA Astronomy Picture of the Day! If this picture did not load - then an error occured, this media from NASA might be a Youtube video rather than picture. "
               />
             </a>
           </div>

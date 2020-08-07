@@ -16,7 +16,11 @@
               target="_blank"
               rel="noopener"
             >
-              <img src="../assets/mars.jpg" class="rounded img-fluid" />
+              <img
+                src="../assets/mars.jpg"
+                class="rounded img-fluid"
+                alt="Historical Forecast of Martian Weather as measured by NASA's Insight Lander, served directly from Mars! If this picture did not load - then an error occured, this media from NASA might be a Youtube video rather than picture. "
+              />
             </a>
           </div>
           <div class="row my-3">

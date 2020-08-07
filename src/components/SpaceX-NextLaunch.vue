@@ -13,6 +13,7 @@
               v-if="this.results.links.mission_patch === null"
               src="https://www.freeiconspng.com/uploads/no-image-icon-6.png"
               class="mission-patch"
+              alt="SpaceX Upcoming Launch Mission Patch"
             />
             <img v-else :src="this.results.links.mission_patch" class="mission-patch" />
           </div>
