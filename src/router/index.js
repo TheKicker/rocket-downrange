@@ -29,6 +29,11 @@ const routes = [
 		component: () => import(/* webpackChunkName: "Rocket-Lab" */ '../views/Rocket-Lab.vue')
 	},
 	{
+		path: '/test',
+		name: 'Test',
+		component: () => import(/* webpackChunkName: "Test" */ '../views/Test.vue')
+	},
+	{
 		path: '/*',
 		name: 'Catch All',
 		component: Home

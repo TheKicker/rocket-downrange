@@ -45,7 +45,7 @@
 var oneWeekAgo = new Date();
 oneWeekAgo.setDate(oneWeekAgo.getDate() - 9);
 const lastYear = oneWeekAgo.getFullYear();
-const lastMonth = oneWeekAgo.getMonth();
+const lastMonth = oneWeekAgo.getMonth() + 1;
 const lastDay = oneWeekAgo.getDate();
 
 const secure = "";
@@ -56,7 +56,7 @@ export default {
   name: "NASAcuriosity",
   data() {
     return {
-      results: ""
+      results: {}
     };
   },
   mounted() {
