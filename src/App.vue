@@ -150,8 +150,8 @@ export default {
     }
   },
   methods: {
-    persist() {
-      localStorage.username = this.username;
+    persist(username) {
+      localStorage.username = username;
     },
     validate() {
       // Regex validation
@@ -163,7 +163,7 @@ export default {
       } else {
         console.log("Valid name given, saved. ");
         return this.username;
-        persist();
+        persist(this.username);
       }
     }
   }
