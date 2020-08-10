@@ -16,7 +16,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav mr-auto text-left">
             <li class="nav-item">
               <router-link class="nav-link" to="/">Home</router-link>
             </li>
@@ -35,14 +35,18 @@
               >Github</a>
             </li>
           </ul>
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-toggle="modal"
-            data-target="#exampleModal"
-          >
-            <h6 class="nav-item my-2 my-lg-0 text-white text-center">{{ getGreeting }}, {{username}}</h6>
-          </button>
+          <div class="mx-auto text-center">
+            <button
+              type="button"
+              class="btn btn-primary display-block"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              <h6
+                class="nav-item my-2 my-lg-0 text-white text-center"
+              >{{ getGreeting }}, {{username}}</h6>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
