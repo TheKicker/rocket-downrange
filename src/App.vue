@@ -101,12 +101,17 @@
               class="text-white underline"
               href="https://cavlemasters.com"
               target="_blank"
+              rel="noopener"
             >{{copy}} &copy;</a>
             <br />API & all mission data belongs to the corresponding company.
           </p>
-          <p
+          <a
+            class="text-white underline"
+            href="https://cavlemasters.com"
+            target="blank"
+            rel="noopener"
             style="font-family: 'Share Tech Mono', monospace; text-transform: lowercase;"
-          >{{trademark}}</p>
+          >{{trademark}}</a>
         </div>
       </div>
     </div>

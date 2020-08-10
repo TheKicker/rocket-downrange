@@ -8,7 +8,7 @@
         <hr />
         <h3
           class="text-center my-4"
-        >Elysium Planitia, Mars - {{Object.values(this.results)[0].Season}} Season</h3>
+        >Experience {{Object.values(this.results)[0].Season}} at Elysium Planitia on Mars</h3>
         <div class="container">
           <div class="text-center">
             <a
@@ -25,7 +25,7 @@
           </div>
           <div class="row my-3">
             <p>
-              NASA’s InSight Mars lander takes continuous weather measurements on the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator. Summaries of this data are available at
+              NASA’s InSight Mars lander takes continuous weather measurements on the surface of Mars at Elysium Planitia - a flat, smooth plain near Mars’ equator. Summaries of this data are available at
               <a
                 href="https://mars.nasa.gov/insight/weather/"
                 target="_blank"
@@ -41,14 +41,15 @@
                 rel="noopener"
               >Youtube</a>.
             </p>
+            <p>Note: Sol is the primary timekeeping unit of Mars - one sol is equal to 24 hours, 29 minutes and 35 seconds. It is the apparent interval between two successive returns of the Sun to the same meridian as seen by an observer of Mars. This method of timekeeping for the Martian surface was devised by NASA in 1976 for the Viking Lander Missions and continues to be the standard today.</p>
           </div>
         </div>
         <table class="table table-hover table-responsive-lg">
           <thead class="thead-dark">
             <tr>
-              <th scope="col">Mars Sol Day</th>
+              <th scope="col">Mars Sol</th>
               <th scope="col">Corresponding Earth Date</th>
-              <th scope="col">Atmospheric Temperature (Avg)</th>
+              <th scope="col">Temperature (Average)</th>
               <th scope="col">Atmospheric Pressure (Avg)</th>
               <th scope="col">Horizontal Wind Speed (Avg)</th>
             </tr>

@@ -1,8 +1,10 @@
 <template>
-  <div class="Roadster">
-    <div class="row">
-      <div class="col-sm-12 mx-auto text-center bg-secondary mt-5 p-5 rounded">
-        <h1 id="roadster-name">{{results.name}}</h1>
+  <div class="Roadster my-4 mx-4">
+    <div class="card container-fluid">
+      <div class="card-body p-3 p-md-6 m-md-3">
+        <h5 class="text-left text-secondary">SpaceX Special Event (2018):</h5>
+        <hr />
+        <h3 id="roadster-name" class="text-center my-4">{{results.name}} / Falcon Heavy Demo</h3>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -59,15 +61,19 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <div class="container-fluid bg-light text-dark p-4">
-          <div class="card-body text-left">
+        <div class="text-dark p-4">
+          <div class="text-left">
             <h5 class="card-title">Date: {{(new Date(results.launch_date_utc)).toDateString()}}</h5>
             <p>{{results.details}}</p>
           </div>
+          <hr />
           <div class="text-left px-4">
             <div class="row my-2">
-              <div class="col">Launch Mass: {{(results.launch_mass_lbs).toFixed(2)}} lbs</div>
-              <div class="col">Orbit Type: {{results.orbit_type}}</div>
+              <div class="col">
+                Launch Mass:
+                {{(results.launch_mass_lbs).toFixed(2)}} lbs
+              </div>
+              <div class="col text-capitalize">Orbit Type: {{results.orbit_type}}</div>
             </div>
             <div class="row my-2">
               <div class="col">Apoapsis: {{(results.apoapsis_au).toFixed(4)}} au</div>
@@ -121,7 +127,7 @@ var url = "https://api.spacexdata.com/v3/roadster";
 window.axios = require("axios");
 
 export default {
-  name: "SpaceMan",
+  name: "Starman",
   props: {
     msg: String
   },

@@ -16,7 +16,7 @@
       </div>
     </div>
     <SPACEXcrewdemo2 />
-    <SpaceMan msg="Where is Starman? " />
+    <Starman msg="Where is Starman? " />
     <br />
     <hr />
     <div class="text-center">
@@ -35,7 +35,7 @@ import SpaceXinfo from "@/components/SpaceX-info.vue";
 import NextLaunch from "@/components/SpaceX-NextLaunch.vue";
 import LatestLaunch from "@/components/SpaceX-LatestLaunch.vue";
 import SPACEXcrewdemo2 from "@/components/SpaceX-CrewDemo2.vue";
-import SpaceMan from "@/components/SpaceMan.vue";
+import Starman from "@/components/SpaceX-Starman.vue";
 
 export default {
   name: "SpaceX",
@@ -44,7 +44,7 @@ export default {
     NextLaunch,
     LatestLaunch,
     SPACEXcrewdemo2,
-    SpaceMan
+    Starman
   },
   metaInfo: {
     title: "Rocket Downrange | SpaceX",
