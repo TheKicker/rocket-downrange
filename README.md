@@ -63,7 +63,7 @@ const router = new VueRouter({
 <hr>
 </br>
 
-Added Vue-Meta for SEO enhancements/meta tags.  Purely experimental :) <a href="https://alligator.io/vuejs/vue-seo-tips/" target="_blank" rel="noopener">Vue Meta article </a>
+Added <strong>Vue-Meta</strong> for SEO enhancements/meta tags.  Purely experimental :) <a href="https://alligator.io/vuejs/vue-seo-tips/" target="_blank" rel="noopener">Vue Meta article </a>
 ```
 npm install vue-meta
 ```
@@ -75,6 +75,8 @@ import Meta from 'vue-meta';
 Vue.use(Meta);
 
 ```
+
+So far, extremely happy with this.  Super easy to implement, super easy to use, works perfectly thus far. 
 
 </br>
 <hr>
@@ -96,7 +98,7 @@ URLs were not working properly. So for example, rocketdownrange.com/spacex was r
 <hr>
 </br>
 
-Had an issue where the site was displaying an unsecure connection.  Mistakenly thought this was a bad SSL Certificate but realized it was due to the API response.  Specifically the Opportunity and Curiousity API's would supply an unsecure link for the images. Fixed the issue by adding a computed property to check if https is enabled, if not add an s to the url.
+Had an issue where the site was displaying an unsecure connection.  Mistakenly thought this was a bad SSL Certificate but realized it was due to the API response data.  Specifically the Opportunity and Curiousity API's would supply an unsecure link for the images. Fixed the issue by adding a computed property to check if https is enabled, if not add an s to the supplied url.
 
 ```
 // src/components/Opportunity.vue & Curiousity.vue
@@ -118,6 +120,10 @@ computed:{
 <img :src="secureURL" class="image-fluid"/>
 
 ```
+
+</br>
+<hr>
+</br>
 
 
 Added a form to the index page of the site for comments/suggestions, etc. Had an issue where the form wasnt working - per <a href="https://www.netlify.com/blog/2018/09/07/how-to-integrate-netlify-forms-in-a-vue-app/" target="_blank">this article</a> it's related to the default way Vue renders client side but the Netlify post processing bots expect HTML on site deploy.  Any <code> netlify </code> form attribute tags included in a Vue app would only be inserted into the DOM client-side, rather than in the HTML and thereby runs the risk of being totally overlooked by the build bots.
@@ -145,6 +151,40 @@ In the process of solving this by adding a static form for the Netlify build bot
   Line 13-93
 </form>
 ```
+
+</br>
+<hr>
+</br>
+
+Added <strong>vue-scrollto</strong> for UI Enhancement, testing on the solar system page.  Purely experimental :) <a href="https://vue-scrollto.netlify.app/docs/" target="_blank" rel="noopener">vue-scrollto documentation</a>
+```
+npm install --save vue-scrollto
+```
+```
+// main.js file
+
+import VueScrollTo from 'vue-scrollto';
+
+// Instruct Vue to use these parameters
+// Default duration was 500, set to 1500 at launch
+
+Vue.use(VueScrollTo, {
+	container: "body",
+	duration: 1500,
+	easing: "ease",
+	offset: 0,
+	force: true,
+	cancelable: true,
+	onStart: false,
+	onDone: false,
+	onCancel: false,
+	x: false,
+	y: true
+})
+
+```
+
+So far, super happy with how easy it was to implement and how well it works.  Going to continue testing. 
 
 </br>
 <hr>

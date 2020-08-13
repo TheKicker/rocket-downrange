@@ -40,11 +40,11 @@
           </div>
           <hr />
           <div class="row mx-2">
-            <a class="btn btn-dark m-2 rounded" href="#uranus">
+            <a class="btn btn-dark m-2 rounded" href="#uranus" v-scroll-to="'#uranus'">
               Prior &nbsp;
               <i class="fas fa-arrow-circle-up"></i>
             </a>
-            <a class="btn btn-dark m-2 rounded" href="#pluto">
+            <a class="btn btn-dark m-2 rounded" href="#pluto" v-scroll-to="'#pluto'">
               Next &nbsp;
               <i class="fas fa-arrow-circle-down"></i>
             </a>

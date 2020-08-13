@@ -5,7 +5,7 @@
       <div class="text-center">
         <h1 class="glitch">Welcome to the Solar System.</h1>
         <div>
-          <a class="btn btn-dark my-3" href="#solar">[ Launch ]</a>
+          <a class="btn btn-dark my-3" href="#solar" v-scroll-to="'#solar'">[ Launch ]</a>
         </div>
       </div>
     </section>
@@ -27,7 +27,7 @@
       <div class="text-center">
         <h1 class="glitch">Data & Images from NASA</h1>
         <div class="row mx-auto">
-          <a class="btn btn-dark m-2" href="#app">[ Return to Top ]</a>
+          <a class="btn btn-dark m-2" href="#app" v-scroll-to="'#app'">[ Return to Top ]</a>
           <a
             class="btn btn-dark m-2"
             href="https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/"
