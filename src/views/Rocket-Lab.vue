@@ -17,6 +17,7 @@
         </blockquote>
       </div>
     </div>
+    <RocketLabTest />
     <br />
     <hr />
     <div class="text-center">
@@ -33,12 +34,14 @@
 // @ is an alias to /src
 import RocketLabinfo from "@/components/RocketLabinfo.vue";
 import NextLaunch from "@/components/RocketLab-NextLaunch.vue";
+import RocketLabTest from "@/components/RocketLab-ItsATest.vue";
 
 export default {
   name: "RocketLab",
   components: {
     RocketLabinfo,
-    NextLaunch
+    NextLaunch,
+    RocketLabTest
   },
   data() {
     return {};
@@ -65,7 +68,7 @@ export default {
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com"
+        content: "https://www.rocketdownrange.com/rocket-lab"
       },
       {
         property: "og:image",
@@ -82,7 +85,7 @@ export default {
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com"
+        content: "https://www.rocketdownrange.com/rocket-lab"
       },
       { name: "twitter:title", content: "Rocket Downrange | Rocket Lab" },
       {

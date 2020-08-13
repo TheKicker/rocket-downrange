@@ -29,6 +29,11 @@ const routes = [
 		component: () => import(/* webpackChunkName: "Rocket-Lab" */ '../views/Rocket-Lab.vue')
 	},
 	{
+		path: '/solar-system',
+		name: 'Solar System',
+		component: () => import(/* webpackChunkName: "Test" */ '../views/Solar-System.vue')
+	},
+	{
 		path: '/test',
 		name: 'Test',
 		component: () => import(/* webpackChunkName: "Test" */ '../views/Test.vue')

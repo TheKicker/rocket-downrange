@@ -14,7 +14,6 @@
         </div>
       </div>
     </div>
-    <div class="container text-dark"></div>
   </div>
 </template>
 

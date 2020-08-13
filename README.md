@@ -1,16 +1,17 @@
 # Rocket Downrange
 [![Netlify Status](https://api.netlify.com/api/v1/badges/192c5a3a-340b-4e0c-ae7b-870e0f221ebc/deploy-status)](https://app.netlify.com/sites/trusting-goldwasser-e71a14/deploys)
 
-Rocket Downrange is a site I am developing to showcase the advancements of humanity in regards to the exploration of outer space.  While the core Vue.JS is my own writing (please be patient as I continue to learn), all data you see on the site is returned from various API's.  The first three API's I am using belong to SpaceX (USA), Rocket Lab (USA) and NASA (USA) and are provided for free or free with a registered key.  Thus, the site should continue to be a fun and dynamic way of keeping updated on the industry at large.
+Rocket Downrange is a side project site I am developing to showcase the advancements of humanity in regards to the exploration of outer space.  While the core Vue.JS is my own writing (please be patient as I continue to learn), all data you see on the site is returned from various API's.  The first three API's I am using belong to SpaceX (USA), Rocket Lab (USA) and NASA (USA) and are provided for free or free with a registered key.  Thus, the site should continue to be a fun and dynamic way of keeping updated on the industry at large.
+
+Most of the images you see - especially those of planets are owned by NASA.  Other media may be directly from SpaceX, RocketLab, or other organizations featured on the site.  I claim no ownership of these and am only using these as assets of learning.  
 
 I hope the site serves you well and I am always open to critique/criticism, 
 
  <a href="https://www.cavlemasters.com" target="_blank">- Cav Lemasters ( @TheKicker )</a>
 
- <a href="https://www.cavlemasters.com/contact" target="_blank">Contact Me</a>
 <div align="left">
 <hr>
-All mission data belongs to corresponding company.  Most of the images are not mine, sourced from Adobe Creative Cloud and other free graphics sites.  Site will remain free, safe and an open playground for all. 
+All mission data belongs to corresponding company.  Site will remain open, free and a learning resource for all.  
 </br>
 </br>
 Hosted on Netlify, built with Vue.js, Axios, Vue-Meta, Bootstrap 4 and more! 

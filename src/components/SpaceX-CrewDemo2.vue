@@ -39,7 +39,6 @@
 
 <script>
 console.log("SpaceX Crew Dragon 2 - Active");
-window.axios = require("axios");
 
 export default {
   name: "SPACEXcrewdemo2",

@@ -1,9 +1,8 @@
 <template>
   <div class="home">
     <Homepage />
-    <SPACEXcrewdemo2 />
-    <NASAperseverance />
     <NASAapod />
+    <NASAperseverance />
     <NASAinsight />
     <NASAcuriosity />
     <NASAopportunity />
@@ -15,7 +14,6 @@
 <script>
 // @ is an alias to /src
 import Homepage from "@/components/Homepage.vue";
-import SPACEXcrewdemo2 from "@/components/SpaceX-CrewDemo2.vue";
 import NASAperseverance from "@/components/NASA-perseverance.vue";
 import NASAapod from "@/components/NASA-APOD.vue";
 import NASAinsight from "@/components/NASA-insight.vue";
@@ -28,7 +26,6 @@ export default {
   name: "Home",
   components: {
     Homepage,
-    SPACEXcrewdemo2,
     NASAperseverance,
     NASAapod,
     NASAinsight,

@@ -20,12 +20,44 @@
             <li class="nav-item">
               <router-link class="nav-link" to="/">Home</router-link>
             </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/spacex">SpaceX</router-link>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >Explore</a>
+              <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/solar-system">SOLAR SYSTEM</router-link>
+                </li>
+              </div>
             </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/rocket-lab">Rocket Lab</router-link>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >Companies</a>
+              <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/spacex">SPACEX</router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/rocket-lab">ROCKET LAB</router-link>
+                </li>
+              </div>
             </li>
+
             <li class="nav-item">
               <a
                 href="https://github.com/TheKicker/rocket-downrange"
@@ -180,4 +212,13 @@ export default {
 </script>
 
 <style>
+.ml-1 {
+  margin-left: 5px;
+}
+.ml-2 {
+  margin-left: 10px;
+}
+.ml-3 {
+  margin-left: 15px;
+}
 </style>

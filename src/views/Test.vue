@@ -1,21 +1,21 @@
 <template>
-  <div class="Test container my-4">
-    <h1>This is the testing grounds</h1>Think of it as JPL for RocketDownrange :)
-    <div class="my-4">
-      <NASAepic />
-    </div>
+  <div class="Test m-4">
+    <h1>This is a test page.</h1>
+    <hr />
+    <!-- Import Components here for testing purposes -->
+    <Error404 />
   </div>
 </template>
 
 
 <script>
 // @ is an alias to /src
-import NASAepic from "@/components/NASA-epic.vue";
+import Error404 from "@/components/Error.vue";
 
 export default {
-  name: "TEST",
+  name: "About",
   components: {
-    NASAepic
+    Error404
   }
 };
 </script>

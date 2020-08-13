@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container my-4">
-      <h2>{{code}}</h2>
+      <h2>{{code}} Component</h2>
     </div>
   </div>
 </template>

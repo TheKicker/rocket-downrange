@@ -17,7 +17,7 @@
               rel="noopener"
             >
               <img
-                src="../assets/mars.jpg"
+                src="../assets/mars-flat.jpg"
                 class="rounded img-fluid"
                 alt="Historical Forecast of Martian Weather as measured by NASA's Insight Lander, served directly from Mars! If this picture did not load - then an error occured, this media from NASA might be a Youtube video rather than picture. "
               />
