@@ -3,15 +3,15 @@
 
 Rocket Downrange is a side project site I am developing to showcase the advancements of humanity in regards to the exploration of outer space.  While the core Vue.JS is my own writing (please be patient as I continue to learn), all data you see on the site is returned from various API's.  The first three API's I am using belong to SpaceX (USA), Rocket Lab (USA) and NASA (USA) and are provided for free or free with a registered key.  Thus, the site should continue to be a fun and dynamic way of keeping updated on the industry at large.
 
-Most of the images you see - especially those of planets are owned by NASA.  Other media may be directly from SpaceX, RocketLab, or other organizations featured on the site.  I claim no ownership of these and am only using these as assets of learning.  
+Most of the data and images you see - especially those of planets are taken/owned by NASA.  Other media may be directly from SpaceX, RocketLab, or other organizations and API's featured on the site.  <strong>I claim no ownership of these items and am only using them as assets of learning. </strong>
 
-I hope the site serves you well and I am always open to critique/criticism, 
+I hope the site serves you well and I am always open to comments/critique, 
 
  <a href="https://www.cavlemasters.com" target="_blank">- Cav Lemasters ( @TheKicker )</a>
 
 <div align="left">
 <hr>
-All mission data belongs to corresponding company.  Site will remain open, free and a learning resource for all.  
+All mission data belongs to corresponding company.  Site will remain free and an open learning resource for all.  
 </br>
 </br>
 Hosted on Netlify, built with Vue.js, Axios, Vue-Meta, Bootstrap 4 and more! 
