@@ -35,6 +35,9 @@
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/solar-system">SOLAR SYSTEM</router-link>
                 </li>
+                <!-- <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/calculator">CALCULATORS</router-link>
+                </li>-->
               </div>
             </li>
 
@@ -58,14 +61,14 @@
               </div>
             </li>
 
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a
                 href="https://github.com/TheKicker/rocket-downrange"
                 target="_blank"
                 class="nav-link"
                 to="/rocket-lab"
               >Github</a>
-            </li>
+            </li>-->
           </ul>
           <div class="mx-auto text-center">
             <button
@@ -129,10 +132,10 @@
       <router-view />
     </div>
 
-    <div id="footer" class="navbar navbar-dark bg-primary">
-      <div class="container text-white my-4">
-        <div>
-          <p>
+    <div id="footer" class="navbar navbar-dark bg-primary py-4">
+      <div class="cntainer text-center mx-auto py-4">
+        <div id="footercopy">
+          <p class="text-white">
             <a
               class="text-white underline"
               href="https://cavlemasters.com"
@@ -144,7 +147,7 @@
           <a
             class="text-white underline"
             href="https://cavlemasters.com"
-            target="blank"
+            target="_blank"
             rel="noopener"
             style="font-family: 'Share Tech Mono', monospace; text-transform: lowercase;"
           >{{trademark}}</a>
@@ -153,6 +156,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   data() {
@@ -220,5 +224,9 @@ export default {
 }
 .ml-3 {
   margin-left: 15px;
+}
+.width-limit {
+  max-width: 1632px;
+  margin: auto;
 }
 </style>

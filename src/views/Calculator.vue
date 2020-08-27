@@ -1,7 +1,8 @@
 <template>
-  <div class="SolarSystem">
-    <div class="bg-black">
-      <SolarSystem />
+  <div class="Calculator">
+    <h1 class="text-center my-4">This section is coming soon :) Congrats on finding it</h1>
+    <div class="py-2">
+      <KerbalComms />
     </div>
   </div>
 </template>
@@ -9,15 +10,15 @@
 
 <script>
 // @ is an alias to /src
-import SolarSystem from "@/components/Solar-System.vue";
+import KerbalComms from "@/components/Kerbal-Comms.vue";
 
 export default {
-  name: "Main",
+  name: "Calculator",
   components: {
-    SolarSystem
+    KerbalComms
   },
   metaInfo: {
-    title: "Rocket Downrange | Solar System",
+    title: "Rocket Downrange | Calculators",
     meta: [
       { name: "author", content: "Github: @TheKicker" },
       {
@@ -31,14 +32,14 @@ export default {
           "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Launch Info, Space Industry, Solar System"
       },
       // OpenGraph data (Most widely used)
-      { property: "og:title", content: "Rocket Downrange | Solar System" },
+      { property: "og:title", content: "Rocket Downrange | Calculators" },
       { property: "og:site_name", content: "Rocket Downrange" },
       // The list of types is available here: http://ogp.me/#types
       { property: "og:type", content: "website" },
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/solar-system"
+        content: "https://www.rocketdownrange.com/calculator"
       },
       {
         property: "og:image",
@@ -55,9 +56,9 @@ export default {
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com/solar-system"
+        content: "https://www.rocketdownrange.com/calculator"
       },
-      { name: "twitter:title", content: "Rocket Downrange | Solar System" },
+      { name: "twitter:title", content: "Rocket Downrange | Calculators" },
       {
         name: "twitter:description",
         content:
@@ -71,7 +72,7 @@ export default {
       },
 
       // Google / Schema.org markup:
-      { itemprop: "name", content: "Rocket Downrange | Solar System" },
+      { itemprop: "name", content: "Rocket Downrange | Calculators" },
       {
         itemprop: "description",
         content:
@@ -85,9 +86,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.bg-black {
-  background: black;
-}
-</style>

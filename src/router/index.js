@@ -19,6 +19,11 @@ const routes = [
 		component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
 	},
 	{
+		path: '/calculator',
+		name: 'Calculator',
+		component: () => import(/* webpackChunkName: "calculator" */ '../views/Calculator.vue')
+	},
+	{
 		path: '/spacex',
 		name: 'SpaceX',
 		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/SpaceX.vue')
@@ -31,7 +36,7 @@ const routes = [
 	{
 		path: '/solar-system',
 		name: 'Solar System',
-		component: () => import(/* webpackChunkName: "Test" */ '../views/Solar-System.vue')
+		component: () => import(/* webpackChunkName: "Solar System" */ '../views/Solar-System.vue')
 	},
 	{
 		path: '/test',

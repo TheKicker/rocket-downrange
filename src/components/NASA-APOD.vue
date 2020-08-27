@@ -60,6 +60,9 @@
             <p class="my-2 text-primary">{{results.explanation}}</p>
           </div>
         </div>
+        <div class="row container mx-auto d-block text-center">
+          <Social />
+        </div>
         <hr />
         <p class="text-center">
           <i>Last Updated at {{(new Date(results.date).toLocaleString())}}, Check back tomorrow for a new picture of the day!</i>
@@ -81,12 +84,17 @@ var url =
 console.log("NASA APOD - " + url);
 window.axios = require("axios");
 
+import Social from "@/components/SocialSharing.vue";
+
 export default {
   name: "NASAapod",
   data() {
     return {
       results: []
     };
+  },
+  components: {
+    Social
   },
   mounted() {
     window.axios

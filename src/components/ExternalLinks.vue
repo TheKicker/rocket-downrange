@@ -1,12 +1,10 @@
 <template>
   <div class="Links">
     <div>
-      <div class="text-center text-dark container">
-        <!-- <h2>External Links</h2>
-        <hr />-->
-      </div>
+      <div class="text-center text-dark container"></div>
 
-      <div class="card-group my-4 width-limit mx-auto">
+      <!-- About Section -->
+      <div class="my-4 width-limit mx-auto">
         <div>
           <div class="position-relative overflow-hidden text-center bg-primary text-white">
             <div class="col-md-6 p-lg-5 mx-auto my-5">
@@ -25,108 +23,46 @@
           </div>
         </div>
 
-        <div class="card m-1 my-4">
-          <img src="../assets/nasaVAB.jpg" class="card-img-top marketingImage" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title text-dark">NASA</h5>
-            <hr />
-            <p class="card-text"></p>
-            <p class="card-text text-center">
-              <a
-                href="https://www.nasa.gov"
-                class="btn btn-dark"
-                target="_blank"
-                rel="noopener"
-              >Official Site</a>
-            </p>
-          </div>
+        <!-- Row One -->
+        <div class="card-group width-limit mx-auto">
+          <External
+            site="United States Space Force"
+            image="space-force.jpg"
+            link="https://www.spaceforce.mil/"
+          />
+          <External site="NASA" image="nasaVAB.jpg" link="https://www.nasa.gov" />
+          <External site="European Space Agency" image="ESA.png" link="https://www.esa.int/" />
+          <External
+            site="Russian Space Agency"
+            image="roscosmos.jpg"
+            link="http://en.roscosmos.ru/"
+          />
         </div>
-
-        <div class="card m-1 my-4">
-          <img src="../assets/spacex.jpg" class="card-img-top marketingImage" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">SpaceX</h5>
-            <hr />
-            <p class="card-text"></p>
-            <p class="card-text text-center">
-              <a
-                href="https://www.spacex.com/"
-                class="btn btn-dark"
-                target="_blank"
-                rel="noopener"
-              >Official Site</a>
-            </p>
-          </div>
+        <!-- Row Two -->
+        <div class="card-group width-limit mx-auto">
+          <External site="SpaceX" image="spacex.jpg" link="https://www.spacex.com/" />
+          <External site="Rocket Lab" image="rocketLab.jpg" link="https://www.rocketlabusa.com/" />
+          <External site="Firefly Aerospace" image="firefly.png" link="https://firefly.com/" />
         </div>
-
-        <div class="card m-1 my-4">
-          <img src="../assets/rocketLab.jpg" class="card-img-top marketingImage" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Rocket Labs</h5>
-            <hr />
-            <p class="card-text"></p>
-            <p class="card-text text-center">
-              <a
-                href="https://www.rocketlabusa.com/"
-                class="btn btn-dark"
-                target="_blank"
-                rel="noopener"
-              >Official Site</a>
-            </p>
-          </div>
+        <!-- Row Three -->
+        <div class="card-group width-limit mx-auto">
+          <External
+            site="Kerbal Space Program"
+            image="kerbal.jpg"
+            link="https://www.kerbalspaceprogram.com/"
+          />
+          <External
+            site="Reddit/r/SpacePorn"
+            image="reddit.jpeg"
+            link="https://www.reddit.com/r/spaceporn/top/?t=all"
+          />
+          <External site="Space.com" image="spacecom.png" link="https://www.space.com/" />
         </div>
-      </div>
-
-      <div class="card-group m-4 width-limit mx-auto">
-        <div class="card m-1">
-          <img src="../assets/kerbal.jpg" class="card-img-top marketingImage" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title text-dark">Kerbal Space Program</h5>
-            <hr />
-            <p class="card-text"></p>
-            <p class="card-text text-center">
-              <a
-                href="https://www.kerbalspaceprogram.com/"
-                class="btn btn-dark"
-                target="_blank"
-                rel="noopener"
-              >Official Site</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="card m-1">
-          <img src="../assets/reddit.jpeg" class="card-img-top marketingImage" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Reddit/r/spaceporn</h5>
-            <hr />
-            <p class="card-text"></p>
-            <p class="card-text text-center">
-              <a
-                href="https://www.reddit.com/r/spaceporn/"
-                class="btn btn-dark"
-                target="_blank"
-                rel="noopener"
-              >Official Site</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="card m-1">
-          <img src="../assets/spacecom.png" class="card-img-top marketingImage" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Space.com</h5>
-            <hr />
-            <p class="card-text"></p>
-            <p class="card-text text-center">
-              <a
-                href="https://www.space.com/"
-                class="btn btn-dark"
-                target="_blank"
-                rel="noopener"
-              >Official Site</a>
-            </p>
-          </div>
+        <div class="text-center">
+          <hr />
+          <p
+            class="text-secondary font-italic"
+          >Links provided are simply useful resources to stay up to date, not to be used as evidence of relationship between organization & Rocket Downrange.</p>
         </div>
       </div>
     </div>
@@ -134,6 +70,8 @@
 </template>
 
 <script>
+import External from "@/components/ExternalLink.vue";
+
 export default {
   name: "ExternalLinks",
   data() {
@@ -141,24 +79,18 @@ export default {
       Hello: "Hello World!",
       code: "See the Code"
     };
+  },
+  components: {
+    External
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.marketingImage {
-  height: 15rem;
-}
-.viewport100h {
-  height: 100vh;
-  width: 100%;
-}
-.viewportText {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  vertical-align: middle;
+.externalLinks {
+  display: flex;
+  flex-direction: row;
 }
 .width-limit {
   max-width: 1632px;
