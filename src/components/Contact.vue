@@ -17,7 +17,13 @@
           <br />
           <div class="my-4">
             <!--Form with header-->
-            <form method="POST" name="Contact" netlify-honeypot="bot-field" data-netlify="true">
+            <form
+              method="POST"
+              name="Contact"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+              data-netlify-recaptcha="true"
+            >
               <div class="card border-primary rounded-0">
                 <div class="card-body p-3">
                   <!--Body-->
@@ -79,6 +85,8 @@
                       <input type="hidden" name="form-name" value="Contact" />
                     </label>
                   </p>
+
+                  <div data-netlify-recaptcha="true"></div>
 
                   <div class="text-center">
                     <button
