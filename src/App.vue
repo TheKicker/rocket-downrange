@@ -3,13 +3,14 @@
     <section id="vote">
       <marquee id="marquee" behavior="scroll" direction="left" scrollamount="5">
         <h6 class="text-white">
-          🇺🇸 Election Day is coming, check your eligibility or register at vote.org 🇺🇸
+          🇺🇸 &nbsp; Election Day is coming, check your eligibility or register at vote.org &nbsp; 🇺🇸 &nbsp; Let's keep 45 in office!
           <a
             href="https://www.donaldjtrump.com/"
             target="_blank"
             rel="noopener"
-          >DonaldJTrump.com &nbsp;#MAGA</a>
-        </h6>🇺
+            class="vote-link"
+          >Visit DonaldJTrump.com &nbsp;#MAGA</a>
+        </h6>
       </marquee>
     </section>
 
@@ -254,5 +255,9 @@ export default {
 
 #marquee a {
   color: white;
+}
+
+.vote-link:hover {
+  text-decoration: underline;
 }
 </style>
