@@ -1,5 +1,18 @@
 <template>
   <div id="app">
+    <section id="vote">
+      <marquee id="marquee">
+        <h6 class="text-white">
+          🇺🇸 &nbsp; Election Day is coming, check your eligibility or register at vote.org 🇺🇸 &nbsp;
+          <a
+            href="https://www.donaldjtrump.com/"
+            target="_blank"
+            rel="noopener"
+          >DonaldJTrump.com &nbsp;#MAGA</a>
+        </h6>🇺
+      </marquee>
+    </section>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
         <router-link class="navbar-brand" to="/">{{ org }}</router-link>
@@ -228,5 +241,18 @@ export default {
 .width-limit {
   max-width: 1632px;
   margin: auto;
+}
+
+#vote {
+  background: black;
+  color: white;
+  height: 3rem;
+}
+#marquee {
+  padding: 0.75rem 0rem;
+}
+
+#marquee a {
+  color: white;
 }
 </style>
