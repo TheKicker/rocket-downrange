@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <section id="vote">
-      <marquee id="marquee">
+      <marquee id="marquee" behavior="scroll" direction="left" scrollamount="5">
         <h6 class="text-white">
-          🇺🇸 &nbsp; Election Day is coming, check your eligibility or register at vote.org 🇺🇸 &nbsp;
+          🇺🇸 Election Day is coming, check your eligibility or register at vote.org 🇺🇸
           <a
             href="https://www.donaldjtrump.com/"
             target="_blank"
