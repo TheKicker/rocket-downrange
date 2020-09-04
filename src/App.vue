@@ -8,7 +8,7 @@
             href="https://www.donaldjtrump.com/"
             target="_blank"
             rel="noopener"
-            class="vote-link"
+            class="btn vote-btn vote-link"
           >Visit DonaldJTrump.com &nbsp;#MAGA</a>
         </h6>
       </marquee>
@@ -247,17 +247,21 @@ export default {
 #vote {
   background: black;
   color: white;
-  height: 3rem;
+  height: 3.5rem;
 }
 #marquee {
   padding: 0.75rem 0rem;
 }
 
-#marquee a {
+.vote-btn {
+  border-color: white;
+  border-radius: 5px;
+  padding: 2px 8px;
+  border-width: 2px;
   color: white;
 }
-
-.vote-link:hover {
-  text-decoration: underline;
+.vote-btn:hover {
+  background: white;
+  color: black;
 }
 </style>
