@@ -3,7 +3,7 @@
     <section id="vote">
       <marquee id="marquee" behavior="scroll" direction="left" scrollamount="5">
         <h6 class="text-white">
-          🇺🇸 &nbsp; Election Day is coming, check your eligibility or register at vote.org &nbsp; 🇺🇸 &nbsp; Let's keep 45 in office!
+          <i class="fas fa-flag-usa"></i> &nbsp; Election Day is coming, check your eligibility or register at vote.org &nbsp; <i class="fas fa-flag-usa"></i> &nbsp; Let's keep 45 in office!
           <a
             href="https://www.donaldjtrump.com/"
             target="_blank"
