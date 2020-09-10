@@ -94,9 +94,10 @@
               data-toggle="modal"
               data-target="#exampleModal"
             >
-              <h6
-                class="nav-item my-2 my-lg-0 text-white text-center"
-              >{{ getGreeting }}, {{username}}</h6>
+              <h6 class="nav-item my-2 my-lg-0 text-white text-center">
+                {{ getGreeting }}, {{username}}
+                <i class="fa fa-user-circle"></i>
+              </h6>
             </button>
           </div>
         </div>
@@ -115,14 +116,16 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Change username</h5>
+            <h5 class="modal-title" id="exampleModalLabel">
+              <i class="fa fa-user"></i> &nbsp; Change username
+            </h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <div>
-              <label class="col-form-label" for="inputDefault">Enter a new name:</label>
+              <label class="col-form-label" for="inputDefault">Let's be friends, what is your name?</label>
               <input
                 type="text"
                 class="form-control"
@@ -133,7 +136,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
             <button
               type="button"
               @click="validate()"
