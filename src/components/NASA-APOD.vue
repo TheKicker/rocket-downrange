@@ -65,7 +65,7 @@
         </div>
         <hr />
         <p class="text-center">
-          <i>Last Updated at {{(new Date(results.date).toLocaleString())}}, Check back tomorrow for a new picture of the day!</i>
+          <i>Last Updated at {{(new Date(results.date).toLocaleString())}} by NASA-JPL, come back tomorrow for a new picture of the day!</i>
         </p>
       </div>
     </div>
