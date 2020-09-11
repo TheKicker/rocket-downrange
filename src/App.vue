@@ -215,9 +215,6 @@ export default {
     }
   },
   methods: {
-    persist() {
-      window.localStorage.username = this.username;
-    },
     validate() {
       // Regex validation
       var regName = /^[a-z ,.'-]+$/i;
@@ -227,7 +224,7 @@ export default {
         return (this.username = "Guest");
       } else {
         console.log("Valid name given, saved. ");
-        persist();
+        window.localStorage.setItem("username", `${this.username}`);
         return this.username;
       }
     }
