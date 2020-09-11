@@ -191,8 +191,8 @@ export default {
     };
   },
   mounted() {
-    if (localStorage.username) {
-      this.username = localStorage.username;
+    if (window.localStorage.username) {
+      this.username = window.localStorage.username;
     } else {
       this.username = "Guest";
     }
@@ -216,7 +216,7 @@ export default {
   },
   methods: {
     persist() {
-      localStorage.username = this.username;
+      window.localStorage.username = this.username;
     },
     validate() {
       // Regex validation
