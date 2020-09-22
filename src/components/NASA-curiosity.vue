@@ -27,7 +27,7 @@
                     class="d-block w-100"
                     :src="Object.values(results.photos)[0].img_src"
                     alt="First slide"
-                    style="height: 75vh;"
+                    style="height: 75vh; min-width: 50vw;"
                   />
                 </div>
                 <div class="carousel-item">
@@ -36,7 +36,7 @@
                     class="d-block w-100"
                     :src="Object.values(results.photos)[1].img_src"
                     alt="Second slide"
-                    style="height: 75vh;"
+                    style="height: 75vh; min-width: 50vw;"
                   />
                 </div>
                 <div class="carousel-item">
@@ -45,7 +45,7 @@
                     class="d-block w-100"
                     :src="Object.values(results.photos)[2].img_src"
                     alt="Third slide"
-                    style="height: 75vh;"
+                    style="height: 75vh; min-width: 50vw;"
                   />
                 </div>
                 <div class="carousel-item">
@@ -54,7 +54,7 @@
                     class="d-block w-100"
                     :src="Object.values(results.photos)[3].img_src"
                     alt="Third slide"
-                    style="height: 75vh;"
+                    style="height: 75vh; min-width: 50vw;"
                   />
                 </div>
                 <div class="carousel-item">
@@ -63,7 +63,7 @@
                     class="d-block w-100"
                     :src="Object.values(results.photos)[4].img_src"
                     alt="Third slide"
-                    style="height: 75vh;"
+                    style="height: 75vh; min-width: 50vw;"
                   />
                 </div>
                 <div class="carousel-item">
@@ -72,7 +72,7 @@
                     class="d-block w-100"
                     :src="Object.values(results.photos)[5].img_src"
                     alt="Third slide"
-                    style="height: 75vh;"
+                    style="height: 75vh; min-width: 50vw;"
                   />
                 </div>
                 <div class="carousel-item">
@@ -81,7 +81,7 @@
                     class="d-block w-100"
                     :src="Object.values(results.photos)[6].img_src"
                     alt="Third slide"
-                    style="height: 75vh;"
+                    style="height: 75vh; min-width: 50vw;"
                   />
                 </div>
                 <div class="carousel-item">
@@ -90,7 +90,7 @@
                     class="d-block w-100"
                     :src="Object.values(results.photos)[7].img_src"
                     alt="Third slide"
-                    style="height: 75vh;"
+                    style="height: 75vh; min-width: 50vw;"
                   />
                 </div>
                 <div class="carousel-item">
@@ -99,7 +99,7 @@
                     class="d-block w-100"
                     :src="Object.values(results.photos)[8].img_src"
                     alt="Third slide"
-                    style="height: 75vh;"
+                    style="height: 75vh; min-width: 50vw;"
                   />
                 </div>
                 <div class="carousel-item">
@@ -108,7 +108,34 @@
                     class="d-block w-100"
                     :src="Object.values(results.photos)[9].img_src"
                     alt="Third slide"
-                    style="height: 75vh;"
+                    style="height: 75vh; min-width: 50vw;"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <h3 class="text-center my-4">Photo ID#{{Object.values(results.photos)[9].id}}</h3>
+                  <img
+                    class="d-block w-100"
+                    :src="Object.values(results.photos)[10].img_src"
+                    alt="Third slide"
+                    style="height: 75vh; min-width: 50vw;"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <h3 class="text-center my-4">Photo ID#{{Object.values(results.photos)[9].id}}</h3>
+                  <img
+                    class="d-block w-100"
+                    :src="Object.values(results.photos)[11].img_src"
+                    alt="Third slide"
+                    style="height: 75vh; min-width: 50vw;"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <h3 class="text-center my-4">Photo ID#{{Object.values(results.photos)[9].id}}</h3>
+                  <img
+                    class="d-block w-100"
+                    :src="Object.values(results.photos)[12].img_src"
+                    alt="Third slide"
+                    style="height: 75vh; min-width: 50vw;"
                   />
                 </div>
               </div>
