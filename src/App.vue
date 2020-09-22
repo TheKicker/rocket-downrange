@@ -125,7 +125,10 @@
           </div>
           <div class="modal-body">
             <div>
-              <label class="col-form-label" for="inputDefault">Let's be friends, what is your name?</label>
+              <label
+                class="col-form-label"
+                for="inputDefault"
+              >Let's be friends, what can I call you?</label>
               <input
                 type="text"
                 class="form-control"
@@ -134,6 +137,7 @@
                 v-model="username"
               />
             </div>
+            <p></p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>

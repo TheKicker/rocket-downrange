@@ -404,6 +404,9 @@
           </div>-->
         </div>
         <hr />
+        <p class="text-center">
+          <i>Last Update: {{(new Date().toDateString())}}</i>
+        </p>
       </div>
     </div>
   </div>
@@ -411,6 +414,8 @@
 
 
 <script>
+var oneDayAgo = new Date();
+oneDayAgo.setDate(oneDayAgo.getDate() - 1);
 var oneWeekAgo = new Date();
 oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
 const lastYear = oneWeekAgo.getFullYear();
