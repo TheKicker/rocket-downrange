@@ -128,7 +128,7 @@
               <label
                 class="col-form-label"
                 for="inputDefault"
-              >Let's be friends, what can I call you?</label>
+              >Let's be friends, what should I call you?</label>
               <input
                 type="text"
                 class="form-control"
