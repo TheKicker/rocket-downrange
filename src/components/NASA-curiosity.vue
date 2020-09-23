@@ -386,23 +386,7 @@
             </div>
           </div>
         </div>
-        <div class="row container mx-auto">
-          <!-- <div class="my-4">
-            <div class="mx-auto my-2">
-              <strong>
-                <a
-                  :href="Object.values(results.photos)[0].img_src"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-block btn-outline-primary text-secondary italic"
-                >HD Link from NASA.gov</a>
-              </strong>
-            </div>
-            <p
-              class="my-2 text-primary"
-            >This set of pictures was taken on Earth date: {{new Date(Object.values(results.photos)[0].earth_date).toDateString()}}, or Sol {{Object.values(results.photos)[0].sol}} on Mars. Captured with the {{Object.values(results.photos)[0].camera.full_name}} ({{Object.values(results.photos)[0].camera.name}}) aboard the {{Object.values(results.photos)[0].rover.name}} rover. {{Object.values(results.photos)[0].rover.name}} was launched from Earth on {{new Date(Object.values(results.photos)[0].rover.launch_date).toDateString()}} and has been on Mars since {{new Date(Object.values(results.photos)[0].rover.landing_date).toDateString()}} and remains {{Object.values(results.photos)[0].rover.status}} to this day. All images and mission data compliments of NASA.</p>
-          </div>-->
-        </div>
+        <div class="row container mx-auto"></div>
         <hr />
         <p class="text-center">
           <i>Last Update: {{(new Date().toDateString())}}</i>
