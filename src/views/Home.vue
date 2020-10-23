@@ -2,6 +2,7 @@
   <div class="home">
     <Homepage />
     <NASAapod />
+    <LLNextLaunch />
     <NASAperseverance />
     <NASAinsight />
     <NASAcuriosity />
@@ -16,6 +17,7 @@
 import Homepage from "@/components/Homepage.vue";
 import NASAperseverance from "@/components/NASA-perseverance.vue";
 import NASAapod from "@/components/NASA-APOD.vue";
+import LLNextLaunch from "@/components/LaunchLib-Next.vue";
 import NASAinsight from "@/components/NASA-insight.vue";
 import NASAcuriosity from "@/components/NASA-curiosity.vue";
 import NASAopportunity from "@/components/NASA-opportunity.vue";
@@ -28,6 +30,7 @@ export default {
     Homepage,
     NASAperseverance,
     NASAapod,
+    LLNextLaunch,
     NASAinsight,
     NASAcuriosity,
     NASAopportunity,

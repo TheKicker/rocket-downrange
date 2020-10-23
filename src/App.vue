@@ -3,16 +3,16 @@
     <section id="vote">
       <marquee id="marquee" behavior="scroll" direction="left" scrollamount="5">
         <h6 class="text-white">
-          <i class="fas fa-flag-usa"></i> &nbsp; Election Day is coming, check your eligibility or register at vote.org &nbsp;
-          <i
-            class="fas fa-flag-usa"
-          ></i> &nbsp; Let's keep 45 in office!
+          <i class="fas fa-flag-usa"></i> &nbsp; Election Day is coming, check
+          your eligibility or register at vote.org &nbsp;
+          <i class="fas fa-flag-usa"></i> &nbsp; Let's keep 45 in office!
           <a
             href="https://www.donaldjtrump.com/"
             target="_blank"
             rel="noopener"
             class="btn vote-btn vote-link"
-          >Visit DonaldJTrump.com</a>
+            >Visit DonaldJTrump.com</a
+          >
         </h6>
       </marquee>
     </section>
@@ -47,10 +47,16 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-              >Explore</a>
-              <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                >Explore</a
+              >
+              <div
+                class="dropdown-menu bg-primary"
+                aria-labelledby="navbarDropdown"
+              >
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/solar-system">SOLAR SYSTEM</router-link>
+                  <router-link class="nav-link ml-1" to="/solar-system"
+                    >SOLAR SYSTEM</router-link
+                  >
                 </li>
                 <!-- <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/calculator">CALCULATORS</router-link>
@@ -67,13 +73,21 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-              >Companies</a>
-              <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                >Companies</a
+              >
+              <div
+                class="dropdown-menu bg-primary"
+                aria-labelledby="navbarDropdown"
+              >
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/spacex">SPACEX</router-link>
+                  <router-link class="nav-link ml-1" to="/spacex"
+                    >SPACEX</router-link
+                  >
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/rocket-lab">ROCKET LAB</router-link>
+                  <router-link class="nav-link ml-1" to="/rocket-lab"
+                    >ROCKET LAB</router-link
+                  >
                 </li>
               </div>
             </li>
@@ -95,7 +109,7 @@
               data-target="#exampleModal"
             >
               <h6 class="nav-item my-2 my-lg-0 text-white text-center">
-                {{ getGreeting }}, {{username}}
+                {{ getGreeting }}, {{ username }}
                 <i class="fa fa-user-circle"></i>
               </h6>
             </button>
@@ -119,16 +133,20 @@
             <h5 class="modal-title" id="exampleModalLabel">
               <i class="fa fa-user"></i> &nbsp; Change username
             </h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <div>
-              <label
-                class="col-form-label"
-                for="inputDefault"
-              >Let's be friends, what should I call you?</label>
+              <label class="col-form-label" for="inputDefault"
+                >Let's be friends, what should I call you?</label
+              >
               <input
                 type="text"
                 class="form-control"
@@ -140,13 +158,21 @@
             <p></p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
             <button
               type="button"
               @click="validate()"
               class="btn btn-primary"
               data-dismiss="modal"
-            >Save changes</button>
+            >
+              Save changes
+            </button>
           </div>
         </div>
       </div>
@@ -165,7 +191,8 @@
               href="https://cavlemasters.com"
               target="_blank"
               rel="noopener"
-            >{{copy}} &copy;</a>
+              >{{ copy }} &copy;</a
+            >
             <br />API & all mission data belongs to the corresponding company.
           </p>
           <a
@@ -174,7 +201,8 @@
             target="_blank"
             rel="noopener"
             style="font-family: 'Share Tech Mono', monospace; text-transform: lowercase;"
-          >{{trademark}}</a>
+            >{{ trademark }}</a
+          >
         </div>
       </div>
     </div>

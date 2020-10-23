@@ -94,9 +94,8 @@
           <hr />
           <p class="text-secondary font-italic">
             Rocket Downrange is an independent hobby project by a guy learning
-            Vuejs. Links provided are to other resources I find useful or
-            interesting. No partnerships exist with any of these organizations
-            and Rocket Downrange.
+            VueJS. No endorsements or partnerships exist between Rocket
+            Downrange and the included organizations.
           </p>
         </div>
       </div>
