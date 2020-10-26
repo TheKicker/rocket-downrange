@@ -41,7 +41,12 @@
                   <td>{{ utcTranslate(this.results.launches[0].net) }}</td>
                   <td>{{ this.results.launches[0].location.pads[0].name }}</td>
                   <td>
-                    {{ this.results.launches[0].missions[0].description }}
+                    {{
+                      charCount(
+                        this.results.launches[0].missions[0].description,
+                        this.limit
+                      )
+                    }}
                   </td>
                 </tr>
                 <!-- Row 1 -->
@@ -57,7 +62,12 @@
                   <td>{{ utcTranslate(this.results.launches[1].net) }}</td>
                   <td>{{ this.results.launches[1].location.pads[0].name }}</td>
                   <td>
-                    {{ this.results.launches[1].missions[0].description }}
+                    {{
+                      charCount(
+                        this.results.launches[1].missions[0].description,
+                        this.limit
+                      )
+                    }}
                   </td>
                 </tr>
                 <!-- Row 2 -->
@@ -73,7 +83,12 @@
                   <td>{{ utcTranslate(this.results.launches[2].net) }}</td>
                   <td>{{ this.results.launches[2].location.pads[0].name }}</td>
                   <td>
-                    {{ this.results.launches[2].missions[0].description }}
+                    {{
+                      charCount(
+                        this.results.launches[2].missions[0].description,
+                        this.limit
+                      )
+                    }}
                   </td>
                 </tr>
                 <!-- Row 3 -->
@@ -89,7 +104,12 @@
                   <td>{{ utcTranslate(this.results.launches[3].net) }}</td>
                   <td>{{ this.results.launches[3].location.pads[0].name }}</td>
                   <td>
-                    {{ this.results.launches[3].missions[0].description }}
+                    {{
+                      charCount(
+                        this.results.launches[3].missions[0].description,
+                        this.limit
+                      )
+                    }}
                   </td>
                 </tr>
                 <!-- Row 4 -->
@@ -105,7 +125,12 @@
                   <td>{{ utcTranslate(this.results.launches[4].net) }}</td>
                   <td>{{ this.results.launches[4].location.pads[0].name }}</td>
                   <td>
-                    {{ this.results.launches[4].missions[0].description }}
+                    {{
+                      charCount(
+                        this.results.launches[4].missions[0].description,
+                        this.limit
+                      )
+                    }}
                   </td>
                 </tr>
                 <!-- Row 5 -->
@@ -121,7 +146,12 @@
                   <td>{{ utcTranslate(this.results.launches[5].net) }}</td>
                   <td>{{ this.results.launches[5].location.pads[0].name }}</td>
                   <td>
-                    {{ this.results.launches[5].missions[0].description }}
+                    {{
+                      charCount(
+                        this.results.launches[5].missions[0].description,
+                        this.limit
+                      )
+                    }}
                   </td>
                 </tr>
                 <!-- Row 6 -->
@@ -137,7 +167,12 @@
                   <td>{{ utcTranslate(this.results.launches[6].net) }}</td>
                   <td>{{ this.results.launches[6].location.pads[0].name }}</td>
                   <td>
-                    {{ this.results.launches[6].missions[0].description }}
+                    {{
+                      charCount(
+                        this.results.launches[6].missions[0].description,
+                        this.limit
+                      )
+                    }}
                   </td>
                 </tr>
                 <!-- Row 7 -->
@@ -153,7 +188,12 @@
                   <td>{{ utcTranslate(this.results.launches[7].net) }}</td>
                   <td>{{ this.results.launches[7].location.pads[0].name }}</td>
                   <td>
-                    {{ this.results.launches[7].missions[0].description }}
+                    {{
+                      charCount(
+                        this.results.launches[7].missions[0].description,
+                        this.limit
+                      )
+                    }}
                   </td>
                 </tr>
                 <!-- Row 8 -->
@@ -169,7 +209,12 @@
                   <td>{{ utcTranslate(this.results.launches[8].net) }}</td>
                   <td>{{ this.results.launches[8].location.pads[0].name }}</td>
                   <td>
-                    {{ this.results.launches[8].missions[0].description }}
+                    {{
+                      charCount(
+                        this.results.launches[8].missions[0].description,
+                        this.limit
+                      )
+                    }}
                   </td>
                 </tr>
               </tbody>
@@ -195,7 +240,8 @@ export default {
   name: "LLNextLaunch",
   data() {
     return {
-      results: []
+      results: [],
+      limit: 220
     };
   },
   mounted() {
@@ -210,6 +256,13 @@ export default {
     utcTranslate(results) {
       var local = new Date(results).toLocaleString();
       return local;
+    },
+    charCount(results, limit) {
+      if (results.length > limit) {
+        return results.slice(0, limit) + "...";
+      } else {
+        return results;
+      }
     }
   }
 };
