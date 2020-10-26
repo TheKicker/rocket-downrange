@@ -29,6 +29,16 @@ const routes = [
 		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/SpaceX.vue')
 	},
 	{
+		path: '/boeing-aerospace',
+		name: 'Boeing Aerospace',
+		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/Boeing-Aerospace.vue')
+	},
+	{
+		path: '/united-launch-alliance',
+		name: 'United Launch Alliance',
+		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/United-Launch-Alliance.vue')
+	},
+	{
 		path: '/rocket-lab',
 		name: 'Rocket Lab',
 		component: () => import(/* webpackChunkName: "Rocket-Lab" */ '../views/Rocket-Lab.vue')

@@ -89,17 +89,20 @@
                     >ROCKET LAB</router-link
                   >
                 </li>
+                <!-- <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/boeing-aerospace"
+                    >BOEING</router-link
+                  >
+                </li> -->
+                <li class="nav-item">
+                  <router-link
+                    class="nav-link ml-1"
+                    to="/united-launch-alliance"
+                    >ULA</router-link
+                  >
+                </li>
               </div>
             </li>
-
-            <!-- <li class="nav-item">
-              <a
-                href="https://github.com/TheKicker/rocket-downrange"
-                target="_blank"
-                class="nav-link"
-                to="/rocket-lab"
-              >Github</a>
-            </li>-->
           </ul>
           <div class="mx-auto text-center">
             <button
