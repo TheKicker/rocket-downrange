@@ -31,31 +31,81 @@
                 <!-- Row 0 -->
                 <tr>
                   <th scope="row">
-                    {{ this.results.launches[0].missions[0].name }}
+                    {{
+                      checkValueText(this.results.launches[0].missions[0].name)
+                    }}
                   </th>
                   <th>
-                    {{ this.results.launches[0].rocket.name }}
+                    {{ checkValueText(this.results.launches[0].rocket.name) }}
                   </th>
                   <td>{{ utcTranslate(this.results.launches[0].net) }}</td>
-                  <td>{{ this.results.launches[0].location.pads[0].name }}</td>
                   <td>
-                    {{ this.results.launches[0].missions[0].description }}
+                    {{
+                      checkValueText(
+                        this.results.launches[0].location.pads[0].name
+                      )
+                    }}
+                  </td>
+                  <td>
+                    {{
+                      checkValueText(
+                        this.results.launches[0].missions[0].description
+                      )
+                    }}
                   </td>
                 </tr>
                 <!-- Row 1 -->
                 <tr>
                   <th scope="row">
-                    {{ this.results.launches[1].missions[0].name }}
+                    {{
+                      checkValueText(this.results.launches[1].missions[0].name)
+                    }}
                   </th>
                   <th>
-                    {{ this.results.launches[1].rocket.name }}
+                    {{ checkValueText(this.results.launches[1].rocket.name) }}
                   </th>
                   <td>{{ utcTranslate(this.results.launches[1].net) }}</td>
-                  <td>{{ this.results.launches[1].location.pads[0].name }}</td>
                   <td>
-                    {{ this.results.launches[1].missions[0].description }}
+                    {{
+                      checkValueText(
+                        this.results.launches[1].location.pads[0].name
+                      )
+                    }}
+                  </td>
+                  <td>
+                    {{
+                      checkValueText(
+                        this.results.launches[1].missions[0].description
+                      )
+                    }}
                   </td>
                 </tr>
+                <!-- Row 2
+                <tr>
+                  <th scope="row">
+                    {{
+                      checkValueText(this.results.launches[2].missions[0].name)
+                    }}
+                  </th>
+                  <th>
+                    {{ checkValueText(this.results.launches[2].rocket.name) }}
+                  </th>
+                  <td>{{ utcTranslate(this.results.launches[2].net) }}</td>
+                  <td>
+                    {{
+                      checkValueText(
+                        this.results.launches[2].location.pads[0].name
+                      )
+                    }}
+                  </td>
+                  <td>
+                    {{
+                      checkValueText(
+                        this.results.launches[2].missions[0].description
+                      )
+                    }}
+                  </td>
+                </tr> -->
               </tbody>
             </table>
           </div>
@@ -90,6 +140,13 @@ export default {
     utcTranslate(results) {
       var local = new Date(results).toLocaleString();
       return local;
+    },
+    checkValueText: function(apiResults) {
+      if (apiResults === null) {
+        return (apiResults = " N/A ");
+      } else {
+        return apiResults;
+      }
     }
   }
 };

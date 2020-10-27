@@ -133,7 +133,7 @@
                     }}
                   </td>
                 </tr>
-                <!-- Row 5 -->
+                <!-- Row 5
                 <tr>
                   <th scope="row">
                     {{ this.results.launches[5].missions[0].name }}
@@ -154,7 +154,7 @@
                     }}
                   </td>
                 </tr>
-                <!-- Row 6 -->
+                 Row 6 
                 <tr>
                   <th scope="row">
                     {{ this.results.launches[6].missions[0].name }}
@@ -174,49 +174,7 @@
                       )
                     }}
                   </td>
-                </tr>
-                <!-- Row 7 -->
-                <tr>
-                  <th scope="row">
-                    {{ this.results.launches[7].missions[0].name }}
-                  </th>
-                  <th>
-                    {{ this.results.launches[7].rocket.name }} <br />
-                    {{ this.results.launches[7].lsp.name }},
-                    {{ this.results.launches[7].lsp.countryCode }}
-                  </th>
-                  <td>{{ utcTranslate(this.results.launches[7].net) }}</td>
-                  <td>{{ this.results.launches[7].location.pads[0].name }}</td>
-                  <td>
-                    {{
-                      charCount(
-                        this.results.launches[7].missions[0].description,
-                        this.limit
-                      )
-                    }}
-                  </td>
-                </tr>
-                <!-- Row 8 -->
-                <tr>
-                  <th scope="row">
-                    {{ this.results.launches[8].missions[0].name }}
-                  </th>
-                  <th>
-                    {{ this.results.launches[8].rocket.name }} <br />
-                    {{ this.results.launches[8].lsp.name }},
-                    {{ this.results.launches[8].lsp.countryCode }}
-                  </th>
-                  <td>{{ utcTranslate(this.results.launches[8].net) }}</td>
-                  <td>{{ this.results.launches[8].location.pads[0].name }}</td>
-                  <td>
-                    {{
-                      charCount(
-                        this.results.launches[8].missions[0].description,
-                        this.limit
-                      )
-                    }}
-                  </td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
           </div>
