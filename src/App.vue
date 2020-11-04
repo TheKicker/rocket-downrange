@@ -1,22 +1,5 @@
 <template>
   <div id="app">
-    <section id="vote">
-      <marquee id="marquee" behavior="scroll" direction="left" scrollamount="5">
-        <h6 class="text-white">
-          <i class="fas fa-flag-usa"></i> &nbsp; Election Day is coming, check
-          your eligibility or register at vote.org &nbsp;
-          <i class="fas fa-flag-usa"></i> &nbsp; Let's keep 45 in office!
-          <a
-            href="https://www.donaldjtrump.com/"
-            target="_blank"
-            rel="noopener"
-            class="btn vote-btn vote-link"
-            >Visit DonaldJTrump.com</a
-          >
-        </h6>
-      </marquee>
-    </section>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
         <router-link class="navbar-brand" to="/">{{ org }}</router-link>
