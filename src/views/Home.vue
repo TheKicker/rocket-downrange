@@ -38,7 +38,7 @@ export default {
     Contact
   },
   metaInfo: {
-    title: "Rocket Downrange | Home",
+    title: "Rocket Downrange",
     meta: [
       { name: "author", content: "Github: @TheKicker" },
       {
