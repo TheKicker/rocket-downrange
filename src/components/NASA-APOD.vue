@@ -2,17 +2,19 @@
   <div id="APOD" class="APOD my-4 mx-4">
     <div class="card container">
       <div class="card-body p-3 p-md-6 m-md-3">
-        <h5 class="text-left text-secondary">NASA Astronomy Picture of the Day:</h5>
+        <h5 class="text-left text-secondary">
+          NASA Astronomy Picture of the Day:
+        </h5>
         <hr />
-        <div v-if="(results.url).includes('youtube')">
-          <h3 class="text-center my-4">{{results.title}} (Youtube Link)</h3>
+        <div v-if="results.url.includes('youtube')">
+          <h3 class="text-center my-4">{{ results.title }} (Youtube Link)</h3>
         </div>
         <div v-else>
-          <h3 class="text-center my-4">{{results.title}}</h3>
+          <h3 class="text-center my-4">{{ results.title }}</h3>
         </div>
         <div class="row">
           <div class="mx-auto">
-            <div v-if="(results.url).includes('youtube')" class="text-danger">
+            <div v-if="results.url.includes('youtube')" class="text-danger">
               <div class="col-lg-12 col-md-12 col-sm-12">
                 <a :href="results.url" target="_blank" rel="noopener">
                   <img
@@ -39,13 +41,14 @@
           <div class="my-4">
             <div class="mx-auto my-2">
               <strong>
-                <div v-if="(results.url).includes('youtube')" class="text-danger">
+                <div v-if="results.url.includes('youtube')" class="text-danger">
                   <a
                     :href="results.url"
                     target="_blank"
                     rel="noopener"
                     class="btn btn-block btn-outline-primary text-secondary italic"
-                  >Watch on Youtube</a>
+                    >Watch on Youtube</a
+                  >
                 </div>
                 <div v-else class="text-success">
                   <a
@@ -53,11 +56,12 @@
                     target="_blank"
                     rel="noopener"
                     class="btn btn-block btn-outline-primary text-secondary italic"
-                  >HD Link from NASA.gov</a>
+                    >HD Link from NASA.gov</a
+                  >
                 </div>
               </strong>
             </div>
-            <p class="my-2 text-primary">{{results.explanation}}</p>
+            <p class="my-2 text-primary">{{ results.explanation }}</p>
           </div>
         </div>
         <div class="row container mx-auto d-block text-center">
@@ -65,7 +69,10 @@
         </div>
         <hr />
         <p class="text-center">
-          <i>Last Updated at {{(new Date(results.date).toLocaleString())}} by NASA-JPL, come back tomorrow for a new picture of the day!</i>
+          <i
+            >Last Updated at {{ new Date(results.date).toLocaleString() }}, come
+            back tomorrow for a new picture of the day!</i
+          >
         </p>
       </div>
     </div>

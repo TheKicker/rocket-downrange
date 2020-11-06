@@ -3,15 +3,15 @@
     <div class="card container">
       <div class="card-body">
         <h5 class="text-left text-secondary">
-          The Launch Library API:
+          The Launch Library:
         </h5>
         <hr />
         <h3 class="text-center my-4">
-          Upcoming Launches You Don't Wanna Miss
+          Upcoming Launches You Don't Want to Miss
         </h3>
         <div class="row text-center">
           <img
-            src="https://rocketdownrange.com/rocketdownrange.jpg"
+            src="https://images.unsplash.com/photo-1581293963396-4d8804f556c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
             class="img-fluid mx-auto"
           />
         </div>
@@ -21,29 +21,32 @@
               <thead class="thead-dark">
                 <tr>
                   <th scope="col">Mission</th>
-                  <th scope="col">Launch Provider Vehicle & Country</th>
-                  <th scope="col">Time (Target Date)</th>
-                  <th scope="col">Pad Location</th>
-                  <th scope="col">Customer Organization</th>
+                  <th scope="col">Rocket</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Location</th>
+                  <th scope="col">Mission Overview</th>
                 </tr>
               </thead>
               <tbody>
                 <!-- Row 0 -->
                 <tr>
                   <th scope="row">
-                    {{ this.results.launches[0].missions[0].name }}
+                    {{ this.results.results[0].mission.name }}
                   </th>
                   <th>
-                    {{ this.results.launches[0].rocket.name }} <br />
-                    {{ this.results.launches[0].lsp.name }},
-                    {{ this.results.launches[0].lsp.countryCode }}
+                    {{ this.results.results[0].rocket.configuration.name }},
+                    <br />
+                    {{ this.results.results[0].launch_service_provider.name }}
                   </th>
-                  <td>{{ utcTranslate(this.results.launches[0].net) }}</td>
-                  <td>{{ this.results.launches[0].location.pads[0].name }}</td>
+                  <td>{{ utcTranslate(this.results.results[0].net) }}</td>
+                  <td>
+                    {{ this.results.results[0].pad.name }},
+                    {{ this.results.results[0].pad.location.name }}
+                  </td>
                   <td>
                     {{
                       charCount(
-                        this.results.launches[0].missions[0].description,
+                        this.results.results[0].mission.description,
                         this.limit
                       )
                     }}
@@ -52,19 +55,22 @@
                 <!-- Row 1 -->
                 <tr>
                   <th scope="row">
-                    {{ this.results.launches[1].missions[0].name }}
+                    {{ this.results.results[1].mission.name }}
                   </th>
                   <th>
-                    {{ this.results.launches[1].rocket.name }} <br />
-                    {{ this.results.launches[1].lsp.name }},
-                    {{ this.results.launches[1].lsp.countryCode }}
+                    {{ this.results.results[1].rocket.configuration.name }},
+                    <br />
+                    {{ this.results.results[1].launch_service_provider.name }}
                   </th>
-                  <td>{{ utcTranslate(this.results.launches[1].net) }}</td>
-                  <td>{{ this.results.launches[1].location.pads[0].name }}</td>
+                  <td>{{ utcTranslate(this.results.results[1].net) }}</td>
+                  <td>
+                    {{ this.results.results[1].pad.name }},
+                    {{ this.results.results[1].pad.location.name }}
+                  </td>
                   <td>
                     {{
                       charCount(
-                        this.results.launches[1].missions[0].description,
+                        this.results.results[1].mission.description,
                         this.limit
                       )
                     }}
@@ -73,19 +79,22 @@
                 <!-- Row 2 -->
                 <tr>
                   <th scope="row">
-                    {{ this.results.launches[2].missions[0].name }}
+                    {{ this.results.results[2].mission.name }}
                   </th>
                   <th>
-                    {{ this.results.launches[2].rocket.name }} <br />
-                    {{ this.results.launches[2].lsp.name }},
-                    {{ this.results.launches[2].lsp.countryCode }}
+                    {{ this.results.results[2].rocket.configuration.name }},
+                    <br />
+                    {{ this.results.results[2].launch_service_provider.name }}
                   </th>
-                  <td>{{ utcTranslate(this.results.launches[2].net) }}</td>
-                  <td>{{ this.results.launches[2].location.pads[0].name }}</td>
+                  <td>{{ utcTranslate(this.results.results[2].net) }}</td>
+                  <td>
+                    {{ this.results.results[2].pad.name }},
+                    {{ this.results.results[2].pad.location.name }}
+                  </td>
                   <td>
                     {{
                       charCount(
-                        this.results.launches[2].missions[0].description,
+                        this.results.results[2].mission.description,
                         this.limit
                       )
                     }}
@@ -94,19 +103,22 @@
                 <!-- Row 3 -->
                 <tr>
                   <th scope="row">
-                    {{ this.results.launches[3].missions[0].name }}
+                    {{ this.results.results[3].mission.name }}
                   </th>
                   <th>
-                    {{ this.results.launches[3].rocket.name }} <br />
-                    {{ this.results.launches[3].lsp.name }},
-                    {{ this.results.launches[3].lsp.countryCode }}
+                    {{ this.results.results[3].rocket.configuration.name }},
+                    <br />
+                    {{ this.results.results[3].launch_service_provider.name }}
                   </th>
-                  <td>{{ utcTranslate(this.results.launches[3].net) }}</td>
-                  <td>{{ this.results.launches[3].location.pads[0].name }}</td>
+                  <td>{{ utcTranslate(this.results.results[3].net) }}</td>
+                  <td>
+                    {{ this.results.results[3].pad.name }},
+                    {{ this.results.results[3].pad.location.name }}
+                  </td>
                   <td>
                     {{
                       charCount(
-                        this.results.launches[3].missions[0].description,
+                        this.results.results[3].mission.description,
                         this.limit
                       )
                     }}
@@ -115,66 +127,27 @@
                 <!-- Row 4 -->
                 <tr>
                   <th scope="row">
-                    {{ this.results.launches[4].missions[0].name }}
+                    {{ this.results.results[4].mission.name }}
                   </th>
                   <th>
-                    {{ this.results.launches[4].rocket.name }} <br />
-                    {{ this.results.launches[4].lsp.name }},
-                    {{ this.results.launches[4].lsp.countryCode }}
+                    {{ this.results.results[4].rocket.configuration.name }},
+                    <br />
+                    {{ this.results.results[4].launch_service_provider.name }}
                   </th>
-                  <td>{{ utcTranslate(this.results.launches[4].net) }}</td>
-                  <td>{{ this.results.launches[4].location.pads[0].name }}</td>
+                  <td>{{ utcTranslate(this.results.results[4].net) }}</td>
+                  <td>
+                    {{ this.results.results[4].pad.name }},
+                    {{ this.results.results[4].pad.location.name }}
+                  </td>
                   <td>
                     {{
                       charCount(
-                        this.results.launches[4].missions[0].description,
+                        this.results.results[4].mission.description,
                         this.limit
                       )
                     }}
                   </td>
                 </tr>
-                <!-- Row 5
-                <tr>
-                  <th scope="row">
-                    {{ this.results.launches[5].missions[0].name }}
-                  </th>
-                  <th>
-                    {{ this.results.launches[5].rocket.name }} <br />
-                    {{ this.results.launches[5].lsp.name }},
-                    {{ this.results.launches[5].lsp.countryCode }}
-                  </th>
-                  <td>{{ utcTranslate(this.results.launches[5].net) }}</td>
-                  <td>{{ this.results.launches[5].location.pads[0].name }}</td>
-                  <td>
-                    {{
-                      charCount(
-                        this.results.launches[5].missions[0].description,
-                        this.limit
-                      )
-                    }}
-                  </td>
-                </tr>
-                 Row 6 
-                <tr>
-                  <th scope="row">
-                    {{ this.results.launches[6].missions[0].name }}
-                  </th>
-                  <th>
-                    {{ this.results.launches[6].rocket.name }} <br />
-                    {{ this.results.launches[6].lsp.name }},
-                    {{ this.results.launches[6].lsp.countryCode }}
-                  </th>
-                  <td>{{ utcTranslate(this.results.launches[6].net) }}</td>
-                  <td>{{ this.results.launches[6].location.pads[0].name }}</td>
-                  <td>
-                    {{
-                      charCount(
-                        this.results.launches[6].missions[0].description,
-                        this.limit
-                      )
-                    }}
-                  </td>
-                </tr> -->
               </tbody>
             </table>
           </div>
@@ -182,7 +155,10 @@
         <hr />
         <p class="text-center">
           <i>
-            Launch dates converted to your local timezone
+            API Data brought to you by
+            <a href="https://thespacedevs.com" target="_blank" rel="noopener"
+              >The Space Devs</a
+            >
           </i>
         </p>
       </div>
@@ -191,7 +167,7 @@
 </template>
 
 <script>
-var url = "https://launchlibrary.net/1.4/launch/next/10";
+var url = "https://ll.thespacedevs.com/2.0.0/launch/upcoming/?limit=5";
 
 window.axios = require("axios");
 export default {

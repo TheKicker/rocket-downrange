@@ -1,25 +1,25 @@
 <template>
-  <div class="ULA container my-4">
-    <ULAInfo />
+  <div class="Firefly container my-4">
+    <FireflyInfo />
     <NextLaunch />
-
     <div class="card">
       <div class="card-header">Quote</div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">
           <p>
-            Every rocket launch is a leap towards humankind’s destiny and an act
-            of defiance against the tyranny of gravity.
+            We're really excited and confident about our upcoming launch
+            (December 2020), all great companies start with a great team - and
+            we have an amazing one with plenty of experience. This ain't our
+            first rodeo.
           </p>
           <footer class="blockquote-footer">
-            Tory Bruno
-            <cite title="Source Title">CSO of United Launch Alliance</cite>
+            Tom Markusic
+            <cite title="Source Title">CEO of Firefly Aerospace</cite>
           </footer>
         </blockquote>
       </div>
     </div>
 
-    <NASAperseverance />
     <br />
     <hr />
     <div class="text-center">
@@ -33,19 +33,17 @@
 
 <script>
 // @ is an alias to /src
-import ULAInfo from "@/components/ULAInfo.vue";
-import NextLaunch from "@/components/ULA-NextLaunch.vue";
-import NASAperseverance from "@/components/NASA-perseverance.vue";
+import FireflyInfo from "@/components/FireflyInfo.vue";
+import NextLaunch from "@/components/Firefly-NextLaunch.vue";
 
 export default {
-  name: "United Launch Alliance",
+  name: "Firefly",
   components: {
-    ULAInfo,
-    NextLaunch,
-    NASAperseverance
+    FireflyInfo,
+    NextLaunch
   },
   metaInfo: {
-    title: "Rocket Downrange | United Launch Alliance",
+    title: "Rocket Downrange | Firefly Aerospace",
     meta: [
       { name: "author", content: "Github: @TheKicker" },
       {
@@ -59,17 +57,14 @@ export default {
           "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Launch Info, Space Industry"
       },
       // OpenGraph data (Most widely used)
-      {
-        property: "og:title",
-        content: "Rocket Downrange | United Launch Alliance"
-      },
+      { property: "og:title", content: "Rocket Downrange | Firefly Aerospace" },
       { property: "og:site_name", content: "Rocket Downrange" },
       // The list of types is available here: http://ogp.me/#types
       { property: "og:type", content: "website" },
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/united-launch-alliance"
+        content: "https://www.rocketdownrange.com/Firefly-aerospace"
       },
       {
         property: "og:image",
@@ -86,11 +81,11 @@ export default {
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com/united-launch-alliance"
+        content: "https://www.rocketdownrange.com/Firefly-aerospace"
       },
       {
         name: "twitter:title",
-        content: "Rocket Downrange | United Launch Alliance"
+        content: "Rocket Downrange | Firefly Aerospace"
       },
       {
         name: "twitter:description",
@@ -105,10 +100,7 @@ export default {
       },
 
       // Google / Schema.org markup:
-      {
-        itemprop: "name",
-        content: "Rocket Downrange | United Launch Alliance"
-      },
+      { itemprop: "name", content: "Rocket Downrange | Firefly Aerospace" },
       {
         itemprop: "description",
         content:

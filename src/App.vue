@@ -63,13 +63,18 @@
                 aria-labelledby="navbarDropdown"
               >
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/spacex"
-                    >SPACEX</router-link
+                  <router-link class="nav-link ml-1" to="/firefly-aerospace"
+                    >FIREFLY</router-link
                   >
                 </li>
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/rocket-lab"
                     >ROCKET LAB</router-link
+                  >
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/spacex"
+                    >SPACEX</router-link
                   >
                 </li>
                 <!-- <li class="nav-item">
@@ -82,6 +87,11 @@
                     class="nav-link ml-1"
                     to="/united-launch-alliance"
                     >ULA</router-link
+                  >
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/virgin-galactic"
+                    >VIRGIN</router-link
                   >
                 </li>
               </div>

@@ -1,18 +1,24 @@
 <template>
-  <div class="RocketLab-NextLaunch my-4">
+  <div class="Virgin-NextLaunch my-4">
     <div class="card">
       <div class="card-body">
         <h2 class="text-left">Next Mission:</h2>
         <hr />
-        <h1 class="text-center my-4">
-          {{ valueCheckText(this.results.results[0].mission.name) }}
+        <h1
+          v-if="this.results.results[0].mission == null"
+          class="text-center my-4"
+        >
+          {{ this.results.results[0].name }}
+        </h1>
+        <h1 v-else class="text-center my-4">
+          {{ this.results.results[0].mission.name }}
         </h1>
         <div class="row mx-1">
           <div class="col-md-5 col-sm-12 text-center">
             <img
-              src="https://rocketdownrange.com/rocketLab.jpg"
+              src="https://rocketdownrange.com/virgin-galactic.jpg"
               class="img-fluid"
-              alt="Rocket Labs Upcoming Launch Mission"
+              alt="Virgin Galactic/Orbit Upcoming Launch Mission"
             />
           </div>
           <div class="col-md-6 col-sm-12 my-2 mx-1">
@@ -36,14 +42,24 @@
               </span>
             </h6>
             <hr />
-            <p class="my-2">
-              {{ valueCheckText(this.results.results[0].mission.description) }}
+            <p v-if="this.results.results[0].mission == null" class="my-2">
+              This is a test flight or we do not have any available data.
+            </p>
+            <p v-else class="my-2">
+              {{ this.results.results[0].mission.description }}
             </p>
           </div>
         </div>
 
         <div class="row my-4">
-          <h6 class="col-6 text-center text-primary">
+          <h6
+            v-if="this.results.results[0].mission == null"
+            class="col-6 text-center text-primary"
+          >
+            <span class="text-secondary">Mission Type:</span>
+            N/A
+          </h6>
+          <h6 v-else class="col-6 text-center text-primary">
             <span class="text-secondary">Mission Type:</span>
             {{ valueCheckText(this.results.results[0].mission.type) }}
           </h6>
@@ -57,15 +73,13 @@
           </h6>
         </div>
 
-        <div class="row my-4">
+        <!-- <div class="row my-4">
           <h6 class="col-6 text-center">
             <span class="text-secondary">Mission Status:</span>
             {{ valueCheckText(this.results.results[0].status.name) }}
-            (probability of
-            {{ valueCheckText(this.results.results[0].probability) }}%)
           </h6>
           <h6
-            v-if="this.results.results[0].mission.orbit === null"
+            v-if="this.results.results[0].mission.orbit == null"
             class="col-6 text-center"
           >
             <span class="text-secondary">Target:</span> N/A
@@ -76,7 +90,7 @@
               valueCheckText(this.results.results[0].mission.orbit.abbrev)
             }})
           </h6>
-        </div>
+        </div> -->
 
         <div class="row my-4"></div>
         <hr />
@@ -88,7 +102,7 @@
 
 <script>
 var url =
-  "https://ll.thespacedevs.com/2.0.0/launch/upcoming/?format=json&rocket__configuration__manufacturer__name__icontains=Rocket+Lab&limit=1";
+  "https://ll.thespacedevs.com/2.0.0/launch/upcoming/?format=json&limit=1&rocket__configuration__manufacturer__name__icontains=Virgin";
 window.axios = require("axios");
 export default {
   name: "NextLaunch",
@@ -109,14 +123,6 @@ export default {
     valueCheckText: function(apiResults) {
       if (apiResults === null) {
         return (apiResults = " N/A ");
-      } else {
-        return apiResults;
-      }
-    },
-    valueCheckImage: function(apiResults) {
-      if (apiResults === null) {
-        return (apiResults =
-          "https://www.freeiconspng.com/uploads/no-image-icon-6.png");
       } else {
         return apiResults;
       }

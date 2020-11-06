@@ -3,6 +3,7 @@
     <Homepage />
     <NASAapod />
     <LLNextLaunch />
+    <SNAPI />
     <NASAperseverance />
     <NASAinsight />
     <NASAcuriosity />
@@ -23,6 +24,7 @@ import NASAcuriosity from "@/components/NASA-curiosity.vue";
 import NASAopportunity from "@/components/NASA-opportunity.vue";
 import ExternalLinks from "@/components/ExternalLinks.vue";
 import Contact from "@/components/Contact.vue";
+import SNAPI from "@/components/LaunchLib-SpaceNews.vue";
 
 export default {
   name: "Home",
@@ -35,7 +37,8 @@ export default {
     NASAcuriosity,
     NASAopportunity,
     ExternalLinks,
-    Contact
+    Contact,
+    SNAPI
   },
   metaInfo: {
     title: "Rocket Downrange",

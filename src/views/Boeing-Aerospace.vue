@@ -1,7 +1,6 @@
 <template>
   <div class="Boeing container my-4">
     <BoeingInfo />
-    <BA5 />
 
     <div class="card">
       <div class="card-header">Quote</div>
@@ -27,13 +26,11 @@
 <script>
 // @ is an alias to /src
 import BoeingInfo from "@/components/BoeingInfo.vue";
-import BA5 from "@/components/Boeing-Next5.vue";
 
 export default {
   name: "Boeing",
   components: {
-    BoeingInfo,
-    BA5
+    BoeingInfo
   },
   metaInfo: {
     title: "Rocket Downrange | Boeing Aerospace",

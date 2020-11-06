@@ -1,6 +1,6 @@
 <template>
-  <div class="ULA container my-4">
-    <ULAInfo />
+  <div class="VirginGalactic container my-4">
+    <VirginInfo />
     <NextLaunch />
 
     <div class="card">
@@ -8,18 +8,22 @@
       <div class="card-body">
         <blockquote class="blockquote mb-0">
           <p>
-            Every rocket launch is a leap towards humankind’s destiny and an act
-            of defiance against the tyranny of gravity.
+            There are millions of people out there who would love to become
+            astronauts, who'd love to go to space - they'd love to look back at
+            this wonderful world from space. That will be the engine that will
+            enable us then to develop spaceships to transport people around the
+            world at tremendous speeds in an environmentally friendly way.
           </p>
           <footer class="blockquote-footer">
-            Tory Bruno
-            <cite title="Source Title">CSO of United Launch Alliance</cite>
+            Sir Richard Branson
+            <cite title="Source Title"
+              >Co-Founder of Virgin Group (Virgin Galactic & Orbit)</cite
+            >
           </footer>
         </blockquote>
       </div>
     </div>
 
-    <NASAperseverance />
     <br />
     <hr />
     <div class="text-center">
@@ -33,19 +37,17 @@
 
 <script>
 // @ is an alias to /src
-import ULAInfo from "@/components/ULAInfo.vue";
-import NextLaunch from "@/components/ULA-NextLaunch.vue";
-import NASAperseverance from "@/components/NASA-perseverance.vue";
+import VirginInfo from "@/components/VirginInfo.vue";
+import NextLaunch from "@/components/Virgin-NextLaunch.vue";
 
 export default {
-  name: "United Launch Alliance",
+  name: "VirginGalactic",
   components: {
-    ULAInfo,
-    NextLaunch,
-    NASAperseverance
+    VirginInfo,
+    NextLaunch
   },
   metaInfo: {
-    title: "Rocket Downrange | United Launch Alliance",
+    title: "Rocket Downrange | Virgin Galactic",
     meta: [
       { name: "author", content: "Github: @TheKicker" },
       {
@@ -59,17 +61,14 @@ export default {
           "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Launch Info, Space Industry"
       },
       // OpenGraph data (Most widely used)
-      {
-        property: "og:title",
-        content: "Rocket Downrange | United Launch Alliance"
-      },
+      { property: "og:title", content: "Rocket Downrange | Virgin Galactic" },
       { property: "og:site_name", content: "Rocket Downrange" },
       // The list of types is available here: http://ogp.me/#types
       { property: "og:type", content: "website" },
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/united-launch-alliance"
+        content: "https://www.rocketdownrange.com/virgin-galactic"
       },
       {
         property: "og:image",
@@ -86,11 +85,11 @@ export default {
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com/united-launch-alliance"
+        content: "https://www.rocketdownrange.com/virgin-galactic"
       },
       {
         name: "twitter:title",
-        content: "Rocket Downrange | United Launch Alliance"
+        content: "Rocket Downrange | Virgin Galactic"
       },
       {
         name: "twitter:description",
@@ -105,10 +104,7 @@ export default {
       },
 
       // Google / Schema.org markup:
-      {
-        itemprop: "name",
-        content: "Rocket Downrange | United Launch Alliance"
-      },
+      { itemprop: "name", content: "Rocket Downrange | Virgin Galactic" },
       {
         itemprop: "description",
         content:

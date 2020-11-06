@@ -1,5 +1,5 @@
 <template>
-  <div class="RocketLab-NextLaunch my-4">
+  <div class="ULA-NextLaunch my-4">
     <div class="card">
       <div class="card-body">
         <h2 class="text-left">Next Mission:</h2>
@@ -10,9 +10,9 @@
         <div class="row mx-1">
           <div class="col-md-5 col-sm-12 text-center">
             <img
-              src="https://rocketdownrange.com/rocketLab.jpg"
+              src="https://rocketdownrange.com/ula.jpg"
               class="img-fluid"
-              alt="Rocket Labs Upcoming Launch Mission"
+              alt="ULA Upcoming Launch Mission"
             />
           </div>
           <div class="col-md-6 col-sm-12 my-2 mx-1">
@@ -88,7 +88,7 @@
 
 <script>
 var url =
-  "https://ll.thespacedevs.com/2.0.0/launch/upcoming/?format=json&rocket__configuration__manufacturer__name__icontains=Rocket+Lab&limit=1";
+  "https://ll.thespacedevs.com/2.0.0/launch/upcoming/?format=json&limit=1&rocket__configuration__manufacturer__name__icontains=United+Launch+Alliance";
 window.axios = require("axios");
 export default {
   name: "NextLaunch",

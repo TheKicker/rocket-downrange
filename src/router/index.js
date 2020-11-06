@@ -34,6 +34,16 @@ const routes = [
 		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/Boeing-Aerospace.vue')
 	},
 	{
+		path: '/firefly-aerospace',
+		name: 'Firefly Aerospace',
+		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/Firefly-Aerospace.vue')
+	},
+	{
+		path: '/virgin-galactic',
+		name: 'Virgin Galactic',
+		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/Virgin-Galactic.vue')
+	},
+	{
 		path: '/united-launch-alliance',
 		name: 'United Launch Alliance',
 		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/United-Launch-Alliance.vue')

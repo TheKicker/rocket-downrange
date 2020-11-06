@@ -4,7 +4,6 @@
       <!-- <h3 class="text-red">NOTE: I am using a fan-made API that is not updated by the company.</h3> -->
     </div>
     <RocketLabinfo />
-    <RL5 />
     <NextLaunch />
     <div class="card">
       <div class="card-header">Quote</div>
@@ -27,11 +26,8 @@
     <br />
     <hr />
     <div class="text-center">
-      <a
-        href="https://github.com/barrosfilipe/Rocket-Lab-API"
-        target="_blank"
-        rel="noopener"
-        >Link to Rocket Lab API Repository</a
+      <a href="https://thespacedevs.com" target="_blank" rel="noopener"
+        >API Data brought to you by The Space Devs</a
       >
     </div>
   </div>
@@ -40,7 +36,6 @@
 <script>
 // @ is an alias to /src
 import RocketLabinfo from "@/components/RocketLabinfo.vue";
-import RL5 from "@/components/RL-Next5.vue";
 import NextLaunch from "@/components/RocketLab-NextLaunch.vue";
 import RocketLabTest from "@/components/RocketLab-ItsATest.vue";
 
@@ -48,7 +43,6 @@ export default {
   name: "RocketLab",
   components: {
     RocketLabinfo,
-    RL5,
     NextLaunch,
     RocketLabTest
   },
