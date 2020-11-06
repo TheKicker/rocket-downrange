@@ -6,7 +6,7 @@
           The Space News API (SNAPI):
         </h5>
         <hr />
-        <h3 class="text-center my-4">Top Space News of Today</h3>
+        <h3 class="text-center my-4">Trending News</h3>
 
         <div class="row mb-2 justify-content-center">
           <!-- Article 1 -->
