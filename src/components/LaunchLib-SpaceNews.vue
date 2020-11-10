@@ -1,5 +1,5 @@
 <template>
-  <div class="ULA-NextLaunch my-4">
+  <div class="LaunchLib-News my-4">
     <div class="card container">
       <div class="card-body">
         <h5 class="text-left text-secondary">
