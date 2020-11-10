@@ -1,51 +1,51 @@
 <template>
-  <div class="Pluto">
-    <!-- The Planet Pluto -->
-    <section id="pluto" class="celestial">
+  <div class="Earth">
+    <!-- The Planet Earth -->
+    <section id="earth" class="celestial">
       <div class="celestialImage">
         <img
-          src="../assets/pluto.png"
+          src="../../assets/earth.png"
           class="img-fluid"
-          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- NASA’s New Horizons spacecraft captured this high-resolution enhanced color view of Pluto on July 14, 2015. The image combines blue, red and infrared images taken by the Ralph/Multispectral Visual Imaging Camera (MVIC)."
+          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- This Blue Marble Earth montage shown above -- created from photographs taken by the Visible/Infrared Imager Radiometer Suite (VIIRS) instrument on board the new Suomi NPP satellite -- shows many stunning details of our home planet. "
         />
       </div>
       <div class="celestialText">
         <div class="col mx-4">
           <div class="mx-2">
-            <h1 class="glitch">Pluto</h1>
-            <p>Although stripped of it's planet-status, the dwarf Pluto is one of Rocket Downrange's VIPs of the Solar System. With an atmosphere that is thin and composed mostly of nitrogen, methane and carbon monoxide - the average temperature is -380ºF making it too cold to sustain life, but it does have a heart-shaped glacier slightly bigger than Texas. This fascinating world has blue skies, spinning moons, mountains as high as the Rockies, and it snows! Pluto and its largest moon, Charon, are so similar in size that they orbit each other like a double planet system.</p>
+            <h1 class="glitch">Earth</h1>
+            <p>Third planet from the Sun and nicknamed the "pale blue dot", Earth is the fifth largest planet in the solar system and the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun.</p>
             <hr />
             <div class="stats">
               <div class="col-sm">
                 <i class="text-secondary">Classification:</i>
-                <br />Dwarf Planet
+                <br />Terrestrial
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Location from Sun:</i>
-                <br />3.67 billion miles (39.5 au)
+                <br />92.96 million miles (1 au)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Diameter:</i>
-                <br />1,472 miles
+                <br />7,926 miles
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Surface Temp:</i>
-                <br />-380ºF (avg)
+                <br />62ºF (avg)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Gravity:</i>
-                <br />0.66 m/s²
+                <br />9.81 m/s²
               </div>
             </div>
           </div>
           <hr />
           <div class="row mx-2">
-            <a class="btn btn-dark m-2 rounded" href="#neptune" v-scroll-to="'#neptune'">
+            <a class="btn btn-dark m-2 rounded" href="#venus" v-scroll-to="'#venus'">
               Prior &nbsp;
               <i class="fas fa-arrow-circle-up"></i>
             </a>
-            <a class="btn btn-dark m-2 rounded" href="#outro" v-scroll-to="'#outro'">
-              References &nbsp;
+            <a class="btn btn-dark m-2 rounded" href="#mars" v-scroll-to="'#mars'">
+              Next &nbsp;
               <i class="fas fa-arrow-circle-down"></i>
             </a>
           </div>
@@ -56,10 +56,10 @@
 </template>
 
 <script>
-console.log("The dwarf planet Pluto is spinning! ");
+console.log("The planet Earth is spinning! Our pale blue dot is beautiful. ");
 
 export default {
-  name: "Pluto",
+  name: "Earth",
   data() {
     return {
       results: []

@@ -1,50 +1,50 @@
 <template>
-  <div class="Neptune">
-    <!-- The Planet Neptune -->
-    <section id="neptune" class="celestial">
+  <div class="Saturn">
+    <!-- The Planet Saturn -->
+    <section id="saturn" class="celestial">
       <div class="celestialImage">
         <img
-          src="../assets/neptune.png"
+          src="../../assets/saturn.png"
           class="img-fluid"
-          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- This picture of Neptune was produced from the last whole planet images taken through the green and orange filters on the Voyager 2 narrow angle camera. The images were taken at a range of 4.4 million miles from the planet."
+          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- The latest view of Saturn from NASA's Hubble Space Telescope captures exquisite details of the ring system — which looks like a phonograph record with grooves that represent detailed structure within the rings — and atmospheric details that once could only be captured by spacecraft visiting the distant world."
         />
       </div>
       <div class="celestialText">
         <div class="col mx-4">
           <div class="mx-2">
-            <h1 class="glitch">Neptune</h1>
-            <p>Dark, cold and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system. More than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not visible to the naked eye and the first predicted by mathematics before its discovery. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846.</p>
+            <h1 class="glitch">Saturn</h1>
+            <p>Saturn is the sixth planet from the Sun and the second largest planet in our solar system. Adorned with thousands of beautiful ringlets, Saturn is unique among the planets. It is not the only planet to have rings—made of chunks of ice and rock—but none are as spectacular or as complicated as Saturn's. Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium.</p>
             <hr />
             <div class="stats">
               <div class="col-sm">
                 <i class="text-secondary">Classification:</i>
-                <br />Ice Giant
+                <br />Gas Giant
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Location from Sun:</i>
-                <br />2.8 billion miles (30.1 au)
+                <br />890.71 million miles (9.6 au)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Diameter:</i>
-                <br />34,503 miles
+                <br />72,368 miles (without rings)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Surface Temp:</i>
-                <br />-344ºF (avg)
+                <br />-288ºF (avg)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Gravity:</i>
-                <br />11.15 m/s²
+                <br />10.44 m/s²
               </div>
             </div>
           </div>
           <hr />
           <div class="row mx-2">
-            <a class="btn btn-dark m-2 rounded" href="#uranus" v-scroll-to="'#uranus'">
+            <a class="btn btn-dark m-2 rounded" href="#jupiter" v-scroll-to="'#jupiter'">
               Prior &nbsp;
               <i class="fas fa-arrow-circle-up"></i>
             </a>
-            <a class="btn btn-dark m-2 rounded" href="#pluto" v-scroll-to="'#pluto'">
+            <a class="btn btn-dark m-2 rounded" href="#uranus" v-scroll-to="'#uranus'">
               Next &nbsp;
               <i class="fas fa-arrow-circle-down"></i>
             </a>
@@ -56,10 +56,10 @@
 </template>
 
 <script>
-console.log("The planet Neptune is spinning! ");
+console.log("The planet Saturn is spinning! ");
 
 export default {
-  name: "Neptune",
+  name: "Saturn",
   data() {
     return {
       results: []

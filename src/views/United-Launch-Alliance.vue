@@ -1,5 +1,9 @@
 <template>
   <div class="ULA container my-4">
+    <Info
+      header="United Launch Alliance"
+      description="United Launch Alliance is an American spacecraft launch service provider that manufactures and operates a number of vehicles that are capable of sending vehicles to LEO and beyond. Formed in 2006, ULA is a joint venture between Lockheed Martin Space and Boeing Defense, Space and Security. Headquartered in Centennial, Colorado, United States."
+    />
     <ULAInfo />
     <NextLaunch />
 
@@ -33,14 +37,14 @@
 
 <script>
 // @ is an alias to /src
-import ULAInfo from "@/components/ULAInfo.vue";
-import NextLaunch from "@/components/ULA-NextLaunch.vue";
+import Info from "@/components/Info-Template.vue";
+import NextLaunch from "@/components/ula/ULA-NextLaunch.vue";
 import NASAperseverance from "@/components/NASA-perseverance.vue";
 
 export default {
   name: "United Launch Alliance",
   components: {
-    ULAInfo,
+    Info,
     NextLaunch,
     NASAperseverance
   },
@@ -51,12 +55,12 @@ export default {
       {
         name: "description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more! "
+          "United Launch Alliance (ULA) is a private aerospace firm based in the United States, their primary launch vehicles include the Atlas V, Vulcan Centaur and Delta IV.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
       },
       {
         name: "keywords",
         content:
-          "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Launch Info, Space Industry"
+          "NASA, Space, United Launch Alliance, ULA, Boeing Aerospace, Lockheed Martin, Atlas V, Vulcan Centaur, Delta IV, Launch Schedule, Flight Data"
       },
       // OpenGraph data (Most widely used)
       {
@@ -79,7 +83,7 @@ export default {
       {
         property: "og:description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more! "
+          "United Launch Alliance (ULA) is a private aerospace firm based in the United States, their primary launch vehicles include the Atlas V, Vulcan Centaur and Delta IV.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
       },
 
       // Twitter card
@@ -95,7 +99,7 @@ export default {
       {
         name: "twitter:description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more! "
+          "United Launch Alliance (ULA) is a private aerospace firm based in the United States, their primary launch vehicles include the Atlas V, Vulcan Centaur and Delta IV.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
@@ -112,7 +116,7 @@ export default {
       {
         itemprop: "description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more!"
+          "United Launch Alliance (ULA) is a private aerospace firm based in the United States, their primary launch vehicles include the Atlas V, Vulcan Centaur and Delta IV.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
       },
       {
         itemprop: "image",

@@ -5,7 +5,9 @@
       <div class="text-center">
         <h1 class="glitch">Welcome to the Solar System.</h1>
         <div>
-          <a class="btn btn-dark my-3" href="#solar" v-scroll-to="'#solar'">[ Launch ]</a>
+          <a class="btn btn-dark my-3" href="#solar" v-scroll-to="'#solar'"
+            >[ Launch ]</a
+          >
         </div>
       </div>
     </section>
@@ -27,13 +29,16 @@
       <div class="text-center">
         <h1 class="glitch">Data & Images from NASA</h1>
         <div class="row mx-auto">
-          <a class="btn btn-dark m-2" href="#app" v-scroll-to="'#app'">[ Return to Top ]</a>
+          <a class="btn btn-dark m-2" href="#app" v-scroll-to="'#app'"
+            >[ Return to Top ]</a
+          >
           <a
             class="btn btn-dark m-2"
             href="https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/"
             target="_blank"
             rel="noopener"
-          >[ Learn more at NASA.GOV ]</a>
+            >[ Learn more at NASA.GOV ]</a
+          >
         </div>
       </div>
     </section>
@@ -41,17 +46,17 @@
 </template>
 
 <script>
-import Sun from "@/components/Celestial-Sun.vue";
-import Mercury from "@/components/Celestial-Mercury.vue";
-import Venus from "@/components/Celestial-Venus.vue";
-import Earth from "@/components/Celestial-Earth.vue";
-import Mars from "@/components/Celestial-Mars.vue";
-import Ceres from "@/components/Celestial-Ceres.vue";
-import Jupiter from "@/components/Celestial-Jupiter.vue";
-import Saturn from "@/components/Celestial-Saturn.vue";
-import Uranus from "@/components/Celestial-Uranus.vue";
-import Neptune from "@/components/Celestial-Neptune.vue";
-import Pluto from "@/components/Celestial-Pluto.vue";
+import Sun from "@/components/solar-system/Celestial-Sun.vue";
+import Mercury from "@/components/solar-system/Celestial-Mercury.vue";
+import Venus from "@/components/solar-system/Celestial-Venus.vue";
+import Earth from "@/components/solar-system/Celestial-Earth.vue";
+import Mars from "@/components/solar-system/Celestial-Mars.vue";
+import Ceres from "@/components/solar-system/Celestial-Ceres.vue";
+import Jupiter from "@/components/solar-system/Celestial-Jupiter.vue";
+import Saturn from "@/components/solar-system/Celestial-Saturn.vue";
+import Uranus from "@/components/solar-system/Celestial-Uranus.vue";
+import Neptune from "@/components/solar-system/Celestial-Neptune.vue";
+import Pluto from "@/components/solar-system/Celestial-Pluto.vue";
 
 export default {
   name: "SolarSystem",

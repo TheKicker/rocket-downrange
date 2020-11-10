@@ -1,50 +1,50 @@
 <template>
-  <div class="Sun">
-    <!-- The Sun -->
-    <section id="solar" class="celestial">
+  <div class="Neptune">
+    <!-- The Planet Neptune -->
+    <section id="neptune" class="celestial">
       <div class="celestialImage">
         <img
-          src="../assets/sun.png"
+          src="../../assets/neptune.png"
           class="img-fluid"
-          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- The sun emitted a mid-level solar flare, peaking at 8:13 p.m. EDT on Oct. 1, 2015. NASA’s Solar Dynamics Observatory, which watches the sun constantly, captured an image of the event."
+          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- This picture of Neptune was produced from the last whole planet images taken through the green and orange filters on the Voyager 2 narrow angle camera. The images were taken at a range of 4.4 million miles from the planet."
         />
       </div>
       <div class="celestialText">
         <div class="col mx-4">
           <div class="mx-2">
-            <h2 class="glitch">The Sun</h2>
-            <p>The heart of our solar system—is a yellow dwarf star, a hot ball of glowing gases. Its gravity holds the solar system together, keeping everything from the biggest planets to the smallest particles of debris in its orbit. Electric currents in the Sun generate a magnetic field that is carried out through the solar system by the solar wind—a stream of electrically charged gas blowing outward from the Sun in all directions.</p>
+            <h1 class="glitch">Neptune</h1>
+            <p>Dark, cold and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system. More than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not visible to the naked eye and the first predicted by mathematics before its discovery. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846.</p>
             <hr />
             <div class="stats">
               <div class="col-sm">
                 <i class="text-secondary">Classification:</i>
-                <br />Yellow Dwarf Star
+                <br />Ice Giant
               </div>
               <div class="col-sm">
-                <i class="text-secondary">Location:</i>
-                <br />Center of Local System
+                <i class="text-secondary">Location from Sun:</i>
+                <br />2.8 billion miles (30.1 au)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Diameter:</i>
-                <br />864,752 miles
+                <br />34,503 miles
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Surface Temp:</i>
-                <br />11,000ºF (avg)
+                <br />-344ºF (avg)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Gravity:</i>
-                <br />274.0 m/s²
+                <br />11.15 m/s²
               </div>
             </div>
           </div>
           <hr />
           <div class="row mx-2">
-            <a class="btn btn-dark m-2 rounded" href="#app" v-scroll-to="'#app'">
+            <a class="btn btn-dark m-2 rounded" href="#uranus" v-scroll-to="'#uranus'">
               Prior &nbsp;
               <i class="fas fa-arrow-circle-up"></i>
             </a>
-            <a class="btn btn-dark m-2 rounded" href="#mercury" v-scroll-to="'#mercury'">
+            <a class="btn btn-dark m-2 rounded" href="#pluto" v-scroll-to="'#pluto'">
               Next &nbsp;
               <i class="fas fa-arrow-circle-down"></i>
             </a>
@@ -56,10 +56,10 @@
 </template>
 
 <script>
-console.log("The Sun is on fire! ");
+console.log("The planet Neptune is spinning! ");
 
 export default {
-  name: "Sun",
+  name: "Neptune",
   data() {
     return {
       results: []

@@ -8,7 +8,7 @@
           <p
             id="text-shadow-dark"
             class="lead text-white"
-          >From a space nerd, for the space nerds. Ad Astra, Godspeed.</p>
+          >From a space nerd, for the space nerds.</p>
           <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
           <!-- <a class="btn btn-primary btn-md" href="#" role="button">Learn more</a> -->
         </div>

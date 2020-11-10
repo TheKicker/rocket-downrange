@@ -1,9 +1,9 @@
 <template>
   <div class="RocketLab container my-4">
-    <div class="m-4">
-      <!-- <h3 class="text-red">NOTE: I am using a fan-made API that is not updated by the company.</h3> -->
-    </div>
-    <RocketLabinfo />
+    <Info
+      header="Rocket Lab"
+      description="Rocket Lab designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2006 by an engineer named Peter Beck and established headquarters in California in 2013. Currently, their prime launch vehicle is named Electron capable of launching nearly 500lbs to orbit."
+    />
     <NextLaunch />
     <div class="card">
       <div class="card-header">Quote</div>
@@ -35,14 +35,14 @@
 
 <script>
 // @ is an alias to /src
-import RocketLabinfo from "@/components/RocketLabinfo.vue";
-import NextLaunch from "@/components/RocketLab-NextLaunch.vue";
-import RocketLabTest from "@/components/RocketLab-ItsATest.vue";
+import Info from "@/components/Info-Template.vue";
+import NextLaunch from "@/components/rocketlab/RocketLab-NextLaunch.vue";
+import RocketLabTest from "@/components/rocketlab/RocketLab-ItsATest.vue";
 
 export default {
   name: "RocketLab",
   components: {
-    RocketLabinfo,
+    Info,
     NextLaunch,
     RocketLabTest
   },
@@ -56,12 +56,12 @@ export default {
       {
         name: "description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more! "
+          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
       },
       {
         name: "keywords",
         content:
-          "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Launch Info, Space Industry"
+          "NASA, Rocket Labs, Next Launch, Rocket Downrange, Latest Launch, Launch Info, Space Industry, Electron Rocket"
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange | Rocket Lab" },
@@ -81,7 +81,7 @@ export default {
       {
         property: "og:description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more! "
+          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
       },
 
       // Twitter card
@@ -94,7 +94,7 @@ export default {
       {
         name: "twitter:description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more! "
+          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
@@ -108,7 +108,7 @@ export default {
       {
         itemprop: "description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more!"
+          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
       },
       {
         itemprop: "image",

@@ -1,51 +1,51 @@
 <template>
-  <div class="Venus">
-    <!-- The Planet Venus -->
-    <section id="venus" class="celestial">
+  <div class="Pluto">
+    <!-- The Planet Pluto -->
+    <section id="pluto" class="celestial">
       <div class="celestialImage">
         <img
-          src="../assets/venus.png"
+          src="../../assets/pluto.png"
           class="img-fluid"
-          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- This global view of the surface of Venus is centered at 180 degrees east longitude. Magellan synthetic aperture radar mosaics from the first cycle of Magellan mapping are mapped onto a computer-simulated globe to create this image."
+          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- NASA’s New Horizons spacecraft captured this high-resolution enhanced color view of Pluto on July 14, 2015. The image combines blue, red and infrared images taken by the Ralph/Multispectral Visual Imaging Camera (MVIC)."
         />
       </div>
       <div class="celestialText">
         <div class="col mx-4">
           <div class="mx-2">
-            <h1 class="glitch">Venus</h1>
-            <p>Second planet from the Sun and our closest planetary neighbor, Venus is similar in structure and size to Earth, but it is now a very different world. Venus spins slowly in the opposite direction most planets do. Its thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system—with surface temperatures hot enough to melt lead. Glimpses below the clouds reveal volcanoes and deformed mountains.</p>
+            <h1 class="glitch">Pluto</h1>
+            <p>Although stripped of it's planet-status, the dwarf Pluto is one of Rocket Downrange's VIPs of the Solar System. With an atmosphere that is thin and composed mostly of nitrogen, methane and carbon monoxide - the average temperature is -380ºF making it too cold to sustain life, but it does have a heart-shaped glacier slightly bigger than Texas. This fascinating world has blue skies, spinning moons, mountains as high as the Rockies, and it snows! Pluto and its largest moon, Charon, are so similar in size that they orbit each other like a double planet system.</p>
             <hr />
             <div class="stats">
               <div class="col-sm">
                 <i class="text-secondary">Classification:</i>
-                <br />Terrestrial
+                <br />Dwarf Planet
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Location from Sun:</i>
-                <br />67.24 million miles (0.70 au)
+                <br />3.67 billion miles (39.5 au)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Diameter:</i>
-                <br />7,521 miles
+                <br />1,472 miles
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Surface Temp:</i>
-                <br />867ºF (avg)
+                <br />-380ºF (avg)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Gravity:</i>
-                <br />8.87 m/s²
+                <br />0.66 m/s²
               </div>
             </div>
           </div>
           <hr />
           <div class="row mx-2">
-            <a class="btn btn-dark m-2 rounded" href="#mercury" v-scroll-to="'#mercury'">
+            <a class="btn btn-dark m-2 rounded" href="#neptune" v-scroll-to="'#neptune'">
               Prior &nbsp;
               <i class="fas fa-arrow-circle-up"></i>
             </a>
-            <a class="btn btn-dark m-2 rounded" href="#earth" v-scroll-to="'#earth'">
-              Next &nbsp;
+            <a class="btn btn-dark m-2 rounded" href="#outro" v-scroll-to="'#outro'">
+              References &nbsp;
               <i class="fas fa-arrow-circle-down"></i>
             </a>
           </div>
@@ -56,10 +56,10 @@
 </template>
 
 <script>
-console.log("The planet Venus is spinning! ");
+console.log("The dwarf planet Pluto is spinning! ");
 
 export default {
-  name: "Venus",
+  name: "Pluto",
   data() {
     return {
       results: []

@@ -1,50 +1,66 @@
 <template>
-  <div class="Saturn">
-    <!-- The Planet Saturn -->
-    <section id="saturn" class="celestial">
+  <div class="Venus">
+    <!-- The Planet Venus -->
+    <section id="venus" class="celestial">
       <div class="celestialImage">
         <img
-          src="../assets/saturn.png"
+          src="../../assets/venus.png"
           class="img-fluid"
-          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- The latest view of Saturn from NASA's Hubble Space Telescope captures exquisite details of the ring system — which looks like a phonograph record with grooves that represent detailed structure within the rings — and atmospheric details that once could only be captured by spacecraft visiting the distant world."
+          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- This global view of the surface of Venus is centered at 180 degrees east longitude. Magellan synthetic aperture radar mosaics from the first cycle of Magellan mapping are mapped onto a computer-simulated globe to create this image."
         />
       </div>
       <div class="celestialText">
         <div class="col mx-4">
           <div class="mx-2">
-            <h1 class="glitch">Saturn</h1>
-            <p>Saturn is the sixth planet from the Sun and the second largest planet in our solar system. Adorned with thousands of beautiful ringlets, Saturn is unique among the planets. It is not the only planet to have rings—made of chunks of ice and rock—but none are as spectacular or as complicated as Saturn's. Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium.</p>
+            <h1 class="glitch">Venus</h1>
+            <p>
+              Second planet from the Sun and our closest planetary neighbor,
+              Venus is similar in structure and size to Earth, but it is now a
+              very different world. Venus spins slowly in the opposite direction
+              most planets do. Its thick atmosphere traps heat in a runaway
+              greenhouse effect, making it the hottest planet in our solar
+              system—with surface temperatures hot enough to melt lead. Glimpses
+              below the clouds reveal volcanoes and deformed mountains.
+            </p>
             <hr />
             <div class="stats">
               <div class="col-sm">
                 <i class="text-secondary">Classification:</i>
-                <br />Gas Giant
+                <br />Terrestrial
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Location from Sun:</i>
-                <br />890.71 million miles (9.6 au)
+                <br />67.24 million miles (0.70 au)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Diameter:</i>
-                <br />72,368 miles (without rings)
+                <br />7,521 miles
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Surface Temp:</i>
-                <br />-288ºF (avg)
+                <br />867ºF (avg)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Gravity:</i>
-                <br />10.44 m/s²
+                <br />8.87 m/s²
               </div>
             </div>
           </div>
           <hr />
           <div class="row mx-2">
-            <a class="btn btn-dark m-2 rounded" href="#jupiter" v-scroll-to="'#jupiter'">
+            <a
+              class="btn btn-dark m-2 rounded"
+              href="#mercury"
+              v-scroll-to="'#mercury'"
+            >
               Prior &nbsp;
               <i class="fas fa-arrow-circle-up"></i>
             </a>
-            <a class="btn btn-dark m-2 rounded" href="#uranus" v-scroll-to="'#uranus'">
+            <a
+              class="btn btn-dark m-2 rounded"
+              href="#earth"
+              v-scroll-to="'#earth'"
+            >
               Next &nbsp;
               <i class="fas fa-arrow-circle-down"></i>
             </a>
@@ -56,10 +72,10 @@
 </template>
 
 <script>
-console.log("The planet Saturn is spinning! ");
+console.log("The planet Venus is spinning! ");
 
 export default {
-  name: "Saturn",
+  name: "Venus",
   data() {
     return {
       results: []

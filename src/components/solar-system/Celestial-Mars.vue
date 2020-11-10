@@ -1,50 +1,50 @@
 <template>
-  <div class="Uranus">
-    <!-- The Planet Uranus -->
-    <section id="uranus" class="celestial">
+  <div class="Mars">
+    <!-- The Planet Mars -->
+    <section id="mars" class="celestial">
       <div class="celestialImage">
         <img
-          src="../assets/uranus.png"
+          src="../../assets/mars.png"
           class="img-fluid"
-          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- This is an image of the planet Uranus taken by the spacecraft Voyager 2 on January 14th 1986 from a distance of approximately 7.8 milllion miles ( 12.7 million km )."
+          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- This mosaic of Mars is a compilation of images captured by the Viking Orbiter 1. The center of the scene shows the entire Valles Marineris canyon system, more than 2,000 miles (3,000 kilometers) long, 370 miles (600 kilometers) wide and 5 miles (8 kilometers) deep."
         />
       </div>
       <div class="celestialText">
         <div class="col mx-4">
           <div class="mx-2">
-            <h1 class="glitch">Uranus</h1>
-            <p>The seventh planet from the sun - Uranus is known as the sideways planet because it rotates on its side compared to all other planets. The first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star. Uranus is about four times wider than Earth. If Earth were a large apple, Uranus would be the size of a basketball.</p>
+            <h1 class="glitch">Mars</h1>
+            <p>The fourth planet from the Sun, Mars is a dusty, cold, desert world with a very thin atmosphere. This dynamic planet has seasons, polar ice caps and weather and canyons and extinct volcanoes, evidence it was once an even more active past. Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam the alien landscape.</p>
             <hr />
             <div class="stats">
               <div class="col-sm">
                 <i class="text-secondary">Classification:</i>
-                <br />Ice Giant
+                <br />Terrestrial
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Location from Sun:</i>
-                <br />1.9 billion miles (19.22 au)
+                <br />141.63 million miles (1.52 au)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Diameter:</i>
-                <br />31,034 miles
+                <br />4,222 miles
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Surface Temp:</i>
-                <br />-322.6ºF (avg)
+                <br />-85ºF (avg)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Gravity:</i>
-                <br />8.69 m/s²
+                <br />3.71 m/s²
               </div>
             </div>
           </div>
           <hr />
           <div class="row mx-2">
-            <a class="btn btn-dark m-2 rounded" href="#saturn" v-scroll-to="'#saturn'">
+            <a class="btn btn-dark m-2 rounded" href="#earth" v-scroll-to="'#earth'">
               Prior &nbsp;
               <i class="fas fa-arrow-circle-up"></i>
             </a>
-            <a class="btn btn-dark m-2 rounded" href="#neptune" v-scroll-to="'#neptune'">
+            <a class="btn btn-dark m-2 rounded" href="#ceres" v-scroll-to="'#ceres'">
               Next &nbsp;
               <i class="fas fa-arrow-circle-down"></i>
             </a>
@@ -56,10 +56,10 @@
 </template>
 
 <script>
-console.log("The planet Uranus is spinning! ");
+console.log("The planet Mars is spinning! Our red sister is beautiful. ");
 
 export default {
-  name: "Uranus",
+  name: "Mars",
   data() {
     return {
       results: []

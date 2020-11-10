@@ -29,11 +29,6 @@ const routes = [
 		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/SpaceX.vue')
 	},
 	{
-		path: '/boeing-aerospace',
-		name: 'Boeing Aerospace',
-		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/Boeing-Aerospace.vue')
-	},
-	{
 		path: '/firefly-aerospace',
 		name: 'Firefly Aerospace',
 		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/Firefly-Aerospace.vue')
@@ -57,6 +52,11 @@ const routes = [
 		path: '/solar-system',
 		name: 'Solar System',
 		component: () => import(/* webpackChunkName: "Solar System" */ '../views/Solar-System.vue')
+	},
+	{
+		path: '/astronaut',
+		name: 'Astronaut',
+		component: () => import(/* webpackChunkName: "Test" */ '../views/Astronaut.vue')
 	},
 	{
 		path: '/test',

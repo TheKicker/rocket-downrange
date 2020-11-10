@@ -9,10 +9,10 @@
 
 <script>
 // @ is an alias to /src
-import SolarSystem from "@/components/Solar-System.vue";
+import SolarSystem from "@/components/solar-system/Solar-System.vue";
 
 export default {
-  name: "Main",
+  name: "Solar System",
   components: {
     SolarSystem
   },
@@ -28,7 +28,7 @@ export default {
       {
         name: "keywords",
         content:
-          "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Launch Info, Space Industry, Solar System"
+          "Space, Exploration, Rocket Downrange, Solar System, Sun, Mercury, Venus, Earth, Mars, Jupiter, Uranus, Neptune, Saturn, Pluto, learn"
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange | Solar System" },

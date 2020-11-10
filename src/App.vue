@@ -36,6 +36,11 @@
                 class="dropdown-menu bg-primary"
                 aria-labelledby="navbarDropdown"
               >
+                <!-- <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/astronaut"
+                    >ASTRONAUT</router-link
+                  >
+                </li> -->
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/solar-system"
                     >SOLAR SYSTEM</router-link

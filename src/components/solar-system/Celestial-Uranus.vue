@@ -1,50 +1,50 @@
 <template>
-  <div class="Ceres">
-    <!-- The Planet Ceres -->
-    <section id="ceres" class="celestial">
+  <div class="Uranus">
+    <!-- The Planet Uranus -->
+    <section id="uranus" class="celestial">
       <div class="celestialImage">
         <img
-          src="../assets/ceres.png"
+          src="../../assets/uranus.png"
           class="img-fluid"
-          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- This image of Ceres approximates how the dwarf planet's colors would appear to the eye. This view of Ceres, produced by the German Aerospace Center in Berlin, combines images taken during Dawn's first science orbit in 2015 using the framing camera's red, green and blue spectral filters."
+          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- This is an image of the planet Uranus taken by the spacecraft Voyager 2 on January 14th 1986 from a distance of approximately 7.8 milllion miles ( 12.7 million km )."
         />
       </div>
       <div class="celestialText">
         <div class="col mx-4">
           <div class="mx-2">
-            <h1 class="glitch">Ceres & Asteroid Belt</h1>
-            <p>The dwarf planet Ceres is the largest object in the asteroid belt between Mars and Jupiter and the only dwarf planet located in the inner solar system. Considered an asteroid for far too long, Ceres makes up about 25% of the mass in the asteroid belt - but is still far smaller than Pluto. Ceres made history in 2015 by being the first dwarf planet to be visited by spacecraft.</p>
+            <h1 class="glitch">Uranus</h1>
+            <p>The seventh planet from the sun - Uranus is known as the sideways planet because it rotates on its side compared to all other planets. The first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star. Uranus is about four times wider than Earth. If Earth were a large apple, Uranus would be the size of a basketball.</p>
             <hr />
             <div class="stats">
               <div class="col-sm">
                 <i class="text-secondary">Classification:</i>
-                <br />Dwarf Planet
+                <br />Ice Giant
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Location from Sun:</i>
-                <br />257.69 million miles (2.77 au)
+                <br />1.9 billion miles (19.22 au)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Diameter:</i>
-                <br />584 miles
+                <br />31,034 miles
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Surface Temp:</i>
-                <br />-37ºF (avg)
+                <br />-322.6ºF (avg)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Gravity:</i>
-                <br />0.27 m/s²
+                <br />8.69 m/s²
               </div>
             </div>
           </div>
           <hr />
           <div class="row mx-2">
-            <a class="btn btn-dark m-2 rounded" href="#mars" v-scroll-to="'#mars'">
+            <a class="btn btn-dark m-2 rounded" href="#saturn" v-scroll-to="'#saturn'">
               Prior &nbsp;
               <i class="fas fa-arrow-circle-up"></i>
             </a>
-            <a class="btn btn-dark m-2 rounded" href="#jupiter" v-scroll-to="'#jupiter'">
+            <a class="btn btn-dark m-2 rounded" href="#neptune" v-scroll-to="'#neptune'">
               Next &nbsp;
               <i class="fas fa-arrow-circle-down"></i>
             </a>
@@ -56,10 +56,10 @@
 </template>
 
 <script>
-console.log("The dwarf planet Ceres is spinning! ");
+console.log("The planet Uranus is spinning! ");
 
 export default {
-  name: "Ceres",
+  name: "Uranus",
   data() {
     return {
       results: []

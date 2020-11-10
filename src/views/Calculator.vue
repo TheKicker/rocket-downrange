@@ -1,22 +1,20 @@
 <template>
-  <div class="Calculator">
-    <h1 class="text-center my-4">This section is coming soon :) Congrats on finding it</h1>
-    <div class="py-2">
-      <KerbalComms />
-    </div>
+  <div class="Calculator container my-4">
+    <Info
+      header="Section Coming Soon :)"
+      description="Congratulations on finding it! Hopefully, it will be tools you can use to calculate celestial positioning, kerbal game calculators, phase of the moon, etc. Big hopes for this page but it'll take time to develop!"
+    />
   </div>
 </template>
 
 
 <script>
 // @ is an alias to /src
-import KerbalComms from "@/components/Kerbal-Comms.vue";
+import Info from "@/components/Info-Template.vue";
 
 export default {
   name: "Calculator",
-  components: {
-    KerbalComms
-  },
+  components: { Info },
   metaInfo: {
     title: "Rocket Downrange | Calculators",
     meta: [

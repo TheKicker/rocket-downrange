@@ -1,50 +1,50 @@
 <template>
-  <div class="Earth">
-    <!-- The Planet Earth -->
-    <section id="earth" class="celestial">
+  <div class="Sun">
+    <!-- The Sun -->
+    <section id="solar" class="celestial">
       <div class="celestialImage">
         <img
-          src="../assets/earth.png"
+          src="../../assets/sun.png"
           class="img-fluid"
-          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- This Blue Marble Earth montage shown above -- created from photographs taken by the Visible/Infrared Imager Radiometer Suite (VIIRS) instrument on board the new Suomi NPP satellite -- shows many stunning details of our home planet. "
+          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- The sun emitted a mid-level solar flare, peaking at 8:13 p.m. EDT on Oct. 1, 2015. NASA’s Solar Dynamics Observatory, which watches the sun constantly, captured an image of the event."
         />
       </div>
       <div class="celestialText">
         <div class="col mx-4">
           <div class="mx-2">
-            <h1 class="glitch">Earth</h1>
-            <p>Third planet from the Sun and nicknamed the "pale blue dot", Earth is the fifth largest planet in the solar system and the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun.</p>
+            <h2 class="glitch">The Sun</h2>
+            <p>The heart of our solar system—is a yellow dwarf star, a hot ball of glowing gases. Its gravity holds the solar system together, keeping everything from the biggest planets to the smallest particles of debris in its orbit. Electric currents in the Sun generate a magnetic field that is carried out through the solar system by the solar wind—a stream of electrically charged gas blowing outward from the Sun in all directions.</p>
             <hr />
             <div class="stats">
               <div class="col-sm">
                 <i class="text-secondary">Classification:</i>
-                <br />Terrestrial
+                <br />Yellow Dwarf Star
               </div>
               <div class="col-sm">
-                <i class="text-secondary">Location from Sun:</i>
-                <br />92.96 million miles (1 au)
+                <i class="text-secondary">Location:</i>
+                <br />Center of Local System
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Diameter:</i>
-                <br />7,926 miles
+                <br />864,752 miles
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Surface Temp:</i>
-                <br />62ºF (avg)
+                <br />11,000ºF (avg)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Gravity:</i>
-                <br />9.81 m/s²
+                <br />274.0 m/s²
               </div>
             </div>
           </div>
           <hr />
           <div class="row mx-2">
-            <a class="btn btn-dark m-2 rounded" href="#venus" v-scroll-to="'#venus'">
+            <a class="btn btn-dark m-2 rounded" href="#app" v-scroll-to="'#app'">
               Prior &nbsp;
               <i class="fas fa-arrow-circle-up"></i>
             </a>
-            <a class="btn btn-dark m-2 rounded" href="#mars" v-scroll-to="'#mars'">
+            <a class="btn btn-dark m-2 rounded" href="#mercury" v-scroll-to="'#mercury'">
               Next &nbsp;
               <i class="fas fa-arrow-circle-down"></i>
             </a>
@@ -56,10 +56,10 @@
 </template>
 
 <script>
-console.log("The planet Earth is spinning! Our pale blue dot is beautiful. ");
+console.log("The Sun is on fire! ");
 
 export default {
-  name: "Earth",
+  name: "Sun",
   data() {
     return {
       results: []

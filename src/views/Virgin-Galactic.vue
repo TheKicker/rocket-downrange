@@ -1,6 +1,9 @@
 <template>
   <div class="VirginGalactic container my-4">
-    <VirginInfo />
+    <Info
+      header="Virgin Galactic/Orbit"
+      description="Virgin Galactic is a British spaceflight company within the Virgin Group - a multinational venture capital conglomerate founded by Sir Richard Branson and Nik Powell. Galactic is developing launch vehicles capable of suborbital spaceflights aimed at the tourism industry with a sister company referred to as Virgin Orbit focusing on the commercial. Virgin Galactic/Orbit employ nearly 1000 individuals - Galactic is headquartered in Las Cruces, New Mexico, and Orbit is headquartered in Long Beach, California."
+    />
     <NextLaunch />
 
     <div class="card">
@@ -37,13 +40,13 @@
 
 <script>
 // @ is an alias to /src
-import VirginInfo from "@/components/VirginInfo.vue";
-import NextLaunch from "@/components/Virgin-NextLaunch.vue";
+import Info from "@/components/Info-Template.vue";
+import NextLaunch from "@/components/virgin/Virgin-NextLaunch.vue";
 
 export default {
   name: "VirginGalactic",
   components: {
-    VirginInfo,
+    Info,
     NextLaunch
   },
   metaInfo: {
@@ -53,12 +56,12 @@ export default {
       {
         name: "description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more! "
+          "Virgin Galactic & Orbit (Virgin Group) is a private aerospace firm based in the United States, their primary launch vehicles include the WhiteKnightTwo, SpaceShipTwo and others in development.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
       },
       {
         name: "keywords",
         content:
-          "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Launch Info, Space Industry"
+          "NASA, Space, Virgin, Galactic, Orbit, Richard Branson, SpaceShipTwo, WhiteKnightTwo, Rocket Downrange, Launch Schedule, Data"
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange | Virgin Galactic" },
@@ -78,7 +81,7 @@ export default {
       {
         property: "og:description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more! "
+          "Virgin Galactic & Orbit (Virgin Group) is a private aerospace firm based in the United States, their primary launch vehicles include the WhiteKnightTwo, SpaceShipTwo and others in development.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
       },
 
       // Twitter card
@@ -94,7 +97,7 @@ export default {
       {
         name: "twitter:description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more! "
+          "Virgin Galactic & Orbit (Virgin Group) is a private aerospace firm based in the United States, their primary launch vehicles include the WhiteKnightTwo, SpaceShipTwo and others in development.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
@@ -108,7 +111,7 @@ export default {
       {
         itemprop: "description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more!"
+          "Virgin Galactic & Orbit (Virgin Group) is a private aerospace firm based in the United States, their primary launch vehicles include the WhiteKnightTwo, SpaceShipTwo and others in development.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
       },
       {
         itemprop: "image",

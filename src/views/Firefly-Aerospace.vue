@@ -1,6 +1,14 @@
 <template>
   <div class="Firefly container my-4">
-    <FireflyInfo />
+    <Info
+      header="Firefly Aerospace"
+      description="Firefly Aerospace is an American private aerospace firm based in Austin,
+        Texas, that develops small and medium sized vehicles to launch payloads
+        to low earth orbit. They were founded in January of 2014 and employ
+        around 300 individuals between the United States and Ukraine. Their
+        primary launch vehicle, Alpha, is capable of lifting one metric ton with
+        more vehicles in research and development."
+    />
     <NextLaunch />
     <div class="card">
       <div class="card-header">Quote</div>
@@ -33,13 +41,13 @@
 
 <script>
 // @ is an alias to /src
-import FireflyInfo from "@/components/FireflyInfo.vue";
-import NextLaunch from "@/components/Firefly-NextLaunch.vue";
+import Info from "@/components/Info-Template.vue";
+import NextLaunch from "@/components/firefly/Firefly-NextLaunch.vue";
 
 export default {
   name: "Firefly",
   components: {
-    FireflyInfo,
+    Info,
     NextLaunch
   },
   metaInfo: {
@@ -49,12 +57,12 @@ export default {
       {
         name: "description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more! "
+          "Firefly Aerospace is a private aerospace firm based in the United States, their primary launch vehicle is the Alpha.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra!  "
       },
       {
         name: "keywords",
         content:
-          "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Launch Info, Space Industry"
+          "Firefly Aerospace, Alpha Rocket, United States, Space Exploration, Rocket Downrange, Next Launch, Launch Schedule"
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange | Firefly Aerospace" },
@@ -74,7 +82,7 @@ export default {
       {
         property: "og:description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more! "
+          "Firefly Aerospace is a private aerospace firm based in the United States, their primary launch vehicle is the Alpha.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra!  "
       },
 
       // Twitter card
@@ -90,7 +98,7 @@ export default {
       {
         name: "twitter:description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more! "
+          "Firefly Aerospace is a private aerospace firm based in the United States, their primary launch vehicle is the Alpha.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra!  "
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
@@ -104,7 +112,7 @@ export default {
       {
         itemprop: "description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Built with Vue.JS, Netlify and more!"
+          "Firefly Aerospace is a private aerospace firm based in the United States, their primary launch vehicle is the Alpha.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
       },
       {
         itemprop: "image",

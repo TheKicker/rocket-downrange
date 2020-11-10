@@ -12,6 +12,16 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://rocketdownrange.com/astronaut</loc>
+  <lastmod>2020-10-10T15:30:00+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://rocketdownrange.com/solar-system</loc>
+  <lastmod>2020-10-10T15:30:00+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
   <loc>https://rocketdownrange.com/spacex</loc>
   <lastmod>2020-10-10T15:30:00+00:00</lastmod>
   <priority>1.00</priority>
@@ -33,11 +43,6 @@
 </url>
 <url>
   <loc>https://rocketdownrange.com/united-launch-alliance</loc>
-  <lastmod>2020-10-10T15:30:00+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/solar-system</loc>
   <lastmod>2020-10-10T15:30:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
