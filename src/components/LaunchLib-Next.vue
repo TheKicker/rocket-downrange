@@ -2,9 +2,7 @@
   <div class="ULA-NextLaunch my-4">
     <div class="card container">
       <div class="card-body">
-        <h5 class="text-left text-secondary">
-          The Launch Library:
-        </h5>
+        <h5 class="text-left text-secondary">The Launch Library:</h5>
         <hr />
         <h3 class="text-center my-4">
           Upcoming Launches You Don't Want to Miss
@@ -175,16 +173,16 @@ export default {
   data() {
     return {
       results: [],
-      limit: 220
+      limit: 220,
     };
   },
   mounted() {
     window.axios
       .get(url)
-      .then(response => {
+      .then((response) => {
         this.results = response.data;
       })
-      .catch(error => console.log(error));
+      .catch((error) => console.log(error));
   },
   methods: {
     utcTranslate(results) {
@@ -197,8 +195,8 @@ export default {
       } else {
         return results;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

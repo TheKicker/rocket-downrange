@@ -6,23 +6,11 @@
     />
     <ULAInfo />
     <NextLaunch />
-
-    <div class="card">
-      <div class="card-header">Quote</div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>
-            Every rocket launch is a leap towards humankind’s destiny and an act
-            of defiance against the tyranny of gravity.
-          </p>
-          <footer class="blockquote-footer">
-            Tory Bruno
-            <cite title="Source Title">CSO of United Launch Alliance</cite>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
-
+    <Quote
+      message="Every rocket launch is a leap towards humankind’s destiny and an act of defiance against the tyranny of gravity."
+      author="Tory Bruno"
+      significance="CSO of United Launch Alliance"
+    />
     <NASAperseverance />
     <br />
     <hr />
@@ -40,13 +28,15 @@
 import Info from "@/components/Info-Template.vue";
 import NextLaunch from "@/components/ula/ULA-NextLaunch.vue";
 import NASAperseverance from "@/components/NASA-perseverance.vue";
+import Quote from "@/components/Quotes-Template.vue";
 
 export default {
   name: "United Launch Alliance",
   components: {
     Info,
     NextLaunch,
-    NASAperseverance
+    NASAperseverance,
+    Quote,
   },
   metaInfo: {
     title: "Rocket Downrange | United Launch Alliance",
@@ -55,17 +45,17 @@ export default {
       {
         name: "description",
         content:
-          "United Launch Alliance (ULA) is a private aerospace firm based in the United States, their primary launch vehicles include the Atlas V, Vulcan Centaur and Delta IV.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "United Launch Alliance (ULA) is a private aerospace firm based in the United States, their primary launch vehicles include the Atlas V, Vulcan Centaur and Delta IV.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       {
         name: "keywords",
         content:
-          "NASA, Space, United Launch Alliance, ULA, Boeing Aerospace, Lockheed Martin, Atlas V, Vulcan Centaur, Delta IV, Launch Schedule, Flight Data"
+          "NASA, Space, United Launch Alliance, ULA, Boeing Aerospace, Lockheed Martin, Atlas V, Vulcan Centaur, Delta IV, Launch Schedule, Flight Data",
       },
       // OpenGraph data (Most widely used)
       {
         property: "og:title",
-        content: "Rocket Downrange | United Launch Alliance"
+        content: "Rocket Downrange | United Launch Alliance",
       },
       { property: "og:site_name", content: "Rocket Downrange" },
       // The list of types is available here: http://ogp.me/#types
@@ -73,57 +63,57 @@ export default {
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/united-launch-alliance"
+        content: "https://www.rocketdownrange.com/united-launch-alliance",
       },
       {
         property: "og:image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
       // Often the same as your meta description, but not always.
       {
         property: "og:description",
         content:
-          "United Launch Alliance (ULA) is a private aerospace firm based in the United States, their primary launch vehicles include the Atlas V, Vulcan Centaur and Delta IV.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "United Launch Alliance (ULA) is a private aerospace firm based in the United States, their primary launch vehicles include the Atlas V, Vulcan Centaur and Delta IV.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
 
       // Twitter card
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com/united-launch-alliance"
+        content: "https://www.rocketdownrange.com/united-launch-alliance",
       },
       {
         name: "twitter:title",
-        content: "Rocket Downrange | United Launch Alliance"
+        content: "Rocket Downrange | United Launch Alliance",
       },
       {
         name: "twitter:description",
         content:
-          "United Launch Alliance (ULA) is a private aerospace firm based in the United States, their primary launch vehicles include the Atlas V, Vulcan Centaur and Delta IV.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "United Launch Alliance (ULA) is a private aerospace firm based in the United States, their primary launch vehicles include the Atlas V, Vulcan Centaur and Delta IV.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
       {
         name: "twitter:image:src",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
 
       // Google / Schema.org markup:
       {
         itemprop: "name",
-        content: "Rocket Downrange | United Launch Alliance"
+        content: "Rocket Downrange | United Launch Alliance",
       },
       {
         itemprop: "description",
         content:
-          "United Launch Alliance (ULA) is a private aerospace firm based in the United States, their primary launch vehicles include the Atlas V, Vulcan Centaur and Delta IV.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "United Launch Alliance (ULA) is a private aerospace firm based in the United States, their primary launch vehicles include the Atlas V, Vulcan Centaur and Delta IV.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       {
         itemprop: "image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
-      }
-    ]
-  }
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
+      },
+    ],
+  },
 };
 </script>
 

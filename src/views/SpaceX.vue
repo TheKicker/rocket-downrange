@@ -6,22 +6,11 @@
     />
     <NextLaunch />
     <LatestLaunch />
-    <div class="card">
-      <div class="card-header">Quote</div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>
-            Life cannot be just about solving one problem after another. There
-            need to be things that inspire you, that make you glad to wake up
-            and be a part of humanity.
-          </p>
-          <footer class="blockquote-footer">
-            Elon Musk
-            <cite title="Source Title">CEO of SpaceX</cite>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
+    <Quote
+      message="Life cannot be just about solving one problem after another. There need to be things that inspire you, that make you glad to wake up and be a part of humanity."
+      author="Elon Musk"
+      significance="CEO of SpaceX"
+    />
     <SPACEXcrewdemo2 />
     <Starman msg="Where is Starman? " />
     <br />
@@ -44,6 +33,7 @@ import NextLaunch from "@/components/spacex/SpaceX-NextLaunch.vue";
 import LatestLaunch from "@/components/spacex/SpaceX-LatestLaunch.vue";
 import SPACEXcrewdemo2 from "@/components/spacex/SpaceX-CrewDemo2.vue";
 import Starman from "@/components/spacex/SpaceX-Starman.vue";
+import Quote from "@/components/Quotes-Template.vue";
 
 export default {
   name: "SpaceX",
@@ -52,7 +42,8 @@ export default {
     NextLaunch,
     LatestLaunch,
     SPACEXcrewdemo2,
-    Starman
+    Starman,
+    Quote,
   },
   metaInfo: {
     title: "Rocket Downrange | SpaceX",
@@ -61,12 +52,12 @@ export default {
       {
         name: "description",
         content:
-          "Space Exploration Technologies Corp (SpaceX) is a private aerospace firm based in the United States, their primary launch vehicles include the Falcon 9, Falcon Heavy and Dragon variants.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "Space Exploration Technologies Corp (SpaceX) is a private aerospace firm based in the United States, their primary launch vehicles include the Falcon 9, Falcon Heavy and Dragon variants.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       {
         name: "keywords",
         content:
-          "NASA, SpaceX, Elon Musk, Next Launch, Falcon 9, Falcon Heavy, Dragon, Rocket Downrange, Latest Launch, Launch Info, Space Industry"
+          "NASA, SpaceX, Elon Musk, Next Launch, Falcon 9, Falcon Heavy, Dragon, Rocket Downrange, Latest Launch, Launch Info, Space Industry",
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange | SpaceX" },
@@ -76,36 +67,36 @@ export default {
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/spacex"
+        content: "https://www.rocketdownrange.com/spacex",
       },
       {
         property: "og:image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
       // Often the same as your meta description, but not always.
       {
         property: "og:description",
         content:
-          "Space Exploration Technologies Corp (SpaceX) is a private aerospace firm based in the United States, their primary launch vehicles include the Falcon 9, Falcon Heavy and Dragon variants.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "Space Exploration Technologies Corp (SpaceX) is a private aerospace firm based in the United States, their primary launch vehicles include the Falcon 9, Falcon Heavy and Dragon variants.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
 
       // Twitter card
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com/spacex"
+        content: "https://www.rocketdownrange.com/spacex",
       },
       { name: "twitter:title", content: "Rocket Downrange | SpaceX" },
       {
         name: "twitter:description",
         content:
-          "Space Exploration Technologies Corp (SpaceX) is a private aerospace firm based in the United States, their primary launch vehicles include the Falcon 9, Falcon Heavy and Dragon variants.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "Space Exploration Technologies Corp (SpaceX) is a private aerospace firm based in the United States, their primary launch vehicles include the Falcon 9, Falcon Heavy and Dragon variants.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
       {
         name: "twitter:image:src",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
 
       // Google / Schema.org markup:
@@ -113,13 +104,13 @@ export default {
       {
         itemprop: "description",
         content:
-          "Space Exploration Technologies Corp (SpaceX) is a private aerospace firm based in the United States, their primary launch vehicles include the Falcon 9, Falcon Heavy and Dragon variants.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "Space Exploration Technologies Corp (SpaceX) is a private aerospace firm based in the United States, their primary launch vehicles include the Falcon 9, Falcon Heavy and Dragon variants.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       {
         itemprop: "image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
-      }
-    ]
-  }
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
+      },
+    ],
+  },
 };
 </script>

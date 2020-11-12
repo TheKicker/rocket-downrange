@@ -10,23 +10,11 @@
         more vehicles in research and development."
     />
     <NextLaunch />
-    <div class="card">
-      <div class="card-header">Quote</div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>
-            We're really excited and confident about our upcoming launch
-            (December 2020), all great companies start with a great team - and
-            we have an amazing one with plenty of experience. This ain't our
-            first rodeo.
-          </p>
-          <footer class="blockquote-footer">
-            Tom Markusic
-            <cite title="Source Title">CEO of Firefly Aerospace</cite>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
+    <Quote
+      message="We're really excited and confident about our upcoming launch (December 2020), all great companies start with a great team - and we have an amazing one with plenty of experience. This ain't our first rodeo."
+      author="Tom Markusic"
+      significance="CEO of Firefly Aerospace"
+    />
 
     <br />
     <hr />
@@ -43,12 +31,14 @@
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
 import NextLaunch from "@/components/firefly/Firefly-NextLaunch.vue";
+import Quote from "@/components/Quotes-Template.vue";
 
 export default {
   name: "Firefly",
   components: {
     Info,
-    NextLaunch
+    NextLaunch,
+    Quote,
   },
   metaInfo: {
     title: "Rocket Downrange | Firefly Aerospace",
@@ -57,12 +47,12 @@ export default {
       {
         name: "description",
         content:
-          "Firefly Aerospace is a private aerospace firm based in the United States, their primary launch vehicle is the Alpha.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra!  "
+          "Firefly Aerospace is a private aerospace firm based in the United States, their primary launch vehicle is the Alpha.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra!  ",
       },
       {
         name: "keywords",
         content:
-          "Firefly Aerospace, Alpha Rocket, United States, Space Exploration, Rocket Downrange, Next Launch, Launch Schedule"
+          "Firefly Aerospace, Alpha Rocket, United States, Space Exploration, Rocket Downrange, Next Launch, Launch Schedule",
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange | Firefly Aerospace" },
@@ -72,39 +62,39 @@ export default {
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/Firefly-aerospace"
+        content: "https://www.rocketdownrange.com/Firefly-aerospace",
       },
       {
         property: "og:image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
       // Often the same as your meta description, but not always.
       {
         property: "og:description",
         content:
-          "Firefly Aerospace is a private aerospace firm based in the United States, their primary launch vehicle is the Alpha.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra!  "
+          "Firefly Aerospace is a private aerospace firm based in the United States, their primary launch vehicle is the Alpha.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra!  ",
       },
 
       // Twitter card
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com/Firefly-aerospace"
+        content: "https://www.rocketdownrange.com/Firefly-aerospace",
       },
       {
         name: "twitter:title",
-        content: "Rocket Downrange | Firefly Aerospace"
+        content: "Rocket Downrange | Firefly Aerospace",
       },
       {
         name: "twitter:description",
         content:
-          "Firefly Aerospace is a private aerospace firm based in the United States, their primary launch vehicle is the Alpha.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra!  "
+          "Firefly Aerospace is a private aerospace firm based in the United States, their primary launch vehicle is the Alpha.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra!  ",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
       {
         name: "twitter:image:src",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
 
       // Google / Schema.org markup:
@@ -112,14 +102,14 @@ export default {
       {
         itemprop: "description",
         content:
-          "Firefly Aerospace is a private aerospace firm based in the United States, their primary launch vehicle is the Alpha.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "Firefly Aerospace is a private aerospace firm based in the United States, their primary launch vehicle is the Alpha.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       {
         itemprop: "image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
-      }
-    ]
-  }
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
+      },
+    ],
+  },
 };
 </script>
 

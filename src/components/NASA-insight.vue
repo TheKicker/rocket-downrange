@@ -3,7 +3,7 @@
     <div class="card container">
       <div class="card-body p-3 p-md-6 m-md-3">
         <h5 class="text-left text-secondary">
-          NASA's Insight Lander - 5 Day Historical Weather Report:
+          NASA's Insight Lander - Historical Weather Report:
         </h5>
         <hr />
         <h3 class="text-center my-4">
@@ -70,17 +70,6 @@
               </tr>
             </thead>
             <tbody>
-              <!-- Section -->
-              <!-- <tr>
-              <th scope="row">
-                <strong>{{Object.keys(this.results)[0]}}</strong>
-              </th>
-              <td>{{new Date(Object.values(this.results)[0].First_UTC).toDateString()}}</td>
-              <td>{{(celToFah(Object.values(this.results)[0].AT.av)).toFixed(2)}} ºF / {{(Object.values(this.results)[0].AT.av).toFixed(2)}} ºC</td>
-              <td>{{(Object.values(this.results)[0].PRE.av).toFixed(2)}} Pascals</td>
-              <td>{{(Object.values(this.results)[0].HWS.av).toFixed(2)}} m/s {{Object.values(this.results)[0].WD.most_common.compass_point}}</td>
-            </tr>-->
-              <!-- Section -->
               <tr>
                 <th scope="row">
                   <strong>{{ Object.keys(this.results)[1] }}</strong>
@@ -173,78 +162,6 @@
                   }}
                 </td>
               </tr>
-              <!-- Section -->
-              <tr>
-                <th scope="row">
-                  <strong>{{ Object.keys(this.results)[4] }}</strong>
-                </th>
-                <td>
-                  {{
-                    new Date(
-                      Object.values(this.results)[4].First_UTC
-                    ).toDateString()
-                  }}
-                </td>
-                <td>
-                  <i class="fas fa-cloud fa-2x"></i>
-                </td>
-                <td>
-                  {{
-                    celToFah(Object.values(this.results)[4].AT.av).toFixed(2)
-                  }}
-                  ºF / {{ Object.values(this.results)[4].AT.av.toFixed(2) }} ºC
-                </td>
-                <td>
-                  {{ Object.values(this.results)[4].PRE.av.toFixed(2) }} Pascals
-                </td>
-                <td>
-                  {{ Object.values(this.results)[4].HWS.av.toFixed(2) }} m/s
-                  {{
-                    Object.values(this.results)[4].WD.most_common.compass_point
-                  }}
-                </td>
-              </tr>
-              <!-- Section -->
-              <tr>
-                <th scope="row">
-                  <strong>{{ Object.keys(this.results)[5] }}</strong>
-                </th>
-                <td>
-                  {{
-                    new Date(
-                      Object.values(this.results)[5].First_UTC
-                    ).toDateString()
-                  }}
-                </td>
-                <td>
-                  <i class="fas fa-cloud-sun fa-2x"></i>
-                </td>
-                <td>
-                  {{
-                    celToFah(Object.values(this.results)[5].AT.av).toFixed(2)
-                  }}
-                  ºF / {{ Object.values(this.results)[5].AT.av.toFixed(2) }} ºC
-                </td>
-                <td>
-                  {{ Object.values(this.results)[5].PRE.av.toFixed(2) }} Pascals
-                </td>
-                <td>
-                  {{ Object.values(this.results)[5].HWS.av.toFixed(2) }} m/s
-                  {{
-                    Object.values(this.results)[5].WD.most_common.compass_point
-                  }}
-                </td>
-              </tr>
-              <!-- Section -->
-              <!-- <tr>
-              <th scope="row">
-                <strong>{{Object.keys(this.results)[6]}}</strong>
-              </th>
-              <td>{{new Date(Object.values(this.results)[6].First_UTC).toDateString()}}</td>
-              <td>{{(celToFah(Object.values(this.results)[6].AT.av)).toFixed(2)}} ºF / {{(Object.values(this.results)[6].AT.av).toFixed(2)}} ºC</td>
-              <td>{{(Object.values(this.results)[6].PRE.av).toFixed(2)}} Pascals</td>
-              <td>{{(Object.values(this.results)[6].HWS.av).toFixed(2)}} m/s {{Object.values(this.results)[6].WD.most_common.compass_point}}</td>
-            </tr>-->
             </tbody>
           </table>
         </div>
@@ -269,7 +186,7 @@ export default {
   name: "NASAinsight",
   data() {
     return {
-      results: ""
+      results: "",
     };
   },
   mounted() {
@@ -278,16 +195,16 @@ export default {
     console.log("NASA Insight - " + url);
     window.axios
       .get(url)
-      .then(response => {
+      .then((response) => {
         this.results = response.data;
       })
-      .catch(error => console.log(error));
+      .catch((error) => console.log(error));
   },
   methods: {
-    celToFah: function(temperature) {
+    celToFah: function (temperature) {
       return temperature * (9 / 5) + 32;
-    }
-  }
+    },
+  },
 };
 </script>
 

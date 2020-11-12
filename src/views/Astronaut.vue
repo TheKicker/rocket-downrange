@@ -10,38 +10,17 @@
         are working to change that, and with big projects on the horizon this
         page stands as a living monument to the courageous explorers out there! Ad Astra!"
     />
-    <div class="card my-4">
-      <div class="card-header">Quote</div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>
-            One small step for man, one giant leap for mankind.
-          </p>
-          <footer class="blockquote-footer">
-            Neil Alden Armstrong
-            <cite title="Source Title"
-              >The first person to step on the Moon (1969)</cite
-            >
-          </footer>
-        </blockquote>
-      </div>
-    </div>
+    <Quote
+      message="One small step for man, one giant leap for mankind."
+      author="Neil Alden Armstrong"
+      significance="The first person to step on the Moon (1969)"
+    />
     <Lost />
-    <div class="card my-4">
-      <div class="card-header">Quote</div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>
-            Orbiting Earth in the spaceship, I saw how beautiful our planet is.
-            People, let us preserve and increase this beauty, not destroy it!
-          </p>
-          <footer class="blockquote-footer">
-            Yuri Gagarin
-            <cite title="Source Title">The first person in space (1961)</cite>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
+    <Quote
+      message="Orbiting Earth in the spaceship, I saw how beautiful our planet is. People, let us preserve and increase this beauty, not destroy it!"
+      author="Yuri Gagarin"
+      significance="The first person in space (1961)"
+    />
   </div>
 </template>
 
@@ -50,12 +29,14 @@
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
 import Lost from "@/components/astronaut/Lost-In-Flight.vue";
+import Quote from "@/components/Quotes-Template.vue";
 
 export default {
   name: "Astronaut",
   components: {
     Info,
-    Lost
+    Lost,
+    Quote,
   },
   metaInfo: {
     title: "Rocket Downrange | Astronaut",
@@ -64,12 +45,12 @@ export default {
       {
         name: "description",
         content:
-          "Long before the legendary cosmonaut Yuri Gagarin became the first human in space in 1961, humanity has dreamed of flying amongst the stars. This page on Rocket Downrange stands as a living monument to the courageous astronauts out there! Ad Astra!"
+          "Long before the legendary cosmonaut Yuri Gagarin became the first human in space in 1961, humanity has dreamed of flying amongst the stars. This page on Rocket Downrange stands as a living monument to the courageous astronauts out there! Ad Astra!",
       },
       {
         name: "keywords",
         content:
-          "NASA, RosCosmos, China, India, Astronauts, Who's in space right now, are there people in space, humanity in space, Rocket Downrange  "
+          "NASA, RosCosmos, China, India, Astronauts, Who's in space right now, are there people in space, humanity in space, Rocket Downrange  ",
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange | Astronaut" },
@@ -79,36 +60,36 @@ export default {
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/boeing-aerospace"
+        content: "https://www.rocketdownrange.com/boeing-aerospace",
       },
       {
         property: "og:image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
       // Often the same as your meta description, but not always.
       {
         property: "og:description",
         content:
-          "Long before the legendary cosmonaut Yuri Gagarin became the first human in space in 1961, humanity has dreamed of flying amongst the stars. This page on Rocket Downrange stands as a living monument to the courageous astronauts out there! Ad Astra!"
+          "Long before the legendary cosmonaut Yuri Gagarin became the first human in space in 1961, humanity has dreamed of flying amongst the stars. This page on Rocket Downrange stands as a living monument to the courageous astronauts out there! Ad Astra!",
       },
 
       // Twitter card
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com/boeing-aerospace"
+        content: "https://www.rocketdownrange.com/boeing-aerospace",
       },
       { name: "twitter:title", content: "Rocket Downrange | Astronaut" },
       {
         name: "twitter:description",
         content:
-          "Long before the legendary cosmonaut Yuri Gagarin became the first human in space in 1961, humanity has dreamed of flying amongst the stars. This page on Rocket Downrange stands as a living monument to the courageous astronauts out there! Ad Astra!"
+          "Long before the legendary cosmonaut Yuri Gagarin became the first human in space in 1961, humanity has dreamed of flying amongst the stars. This page on Rocket Downrange stands as a living monument to the courageous astronauts out there! Ad Astra!",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
       {
         name: "twitter:image:src",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
 
       // Google / Schema.org markup:
@@ -116,14 +97,14 @@ export default {
       {
         itemprop: "description",
         content:
-          "Long before the legendary cosmonaut Yuri Gagarin became the first human in space in 1961, humanity has dreamed of flying amongst the stars. This page on Rocket Downrange stands as a living monument to the courageous astronauts out there! Ad Astra!"
+          "Long before the legendary cosmonaut Yuri Gagarin became the first human in space in 1961, humanity has dreamed of flying amongst the stars. This page on Rocket Downrange stands as a living monument to the courageous astronauts out there! Ad Astra!",
       },
       {
         itemprop: "image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
-      }
-    ]
-  }
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
+      },
+    ],
+  },
 };
 </script>
 

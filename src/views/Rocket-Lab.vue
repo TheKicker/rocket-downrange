@@ -5,23 +5,11 @@
       description="Rocket Lab designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2006 by an engineer named Peter Beck and established headquarters in California in 2013. Currently, their prime launch vehicle is named Electron capable of launching nearly 500lbs to orbit."
     />
     <NextLaunch />
-    <div class="card">
-      <div class="card-header">Quote</div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>
-            We set out to really make space accessible and make space kind of
-            the third domain where you can innovate and provide your services to
-            everybody here on earth and Rocket Lab's Photon is really kind of
-            the next logical step to doing that.
-          </p>
-          <footer class="blockquote-footer">
-            Peter Beck
-            <cite title="Source Title">CEO of Rocket Lab</cite>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
+    <Quote
+      message="We set out to really make space accessible and make space kind of the third domain where you can innovate and provide your services to everybody here on earth and Rocket Lab's Photon is really kind of the next logical step to doing that."
+      author="Peter Beck"
+      significance="CEO of Rocket Lab"
+    />
     <RocketLabTest />
     <br />
     <hr />
@@ -38,13 +26,15 @@
 import Info from "@/components/Info-Template.vue";
 import NextLaunch from "@/components/rocketlab/RocketLab-NextLaunch.vue";
 import RocketLabTest from "@/components/rocketlab/RocketLab-ItsATest.vue";
+import Quote from "@/components/Quotes-Template.vue";
 
 export default {
   name: "RocketLab",
   components: {
     Info,
     NextLaunch,
-    RocketLabTest
+    RocketLabTest,
+    Quote,
   },
   data() {
     return {};
@@ -56,12 +46,12 @@ export default {
       {
         name: "description",
         content:
-          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       {
         name: "keywords",
         content:
-          "NASA, Rocket Labs, Next Launch, Rocket Downrange, Latest Launch, Launch Info, Space Industry, Electron Rocket"
+          "NASA, Rocket Labs, Next Launch, Rocket Downrange, Latest Launch, Launch Info, Space Industry, Electron Rocket",
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange | Rocket Lab" },
@@ -71,36 +61,36 @@ export default {
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/rocket-lab"
+        content: "https://www.rocketdownrange.com/rocket-lab",
       },
       {
         property: "og:image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
       // Often the same as your meta description, but not always.
       {
         property: "og:description",
         content:
-          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
 
       // Twitter card
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com/rocket-lab"
+        content: "https://www.rocketdownrange.com/rocket-lab",
       },
       { name: "twitter:title", content: "Rocket Downrange | Rocket Lab" },
       {
         name: "twitter:description",
         content:
-          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
       {
         name: "twitter:image:src",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
 
       // Google / Schema.org markup:
@@ -108,13 +98,13 @@ export default {
       {
         itemprop: "description",
         content:
-          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       {
         itemprop: "image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
-      }
-    ]
-  }
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
+      },
+    ],
+  },
 };
 </script>

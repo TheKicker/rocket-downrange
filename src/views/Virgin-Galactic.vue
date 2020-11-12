@@ -5,27 +5,11 @@
       description="Virgin Galactic is a British spaceflight company within the Virgin Group - a multinational venture capital conglomerate founded by Sir Richard Branson and Nik Powell. Galactic is developing launch vehicles capable of suborbital spaceflights aimed at the tourism industry with a sister company referred to as Virgin Orbit focusing on the commercial. Virgin Galactic/Orbit employ nearly 1000 individuals - Galactic is headquartered in Las Cruces, New Mexico, and Orbit is headquartered in Long Beach, California."
     />
     <NextLaunch />
-
-    <div class="card">
-      <div class="card-header">Quote</div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>
-            There are millions of people out there who would love to become
-            astronauts, who'd love to go to space - they'd love to look back at
-            this wonderful world from space. That will be the engine that will
-            enable us then to develop spaceships to transport people around the
-            world at tremendous speeds in an environmentally friendly way.
-          </p>
-          <footer class="blockquote-footer">
-            Sir Richard Branson
-            <cite title="Source Title"
-              >Co-Founder of Virgin Group (Virgin Galactic & Orbit)</cite
-            >
-          </footer>
-        </blockquote>
-      </div>
-    </div>
+    <Quote
+      message="There are millions of people out there who would love to become astronauts, who'd love to go to space - they'd love to look back at this wonderful world from space. That will be the engine that will enable us then to develop spaceships to transport people around the world at tremendous speeds in an environmentally friendly way."
+      author="Sir Richard Branson"
+      significance="Co-Founder of Virgin Group (Virgin Galactic & Orbit)"
+    />
 
     <br />
     <hr />
@@ -42,12 +26,14 @@
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
 import NextLaunch from "@/components/virgin/Virgin-NextLaunch.vue";
+import Quote from "@/components/Quotes-Template.vue";
 
 export default {
   name: "VirginGalactic",
   components: {
     Info,
-    NextLaunch
+    NextLaunch,
+    Quote,
   },
   metaInfo: {
     title: "Rocket Downrange | Virgin Galactic",
@@ -56,12 +42,12 @@ export default {
       {
         name: "description",
         content:
-          "Virgin Galactic & Orbit (Virgin Group) is a private aerospace firm based in the United States, their primary launch vehicles include the WhiteKnightTwo, SpaceShipTwo and others in development.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "Virgin Galactic & Orbit (Virgin Group) is a private aerospace firm based in the United States, their primary launch vehicles include the WhiteKnightTwo, SpaceShipTwo and others in development.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       {
         name: "keywords",
         content:
-          "NASA, Space, Virgin, Galactic, Orbit, Richard Branson, SpaceShipTwo, WhiteKnightTwo, Rocket Downrange, Launch Schedule, Data"
+          "NASA, Space, Virgin, Galactic, Orbit, Richard Branson, SpaceShipTwo, WhiteKnightTwo, Rocket Downrange, Launch Schedule, Data",
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange | Virgin Galactic" },
@@ -71,39 +57,39 @@ export default {
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/virgin-galactic"
+        content: "https://www.rocketdownrange.com/virgin-galactic",
       },
       {
         property: "og:image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
       // Often the same as your meta description, but not always.
       {
         property: "og:description",
         content:
-          "Virgin Galactic & Orbit (Virgin Group) is a private aerospace firm based in the United States, their primary launch vehicles include the WhiteKnightTwo, SpaceShipTwo and others in development.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "Virgin Galactic & Orbit (Virgin Group) is a private aerospace firm based in the United States, their primary launch vehicles include the WhiteKnightTwo, SpaceShipTwo and others in development.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
 
       // Twitter card
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com/virgin-galactic"
+        content: "https://www.rocketdownrange.com/virgin-galactic",
       },
       {
         name: "twitter:title",
-        content: "Rocket Downrange | Virgin Galactic"
+        content: "Rocket Downrange | Virgin Galactic",
       },
       {
         name: "twitter:description",
         content:
-          "Virgin Galactic & Orbit (Virgin Group) is a private aerospace firm based in the United States, their primary launch vehicles include the WhiteKnightTwo, SpaceShipTwo and others in development.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "Virgin Galactic & Orbit (Virgin Group) is a private aerospace firm based in the United States, their primary launch vehicles include the WhiteKnightTwo, SpaceShipTwo and others in development.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
       {
         name: "twitter:image:src",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
 
       // Google / Schema.org markup:
@@ -111,14 +97,14 @@ export default {
       {
         itemprop: "description",
         content:
-          "Virgin Galactic & Orbit (Virgin Group) is a private aerospace firm based in the United States, their primary launch vehicles include the WhiteKnightTwo, SpaceShipTwo and others in development.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! "
+          "Virgin Galactic & Orbit (Virgin Group) is a private aerospace firm based in the United States, their primary launch vehicles include the WhiteKnightTwo, SpaceShipTwo and others in development.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       {
         itemprop: "image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
-      }
-    ]
-  }
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
+      },
+    ],
+  },
 };
 </script>
 

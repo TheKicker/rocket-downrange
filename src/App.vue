@@ -36,11 +36,11 @@
                 class="dropdown-menu bg-primary"
                 aria-labelledby="navbarDropdown"
               >
-                <!-- <li class="nav-item">
+                <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/astronaut"
                     >ASTRONAUT</router-link
                   >
-                </li> -->
+                </li>
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/solar-system"
                     >SOLAR SYSTEM</router-link
@@ -201,7 +201,10 @@
             href="https://cavlemasters.com"
             target="_blank"
             rel="noopener"
-            style="font-family: 'Share Tech Mono', monospace; text-transform: lowercase;"
+            style="
+              font-family: 'Share Tech Mono', monospace;
+              text-transform: lowercase;
+            "
             >{{ trademark }}</a
           >
         </div>
@@ -220,7 +223,7 @@ export default {
       copy: `Rocket Downrange developed by Cav Lemasters ${new Date()
         .getFullYear()
         .toString()}`,
-      trademark: "made on earth by a human & coffee"
+      trademark: "made on earth by a human & coffee",
     };
   },
   mounted() {
@@ -231,7 +234,7 @@ export default {
     }
   },
   computed: {
-    getGreeting: function() {
+    getGreeting: function () {
       let h = new Date().getHours();
 
       if (h >= 1 && h <= 6) {
@@ -245,7 +248,7 @@ export default {
       } else {
         return "We're up late";
       }
-    }
+    },
   },
   methods: {
     validate() {
@@ -260,8 +263,8 @@ export default {
         window.localStorage.setItem("username", `${this.username}`);
         return this.username;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
