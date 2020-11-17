@@ -2,9 +2,9 @@
   <div class="LostAstronauts my-4">
     <div class="card">
       <div class="card-body">
-        <h4 class="text-left">Heroes Lost In Flight</h4>
+        <h4 class="text-left">Heroes of the Past</h4>
         <hr />
-        <h2 class="text-center my-4">In Memoriam</h2>
+        <h2 class="text-center my-4">Retired Status</h2>
         <div class="row my-2">
           <astrocomponent
             v-for="(astro, index) in astros"
@@ -34,7 +34,7 @@ import astrocomponent from "@/components/astronaut/astro-profile.vue";
 window.axios = require("axios");
 
 export default {
-  name: "Lost",
+  name: "Retired",
   data() {
     return {
       astros: [],
@@ -45,7 +45,7 @@ export default {
   },
   mounted() {
     window.axios
-      .get("https://ll.thespacedevs.com/2.0.0/astronaut/?status=4")
+      .get("https://ll.thespacedevs.com/2.0.0/astronaut/?status=2")
       .then((response) => {
         // console.log(response.data.results);
         this.astros = response.data.results;

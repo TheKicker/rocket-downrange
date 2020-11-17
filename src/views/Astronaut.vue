@@ -10,17 +10,19 @@
         are working to change that, and with big projects on the horizon this
         page stands as a living monument to the courageous explorers out there! Ad Astra!"
     />
+    <Active />
     <Quote
       message="One small step for man, one giant leap for mankind."
       author="Neil Alden Armstrong"
       significance="The first person to step on the Moon (1969)"
     />
-    <Lost />
+    <Retired />
     <Quote
-      message="Orbiting Earth in the spaceship, I saw how beautiful our planet is. People, let us preserve and increase this beauty, not destroy it!"
+      message="Orbiting Earth in the spaceship, I saw how beautiful our planet is. People, let us preserve and increase this beauty, and not destroy it!"
       author="Yuri Gagarin"
       significance="The first person in space (1961)"
     />
+    <Lost />
   </div>
 </template>
 
@@ -28,6 +30,9 @@
 <script>
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
+// import Lost from "@/components/astronaut/LIF.vue";
+import Active from "@/components/astronaut/Active-In-Flight.vue";
+import Retired from "@/components/astronaut/Retired-From-Flight.vue";
 import Lost from "@/components/astronaut/Lost-In-Flight.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
@@ -35,6 +40,8 @@ export default {
   name: "Astronaut",
   components: {
     Info,
+    Active,
+    Retired,
     Lost,
     Quote,
   },

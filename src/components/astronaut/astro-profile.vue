@@ -2,7 +2,7 @@
   <div id="astronautProfile" class="card mx-auto my-2" style="width: 18rem">
     <div class="hovereffect rounded">
       <img
-        :src="image"
+        :src="profile_image"
         style="
           display: block;
           margin-left: auto;
@@ -10,34 +10,29 @@
           width: 100%;
         "
         class="card-img-top"
-        :alt="fullname"
+        :alt="name"
       />
-      <div class="overlay">
-        <p id="desc">{{ description }}</p>
-        <p id="dates">
-          <strong>Lost in Action: {{ birth }}{{ death }}</strong>
-        </p>
+      <div class="overlay overflow-scroll">
+        <p id="desc">{{ bio }}</p>
       </div>
     </div>
     <div class="card-body bg-primary text-center">
-      <h5 class="text-white">{{ fullname }}</h5>
+      <h5 class="text-white">{{ name }}</h5>
       <hr style="background-color: white" />
-      <h6 class="text-white">{{ abbreviation }}, {{ country }}</h6>
+      <h6 class="text-white">{{ abbrev }}, {{ country_code }}</h6>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "astro",
+  name: "astrocomponent",
   props: {
-    image: String,
-    fullname: String,
-    abbreviation: String,
-    country: String,
-    description: String,
-    birth: String,
-    death: String,
+    profile_image: String,
+    name: String,
+    abbrev: String,
+    country_code: String,
+    bio: String,
   },
 };
 </script>

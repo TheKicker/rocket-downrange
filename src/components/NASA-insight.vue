@@ -6,10 +6,7 @@
           NASA's Insight Lander - Historical Weather Report:
         </h5>
         <hr />
-        <h3 class="text-center my-4">
-          Enjoy {{ Object.values(this.results)[0].Season }} at Elysium Planitia
-          on Mars
-        </h3>
+        <h3 class="text-center my-4">What's the weather like on Mars?</h3>
         <div class="container">
           <div class="text-center">
             <a
@@ -61,107 +58,22 @@
           <table class="table table-hover">
             <thead class="thead-dark">
               <tr>
-                <th scope="col">Mars Sol</th>
                 <th scope="col">Corresponding Earth Date</th>
                 <th scope="col"></th>
                 <th scope="col">Atmospheric Temperature (Avg)</th>
                 <th scope="col">Atmospheric Pressure (Avg)</th>
-                <th scope="col">Horizontal Wind Speed (Avg)</th>
+                <!-- <th scope="col">Horizontal Wind Speed (Avg)</th> -->
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">
-                  <strong>{{ Object.keys(this.results)[1] }}</strong>
-                </th>
-                <td>
-                  {{
-                    new Date(
-                      Object.values(this.results)[1].First_UTC
-                    ).toDateString()
-                  }}
-                </td>
-                <td>
-                  <i class="fas fa-cloud-sun fa-2x"></i>
-                </td>
-                <td>
-                  {{
-                    celToFah(Object.values(this.results)[1].AT.av).toFixed(2)
-                  }}
-                  ºF / {{ Object.values(this.results)[1].AT.av.toFixed(2) }} ºC
-                </td>
-                <td>
-                  {{ Object.values(this.results)[1].PRE.av.toFixed(2) }} Pascals
-                </td>
-                <td>
-                  {{ Object.values(this.results)[1].HWS.av.toFixed(2) }} m/s
-                  {{
-                    Object.values(this.results)[1].WD.most_common.compass_point
-                  }}
-                </td>
-              </tr>
-              <!-- Section -->
-              <tr>
-                <th scope="row">
-                  <strong>{{ Object.keys(this.results)[2] }}</strong>
-                </th>
-                <td>
-                  {{
-                    new Date(
-                      Object.values(this.results)[2].First_UTC
-                    ).toDateString()
-                  }}
-                </td>
-                <td>
-                  <i class="fas fa-sun fa-2x"></i>
-                </td>
-                <td>
-                  {{
-                    celToFah(Object.values(this.results)[2].AT.av).toFixed(2)
-                  }}
-                  ºF / {{ Object.values(this.results)[2].AT.av.toFixed(2) }} ºC
-                </td>
-                <td>
-                  {{ Object.values(this.results)[2].PRE.av.toFixed(2) }} Pascals
-                </td>
-                <td>
-                  {{ Object.values(this.results)[2].HWS.av.toFixed(2) }} m/s
-                  {{
-                    Object.values(this.results)[2].WD.most_common.compass_point
-                  }}
-                </td>
-              </tr>
-              <!-- Section -->
-              <tr>
-                <th scope="row">
-                  <strong>{{ Object.keys(this.results)[3] }}</strong>
-                </th>
-                <td>
-                  {{
-                    new Date(
-                      Object.values(this.results)[3].First_UTC
-                    ).toDateString()
-                  }}
-                </td>
-                <td>
-                  <i class="fas fa-sun fa-2x"></i>
-                </td>
-                <td>
-                  {{
-                    celToFah(Object.values(this.results)[3].AT.av).toFixed(2)
-                  }}
-                  ºF / {{ Object.values(this.results)[3].AT.av.toFixed(2) }} ºC
-                </td>
-                <td>
-                  {{ Object.values(this.results)[3].PRE.av.toFixed(2) }} Pascals
-                </td>
-                <td>
-                  {{ Object.values(this.results)[3].HWS.av.toFixed(2) }} m/s
-                  {{
-                    Object.values(this.results)[3].WD.most_common.compass_point
-                  }}
-                </td>
-              </tr>
+              <tablerow
+                v-for="(day, index) in days"
+                :key="index"
+                :earthTime="day.First_UTC"
+                :fahrenheit="100"
+                :celsius="100"
+                :pressure="100"
+              />
             </tbody>
           </table>
         </div>
@@ -180,30 +92,25 @@
 
 
 <script>
-const api_key = "PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo";
+import tablerow from "@/components/NASA-insight-tablerow.vue";
 window.axios = require("axios");
 export default {
   name: "NASAinsight",
   data() {
     return {
-      results: "",
+      results: [],
     };
   },
+  components: { tablerow },
   mounted() {
-    var url = `https://api.nasa.gov/insight_weather/?api_key=${api_key}&feedtype=json&ver=1.0`;
-    // var url = "https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0"
-    console.log("NASA Insight - " + url);
     window.axios
-      .get(url)
+      .get(
+        "https://api.nasa.gov/insight_weather/?api_key=PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo&feedtype=json&ver=1.0"
+      )
       .then((response) => {
-        this.results = response.data;
-      })
-      .catch((error) => console.log(error));
-  },
-  methods: {
-    celToFah: function (temperature) {
-      return temperature * (9 / 5) + 32;
-    },
+        // console.log(response.data);
+        this.days = response.data;
+      });
   },
 };
 </script>

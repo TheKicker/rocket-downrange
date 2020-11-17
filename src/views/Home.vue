@@ -5,7 +5,7 @@
     <LLNextLaunch />
     <SNAPI />
     <NASAperseverance />
-    <NASAinsight />
+    <NASAinsight hidden />
     <NASAcuriosity />
     <NASAopportunity />
     <ExternalLinks />
@@ -38,7 +38,7 @@ export default {
     NASAopportunity,
     ExternalLinks,
     Contact,
-    SNAPI
+    SNAPI,
   },
   metaInfo: {
     title: "Rocket Downrange",
@@ -47,12 +47,12 @@ export default {
       {
         name: "description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Featuring data from NASA, SpaceX, Rocket Lab, and Mars via Opportunity, Curiousity, Insight, and hopefully Perserverance! Built with Vue.JS, Netlify and more! "
+          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Featuring data from NASA, SpaceX, Rocket Lab, and Mars via Opportunity, Curiousity, Insight, and hopefully Perserverance! Built with Vue.JS, Netlify and more! ",
       },
       {
         name: "keywords",
         content:
-          "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Opportunity, Curiousity, Insight, Perserverance, Rovers, Mars, APOD"
+          "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Opportunity, Curiousity, Insight, Perserverance, Rovers, Mars, APOD",
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange" },
@@ -62,36 +62,36 @@ export default {
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com"
+        content: "https://www.rocketdownrange.com",
       },
       {
         property: "og:image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
       // Often the same as your meta description, but not always.
       {
         property: "og:description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Featuring data from NASA, SpaceX, Rocket Lab, and Mars via Opportunity, Curiousity, Insight, and hopefully Perserverance! Built with Vue.JS, Netlify and more! "
+          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Featuring data from NASA, SpaceX, Rocket Lab, and Mars via Opportunity, Curiousity, Insight, and hopefully Perserverance! Built with Vue.JS, Netlify and more! ",
       },
 
       // Twitter card
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com"
+        content: "https://www.rocketdownrange.com",
       },
       { name: "twitter:title", content: "Rocket Downrange" },
       {
         name: "twitter:description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Featuring data from NASA, SpaceX, Rocket Lab, and Mars via Opportunity, Curiousity, Insight, and hopefully Perserverance! Built with Vue.JS, Netlify and more!  "
+          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Featuring data from NASA, SpaceX, Rocket Lab, and Mars via Opportunity, Curiousity, Insight, and hopefully Perserverance! Built with Vue.JS, Netlify and more!  ",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
       {
         name: "twitter:image:src",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
 
       // Google / Schema.org markup:
@@ -99,13 +99,13 @@ export default {
       {
         itemprop: "description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Featuring data from NASA, SpaceX, Rocket Lab, and Mars via Opportunity, Curiousity, Insight, and hopefully Perserverance! Built with Vue.JS, Netlify and more! "
+          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Featuring data from NASA, SpaceX, Rocket Lab, and Mars via Opportunity, Curiousity, Insight, and hopefully Perserverance! Built with Vue.JS, Netlify and more! ",
       },
       {
         itemprop: "image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg"
-      }
-    ]
-  }
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
+      },
+    ],
+  },
 };
 </script>
