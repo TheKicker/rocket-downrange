@@ -44,8 +44,8 @@
               >.
             </p>
             <p>
-              Note: Sol is the primary timekeeping unit of Mars - one sol is
-              equal to 24 hours, 29 minutes and 35 seconds. It's defined as the
+              A Sol is the primary timekeeping unit of Mars - one sol is equal
+              to 24 hours, 29 minutes and 35 seconds. It's defined as the
               apparent interval between two successive returns of the Sun to the
               same meridian as seen by an observer of Mars. This method of
               timekeeping for the Martian surface was devised by NASA in 1976
@@ -62,17 +62,51 @@
                 <th scope="col"></th>
                 <th scope="col">Atmospheric Temperature (Avg)</th>
                 <th scope="col">Atmospheric Pressure (Avg)</th>
-                <!-- <th scope="col">Horizontal Wind Speed (Avg)</th> -->
+                <th scope="col">Horizontal Wind Speed (Avg)</th>
               </tr>
             </thead>
             <tbody>
               <tablerow
-                v-for="(day, index) in days"
-                :key="index"
-                :earthTime="day.First_UTC"
-                :fahrenheit="100"
-                :celsius="100"
-                :pressure="100"
+                :earthTime="
+                  Object.values(this.results)[0].First_UTC != undefined
+                    ? Object.values(this.results)[0].First_UTC
+                    : 'N/A'
+                "
+                :fahrenheit="
+                  Object.values(this.results)[0] &&
+                  Object.values(this.results)[0].AT &&
+                  Object.values(this.results)[0].AT.av != undefined
+                    ? Object.values(this.results)[0].AT.av
+                    : 'N/A'
+                "
+                :celsius="
+                  Object.values(this.results)[0] &&
+                  Object.values(this.results)[0].AT &&
+                  Object.values(this.results)[0].AT.av != undefined
+                    ? Object.values(this.results)[0].AT.av
+                    : 'N/A'
+                "
+                :pressure="
+                  Object.values(this.results)[0] &&
+                  Object.values(this.results)[0].PRE &&
+                  Object.values(this.results)[0].PRE.av != undefined
+                    ? Object.values(this.results)[0].PRE.av
+                    : 'N/A'
+                "
+                :windspeed="
+                  Object.values(this.results)[0] &&
+                  Object.values(this.results)[0].HWS &&
+                  Object.values(this.results)[0].HWS.av != undefined
+                    ? Object.values(this.results)[0].HWS.av
+                    : 'N/A'
+                "
+                :compass="
+                  Object.values(this.results)[0].WD.most_common.compass_point !=
+                  undefined
+                    ? Object.values(this.results)[0].WD.most_common
+                        .compass_point
+                    : 'N/A'
+                "
               />
             </tbody>
           </table>
@@ -108,8 +142,8 @@ export default {
         "https://api.nasa.gov/insight_weather/?api_key=PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo&feedtype=json&ver=1.0"
       )
       .then((response) => {
-        // console.log(response.data);
-        this.days = response.data;
+        console.log(response.data);
+        this.results = response.data;
       });
   },
 };

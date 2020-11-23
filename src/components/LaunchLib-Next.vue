@@ -30,14 +30,25 @@
                 <tablerow
                   v-for="(launch, index) in launches"
                   :key="index"
-                  :mission="launch.mission.name"
+                  :mission="
+                    launch.mission && launch.mission.name != null
+                      ? launch.mission.name
+                      : launch.name
+                  "
                   :rocket="launch.rocket.configuration.name"
                   :launchsp="launch.launch_service_provider.name"
-                  :launchtime="launch.net"
-                  :pad="launch.pad.name"
-                  :location="launch.pad.location.name"
-                  :description="launch.mission.description"
-                  :url="launch.url"
+                  :launchtime="launch.net != null ? launch.net : 'N/A'"
+                  :pad="launch.pad.name != null ? launch.pad.name : 'N/A'"
+                  :location="
+                    launch.pad.location && launch.pad.location.name != null
+                      ? launch.pad.location.name
+                      : 'N/A'
+                  "
+                  :description="
+                    launch.mission && launch.mission.description != null
+                      ? launch.mission.description
+                      : 'This mission is classified or no overview is available at this time.'
+                  "
                 />
               </tbody>
             </table>
@@ -73,7 +84,9 @@ export default {
   },
   mounted() {
     window.axios
-      .get("https://ll.thespacedevs.com/2.0.0/launch/upcoming/?limit=5")
+      .get(
+        "https://ll.thespacedevs.com/2.0.0/launch/upcoming/?format=json&limit=5"
+      )
       .then((response) => {
         console.log(response.data.results);
         this.launches = response.data.results;

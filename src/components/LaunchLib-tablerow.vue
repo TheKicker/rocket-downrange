@@ -8,14 +8,15 @@
       <br />
       {{ launchsp }}
     </th>
-    <td>{{ utcTranslate(launchtime) }}</td>
+    <td>
+      {{ utcTranslate(launchtime) }}
+    </td>
     <td>
       {{ pad }},
       {{ location }}
     </td>
     <td>
       {{ charCount(description, limit) }}
-      <a :href="url" target="_blank" rel="noopener" hidden>[ See More ]</a>
     </td>
   </tr>
 </template>
@@ -37,7 +38,6 @@ export default {
     pad: String,
     location: String,
     description: String,
-    url: String,
   },
   methods: {
     utcTranslate(results) {

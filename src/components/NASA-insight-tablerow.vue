@@ -7,14 +7,14 @@
       <i class="fas fa-cloud-sun fa-2x"></i>
     </td>
     <td>
-      {{ celToFah(fahrenheit).toFixed(limit) }}
-      ºF / {{ celsius.toFixed(limit) }} ºC
+      {{ fahrenheit != "N/A" ? celToFah(fahrenheit.toFixed(3)) : "N/A" }}
+      ºF / {{ celsius != "N/A" ? celsius.toFixed(3) : "N/A" }} ºC
     </td>
-    <td>{{ pressure.toFixed(limit) }} Pascals</td>
-    <!-- <td>
-      {{ windspeed.toFixed(limit) }} m/s
-      {{ compass }}
-    </td> -->
+    <td>{{ pressure != "N/A" ? pressure.toFixed(3) : "N/A" }} Pascals</td>
+    <td>
+      {{ windspeed != "N/A" ? windspeed.toFixed(3) : "N/A" }} m/s
+      {{ compass != "N/A" ? compass : "N/A" }}
+    </td>
   </tr>
 </template>
 
@@ -23,17 +23,15 @@
 export default {
   name: "tablerow",
   data() {
-    return {
-      limit: 3,
-    };
+    return { random: Math.floor(Math.random() * 3) + 1 };
   },
   props: {
     earthTime: String,
-    fahrenheit: String,
-    celsius: String,
-    pressure: String,
-    // windpseed: String,
-    // compass: String,
+    fahrenheit: Number,
+    celsius: Number,
+    pressure: Number,
+    windspeed: Number,
+    compass: String,
   },
   methods: {
     celToFah: function (temperature) {

@@ -4,8 +4,8 @@
     <NASAapod />
     <LLNextLaunch />
     <SNAPI />
+    <NASAinsight />
     <NASAperseverance />
-    <NASAinsight hidden />
     <NASAcuriosity />
     <NASAopportunity />
     <ExternalLinks />
