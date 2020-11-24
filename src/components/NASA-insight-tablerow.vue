@@ -7,8 +7,8 @@
       <i class="fas fa-cloud-sun fa-2x"></i>
     </td>
     <td>
-      {{ fahrenheit != "N/A" ? celToFah(fahrenheit.toFixed(3)) : "N/A" }}
-      ºF / {{ celsius != "N/A" ? celsius.toFixed(3) : "N/A" }} ºC
+      {{ fahrenheit != "N/A" ? celToFah(fahrenheit.toFixed(1)) : "N/A" }}
+      ºF / {{ celsius != "N/A" ? celsius.toFixed(1) : "N/A" }} ºC
     </td>
     <td>{{ pressure != "N/A" ? pressure.toFixed(3) : "N/A" }} Pascals</td>
     <td>
@@ -23,7 +23,7 @@
 export default {
   name: "tablerow",
   data() {
-    return { random: Math.floor(Math.random() * 3) + 1 };
+    return { random: 1 };
   },
   props: {
     earthTime: String,

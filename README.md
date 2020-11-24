@@ -1,24 +1,26 @@
 # Rocket Downrange
 [![Netlify Status](https://api.netlify.com/api/v1/badges/192c5a3a-340b-4e0c-ae7b-870e0f221ebc/deploy-status)](https://app.netlify.com/sites/trusting-goldwasser-e71a14/deploys)
 
-Rocket Downrange is a side project site I am developing to showcase the advancements of humanity in regards to the exploration of outer space.  While the core Vue.JS is my own writing (please be patient as I continue to learn), all data you see on the site is returned from various API's.  The first three API's I am using belong to SpaceX (USA), Rocket Lab (USA) and NASA (USA) and are provided for free or free with a registered key.  Thus, the site should continue to be a fun and dynamic way of keeping updated on the industry at large.
+Rocket Downrange is a side project site I am working on to showcase the advancements of humanity in regards to the exploration of outer space.  While the core Vue.JS is my own writing (please be patient as I continue to learn), all data you see on the site is returned from various API's.  More than 90% of the site is fully dynamic, based on data from other sources.  Thus, the site should continue to be a fun and dynamic way of keeping updated on the industry at large.
 
-Most of the data and images you see - especially those of planets are taken/owned by NASA.  Other media may be directly from SpaceX, RocketLab, or other organizations and API's featured on the site.  <strong>I claim no ownership of these items and am only using them as assets of learning. </strong>
+Most of the data and images you see - especially those of planets are taken/owned by NASA.  Other media may be directly from Unsplash, Adobe Creative Cloud, SpaceX, RocketLab, or other organizations and API's featured on the site.  <strong>I claim no ownership of these items and am only using them as assets of learning.</strong>  If you see something that needs attribution or I can shoutout something amazing of yours - please send me a message! I love cheering on others in the industry! 
 
-I hope the site serves you well and I am always open to comments/critique, 
+I hope the site serves you well and I am always open to thoughts and opinions, 
 
  <a href="https://www.cavlemasters.com" target="_blank">- Cav Lemasters ( @TheKicker )</a>
 
 <div align="left">
 <hr>
-All mission data belongs to corresponding company.  Site will remain free and an open learning resource for all.  
+All mission data belongs to corresponding company or the API I am receiving it from.  Rocket Downrange will remain free to access and an open learning resource for the curious!  I am considering adding ads via Google Adsense to support server costs. 
 </br>
 </br>
-Hosted on Netlify, built with Vue.js, Axios, Vue-Meta, Bootstrap 4 and more! 
+Hosted on Netlify, built with Vue.js, Axios, Vue-Meta, Bootstrap 4 and more! Note, this site also uses Google Analytics, AdSense, SEMRUSH as I strive to master those platforms as well.
 </hr>
 
 <hr>
 </div>
+
+<br>
 
 ## Project setup
 ```
@@ -43,7 +45,7 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-
+<br>
 <hr>
 <div align="center">
 <h2>Developer Notes:</h2>
@@ -186,14 +188,9 @@ Vue.use(VueScrollTo, {
 
 So far, super happy with how easy it was to implement and how well it works.  Going to continue testing. 
 
-</br>
 <hr>
-<div align="center">
-<h2>Known Issues (Work in Progress):</h2>
-</div>
-<hr>
-
-Having an issue on the 'Home' page of the site where an error in the console is logged for both Oppy and Curiousity API's.
+<br>
+<strong>Work in Progress (WIP)</strong> - Had an issue on the 'Home' page of the site where an error in the console is logged for both Oppy and Curiousity API's.
 
 I think I have tracked this down to how I am calling bits of information out of the endpoints for the JSON response.  The browser does not like the [0] added to return the first photo/details from the array.  I cannot however remove the zero because then the entire component vanishes. 
 
@@ -209,4 +206,21 @@ I think I have tracked this down to how I am calling bits of information out of 
 
 ```
 
+Solving this issue with conditional (ternary) operator when I receive the API data as such, check if this paragraph returns a null or undefined endpoint, if it does return a placeholder, else return the endpoint.
+
+```
+  <p>{{ this.results.paragraph != null || undefined ? this.results.paragraph : placeholder.paragraph }}</p>
+
+```
+
+
 </br>
+
+</br>
+<hr>
+<div align="center">
+<h2>Known Issues (Work in Progress):</h2>
+</div>
+<hr>
+<br>
+Hey! No known issues to show! :) If you found something, send me a message on the site!

@@ -10,6 +10,7 @@
       author="Peter Beck"
       significance="CEO of Rocket Lab"
     />
+    <RocketLabSender />
     <RocketLabTest />
     <br />
     <hr />
@@ -26,6 +27,7 @@
 import Info from "@/components/Info-Template.vue";
 import NextLaunch from "@/components/rocketlab/RocketLab-NextLaunch.vue";
 import RocketLabTest from "@/components/rocketlab/RocketLab-ItsATest.vue";
+import RocketLabSender from "@/components/rocketlab/RocketLab-ReturnToSender.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {
@@ -34,6 +36,7 @@ export default {
     Info,
     NextLaunch,
     RocketLabTest,
+    RocketLabSender,
     Quote,
   },
   data() {

@@ -24,6 +24,11 @@ const routes = [
 		component: () => import(/* webpackChunkName: "calculator" */ '../views/Calculator.vue')
 	},
 	{
+		path: '/privacy-policy',
+		name: 'Privacy Policy',
+		component: () => import(/* webpackChunkName: "calculator" */ '../views/Privacy-Policy.vue')
+	},
+	{
 		path: '/spacex',
 		name: 'SpaceX',
 		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/SpaceX.vue')

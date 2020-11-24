@@ -159,7 +159,19 @@
             <p></p>
           </div>
           <div class="modal-footer">
-            <button
+            <div>
+              <router-link to="/privacy-policy">
+                <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Privacy Policy
+              </button>
+              </router-link>
+            </div>
+            <div>
+              <button
               type="button"
               class="btn btn-secondary"
               data-dismiss="modal"
@@ -174,6 +186,7 @@
             >
               Save changes
             </button>
+            </div>
           </div>
         </div>
       </div>
@@ -184,29 +197,13 @@
     </div>
 
     <div id="footer" class="navbar navbar-dark bg-primary py-4">
-      <div class="cntainer text-center mx-auto py-4">
-        <div id="footercopy">
-          <p class="text-white">
-            <a
-              class="text-white underline"
-              href="https://cavlemasters.com"
-              target="_blank"
-              rel="noopener"
-              >{{ copy }} &copy;</a
-            >
-            <br />API & all mission data belongs to the corresponding company.
-          </p>
-          <a
-            class="text-white underline"
-            href="https://cavlemasters.com"
-            target="_blank"
-            rel="noopener"
-            style="
-              font-family: 'Share Tech Mono', monospace;
-              text-transform: lowercase;
-            "
-            >{{ trademark }}</a
-          >
+      <div class="mx-auto my-4">
+        <div class="container-fluid text-light">
+          <h4 class="text-light navbar-text mx-4 px-1"><router-link to="/" class="text-light">Rocket Downrange</router-link></h4>
+          <br />
+          <h6 class="text-light mx-4 px-3"><a href="https://cavlemasters.com" target="_blank" rel="noopener" class="text-light">{{trademark}} &copy; {{copy}}</a></h6>
+          <br />
+          <h6 class="text-light mx-4 px-3"><router-link to="/privacy-policy" class="text-light">Privacy Policy</router-link></h6>
         </div>
       </div>
     </div>
@@ -220,7 +217,7 @@ export default {
       username: "",
       org: "Rocket Downrange",
       greeting: "",
-      copy: `Rocket Downrange developed by Cav Lemasters ${new Date()
+      copy: `${new Date()
         .getFullYear()
         .toString()}`,
       trademark: "made on earth by a human & coffee",

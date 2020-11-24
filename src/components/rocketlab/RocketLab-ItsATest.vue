@@ -12,7 +12,7 @@
             <img
               src="../../assets/RL-Test.jpg"
               class="img-fluid"
-              style="max-height: 65vh;"
+              style="max-height: 65vh"
               alt="The Electron Rocket's view as seen from Space, from the mission It's a Test by Rocket Lab.  This was the first launch of the Electron Launch vehicle and was conducted the 25th of May, 2017. "
             />
           </div>
@@ -79,9 +79,9 @@ export default {
   name: "RocketLabTest",
   data() {
     return {
-      results: []
+      results: [],
     };
-  }
+  },
 };
 </script>
 
