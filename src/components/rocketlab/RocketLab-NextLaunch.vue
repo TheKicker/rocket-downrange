@@ -6,11 +6,12 @@
         <hr />
         <h1 class="text-center my-4">
           {{
+              this.results.results[0] &&
               this.results.results[0].mission &&
               this.results.results[0].mission.name != null ||
             undefined
               ? this.results.results[0].mission.name
-              : "Nothing to see here yet"
+              : "To Be Decided"
           }}
         </h1>
         <div class="row mx-1">
@@ -42,7 +43,8 @@
               <span class="text-secondary undercase">Launch Site:</span><br />
               <span class="mx-4">
                 {{
-                  this.results.results[0].pad.location &&
+                    this.results.results[0] &&
+                    this.results.results[0].pad.location &&
                     this.results.results[0].pad.location.name != null ||
                   undefined
                     ? this.results.results[0].pad.name
@@ -63,7 +65,7 @@
             <p class="my-2">
               {{
                 
-                  this.results.results[0].mission.description != null ||
+                  this.results.results[0] && this.results.results[0].mission && this.results.results[0].mission.description != null ||
                 undefined
                   ? this.results.results[0].mission.description
                   : "This mission might be classified or we do not have any data to show here yet.  Check back for an update closer to launch time! "
@@ -80,7 +82,7 @@
           <h6 class="col-6 text-center">
             <span class="text-secondary">Launch Vehicle:</span>
             {{
-                this.results.results[0].rocket && this.results.results[0].rocket.configuration &&
+                this.results.results[0] && this.results.results[0].rocket && this.results.results[0].rocket.configuration &&
                 this.results.results[0].rocket.configuration.full_name != null || undefined ? 
               this.results.results[0].rocket.configuration.full_name : 'TBD'
             }}
@@ -96,8 +98,8 @@
           </h6>
           <h6 class="col-6 text-center">
             <span class="text-secondary">Target:</span>
-            {{ this.results.results[0].mission.orbit && this.results.results[0].mission.orbit.name != null || undefined ? this.results.results[0].mission.orbit.name : 'To be decided' }} ({{
-               this.results.results[0].mission.orbit && this.results.results[0].mission.orbit.abbrev != null || undefined ? this.results.results[0].mission.orbit.abbrev : 'TBD'}})
+            {{ this.results.results[0] && this.results.results[0].mission && this.results.results[0].mission.orbit && this.results.results[0].mission.orbit.name != null || undefined ? this.results.results[0].mission.orbit.name : 'To be decided' }} ({{
+               this.results.results[0] && this.results.results[0].mission && this.results.results[0].mission.orbit && this.results.results[0].mission.orbit.abbrev != null || undefined ? this.results.results[0].mission.orbit.abbrev : 'TBD'}})
           </h6>
         </div>
 
