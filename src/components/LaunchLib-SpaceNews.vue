@@ -174,6 +174,89 @@
               </div>
             </div>
           </div>
+
+          <!-- Article 5 -->
+          <!-- <div class="col-md-5 col-sm-12">
+            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h6>
+                  <strong class="d-inline-block mb-2 text-secondary"
+                    >{{ this.results.docs[4].news_site_long }} -
+                    {{
+                      timeTranslate(this.results.docs[4].published_date)
+                    }}</strong
+                  >
+                </h6>
+                <img
+                  class="card-img img-fluid"
+                  style="height: 14rem;"
+                  :src="this.results.docs[4].featured_image"
+                  :alt="this.results.docs[4].title"
+                />
+                <h5 class="mb-0 my-2">
+                  <a
+                    class="text-dark"
+                    :href="this.results.docs[4].url"
+                    target="_blank"
+                    rel="noopener"
+                    >{{ this.results.docs[4].title }}</a
+                  >
+                </h5>
+                <br />
+                <div class="d-block mx-auto">
+                  <a
+                    :href="this.results.docs[4].url"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener"
+                    >Continue reading</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Article 6 -->
+          <!-- <div class="col-md-5 col-sm-12">
+            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h6>
+                  <strong class="d-inline-block mb-2 text-secondary"
+                    >{{ this.results.docs[5].news_site_long }} -
+                    {{
+                      timeTranslate(this.results.docs[5].published_date)
+                    }}</strong
+                  >
+                </h6>
+                <img
+                  class="card-img img-fluid"
+                  style="height: 14rem;"
+                  :src="this.results.docs[5].featured_image"
+                  :alt="this.results.docs[5].title"
+                />
+                <h5 class="mb-0 my-2">
+                  <a
+                    class="text-dark"
+                    :href="this.results.docs[5].url"
+                    target="_blank"
+                    rel="noopener"
+                    >{{ this.results.docs[5].title }}</a
+                  >
+                </h5>
+                <br />
+                <div class="d-block mx-auto">
+                  <a
+                    :href="this.results.docs[5].url"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener"
+                    >Continue reading</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div> -->
+
         </div>
       </div>
 
