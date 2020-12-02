@@ -71,6 +71,11 @@
             image="firefly.png"
             link="https://firefly.com/"
           />
+          <External
+            site="Astra"
+            image="Astra.jpg"
+            link="https://astra.com/"
+          />
         </div>
         <!-- Row Three -->
         <div class="card-group width-limit mx-auto">

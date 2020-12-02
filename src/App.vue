@@ -68,6 +68,11 @@
                 aria-labelledby="navbarDropdown"
               >
                 <li class="nav-item">
+                    <router-link class="nav-link ml-1" to="/astra"
+                      >ASTRA</router-link
+                    >
+                </li>
+                <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/firefly-aerospace"
                     >FIREFLY</router-link
                   >
@@ -82,11 +87,6 @@
                     >SPACEX</router-link
                   >
                 </li>
-                <!-- <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/boeing-aerospace"
-                    >BOEING</router-link
-                  >
-                </li> -->
                 <li class="nav-item">
                   <router-link
                     class="nav-link ml-1"

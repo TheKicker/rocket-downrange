@@ -3,6 +3,10 @@
     <Info
       header="United Launch Alliance"
       description="United Launch Alliance is an American spacecraft launch service provider that manufactures and operates a number of vehicles that are capable of sending vehicles to LEO and beyond. Formed in 2006, ULA is a joint venture between Lockheed Martin Space and Boeing Defense, Space and Security. Headquartered in Centennial, Colorado, United States."
+      website="https://www.ulalaunch.com/"
+      twitter="https://twitter.com/ULAlaunch"
+      instagram="https://www.instagram.com/ulalaunch/"
+      youtube="https://www.youtube.com/user/UnitedLaunchAlliance"
     />
     <ULAInfo />
     <NextLaunch />
@@ -12,6 +16,7 @@
       significance="CSO of United Launch Alliance"
     />
     <NASAperseverance />
+    <Parker />
     <br />
     <hr />
     <div class="text-center">
@@ -28,6 +33,7 @@
 import Info from "@/components/Info-Template.vue";
 import NextLaunch from "@/components/ula/ULA-NextLaunch.vue";
 import NASAperseverance from "@/components/NASA-perseverance.vue";
+import Parker from "@/components/ula/ULA-Parker.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {
@@ -35,6 +41,7 @@ export default {
   components: {
     Info,
     NextLaunch,
+    Parker,
     NASAperseverance,
     Quote,
   },

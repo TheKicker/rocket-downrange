@@ -3,6 +3,10 @@
     <Info
       header="SpaceX"
       description="SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets. Based in Hawthorne, California, the company employs over 7000 who design, operate and relaunch 3 seperate vehicles."
+      website="https://www.spacex.com/"
+      twitter="https://twitter.com/SpaceX"
+      instagram="https://www.instagram.com/spacex/"
+      youtube="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA"
     />
     <NextLaunch />
     <LatestLaunch />

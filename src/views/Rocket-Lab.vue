@@ -3,6 +3,10 @@
     <Info
       header="Rocket Lab"
       description="Rocket Lab designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2006 by an engineer named Peter Beck and established headquarters in California in 2013. Currently, their prime launch vehicle is named Electron capable of launching nearly 500lbs to orbit."
+      website="https://www.rocketlabusa.com/"
+      twitter="https://twitter.com/RocketLab"
+      instagram="https://www.instagram.com/rocketlabusa/"
+      youtube="https://www.youtube.com/user/RocketLabNZ"
     />
     <NextLaunch />
     <Quote

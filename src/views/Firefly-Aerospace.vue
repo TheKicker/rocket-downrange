@@ -8,6 +8,10 @@
         around 300 individuals between the United States and Ukraine. Their
         primary launch vehicle, Alpha, is capable of lifting one metric ton with
         more vehicles in research and development."
+      website="https://firefly.com/"
+      twitter="https://twitter.com/Firefly_Space"
+      instagram="https://www.instagram.com/fireflyaerospace/"
+      youtube="https://www.youtube.com/channel/UC31UF9oKANw77yxBLxN852A"
     />
     <NextLaunch />
     <Quote
