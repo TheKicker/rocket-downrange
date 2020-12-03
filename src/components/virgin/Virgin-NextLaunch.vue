@@ -4,93 +4,105 @@
       <div class="card-body">
         <h2 class="text-left">Next Mission:</h2>
         <hr />
-        <h1
-          v-if="this.results.results[0].mission == null"
-          class="text-center my-4"
-        >
-          {{ this.results.results[0].name }}
-        </h1>
-        <h1 v-else class="text-center my-4">
-          {{ this.results.results[0].mission.name }}
+        <h1 class="text-center my-4">
+          {{
+              this.results.results[0] &&
+              this.results.results[0].mission &&
+              this.results.results[0].mission.name != null ||
+            undefined
+              ? this.results.results[0].mission.name
+              : " Mission name to be decided "
+          }}
         </h1>
         <div class="row mx-1">
           <div class="col-md-5 col-sm-12 text-center">
             <img
-              src="https://rocketdownrange.com/virgin-galactic.jpg"
+              :src="this.results.results[0].image != null || undefined ? this.results.results[0].image : 'https://icon-library.com/images/placeholder-image-icon/placeholder-image-icon-21.jpg'"
               class="img-fluid"
-              alt="Virgin Galactic/Orbit Upcoming Launch Mission"
+              style="max-height: 45vh;"
+              :alt="this.results.results[0].mission &&
+              this.results.results[0].mission.name != null ||
+            undefined
+              ? this.results.results[0].mission.name
+              : ' No image available, nothing to see here yet '"
             />
           </div>
           <div class="col-md-6 col-sm-12 my-2 mx-1">
-            <h6 class="text-primary">
-              <span class="text-secondary">Launch Date:</span><br />
+            <h6 class="text-secondary">
+              <span class="text-primary">Launch Date:</span><br />
               <span class="mx-4">
                 {{
-                  valueCheckText(
-                    new Date(this.results.results[0].net).toLocaleString()
-                  )
+                  
+                    this.results.results[0].net != null ||
+                  undefined
+                    ? new Date(this.results.results[0].net).toLocaleString() : "N/A"
                 }}
               </span>
             </h6>
-            <h6 class="my-3">
-              <span class="text-secondary undercase">Launch Site:</span><br />
+
+            <h6 class="text-secondary my-3">
+              <span class="text-primary">Launch Site:</span><br />
               <span class="mx-4">
-                {{ valueCheckText(this.results.results[0].pad.name) }},</span
-              ><br />
+                {{
+                    this.results.results[0] &&
+                    this.results.results[0].pad.location &&
+                    this.results.results[0].pad.location.name != null ||
+                  undefined
+                    ? this.results.results[0].pad.name
+                    : " N/A "
+                }},</span>
+              <br />
               <span class="mx-4">
-                {{ valueCheckText(this.results.results[0].pad.location.name) }}
+                {{
+                  this.results.results[0].pad && this.results.results[0].pad.location &&
+                    this.results.results[0].pad.location.name != null ||
+                  undefined
+                    ? this.results.results[0].pad.location.name
+                    : " N/A "
+                }}
               </span>
             </h6>
             <hr />
-            <p v-if="this.results.results[0].mission == null" class="my-2">
-              This is a test flight or we do not have any available data.
-            </p>
-            <p v-else class="my-2">
-              {{ this.results.results[0].mission.description }}
+            <p class="text-primary my-2">
+              {{
+                
+                  this.results.results[0] && this.results.results[0].mission && this.results.results[0].mission.description != null ||
+                undefined
+                  ? this.results.results[0].mission.description
+                  : " This mission might be classified or we do not have any data to show here yet.  Check back for an update closer to launch time! "
+              }}
             </p>
           </div>
         </div>
 
         <div class="row my-4">
-          <h6
-            v-if="this.results.results[0].mission == null"
-            class="col-6 text-center text-primary"
-          >
-            <span class="text-secondary">Mission Type:</span>
-            N/A
+          <h6 class="col-6 text-center text-secondary">
+            <span class="text-primary">Mission Type:</span>
+            {{ this.results.results[0].mission && this.results.results[0].mission.type != null || undefined ? this.results.results[0].mission.type : ' Classified/Unknown ' }}
           </h6>
-          <h6 v-else class="col-6 text-center text-primary">
-            <span class="text-secondary">Mission Type:</span>
-            {{ valueCheckText(this.results.results[0].mission.type) }}
-          </h6>
-          <h6 class="col-6 text-center">
-            <span class="text-secondary">Launch Vehicle:</span>
+          <h6 class="col-6 text-center text-secondary">
+            <span class="text-primary">Launch Vehicle:</span>
             {{
-              valueCheckText(
-                this.results.results[0].rocket.configuration.full_name
-              )
+                this.results.results[0] && this.results.results[0].rocket && this.results.results[0].rocket.configuration &&
+                this.results.results[0].rocket.configuration.full_name != null || undefined ? 
+              this.results.results[0].rocket.configuration.full_name : ' TBD '
             }}
           </h6>
         </div>
 
-        <!-- <div class="row my-4">
-          <h6 class="col-6 text-center">
-            <span class="text-secondary">Mission Status:</span>
-            {{ valueCheckText(this.results.results[0].status.name) }}
+        <div class="row my-4">
+          <h6 class="col-6 text-center text-secondary">
+            <span class="text-primary">Mission Status:</span>
+            {{ this.results.results[0].status && this.results.results[0].status.name != null || undefined ? this.results.results[0].status.name : " N/A "}}
+            (probability of
+            {{ this.results.results[0].probability != null || undefined ? this.results.results[0].probability + '%' : ' > 1% '}})
           </h6>
-          <h6
-            v-if="this.results.results[0].mission.orbit == null"
-            class="col-6 text-center"
-          >
-            <span class="text-secondary">Target:</span> N/A
+          <h6 class="col-6 text-center text-secondary">
+            <span class="text-primary">Target:</span>
+            {{ this.results.results[0] && this.results.results[0].mission && this.results.results[0].mission.orbit && this.results.results[0].mission.orbit.name != null || undefined ? this.results.results[0].mission.orbit.name : 'To be decided' }} ({{
+               this.results.results[0] && this.results.results[0].mission && this.results.results[0].mission.orbit && this.results.results[0].mission.orbit.abbrev != null || undefined ? this.results.results[0].mission.orbit.abbrev : 'TBD'}})
           </h6>
-          <h6 v-else class="col-6 text-center">
-            <span class="text-secondary">Target:</span>
-            {{ valueCheckText(this.results.results[0].mission.orbit.name) }},({{
-              valueCheckText(this.results.results[0].mission.orbit.abbrev)
-            }})
-          </h6>
-        </div> -->
+        </div>
 
         <div class="row my-4"></div>
         <hr />

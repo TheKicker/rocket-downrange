@@ -31,7 +31,7 @@
                   :src="results.url"
                   class="img-fluid"
                   style="max-height: 75vh;"
-                  alt="The NASA Astronomy Picture of the Day! "
+                  :alt="(results.title) +  ' - The NASA Astronomy Picture of the Day'"
                 />
               </a>
             </div>

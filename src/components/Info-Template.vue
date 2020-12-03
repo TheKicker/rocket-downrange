@@ -73,7 +73,6 @@ export default {
   background: #b81a12;
   color: white;
 }
-
 #hiddenDesktop{display: none;}
 #hiddenMobile{display: initial;}
 

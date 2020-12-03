@@ -11,7 +11,7 @@
               this.results.results[0].mission.name != null ||
             undefined
               ? this.results.results[0].mission.name
-              : "To Be Decided"
+              : " Mission name to be decided "
           }}
         </h1>
         <div class="row mx-1">
@@ -19,16 +19,17 @@
             <img
               :src="this.results.results[0].image != null || undefined ? this.results.results[0].image : 'https://icon-library.com/images/placeholder-image-icon/placeholder-image-icon-21.jpg'"
               class="img-fluid"
+              style="max-height: 45vh;"
               :alt="this.results.results[0].mission &&
               this.results.results[0].mission.name != null ||
             undefined
               ? this.results.results[0].mission.name
-              : 'No image available, nothing to see here yet'"
+              : ' No image available, nothing to see here yet '"
             />
           </div>
           <div class="col-md-6 col-sm-12 my-2 mx-1">
-            <h6 class="text-primary">
-              <span class="text-secondary">Launch Date:</span><br />
+            <h6 class="text-secondary">
+              <span class="text-primary">Launch Date:</span><br />
               <span class="mx-4">
                 {{
                   
@@ -39,8 +40,8 @@
               </span>
             </h6>
 
-            <h6 class="my-3">
-              <span class="text-secondary undercase">Launch Site:</span><br />
+            <h6 class="text-secondary my-3">
+              <span class="text-primary">Launch Site:</span><br />
               <span class="mx-4">
                 {{
                     this.results.results[0] &&
@@ -48,56 +49,56 @@
                     this.results.results[0].pad.location.name != null ||
                   undefined
                     ? this.results.results[0].pad.name
-                    : "N/A"
-                }},</span
-              ><br />
+                    : " N/A "
+                }},</span>
+              <br />
               <span class="mx-4">
                 {{
                   this.results.results[0].pad && this.results.results[0].pad.location &&
                     this.results.results[0].pad.location.name != null ||
                   undefined
                     ? this.results.results[0].pad.location.name
-                    : " N/A"
+                    : " N/A "
                 }}
               </span>
             </h6>
             <hr />
-            <p class="my-2">
+            <p class="text-primary my-2">
               {{
                 
                   this.results.results[0] && this.results.results[0].mission && this.results.results[0].mission.description != null ||
                 undefined
                   ? this.results.results[0].mission.description
-                  : "This mission might be classified or we do not have any data to show here yet.  Check back for an update closer to launch time! "
+                  : " This mission might be classified or we do not have any data to show here yet.  Check back for an update closer to launch time! "
               }}
             </p>
           </div>
         </div>
 
         <div class="row my-4">
-          <h6 class="col-6 text-center text-primary">
-            <span class="text-secondary">Mission Type:</span>
-            {{ this.results.results[0].mission && this.results.results[0].mission.type != null || undefined ? this.results.results[0].mission.type : 'Classified' }}
+          <h6 class="col-6 text-center text-secondary">
+            <span class="text-primary">Mission Type:</span>
+            {{ this.results.results[0].mission && this.results.results[0].mission.type != null || undefined ? this.results.results[0].mission.type : ' Classified/Unknown ' }}
           </h6>
-          <h6 class="col-6 text-center">
-            <span class="text-secondary">Launch Vehicle:</span>
+          <h6 class="col-6 text-center text-secondary">
+            <span class="text-primary">Launch Vehicle:</span>
             {{
                 this.results.results[0] && this.results.results[0].rocket && this.results.results[0].rocket.configuration &&
                 this.results.results[0].rocket.configuration.full_name != null || undefined ? 
-              this.results.results[0].rocket.configuration.full_name : 'TBD'
+              this.results.results[0].rocket.configuration.full_name : ' TBD '
             }}
           </h6>
         </div>
 
         <div class="row my-4">
-          <h6 class="col-6 text-center">
-            <span class="text-secondary">Mission Status:</span>
-            {{ this.results.results[0].status && this.results.results[0].status.name != null || undefined ? this.results.results[0].status.name : "N/A"}}
+          <h6 class="col-6 text-center text-secondary">
+            <span class="text-primary">Mission Status:</span>
+            {{ this.results.results[0].status && this.results.results[0].status.name != null || undefined ? this.results.results[0].status.name : " N/A "}}
             (probability of
-            {{ this.results.results[0].probability != null || undefined ? this.results.results[0].probability + '%' : '> 1%'}})
+            {{ this.results.results[0].probability != null || undefined ? this.results.results[0].probability + '%' : ' > 1% '}})
           </h6>
-          <h6 class="col-6 text-center">
-            <span class="text-secondary">Target:</span>
+          <h6 class="col-6 text-center text-secondary">
+            <span class="text-primary">Target:</span>
             {{ this.results.results[0] && this.results.results[0].mission && this.results.results[0].mission.orbit && this.results.results[0].mission.orbit.name != null || undefined ? this.results.results[0].mission.orbit.name : 'To be decided' }} ({{
                this.results.results[0] && this.results.results[0].mission && this.results.results[0].mission.orbit && this.results.results[0].mission.orbit.abbrev != null || undefined ? this.results.results[0].mission.orbit.abbrev : 'TBD'}})
           </h6>
