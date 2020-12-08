@@ -2,6 +2,7 @@
   <div class="home">
     <Homepage />
     <NASAapod />
+    <SPACEXstarship />
     <LLNextLaunch />
     <SNAPI />
     <NASAinsight />
@@ -22,6 +23,7 @@ import LLNextLaunch from "@/components/LaunchLib-Next.vue";
 import NASAinsight from "@/components/NASA-insight.vue";
 import NASAcuriosity from "@/components/NASA-curiosity.vue";
 import NASAopportunity from "@/components/NASA-opportunity.vue";
+import SPACEXstarship from "@/components/spacex/SpaceX-Starship-Test.vue";
 import ExternalLinks from "@/components/ExternalLinks.vue";
 import Contact from "@/components/Contact.vue";
 import SNAPI from "@/components/LaunchLib-SpaceNews.vue";
@@ -30,6 +32,7 @@ export default {
   name: "Home",
   components: {
     Homepage,
+    SPACEXstarship,
     NASAperseverance,
     NASAapod,
     LLNextLaunch,

@@ -8,6 +8,7 @@
       instagram="https://www.instagram.com/spacex/"
       youtube="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA"
     />
+    <SPACEXstarship />
     <NextLaunch />
     <LatestLaunch />
     <Quote
@@ -36,6 +37,7 @@ import Info from "@/components/Info-Template.vue";
 import NextLaunch from "@/components/spacex/SpaceX-NextLaunch.vue";
 import LatestLaunch from "@/components/spacex/SpaceX-LatestLaunch.vue";
 import SPACEXcrewdemo2 from "@/components/spacex/SpaceX-CrewDemo2.vue";
+import SPACEXstarship from "@/components/spacex/SpaceX-Starship-Test.vue";
 import Starman from "@/components/spacex/SpaceX-Starman.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
@@ -46,6 +48,7 @@ export default {
     NextLaunch,
     LatestLaunch,
     SPACEXcrewdemo2,
+    SPACEXstarship,
     Starman,
     Quote,
   },
