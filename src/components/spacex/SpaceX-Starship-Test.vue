@@ -19,11 +19,12 @@
             </p>
             <p>With a test such as this, success is not measured by completion of specific objectives but rather how much we can learn, which will inform and improve the probability of success in the future as SpaceX rapidly advances development of Starship.</p>
           </div>
-          <div class="my-4 row justify-content-center" hidden>
+          <div class="my-4 row justify-content-center">
             <a
               href="https://www.youtube.com/watch?v=nf83yzzme2I"
               target="_blank"
               class="py-4 p-3"
+              hidden
             >
               <button class="btn btn-block btn-outline-primary italic">
                 YouTube Live Stream
