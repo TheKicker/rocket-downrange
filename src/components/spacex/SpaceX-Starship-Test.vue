@@ -9,7 +9,7 @@
         </h3>
         <div class="row">
           <div class="embed-responsive embed-responsive-16by9 mx-auto">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nf83yzzme2I" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gBELXjq_X-M" allowfullscreen></iframe>
           </div>
         </div>
         <div class="container">
@@ -21,13 +21,13 @@
           </div>
           <div class="my-4 row justify-content-center">
             <a
-              href="https://www.youtube.com/watch?v=nf83yzzme2I"
+              href="https://www.youtube.com/watch?v=gBELXjq_X-M"
               target="_blank"
               class="py-4 p-3"
               hidden
             >
               <button class="btn btn-block btn-outline-primary italic">
-                YouTube Live Stream
+                Everyday Astronaut Live Stream
               </button>
             </a>
             <a
