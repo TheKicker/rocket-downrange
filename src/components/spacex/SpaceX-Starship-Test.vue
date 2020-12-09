@@ -23,8 +23,8 @@
             <a
               href="https://www.youtube.com/watch?v=gBELXjq_X-M"
               target="_blank"
+              rel="noopener"
               class="py-4 p-3"
-              hidden
             >
               <button class="btn btn-block btn-outline-primary italic">
                 Everyday Astronaut Live Stream
@@ -34,6 +34,7 @@
               href="https://www.spacex.com/vehicles/starship/"
               target="_blank"
               class="py-4 p-3"
+              rel="noopener"
             >
               <button class="btn btn-block btn-outline-primary italic">
                 Starship on SpaceX.com
