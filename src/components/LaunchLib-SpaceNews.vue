@@ -1,6 +1,6 @@
 <template>
-  <div class="LaunchLib-News my-4">
-    <div class="card container">
+  <div class="LaunchLib-News container my-4">
+    <div class="card">
       <div class="card-body">
         <h5 class="text-left text-secondary">
           The Space News API (SNAPI):
@@ -216,6 +216,13 @@ export default {
       var month = new Date(results).getMonth() + 1;
       var year = new Date(results).getFullYear();
       return `${month}/${day}/${year}`;
+    },
+    charCount(results, limit) {
+      if (results.length > limit) {
+        return results.slice(0, limit) + "...";
+      } else {
+        return results;
+      }
     }
   }
 };

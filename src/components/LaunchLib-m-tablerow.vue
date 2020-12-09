@@ -1,30 +1,32 @@
 <template>
-  <tr>
-    <th scope="row">
+  <div class="card my-4">
+    
+    <h5 class="card-header">
       {{ mission }}
-    </th>
-    <th>
-      {{ rocket }},
-      <br />
-      {{ launchsp }}
-    </th>
-    <td>
+    </h5>
+    <p class="mx-2 my-2">
+      <strong>Launch Date: </strong><br>
       {{ utcTranslate(launchtime) }}
-    </td>
-    <td>
-      {{ pad }},
-      {{ location }}
-    </td>
-    <td>
+    </p>
+    <p class="mx-2 my-2">
+      <strong>Launch Vehicle: </strong><br>
+      {{ rocket }}, {{ launchsp }}
+    </p>
+    <p class="mx-2 my-2">
+      <strong>Location: </strong><br>
+      {{ pad }}, {{ location }}
+    </p>
+    <p class="mx-2 my-2">
+      <strong>Overview: </strong><br>
       {{ charCount(description, limit) }}
-    </td>
-  </tr>
+    </p>
+  </div>
 </template>
 
 
 <script>
 export default {
-  name: "tablerow",
+  name: "tablerowM",
   data() {
     return {
       limit: 350,
@@ -54,4 +56,8 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.heading{ color: black;}
+</style>
 
