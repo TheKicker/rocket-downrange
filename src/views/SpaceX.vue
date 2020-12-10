@@ -8,7 +8,6 @@
       instagram="https://www.instagram.com/spacex/"
       youtube="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA"
     />
-    <SPACEXstarship />
     <NextLaunch />
     <LatestLaunch />
     <Quote
@@ -16,6 +15,7 @@
       author="Elon Musk"
       significance="CEO of SpaceX"
     />
+    <SPACEXstarship />
     <SPACEXcrewdemo2 />
     <Starman msg="Where is Starman? " />
     <br />

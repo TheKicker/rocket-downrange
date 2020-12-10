@@ -7,7 +7,7 @@
         <h3 class="text-center my-4">
           Upcoming Launches You Don't Want to Miss
         </h3>
-        <div class="row text-center">
+        <div class="row">
           <img
             src="https://rocketdownrange.com/ll-unsplash.jpeg"
             class="img-fluid mx-auto"
@@ -15,74 +15,62 @@
           />
         </div>
         <!-- Start Desktop -->
-        <div class="row my-4" id="desktop">
-          <div class="table-responsive">
-            <table class="table table-hover">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="col">Mission</th>
-                  <th scope="col">Rocket</th>
-                  <th scope="col">Date</th>
-                  <th scope="col">Location</th>
-                  <th scope="col">Mission Overview</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tablerowD
-                  v-for="(launch, index) in launches"
-                  :key="index"
-                  :mission="
-                    launch.mission && launch.mission.name != null
-                      ? launch.mission.name
-                      : launch.name
-                  "
-                  :rocket="launch.rocket.configuration.name"
-                  :launchsp="launch.launch_service_provider.name"
-                  :launchtime="launch.net != null ? launch.net : 'N/A'"
-                  :pad="launch.pad.name != null ? launch.pad.name : 'N/A'"
-                  :location="
-                    launch.pad.location && launch.pad.location.name != null
-                      ? launch.pad.location.name
-                      : 'N/A'
-                  "
-                  :description="
-                    launch.mission && launch.mission.description != null
-                      ? launch.mission.description
-                      : 'This mission is classified or no overview is available at this time.'
-                  "
-                />
-              </tbody>
-            </table>
-          </div>
+        <div class="row my-3" id="desktop">
+          <tablerowD
+            v-for="(launch, index) in launches"
+            :key="index"
+            :mission="
+              launch.mission && launch.mission.name != null
+                ? launch.mission.name
+                : launch.name
+            "
+            :image="launch.image != null || undefined ? launch.image : 'apple-icon.png'"
+            :rocket="launch.rocket.configuration.name"
+            :launchsp="launch.launch_service_provider.name"
+            :launchtime="launch.net != null ? launch.net : 'N/A'"
+            :pad="launch.pad.name != null ? launch.pad.name : 'N/A'"
+            :location="
+              launch.pad.location && launch.pad.location.name != null
+                ? launch.pad.location.name
+                : 'N/A'
+            "
+            :description="
+              launch.mission && launch.mission.description != null
+                ? launch.mission.description
+                : 'This mission is classified or no overview is available at this time.'
+            "
+          />
         </div>
         <!-- End Desktop --> 
         <!-- Start Mobile -->
-        <div class="row my-4" id="mobile">
+        <div class="row my-3" id="mobile">
           <tablerowM
-                  v-for="(launch, index) in launches"
-                  :key="index"
-                  :mission="
-                    launch.mission && launch.mission.name != null
-                      ? launch.mission.name
-                      : launch.name
-                  "
-                  :rocket="launch.rocket.configuration.name"
-                  :launchsp="launch.launch_service_provider.name"
-                  :launchtime="launch.net != null ? launch.net : 'N/A'"
-                  :pad="launch.pad.name != null ? launch.pad.name : 'N/A'"
-                  :location="
-                    launch.pad.location && launch.pad.location.name != null
-                      ? launch.pad.location.name
-                      : 'N/A'
-                  "
-                  :description="
-                    launch.mission && launch.mission.description != null
-                      ? launch.mission.description
-                      : 'This mission is classified or no overview is available at this time.'
-                  "
-                />
+            v-for="(launch, index) in launches"
+            :key="index"
+            :mission="
+              launch.mission && launch.mission.name != null
+                ? launch.mission.name
+                : launch.name
+            "
+            :image="launch.image != null || undefined ? launch.image : 'apple-icon.png'"
+            :rocket="launch.rocket.configuration.name"
+            :launchsp="launch.launch_service_provider.name"
+            :launchtime="launch.net != null ? launch.net : 'N/A'"
+            :pad="launch.pad.name != null ? launch.pad.name : 'N/A'"
+            :location="
+              launch.pad.location && launch.pad.location.name != null
+                ? launch.pad.location.name
+                : 'N/A'
+            "
+            :description="
+              launch.mission && launch.mission.description != null
+                ? launch.mission.description
+                : 'This mission is classified or no overview is available at this time.'
+            "
+          />
         </div>
         <!-- End Mobile --> 
+        <hr>
         <p class="text-center">
           <i>
             API Data brought to you by

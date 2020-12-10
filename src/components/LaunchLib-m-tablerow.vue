@@ -1,9 +1,11 @@
 <template>
-  <div class="card my-4">
-    
+  <div class="card my-4">    
     <h5 class="card-header">
       {{ mission }}
     </h5>
+    <div class="my-3">
+      <img :src="image" :alt="mission + ', ' + launchsp + ', ' + location" class='img-fluid rounded mx-auto d-block' style="max-height: 10rem;"/>
+    </div>
     <p class="mx-2 my-2">
       <strong>Launch Date: </strong><br>
       {{ utcTranslate(launchtime) }}
@@ -34,6 +36,7 @@ export default {
   },
   props: {
     mission: String,
+    image: String,
     rocket: String,
     launchsp: String,
     launchtime: String,
