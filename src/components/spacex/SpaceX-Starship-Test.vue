@@ -5,7 +5,7 @@
         <h5 class="text-left text-secondary">SpaceX Special Event (2020):</h5>
         <hr />
         <h3 class="text-center my-4">
-          SN8 - Starship Test
+          SN8 - Starship Test 
         </h3>
         <div class="row">
           <div class="embed-responsive embed-responsive-16by9 mx-auto">
@@ -15,9 +15,11 @@
         <div class="container">
           <div class="row my-3">
             <p>
-              On December 9th, 2020, the SpaceX team will make the first attempt of a high-altitude suborbital flight test of Starship serial number 8 (SN8) from the launch site in Cameron County, Texas. This suborbital flight is designed to test a number of objectives, from how the vehicle’s three Raptor engines perform to the overall aerodynamic entry capabilities of the vehicle (including its body flaps) to how the vehicle manages propellant transition. SN8 will also attempt to perform a landing flip maneuver, which would be a first for a vehicle of this size.
+              On December 9th, 2020, the SpaceX team made the first attempt of a high-altitude suborbital flight test of Starship serial number 8 (SN8) from the launch site in Cameron County, Texas. This suborbital flight was designed to test a number of objectives, from how the vehicle’s three Raptor engines perform to the overall aerodynamic entry capabilities of the vehicle (including its body flaps) to how the vehicle manages propellant transition. SN8 also attempted a landing flip maneuver, which is a first for a vehicle of this size - unfortunately, the vehicle appears to have lost an engine and experienced rapid-unplanned-disassembly on touch down.  
             </p>
-            <p>With a test such as this, success is not measured by completion of specific objectives but rather how much we can learn, which will inform and improve the probability of success in the future as SpaceX rapidly advances development of Starship.</p>
+            <p>
+              Skip to 4:40:30 if you would only like to see the launch.  It is important to note, with a test such as this, success is not measured by completion of specific objectives but rather how much SpaceX can learn.  Flight data (even crash data) will inform and improve the probability of success in the future as SpaceX rapidly advances development of Starship.  From Rocket Downrage, congratulations SpaceX Team! Truly history in the making!
+            </p>
           </div>
           <div class="my-4 row justify-content-center">
             <a
@@ -43,7 +45,7 @@
           </div>
           <hr />
           <p class="text-center">
-            <i>Last Update: Dec 9, 2020</i>
+            <i>Last Update: Dec 10, 2020</i>
           </p>
         </div>
       </div>
