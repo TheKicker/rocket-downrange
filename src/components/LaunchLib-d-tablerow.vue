@@ -10,8 +10,8 @@
       </div>
       <div class=" col col-md-6 my-1">
         <p class="mx-2 my-2">
-        <span id="header">Launch Date: </span><br>
-        <span id="content">{{ utcTranslate(launchtime) }}</span>
+          <span id="header">Launch Date: </span><br>
+          <span id="content">{{ utcTranslate(launchtime) }}</span>
         </p>
         <p class="mx-2 my-2">
           <span id="header">Launch Vehicle: </span><br>
