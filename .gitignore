@@ -3,8 +3,12 @@ node_modules
 /dist
 
 # local env files
+.env 
 .env.local
 .env.*.local
+
+# local files
+.zip
 
 # Log files
 npm-debug.log*

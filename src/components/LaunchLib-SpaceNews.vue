@@ -25,7 +25,7 @@
                   class="card-img img-fluid"
                   style="height: 14rem;"
                   :src="this.results.docs[0].featured_image"
-                  :alt="this.results.docs[0].title"
+                  :alt="'Cover image from ' + this.results.docs[0].news_site_long + ' - ' + this.results.docs[0].title"
                 />
                 <h5 class="mb-0 my-2">
                   <a
@@ -66,7 +66,7 @@
                   class="card-img img-fluid"
                   style="height: 14rem;"
                   :src="this.results.docs[1].featured_image"
-                  :alt="this.results.docs[1].title"
+                  :alt="'Cover image from ' + this.results.docs[1].news_site_long + ' - ' + this.results.docs[1].title"
                 />
                 <h5 class="mb-0 my-2">
                   <a
@@ -109,7 +109,7 @@
                   class="card-img img-fluid"
                   style="height: 14rem;"
                   :src="this.results.docs[2].featured_image"
-                  :alt="this.results.docs[2].title"
+                  :alt="'Cover image from ' + this.results.docs[2].news_site_long + ' - ' + this.results.docs[2].title"
                 />
                 <h5 class="mb-0 my-2">
                   <a
@@ -150,7 +150,7 @@
                   class="card-img img-fluid"
                   style="height: 14rem;"
                   :src="this.results.docs[3].featured_image"
-                  :alt="this.results.docs[3].title"
+                  :alt="'Cover image from ' + this.results.docs[3].news_site_long + ' - ' + this.results.docs[3].title"
                 />
                 <h5 class="mb-0 my-2">
                   <a

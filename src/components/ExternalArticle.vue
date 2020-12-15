@@ -1,7 +1,7 @@
 <template>
   <div class="card my-4 mx-2">
     <h5 class="card-title">{{ newssite }}</h5>
-    <img :src="image" class="card-img-top image" alt="..." />
+    <img :src="image" class="card-img-top image" :alt="newsite + ' - ' + title" />
     <div class="card-body">
       <h6 class="card-title">{{ title }}</h6>
       <hr />

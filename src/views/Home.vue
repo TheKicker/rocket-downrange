@@ -50,12 +50,12 @@ export default {
       {
         name: "description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Featuring data from NASA, SpaceX, Rocket Lab, and Mars via Opportunity, Curiousity, Insight, and hopefully Perserverance! Built with Vue.JS, Netlify and more! ",
+          "A dynamically generated site made possible through various NASA APIs, TheSpaceDevs APIs and others.  Featuring rocket launch schedule, astronomy picture of the day, company information, rover pictures, and more! Made on Earth by Cavan Lemasters, coffee and Vue! ",
       },
       {
         name: "keywords",
         content:
-          "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Opportunity, Curiousity, Insight, Perserverance, Rovers, Mars, APOD",
+          "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Opportunity, Curiousity, Insight, Perserverance, Rovers, Mars, APOD, Cav, Lemasters, Cavan Lemasters",
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange" },
@@ -75,7 +75,7 @@ export default {
       {
         property: "og:description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Featuring data from NASA, SpaceX, Rocket Lab, and Mars via Opportunity, Curiousity, Insight, and hopefully Perserverance! Built with Vue.JS, Netlify and more! ",
+          "A dynamically generated site made possible through various NASA APIs, TheSpaceDevs APIs and others.  Featuring rocket launch schedule, astronomy picture of the day, company information, rover pictures, and more! Made on Earth by Cavan Lemasters, coffee and Vue! ",
       },
 
       // Twitter card
@@ -88,7 +88,7 @@ export default {
       {
         name: "twitter:description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Featuring data from NASA, SpaceX, Rocket Lab, and Mars via Opportunity, Curiousity, Insight, and hopefully Perserverance! Built with Vue.JS, Netlify and more!  ",
+          "A dynamically generated site made possible through various NASA APIs, TheSpaceDevs APIs and others.  Featuring rocket launch schedule, astronomy picture of the day, company information, rover pictures, and more! Made on Earth by Cavan Lemasters, coffee and Vue! ",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
@@ -102,7 +102,7 @@ export default {
       {
         itemprop: "description",
         content:
-          "Rocket Downrange is a fan-made site that utilizes different free API's to inform and inspire others of missions concerning the advancement of human space travel. Featuring data from NASA, SpaceX, Rocket Lab, and Mars via Opportunity, Curiousity, Insight, and hopefully Perserverance! Built with Vue.JS, Netlify and more! ",
+          "A dynamically generated site made possible through various NASA APIs, TheSpaceDevs APIs and others.  Featuring rocket launch schedule, astronomy picture of the day, company information, rover pictures, and more! Made on Earth by Cavan Lemasters, coffee and Vue! ",
       },
       {
         itemprop: "image",
