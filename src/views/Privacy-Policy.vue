@@ -18,7 +18,8 @@
         <div class="row mx-2">
             <h4>Google Analytics & Google AdSense </h4>
             <p>This site uses Google Analytics to better understand how our users engage with the site.  This aggregated information does not include individual names or personal data, so it does not personally identify you or any other user. All data is anonymized by default and only reveals general specifications like device type (computer, mobile, tablet), location data (city, state, country), language (English, Chinese, Russian), etc. This allows Rocket Downrange to better understand who is using our site, how they are using it and what issues they may be having.  It also allows us to see how our site grows over time which is the goal :)</p>
-            <p>Operating a website is not free! However, I do not want to cheapen the experience through hundreds of ads. Google AdSense has been added to the site in limited amounts to offset this, or if you would like to directly support the site, <a href="https://cavlemasters.com/contact" target="_blank" rel="noopener" id="link">you can send me a message</a> for my PayPal link. All tips are appreciated however they are not necessary and non-refundable.</p>
+            <p>Operating a website is not free! However, the goal is not to cheapen the experience through hundreds of ads. Google AdSense has been added to the site in limited amounts to offset this, or if you would like to directly support the site, <a href="https://cavlemasters.com/contact" target="_blank" rel="noopener" class="link">you can send me a message</a> for my PayPal link. All tips are appreciated however they are not necessary and non-refundable.</p>
+            <p>If you would like to opt out of Google Analytics tracking, you may do so at <a href="https://tools.google.com/dlpage/gaoptout/" target="_blank" rel="noopener" class="link">this link.</a>  Members of the EU and other nations note that by using Rocket Downrange, you accept that your data is read/used/updated by these companies to enable Rocket Downrange to provide better content and site structure. For example, how Google keeps your data anonymized and uses it can be found <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener" class="link">here.</a> </p>
         </div>
         <br>
         <div class="row mx-2">
@@ -109,7 +110,7 @@ export default {
 </script>
 
 <style scoped>
-#link{
+.link{
     font-weight: bold;
     color: black;
     text-decoration: underline;

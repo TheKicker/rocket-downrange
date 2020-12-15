@@ -38,17 +38,17 @@
               >
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/astronaut"
-                    >ASTRONAUT</router-link
+                    ><i class="fas fa-user-astronaut"></i> ASTRONAUT</router-link
                   >
                 </li>
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/solar-system"
-                    >SOLAR SYSTEM</router-link
+                    ><i class="fas fa-globe-americas"></i> SOL SYSTEM</router-link
                   >
                 </li>
-                <!-- <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/calculator">CALCULATORS</router-link>
-                </li>-->
+                <li class="nav-item">
+                  <a href="https://twitter.com/RocketDownrange" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fab fa-twitter"></i> TWITTER</a>
+                </li>
               </div>
             </li>
 
@@ -107,7 +107,7 @@
               type="button"
               class="btn btn-primary display-block"
               data-toggle="modal"
-              data-target="#exampleModal"
+              data-target="#userModal"
             >
               <h6 class="nav-item my-2 my-lg-0 text-white text-center">
                 {{ getGreeting }}, {{ username }}
@@ -122,16 +122,16 @@
     <!-- Modal -->
     <div
       class="modal fade"
-      id="exampleModal"
+      id="userModal"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="userModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
+            <h5 class="modal-title" id="userModalLabel">
               <i class="fa fa-user"></i> &nbsp; Change username
             </h5>
             <button
@@ -159,31 +159,29 @@
             <p></p>
           </div>
           <div class="modal-footer">
-            <div>
-              <router-link to="/privacy-policy">
+              <div class="m-footer">
+                <router-link to="/privacy-policy">
+                  <button
+                  type="button"
+                  class="btn btn-outline-info"
+                  data-dismiss="modal"
+                >
+                  Privacy Policy
+                </button>
+                </router-link>
                 <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-outline-primary"
                 data-dismiss="modal"
               >
-                Privacy Policy
+                Close lightbox
               </button>
-              </router-link>
-            </div>
-            <div>
               <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <button
-              type="button"
-              @click="validate()"
-              class="btn btn-primary"
-              data-dismiss="modal"
-            >
+                type="button"
+                @click="validate()"
+                class="btn btn-outline-success"
+                data-dismiss="modal"
+              >
               Save changes
             </button>
             </div>
@@ -196,14 +194,16 @@
       <router-view />
     </div>
 
-    <div id="footer" class="navbar navbar-dark bg-primary py-4">
-      <div class="mx-auto my-4">
-        <div class="container-fluid text-light">
-          <h4 class="text-light navbar-text mx-4 px-1"><router-link to="/" class="text-light">Rocket Downrange</router-link></h4>
-          <br />
-          <h6 class="text-light mx-4 px-3"><a href="https://cavlemasters.com" target="_blank" rel="noopener" class="text-light">{{trademark}} &copy; {{copy}}</a></h6>
-          <br />
-          <h6 class="text-light mx-4 px-3"><router-link to="/privacy-policy" class="text-light">Privacy Policy</router-link></h6>
+    <div id="footer" class="navbar navbar-dark bg-primary py-4 text-center">
+      <div class="mx-auto my-4 container" id="footer-container">
+        <div class="text-light navbar-text">
+          <h4><router-link to="/" class="text-light">Rocket Downrange</router-link></h4>
+        </div>
+        <div class="text-light navbar-text">
+          <p><a href="https://cavlemasters.com" target="_blank" rel="noopener" class="text-light">{{trademark}} &copy; {{copy}}</a></p>
+        </div>
+        <div class="text-light navbar-text">
+          <p><router-link to="/privacy-policy" class="text-light">Privacy Policy</router-link></p>
         </div>
       </div>
     </div>
@@ -280,6 +280,13 @@ export default {
   margin: auto;
 }
 
+.m-footer{
+  width: 100%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 #vote {
   background: black;
   color: white;
@@ -300,4 +307,19 @@ export default {
   background: white;
   color: black;
 }
+
+#footer-container{
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 720px) {
+  #footer-container{
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
 </style>
