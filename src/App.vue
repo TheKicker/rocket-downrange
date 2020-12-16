@@ -42,8 +42,13 @@
                   >
                 </li>
                 <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/vehicles"
+                    ><i class="fas fa-space-shuttle"></i> VEHICLES</router-link
+                  >
+                </li>
+                <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/solar-system"
-                    ><i class="fas fa-globe-americas"></i> SOL SYSTEM</router-link
+                    ><i class="fas fa-globe-americas"></i> OUR SYSTEM</router-link
                   >
                 </li>
                 <li class="nav-item">
@@ -315,10 +320,17 @@ export default {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 720px) {
+.nav-link{
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 999px) {
   #footer-container{
     width: 100%;
     flex-direction: column;
+  }
+  .nav-link{
+    font-size: 14px;
   }
 }
 

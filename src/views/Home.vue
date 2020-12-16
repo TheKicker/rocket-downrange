@@ -2,11 +2,11 @@
   <div class="home">
     <Homepage />
     <NASAapod />
-    <SPACEXstarship />
     <LLNextLaunch />
     <SNAPI />
-    <NASAinsight />
+    <SPACEXstarship />
     <NASAperseverance />
+    <NASAinsight />
     <NASAcuriosity />
     <NASAopportunity />
     <ExternalLinks />

@@ -13,6 +13,7 @@
       author="Chris Kemp"
       significance="Co-Founder of Astra"
     />
+    <AstraTest2 />
 
     <br />
     <hr />
@@ -29,6 +30,7 @@
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
 import NextLaunch from "@/components/astra/Astra-NextLaunch.vue";
+import AstraTest2 from "@/components/astra/Astra-Test-2.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {
@@ -36,6 +38,7 @@ export default {
   components: {
     Info,
     NextLaunch,
+    AstraTest2,
     Quote,
   },
   metaInfo: {

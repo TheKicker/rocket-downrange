@@ -67,7 +67,7 @@ export default {
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/boeing-aerospace",
+        content: "https://www.rocketdownrange.com/astronaut",
       },
       {
         property: "og:image",
@@ -84,7 +84,7 @@ export default {
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com/boeing-aerospace",
+        content: "https://www.rocketdownrange.com/astronaut",
       },
       { name: "twitter:title", content: "Rocket Downrange | Astronaut" },
       {

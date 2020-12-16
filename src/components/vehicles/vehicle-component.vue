@@ -1,8 +1,8 @@
 <template>
-  <div id="astronautProfile" class="card mx-auto my-2" style="width: 26rem">
+  <div id="vehicleProfile" class="card mx-auto my-2" style="max-width: 26rem">
     <div class="hovereffect rounded">
       <img
-        :src="profile_image"
+        :src="image"
         style="
           display: block;
           margin-left: auto;
@@ -20,19 +20,19 @@
     <div class="card-body bg-primary text-center">
       <h5 class="text-white">{{ name }}</h5>
       <hr style="background-color: white" />
-      <h6 class="text-white">{{ abbrev }}, {{ country_code }}</h6>
+      <h6 class="text-white">{{ org }}</h6>
+      <br>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "astrocomponent",
+  name: "vehiclecomponent",
   props: {
-    profile_image: String,
+    image: String,
     name: String,
-    abbrev: String,
-    country_code: String,
+    org: String,
     bio: String,
   },
 };

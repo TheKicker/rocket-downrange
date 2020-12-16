@@ -45,7 +45,7 @@ export default {
   },
   mounted() {
     window.axios
-      .get("https://ll.thespacedevs.com/2.0.0/astronaut/?status=4")
+      .get("https://ll.thespacedevs.com/2.0.0/astronaut/?status=4&limit=20")
       .then((response) => {
         // console.log(response.data.results);
         this.astros = response.data.results;

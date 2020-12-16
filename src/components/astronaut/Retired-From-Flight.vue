@@ -1,5 +1,5 @@
 <template>
-  <div class="LostAstronauts my-4">
+  <div class="RetiredAstronauts my-4">
     <div class="card">
       <div class="card-body">
         <h4 class="text-left">Heroes of the Past</h4>
@@ -45,7 +45,7 @@ export default {
   },
   mounted() {
     window.axios
-      .get("https://ll.thespacedevs.com/2.0.0/astronaut/?status=2")
+      .get("https://ll.thespacedevs.com/2.0.0/astronaut/?status=2&limit=20")
       .then((response) => {
         // console.log(response.data.results);
         this.astros = response.data.results;

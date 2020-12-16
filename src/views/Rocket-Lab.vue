@@ -53,7 +53,7 @@ export default {
       {
         name: "description",
         content:
-          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
+          "Rocket Lab is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       {
         name: "keywords",
@@ -78,7 +78,7 @@ export default {
       {
         property: "og:description",
         content:
-          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
+          "Rocket Lab is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
 
       // Twitter card
@@ -91,7 +91,7 @@ export default {
       {
         name: "twitter:description",
         content:
-          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
+          "Rocket Lab is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
@@ -105,7 +105,7 @@ export default {
       {
         itemprop: "description",
         content:
-          "Rocket Labs is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
+          "Rocket Lab is a private aerospace firm based in the United States, their primary launch vehicle is the Electron Rocket.  Rocket Downrange features upcoming launch data, basic company information and more. Site built using Vue.JS and various public API's, ad astra! ",
       },
       {
         itemprop: "image",

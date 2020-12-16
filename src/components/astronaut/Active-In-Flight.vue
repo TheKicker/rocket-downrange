@@ -1,5 +1,5 @@
 <template>
-  <div class="LostAstronauts my-4">
+  <div class="ActiveAstronauts my-4">
     <div class="card">
       <div class="card-body">
         <h4 class="text-left">Heroes In Flight</h4>
@@ -9,7 +9,7 @@
           <astrocomponent
             v-for="(astro, index) in astros"
             :key="index"
-            :profile_image="astro.profile_image"
+            :profile_image="astro.profile_image != null || undefined ? astro.profile_image : 'https://pbcchicago.com/wp-content/uploads/2019/05/profile-placeholder.jpg'"
             :name="astro.name"
             :abbrev="astro.agency.abbrev"
             :country_code="
@@ -45,7 +45,7 @@ export default {
   },
   mounted() {
     window.axios
-      .get("https://ll.thespacedevs.com/2.0.0/astronaut/?status=1")
+      .get("https://ll.thespacedevs.com/2.0.0/astronaut/?status=1&limit=20")
       .then((response) => {
         // console.log(response.data.results);
         this.astros = response.data.results;
