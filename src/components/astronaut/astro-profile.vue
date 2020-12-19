@@ -13,7 +13,7 @@
         class="card-img-top img-fluid"
         :alt="name"
       />
-      <div class="overlay overflow-scroll">
+      <div class="overlay overflow-hidden">
         <p id="desc">{{ bio }}</p>
       </div>
     </div>

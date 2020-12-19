@@ -1,7 +1,7 @@
 <template>
   <div class="Quote">
     <div class="card my-4">
-      <div class="card-header">Quote</div>
+      <div class="card-header bg-primary text-light">Quotes from History</div>
       <div class="card-body">
         <blockquote class="blockquote mb-4">
           <p id="message">
