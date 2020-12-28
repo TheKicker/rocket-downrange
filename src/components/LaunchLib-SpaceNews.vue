@@ -1,6 +1,6 @@
 <template>
-  <div class="LaunchLib-News container my-4">
-    <div class="card">
+  <div class="LaunchLib-News  my-4 mx-4">
+    <div class="card container">
       <div class="card-body">
         <h5 class="text-left text-secondary">
           The Space News API (SNAPI):

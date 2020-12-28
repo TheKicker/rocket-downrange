@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="card">
-        <div class="card-header bg-primary"><h4 class="text-light">Hello</h4></div>
+        <div class="card-header bg-primary"><h4 class="text-light">{{name == null ? "Default title here" : name}}</h4></div>
         <div class="card-body">There M8</div>
-        <div class="card-footer">{{title}}</div>
+        <div class="card-footer">{{desc == null ? "This is a really great footer" : desc}}</div>
     </div>
   </div>
 </template>
@@ -17,7 +17,8 @@ export default {
     };
   },
   props:{
-      title: String,
+      name: String,
+      desc: String,
   }
 };
 </script>

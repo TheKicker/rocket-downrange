@@ -1,6 +1,6 @@
 <template>
-  <div class="ULA-NextLaunch my-4">
-    <div class="card">
+  <div class="Firefly-NextLaunch mx-4 my-4">
+    <div class="card container">
       <div class="card-body">
         <h2 class="text-left">Next Mission:</h2>
         <hr />

@@ -95,7 +95,7 @@
                       </strong>
                     </div>
                     <p class="my-2 text-primary">
-                      This pictures was taken on Earth date:
+                      These pictures were taken on Earth date:
                       {{
                         new Date(
                           Object.values(results.photos)[0].earth_date
@@ -150,7 +150,7 @@
                       </strong>
                     </div>
                     <p class="my-2 text-primary">
-                      This pictures was taken on Earth date:
+                      These pictures were taken on Earth date:
                       {{
                         new Date(
                           Object.values(results.photos)[1].earth_date
@@ -205,7 +205,7 @@
                       </strong>
                     </div>
                     <p class="my-2 text-primary">
-                      This pictures was taken on Earth date:
+                      These pictures were taken on Earth date:
                       {{
                         new Date(
                           Object.values(results.photos)[2].earth_date
@@ -260,7 +260,7 @@
                       </strong>
                     </div>
                     <p class="my-2 text-primary">
-                      This pictures was taken on Earth date:
+                      These pictures were taken on Earth date:
                       {{
                         new Date(
                           Object.values(results.photos)[3].earth_date
@@ -315,7 +315,7 @@
                       </strong>
                     </div>
                     <p class="my-2 text-primary">
-                      This pictures was taken on Earth date:
+                      These pictures were taken on Earth date:
                       {{
                         new Date(
                           Object.values(results.photos)[4].earth_date
@@ -370,7 +370,7 @@
                       </strong>
                     </div>
                     <p class="my-2 text-primary">
-                      This pictures was taken on Earth date:
+                      These pictures were taken on Earth date:
                       {{
                         new Date(
                           Object.values(results.photos)[5].earth_date
@@ -425,7 +425,7 @@
                       </strong>
                     </div>
                     <p class="my-2 text-primary">
-                      This pictures was taken on Earth date:
+                      These pictures were taken on Earth date:
                       {{
                         new Date(
                           Object.values(results.photos)[6].earth_date
@@ -480,7 +480,7 @@
                       </strong>
                     </div>
                     <p class="my-2 text-primary">
-                      This pictures was taken on Earth date:
+                      These pictures were taken on Earth date:
                       {{
                         new Date(
                           Object.values(results.photos)[7].earth_date
@@ -535,7 +535,7 @@
                       </strong>
                     </div>
                     <p class="my-2 text-primary">
-                      This pictures was taken on Earth date:
+                      These pictures were taken on Earth date:
                       {{
                         new Date(
                           Object.values(results.photos)[8].earth_date
@@ -590,7 +590,7 @@
                       </strong>
                     </div>
                     <p class="my-2 text-primary">
-                      This pictures was taken on Earth date:
+                      These pictures were taken on Earth date:
                       {{
                         new Date(
                           Object.values(results.photos)[9].earth_date
@@ -645,7 +645,7 @@
                       </strong>
                     </div>
                     <p class="my-2 text-primary">
-                      This pictures was taken on Earth date:
+                      These pictures were taken on Earth date:
                       {{
                         new Date(
                           Object.values(results.photos)[10].earth_date
@@ -700,7 +700,7 @@
                       </strong>
                     </div>
                     <p class="my-2 text-primary">
-                      This pictures was taken on Earth date:
+                      These pictures were taken on Earth date:
                       {{
                         new Date(
                           Object.values(results.photos)[11].earth_date
@@ -755,7 +755,7 @@
                       </strong>
                     </div>
                     <p class="my-2 text-primary">
-                      This pictures was taken on Earth date:
+                      These pictures were taken on Earth date:
                       {{
                         new Date(
                           Object.values(results.photos)[12].earth_date

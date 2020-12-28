@@ -1,6 +1,6 @@
 <template>
-  <div class="ULA-NextLaunch container my-4">
-    <div class="card">
+  <div class="LaunchLibNext my-4 mx-4">
+    <div class="card container">
       <div class="card-body">
         <h5 class="text-left text-secondary">The Launch Library:</h5>
         <hr />

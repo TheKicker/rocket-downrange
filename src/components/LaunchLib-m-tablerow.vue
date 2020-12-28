@@ -1,6 +1,6 @@
 <template>
   <div class="card my-4">    
-    <h5 class="card-header">
+    <h5 class="card-header bg-dark text-light">
       {{ mission }}
     </h5>
     <div class="my-3">

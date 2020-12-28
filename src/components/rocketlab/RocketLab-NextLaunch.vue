@@ -1,6 +1,6 @@
 <template>
-  <div class="RocketLab-NextLaunch my-4">
-    <div class="card">
+  <div class="RocketLab-NextLaunch my-4 mx-4">
+    <div class="card container">
       <div class="card-body">
         <h2 class="text-left">Next Mission:</h2>
         <hr />

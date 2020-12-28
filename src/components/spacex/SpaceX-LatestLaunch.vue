@@ -1,30 +1,30 @@
 <template>
-  <div class="SpaceX-NextLaunch my-4">
-    <div class="card">
+  <div class="SpaceX-LatestLaunch my-4 mx-4">
+    <div class="card container">
       <div class="card-body">
         <h2 class="text-left">Latest Mission:</h2>
         <hr />
         <h1
           class="text-center my-4"
-        >{{valueCheckText(this.results.mission_name)}}, Flight #{{valueCheckText(this.results.flight_number)}}</h1>
+        >{{valueCheckText(this.results.name)}}, Flight #{{valueCheckText(this.results.flight_number)}}</h1>
         <div class="row">
           <div class="col-md-4 col-sm-12 text-center">
             <img
-              v-if="this.results.links.mission_patch === null"
+              v-if="this.results.links.patch == null || undefined"
               src="https://www.freeiconspng.com/uploads/no-image-icon-6.png"
               class="mission-patch"
               alt="SpaceX Latest Launch Mission Patch"
             />
-            <img v-else :src="this.results.links.mission_patch" class="mission-patch" />
+            <img v-else :src="this.results.links.patch.large" class="mission-patch" />
           </div>
           <div class="col-md-8 col-sm-12 my-2">
             <h6 class="my-2 text-primary">
               <span class="text-secondary">Launch Date:</span>
-              {{valueCheckText(new Date(this.results.launch_date_utc).toLocaleString())}}
+              {{valueCheckText(new Date(this.results.date_utc).toLocaleString())}}
             </h6>
             <h6 class="my-2">
               <span class="text-secondary">Launch Site:</span>
-              {{valueCheckText(this.results.launch_site.site_name_long)}}
+              TBD
             </h6>
             <hr />
             <p class="my-2">{{valueCheckText(this.results.details)}}</p>
@@ -34,7 +34,7 @@
         <div class="row my-4">
           <h6 class="col-6 text-center text-primary">
             <span class="text-secondary">Customer:</span>
-            {{valueCheckText(this.results.rocket.second_stage.payloads[0].customers[0])}} ({{valueCheckText(this.results.rocket.second_stage.payloads[0].nationality)}})
+            TBD
           </h6>
           <h6 class="col-6 text-center">
             <span class="text-secondary">Launch Vehicle:</span>

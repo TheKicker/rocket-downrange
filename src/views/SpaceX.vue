@@ -9,7 +9,7 @@
       youtube="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA"
     />
     <NextLaunch />
-    <LatestLaunch />
+    <LatestLaunch hidden/>
     <Quote
       message="Life cannot be just about solving one problem after another. There need to be things that inspire you, that make you glad to wake up and be a part of humanity."
       author="Elon Musk"

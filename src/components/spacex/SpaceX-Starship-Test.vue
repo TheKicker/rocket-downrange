@@ -1,5 +1,5 @@
 <template>
-  <div class="SpaceX-Special my-4">
+  <div class="SpaceX-Special my-4 mx-4">
     <div class="card container">
       <div class="card-body p-3 p-md-6 m-md-3">
         <h5 class="text-left text-secondary">SpaceX Special Event (2020):</h5>

@@ -76,16 +76,16 @@
               <div class="col text-capitalize">Orbit Type: {{results.orbit_type}}</div>
             </div>
             <div class="row my-2">
-              <div class="col">Apoapsis: {{(results.apoapsis_au).toFixed(4)}} au</div>
-              <div class="col">Periapsis: {{(results.periapsis_au).toFixed(4)}} au</div>
+              <div class="col">Apoapsis: {{(results.apoapsis_au).toFixed(3)}} au</div>
+              <div class="col">Periapsis: {{(results.periapsis_au).toFixed(3)}} au</div>
             </div>
             <div class="row my-2">
-              <div class="col">Semi Major Axis: {{(results.semi_major_axis_au).toFixed(4)}} au</div>
+              <div class="col">Semi Major Axis: {{(results.semi_major_axis_au).toFixed(2)}}</div>
               <div class="col">Eccentricity: {{(results.eccentricity).toFixed(4)}}</div>
             </div>
             <div class="row my-2">
               <div class="col">Inclination: {{(results.inclination).toFixed(4)}}º</div>
-              <div class="col">Longitude: {{(results.longitude).toFixed(4)}}</div>
+              <div class="col">Longitude: {{(results.longitude).toFixed(2)}}</div>
             </div>
             <div class="row my-2">
               <div class="col">Speed: {{(results.speed_mph).toFixed(2)}} MPH</div>
@@ -123,7 +123,7 @@
 </template>
 
 <script>
-var url = "https://api.spacexdata.com/v3/roadster";
+var url = "https://api.spacexdata.com/v4/roadster";
 window.axios = require("axios");
 
 export default {

@@ -1,7 +1,7 @@
 <template>
   <div class="card my-4">
     
-    <h4 class="card-header text-center">
+    <h4 class="card-header text-center bg-dark text-light">
       {{ mission }}
     </h4>
     <div class="row">
