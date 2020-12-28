@@ -114,7 +114,7 @@
 
 <script>
 var url =
-  "https://lldev.thespacedevs.com/2.0.0/launch/upcoming/?format=json&rocket__configuration__manufacturer__name__icontains=SpaceX&limit=1";
+  "https://ll.thespacedevs.com/2.0.0/launch/upcoming/?format=json&rocket__configuration__manufacturer__name__icontains=SpaceX&limit=1";
 window.axios = require("axios");
 export default {
   name: "NextLaunch",
