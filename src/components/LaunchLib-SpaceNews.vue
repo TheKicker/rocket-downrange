@@ -23,7 +23,7 @@
                 </h6>
                 <img
                   class="card-img img-fluid"
-                  style="height: 14rem;"
+                  id="cardimg"
                   :src="this.results.docs[0].featured_image"
                   :alt="'Cover image from ' + this.results.docs[0].news_site_long + ' - ' + this.results.docs[0].title"
                 />
@@ -64,7 +64,7 @@
                 </h6>
                 <img
                   class="card-img img-fluid"
-                  style="height: 14rem;"
+                  id="cardimg"
                   :src="this.results.docs[1].featured_image"
                   :alt="'Cover image from ' + this.results.docs[1].news_site_long + ' - ' + this.results.docs[1].title"
                 />
@@ -107,7 +107,7 @@
                 </h6>
                 <img
                   class="card-img img-fluid"
-                  style="height: 14rem;"
+                  id="cardimg"
                   :src="this.results.docs[2].featured_image"
                   :alt="'Cover image from ' + this.results.docs[2].news_site_long + ' - ' + this.results.docs[2].title"
                 />
@@ -148,7 +148,7 @@
                 </h6>
                 <img
                   class="card-img img-fluid"
-                  style="height: 14rem;"
+                  id="cardimg"
                   :src="this.results.docs[3].featured_image"
                   :alt="'Cover image from ' + this.results.docs[3].news_site_long + ' - ' + this.results.docs[3].title"
                 />
@@ -230,4 +230,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+#cardimg{
+  height: 14rem;
+}
+
+@media only screen and (max-width: 720px) {
+  #cardimg{
+    height: 9rem;
+  }
+}
 </style>

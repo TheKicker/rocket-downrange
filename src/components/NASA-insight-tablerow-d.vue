@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: "tablerow",
+  name: "tablerowd",
   data() {
     return { random: 1 };
   },

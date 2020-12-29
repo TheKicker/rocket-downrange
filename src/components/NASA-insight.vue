@@ -54,7 +54,7 @@
             </p>
           </div>
         </div>
-        <div class="table-responsive-lg">
+        <div class="table-responsive-lg" id="desktop">
           <table class="table table-hover">
             <thead class="thead-dark">
               <tr>
@@ -66,7 +66,7 @@
               </tr>
             </thead>
             <tbody>
-              <tablerow
+              <tablerowd
                 :earthTime="
                   Object.values(this.results)[0].First_UTC != undefined
                     ? Object.values(this.results)[0].First_UTC
@@ -111,10 +111,53 @@
             </tbody>
           </table>
         </div>
-
+        <div id="mobile">
+          <tablerowm 
+            :earthTime="
+                  Object.values(this.results)[0].First_UTC != undefined
+                    ? Object.values(this.results)[0].First_UTC
+                    : 'N/A'
+                "
+                :fahrenheit="
+                  Object.values(this.results)[0] &&
+                  Object.values(this.results)[0].AT &&
+                  Object.values(this.results)[0].AT.av != undefined
+                    ? Object.values(this.results)[0].AT.av
+                    : 'N/A'
+                "
+                :celsius="
+                  Object.values(this.results)[0] &&
+                  Object.values(this.results)[0].AT &&
+                  Object.values(this.results)[0].AT.av != undefined
+                    ? Object.values(this.results)[0].AT.av
+                    : 'N/A'
+                "
+                :pressure="
+                  Object.values(this.results)[0] &&
+                  Object.values(this.results)[0].PRE &&
+                  Object.values(this.results)[0].PRE.av != undefined
+                    ? Object.values(this.results)[0].PRE.av
+                    : 'N/A'
+                "
+                :windspeed="
+                  Object.values(this.results)[0] &&
+                  Object.values(this.results)[0].HWS &&
+                  Object.values(this.results)[0].HWS.av != undefined
+                    ? Object.values(this.results)[0].HWS.av
+                    : 'N/A'
+                "
+                :compass="
+                  Object.values(this.results)[0].WD.most_common.compass_point !=
+                  undefined
+                    ? Object.values(this.results)[0].WD.most_common
+                        .compass_point
+                    : 'N/A'
+                "
+          />
+        </div>
         <hr />
         <p>
-          As more data from a particular martian day is downlinked from the
+          Data displayed is an average for the day as a whole.  As more data from a particular martian day is downlinked from the
           spacecraft (sometimes several days later), these values are
           recalculated, and consequently may change as more data is received on
           Earth.
@@ -126,7 +169,8 @@
 
 
 <script>
-import tablerow from "@/components/NASA-insight-tablerow.vue";
+import tablerowd from "@/components/NASA-insight-tablerow-d.vue";
+import tablerowm from "@/components/NASA-insight-tablerow-m.vue";
 window.axios = require("axios");
 export default {
   name: "NASAinsight",
@@ -135,7 +179,7 @@ export default {
       results: [],
     };
   },
-  components: { tablerow },
+  components: { tablerowd, tablerowm },
   mounted() {
     window.axios
       .get(
@@ -150,4 +194,14 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+#desktop{
+  display: initial;
+}
+#mobile{
+  display: none;
+}
+@media only screen and (max-width: 720px) {
+  #desktop{ display: none;}
+  #mobile{ display: initial;}
+}</style>
