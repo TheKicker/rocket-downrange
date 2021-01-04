@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div id="marqueecontainer">
+      <marquee id="marquee"><a href="https://edabit.com/?ref=cavanlemasters" target="_blank" rel="noopener">HAPPY NEW YEAR! Is learning how to code one of your goals for 2021? Ask us about Edabit!</a></marquee>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
         <router-link class="navbar-brand" to="/">{{ org }}</router-link>
@@ -292,23 +295,29 @@ export default {
   justify-content: space-between;
 }
 
-#vote {
+#marqueecontainer {
   background: black;
-  color: white;
-  height: 3.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
 }
 #marquee {
-  padding: 0.75rem 0rem;
+  padding: 0.5rem 0rem;
+  color: white;
 }
 
-.vote-btn {
+#marquee a{
+  color: white;
+}
+
+.marquee-btn {
   border-color: white;
   border-radius: 5px;
   padding: 2px 8px;
   border-width: 2px;
   color: white;
 }
-.vote-btn:hover {
+.marquee-btn:hover {
   background: white;
   color: black;
 }
