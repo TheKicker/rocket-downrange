@@ -23,6 +23,18 @@
         </div>
         <br>
         <div class="row mx-2">
+            <h4>Edabit</h4>
+            <p>The basis of this website is to continue learning and refining my skills as a junior developer. <a href="https://edabit.com/?ref=cavanlemasters" target="_blank" rel="noopener nofollow" class="link">Edabit</a> is a site comprised of byte-sized (haha lame computer joke) challenges in a variety of languages that you can use to practice the fundamentals.  At the end of 2020, I was invited to be an affiliate, this means that any links you see are sponsored. I would not support them if I did not fully believe in how beneficial they are to learning the basics of programming. </p>
+            <div id="desktop" class="mx-auto my-3">
+              <a href="https://edabit.com?ref=cavanlemasters" target="_BLANK" rel="noopener nofollow"><img src="https://static.tapfiliate.com/5fcf4fb8f2a93129988852.png?a=86250-326e8e&s=1327424-fed8d0" border="0"></a>
+            </div>
+            <div id="mobile" class="mx-auto my-2">
+              <a href="https://edabit.com?ref=cavanlemasters" target="_BLANK" rel="noopener nofollow"><img src="https://static.tapfiliate.com/5fcf4cfb2a4e4434967370.png?a=86227-71254f&s=1327424-fed8d0" border="0"></a>
+            </div>
+            <p>Start your development journey today, and tomorrow you can directly contribute to Rocket Downrange!</p>
+        </div>
+        <br>
+        <div class="row mx-2">
             <h4>Information Shared With Others</h4>
             <p>Short answer, none! If you fill out a form, tip the site or leave a comment on Github - that information stays with Rocket Downrange.  It will not be shared with anyone or any organization unless required so by law.  </p>
         </div>
@@ -126,5 +138,16 @@ export default {
     text-decoration: underline;
 }
 .spacer{height: 10vh;}
+
+#desktop{
+  display: initial;
+}
+#mobile{
+  display: none;
+}
+@media only screen and (max-width: 720px) {
+  #desktop{ display: none;}
+  #mobile{ display: initial;}
+}
 
 </style>
