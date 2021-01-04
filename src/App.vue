@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="marqueecontainer">
-      <marquee id="marquee"><a href="https://edabit.com/?ref=cavanlemasters" target="_blank" rel="noopener">HAPPY NEW YEAR! Is learning how to code one of your goals for 2021? Ask us about Edabit!</a></marquee>
+      <marquee id="marquee"><a href="https://edabit.com/?ref=cavanlemasters" target="_blank" rel="noopener">HAPPY NEW YEAR! Learning how to code one of your goals for 2021? Ask us about Edabit!</a></marquee>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
