@@ -15,7 +15,7 @@
         <div class="container">
           <div class="row my-3">
             <p>
-              On January 13th, 2021, the SpaceX team will make their second attempt at a suborbital flight of the Starship vehicle.  Success is not measured by the survival of the flight but by how much they can learn! 
+              On January 13th, 2021, the SpaceX team will be conducting a static fire of the Starship vehicle serial number 9.
             </p>
             <p>
               
