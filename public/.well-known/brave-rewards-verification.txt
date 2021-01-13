@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: rocketdownrange.com
+Token: a7722e63df22c399893cd44fa4ffd87039a87f41909cc09264f64fc55fecd389

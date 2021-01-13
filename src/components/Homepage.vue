@@ -43,6 +43,13 @@ export default {
   max-width: 100%;
   height: auto;
 }
+
+@media only screen and (max-width: 720px) {
+  .jumbotron{
+    background-attachment: unset;
+  }
+}
+
 .viewport100h {
   height: 100vh;
   width: 100%;
