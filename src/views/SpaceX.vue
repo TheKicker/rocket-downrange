@@ -15,7 +15,8 @@
       author="Elon Musk"
       significance="CEO of SpaceX"
     />
-    <SPACEXstarship />
+    <SPACEXstarshipSN9 />
+    <SPACEXstarshipSN8 />
     <SPACEXcrewdemo2 />
     <Starman msg="Where is Starman? " />
     <br />
@@ -37,7 +38,8 @@ import Info from "@/components/Info-Template.vue";
 import NextLaunch from "@/components/spacex/SpaceX-NextLaunch.vue";
 import LatestLaunch from "@/components/spacex/SpaceX-LatestLaunch.vue";
 import SPACEXcrewdemo2 from "@/components/spacex/SpaceX-CrewDemo2.vue";
-import SPACEXstarship from "@/components/spacex/SpaceX-Starship-Test.vue";
+import SPACEXstarshipSN8 from "@/components/spacex/SpaceX-Starship-SN8.vue";
+import SPACEXstarshipSN9 from "@/components/spacex/SpaceX-Starship-SN9.vue";
 import Starman from "@/components/spacex/SpaceX-Starman.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
@@ -48,7 +50,8 @@ export default {
     NextLaunch,
     LatestLaunch,
     SPACEXcrewdemo2,
-    SPACEXstarship,
+    SPACEXstarshipSN8,
+    SPACEXstarshipSN9,
     Starman,
     Quote,
   },
