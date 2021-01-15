@@ -6,7 +6,6 @@
     <SPACEXstarshipSN9 hidden/>
     <LLNextLaunch />
     <SNAPI />
-    <NASAperseverance />
     <NASAinsight />
     <NASAcuriosity />
     <NASAopportunity />
