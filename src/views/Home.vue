@@ -2,8 +2,8 @@
   <div class="home">
     <Homepage />
     <NASAapod />
+    <SPACEXstarshipSN9 />
     <NASAperseverance />
-    <SPACEXstarshipSN9 hidden/>
     <LLNextLaunch />
     <SNAPI />
     <NASAinsight />

@@ -9,13 +9,13 @@
         </h3>
         <div class="row mx-1">
           <div class="embed-responsive embed-responsive-16by9 mx-auto">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tB9ZJfNZSys" frameborder="0" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NtGutb1R5cQ" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
         <div class="container">
           <div class="row my-3">
             <p>
-              On January 13th, 2021, the SpaceX team will be conducting a static fire of the Starship vehicle serial number 9.
+              On January 25th, 2021, the SpaceX team will be conducting a test launch of the Starship vehicle serial number 9.  Livestream hosted by <a href="https://www.youtube.com/channel/UC6uKrU_WqJ1R2HMTY3LIx5Q" target="_blank" rel="noopener">Everyday Astronaut</a>.
             </p>
             <p>
               
