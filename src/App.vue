@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="marqueecontainer">
-      <marquee id="marquee"><a href="https://www.reddit.com/r/wallstreetbets/" target="_blank" rel="noopener nofollow">DO NOT SELL #HoldTheLine</a>&nbsp; &nbsp; / <a href="https://join.robinhood.com/cavanl10" target="_blank" rel="noopener nofollow"> Start investing today! </a></marquee>
+      <marquee id="marquee"><a href="https://www.reddit.com/r/wallstreetbets/" target="_blank" rel="noopener nofollow">DO NOT SELL #HoldTheLine and support r/WallStreetBets</a>&nbsp;</marquee>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
