@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="marqueecontainer">
+    <div id="marqueecontainer" hidden>
       <marquee id="marquee"><a href="https://www.reddit.com/r/wallstreetbets/" target="_blank" rel="noopener nofollow">DO NOT SELL #HoldTheLine and support r/WallStreetBets</a>&nbsp;</marquee>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
