@@ -15,7 +15,7 @@
         <div class="container">
           <div class="row my-3">
             <p>
-              On January 29th, 2021, we anticipate that the SpaceX team will be conducting a test launch of the Starship vehicle serial number 9.  Yesterday's livestream hosted by <a href="https://www.youtube.com/channel/UC6uKrU_WqJ1R2HMTY3LIx5Q" target="_blank" rel="noopener">Everyday Astronaut</a>.
+              On Feb 1st, 2021, we anticipate that the SpaceX team will be conducting a test launch of the Starship vehicle serial number 9.  Previous livestream hosted by <a href="https://www.youtube.com/channel/UC6uKrU_WqJ1R2HMTY3LIx5Q" target="_blank" rel="noopener">Everyday Astronaut</a>.
             </p>
             <p>
               
@@ -45,7 +45,7 @@
           </div>
           <hr />
           <p class="text-center">
-            <i>Last Update: Jan 13, 2021</i>
+            <i>Last Update: Feb 1st, 2021</i>
           </p>
         </div>
       </div>
