@@ -9,27 +9,27 @@
         </h3>
         <div class="row mx-1">
           <div class="embed-responsive embed-responsive-16by9 mx-auto">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rnmNAlNvr8o" frameborder="0" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/wfHqbahPKpY" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
         <div class="container">
           <div class="row my-3">
             <p>
-              On Feb 1st, 2021, we anticipate that the SpaceX team will be conducting a test launch of the Starship vehicle serial number 9.  Previous livestream hosted by <a href="https://www.youtube.com/channel/UC6uKrU_WqJ1R2HMTY3LIx5Q" target="_blank" rel="noopener">Everyday Astronaut</a>.
+              On Feb 2nd, 2021, we anticipate that the SpaceX team will be conducting a test launch of the Starship vehicle serial number 9.  Livestream hosted by <a href="https://www.youtube.com/channel/UCSUu1lih2RifWkKtDOJdsBA" target="_blank" rel="noopener">NASASpaceflight</a>.
             </p>
             <p>
-              
+
             </p>
           </div>
           <div class="my-4 row justify-content-center">
             <a
-              href="https://www.youtube.com/watch?v=tB9ZJfNZSys"
+              href="https://www.youtube.com/watch?v=wfHqbahPKpY"
               target="_blank"
               rel="noopener"
               class="py-4 p-3"
             >
               <button class="btn btn-block btn-outline-primary italic">
-                SpaceX Live Stream
+                NASASpaceflight YouTube
               </button>
             </a>
             <a
@@ -45,7 +45,7 @@
           </div>
           <hr />
           <p class="text-center">
-            <i>Last Update: Feb 1st, 2021</i>
+            <i>Last Update: Feb 2nd, 2021</i>
           </p>
         </div>
       </div>
