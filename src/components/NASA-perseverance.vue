@@ -8,14 +8,9 @@
         <hr />
         <h3 class="text-center my-4">Perseverance : In Transit to Mars</h3>
         <div class="row">
-          <div class="mx-auto">
-            <img
-              src="../assets/perseverance.jpg"
-              class="img-fluid"
-              style="max-height: 75vh;"
-              alt="NASA Special Event - the launch of their Perserverance Rover aboard a ULA Atlas V Rocket!  Currently in transit to Mars and expected to land in February 2021. If this picture did not load - then an error occured, this media from NASA might be a Youtube video rather than picture. "
-            />
-          </div>
+          <div class="embed-responsive embed-responsive-16by9 mx-auto">
+              <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/gm0b_ijaYMQ" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
         <div class="container">
           <div class="row my-3">
@@ -37,33 +32,29 @@
               <strong>Launch Date (Earth): July 30, 2020</strong>
             </p>
             <p class="col text-center">
-              <strong>Landing Date (Mars): February 18, 2021 (estimate)</strong>
+              <strong>Landing Date (Mars): February 18, 2021</strong>
             </p>
           </div>
           <div class="my-4 row justify-content-center">
-            <a
-              href="https://www.youtube.com/watch?v=JIB3JbIIbPU"
-              target="_blank"
-              class="py-4 p-3"
-            >
+            <a href="https://www.youtube.com/watch?v=JIB3JbIIbPU" target="_blank" class="py-4 p-3">
               <button class="btn btn-block btn-outline-primary italic">
                 NASA Launch Webcast
               </button>
             </a>
-
-            <a
-              href="https://www.nasa.gov/sites/default/files/atoms/files/mars_2020_launch_press_kit.pdf"
-              target="_blank"
-              class="py-4 p-3"
-            >
+            <a href="https://www.youtube.com/watch?v=gm0b_ijaYMQ" target="_blank" class="py-4 p-3">
               <button class="btn btn-block btn-outline-primary italic">
-                NASA Press Kit
+                NASA Landing Webcast
+              </button>
+            </a>
+            <a href="https://www.nasa.gov/sites/default/files/atoms/files/mars_2020_launch_press_kit.pdf" target="_blank" class="py-4 p-3">
+              <button class="btn btn-block btn-outline-primary italic">
+                Perseverance Press Kit
               </button>
             </a>
           </div>
           <hr />
           <p class="text-center">
-            <i>Last Update: August 3, 2020</i>
+            <i>Last Update: Feb 17, 2020</i>
           </p>
         </div>
       </div>

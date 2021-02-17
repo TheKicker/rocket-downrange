@@ -10,7 +10,7 @@
           </h3>
           <img
             src="https://rocketdownrange.com/ll-unsplash.jpeg"
-            class="img-fluid mx-auto"
+            class="img-fluid mx-auto d-block"
             alt="Upcoming space related launches by companies and organizations that you don't want to miss.  Provided by Rocket Downrange and The Space Devs, image provided by Unsplash. "
           />
         </div>

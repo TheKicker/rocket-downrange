@@ -2,7 +2,7 @@
   <div class="home">
     <Homepage />
     <NASAapod />
-    <SPACEXstarshipSN9 />
+    <SPACEXstarshipSN9 hidden />
     <NASAperseverance />
     <LLNextLaunch />
     <SNAPI />
