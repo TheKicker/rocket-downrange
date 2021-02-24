@@ -54,6 +54,9 @@
             </p>
           </div>
         </div>
+        <div class="alert alert-danger" role="alert">
+            At this time, NASA has suspended operations of the InSight lander (probably to allow more focus on Perseverance) so data may be unavailable more often than not <a href="https://mars.nasa.gov/insight/weather/" target="_blank" rel="noopener">(source)</a>. I hope it comes back soon, this component of the site is one of my favorites! 
+        </div>
         <div class="table-responsive-lg" id="desktop">
           <table class="table table-hover">
             <thead class="thead-dark">
@@ -68,43 +71,44 @@
             <tbody>
               <tablerowd
                 :earthTime="
-                  Object.values(this.results)[0].First_UTC != undefined
+                  Object.values(this.results)[0].First_UTC != undefined || null
                     ? Object.values(this.results)[0].First_UTC
                     : 'N/A'
                 "
                 :fahrenheit="
                   Object.values(this.results)[0] &&
                   Object.values(this.results)[0].AT &&
-                  Object.values(this.results)[0].AT.av != undefined
+                  Object.values(this.results)[0].AT.av != undefined || null
                     ? Object.values(this.results)[0].AT.av
                     : 'N/A'
                 "
                 :celsius="
                   Object.values(this.results)[0] &&
                   Object.values(this.results)[0].AT &&
-                  Object.values(this.results)[0].AT.av != undefined
+                  Object.values(this.results)[0].AT.av != undefined || null
                     ? Object.values(this.results)[0].AT.av
                     : 'N/A'
                 "
                 :pressure="
                   Object.values(this.results)[0] &&
                   Object.values(this.results)[0].PRE &&
-                  Object.values(this.results)[0].PRE.av != undefined
+                  Object.values(this.results)[0].PRE.av != undefined || null
                     ? Object.values(this.results)[0].PRE.av
                     : 'N/A'
                 "
                 :windspeed="
                   Object.values(this.results)[0] &&
                   Object.values(this.results)[0].HWS &&
-                  Object.values(this.results)[0].HWS.av != undefined
+                  Object.values(this.results)[0].HWS.av != undefined || null
                     ? Object.values(this.results)[0].HWS.av
                     : 'N/A'
                 "
                 :compass="
-                  Object.values(this.results)[0].WD.most_common.compass_point !=
-                  undefined
-                    ? Object.values(this.results)[0].WD.most_common
-                        .compass_point
+                  Object.values(this.results)[0] &&
+                  Object.values(this.results)[0].WD &&
+                  Object.values(this.results)[0].WD.most_common &&
+                  Object.values(this.results)[0].WD.most_common.compass_point != undefined || null
+                    ? Object.values(this.results)[0].WD.most_common.compass_point
                     : 'N/A'
                 "
               />
@@ -114,43 +118,44 @@
         <div id="mobile">
           <tablerowm 
             :earthTime="
-                  Object.values(this.results)[0].First_UTC != undefined
+                  Object.values(this.results)[0].First_UTC != undefined || null
                     ? Object.values(this.results)[0].First_UTC
                     : 'N/A'
                 "
                 :fahrenheit="
                   Object.values(this.results)[0] &&
                   Object.values(this.results)[0].AT &&
-                  Object.values(this.results)[0].AT.av != undefined
+                  Object.values(this.results)[0].AT.av != undefined || null
                     ? Object.values(this.results)[0].AT.av
                     : 'N/A'
                 "
                 :celsius="
                   Object.values(this.results)[0] &&
                   Object.values(this.results)[0].AT &&
-                  Object.values(this.results)[0].AT.av != undefined
+                  Object.values(this.results)[0].AT.av != undefined || null
                     ? Object.values(this.results)[0].AT.av
                     : 'N/A'
                 "
                 :pressure="
                   Object.values(this.results)[0] &&
                   Object.values(this.results)[0].PRE &&
-                  Object.values(this.results)[0].PRE.av != undefined
+                  Object.values(this.results)[0].PRE.av != undefined || null
                     ? Object.values(this.results)[0].PRE.av
                     : 'N/A'
                 "
                 :windspeed="
                   Object.values(this.results)[0] &&
                   Object.values(this.results)[0].HWS &&
-                  Object.values(this.results)[0].HWS.av != undefined
+                  Object.values(this.results)[0].HWS.av != undefined || null
                     ? Object.values(this.results)[0].HWS.av
                     : 'N/A'
                 "
                 :compass="
-                  Object.values(this.results)[0].WD.most_common.compass_point !=
-                  undefined
-                    ? Object.values(this.results)[0].WD.most_common
-                        .compass_point
+                  Object.values(this.results)[0] &&
+                  Object.values(this.results)[0].WD &&
+                  Object.values(this.results)[0].WD.most_common &&
+                  Object.values(this.results)[0].WD.most_common.compass_point != undefined || null
+                    ? Object.values(this.results)[0].WD.most_common.compass_point
                     : 'N/A'
                 "
           />
