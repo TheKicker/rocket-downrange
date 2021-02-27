@@ -206,6 +206,10 @@ export default {
 #mobile{
   display: none;
 }
+a{
+  text-decoration: underline;
+  font-weight: bold;
+}
 @media only screen and (max-width: 720px) {
   #desktop{ display: none;}
   #mobile{ display: initial;}

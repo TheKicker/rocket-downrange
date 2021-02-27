@@ -892,4 +892,8 @@ p {
   max-height: 70vh;
   min-width: 20vw;
 }
+a{
+  text-decoration: underline;
+  font-weight: bold;
+}
 </style>
