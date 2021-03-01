@@ -192,7 +192,7 @@
 </template>
 
 <script>
-var url = "https://test.spaceflightnewsapi.net/api/v2/articles?_limit=4";
+var url = "https://spaceflightnewsapi.net/api/v2/articles?_limit=4";
 
 window.axios = require("axios");
 export default {
