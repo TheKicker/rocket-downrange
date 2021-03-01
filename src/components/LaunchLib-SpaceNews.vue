@@ -15,31 +15,31 @@
               <div class="card-body d-flex flex-column align-items-start">
                 <h6>
                   <strong class="d-inline-block mb-2 text-secondary"
-                    >{{ this.results.docs[0].news_site_long }} -
+                    >{{ this.results[0].newsSite }} -
                     {{
-                      timeTranslate(this.results.docs[0].published_date)
+                      timeTranslate(this.results[0].publishedAt)
                     }}</strong
                   >
                 </h6>
                 <img
                   class="card-img img-fluid"
                   id="cardimg"
-                  :src="this.results.docs[0].featured_image"
-                  :alt="'Cover image from ' + this.results.docs[0].news_site_long + ' - ' + this.results.docs[0].title"
+                  :src="this.results[0].imageUrl"
+                  :alt="'Cover image from ' + this.results[0].newsSite + ' - ' + this.results[0].title"
                 />
                 <h5 class="mb-0 my-2">
                   <a
                     class="text-dark"
-                    :href="this.results.docs[0].url"
+                    :href="this.results[0].url"
                     target="_blank"
                     rel="noopener"
-                    >{{ this.results.docs[0].title }}</a
+                    >{{ this.results[0].title }}</a
                   >
                 </h5>
                 <br />
                 <div class="d-block mx-auto">
                   <a
-                    :href="this.results.docs[0].url"
+                    :href="this.results[0].url"
                     class="btn btn-primary"
                     target="_blank"
                     rel="noopener"
@@ -56,31 +56,31 @@
               <div class="card-body d-flex flex-column align-items-start">
                 <h6>
                   <strong class="d-inline-block mb-2 text-secondary"
-                    >{{ this.results.docs[1].news_site_long }} -
+                    >{{ this.results[1].newsSite }} -
                     {{
-                      timeTranslate(this.results.docs[1].published_date)
+                      timeTranslate(this.results[1].publishedAt)
                     }}</strong
                   >
                 </h6>
                 <img
                   class="card-img img-fluid"
                   id="cardimg"
-                  :src="this.results.docs[1].featured_image"
-                  :alt="'Cover image from ' + this.results.docs[1].news_site_long + ' - ' + this.results.docs[1].title"
+                  :src="this.results[1].imageUrl"
+                  :alt="'Cover image from ' + this.results[1].newsSite + ' - ' + this.results[1].title"
                 />
                 <h5 class="mb-0 my-2">
                   <a
                     class="text-dark"
-                    :href="this.results.docs[1].url"
+                    :href="this.results[1].url"
                     target="_blank"
                     rel="noopener"
-                    >{{ this.results.docs[1].title }}</a
+                    >{{ this.results[1].title }}</a
                   >
                 </h5>
                 <br />
                 <div class="d-block mx-auto">
                   <a
-                    :href="this.results.docs[1].url"
+                    :href="this.results[1].url"
                     class="btn btn-primary"
                     target="_blank"
                     rel="noopener"
@@ -99,31 +99,31 @@
               <div class="card-body d-flex flex-column align-items-start">
                 <h6>
                   <strong class="d-inline-block mb-2 text-secondary"
-                    >{{ this.results.docs[2].news_site_long }} -
+                    >{{ this.results[2].newsSite }} -
                     {{
-                      timeTranslate(this.results.docs[2].published_date)
+                      timeTranslate(this.results[2].publishedAt)
                     }}</strong
                   >
                 </h6>
                 <img
                   class="card-img img-fluid"
                   id="cardimg"
-                  :src="this.results.docs[2].featured_image"
-                  :alt="'Cover image from ' + this.results.docs[2].news_site_long + ' - ' + this.results.docs[2].title"
+                  :src="this.results[2].imageUrl"
+                  :alt="'Cover image from ' + this.results[2].newsSite + ' - ' + this.results[2].title"
                 />
                 <h5 class="mb-0 my-2">
                   <a
                     class="text-dark"
-                    :href="this.results.docs[2].url"
+                    :href="this.results[2].url"
                     target="_blank"
                     rel="noopener"
-                    >{{ this.results.docs[2].title }}</a
+                    >{{ this.results[2].title }}</a
                   >
                 </h5>
                 <br />
                 <div class="d-block mx-auto">
                   <a
-                    :href="this.results.docs[2].url"
+                    :href="this.results[2].url"
                     class="btn btn-primary"
                     target="_blank"
                     rel="noopener"
@@ -140,31 +140,31 @@
               <div class="card-body d-flex flex-column align-items-start">
                 <h6>
                   <strong class="d-inline-block mb-2 text-secondary"
-                    >{{ this.results.docs[3].news_site_long }} -
+                    >{{ this.results[3].newsSite }} -
                     {{
-                      timeTranslate(this.results.docs[3].published_date)
+                      timeTranslate(this.results[3].publishedAt)
                     }}</strong
                   >
                 </h6>
                 <img
                   class="card-img img-fluid"
                   id="cardimg"
-                  :src="this.results.docs[3].featured_image"
-                  :alt="'Cover image from ' + this.results.docs[3].news_site_long + ' - ' + this.results.docs[3].title"
+                  :src="this.results[3].imageUrl"
+                  :alt="'Cover image from ' + this.results[3].newsSite + ' - ' + this.results[3].title"
                 />
                 <h5 class="mb-0 my-2">
                   <a
                     class="text-dark"
-                    :href="this.results.docs[3].url"
+                    :href="this.results[3].url"
                     target="_blank"
                     rel="noopener"
-                    >{{ this.results.docs[3].title }}</a
+                    >{{ this.results[3].title }}</a
                   >
                 </h5>
                 <br />
                 <div class="d-block mx-auto">
                   <a
-                    :href="this.results.docs[3].url"
+                    :href="this.results[3].url"
                     class="btn btn-primary"
                     target="_blank"
                     rel="noopener"
@@ -192,7 +192,7 @@
 </template>
 
 <script>
-var url = "https://spaceflightnewsapi.net/api/v1/articles?limit=4";
+var url = "https://test.spaceflightnewsapi.net/api/v2/articles?_limit=4";
 
 window.axios = require("axios");
 export default {
