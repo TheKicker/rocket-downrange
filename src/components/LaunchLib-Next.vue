@@ -94,7 +94,6 @@
 import tablerowD from "@/components/LaunchLib-d-tablerow.vue";
 import tablerowM from "@/components/LaunchLib-m-tablerow.vue";
 
-
 window.axios = require("axios");
 export default {
   name: "LLNextLaunch",
