@@ -27,18 +27,11 @@
     <!-- Outro -->
     <section id="outro" class="page">
       <div class="text-center">
-        <h1 class="glitch">Data & Images from NASA</h1>
-        <div class="row mx-auto">
-          <a class="btn btn-dark m-2" href="#app" v-scroll-to="'#app'"
-            >[ Return to Top ]</a
-          >
-          <a
-            class="btn btn-dark m-2"
-            href="https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/"
-            target="_blank"
-            rel="noopener"
-            >[ Learn more at NASA.GOV ]</a
-          >
+        <h2 class="glitch">Data & Images from NASA</h2>
+        <div class="row d-flex justify-content-around">
+          <a class="btn btn-dark m-2" href="#app" v-scroll-to="'#app'">[ Return to Top ]</a>
+          <a class="btn btn-dark m-2" href="https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html" target="_blank" rel="noopener">[ Solar System at Scale ]</a>
+          <a class="btn btn-dark m-2" href="https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/" target="_blank" rel="noopener">[ Learn More at NASA.GOV ]</a>
         </div>
       </div>
     </section>

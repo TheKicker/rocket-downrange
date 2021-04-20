@@ -22,16 +22,16 @@
             <p>If you would like to opt out of Google Analytics tracking, you may do so at <a href="https://tools.google.com/dlpage/gaoptout/" target="_blank" rel="noopener" class="link">this link.</a>  Members of the EU and other nations note that by using Rocket Downrange, you accept that your data is read/used/updated by these companies to enable Rocket Downrange to provide better content and site structure. For example, how Google keeps your data anonymized and uses it can be found <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener" class="link">here.</a> </p>
         </div>
         <br>
-        <div class="row mx-2">
+        <div class="row mx-2 mb-1">
             <h4>Edabit</h4>
             <p>The basis of this website is to continue learning and refining my skills as a junior developer. <a href="https://edabit.com/?ref=cavanlemasters" target="_blank" rel="noopener nofollow" class="link">Edabit</a> is a site comprised of byte-sized (haha lame computer joke) challenges in a variety of languages that you can use to practice the fundamentals.  At the end of 2020, I was invited to be an affiliate, this means that any links you see are sponsored. I would not support them if I did not fully believe in how beneficial they are to learning the basics of programming. </p>
             <div id="desktop" class="mx-auto my-3">
-              <a href="https://edabit.com?ref=cavanlemasters" target="_BLANK" rel="noopener nofollow"><img src="https://static.tapfiliate.com/5fcf4fb8f2a93129988852.png?a=86250-326e8e&s=1327424-fed8d0" border="0"></a>
+              <a href="https://edabit.com?ref=cavanlemasters" target="_BLANK" rel="noopener"><img src="@/assets/edabit-wide.png" border="0"></a>
             </div>
             <div id="mobile" class="mx-auto my-2">
-              <a href="https://edabit.com?ref=cavanlemasters" target="_BLANK" rel="noopener nofollow"><img src="https://static.tapfiliate.com/5fcf4cfb2a4e4434967370.png?a=86227-71254f&s=1327424-fed8d0" border="0"></a>
+              <a href="https://edabit.com?ref=cavanlemasters" target="_BLANK" rel="noopener"><img src="@/assets/edabit-short.png" border="0"></a>
             </div>
-            <p>Start your development journey today, and tomorrow you can directly contribute to Rocket Downrange!</p>
+            <p class="mx-auto">Start your development journey today, and tomorrow you can directly contribute to Rocket Downrange!</p>
         </div>
         <br>
         <div class="row mx-2">
