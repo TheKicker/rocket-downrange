@@ -10,7 +10,7 @@
         <div class="row">
           <div class="embed-responsive embed-responsive-16by9 mx-auto">
               <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/gm0b_ijaYMQ" frameborder="0" allowfullscreen></iframe>
-            </div>
+          </div>
         </div>
         <div class="container">
           <div class="row my-3">

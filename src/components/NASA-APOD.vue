@@ -6,26 +6,17 @@
           NASA Astronomy Picture of the Day:
         </h5>
         <hr />
-        <div v-if="results.url.includes('youtube')">
-          <h3 class="text-center my-4">{{ results.title }} (Youtube Link)</h3>
+        <div v-if="results.media_type == 'video'">
+          <h3 class="text-center my-4">{{ results.title }} (Video)</h3>
         </div>
         <div v-else>
           <h3 class="text-center my-4">{{ results.title }}</h3>
         </div>
         <div class="row">
-          <div class="mx-auto">
-            <div v-if="results.url.includes('youtube')" class="text-danger">
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                <a :href="results.url" target="_blank" rel="noopener">
-                  <img
-                    src="../assets/NASA-tv.png"
-                    class="img-fluid"
-                    alt="The NASA Astronomy Picture of the Day is a Youtube video today. Click the link to view on Youtube!"
-                  />
-                </a>
-              </div>
+            <div v-if="results.media_type == 'video'" class="embed-responsive embed-responsive-16by9 mx-auto">              
+                <iframe class="embed-responsive-item" :src="results.url" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div v-else class="text-success">
+            <div v-else>
               <a :href="results.hdurl" target="_blank" rel="noopener">
                 <img
                   :src="results.url"
@@ -35,13 +26,12 @@
                 />
               </a>
             </div>
-          </div>
         </div>
         <div class="row container mx-auto">
           <div class="my-4">
             <div class="mx-auto my-2">
               <strong>
-                <div v-if="results.url.includes('youtube')" class="text-danger">
+                <div v-if="results.media_type == 'video'" class="text-danger">
                   <a
                     :href="results.url"
                     target="_blank"

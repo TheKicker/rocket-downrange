@@ -55,7 +55,7 @@
           </div>
         </div>
         <div class="alert alert-danger" role="alert">
-            At this time, NASA has suspended operations of the InSight lander (probably to allow more focus on Perseverance) so data may be unavailable more often than not <a href="https://mars.nasa.gov/insight/weather/" target="_blank" rel="noopener">(source)</a>. I hope it comes back soon, this component of the site is one of my favorites! 
+            At this time, NASA has suspended most operations of the InSight lander so data may be unavailable more often than not <a href="https://mars.nasa.gov/insight/weather/" target="_blank" rel="noopener">(source)</a>. I hope it comes back soon, this component of the site is one of my favorites! 
         </div>
         <div class="table-responsive-lg" id="desktop">
           <table class="table table-hover">
