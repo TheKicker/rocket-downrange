@@ -16,12 +16,12 @@
             <div v-if="results.media_type == 'video'" class="embed-responsive embed-responsive-16by9 mx-auto">              
                 <iframe class="embed-responsive-item" :src="results.url" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div v-else>
+            <div v-else class="mx-auto">
               <a :href="results.hdurl" target="_blank" rel="noopener">
                 <img
                   :src="results.url"
                   class="img-fluid"
-                  style="max-height: 75vh;"
+                  style="max-height: 70vh;"
                   :alt="(results.title) +  ' - The NASA Astronomy Picture of the Day'"
                 />
               </a>
