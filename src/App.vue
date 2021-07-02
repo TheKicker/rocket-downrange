@@ -310,6 +310,12 @@ export default {
   color: white;
 }
 
+.TRADE{
+  color: blue;
+  text-decoration: underline;
+
+}
+
 .marquee-btn {
   border-color: white;
   border-radius: 5px;
