@@ -1,7 +1,7 @@
 <template>
   <div id="APOD" class="APOD my-4 mx-4">
     <div class="card container">
-      <div class="card-body p-3 p-md-6 m-md-3">
+      <div class="card-body p-3 py-md-6 my-md-3">
         <h5 class="text-left text-secondary">
           NASA Astronomy Picture of the Day:
         </h5>
@@ -59,10 +59,9 @@
         </div>
         <hr />
         <p class="text-center">
-          <i
-            >Last Updated at {{ new Date(results.date).toLocaleString() }}, come
-            back tomorrow for a new picture of the day!</i
-          >
+          <i>
+            Last Updated at {{ new Date(results.date).toLocaleString() }}, come back tomorrow for a new picture of the day!
+          </i>
         </p>
       </div>
     </div>
