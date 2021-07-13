@@ -8,10 +8,7 @@
             {{ message }}
           </p>
           <footer class="blockquote-footer">
-            <cite title="Source Title"
-              ><span id="author">{{ author }}</span>
-              <span id="signif">, {{ significance }}</span></cite
-            >
+            <cite title="Source Title"><span id="author">{{ author }}</span><span id="signif">, {{ significance }}</span></cite>
           </footer>
         </blockquote>
       </div>

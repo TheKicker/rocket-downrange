@@ -15,6 +15,22 @@
       significance="Co-Founder of Virgin Group (Virgin Galactic & Orbit)"
     />
 
+    <OrgNews 
+      company="Virgin Galactic"
+      year="2021"
+      title="Richard Branson goes to space on VSS Unity"
+      srcType="image"
+      source="https://image.cnbcfm.com/api/v1/image/106909264-16260219342021-07-11t162456z_704166725_rc2cio9i5jms_rtrmadp_0_space-exploration-virgingalactic.jpeg?v=1626089601&w=740&h=416"
+      description="Early in the morning of July 11th, Sir Richard Branson and five other crew mates briefly touched space for the first crewed flight of Virgin Galactic's SpaceShipTwo spaceplane.  At 8:40am local time, the crew of Virgin Galactic's VSS Unity took off from Spaceport America's facility in New Mexico. The crew contained two pilots and four crew members who experienced roughly four and a half minutes of weightlessness.  "
+      update="July 13, 2021"
+      link1url="https://www.youtube.com/watch?v=GKG2IicSlSY"
+      link1txt="Stream Replay"
+      link2url="https://www.space.com/virgin-galactic-unity-22-branson-flight-success"
+      link2txt="Space.com Article"
+      link3url="https://www.cnbc.com/2021/07/11/richard-branson-reaches-space-on-virgin-galactic-flight.html"
+      link3txt="CNBC Article"
+    />
+
     <br />
     <hr />
     <div class="text-center">
@@ -31,6 +47,7 @@
 import Info from "@/components/Info-Template.vue";
 import NextLaunch from "@/components/virgin/Virgin-NextLaunch.vue";
 import Quote from "@/components/Quotes-Template.vue";
+import OrgNews from "@/components/Org-News.vue"
 
 export default {
   name: "VirginGalactic",
@@ -38,6 +55,7 @@ export default {
     Info,
     NextLaunch,
     Quote,
+    OrgNews
   },
   metaInfo: {
     title: "Rocket Downrange | Virgin Galactic",
