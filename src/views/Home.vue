@@ -2,6 +2,16 @@
   <div class="home">
     <Homepage />
     <NASAapod />
+    <section>
+      <!-- Default - Display -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-4126541105328321"
+          data-ad-slot="7116132877"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      
+    </section>
     <SPACEXstarshipSN9 hidden />
     <NASAperseverance />
     <LLNextLaunch />
@@ -42,6 +52,9 @@ export default {
     ExternalLinks,
     Contact,
     SNAPI,
+  },
+  beforeMount(){
+    (adsbygoogle = window.adsbygoogle || []).push({});
   },
   metaInfo: {
     title: "Rocket Downrange",
