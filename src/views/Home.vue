@@ -2,7 +2,7 @@
   <div class="home">
     <Homepage />
     <NASAapod />
-    <GoogleAdsense :timeout="200" class-names="d-block"/>
+    <GoogleAdsense timeout="3000" class-names="d-block"/>
     <SPACEXstarshipSN9 hidden />
     <NASAperseverance />
     <LLNextLaunch />
