@@ -5,7 +5,7 @@
       :className="adsbygoogle"
       :style="{display: 'block'}"
       :data-ad-client="googleAdId"
-      :data-ad-slot="slot"
+      data-ad-slot="7116132877"
       data-ad-format="auto"
       data-full-width-responsive="true"
     ></ins>
