@@ -2,7 +2,6 @@
   <div class="home">
     <Homepage />
     <NASAapod />
-    <GoogleAdsense :timeout="200" class-names="d-block"/>
     <SPACEXstarshipSN9 hidden />
     <NASAperseverance />
     <LLNextLaunch />
@@ -18,7 +17,6 @@
 <script>
 // @ is an alias to /src
 import Homepage from "@/components/Homepage.vue";
-import GoogleAdsense from "@/components/Google-Adsense.vue";
 import NASAperseverance from "@/components/NASA-perseverance.vue";
 import NASAapod from "@/components/NASA-APOD.vue";
 import LLNextLaunch from "@/components/LaunchLib-Next.vue";
@@ -34,7 +32,6 @@ export default {
   name: "Home",
   components: {
     Homepage,
-    GoogleAdsense,
     SPACEXstarshipSN9,
     NASAperseverance,
     NASAapod,
