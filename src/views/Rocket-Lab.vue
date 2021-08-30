@@ -14,6 +14,7 @@
       author="Peter Beck"
       significance="CEO of Rocket Lab"
     />
+    <RLPublic />
     <RocketLabSender />
     <RocketLabTest />
     <br />
@@ -29,6 +30,7 @@
 <script>
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
+import RLPublic from "@/components/rocketlab/RocketLab-Public.vue";
 import NextLaunch from "@/components/rocketlab/RocketLab-NextLaunch.vue";
 import RocketLabTest from "@/components/rocketlab/RocketLab-ItsATest.vue";
 import RocketLabSender from "@/components/rocketlab/RocketLab-ReturnToSender.vue";
@@ -38,6 +40,7 @@ export default {
   name: "RocketLab",
   components: {
     Info,
+    RLPublic,
     NextLaunch,
     RocketLabTest,
     RocketLabSender,

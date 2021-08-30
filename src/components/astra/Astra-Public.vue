@@ -13,7 +13,7 @@
               src="https://rocketdownrange.com/Astra.jpg"
               class="img-fluid"
               style="max-height: 65vh;"
-              alt="Astra Special Event - the Crew Demo 2 Mission is a joint mission between SpaceX and NASA to get Bob Behnken and Douglas Hurley to the International Space Station. If this picture did not load - then an error occured, this media from NASA might be a Youtube video rather than picture. "
+              alt="Astra begins trading on the stock market under ticker $ASTR "
             />
           </div>
         </div>
