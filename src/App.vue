@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <div id="marqueecontainer" hidden>
-      <marquee id="marquee"><a href="https://www.reddit.com/r/wallstreetbets/" target="_blank" rel="noopener nofollow">DO NOT SELL #HoldTheLine and support r/WallStreetBets</a>&nbsp;</marquee>
+    <div id="marqueecontainer">
+      <p id="marquee">OWN YOUR SPACE, $ASTR & $RKLB LIVE ON STOCK MARKET &nbsp; <a class="marquee-btn" href="https://www.sofi.com/invite/invest?gcp=b047978b-110c-4176-a7b8-99731d786925?src=copy"><i class="fas fa-rocket"></i>&nbsp;INVEST TODAY</a></p>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
@@ -308,24 +308,26 @@ export default {
 
 #marquee a{
   color: white;
+  text-decoration: none;
 }
 
 .TRADE{
   color: blue;
   text-decoration: underline;
-
 }
 
 .marquee-btn {
+  border-style: solid;
   border-color: white;
   border-radius: 5px;
-  padding: 2px 8px;
+  padding: 3px 8px;
   border-width: 2px;
+  background: black;
   color: white;
 }
 .marquee-btn:hover {
-  background: white;
-  color: black;
+  background-color: white;
+  color: black !important;
 }
 
 #footer-container{
@@ -340,6 +342,10 @@ export default {
 }
 
 @media only screen and (max-width: 999px) {
+  #marqueecontainer{
+    display: none;
+  }
+  
   #footer-container{
     width: 100%;
     flex-direction: column;
