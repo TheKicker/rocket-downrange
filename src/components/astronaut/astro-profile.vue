@@ -1,5 +1,5 @@
 <template>
-  <div id="astronautProfile" class="card mx-auto my-2" style="width: 26rem">
+  <div id="astronautProfile" class="card mx-auto my-2" style="width: 20rem">
     <div class="hovereffect rounded">
       <img
         :src="profile_image"

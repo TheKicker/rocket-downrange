@@ -28,22 +28,22 @@
         <div class="card-group width-limit mx-auto">
           <External
             site="United States Space Force"
-            image="space-force.jpg"
+            image="organizations/space-force.jpg"
             link="https://www.spaceforce.mil/"
           />
           <External
             site="NASA"
-            image="nasaVAB.jpg"
+            image="organizations/nasaVAB.jpg"
             link="https://www.nasa.gov"
           />
           <External
             site="European Space Agency"
-            image="ESA.png"
+            image="organizations/ESA.png"
             link="https://www.esa.int/"
           />
           <External
             site="Russian Space Agency"
-            image="roscosmos.jpg"
+            image="organizations/roscosmos.jpg"
             link="http://en.roscosmos.ru/"
           />
         </div>
@@ -51,22 +51,22 @@
         <div class="card-group width-limit mx-auto">
           <External
             site="SpaceX"
-            image="spacex.jpg"
+            image="organizations/spacex.jpg"
             link="https://www.spacex.com/"
           />
           <External
             site="Rocket Lab"
-            image="rocketLab.jpg"
+            image="organizations/rocketLab.jpg"
             link="https://www.rocketlabusa.com/"
           />
           <External
             site="Firefly Aerospace"
-            image="firefly.png"
+            image="organizations/firefly.png"
             link="https://firefly.com/"
           />
           <External
             site="Astra"
-            image="Astra.jpg"
+            image="organizations/Astra.jpg"
             link="https://astra.com/"
           />
         </div>
@@ -74,22 +74,22 @@
         <div class="card-group width-limit mx-auto">
           <External
             site="United Launch Alliance"
-            image="ula.jpg"
+            image="organizations/ula.jpg"
             link="https://www.ULAlaunch.com/"
           />
           <External
             site="Kerbal Space Program"
-            image="kerbal.jpg"
+            image="organizations/kerbal.jpg"
             link="https://www.kerbalspaceprogram.com/"
           />
           <External
             site="Reddit/r/SpacePorn"
-            image="reddit.jpeg"
+            image="organizations/reddit.jpeg"
             link="https://www.reddit.com/r/spaceporn/top/?t=all"
           />
           <External
             site="Space.com"
-            image="spacecom.png"
+            image="organizations/spacecom.png"
             link="https://www.space.com/"
           />
         </div>

@@ -1,5 +1,5 @@
 <template>
-  <div id="vehicleProfile" class="card mx-auto my-2" style="max-width: 26rem">
+  <div id="vehicleProfile" class="card mx-auto my-2" style="max-width: 20rem">
     <div class="hovereffect rounded">
       <img
         :src="image"

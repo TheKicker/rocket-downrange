@@ -13,8 +13,35 @@
       author="Chris Kemp"
       significance="Co-Founder of Astra"
     />
-    <AstraPublic />
-    <AstraTest2 />
+    <OrgNews 
+      company="Astra Special Event"
+      year="2021"
+      title="Astra ($ASTR) goes public"
+      srcType="image"
+      source="https://rocketdownrange.com/organizations/Astra.jpg"
+      description1="On Wednesday, June 30th of 2021, Astra became the first launch company to be traded publically on NASDAQ.  Trading under the ticker $ASTR, with shares previously listed under the special purpose acquisition company Holicity, the announcement expects to bring in around $500 million in proceeds. Astra's idea is to use the funding to continue to develop their rockets - with a goal of launching as many of it's 40ft tall rockets as it can, aiming to launch one per day by 2025."
+      description2='“Now we have a space company that everyone can invest in on the public markets,” Astra CEO Chris Kemp told CNBC. “The same kinds of things you do to make a rocket great are the same behaviors that you have to invest in to make a company great. You don’t want any inefficiencies.”'
+      update="Jul 2, 2021"
+      link1txt="NASDAQ Profile"
+      link1url="https://www.nasdaq.com/market-activity/stocks/astr"
+      link2txt="Space.com Article"
+      link2url="https://www.space.com/astra-launch-company-public-nasdaq"
+      link3txt="CNBC Article"
+      link3url="https://www.cnbc.com/2021/07/01/astra-astr-space-company-begins-trading-on-the-nasdaq.html"
+    />
+    <OrgNews 
+      company="Astra Special Event"
+      year="2020"
+      title="Rocket 3.2 - Ready to Launch!"
+      srcType="image"
+      source="https://rocketdownrange.com/organizations/astra-test-2.jpeg"
+      description1="Only three months after their previous attempt, on Tuesday, December 15 of 2020 - Astra officially passed the Karman Line in an amazing show of progress! Rocket 3.2 lifted off from Astra's private Kodiak Spaceport : Pad LP-3B in Alaska during their preferred launch window.  Following its targeted flight trajectory nearly dead on, a couple of minutes into flight, the main engines shut down, and the second stage separated. This upper stage then burnt out of all of its propellant and simulated the deployment of a payload into space - unfortunately, missing orbit by just a few seconds or 500m/s by some reports. "
+      update="Dec 16, 2020"
+      link1txt="Mission Overview"
+      link1url="https://astra.com/blog/rocket-3-2-ready-to-launch/"
+      link2txt="Twitter Recap Video"
+      link2url="https://twitter.com/Astra/status/1338999451893915649?s=20"
+    />
 
     <br />
     <hr />
@@ -22,7 +49,7 @@
       <a href="https://thespacedevs.com" target="_blank" rel="noopener"
         >API Data brought to you by The Space Devs</a
       >
-    </div>
+    </div> 
   </div>
 </template>
 
@@ -30,18 +57,16 @@
 <script>
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
+import OrgNews from "@/components/Org-News.vue";
 import NextLaunch from "@/components/astra/Astra-NextLaunch.vue";
-import AstraPublic from "@/components/astra/Astra-Public.vue";
-import AstraTest2 from "@/components/astra/Astra-Test-2.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {
   name: "Astra",
   components: {
     Info,
+    OrgNews,
     NextLaunch,
-    AstraPublic,
-    AstraTest2,
     Quote,
   },
   metaInfo: {

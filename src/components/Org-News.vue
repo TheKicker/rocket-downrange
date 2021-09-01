@@ -18,17 +18,12 @@
         <div class="container">
           <div class="row my-3">
             <p>
-              {{ description }}
+              {{ description1 }}
+            </p>
+            <p>
+              {{ description2 }}
             </p>
           </div>
-          <!-- <div class="row my-2 text-dark">
-            <p class="col text-center">
-              <strong>Launch Date (Earth): July 30, 2020</strong>
-            </p>
-            <p class="col text-center">
-              <strong>Landing Date (Mars): February 18, 2021</strong>
-            </p>
-          </div> -->
           <div class="my-4 row justify-content-center">
             <a v-if="link1url == null || undefined" href="#" hidden></a>
             <a v-else :href="link1url" target="_blank" class="py-4 p-3">
@@ -51,7 +46,7 @@
           </div>
           <hr />
           <p class="text-center">
-            <i>{{ update }}</i>
+            <i>Updated: {{ update }}</i>
           </p>
         </div>
       </div>
@@ -68,7 +63,8 @@ export default {
     title: String,
     srcType: String,
     source: String,
-    description: String,
+    description1: String,
+    description2: String,
     update: String,
     link1url: String,
     link1txt: String,

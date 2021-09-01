@@ -54,7 +54,7 @@ export default {
   },
   mounted() {
     window.axios
-      .get("https://ll.thespacedevs.com/2.0.0/spacecraft/?format=json&status=1&limit=20")
+      .get("https://ll.thespacedevs.com/2.0.0/spacecraft/?format=json&status=1&limit=21")
       .then((response) => {
         // console.log(response.data.results);
         this.vehicles = response.data.results;

@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div class="jumbotron img-fluid viewport100h">
+    <div class="jumbotron img-fluid viewporth">
       <div class="container text-center viewportText">
         <div class="my-5">
           <!-- Nunito Sans --> 
@@ -50,8 +50,8 @@ export default {
   }
 }
 
-.viewport100h {
-  height: 100vh;
+.viewporth {
+  height: 90vh;
   width: 100%;
 }
 .viewportText {
