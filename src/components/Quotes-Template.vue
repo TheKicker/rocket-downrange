@@ -1,5 +1,5 @@
 <template>
-  <div class="Quote my-4 mx-4">
+  <div class="Quote my-4 mx-lg-4 mx-md-0">
     <div class="card">
       <div class="card-header bg-primary text-light">Quotes from History</div>
       <div class="card-body">

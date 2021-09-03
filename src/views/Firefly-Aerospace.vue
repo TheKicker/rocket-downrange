@@ -20,6 +20,21 @@
       significance="CEO of Firefly Aerospace"
     />
 
+    <OrgNews 
+      company="Firefly Special Event"
+      year="2021"
+      title="First Alpha rocket comes up short"
+      srcType="video"
+      source="https://www.youtube.com/embed/-HfHAazNM3Q"
+      description1="Firefly's Alpha rocket launched on the company's first ever orbital test flight on September 2nd, lifting off from Vandenberg Space Force Base in California at 9:59pm EDT. Everything was looking great for the first 2 minutes and 25 seconds until the rocket rapidly disassembled itself in spectacular fashion high up in the California sky."
+      description2="While not successful, congratulations to everyone at Firefly Aerospace for an incredible first attempt and we look forward to the next one! "
+      update="Sep 3, 2021"
+      link1txt="Mission Overview"
+      link1url="https://astra.com/blog/rocket-3-2-ready-to-launch/"
+      link2txt="Space.com Article"
+      link2url="https://www.space.com/firefly-aerospace-first-alpha-rocket-launch-failure"
+    />
+
     <br />
     <hr />
     <div class="text-center">
@@ -35,6 +50,7 @@
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
 import NextLaunch from "@/components/firefly/Firefly-NextLaunch.vue";
+import OrgNews from "@/components/Org-News.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {
@@ -42,6 +58,7 @@ export default {
   components: {
     Info,
     NextLaunch,
+    OrgNews,
     Quote,
   },
   metaInfo: {

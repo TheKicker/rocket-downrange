@@ -6,6 +6,7 @@
       website="https://astra.com"
       twitter="https://twitter.com/Astra"
       instagram="https://instagram.com/astraspace"
+      stock="https://www.nasdaq.com/market-activity/stocks/astr"
     />
     <NextLaunch />
     <Quote

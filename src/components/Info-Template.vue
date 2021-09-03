@@ -14,6 +14,8 @@
         <a v-else class="btn btn-instagram mx-1 my-2" :href="instagram" target="_blank" rel="noopener"><i class="fab fa-instagram fa-2x" id="hiddenDesktop"></i><span id="hiddenMobile"><i class="fab fa-instagram"></i> &nbsp; Instagram</span></a>
         <a v-if="youtube == null || undefined" hidden></a> 
         <a v-else class="btn btn-youtube mx-1 my-2" :href="youtube" target="_blank" rel="noopener"><i class="fab fa-youtube fa-2x" id="hiddenDesktop"></i><span id="hiddenMobile"><i class="fab fa-youtube"></i> &nbsp; Youtube</span></a> 
+        <a v-if="stock == null || undefined" hidden></a> 
+        <a v-else class="btn btn-site mx-1 my-2" :href="stock" target="_blank" rel="noopener"><i class="fas fa-dollar-sign fa-2x" id="hiddenDesktop"></i><span id="hiddenMobile"><i class="fas fa-dollar-sign"></i> &nbsp; NASDAQ</span></a> 
       </div>
     </div>
   </div>
@@ -29,6 +31,7 @@ export default {
     twitter: String,
     instagram: String,
     youtube: String,
+    stock: String
   }
 };
 </script>
