@@ -191,7 +191,6 @@ export default {
         "https://api.nasa.gov/insight_weather/?api_key=PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo&feedtype=json&ver=1.0"
       )
       .then((response) => {
-        console.log(response.data);
         this.results = response.data;
       });
   },

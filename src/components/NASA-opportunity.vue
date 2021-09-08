@@ -100,12 +100,7 @@ export default {
     };
   },
   mounted() {
-    var url =
-      "https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=" +
-      random_number +
-      "&api_key=" +
-      api_key;
-    console.log("NASA Oppy sol-" + random_number + " : " + url);
+    var url = "https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=" + random_number + "&api_key=" + api_key;
 
     window.axios
       .get(url)

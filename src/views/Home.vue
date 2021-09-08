@@ -1,14 +1,48 @@
 <template>
   <div class="home">
     <Homepage />
-    <NASAapod />
-    <NASAepic />
-    <NASAperseverance />
-    <LLNextLaunch />
-    <SNAPI />
-    <NASAinsight />
-    <NASAcuriosity />
-    <NASAopportunity />
+    <section class="container">
+      <NASAapod />
+      <NASAperseverance />
+      <LLNextLaunch />
+      <SNAPI />
+      <!-- RKLB Goes Public section --> 
+      <OrgNews 
+        company="Rocket Lab Special Event"
+        year="2021"
+        title="Rocket Lab ($RKLB) goes public"
+        srcType="image"
+        source="https://rocketdownrange.com/organizations/rocketLab.jpg"
+        description1="On Wednesday, August 25th of 2021, Rocket Lab began trading on the Nasdaq, becoming the latest space company to close a merger with a special purpose acquisition company and go public. They closed the first day down slightly at $10.45 per share, under the ticker $RKLB."
+        description2='“We are super excited to bring a high-quality space asset to the market” Rocket Lab CEO Peter Beck told CNBC. “I don’t think it will take long for investors to differentiate between the company that’s consistently delivering and the ones that have aspirations to deliver sometime in the future” he later added.'
+        update="Aug 30, 2021"
+        link1txt="NASDAQ Profile"
+        link1url="https://www.nasdaq.com/market-activity/stocks/rklb"
+        link2txt="Space.com Article"
+        link2url="https://www.space.com/rocket-lab-goes-public-spac-merger"
+        link3txt="CNBC Article"
+        link3url="https://www.cnbc.com/2021/08/25/rocket-lab-begins-trading-on-nasdaq-as-rklb-after-spac-merger.html"
+      />
+      <!-- ASTR goes public section --> 
+      <OrgNews 
+        company="Astra Special Event"
+        year="2021"
+        title="Astra ($ASTR) goes public"
+        srcType="image"
+        source="https://rocketdownrange.com/organizations/Astra.jpg"
+        description1="On Wednesday, June 30th of 2021, Astra became the first launch company to be traded publically on NASDAQ.  Trading under the ticker $ASTR, with shares previously listed under the special purpose acquisition company Holicity, the announcement expects to bring in around $500 million in proceeds. Astra's idea is to use the funding to continue to develop their rockets - with a goal of launching as many of it's 40ft tall rockets as it can, aiming to launch one per day by 2025."
+        description2='“Now we have a space company that everyone can invest in on the public markets,” Astra CEO Chris Kemp told CNBC. “The same kinds of things you do to make a rocket great are the same behaviors that you have to invest in to make a company great. You don’t want any inefficiencies.”'
+        update="Jul 2, 2021"
+        link1txt="NASDAQ Profile"
+        link1url="https://www.nasdaq.com/market-activity/stocks/astr"
+        link2txt="Space.com Article"
+        link2url="https://www.space.com/astra-launch-company-public-nasdaq"
+        link3txt="CNBC Article"
+        link3url="https://www.cnbc.com/2021/07/01/astra-astr-space-company-begins-trading-on-the-nasdaq.html"
+      />
+      <NASAcuriosity />
+      <NASAopportunity />
+    </section>
     <ExternalLinks />
     <Contact />
   </div>
@@ -17,11 +51,10 @@
 <script>
 // @ is an alias to /src
 import Homepage from "@/components/Homepage.vue";
-import NASAepic from "@/components/NASA-epic.vue";
+import OrgNews from "@/components/Org-News.vue";
 import NASAperseverance from "@/components/NASA-perseverance.vue";
 import NASAapod from "@/components/NASA-APOD.vue";
 import LLNextLaunch from "@/components/LaunchLib-Next.vue";
-import NASAinsight from "@/components/NASA-insight.vue";
 import NASAcuriosity from "@/components/NASA-curiosity.vue";
 import NASAopportunity from "@/components/NASA-opportunity.vue";
 import ExternalLinks from "@/components/ExternalLinks.vue";
@@ -32,11 +65,10 @@ export default {
   name: "Home",
   components: {
     Homepage,
-    NASAepic,
+    OrgNews,
     NASAperseverance,
     NASAapod,
     LLNextLaunch,
-    NASAinsight,
     NASAcuriosity,
     NASAopportunity,
     ExternalLinks,

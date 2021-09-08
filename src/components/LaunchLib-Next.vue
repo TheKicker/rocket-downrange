@@ -1,6 +1,6 @@
 <template>
-  <div class="LaunchLibNext my-4 mx-4">
-    <div class="card container">
+  <div class="LaunchLibNext my-4 mx-lg-4 mx-md-0">
+    <div class="card">
       <div class="card-body">
         <h5 class="text-left text-secondary">The Launch Library:</h5>
         <hr />
@@ -112,7 +112,6 @@ export default {
         "https://ll.thespacedevs.com/2.0.0/launch/upcoming/?format=json&limit=5"
       )
       .then((response) => {
-        console.log(response.data.results);
         this.launches = response.data.results;
       });
   },

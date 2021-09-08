@@ -1,6 +1,6 @@
 <template>
-  <div class="Curiosity my-4 mx-4">
-    <div class="card container">
+  <div class="Curiosity my-4 mx-lg-4 mx-md-0">
+    <div class="card">
       <div class="card-body p-3 p-md-6 m-md-3">
         <h5 class="text-left text-secondary">
           Mars Curiosity Rover Picture of the Day:
@@ -14,61 +14,7 @@
               class="carousel slide"
               data-ride="carousel"
             >
-              <ol class="carousel-indicators">
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="1"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="2"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="3"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="4"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="5"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="6"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="7"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="8"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="9"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="10"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="11"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="12"
-                ></li>
-              </ol>
+              
               <div class="carousel-inner">
                 <!-- START OF CAROUSEL -->
 
@@ -842,11 +788,8 @@ oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
 const lastYear = oneWeekAgo.getFullYear();
 const lastMonth = oneWeekAgo.getMonth() + 1;
 const lastDay = oneWeekAgo.getDate();
-
-const secure = "";
 const api_key = "PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo";
 window.axios = require("axios");
-
 export default {
   name: "NASAcuriosity",
   data() {
@@ -856,7 +799,6 @@ export default {
   },
   mounted() {
     var url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${lastYear}-${lastMonth}-${lastDay}&api_key=${api_key}`;
-    console.log("NASA Curiosity - " + url);
     window.axios
       .get(url)
       .then(response => {

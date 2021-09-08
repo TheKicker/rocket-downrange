@@ -1,6 +1,6 @@
 <template>
-  <div id="APOD" class="APOD my-4 mx-4">
-    <div class="card container">
+  <div id="APOD" class="APOD my-4 mx-lg-4 mx-md-0">
+    <div class="card">
       <div class="card-body p-3 py-md-6 my-md-3">
         <h5 class="text-left text-secondary">
           NASA Astronomy Picture of the Day:
@@ -73,11 +73,8 @@ var year = new Date().getFullYear();
 var month = new Date().getMonth() + 1;
 var day = new Date().getDate();
 const api_key = "PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo";
-var url =
-  `https://api.nasa.gov/planetary/apod?date=${year}-${month}-${day}&api_key=` +
-  api_key;
+var url =`https://api.nasa.gov/planetary/apod?date=${year}-${month}-${day}&api_key=`+api_key;
 
-console.log("NASA APOD - " + url);
 window.axios = require("axios");
 
 import Social from "@/components/SocialSharing.vue";

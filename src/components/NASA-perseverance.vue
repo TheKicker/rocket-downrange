@@ -1,6 +1,6 @@
 <template>
-  <div class="Perseverance my-4 mx-4">
-    <div class="card container">
+  <div class="Perseverance my-4 mx-lg-4 mx-md-0">
+    <div class="card">
       <div class="card-body p-3 p-md-6 m-md-3">
         <h5 class="text-left text-secondary">
           NASA & ULA Special Event (2020):
@@ -63,7 +63,6 @@
 </template>
 
 <script>
-console.log("NASA Perseverance - Active");
 window.axios = require("axios");
 
 export default {
