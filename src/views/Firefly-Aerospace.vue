@@ -14,12 +14,14 @@
       youtube="https://www.youtube.com/channel/UC31UF9oKANw77yxBLxN852A"
     />
     <NextLaunch />
+    
     <Quote
       message="We're really excited and confident about our upcoming launch (December 2020), all great companies start with a great team - and we have an amazing one with plenty of experience. This ain't our first rodeo."
       author="Tom Markusic"
       significance="CEO of Firefly Aerospace"
     />
 
+  <!-- Firefly Alpha first test section --> 
     <OrgNews 
       company="Firefly Special Event"
       year="2021"

@@ -15,9 +15,38 @@
       author="Elon Musk"
       significance="CEO of SpaceX"
     />
-    <SPACEXstarshipSN9 />
-    <SPACEXstarshipSN8 />
-    <SPACEXcrewdemo2 />
+
+    <!-- SN8 Starship first test section --> 
+    <OrgNews 
+      company="SpaceX Special Event"
+      year="2020"
+      title="SN8 - First Starship Launch"
+      srcType="video"
+      source="https://www.youtube-nocookie.com/embed/ap-BkkrRg-o"
+      description1="On December 9th, 2020, the SpaceX team made the first attempt of a high-altitude suborbital flight test of Starship serial number 8 (SN8) from the launch site in Cameron County, Texas. This suborbital flight was designed to test a number of objectives, from how the vehicle’s three Raptor engines perform to the overall aerodynamic entry capabilities of the vehicle (including its body flaps) to how the vehicle manages propellant transition. SN8 also attempted a landing flip maneuver, which is a first for a vehicle of this size - unfortunately, the vehicle appears to have lost an engine and experienced rapid-unplanned-disassembly on touch down."
+      description2="Skip to 1:47:06 in the above video if you would only like to see the launch. It is important to note, with a test such as this, success is not measured by completion of specific objectives but rather how much SpaceX can learn. Flight data (even crash data) will inform and improve the probability of success in the future as SpaceX rapidly advances development of Starship. From Rocket Downrage, congratulations SpaceX Team! Truly history in the making! "
+      update="Dec 10, 2020"
+      link1txt="Livestream Replay"
+      link1url="https://www.youtube.com/watch?v=ap-BkkrRg-o"
+      link2txt="Starship Overview"
+      link2url="https://www.spacex.com/vehicles/starship/"
+    />
+
+    <!-- Crew Dragon first use --> 
+    <OrgNews 
+      company="SpaceX Special Event"
+      year="2020"
+      title="NASA & SPACEX - CREW DRAGON DEMO-2 MISSION"
+      srcType="Image"
+      source="https://rocketdownrange.com/organizations/crew-demo-2.png"
+      description1='A mission that was a longtime in the making, Crew Demo-2 was a manned test flight of the Crew Dragon spacecraft developed by SpaceX. The launch occured on May 30th of 2020, the astronauts spent 2 months in low earth orbit at the International Space Station and then returned to Earth on August 2nd of 2020. This event marks the first time since the final Space Shuttle mission (STS-135) in 2011 that American astronauts were launched on American rockets from American soil. The mission was manned by Commander Douglas Hurley and Joint-Operations Commander Robert Behnken and lasted 63 days - 9 hours and 8 minutes.'
+      update="Aug 3, 2020"
+      link1txt="Part 1 - Launch to ISS"
+      link1url="https://www.youtube.com/watch?v=xY96v0OIcK4"
+      link2txt="Part 2 - Return Home"
+      link2url="https://www.youtube.com/watch?v=sl2jo1bSxl8"
+    />
+
     <Starman msg="Where is Starman? " />
     <br />
     <hr />
@@ -35,11 +64,9 @@
 <script>
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
+import OrgNews from "@/components/Org-News.vue";
 import NextLaunch from "@/components/spacex/SpaceX-NextLaunch.vue";
 import LatestLaunch from "@/components/spacex/SpaceX-LatestLaunch.vue";
-import SPACEXcrewdemo2 from "@/components/spacex/SpaceX-CrewDemo2.vue";
-import SPACEXstarshipSN8 from "@/components/spacex/SpaceX-Starship-SN8.vue";
-import SPACEXstarshipSN9 from "@/components/spacex/SpaceX-Starship-SN9.vue";
 import Starman from "@/components/spacex/SpaceX-Starman.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
@@ -47,11 +74,9 @@ export default {
   name: "SpaceX",
   components: {
     Info,
+    OrgNews,
     NextLaunch,
     LatestLaunch,
-    SPACEXcrewdemo2,
-    SPACEXstarshipSN8,
-    SPACEXstarshipSN9,
     Starman,
     Quote,
   },

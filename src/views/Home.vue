@@ -2,7 +2,7 @@
   <div class="home">
     <Homepage />
     <NASAapod />
-    <SPACEXstarshipSN9 hidden />
+    <NASAepic />
     <NASAperseverance />
     <LLNextLaunch />
     <SNAPI />
@@ -17,13 +17,13 @@
 <script>
 // @ is an alias to /src
 import Homepage from "@/components/Homepage.vue";
+import NASAepic from "@/components/NASA-epic.vue";
 import NASAperseverance from "@/components/NASA-perseverance.vue";
 import NASAapod from "@/components/NASA-APOD.vue";
 import LLNextLaunch from "@/components/LaunchLib-Next.vue";
 import NASAinsight from "@/components/NASA-insight.vue";
 import NASAcuriosity from "@/components/NASA-curiosity.vue";
 import NASAopportunity from "@/components/NASA-opportunity.vue";
-import SPACEXstarshipSN9 from "@/components/spacex/SpaceX-Starship-SN9.vue";
 import ExternalLinks from "@/components/ExternalLinks.vue";
 import Contact from "@/components/Contact.vue";
 import SNAPI from "@/components/LaunchLib-SpaceNews.vue";
@@ -32,7 +32,7 @@ export default {
   name: "Home",
   components: {
     Homepage,
-    SPACEXstarshipSN9,
+    NASAepic,
     NASAperseverance,
     NASAapod,
     LLNextLaunch,

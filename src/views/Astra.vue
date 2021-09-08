@@ -14,6 +14,8 @@
       author="Chris Kemp"
       significance="Co-Founder of Astra"
     />
+
+    <!-- ASTR goes public section --> 
     <OrgNews 
       company="Astra Special Event"
       year="2021"
@@ -30,6 +32,8 @@
       link3txt="CNBC Article"
       link3url="https://www.cnbc.com/2021/07/01/astra-astr-space-company-begins-trading-on-the-nasdaq.html"
     />
+
+    <!-- Rocket 3.2 Launch section --> 
     <OrgNews 
       company="Astra Special Event"
       year="2020"
