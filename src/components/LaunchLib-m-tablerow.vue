@@ -1,10 +1,10 @@
 <template>
-  <div class="card my-4">    
-    <h5 class="card-header bg-dark text-light">
+  <div class="card my-3">    
+    <h5 class="card-header text-light" style="background: black;">
       {{ mission }}
     </h5>
-    <div class="my-3">
-      <img :src="image" :alt="mission + ', ' + launchsp + ', ' + location" class='img-fluid rounded mx-auto d-block' style="max-height: 10rem;"/>
+    <div>
+      <img :src="image" :alt="mission + ', ' + launchsp + ', ' + location" class='img-fluid rounded mx-auto d-block' style="height: 10rem; max-width: 16rem"/>
     </div>
     <div>
       <p class="mx-2 my-3">

@@ -1,12 +1,12 @@
 <template>
   <div class="card my-4">
     
-    <h4 class="card-header text-center bg-dark text-light">
+    <h4 class="card-header text-center text-light" style="background: black;">
       {{ mission }}
     </h4>
     <div class="row">
       <div class="col col-md-6 my-3" id="image">
-        <img :src="image" :alt="mission + ', ' + launchsp + ', ' + location" class='img-fluid rounded mx-auto d-block' style="max-height: 14rem;"/>
+        <img :src="image" :alt="mission + ', ' + launchsp + ', ' + location" class='img-fluid rounded mx-auto d-block' style="height: 14rem; width: 20rem;"/>
       </div>
       <div class=" col col-md-6 my-1">
         <p class="mx-2 my-2">
