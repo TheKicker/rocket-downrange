@@ -10,7 +10,7 @@
 
         <!-- Row 1  -->
         <div class="responsive-row">
-          <!-- Article 4 -->
+          <!-- Article 1 & 2 -->
           <SNAPIArticle 
             :newsSite="this.results[0].newsSite != null || undefined ? this.results[0].newsSite : 'null'"
             :publishedAt="this.results[0].publishedAt != null || undefined ? this.results[0].publishedAt : 'null'"
@@ -26,9 +26,9 @@
             :articleURL="this.results[1].url != null || undefined ? this.results[1].url : 'null'"
           />
         </div>
-        <!-- Row 1  -->
+        <!-- Row 2  -->
         <div class="responsive-row">
-          <!-- Article 4 -->
+          <!-- Article 3 & 4 -->
           <SNAPIArticle 
             :newsSite="this.results[2].newsSite != null || undefined ? this.results[2].newsSite : 'null'"
             :publishedAt="this.results[2].publishedAt != null || undefined ? this.results[2].publishedAt : 'null'"
@@ -42,6 +42,24 @@
             :imageURL="this.results[3].imageUrl != null || undefined ? this.results[3].imageUrl : 'null'"
             :title="this.results[3].title != null || undefined ? this.results[3].title : 'null'"
             :articleURL="this.results[3].url != null || undefined ? this.results[3].url : 'null'"
+          />
+        </div>
+        <!-- Row 3  -->
+        <div class="responsive-row">
+          <!-- Article 5 & 6 -->
+          <SNAPIArticle 
+            :newsSite="this.results[4].newsSite != null || undefined ? this.results[4].newsSite : 'null'"
+            :publishedAt="this.results[4].publishedAt != null || undefined ? this.results[4].publishedAt : 'null'"
+            :imageURL="this.results[4].imageUrl != null || undefined ? this.results[4].imageUrl : 'null'"
+            :title="this.results[4].title != null || undefined ? this.results[4].title : 'null'"
+            :articleURL="this.results[4].url != null || undefined ? this.results[4].url : 'null'"
+          />
+          <SNAPIArticle 
+            :newsSite="this.results[5].newsSite != null || undefined ? this.results[5].newsSite : 'null'"
+            :publishedAt="this.results[5].publishedAt != null || undefined ? this.results[5].publishedAt : 'null'"
+            :imageURL="this.results[5].imageUrl != null || undefined ? this.results[5].imageUrl : 'null'"
+            :title="this.results[5].title != null || undefined ? this.results[5].title : 'null'"
+            :articleURL="this.results[5].url != null || undefined ? this.results[5].url : 'null'"
           />
         </div>
       </div>
@@ -61,7 +79,7 @@
 
 <script>
 var oldurl = "https://spaceflightnewsapi.net/api/v2/articles?_limit=4";
-var url = "https://api.spaceflightnewsapi.net/v3/articles?_limit=4"
+var url = "https://api.spaceflightnewsapi.net/v3/articles?_limit=6"
 import SNAPIArticle from "@/components/LaunchLib-SpaceNews-Article.vue";
 
 window.axios = require("axios");

@@ -3,7 +3,6 @@
     <Homepage />
     <section class="container">
       <NASAapod />
-      <NASAperseverance />
       <LLNextLaunch />
       <SNAPI />
       
@@ -53,7 +52,6 @@
 // @ is an alias to /src
 import Homepage from "@/components/Homepage.vue";
 import OrgNews from "@/components/Org-News.vue";
-import NASAperseverance from "@/components/NASA-perseverance.vue";
 import NASAapod from "@/components/NASA-APOD.vue";
 import LLNextLaunch from "@/components/LaunchLib-Next.vue";
 import NASAcuriosity from "@/components/NASA-curiosity.vue";
@@ -67,7 +65,6 @@ export default {
   components: {
     Homepage,
     OrgNews,
-    NASAperseverance,
     NASAapod,
     LLNextLaunch,
     NASAcuriosity,

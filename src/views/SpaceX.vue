@@ -16,6 +16,22 @@
       significance="CEO of SpaceX"
     />
 
+    <!-- Inspiration4 section --> 
+    <OrgNews 
+      company="SpaceX Special Event"
+      year="2021"
+      title="Inspiration4"
+      srcType="video"
+      source="https://www.youtube-nocookie.com/embed/3pv01sSq44w"
+      description1="On Wednesday, September 15 at 8:02 p.m. EDT, 00:02 UTC on September 16, SpaceX’s Falcon 9 successfully launched the Inspiration4 mission – the world’s first all-civilian human spaceflight to orbit – from historic Launch Complex 39A at NASA’s Kennedy Space Center in Florida. "
+      description2="After three days orbiting Earth, Dragon and the Inspiration4 crew safely splashed down off the coast of Florida at 7:06 p.m. EDT on Saturday, September 18, 2021, completing their first multi-day low Earth orbit mission. "
+      update="Sep 20, 2021"
+      link1txt="Livestream Replay"
+      link1url="https://www.youtube.com/watch?v=3pv01sSq44w"
+      link2txt="Space.com Article"
+      link2url="https://www.space.com/spacex-launches-inspiration4-civilian-orbital-mission"
+    />
+
     <!-- SN8 Starship first test section --> 
     <OrgNews 
       company="SpaceX Special Event"
