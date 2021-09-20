@@ -53,7 +53,7 @@
       company="SpaceX Special Event"
       year="2020"
       title="NASA & SPACEX - CREW DRAGON DEMO-2 MISSION"
-      srcType="Image"
+      srcType="image"
       source="https://rocketdownrange.com/organizations/crew-demo-2.png"
       description1='A mission that was a longtime in the making, Crew Demo-2 was a manned test flight of the Crew Dragon spacecraft developed by SpaceX. The launch occured on May 30th of 2020, the astronauts spent 2 months in low earth orbit at the International Space Station and then returned to Earth on August 2nd of 2020. This event marks the first time since the final Space Shuttle mission (STS-135) in 2011 that American astronauts were launched on American rockets from American soil. The mission was manned by Commander Douglas Hurley and Joint-Operations Commander Robert Behnken and lasted 63 days - 9 hours and 8 minutes.'
       update="Aug 3, 2020"
