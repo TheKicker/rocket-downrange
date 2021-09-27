@@ -51,7 +51,7 @@ import NextLaunch from "@/components/blue-origin/Blue-Origin-NextLaunch.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {
-  name: "Blue Origin",
+  name: "BlueOrigin",
   components: {
     Info,
     OrgNews,
