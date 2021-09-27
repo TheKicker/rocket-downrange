@@ -42,6 +42,11 @@ const routes = [
 		component: () => import(/* webpackChunkName: "about" */ '../views/Astra.vue')
 	},
 	{
+		path: '/blue-origin',
+		name: 'Blue Origin',
+		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/Blue-Origin.vue')
+	},
+	{
 		path: '/firefly-aerospace',
 		name: 'Firefly Aerospace',
 		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/Firefly-Aerospace.vue')

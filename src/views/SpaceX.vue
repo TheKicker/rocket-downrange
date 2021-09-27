@@ -71,8 +71,7 @@
         href="https://github.com/r-spacex/SpaceX-API"
         target="_blank"
         rel="noopener"
-        >Link to SpaceX API Repository</a
-      >
+        >Link to SpaceX API Repository</a>
     </div>
   </div>
 </template>

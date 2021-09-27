@@ -81,6 +81,11 @@
                     >
                 </li>
                 <li class="nav-item">
+                    <router-link class="nav-link ml-1" to="/blue-origin"
+                      >BLUE ORIGIN</router-link
+                    >
+                </li>
+                <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/firefly-aerospace"
                     >FIREFLY</router-link
                   >
