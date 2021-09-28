@@ -16,33 +16,45 @@
         </h1>
         <div class="row mx-1">
           <div class="col-md-5 col-sm-12 text-center">
-            <!-- <img
+            <img
               :src="this.results.results[0].image != null || undefined ? this.results.results[0].image : 'https://icon-library.com/images/placeholder-image-icon/placeholder-image-icon-21.jpg'"
               class="img-fluid"
               style="max-height: 45vh;"
-            /> -->
+              alt="Blue Origin launch"
+            />
           </div>
           <div class="col-md-6 col-sm-12 my-2 mx-1">
             <h6 class="text-secondary">
               <span class="text-primary">Launch Date:</span><br />
               <span class="mx-4">
-                COMING SOON
+                {{                
+                    this.results.results[0].net != null || undefined ? new Date(this.results.results[0].net).toLocaleString() : "N/A"
+                }}
               </span>
             </h6>
 
             <h6 class="text-secondary my-3">
               <span class="text-primary">Launch Site:</span><br />
                 <span class="mx-4">
-                    COMING SOON
+                  {{
+                      this.results.results[0] && this.results.results[0].pad.location && this.results.results[0].pad.location.name != null || undefined
+                      ? this.results.results[0].pad.name : " N/A "
+                  }},
                 </span>
-              <br />
-              <span class="mx-4">
-                  COMING SOON
-              </span>
+                <br />
+                <span class="mx-4">
+                  {{
+                    this.results.results[0].pad && this.results.results[0].pad.location && this.results.results[0].pad.location.name != null || undefined
+                      ? this.results.results[0].pad.location.name : " N/A "
+                  }}
+                </span>
             </h6>
             <hr />
             <p class="text-primary my-2">
-                THIS INFO COMING SOON. 
+              {{
+                  this.results.results[0] && this.results.results[0].mission && this.results.results[0].mission.description != null || undefined
+                  ? this.results.results[0].mission.description : " This mission might be classified or we do not have any data to show here yet.  Check back for an update closer to launch time! "
+              }}
             </p>
           </div>
         </div>
@@ -86,7 +98,7 @@
 
 <script>
 var url =
-  "https://lldev.thespacedevs.com/2.0.0/launch/upcoming/?format=json&rocket__configuration__manufacturer__name__icontains=Blue+Origin&limit=1";
+  "https://ll.thespacedevs.com/2.0.0/launch/upcoming/?format=json&rocket__configuration__manufacturer__name__icontains=Blue+Origin&limit=1";
 window.axios = require("axios");
 
 export default {
