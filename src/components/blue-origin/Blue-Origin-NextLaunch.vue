@@ -20,7 +20,10 @@
               :src="this.results.results[0].image != null || undefined ? this.results.results[0].image : 'https://icon-library.com/images/placeholder-image-icon/placeholder-image-icon-21.jpg'"
               class="img-fluid"
               style="max-height: 45vh;"
-              alt="Blue Origin launch"
+              :alt="this.results.results[0].mission &&
+              this.results.results[0].mission.name != null || undefined
+              ? 'Blue Origins next launch / mission is named ' + this.results.results[0].mission.name
+              : ' No image available, nothing to see here yet '"
             />
           </div>
           <div class="col-md-6 col-sm-12 my-2 mx-1">

@@ -16,7 +16,23 @@
       significance="CSO of United Launch Alliance"
     />
     <NASAperseverance />
-    <Parker />
+
+    <!-- Parker Solar Probe --> 
+    <OrgNews 
+      company="ULA Special Event"
+      year="2018"
+      title="THE PARKER SOLAR PROBE - DELTA IV HEAVY"
+      srcType="image"
+      source="https://i.dailymail.co.uk/1s/2019/04/04/15/11860212-0-image-a-7_1554387593099.jpg"
+      description1="NASA’s Parker Solar Probe will be the first-ever mission to 'touch' the Sun. The spacecraft, about the size of a small car, will travel directly into the Sun's atmosphere about 4 million miles from the surface. Parker Solar Probe launched aboard a Delta IV-Heavy rocket from Cape Canaveral, Aug. 12, 2018 at 3:31 a.m. Eastern time."
+      description2='“The unique requirements of this mission made the Delta IV Heavy the perfect launch vehicle to deliver Parker Solar Probe into orbit with the highest precision,” said Gary Wentz, ULA vice president of Government and Commercial Programs. “Congratulations to our team and mission partners, we are proud to launch this exceptional spacecraft that will provide invaluable scientific information benefiting all of humankind.”'
+      update="Nov 30, 2020"
+      link1txt="ULA Mission Overview"
+      link1url="https://www.ulalaunch.com/missions/missions-details/2018/08/12/united-launch-alliance-successfully-launches-nasa-s-parker-solar-probe-spacecraft"
+      link2txt="PNASA Launch Stream"
+      link2url="https://www.youtube.com/watch?v=AlyuSwRSVHU"
+    />
+
     <br />
     <hr />
     <div class="text-center">
@@ -32,8 +48,8 @@
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
 import NextLaunch from "@/components/ula/ULA-NextLaunch.vue";
+import OrgNews from "@/components/Org-News.vue";
 import NASAperseverance from "@/components/NASA-perseverance.vue";
-import Parker from "@/components/ula/ULA-Parker.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {
@@ -41,7 +57,7 @@ export default {
   components: {
     Info,
     NextLaunch,
-    Parker,
+    OrgNews,
     NASAperseverance,
     Quote,
   },

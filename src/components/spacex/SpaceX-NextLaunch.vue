@@ -23,7 +23,7 @@
               :alt="this.results.results[0].mission &&
               this.results.results[0].mission.name != null ||
             undefined
-              ? this.results.results[0].mission.name
+              ? 'SpaceXs next launch / mission is named ' + this.results.results[0].mission.name
               : ' No image available, nothing to see here yet '"
             />
           </div>
