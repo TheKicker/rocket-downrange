@@ -15,14 +15,31 @@
       significance="Founder of Blue Origin and Amazon"
     />
 
-    <!-- ASTR goes public section --> 
+    <!-- Blue Origin second commercial launch --> 
+    <OrgNews 
+      company="Blue Origin Special Event"
+      year="2021"
+      title="Four More Commercial Astronauts Return from Space"
+      srcType="image"
+      source="https://www.blueorigin.com/assets/blue-origin-ns18-training-crew-portrait-october-10-2021.jpg"
+      description1="Blue Origin successfully completed New Shepard’s second human flight today with four private citizens onboard. The crew included Dr. Chris Boshuizen, Glen de Vries, Audrey Powers, and William Shatner, as well as thousands of postcards from Blue Origin’s foundation, Club for the Future.  All officially became astronauts when they passed the Karman Line, the internationally recognized boundary of space. "
+      update="Oct 20, 2021"
+      link1txt="Blue Origin Article"
+      link1url="https://www.blueorigin.com/news/new-shepard-ns-18-mission-updates"
+      link2txt="Space.com Article"
+      link2url="https://www.space.com/william-shatner-blue-origin-flight-moved-tears-reaction"
+      link3txt="Stream Replay"
+      link3url="https://www.youtube.com/watch?v=uEhdlIor-do"
+    />
+
+    <!-- Blue Origin first commercial launch --> 
     <OrgNews 
       company="Blue Origin Special Event"
       year="2021"
       title="Four Commercial Astronauts Return from Space"
       srcType="image"
       source="https://rocketdownrange.com/organizations/blue-origin-commercial.jpg"
-      description1="Blue Origin successfully completed New Shepard’s first human flight today with four private citizens onboard. The crew included Jeff Bezos, Mark Bezos, Wally Funk and Oliver Daemen, who all officially became astronauts when they passed the Kármán Line, the internationally recognized boundary of space. "
+      description1="Blue Origin successfully completed New Shepard’s first human flight today with four private citizens onboard. The crew included Jeff Bezos, Mark Bezos, Wally Funk and Oliver Daemen, who all officially became astronauts when they passed the Karman Line, the internationally recognized boundary of space. "
       update="Jul 21, 2021"
       link1txt="Blue Origin Article"
       link1url="https://www.blueorigin.com/news/first-human-flight-updates"
