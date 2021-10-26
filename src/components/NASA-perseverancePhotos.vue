@@ -1,9 +1,9 @@
 <template>
-  <div class="Curiosity my-4 mx-lg-4 mx-md-0">
+  <div class="Perseverance my-4 mx-lg-4 mx-md-0">
     <div class="card">
       <div class="card-body p-3 p-md-6 m-md-3">
         <h5 class="text-left text-secondary">
-          Mars Curiosity Rover Picture of the Day:
+          Mars Perseverance Rover Picture of the Day:
         </h5>
         <hr />
         <h3 class="text-center my-4"></h3>
@@ -763,7 +763,7 @@
         </div>
         <div class="row">
           <p>
-            Need more Curiousity? You can learn more about the rover on <a href="https://www.nasa.gov/mission_pages/msl/overview/index.html" target="_blank" rel="noopener"> NASA's official site </a> or watch this incredible video on YouTube put together by <a href="https://www.youtube.com/watch?v=8DcPcGpdV3A" target="_blank" rel="noopener">Curiousityandbeyond</a> that features a year in 4K.
+            Need more Perseverance? You can learn more about the rover on <a href="https://www.nasa.gov/perseverance" target="_blank" rel="noopener"> NASA's official site.</a>
           </p>
         </div>
         <hr />
@@ -791,14 +791,14 @@ const lastDay = oneWeekAgo.getDate();
 const api_key = "PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo";
 window.axios = require("axios");
 export default {
-  name: "NASAcuriosity",
+  name: "NASAperseverance",
   data() {
     return {
       results: {}
     };
   },
   mounted() {
-    var url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${lastYear}-${lastMonth}-${lastDay}&api_key=${api_key}`;
+    var url = `https://api.nasa.gov/mars-photos/api/v1/rovers/perseverance/photos?earth_date=${lastYear}-${lastMonth}-${lastDay}&api_key=${api_key}`;
     window.axios
       .get(url)
       .then(response => {

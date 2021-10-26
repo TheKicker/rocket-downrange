@@ -20,7 +20,7 @@
                 :src="secureURL"
                 class="img-fluid"
                 style="max-height: 75vh;"
-                alt="The NASA Opportunity Rover Picture of the Day, served directly from Mars! If this picture did not load - then an error occured, this media from NASA might be a Youtube video rather than picture. "
+                :alt='"Image from " + Object.values(results.photos)[0].rover.name + " on Mars, taken via " + Object.values(results.photos)[0].camera.full_name + " on " + new Date(Object.values(results.photos)[0].earth_date).toDateString()'
               />
             </a>
           </div>

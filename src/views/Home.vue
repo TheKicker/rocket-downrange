@@ -58,6 +58,7 @@
         link3txt="CNBC Article"
         link3url="https://www.cnbc.com/2021/07/01/astra-astr-space-company-begins-trading-on-the-nasdaq.html"
       />
+      <NASAperseverance/>
       <NASAcuriosity />
       <NASAopportunity />
     </section>
@@ -74,6 +75,7 @@ import NASAapod from "@/components/NASA-APOD.vue";
 import LLNextLaunch from "@/components/LaunchLib-Next.vue";
 import NASAcuriosity from "@/components/NASA-curiosity.vue";
 import NASAopportunity from "@/components/NASA-opportunity.vue";
+import NASAperseverance from "@/components/NASA-perseverancePhotos.vue";
 import ExternalLinks from "@/components/ExternalLinks.vue";
 import Contact from "@/components/Contact.vue";
 import SNAPI from "@/components/LaunchLib-SpaceNews.vue";
@@ -87,6 +89,7 @@ export default {
     LLNextLaunch,
     NASAcuriosity,
     NASAopportunity,
+    NASAperseverance,
     ExternalLinks,
     Contact,
     SNAPI,
