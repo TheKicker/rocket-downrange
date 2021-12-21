@@ -11,7 +11,7 @@
         title="Countdown to James Webb"
         srcType="image"
         source="https://spaceflightnow.com/wp-content/uploads/2021/10/jwst_unbox1.jpg"
-        description1="On Saturday, December 18th of 2021 - at approximately 7:20 EST the NASA James Webb Telescope will lift off on an Ariane 5 rocket from Arianespace's ELA-3 launch complex in Kourou, French Guiana. It is beneficial to the mission to be launched near the equator as the natural spin of the Earth can give the rocket an additional push. "
+        description1="On December 24th of 2021 - at approximately 7:20 EST the NASA James Webb Telescope will lift off on an Ariane 5 rocket from Arianespace's ELA-3 launch complex in Kourou, French Guiana. It is beneficial to the mission to be launched near the equator as the natural spin of the Earth can give the rocket an additional push. "
         update="Oct 20, 2021"
         link1txt="NASA Profile"
         link1url="https://www.jwst.nasa.gov/content/webbLaunch/index.html"
