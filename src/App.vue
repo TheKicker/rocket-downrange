@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <div id="marqueecontainer">
-      <p id="marquee">OWN YOUR SPACE, <a href="https://www.nasdaq.com/market-activity/stocks/astr" target="_blank" rel="noopener" class="ticker">$ASTR</a> & <a href="https://www.nasdaq.com/market-activity/stocks/rklb" target="_blank" rel="noopener" class="ticker">$RKLB</a> LIVE ON STOCK MARKET &nbsp; <a class="marquee-btn" href="https://www.sofi.com/invite/invest?gcp=b047978b-110c-4176-a7b8-99731d786925" target="_blank" rel="noopener"><i class="fas fa-rocket"></i>&nbsp;INVEST TODAY</a></p>
+      <!-- <p id="marquee">OWN YOUR SPACE, <a href="https://www.nasdaq.com/market-activity/stocks/astr" target="_blank" rel="noopener" class="ticker">$ASTR</a> & <a href="https://www.nasdaq.com/market-activity/stocks/rklb" target="_blank" rel="noopener" class="ticker">$RKLB</a> LIVE ON STOCK MARKET &nbsp; <a class="marquee-btn" href="https://www.sofi.com/invite/invest?gcp=b047978b-110c-4176-a7b8-99731d786925" target="_blank" rel="noopener"><i class="fas fa-rocket"></i>&nbsp;INVEST TODAY</a></p> -->
+    <p id="marquee"> LOVE ROCKET DOWNRANGE? SUPPORT THE PROJECT AND <a class="marquee-btn" href="https://www.buymeacoffee.com/cavlemasters" target="_blank" rel="noopener"><i class="fas fa-coffee"></i>&nbsp;BUY ME A COFFEE</a></p>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
