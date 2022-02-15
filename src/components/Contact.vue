@@ -46,6 +46,23 @@
                         </div>
                       </div>
                       <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Email Address"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="fas fa-book text-primary"></i>
+                        </div>
+                      </div>
+                      <input
                         type="text"
                         class="form-control"
                         id="subject"

@@ -1,22 +1,26 @@
-# Rocket Downrange
+# Rocket Downrange 🚀
 [![Netlify Status](https://api.netlify.com/api/v1/badges/192c5a3a-340b-4e0c-ae7b-870e0f221ebc/deploy-status)](https://app.netlify.com/sites/trusting-goldwasser-e71a14/deploys)
 
-Rocket Downrange is a side project site I am working on to showcase the advancements of humanity in regards to the exploration of outer space.  While the core Vue.JS is my own writing (please be patient as I continue to learn), all data you see on the site is returned from various API's.  More than 90% of the site is fully dynamic, based on data from other sources.  Thus, the site should continue to be a fun and dynamic way of keeping updated on the industry at large.
+Rocket Downrange is a side project site I am working on to showcase the advancements of humanity in regards to the exploration of outer space.  While the core Vue.JS is my own writing (please be patient as I continue to learn), all data you see on the site is returned from various API's.  A vast majority of the site is fully dynamic and changes daily, based on data from other sources.  Thus, the site should continue to be a fun  and interesting way of keeping updated on the industry at large.
 
-Most of the data and images you see - especially those of planets are taken/owned by NASA.  Other media may be directly from Unsplash, Adobe Creative Cloud, SpaceX, RocketLab, or other organizations and API's featured on the site.  <strong>I claim no ownership of these items and am only using them as assets of learning.</strong>  If you see something that needs attribution or I can shoutout something amazing of yours - please send me a message! I love cheering on others in the industry! 
+Most of the data and images you see - especially those of planets are taken/owned by NASA.  Other media may be directly from Unsplash, Adobe Creative Cloud, SpaceX, RocketLab, or other organizations and API's featured on the site.  <strong>I claim no ownership of these items and am only using them as assets of learning.</strong>  If you see something that needs proper attribution or I can shout out something amazing of yours - please send me a message! I love cheering on others in the industry! 
 
 I hope the site serves you well and I am always open to thoughts and opinions, 
 
- <a href="https://www.cavlemasters.com" target="_blank">- Cav Lemasters ( @TheKicker )</a>
+ <a href="https://www.cavlemasters.com/contact" target="_blank">- Cav Lemasters ( @TheKicker ) </a>
+
+<div align="center">
+<h3>Support the project and <a href="https://www.buymeacoffee.com/cavlemasters">Buy Me a Coffee ☕️</a></h3>
+</br>
+</div>
 
 <div align="left">
 <hr>
-All mission data belongs to corresponding company or the API I am receiving it from.  Rocket Downrange will remain free to access and an open learning resource for the curious!  I am considering adding ads via Google Adsense to support server costs. 
+All mission data belongs to corresponding company or the API I am receiving it from.  Rocket Downrange will remain free to access and an open learning resource for the curious! 
 </br>
 </br>
-Hosted on Netlify, built with Vue.js, Axios, Vue-Meta, Bootstrap 4 and more! Note, this site also uses Google Analytics, AdSense, SEMRUSH as I strive to master those platforms as well.
+Hosted on Netlify, built with Vue.js, Axios, Vue-Meta, Bootstrap 4 and more! Note, this site also uses Google Analytics, AdSense, SEMRUSH as I strive to master those platforms as well. 
 </hr>
-
 <hr>
 </div>
 
