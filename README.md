@@ -194,7 +194,7 @@ So far, super happy with how easy it was to implement and how well it works.  Go
 
 <hr>
 <br>
-<strong>Work in Progress (WIP)</strong> - Had an issue on the 'Home' page of the site where an error in the console is logged for both Oppy and Curiousity API's.
+<strong>Unsecure images from NASA API</strong> - Had an issue on the 'Home' page of the site where an error in the console is logged for both Oppy and Curiousity API's.
 
 I think I have tracked this down to how I am calling bits of information out of the endpoints for the JSON response.  The browser does not like the [0] added to return the first photo/details from the array.  I cannot however remove the zero because then the entire component vanishes. 
 
@@ -216,9 +216,21 @@ Solving this issue with conditional (ternary) operator when I receive the API da
   <p>{{ this.results.paragraph != null || undefined ? this.results.paragraph : placeholder.paragraph }}</p>
 
 ```
-
+</br>
 
 </br>
+<hr>
+</br>
+
+<strong> Installed Depcheck to remove unused dependencies </strong> - Using this article as a reference (<a href="https://dev.to/manitej/remove-unused-npm-modules-in-less-than-30-seconds-4g8k">link</a>) wanted to slim down my package.json using <a href="https://www.npmjs.com/package/depcheck">depcheck.</a>
+
+```
+npx depcheck
+
+# generates a list of unused dependencies
+
+npm uninstall <package>
+```
 
 </br>
 <hr>
