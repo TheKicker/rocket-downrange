@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <div id="marqueecontainer">
-      <!-- <p id="marquee">OWN YOUR SPACE, <a href="https://www.nasdaq.com/market-activity/stocks/astr" target="_blank" rel="noopener" class="ticker">$ASTR</a> & <a href="https://www.nasdaq.com/market-activity/stocks/rklb" target="_blank" rel="noopener" class="ticker">$RKLB</a> LIVE ON STOCK MARKET &nbsp; <a class="marquee-btn" href="https://www.sofi.com/invite/invest?gcp=b047978b-110c-4176-a7b8-99731d786925" target="_blank" rel="noopener"><i class="fas fa-rocket"></i>&nbsp;INVEST TODAY</a></p> -->
-    <p id="marquee"> LOVE ROCKET DOWNRANGE? SUPPORT THE PROJECT AND <a class="marquee-btn" href="https://www.buymeacoffee.com/cavlemasters" target="_blank" rel="noopener"><i class="fas fa-coffee"></i>&nbsp;BUY ME A COFFEE</a></p>
+      <p id="marquee"> LOVE ROCKET DOWNRANGE? SUPPORT THE PROJECT AND <a class="marquee-btn" href="https://www.buymeacoffee.com/cavlemasters" target="_blank" rel="noopener"><i class="fas fa-coffee"></i>&nbsp;BUY ME A COFFEE</a></p>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
@@ -116,14 +115,14 @@
               </div>
             </li>
           </ul>
-          <div class="mx-auto text-center">
+          <div>
             <button
               type="button"
-              class="btn btn-primary display-block"
+              class="btn btn-primary"
               data-toggle="modal"
               data-target="#userModal"
             >
-              <h6 class="nav-item my-2 my-lg-0 text-white text-center">
+              <h6 class="my-2 my-lg-0 text-white">
                 {{ getGreeting }}, {{ username }}
                 <i class="fa fa-user-circle"></i>
               </h6>
@@ -159,45 +158,17 @@
           </div>
           <div class="modal-body">
             <div>
-              <label class="col-form-label" for="inputDefault"
-                >Let's be friends, what should I call you?</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Buzz Lightyear"
-                id="inputDefault"
-                v-model="username"
-              />
-            </div>
-            <p></p>
+              <label class="col-form-label" for="inputDefault">Let's be friends, what should I call you?</label>
+              <input type="text" class="form-control" placeholder="Buzz Lightyear" id="inputDefault" v-model="username"/>
+            </div>       
           </div>
           <div class="modal-footer">
               <div class="m-footer">
                 <router-link to="/privacy-policy">
-                  <button
-                  type="button"
-                  class="btn btn-outline-info"
-                  data-dismiss="modal"
-                >
-                  Privacy Policy
-                </button>
+                  <button type="button" class="btn btn-outline-info" data-dismiss="modal">Privacy Policy</button>
                 </router-link>
-                <button
-                type="button"
-                class="btn btn-outline-primary"
-                data-dismiss="modal"
-              >
-                Close lightbox
-              </button>
-              <button
-                type="button"
-                @click="validate()"
-                class="btn btn-outline-success"
-                data-dismiss="modal"
-              >
-              Save changes
-            </button>
+                <button type="button" @click="validate()" class="btn btn-outline-success" data-dismiss="modal">Save changes</button>
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close lightbox</button>
             </div>
           </div>
         </div>
@@ -231,9 +202,7 @@ export default {
       username: "",
       org: "Rocket Downrange",
       greeting: "",
-      copy: `${new Date()
-        .getFullYear()
-        .toString()}`,
+      copy: `${new Date().getFullYear().toString()}`,
       trademark: "made on earth by a human & coffee",
     };
   },
