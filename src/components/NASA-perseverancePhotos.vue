@@ -788,7 +788,7 @@ oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
 const lastYear = oneWeekAgo.getFullYear();
 const lastMonth = oneWeekAgo.getMonth() + 1;
 const lastDay = oneWeekAgo.getDate();
-const api_key = "PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo";
+var api_key = process.env.VUE_APP_APOD_KEY
 window.axios = require("axios");
 export default {
   name: "NASAperseverance",

@@ -89,7 +89,7 @@
 // Oppy was operational for around 5100 sol days on Mars
 // Picture of the day is taken from a cache of these images
 const random_number = Math.floor(Math.random() * 5100);
-const api_key = "PAdDVGUIS5Kjq97mf6JzKNKT7TohmSuSaLHAVImo";
+var api_key = process.env.VUE_APP_APOD_KEY
 window.axios = require("axios");
 
 export default {
