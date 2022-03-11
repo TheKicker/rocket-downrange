@@ -1,7 +1,7 @@
 <template>
     <section class="container">
         <div class="my-4">
-            <h1>NASA Astronomy Picture of the Day </h1>
+            <h1>🚨 This feature is under construction 🚨</h1>
             <hr>
             <div class="text-center">
                 Select a date to get started: <date-picker v-model="chosenDate" valueType="format"></date-picker>
@@ -20,7 +20,7 @@ import DatePicker from 'vue2-datepicker';
 import 'vue2-datepicker/index.css';
 
 var api_key = process.env.VUE_APP_APOD_KEY
-var url =`https://api.nasa.gov/planetary/apod?date=${2022}-${3}-${10}&api_key=`+api_key;
+var url = `https://api.nasa.gov/planetary/apod?date=${2022}-${3}-${10}&api_key=${api_key}`;
 
 window.axios = require("axios");
 
@@ -29,6 +29,7 @@ export default {
   data() {
     return {
       chosenDate: new Date(),
+      url: null
     };
   },
   components:{
