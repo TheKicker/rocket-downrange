@@ -46,10 +46,10 @@
               </div>
           </div>
         </div>
-        <hr />
         <p class="text-center font-italic">Last updated at {{ new Date(results.date).toLocaleString() }}, come back tomorrow for a new picture of the day!</p>
       </div>
     </div>
+    <hr> 
   </div>
 </template>
 

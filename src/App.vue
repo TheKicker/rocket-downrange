@@ -45,67 +45,34 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Companies</a
-              >
-              <div
-                class="dropdown-menu bg-primary"
-                aria-labelledby="navbarDropdown"
-              >
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Companies</a>
+              <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
                 <li class="nav-item">
-                    <router-link class="nav-link ml-1" to="/astra"
-                      >ASTRA</router-link
-                    >
+                    <router-link class="nav-link ml-1" to="/astra">ASTRA</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link ml-1" to="/blue-origin"
-                      >BLUE ORIGIN</router-link
-                    >
+                    <router-link class="nav-link ml-1" to="/blue-origin">BLUE ORIGIN</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/firefly-aerospace"
-                    >FIREFLY</router-link
-                  >
+                  <router-link class="nav-link ml-1" to="/firefly-aerospace">FIREFLY</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/rocket-lab"
-                    >ROCKET LAB</router-link
-                  >
+                  <router-link class="nav-link ml-1" to="/rocket-lab">ROCKET LAB</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/spacex"
-                    >SPACEX</router-link
-                  >
+                  <router-link class="nav-link ml-1" to="/spacex">SPACEX</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link
-                    class="nav-link ml-1"
-                    to="/united-launch-alliance"
-                    >ULA</router-link
-                  >
+                  <router-link class="nav-link ml-1" to="/united-launch-alliance">ULA</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/virgin-galactic"
-                    >VIRGIN</router-link
-                  >
+                  <router-link class="nav-link ml-1" to="/virgin-galactic">VIRGIN</router-link>
                 </li>
               </div>
             </li>
           </ul>
           <div>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-toggle="modal"
-              data-target="#userModal"
-            >
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userModal">
               <h6 class="my-2 my-lg-0 text-white">
                 {{ getGreeting }}, {{ username }}
                 <i class="fa fa-user-circle"></i>

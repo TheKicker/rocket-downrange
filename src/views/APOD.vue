@@ -72,7 +72,77 @@ export default {
             })
             .catch(error => console.log(error));
       }
-  }
+  },
+  metaInfo: {
+    title: "Rocket Downrange | Historical APOD",
+    meta: [
+      { name: "author", content: "Github: @TheKicker" },
+      {
+        name: "description",
+        content:
+          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+      },
+      {
+        name: "keywords",
+        content:
+          "Rocket, Downrange, NASA, APOD, Astronomy, Picture, Day, Historical, Lookup, Tool, Space, Images, Video, GIF",
+      },
+      // OpenGraph data (Most widely used)
+      { property: "og:title", content: "Rocket Downrange | Historical APOD" },
+      { property: "og:site_name", content: "Rocket Downrange" },
+      // The list of types is available here: http://ogp.me/#types
+      { property: "og:type", content: "website" },
+      // Should the the same as your canonical link, see below.
+      {
+        property: "og:url",
+        content: "https://www.rocketdownrange.com/APOD",
+      },
+      {
+        property: "og:image",
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
+      },
+      // Often the same as your meta description, but not always.
+      {
+        property: "og:description",
+        content:
+          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+      },
+
+      // Twitter card
+      { name: "twitter:card", content: "summary" },
+      {
+        name: "twitter:site",
+        content: "https://www.rocketdownrange.com/APOD",
+      },
+      {
+        name: "twitter:title",
+        content: "Rocket Downrange | Historical APOD",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+      },
+      // Your twitter handle, if you have one.
+      { name: "twitter:creator", content: "Github: @TheKicker" },
+      {
+        name: "twitter:image:src",
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
+      },
+
+      // Google / Schema.org markup:
+      { itemprop: "name", content: "Rocket Downrange | Historical APOD" },
+      {
+        itemprop: "description",
+        content:
+          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+      },
+      {
+        itemprop: "image",
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
+      },
+    ],
+  },
 };
 </script>
 <style scoped>

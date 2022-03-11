@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="contactform">
     <div class="my-4 width-limit">
       <div class="position-relative overflow-hidden text-center bg-primary text-white">
         <div class="col-md-6 p-lg-5 mx-auto my-5">
