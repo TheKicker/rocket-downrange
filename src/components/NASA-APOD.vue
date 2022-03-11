@@ -26,7 +26,7 @@
               <p class="text-primary">{{ results.explanation }}</p>
               <br>
               <div class="d-block text-center w-100">
-                <div v-if="results.media_type == 'video'" class="text-danger">
+                <div v-if="results.media_type == 'video'">
                   <a
                     :href="results.url"
                     target="_blank"
@@ -35,7 +35,7 @@
                     >Watch on Youtube</a
                   >
                 </div>
-                <div v-else class="text-success">
+                <div v-else>
                   <a
                     :href="results.hdurl"
                     target="_blank"
