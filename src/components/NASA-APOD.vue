@@ -87,7 +87,7 @@ export default {
 }
 
 /* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .half{
     width: 100%;
     padding: 0.5rem 0;

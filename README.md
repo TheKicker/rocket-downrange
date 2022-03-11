@@ -234,6 +234,42 @@ npm uninstall <package>
 
 </br>
 <hr>
+</br>
+
+<strong> Installed Vue2-datepicker to begin work on a component where you can look up historical APODs. </strong> - Using this page as a reference (<a href="https://www.npmjs.com/package/vue2-datepicker">link</a>)</a>
+
+```
+npm install vue2-datepicker 
+
+# generates a calendar date picker
+
+<script>
+  import DatePicker from 'vue2-datepicker';
+  import 'vue2-datepicker/index.css';
+
+  export default {
+    components: { DatePicker },
+    data() {
+      return {
+        time1: null,
+        time2: null,
+        time3: null,
+      };
+    },
+  };
+</script>
+
+<template>
+  <div>
+    <date-picker v-model="time1" valueType="format"></date-picker>
+    <date-picker v-model="time2" type="datetime"></date-picker>
+    <date-picker v-model="time3" range></date-picker>
+  </div>
+</template>
+```
+
+</br>
+<hr>
 <div align="center">
 <h2>Known Issues (Work in Progress):</h2>
 </div>
