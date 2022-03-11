@@ -62,17 +62,12 @@ var url =`https://api.nasa.gov/planetary/apod?date=${year}-${month}-${day}&api_k
 
 window.axios = require("axios");
 
-import Social from "@/components/SocialSharing.vue";
-
 export default {
   name: "NASAapod",
   data() {
     return {
       results: [],
     };
-  },
-  components: {
-    Social
   },
   mounted() {
     window.axios

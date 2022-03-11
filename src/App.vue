@@ -23,36 +23,20 @@
             <li class="nav-item">
               <router-link class="nav-link" to="/">Home</router-link>
             </li>
-
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Explore</a
-              >
-              <div
-                class="dropdown-menu bg-primary"
-                aria-labelledby="navbarDropdown"
-              >
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore</a>
+              <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/astronaut"
-                    ><i class="fas fa-user-astronaut"></i> ASTRONAUT</router-link
-                  >
+                  <router-link class="nav-link ml-1" to="/apod"><i class="fas fa-regular fa-camera"></i> APOD</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/vehicles"
-                    ><i class="fas fa-space-shuttle"></i> VEHICLES</router-link
-                  >
+                  <router-link class="nav-link ml-1" to="/astronaut"><i class="fas fa-user-astronaut"></i> ASTRONAUT</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/solar-system"
-                    ><i class="fas fa-globe-americas"></i> OUR SYSTEM</router-link
-                  >
+                  <router-link class="nav-link ml-1" to="/vehicles"><i class="fas fa-space-shuttle"></i> VEHICLES</router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/solar-system"><i class="fas fa-globe-americas"></i> OUR SYSTEM</router-link>
                 </li>
                 <li class="nav-item">
                   <a href="https://twitter.com/RocketDownrange" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fab fa-twitter"></i> TWITTER</a>
@@ -147,12 +131,7 @@
             <h5 class="modal-title" id="userModalLabel">
               <i class="fa fa-user"></i> &nbsp; Change username
             </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
