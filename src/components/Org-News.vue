@@ -9,6 +9,7 @@
         <h3 class="text-center my-4">{{ title }}</h3>
         <div class="row">
             <div v-if="srcType === 'image'" class="mx-auto">
+              <v-lazy-image class="img-fluid" :src="image" :alt="'External link to ' + site" />
               <img class="img-fluid" :src="source" :alt="company + ' - ' + title">
             </div>
             <div v-else-if="srcType === 'video'" class="embed-responsive embed-responsive-16by9 mx-auto">
@@ -55,8 +56,12 @@
 </template>
 
 <script>
+import VLazyImage from "v-lazy-image/v2";
 export default {
   name: "OrgNews",
+  components:{
+    VLazyImage
+  },
   props: {
     company: String,
     year: String,

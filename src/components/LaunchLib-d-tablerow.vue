@@ -6,7 +6,7 @@
     </h4>
     <div class="row">
       <div class="col col-md-6 my-3" id="image">
-        <img :src="image" :alt="mission + ', ' + launchsp + ', ' + location" class='img-fluid rounded mx-auto d-block' style="height: 14rem; width: 20rem;"/>
+        <v-lazy-image :src="image" :alt="mission + ', ' + launchsp + ', ' + location" class='img-fluid rounded mx-auto d-block' style="height: 14rem; max-width: 20rem"/>
       </div>
       <div class=" col col-md-6 my-1">
         <p class="mx-2 my-2">
@@ -34,8 +34,13 @@
 
 
 <script>
+import VLazyImage from "v-lazy-image/v2";
+
 export default {
   name: "tablerowD",
+  components:{
+    VLazyImage
+  },
   data() {
     return {
       limit: 350,

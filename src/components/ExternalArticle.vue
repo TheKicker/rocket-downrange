@@ -1,7 +1,7 @@
 <template>
   <div class="card my-4 mx-2">
     <h5 class="card-title">{{ newssite }}</h5>
-    <img :src="image" class="card-img-top image" :alt="newsite + ' - ' + title" />
+    <v-lazy-image :src="image" class="card-img-top image" :alt="newsite + ' - ' + title" />
     <div class="card-body">
       <h6 class="card-title">{{ title }}</h6>
       <hr />
@@ -16,8 +16,13 @@
 </template>
 
 <script>
+import VLazyImage from "v-lazy-image/v2";
+
 export default {
   name: "Article",
+  components:{
+    VLazyImage
+  },
   props: {
     newssite: String,
     title: String,
@@ -27,7 +32,3 @@ export default {
   }
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

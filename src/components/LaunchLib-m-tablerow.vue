@@ -4,7 +4,7 @@
       {{ mission }}
     </h5>
     <div>
-      <img :src="image" :alt="mission + ', ' + launchsp + ', ' + location" class='img-fluid rounded mx-auto d-block' style="height: 10rem; max-width: 16rem"/>
+      <v-lazy-image :src="image" :alt="mission + ', ' + launchsp + ', ' + location" class='img-fluid rounded mx-auto d-block' style="height: 10rem; max-width: 16rem"/>
     </div>
     <div>
       <p class="mx-2 my-3">
@@ -31,8 +31,13 @@
 
 
 <script>
+import VLazyImage from "v-lazy-image/v2";
+
 export default {
   name: "tablerowM",
+  components:{
+    VLazyImage
+  },
   data() {
     return {
       limit: 350,
