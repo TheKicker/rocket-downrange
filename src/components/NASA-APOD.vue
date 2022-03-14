@@ -14,7 +14,7 @@
         <div class="d-flex flex-lg-row flex-column">
           <div class="row half">
             <div v-if="results.media_type == 'video'" class="embed-responsive embed-responsive-16by9">              
-                <iframe class="embed-responsive-item" :src="results.url" frameborder="0" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" :src="results.url" frameborder="0" allowfullscreen :title="company + ' - ' + title"></iframe>
             </div>
             <div v-else>
                 <a :href="results.hdurl" target="_blank" rel="noopener">

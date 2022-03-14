@@ -13,7 +13,7 @@
               <img class="img-fluid" :src="source" :alt="company + ' - ' + title">
             </div>
             <div v-else-if="srcType === 'video'" class="embed-responsive embed-responsive-16by9 mx-auto">
-              <iframe class="embed-responsive-item px-2" :src="source" frameborder="0" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item px-2" :src="source" frameborder="0" allowfullscreen :title="company + ' - ' + title"></iframe>
             </div>
         </div>
         <div class="container">
