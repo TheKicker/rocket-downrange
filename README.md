@@ -268,6 +268,30 @@ npm install vue2-datepicker
 </template>
 ```
 
+
+</br>
+<hr>
+</br>
+
+<strong> Installed v-lazy-image to lazy load images </strong> - Using this page as a reference (<a href="https://vuedose.tips/lazy-loading-images-with-v-lazy-image">link</a>). Here is the official page on NPM (<a href="https://www.npmjs.com/package/v-lazy-image">link</a>)
+
+```
+npm install v-lazy-image 
+
+import VLazyImage from "v-lazy-image/v2";
+
+export default {
+  components: {
+    VLazyImage
+  }
+};
+
+<template>
+  <v-lazy-image src="http://lorempixel.com/400/200/" />
+</template>
+
+```
+
 </br>
 <hr>
 <div align="center">

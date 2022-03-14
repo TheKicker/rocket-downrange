@@ -1,6 +1,6 @@
 <template>
   <div class="card my-4 mx-2">
-    <img :src="image" class="card-img-top image" alt="..." />
+    <v-lazy-image :src="image" :alt="'External link to ' + site" />
     <div class="card-body">
       <h5 class="card-title">{{site}}</h5>
       <hr />
@@ -13,8 +13,13 @@
 </template>
 
 <script>
+import VLazyImage from "v-lazy-image/v2";
+
 export default {
   name: "External",
+  components:{
+    VLazyImage
+  },
   props: {
     site: String,
     link: String,

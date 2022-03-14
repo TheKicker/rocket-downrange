@@ -9,6 +9,7 @@
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
+		"v-lazy-image": "^2.1.1",
 		"vue": "^2.6.11",
 		"vue-meta": "^2.3.4",
 		"vue-router": "^3.1.6",
