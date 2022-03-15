@@ -1,13 +1,12 @@
 <template>
     <section class="container">
         <div id="parent">
-            <h4 class="text-secondary">(Historical) NASA Astronomy Picture of the Day</h4>
+            <h4 class="text-secondary">Historical NASA APOD</h4>
             <div class="text-center">
-                <date-picker v-model="chosenDate" valueType="format"></date-picker>
+                <date-picker v-model="chosenDate" valueType="format" placeholder="Pick a date"></date-picker>
             </div>
         </div>
-        <hr>
-        <h3 class="text-center my-2">{{results.title}}</h3>
+        <h3 class="text-center my-2">{{results.title}} ({{ results.date }})</h3>
         <div id="apod">
             <div class="child my-4">
                 <div v-if="results.media_type == 'video'" class="embed-responsive embed-responsive-16by9">              
@@ -15,7 +14,7 @@
                 </div>
                 <div v-else>
                     <a :href="results.hdurl" target="_blank" rel="noopener">
-                    <img :src="results.url" class="img-fluid d-block mx-auto" style="max-height: 50vh;"/>
+                      <img :src="results.url" class="img-fluid d-block mx-auto" style="max-height: 50vh;"/>
                     </a>
                 </div>
             </div>
@@ -52,6 +51,12 @@ export default {
   components:{
       about,
       DatePicker
+  },
+  mounted() {
+    var year = new Date().getFullYear()
+    var month = new Date().getMonth() + 1
+    var day = new Date().getDate()
+    this.fetchAPOD(year,month,day)
   },
   watch:{
       chosenDate:function(){

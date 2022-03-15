@@ -3,15 +3,9 @@
     <div class="jumbotron img-fluid viewporth">
       <div class="container text-center viewportText">
         <div class="my-5">
-          <!-- Nunito Sans --> 
           <h1 id="text-shadow-dark" class="display-5 text-white">Rocket Downrange</h1>      
           <hr class="my-4" />
-          <p
-            id="text-shadow-dark"
-            class="lead text-white"
-          >From a space nerd, for the space nerds.</p>
-          <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
-          <!-- <a class="btn btn-primary btn-md" href="#" role="button">Learn more</a> -->
+          <p id="text-shadow-dark" class="lead text-white">From a space nerd, for the space nerds.</p>
         </div>
       </div>
     </div>
