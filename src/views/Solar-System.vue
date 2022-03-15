@@ -12,7 +12,7 @@
 import SolarSystemTemplate from "@/components/solar-system/Solar-System.vue";
 
 export default {
-  name: "Solar System",
+  name: "SolarSystem",
   components: {
     SolarSystemTemplate
   },

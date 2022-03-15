@@ -5,9 +5,7 @@
       <div class="text-center">
         <h1 class="glitch">Welcome to the Solar System.</h1>
         <div>
-          <a class="btn btn-dark my-3" href="#solar" v-scroll-to="'#solar'"
-            >[ Launch ]</a
-          >
+          <a class="btn btn-dark my-3" href="#solar" v-scroll-to="'#solar'">[ Launch ]</a>
         </div>
       </div>
     </section>

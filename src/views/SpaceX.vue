@@ -16,6 +16,23 @@
       significance="CEO of SpaceX"
     />
 
+    <!-- New Starship Animation --> 
+      <OrgNews 
+        company="SpaceX Special Event"
+        year="2022"
+        title="New Starship animation released"
+        srcType="video"
+        source="https://www.youtube.com/embed/-Oox2w5sMcA"
+        description1="Just a few days before Valentine's Day, and SpaceX is doing everything they can to steal our hearts! A new animation video has been released that illustrates the company's dedication to catch the Super Heavy booster with a massive tower and it's 'chopstick' arms. "
+        update="Feb 14, 2021"
+        link1txt="SpaceX Starship"
+        link1url="https://www.spacex.com/vehicles/starship/"
+        link2txt="Space.com Article"
+        link2url="https://www.space.com/spacex-starship-launch-tron-blade-runner"
+        link3txt="Futurism article"
+        link3url="https://futurism.com/the-byte/gorgeous-new-animation-shows-starship-going-orbital"
+      />
+
     <!-- Inspiration4 section --> 
     <OrgNews 
       company="SpaceX Special Event"

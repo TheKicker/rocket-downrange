@@ -76,7 +76,7 @@ const routes = [
 	},
 	{
 		path: '/solar-system',
-		name: 'Solar System',
+		name: 'SolarSystem',
 		component: () => import(/* webpackChunkName: "Solar System" */ '../views/Solar-System.vue')
 	},
 	{
