@@ -9,13 +9,20 @@
       youtube="https://www.youtube.com/user/RocketLabNZ"
       stock="https://www.nasdaq.com/market-activity/stocks/rklb"
     />
-    
+
     <NextLaunch />
 
     <Quote
       message="We set out to really make space accessible and make space kind of the third domain where you can innovate and provide your services to everybody here on earth and Rocket Lab's Photon is really kind of the next logical step to doing that."
       author="Peter Beck"
       significance="CEO of Rocket Lab"
+    />
+
+    <Stock 
+      ORG="Rocket Lab" 
+      TICKER="RKLB" 
+      LINK="https://www.nasdaq.com/market-activity/stocks/rklb" 
+      FINN="https://widget.finnhub.io/widgets/stocks/chart?symbol=RKLB&amp;watermarkColor=%231db954&amp;backgroundColor=%23222222&amp;textColor=white"
     />
 
   <!-- RKLB Goes Public section --> 
@@ -83,6 +90,7 @@ import Info from "@/components/Info-Template.vue";
 import OrgNews from "@/components/Org-News.vue";
 import NextLaunch from "@/components/rocketlab/RocketLab-NextLaunch.vue";
 import Quote from "@/components/Quotes-Template.vue";
+import Stock from "@/components/Stock-Price.vue";
 
 export default {
   name: "RocketLab",
@@ -91,6 +99,7 @@ export default {
     OrgNews,
     NextLaunch,
     Quote,
+    Stock
   },
   data() {
     return {};

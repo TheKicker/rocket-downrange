@@ -294,6 +294,31 @@ export default {
 
 </br>
 <hr>
+</br>
+
+<strong> Added Finnhub for company stock information </strong> - Using this page as a reference (<a href="https://finnhub.io/docs/api/quote">link</a>), you must get an API key (for free) from the site before using the API. Here is the official Finnhub website (<a href="https://finnhub.io/">link</a>) to sign up for an account. 
+
+```
+import Stock from "@/components/Stock-Price.vue";
+
+components: { Stock }
+
+<template>
+
+  <Stock 
+      ORG="Rocket Downrange" 
+      TICKER="RKDR" 
+      LINK="https://www.nasdaq.com/market-activity/stocks/rkdr" 
+      FINN="https://widget.finnhub.io/widgets/stocks/chart?symbol=RKDR&amp;watermarkColor=%231db954&amp;backgroundColor=%23222222&amp;textColor=white"
+  
+  />
+
+</template>
+
+```
+
+</br>
+<hr>
 <div align="center">
 <h2>Known Issues (Work in Progress):</h2>
 </div>

@@ -8,11 +8,20 @@
       instagram="https://instagram.com/astraspace"
       stock="https://www.nasdaq.com/market-activity/stocks/astr"
     />
+
     <NextLaunch />
+
     <Quote
       message="Things don't become impossible, they just take a little bit more time. "
       author="Chris Kemp"
       significance="Co-Founder of Astra"
+    />
+
+    <Stock 
+      ORG="Astra" 
+      TICKER="ASTR" 
+      LINK="https://www.nasdaq.com/market-activity/stocks/astr" 
+      FINN="https://widget.finnhub.io/widgets/stocks/chart?symbol=ASTR&amp;watermarkColor=%231db954&amp;backgroundColor=%23222222&amp;textColor=white" 
     />
 
     <!-- ASTR goes public section --> 
@@ -65,6 +74,7 @@ import Info from "@/components/Info-Template.vue";
 import OrgNews from "@/components/Org-News.vue";
 import NextLaunch from "@/components/astra/Astra-NextLaunch.vue";
 import Quote from "@/components/Quotes-Template.vue";
+import Stock from "@/components/Stock-Price.vue";
 
 export default {
   name: "Astra",
@@ -73,6 +83,7 @@ export default {
     OrgNews,
     NextLaunch,
     Quote,
+    Stock
   },
   metaInfo: {
     title: "Rocket Downrange | Astra",

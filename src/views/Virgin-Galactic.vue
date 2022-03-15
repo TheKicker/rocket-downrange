@@ -7,12 +7,20 @@
       twitter="https://twitter.com/virgingalactic"
       instagram="https://www.instagram.com/virgingalactic/"
       youtube="https://www.youtube.com/channel/UClcvOr7LV8tlJwJvkNMmnKg"
+      stock="https://www.nasdaq.com/market-activity/stocks/spce"
     />
     <NextLaunch />
     <Quote
       message="There are millions of people out there who would love to become astronauts, who'd love to go to space - they'd love to look back at this wonderful world from space. That will be the engine that will enable us then to develop spaceships to transport people around the world at tremendous speeds in an environmentally friendly way."
       author="Sir Richard Branson"
       significance="Co-Founder of Virgin Group (Virgin Galactic & Orbit)"
+    />
+
+    <Stock 
+      ORG="Virgin Galactic" 
+      TICKER="SPCE" 
+      LINK="https://www.nasdaq.com/market-activity/stocks/spce" 
+      FINN="https://widget.finnhub.io/widgets/stocks/chart?symbol=spce&amp;watermarkColor=%231db954&amp;backgroundColor=%23222222&amp;textColor=white" 
     />
 
     <OrgNews 
@@ -47,7 +55,8 @@
 import Info from "@/components/Info-Template.vue";
 import NextLaunch from "@/components/virgin/Virgin-NextLaunch.vue";
 import Quote from "@/components/Quotes-Template.vue";
-import OrgNews from "@/components/Org-News.vue"
+import OrgNews from "@/components/Org-News.vue";
+import Stock from "@/components/Stock-Price.vue";
 
 export default {
   name: "VirginGalactic",
@@ -55,7 +64,8 @@ export default {
     Info,
     NextLaunch,
     Quote,
-    OrgNews
+    OrgNews,
+    Stock
   },
   metaInfo: {
     title: "Rocket Downrange | Virgin Galactic",
