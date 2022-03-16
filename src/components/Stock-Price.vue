@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <section>
     <div class="my-4">
-      <div class="position-relative overflow-hidden text-center bg-primary text-white">
+      <div class="text-center bg-primary text-white py-2">
         <div class="col-md-10 p-lg-5 p-sm-3 mx-auto my-5">
           <h2 class="font-weight-normal text-white">{{ORG}} (<span class="text-info">${{TICKER}}</span>)</h2>
           <p>All data comes from an API provided by <a href="https://finnhub.io/" target="_blank" rel="noopener" class="text-light" style="text-decoration: underline">Finnhub</a>, please consult your financial representative or personal accountant for advice before making any decisions. Rocket Downrange does not endorse any stock. 
@@ -9,6 +9,7 @@
           <div id="data">
             <iframe id="frames" frameborder="2" :src="FINN"></iframe>
             <ul id="info" class="list-group text-light text-left">
+                <li class="list-group-item bg-primary"><strong>IPO:</strong> {{START}}</li>
                 <li class="list-group-item bg-primary"><strong>PRICE:</strong> ${{priceResults.c}}</li>
                 <li class="list-group-item bg-primary"><strong>DELTA:</strong> {{priceResults.d}} ({{(priceResults.dp).toFixed(2)}}%)</li>
                 <li class="list-group-item bg-primary"><strong>HIGH/LOW:</strong> {{priceResults.h}} / {{ priceResults.l}}</li>
@@ -18,7 +19,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -37,7 +38,8 @@ export default {
       ORG: String,
       TICKER: String,
       LINK: String,
-      FINN: String
+      FINN: String,
+      START: String
   },
   mounted(){
       this.fetchPRICE(this.TICKER)
@@ -73,10 +75,6 @@ export default {
     flex-direction: row; 
     justify-content: space-evenly;
 }
-.width-limit {
-  max-width: 80%;
-  margin: auto;
-}
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 650px) {
   #data{
@@ -86,7 +84,7 @@ export default {
   #frames{
       display: block;
       height: 100%;
-      min-height: 216px;
+      min-height: 260px;
       margin: 2rem auto;
   }
   #info{

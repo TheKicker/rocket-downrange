@@ -19,6 +19,7 @@
     />
 
     <Stock 
+      START="August 25th, 2021"
       ORG="Rocket Lab" 
       TICKER="RKLB" 
       LINK="https://www.nasdaq.com/market-activity/stocks/rklb" 

@@ -16,7 +16,8 @@
       significance="Co-Founder of Virgin Group (Virgin Galactic & Orbit)"
     />
 
-    <Stock 
+    <Stock
+      START="October 28th, 2019" 
       ORG="Virgin Galactic" 
       TICKER="SPCE" 
       LINK="https://www.nasdaq.com/market-activity/stocks/spce" 

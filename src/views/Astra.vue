@@ -18,6 +18,7 @@
     />
 
     <Stock 
+      START="June 30th, 2021"
       ORG="Astra" 
       TICKER="ASTR" 
       LINK="https://www.nasdaq.com/market-activity/stocks/astr" 
