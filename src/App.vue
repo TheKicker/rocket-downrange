@@ -32,6 +32,11 @@
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/astronaut"><i class="fas fa-user-astronaut"></i> ASTRONAUT</router-link>
                 </li>
+                <!--
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/locations"><i class="fas fa-map-pin"></i> LOCATIONS</router-link>
+                </li>
+                -->
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/vehicles"><i class="fas fa-space-shuttle"></i> VEHICLES</router-link>
                 </li>

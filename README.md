@@ -319,6 +319,77 @@ components: { Stock }
 
 </br>
 <hr>
+</br>
+
+<strong> Added Leaflet JS for Launch Location Maps </strong> - Using this page as a reference (<a href="https://vue2-leaflet.netlify.app/examples/feature-group.html">link</a>). Here is the official Vue2-Leaflet github (<a href="https://github.com/vue-leaflet/Vue2Leaflet">link</a>).
+
+Main.js
+
+```
+npm i leaflet
+npm i vue2-leaflet
+
+import { Icon }  from 'leaflet'
+import "leaflet/dist/leaflet.css";
+
+// this part resolves an issue where the markers would not appear
+delete Icon.Default.prototype._getIconUrl;
+
+Icon.Default.mergeOptions({
+    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+    iconUrl: require('leaflet/dist/images/marker-icon.png'),
+    shadowUrl: require('leaflet/dist/images/marker-shadow.png')
+});
+
+```
+
+Actual template
+
+```
+ <template>
+  <div>
+    <l-map style="height: 500px" :zoom="zoom" :center="center">
+      <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
+      <l-marker :lat-lng="markerLatLng"><l-popup>{{ content }}</l-popup></l-marker>
+    </l-map>
+  </div>
+</template>
+
+<script>
+import { LMap, LTileLayer, LMarker, LPopup } from "vue2-leaflet";
+
+export default {
+    name: "LaunchLocations",
+    components: {
+        LMap,
+        LTileLayer,
+        LMarker,
+        LPopup
+    },
+    props:{
+        x: String,
+        y: String,
+        z: String,
+        content: String
+    },
+    data() {
+        return {
+        url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        attribution:'&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        zoom: this.z,
+        center: [this.x, this.y],
+        markerLatLng: [this.x, this.y],
+        };
+    },
+    };
+</script>
+
+
+```
+
+
+</br>
+<hr>
 <div align="center">
 <h2>Known Issues (Work in Progress):</h2>
 </div>
