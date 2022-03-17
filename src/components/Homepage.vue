@@ -32,7 +32,7 @@ export default {
   height: 15rem;
 }
 .jumbotron {
-  background: #282c2b url("../assets/rocketdownrange.png") no-repeat center center/cover;
+  background: #282c2b url("../assets/rocketdownrange-1200x500.png") no-repeat center center/cover;
   background-attachment: fixed;
   max-width: 100%;
   height: auto;
