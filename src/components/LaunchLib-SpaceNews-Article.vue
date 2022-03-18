@@ -1,42 +1,26 @@
 <template>
     <section>
-        <!-- Article X -->
-          <div class="m-1">
-            <div class="card">
-              <div class="card-body d-flex flex-column">
-                <h6>
-                  <strong class="d-inline-block mb-2 text-secondary">{{ newsSite }} - {{timeTranslate(publishedAt)}}</strong>
-                </h6>
-                <img
-                  class="card-img img-fluid"
-                  id="cardimg"
-                  :src="imageURL"
-                  :alt="'Cover image from ' + newsSite + ' - ' + title"/>
-                <h5 class="mb-0 my-2">
-                  <a
-                    class="text-dark"
-                    :href="articleURL"
-                    target="_blank"
-                    rel="noopener"
-                    >{{ title }}</a>
-                </h5>
-                <br />
-                <div class="d-block mx-auto">
-                  <a
-                    :href="articleURL"
-                    class="btn btn-primary"
-                    target="_blank"
-                    rel="noopener"
-                    >Continue reading</a>
-                </div>
+        <div class="col my-2">
+          <div class="card shadow-sm">
+            <v-lazy-image id="img" class="card-img img-fluid" :src="imageURL" :alt="'Cover image from ' + newsSite + ' - ' + title" />
+            
+            <div class="p-2">
+              <strong class="title">{{ title }}</strong>
+              <p class="card-text text-muted">{{ newsSite }}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a :href="articleURL" class="btn btn-sm btn-primary" target="_blank" rel="noopener">Continue Reading</a>
+                <small class="text-muted">Published: {{timeTranslate(publishedAt)}}</small>
               </div>
             </div>
           </div>
+        </div>
     </section>
 </template>
 
 
 <script>
+import VLazyImage from "v-lazy-image/v2";
+
 export default {
   name: "SNAPIArticle",
   props: {
@@ -45,6 +29,9 @@ export default {
     imageURL: String,
     title: String,
     articleURL: String
+  },
+  components:{
+    VLazyImage
   },
   methods: {
     timeTranslate(results) {
@@ -64,7 +51,17 @@ export default {
 };
 </script>
 <style scoped>
-  #cardimg{
-    height: 14rem;
+  #img{
+    height: 300px;
   }
+ .title{
+   font-size: 16px; 
+   color: black;
+   font-weight: bold;
+ }
+ @media only screen and (max-width: 720px) {
+   #img{
+     height: 175px;
+   }
+ }
 </style>

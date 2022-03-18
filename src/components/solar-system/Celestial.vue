@@ -1,35 +1,57 @@
+<!--
+
+March 17, 2022
+Wanted to turn individual objects in the solarsystem into a reusable component.  
+
+Unfortunately, having trouble getting smooth scroll to recognize these as valid IDs
+
+-->
 <template>
-  <div class="solarsystem mx-auto">
-    <!-- Intro -->
-    <section id="welcome" class="page">
-      <div class="text-center">
-        <h1 class="glitch">Welcome to the Solar System.</h1>
-        <div>
-          <a class="btn btn-dark my-3" href="#solar" v-scroll-to="'#solar'">[ Launch ]</a>
-        </div>
+  <div>
+    <section :id="identify" class="celestial">
+      <div class="celestialImage">
+        <v-lazy-image :src="image" class="img-fluid" alt="CREDIT: SOLARSYSTEM.NASA.GOV" />
       </div>
-    </section>
-
-    <Solar />
-    <Mercury />
-    <Venus />
-    <Earth />
-    <Mars />
-    <Ceres />
-    <Jupiter />
-    <Saturn />
-    <Uranus />
-    <Neptune />
-    <Pluto />
-
-    <!-- Outro -->
-    <section id="outro" class="page">
-      <div class="text-center">
-        <h2 class="glitch">Data & Images from NASA</h2>
-        <div class="row d-flex justify-content-around">
-          <a class="btn btn-dark m-2" href="#app" v-scroll-to="'#app'">[ Return to Top ]</a>
-          <a class="btn btn-dark m-2" href="https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html" target="_blank" rel="noopener">[ Solar System at Scale ]</a>
-          <a class="btn btn-dark m-2" href="https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/" target="_blank" rel="noopener">[ Learn More at NASA.GOV ]</a>
+      <div class="celestialText">
+        <div class="col mx-4">
+          <div class="mx-2">
+            <h1 class="glitch">{{celestial}}</h1>
+            <p>{{paragraph}}</p>
+            <hr />
+            <div class="stats">
+              <div class="col-sm">
+                <i class="text-secondary">Classification:</i>
+                <br />{{classification}}
+              </div>
+              <div class="col-sm">
+                <i class="text-secondary">Location from Sun:</i>
+                <br />{{location}}
+              </div>
+              <div class="col-sm">
+                <i class="text-secondary">Diameter:</i>
+                <br />{{diameter}}
+              </div>
+              <div class="col-sm">
+                <i class="text-secondary">Surface Temp:</i>
+                <br />{{temperature}}
+              </div>
+              <div class="col-sm">
+                <i class="text-secondary">Gravity:</i>
+                <br />{{gravity}}
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row mx-2">
+            <a class="btn btn-dark m-2 rounded" href="#mars" v-scroll-to="this.predecessor">
+              Prior &nbsp;
+              <i class="fas fa-arrow-circle-up"></i>
+            </a>
+            <a class="btn btn-dark m-2 rounded" href="#jupiter" v-scroll-to="this.descendant">
+              Next &nbsp;
+              <i class="fas fa-arrow-circle-down"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -37,32 +59,25 @@
 </template>
 
 <script>
-import Sun from "@/components/solar-system/Celestial-Sun.vue";
-import Mercury from "@/components/solar-system/Celestial-Mercury.vue";
-import Venus from "@/components/solar-system/Celestial-Venus.vue";
-import Earth from "@/components/solar-system/Celestial-Earth.vue";
-import Mars from "@/components/solar-system/Celestial-Mars.vue";
-import Ceres from "@/components/solar-system/Celestial-Ceres.vue";
-import Jupiter from "@/components/solar-system/Celestial-Jupiter.vue";
-import Saturn from "@/components/solar-system/Celestial-Saturn.vue";
-import Uranus from "@/components/solar-system/Celestial-Uranus.vue";
-import Neptune from "@/components/solar-system/Celestial-Neptune.vue";
-import Pluto from "@/components/solar-system/Celestial-Pluto.vue";
+import VLazyImage from "v-lazy-image/v2";
 
 export default {
-  name: "SolarSystemTemplate",
-  components: {
-    Sun,
-    Mercury,
-    Venus,
-    Earth,
-    Mars,
-    Ceres,
-    Jupiter,
-    Saturn,
-    Uranus,
-    Neptune,
-    Pluto
+  name: "Celestial",
+  components:{
+    VLazyImage
+  },
+  props:{
+    identify: String,
+    image: String,
+    celestial: String,
+    paragraph: String,
+    predecessor: String,
+    descendant: String,
+    classification: String, 
+    location: String,
+    diameter: String,
+    temperature: String,
+    gravity: String
   }
 };
 </script>
@@ -71,12 +86,8 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Abel|Space+Mono&display=swap");
 
-html {
-  scroll-behavior: smooth;
-}
-
 .solarsystem {
-  max-width: 1400px;
+  max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
 }

@@ -3,11 +3,7 @@
     <!-- The Planet Ceres -->
     <section id="ceres" class="celestial">
       <div class="celestialImage">
-        <img
-          src="../../assets/ceres.png"
-          class="img-fluid"
-          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- This image of Ceres approximates how the dwarf planet's colors would appear to the eye. This view of Ceres, produced by the German Aerospace Center in Berlin, combines images taken during Dawn's first science orbit in 2015 using the framing camera's red, green and blue spectral filters."
-        />
+        <v-lazy-image src="../../assets/ceres.png" class="img-fluid" alt="CREDIT: SOLARSYSTEM.NASA.GOV -- This image of Ceres approximates how the dwarf planet's colors would appear to the eye. This view of Ceres, produced by the German Aerospace Center in Berlin, combines images taken during Dawn's first science orbit in 2015 using the framing camera's red, green and blue spectral filters." />
       </div>
       <div class="celestialText">
         <div class="col mx-4">
@@ -57,13 +53,12 @@
 
 <script>
 console.log("The dwarf planet Ceres is spinning! ");
+import VLazyImage from "v-lazy-image/v2";
 
 export default {
   name: "Ceres",
-  data() {
-    return {
-      results: []
-    };
+  components:{
+    VLazyImage
   }
 };
 </script>

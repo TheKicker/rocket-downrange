@@ -13,14 +13,7 @@
 </template>
 
 <script>
-export default {
-  name: "Homepage",
-  data() {
-    return {
-      Hello: "Hello World!"
-    };
-  }
-};
+export default {name: "Homepage"};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -32,7 +25,7 @@ export default {
   height: 15rem;
 }
 .jumbotron {
-  background: #282c2b url("../assets/rocketdownrange-1200x500.png") no-repeat center center/cover;
+  background: #282c2b url("../assets/rocketdownrange.webp") no-repeat center center/cover;
   background-attachment: fixed;
   max-width: 100%;
   height: auto;

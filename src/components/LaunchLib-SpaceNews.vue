@@ -1,7 +1,6 @@
 <template>
-  <div class="LaunchLib-News my-4 mx-lg-4 mx-md-0">
-    <div class="card">
-      <div class="card-body">
+  <div class="LaunchLib-News my-4">
+      <div>
         <h5 class="text-left text-secondary">
           The Space News API (SNAPI):
         </h5>
@@ -73,7 +72,6 @@
           >
         </i>
       </p>
-    </div>
   </div>
 </template>
 
@@ -106,10 +104,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 .responsive-row{
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+@media only screen and (max-width: 720px) {
+   .responsive-row{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+   }
+ }
 </style>

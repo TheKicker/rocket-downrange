@@ -1,10 +1,11 @@
 <template>
-  <div id="APOD" class="APOD container my-2">
+  <div id="APOD" class="APOD container">
     <div>
       <div class="py-md-6 my-md-3">
         <h5 class="text-left text-secondary">
           NASA Astronomy Picture of the Day:
         </h5>
+        <hr>
         <div v-if="results.media_type == 'video'">
           <h3 class="text-center my-3">{{ results.title }} (Video)</h3>
         </div>
@@ -24,6 +25,7 @@
           </div>
           <div class="row half">
               <p class="text-primary">{{ results.explanation }}</p>
+              <p class="text-muted">Last updated at {{ new Date(results.date).toLocaleString() }}, come back tomorrow for a new picture of the day!</p>
               <br>
               <div class="d-block text-center w-100">
                 <div v-if="results.media_type == 'video'">
@@ -46,10 +48,8 @@
               </div>
           </div>
         </div>
-        <p class="text-center font-italic">Last updated at {{ new Date(results.date).toLocaleString() }}, come back tomorrow for a new picture of the day!</p>
       </div>
     </div>
-    <hr> 
   </div>
 </template>
 

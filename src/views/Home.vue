@@ -3,17 +3,19 @@
     <Homepage />
     <section class="container">
       <NASAapod />
+      <br>
       <SNAPI />
+      <br>
       <LLNextLaunch />
 
-      <!-- James Webb Tele --> 
+      <!-- James Webb Telescope --> 
       <OrgNews 
         company="NASA Special Event"
         year="2021"
         title="James Webb is breaking boundaries"
         srcType="image"
         source="https://spaceflightnow.com/wp-content/uploads/2021/10/jwst_unbox1.jpg"
-        description1="On December 25th of 2021 - at approximately 7:20 EST the NASA James Webb Telescope lifted off on an Ariane 5 rocket from Arianespace's ELA-3 launch complex in Kourou, French Guiana. Since, it has completed a number of maneuvers and corrections to place it into optimal position - it even sent back a selfie! "
+        description1="On December 25th of 2021 - at approximately 7:20 EST the NASA James Webb Telescope lifted off on an Ariane 5 rocket from Ariane Space's ELA-3 launch complex in Kourou, French Guiana. Since, it has completed a number of maneuvers and corrections to place it into optimal position - it even sent back a selfie! "
         update="Feb 14, 2021"
         link1txt="NASA Profile"
         link1url="https://www.jwst.nasa.gov/content/webbLaunch/index.html"
@@ -47,7 +49,7 @@
         title="Astra ($ASTR) goes public"
         srcType="image"
         source="https://rocketdownrange.com/organizations/Astra.jpg"
-        description1="On Wednesday, June 30th of 2021, Astra became the first launch company to be traded publically on NASDAQ.  Trading under the ticker $ASTR, with shares previously listed under the special purpose acquisition company Holicity, the announcement expects to bring in around $500 million in proceeds. Astra's idea is to use the funding to continue to develop their rockets - with a goal of launching as many of it's 40ft tall rockets as it can, aiming to launch one per day by 2025."
+        description1="On Wednesday, June 30th of 2021, Astra became the first launch company to be traded publicly on NASDAQ.  Trading under the ticker $ASTR, with shares previously listed under the special purpose acquisition company Holicity, the announcement expects to bring in around $500 million in proceeds. Astra's idea is to use the funding to continue to develop their rockets - with a goal of launching as many of it's 40ft tall rockets as it can, aiming to launch one per day by 2025."
         description2='“Now we have a space company that everyone can invest in on the public markets,” Astra CEO Chris Kemp told CNBC. “The same kinds of things you do to make a rocket great are the same behaviors that you have to invest in to make a company great. You don’t want any inefficiencies.”'
         update="Jul 2, 2021"
         link1txt="NASDAQ Profile"
@@ -105,7 +107,7 @@ export default {
       {
         name: "keywords",
         content:
-          "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Opportunity, Curiousity, Insight, Perserverance, Rovers, Mars, APOD, Cav, Lemasters, Cavan Lemasters",
+          "NASA, SpaceX, Rocket Labs, Next Launch, Rocket, Downrange, Latest Launch, Opportunity, Curiosity, Insight, Perseverance, Rovers, Mars, APOD, Cav, Lemasters, Cavan Lemasters",
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange" },
