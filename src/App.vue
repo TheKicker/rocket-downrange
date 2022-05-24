@@ -43,12 +43,8 @@
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/solar-system"><i class="fas fa-globe-americas"></i> OUR SYSTEM</router-link>
                 </li>
-                <li class="nav-item">
-                  <a href="https://twitter.com/RocketDownrange" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fab fa-twitter"></i> TWITTER</a>
-                </li>
               </div>
             </li>
-
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Companies</a>
               <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
@@ -72,6 +68,27 @@
                 </li>
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/virgin-galactic">VIRGIN</router-link>
+                </li>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">External Links</a>
+              <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                
+                <li class="nav-item">
+                  <a href="https://github.com/TheKicker/rocket-downrange" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-code"></i> GITHUB</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.buymeacoffee.com/cavlemasters" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-coffee"></i> SUPPORT</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://twitter.com/RocketDownrange" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fab fa-twitter"></i> TWITTER</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://github.com/lun-co/lunco-game" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-gamepad"></i> LUNCO</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-globe-americas"></i> PIXEL SPACE</a>
                 </li>
               </div>
             </li>
