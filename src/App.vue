@@ -88,6 +88,12 @@
                   <a href="https://github.com/lun-co/lunco-game" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-gamepad"></i> LUNCO</a>
                 </li>
                 <li class="nav-item">
+                  <a href="https://www.ivoyager.dev/" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-sun"></i> I, VOYAGER</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.moonwards.com/gameplay/" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-trophy"></i> MOONWARD</a>
+                </li>
+                <li class="nav-item">
                   <a href="https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-globe-americas"></i> PIXEL SPACE</a>
                 </li>
               </div>
