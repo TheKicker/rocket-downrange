@@ -49,6 +49,9 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Companies</a>
               <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
                 <li class="nav-item">
+                    <router-link class="nav-link ml-1" to="/astrobotic">ASTROBOTIC</router-link>
+                </li>
+                <li class="nav-item">
                     <router-link class="nav-link ml-1" to="/astra">ASTRA</router-link>
                 </li>
                 <li class="nav-item">
