@@ -20,7 +20,7 @@
     <!-- ASTR goes public section --> 
     <OrgNews 
       company="Astrobotic Special Event"
-      year="2021"
+      year="2022"
       title="Building a Space Industry in the Steel City"
       srcType="image"
       source="https://rocketdownrange.com/organizations/astrobotic.jpeg"

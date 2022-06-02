@@ -88,7 +88,7 @@
                   <a href="https://twitter.com/RocketDownrange" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fab fa-twitter"></i> TWITTER</a>
                 </li>
                 <li class="nav-item">
-                  <a href="https://github.com/lun-co/lunco-game" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-gamepad"></i> LUNCO</a>
+                  <a href="https://lunco.space" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-gamepad"></i> LUNCO</a>
                 </li>
                 <li class="nav-item">
                   <a href="https://www.ivoyager.dev/" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-sun"></i> I, VOYAGER</a>

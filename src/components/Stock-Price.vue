@@ -31,7 +31,8 @@ export default {
     return {
       code: "See the Code",
       priceResults: [],
-      infoResults: []
+      infoResults: [],
+      polling: null,
     };
   },
   props:{
@@ -40,9 +41,6 @@ export default {
       LINK: String,
       FINN: String,
       START: String
-  },
-  mounted(){
-      this.fetchPRICE(this.TICKER)
   },
   methods:{
       fetchPRICE: function(t){
@@ -62,7 +60,20 @@ export default {
                 this.infoResults = response.data;
             })
             .catch(error => console.log(error));
+      },
+      pollData: function(t){
+        this.polling = setInterval(()=>{
+          this.fetchPRICE(this.TICKER)
+          this.fetchINFO(this.TICKER)
+          console.log("Run me")
+        }, 1000);
       }
+  },
+  created(){
+    this.pollData()
+  },
+  beforeDestroy(){
+    clearInterval(this.polling)
   }
 };
 </script>
