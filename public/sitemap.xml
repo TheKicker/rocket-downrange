@@ -8,72 +8,77 @@
 
 <url>
   <loc>https://rocketdownrange.com/</loc>
-  <lastmod>2022-05-25T15:15:15.743Z</lastmod>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://rocketdownrange.com/APOD</loc>
-  <lastmod>2022-05-25T15:15:15.743Z</lastmod>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://rocketdownrange.com/locations</loc>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
   <loc>https://rocketdownrange.com/solar-system</loc>
-  <lastmod>2022-05-25T15:15:15.743Z</lastmod>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
   <loc>https://rocketdownrange.com/astronaut</loc>
-  <lastmod>2022-05-25T15:15:15.743Z</lastmod>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
   <loc>https://rocketdownrange.com/vehicles</loc>
-  <lastmod>2022-05-25T15:15:15.743Z</lastmod>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
   <loc>https://rocketdownrange.com/astra</loc>
-  <lastmod>2022-05-25T15:15:15.743Z</lastmod>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rocketdownrange.com/astrobotic</loc>
-  <lastmod>2022-05-25T15:15:15.743Z</lastmod>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rocketdownrange.com/blue-origin</loc>
-  <lastmod>2022-05-25T15:15:15.743Z</lastmod>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rocketdownrange.com/firefly-aerospace</loc>
-  <lastmod>2022-05-25T15:15:15.743Z</lastmod>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rocketdownrange.com/rocket-lab</loc>
-  <lastmod>2022-05-25T15:15:15.743Z</lastmod>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
   <priority>0.85</priority>
 </url>
 <url>
   <loc>https://rocketdownrange.com/spacex</loc>
-  <lastmod>2022-05-25T15:15:15.743Z</lastmod>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
   <priority>0.85</priority>
 </url>
 <url>
   <loc>https://rocketdownrange.com/united-launch-alliance</loc>
-  <lastmod>2022-05-25T15:15:15.743Z</lastmod>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
   <priority>0.85</priority>
 </url>
 <url>
   <loc>https://rocketdownrange.com/virgin-galactic</loc>
-  <lastmod>2022-05-25T15:15:15.743Z</lastmod>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rocketdownrange.com/privacy-policy</loc>
-  <lastmod>2022-05-25T15:15:15.743Z</lastmod>
+  <lastmod>2022-06-01T15:15:15.743Z</lastmod>
   <priority>0.7</priority>
 </url>
 

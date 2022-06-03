@@ -8,7 +8,11 @@
       instagram="https://www.instagram.com/spacex/"
       youtube="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA"
     />
+
+    <LaunchLocations x="25.985752215917778" y="-97.18223317068392" z="12.5" content="Boca Chica Starbase" hidden/>
+    
     <NextLaunch />
+
     <LatestLaunch hidden/>
     <Quote
       message="Life cannot be just about solving one problem after another. There need to be things that inspire you, that make you glad to wake up and be a part of humanity."
@@ -97,6 +101,7 @@
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
 import OrgNews from "@/components/Org-News.vue";
+import LaunchLocations from "@/components/LaunchLocations.vue";
 import NextLaunch from "@/components/spacex/SpaceX-NextLaunch.vue";
 import LatestLaunch from "@/components/spacex/SpaceX-LatestLaunch.vue";
 import Starman from "@/components/spacex/SpaceX-Starman.vue";
@@ -107,6 +112,7 @@ export default {
   components: {
     Info,
     OrgNews,
+    LaunchLocations,
     NextLaunch,
     LatestLaunch,
     Starman,
