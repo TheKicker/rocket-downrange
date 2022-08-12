@@ -24,6 +24,24 @@
         link3txt="Space.com article"
         link3url="https://www.space.com/james-webb-space-telescope-launch-december-2021"
       />
+
+      <!-- Lunco Space section --> 
+      <OrgNews 
+        company="Space Industry & Godot"
+        year="2022"
+        title="Help wanted: LunCo Space"
+        srcType="image"
+        source="https://rocketdownrange.com/organizations/lunco.png"
+        description1="Recently, I was invited to join the team at LunCo where we plan to create a space simulation game that features industry real world applications.  While similar to games like Kerbal Space and No Man's Sky, LunCo will be feature two game styles - digital twin mode for engineers, and story mode for casual enthusiasts.  We also plan to allow user generated content (space crafts, trajectories, factories, etc.) and integration with professional tools like CAD, FEA, MBSE, and more. "
+        description2="For story mode, you are playing as a CEO & Founder of a Lunar exploration company in the near future.  You will collect resources, build factories, and manufacture robots to create a sustainable lunar base.  From there, it's up to you to turn the Moon into a stepping stone and launch past the stars!"
+        update="Aug 10, 2022"
+        link1txt="Itchi.io Profile"
+        link1url="https://difint.itch.io/lunco"
+        link2txt="Github Repository"
+        link2url="https://github.com/LunCoSim"
+        link3txt="Gitcoin Grant"
+        link3url="https://gitcoin.co/grants/5939/lunco-full-cycle-space-operations-sim-tool"
+      />
       
       <!-- RKLB Goes Public section --> 
       <OrgNews 

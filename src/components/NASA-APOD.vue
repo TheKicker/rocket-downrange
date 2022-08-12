@@ -19,7 +19,7 @@
             </div>
             <div v-else>
                 <a :href="results.hdurl" target="_blank" rel="noopener">
-                  <img :src="results.url" class="img-fluid" :alt="(results.title) +  ' - The NASA Astronomy Picture of the Day'"/>
+                  <img :src="results.url" class="img-fluid" style="margin: auto;" :alt="(results.title) +  ' - The NASA Astronomy Picture of the Day'"/>
                 </a>
             </div>
           </div>
