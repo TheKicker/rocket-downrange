@@ -62,6 +62,9 @@
                   <router-link class="nav-link ml-1" to="/rocket-lab">ROCKET LAB</router-link>
                 </li>
                 <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/sierra-space">SIERRA SPACE</router-link>
+                </li>
+                <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/spacex">SPACEX</router-link>
                 </li>
                 <li class="nav-item">

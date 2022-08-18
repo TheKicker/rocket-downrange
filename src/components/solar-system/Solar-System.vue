@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import Sun from "@/components/solar-system/Celestial-Sun.vue";
+import Solar from "@/components/solar-system/Celestial-Sun.vue";
 import Mercury from "@/components/solar-system/Celestial-Mercury.vue";
 import Venus from "@/components/solar-system/Celestial-Venus.vue";
 import Earth from "@/components/solar-system/Celestial-Earth.vue";
@@ -52,7 +52,7 @@ import Pluto from "@/components/solar-system/Celestial-Pluto.vue";
 export default {
   name: "SolarSystemTemplate",
   components: {
-    Sun,
+    Solar,
     Mercury,
     Venus,
     Earth,

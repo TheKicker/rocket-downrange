@@ -59,7 +59,7 @@
 console.log("The Sun is on fire! ");
 
 export default {
-  name: "Sun",
+  name: "Solar",
   data() {
     return {
       results: []

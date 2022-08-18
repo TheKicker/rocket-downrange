@@ -42,6 +42,11 @@ const routes = [
 		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/SpaceX.vue')
 	},
 	{
+		path: '/sierra-space',
+		name: 'Sierra Space',
+		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/Sierra-Space.vue')
+	},
+	{
 		path: '/astrobotic',
 		name: 'Astrobotic',
 		// route level code-splitting
