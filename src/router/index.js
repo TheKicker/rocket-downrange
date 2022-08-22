@@ -32,6 +32,11 @@ const routes = [
 		component: () => import(/* webpackChunkName: "calculator" */ '../views/Calculator.vue')
 	},
 	{
+		path: '/accessibility-statement',
+		name: 'Accessibility Statement',
+		component: () => import(/* webpackChunkName: "calculator" */ '../views/Accessibility-Statement.vue')
+	},
+	{
 		path: '/privacy-policy',
 		name: 'Privacy Policy',
 		component: () => import(/* webpackChunkName: "calculator" */ '../views/Privacy-Policy.vue')

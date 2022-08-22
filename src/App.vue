@@ -167,6 +167,7 @@
         </div>
         <div class="text-light navbar-text">
           <p><router-link to="/privacy-policy" class="text-light">Privacy Policy</router-link></p>
+          <p><router-link to="/accessibility-statement" class="text-light">Accessibility Statement</router-link></p>
         </div>
       </div>
     </div>
