@@ -20,12 +20,9 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto text-left">
-            <li class="nav-item">
-              <router-link class="nav-link" to="/">Home</router-link>
-            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore</a>
-              <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore</a>
+              <div class="dropdown-menu bg-primary" aria-labelledby="exploreDropdown">
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/apod"><i class="fas fa-regular fa-camera"></i> APOD</router-link>
                 </li>
@@ -44,8 +41,22 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Companies</a>
-              <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="roversDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rovers</a>
+              <div class="dropdown-menu bg-primary" aria-labelledby="roversDropdown">
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/Perseverance">PERSEVERANCE</router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/Curiosity">CURIOSITY</router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/Opportunity">OPPORTUNITY</router-link>
+                </li>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="companiesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Companies</a>
+              <div class="dropdown-menu bg-primary" aria-labelledby="companiesDropdown">
                 <li class="nav-item">
                     <router-link class="nav-link ml-1" to="/astrobotic">ASTROBOTIC</router-link>
                 </li>
@@ -76,8 +87,8 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">External Links</a>
-              <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="externalDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">External Links</a>
+              <div class="dropdown-menu bg-primary" aria-labelledby="externalDropdown">
                 
                 <li class="nav-item">
                   <a href="https://github.com/TheKicker/rocket-downrange" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-code"></i> GITHUB</a>

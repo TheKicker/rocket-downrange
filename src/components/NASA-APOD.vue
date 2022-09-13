@@ -13,7 +13,7 @@
           <h3 class="text-center my-3">{{ results.title }}</h3>
         </div>
         <div class="d-flex flex-lg-row flex-column">
-          <div class="row half">
+          <div class="row half" style="display: block; margin: 0 auto;">
             <div v-if="results.media_type == 'video'" class="embed-responsive embed-responsive-16by9">              
                 <iframe class="embed-responsive-item" :src="results.url" frameborder="0" allowfullscreen :title="company + ' - ' + title"></iframe>
             </div>
@@ -23,7 +23,7 @@
                 </a>
             </div>
           </div>
-          <div class="row half">
+          <div class="row half" style="display: block; margin: 0 auto;">
               <p class="text-primary">{{ results.explanation }}</p>
               <p class="text-muted">Last updated at {{ new Date(results.date).toLocaleString() }}, come back tomorrow for a new picture of the day!</p>
               <br>
@@ -74,6 +74,7 @@ export default {
       .get(url)
       .then(response => {
         this.results = response.data;
+        console.log(url)
       })
       .catch(error => console.log(error));
   }

@@ -8,23 +8,6 @@
       <br>
       <LLNextLaunch />
 
-      <!-- James Webb Telescope --> 
-      <OrgNews 
-        company="NASA Special Event"
-        year="2021"
-        title="James Webb is breaking boundaries"
-        srcType="image"
-        source="https://spaceflightnow.com/wp-content/uploads/2021/10/jwst_unbox1.jpg"
-        description1="On December 25th of 2021 - at approximately 7:20 EST the NASA James Webb Telescope lifted off on an Ariane 5 rocket from Ariane Space's ELA-3 launch complex in Kourou, French Guiana. Since, it has completed a number of maneuvers and corrections to place it into optimal position - it even sent back a selfie! "
-        update="Feb 14, 2021"
-        link1txt="NASA Profile"
-        link1url="https://www.jwst.nasa.gov/content/webbLaunch/index.html"
-        link2txt="Spaceflight Now article"
-        link2url="https://spaceflightnow.com/2021/10/19/webb-telescope-unboxed-after-shipment-to-guiana-space-center/"
-        link3txt="Space.com article"
-        link3url="https://www.space.com/james-webb-space-telescope-launch-december-2021"
-      />
-
       <!-- Lunco Space section --> 
       <OrgNews 
         company="Space Industry & Godot"

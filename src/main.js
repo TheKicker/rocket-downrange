@@ -18,6 +18,7 @@ Icon.Default.mergeOptions({
 
 Vue.config.productionTip = false;
 
+// Module for SEO purposes
 Vue.use(Meta);
 
 // You can also pass in the default options
