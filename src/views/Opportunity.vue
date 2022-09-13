@@ -5,20 +5,24 @@
     </div>
     <div class="profile-head">
       <div class="bio">
-        <img src="https://via.placeholder.com/150" class="profile-image">
+        <img src="@/assets/rover/OPPY.png" class="profile-image">
         <div class="name">
           <h1>Opportunity</h1>
-          <p><i class="fas fa-map-marker-alt mr-2"></i> Jezero Crater, Mars</p>
+          <p><i class="fas fa-map-marker-alt mr-2"></i> Meridiani Planum, Mars</p>
         </div>
       </div>
       <div class="stats">
         <div class="stats-item">
-          <h2>ACTIVE</h2>
+          <p class="stats-status">COMPLETE</p>
           <p class="small">Status</p>
         </div>
         <div class="stats-item">
-          <h2>MARCH 1st</h2>
-          <p class="small">LAUNCH</p>
+          <p class="stats-status">5,352 (5,498)</p>
+          <p class="small">SOLs (DAYs)</p>
+        </div>
+        <div class="stats-item">
+          <p class="stats-status">28.06 (45.16)</p>
+          <p class="small">MILES (KM)</p>
         </div>
       </div>
     </div>
@@ -81,10 +85,28 @@
 
 
 <script>
+// Oppy was operational for around 5100 sol days on Mars
+// Picture of the day is taken from a cache of these images
+const random_number = Math.floor(Math.random() * 5100);
+var api_key = process.env.VUE_APP_APOD_KEY
+window.axios = require("axios");
+
 export default {
   name: "Opportunity",
-  components: {
-    
+  data() {
+    return {
+      results: {}
+    };
+  },
+  mounted(){
+    var url = "https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=" + random_number + "&api_key=" + api_key;
+    console.log(url)
+    window.axios
+      .get(url)
+      .then(response => {
+        this.results = response.data;
+      })
+      .catch(error => console.log(error));
   },
   metaInfo: {
     title: "Rocket Downrange | Opportunity Rover",
@@ -189,6 +211,10 @@ export default {
 .stats-item{
   text-align: center;
   margin: auto 1rem;
+}
+.stats-status{
+  font-size: 18px;
+  font-weight: bold;
 }
 .profile-body{
   display: flex;
