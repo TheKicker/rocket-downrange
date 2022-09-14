@@ -171,17 +171,17 @@
       <router-view />
     </div>
 
-    <div id="footer" class="navbar navbar-dark bg-primary py-4 text-center">
+    <div id="footer" class="navbar navbar-dark bg-primary py-4 text-left">
       <div class="mx-auto my-4 container" id="footer-container">
+        <p class="h4"><router-link to="/" class="text-light">Rocket Downrange</router-link></p>
         <div class="text-light navbar-text">
-          <h4><router-link to="/" class="text-light">Rocket Downrange</router-link></h4>
+          <a href="https://cavlemasters.com" target="_blank" rel="noopener" class="text-light">{{trademark}} &copy; {{copy}}</a><br>
+          <router-link to="/accessibility-statement" class="text-light">Accessibility Statement</router-link><br>
+          <router-link to="/privacy-policy" class="text-light">Privacy Policy</router-link>
         </div>
-        <div class="text-light navbar-text">
-          <p><a href="https://cavlemasters.com" target="_blank" rel="noopener" class="text-light">{{trademark}} &copy; {{copy}}</a></p>
-        </div>
-        <div class="text-light navbar-text">
-          <p><router-link to="/privacy-policy" class="text-light">Privacy Policy</router-link></p>
-          <p><router-link to="/accessibility-statement" class="text-light">Accessibility Statement</router-link></p>
+        <div class="text-light navbar-text text-left">
+          <a href="https://twitter.com/RocketDownrange" target="_blank" rel="noopener" class="mx-1" aria-label="Rocket Downrange - Twitter link"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="https://www.buymeacoffee.com/cavlemasters" target="_blank" rel="noopener" class="mx-1" aria-label="Rocket Downrange - Link to support the project on Buy Me a Coffee"><i class="fas fa-coffee fa-2x"></i></a>
         </div>
       </div>
     </div>
@@ -299,7 +299,6 @@ export default {
 }
 
 #footer-container{
-  width: 75%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
