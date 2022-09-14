@@ -288,6 +288,13 @@ export default {
     width: 100%;
     height: 300px;
   }
+  .profile-feed{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .img{
+    height: 300px;
+    width: 300px;
+  }
 }
 </style>
 

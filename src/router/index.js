@@ -136,6 +136,11 @@ const routes = [
 		component: () => import(/* webpackChunkName: "about" */ '../views/Spirit.vue')
 	},
 	{
+		path: '/Sojourner',
+		name: 'Sojourner',
+		component: () => import(/* webpackChunkName: "about" */ '../views/Sojourner.vue')
+	},
+	{
 		path: '/test',
 		name: 'Test',
 		component: () => import(/* webpackChunkName: "Test" */ '../views/Test.vue')
