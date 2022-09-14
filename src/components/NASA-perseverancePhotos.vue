@@ -6,7 +6,6 @@
           Mars Perseverance Rover Picture of the Day:
         </h5>
         <hr />
-        <h3 class="text-center my-4"></h3>
         <div class="row">
           <div class="mx-auto">
             <div
