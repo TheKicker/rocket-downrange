@@ -18,7 +18,7 @@
           <p class="small">Status</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">555 (571)</p>
+          <p class="stats-status">{{solsAlive}} ({{daysAlive}})</p>
           <p class="small">SOLs (DAYs)</p>
         </div>
         <div class="stats-item">
@@ -80,17 +80,23 @@ oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
 const lastYear = oneWeekAgo.getFullYear();
 const lastMonth = oneWeekAgo.getMonth() + 1;
 const lastDay = oneWeekAgo.getDate();
-var api_key = process.env.VUE_APP_APOD_KEY
+var api_key = process.env.VUE_APP_APOD_KEY;
 window.axios = require("axios");
 
 export default {
   name: "Perseverance",
   data() {
     return {
-      results: {}
+      results: {},
+      daysAlive: 0,
+      solsAlive: 0,
     };
   },
   mounted(){
+    const startDate  = '2021-02-18';
+    const diffInMs   = new Date() - new Date(startDate);
+    this.daysAlive = (diffInMs / (1000 * 60 * 60 * 24)).toFixed(0) -1;
+    this.solsAlive = (diffInMs / (1000 * 60 * 60 * 24)* 0.97297297297).toFixed(0) -1;
     var url = `https://api.nasa.gov/mars-photos/api/v1/rovers/perseverance/photos?earth_date=${lastYear}-${lastMonth}-${lastDay}&api_key=${api_key}`;
     console.log(url)
     window.axios

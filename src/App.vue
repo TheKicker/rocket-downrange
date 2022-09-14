@@ -6,18 +6,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-center">
       <div class="container">
         <router-link class="navbar-brand" to="/">{{ org }}</router-link>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto text-center">
             <li class="nav-item dropdown">
@@ -124,7 +115,6 @@
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userModal">
               <h6 class="my-2 my-lg-0 text-white">
                 {{ getGreeting }}, {{ username }}
-                <i class="fa fa-user-circle"></i>
               </h6>
             </button>
           </div>
@@ -133,14 +123,7 @@
     </nav>
 
     <!-- Modal -->
-    <div
-      class="modal fade"
-      id="userModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="userModalLabel"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -152,18 +135,13 @@
             </button>
           </div>
           <div class="modal-body">
-            <div>
-              <label class="col-form-label" for="inputDefault">Let's be friends, what should I call you?</label>
-              <input type="text" class="form-control" placeholder="Buzz Lightyear" id="inputDefault" v-model="username"/>
-            </div>       
+            <label class="col-form-label" for="inputDefault">Let's be friends, what should I call you?</label>
+            <input type="text" class="form-control" placeholder="Buzz Lightyear" id="inputDefault" v-model="username"/>      
           </div>
           <div class="modal-footer">
               <div class="m-footer">
-                <router-link to="/privacy-policy">
-                  <button type="button" class="btn btn-outline-info" data-dismiss="modal">Privacy Policy</button>
-                </router-link>
-                <button type="button" @click="validate()" class="btn btn-outline-success" data-dismiss="modal">Save changes</button>
-                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close lightbox</button>
+                <button type="button" @click="validate()" class="btn btn-success" data-dismiss="modal">Save changes</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close lightbox</button>
             </div>
           </div>
         </div>
@@ -173,21 +151,21 @@
     <div>
       <router-view />
     </div>
-
-    <div id="footer" class="navbar navbar-dark bg-primary py-4 text-left">
-      <div class="mx-auto my-4 container" id="footer-container">
-        <p class="h4"><router-link to="/" class="text-light">Rocket Downrange</router-link></p>
-        <div class="text-light navbar-text">
-          <a href="https://cavlemasters.com" target="_blank" rel="noopener" class="text-light">{{trademark}} &copy; {{copy}}</a><br>
-          <router-link to="/accessibility-statement" class="text-light">Accessibility Statement</router-link><br>
-          <router-link to="/privacy-policy" class="text-light">Privacy Policy</router-link>
+    <div class="bg-primary py-5">
+      <div id="footer" class="container my-4">
+        <router-link to="/" class="footer-child fc-1">ROCKET DOWNRANGE</router-link>
+        <div class="footer-child fc-2">
+            <a href="https://cavlemasters.com" target="_blank" rel="noopener" class="text-light">{{trademark}} &copy; {{copy}}</a><br>
+            <a href="https://twitter.com/RocketDownrange" target="_blank" rel="noopener" class="mx-2 text-light" aria-label="Rocket Downrange - Twitter link"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.buymeacoffee.com/cavlemasters" target="_blank" rel="noopener" class="mx-2 text-light" aria-label="Rocket Downrange - Link to support the project on Buy Me a Coffee"><i class="fas fa-coffee fa-2x"></i></a>
         </div>
-        <div class="text-light navbar-text text-left">
-          <a href="https://twitter.com/RocketDownrange" target="_blank" rel="noopener" class="mx-1" aria-label="Rocket Downrange - Twitter link"><i class="fab fa-twitter fa-2x"></i></a>
-          <a href="https://www.buymeacoffee.com/cavlemasters" target="_blank" rel="noopener" class="mx-1" aria-label="Rocket Downrange - Link to support the project on Buy Me a Coffee"><i class="fas fa-coffee fa-2x"></i></a>
+         <div class="footer-child fc-3">
+            <router-link to="/accessibility-statement" class="text-light">Accessibility Statement</router-link><br>
+            <router-link to="/privacy-policy" class="text-light">Privacy Policy</router-link>
         </div>
       </div>
     </div>
+    
   </div>
 </template>
 
@@ -301,12 +279,6 @@ export default {
   color: black !important;
 }
 
-#footer-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .ticker{
   font-weight: bolder;
 }
@@ -315,18 +287,50 @@ export default {
   font-size: 12px;
 }
 
+#footer{
+  background: #1a1a1a;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer-child{
+  flex: 1;
+}
+.fc-1, .fc-2, .fc-3{
+  color: white;
+}
+.fc-1, .fc-2, .fc-3:hover{
+  color: whitesmoke !important;
+  text-decoration: none !important;
+}
+.fc-1{
+  text-align: left;
+  font-size: 20px;
+}
+.fc-2{
+  text-align: center;
+  line-height: 30px;
+}
+.fc-3{
+  text-align: right;
+  line-height: 25px;
+}
+
 @media only screen and (max-width: 999px) {
   #marqueecontainer{
     display: none;
   }
-  
-  #footer-container{
-    width: 100%;
+  #footer{
     flex-direction: column;
   }
   .nav-link{
     font-size: 14px;
   }
+  .fc-1, .fc-2, .fc-3{
+    padding: 1rem 0;
+    text-align: center;
+}
 }
 
 </style>
