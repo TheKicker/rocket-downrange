@@ -52,6 +52,9 @@
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/Opportunity">OPPORTUNITY</router-link>
                 </li>
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/Spirit">SPIRIT</router-link>
+                </li>
               </div>
             </li>
             <li class="nav-item dropdown">

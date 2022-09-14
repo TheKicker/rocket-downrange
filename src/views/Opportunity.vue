@@ -6,7 +6,7 @@
   <div class="mx-auto container">
     <div class="profile-head">
       <div class="bio">
-        <img src="@/assets/rover/OPPY.png" class="profile-image">
+        <img src="@/assets/rover/OPPY.png" class="profile-image" alt="Rocket Downrange Rover profile image for the MER-B 'Opportunity' Mars Rover">
         <div class="name">
           <h1 class="roverName">Opportunity</h1>
           <p class="roverLocation"><i class="fas fa-map-marker-alt mr-2"></i> Meridiani Planum, Mars</p>
@@ -36,7 +36,7 @@
         <hr>
         <div class="foobar">
           <p class="foo">Biography:</p>
-          <p class="bar">Nicknamed "Oppy", the MER-B or MER-1 rover Opportunity was a robotic rover that was active on Mars from January 2004 to June 2018 when we lost contact with it.  The general consensus is that there was too much build up on its solar panels, causing a lack of power to the rover, mission was declared complete on February 13th of 2019.</p>
+          <p class="bar">Nicknamed "Oppy", the MER-B or MER-1 rover Opportunity was a robotic rover <router-link to="/Spirit">(and sibling to Spirit)</router-link> that was active on Mars from January 2004 to June 2018 when we lost contact with it.  The general consensus is that there was too much build up on its solar panels, causing a lack of power to the rover, mission was declared complete on February 13th of 2019.</p>
         </div>
         <div class="foobar">
           <p class="foo">Launch Date:</p>
@@ -103,7 +103,7 @@ export default {
       {
         name: "description",
         content:
-          "Nicknamed 'Oppy', the MER-B or MER-1 rover Opportunity was a robotic rover that was active on Mars from January 2004 to June 2018 when we lost contact with it.  RIP Oppy!",
+          "Nicknamed 'Oppy', the MER-B or MER-1 rover Opportunity was a robotic rover (and sibling to Spirit) that was active on Mars from January 2004 to June 2018 when we lost contact with it.  RIP Oppy!",
       },
       {
         name: "keywords",
@@ -128,7 +128,7 @@ export default {
       {
         property: "og:description",
         content:
-          "Nicknamed 'Oppy', the MER-B or MER-1 rover Opportunity was a robotic rover that was active on Mars from January 2004 to June 2018 when we lost contact with it.  RIP Oppy!",
+          "Nicknamed 'Oppy', the MER-B or MER-1 rover Opportunity was a robotic rover (and sibling to Spirit) that was active on Mars from January 2004 to June 2018 when we lost contact with it.  RIP Oppy!",
       },
 
       // Twitter card
@@ -144,7 +144,7 @@ export default {
       {
         name: "twitter:description",
         content:
-          "Nicknamed 'Oppy', the MER-B or MER-1 rover Opportunity was a robotic rover that was active on Mars from January 2004 to June 2018 when we lost contact with it.  RIP Oppy!",
+          "Nicknamed 'Oppy', the MER-B or MER-1 rover Opportunity was a robotic rover (and sibling to Spirit) that was active on Mars from January 2004 to June 2018 when we lost contact with it.  RIP Oppy!",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
@@ -158,7 +158,7 @@ export default {
       {
         itemprop: "description",
         content:
-          "Nicknamed 'Oppy', the MER-B or MER-1 rover Opportunity was a robotic rover that was active on Mars from January 2004 to June 2018 when we lost contact with it.  RIP Oppy!",
+          "Nicknamed 'Oppy', the MER-B or MER-1 rover Opportunity was a robotic rover (and sibling to Spirit) that was active on Mars from January 2004 to June 2018 when we lost contact with it.  RIP Oppy!",
       },
       {
         itemprop: "image",

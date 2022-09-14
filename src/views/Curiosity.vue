@@ -6,7 +6,7 @@
   <div class="mx-auto container">
     <div class="profile-head">
       <div class="bio">
-        <img src="@/assets/rover/CURI.png" class="profile-image">
+        <img src="@/assets/rover/CURI.png" class="profile-image" alt="Rocket Downrange Rover profile image for the 'Curiosity' Mars Rover">
         <div class="name">
           <h1>Curiosity</h1>
           <p><i class="fas fa-map-marker-alt mr-2"></i> Gale Crater, Mars</p>

@@ -6,49 +6,49 @@
   <div class="mx-auto container">
     <div class="profile-head">
       <div class="bio">
-        <img src="@/assets/rover/PERCY.png" class="profile-image" alt="Rocket Downrange Rover profile image for the 'Perseverance' Mars Rover">
+        <img src="@/assets/rover/SPIRIT.png" class="profile-image" alt="Rocket Downrange Rover profile image for the MER-A 'Spirit' Mars Rover">
         <div class="name">
-          <h1 class="roverName">Perseverance</h1>
-          <p class="roverLocation"><i class="fas fa-map-marker-alt mr-2"></i> Jezero Crater, Mars</p>
+          <h1 class="roverName">Spirit</h1>
+          <p class="roverLocation"><i class="fas fa-map-marker-alt mr-2"></i> Gusev Crater, Mars</p>
         </div>
       </div>
       <div class="stats">
         <div class="stats-item">
-          <p class="stats-status">ACTIVE</p>
+          <p class="stats-status">COMPLETE</p>
           <p class="small">Status</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">555 (571)</p>
+          <p class="stats-status">1,892 (1,944)</p>
           <p class="small">SOLs (DAYs)</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">7.80 (12.56)</p>
+          <p class="stats-status">4.8 (7.73)</p>
           <p class="small">MILES (KM)</p>
         </div>
       </div>
     </div>
     <div class="profile-body">
       <div class="body-3d">
-        <iframe src="https://mars.nasa.gov/gltf_embed/25042" width="100%" height="100%" frameborder="0" />
+        <iframe src="https://mars.nasa.gov/gltf_embed/24883" width="100%" height="100%" frameborder="0" />
       </div>
       <div class="body-bio">
         <h2>ABOUT</h2>
         <hr>
         <div class="foobar">
           <p class="foo">Biography:</p>
-          <p class="bar">Nicknamed "Percy", this rover is similar to its predecessor, <router-link to="/curiosity">Curiosity</router-link> - however it adds a variety of awesome upgrades to test in the martian landscape like oxygen production and a detachable helicopter.  This biography will grow as Percy continues its mission to seek out evidence of microbial life and collecting rock/soil samples for return.</p>
+          <p class="bar">The MER-A rover Spirit was a robotic rover <router-link to="/Opportunity">(and sibling to Opportunity)</router-link> that was active on Mars from January 2004 to June 2010 when we lost contact with it. The general consensus was that after completing a number of scientific experiments on martian soil, the rover became stuck in soft sand. It continued to do studies until contact was lost.</p>
         </div>
         <div class="foobar">
           <p class="foo">Launch Date:</p>
-          <p class="bar">July 30th, 2020</p>
+          <p class="bar">June 10th, 2003</p>
         </div>
         <div class="foobar">
           <p class="foo">Landing Date:</p>
-          <p class="bar">February 18th, 2021</p>
+          <p class="bar">January 4th, 2004</p>
         </div>
         <div class="foobar">
           <p class="foo">Rover Cost:</p>
-          <p class="bar">$2.4 billion</p>
+          <p class="bar">$400 million</p>
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@
     </div>
     <div class="profile-feed">
       <a v-for="(result, index) in results.photos" :key="index" :href="result.img_src" target="_blank" rel="noopener">
-        <img :src="result.img_src" :alt="'Photo id#' + result.id + ' taken by Perseverance Rover in the Jezero Crater on Mars'" class="img">
+        <img :src="result.img_src" :alt="'Photo id#' + result.id + ' taken by Spirit Rover in the Gusev Crater on Mars'" class="img">
       </a>
     </div>
     <div class="py-3">
@@ -73,25 +73,21 @@
 
 
 <script>
-var oneDayAgo = new Date();
-oneDayAgo.setDate(oneDayAgo.getDate() - 1);
-var oneWeekAgo = new Date();
-oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
-const lastYear = oneWeekAgo.getFullYear();
-const lastMonth = oneWeekAgo.getMonth() + 1;
-const lastDay = oneWeekAgo.getDate();
+// Oppy was operational for around 5100 sol days on Mars
+// Picture of the day is taken from a cache of these images
+const random_number = Math.floor(Math.random() * 5100);
 var api_key = process.env.VUE_APP_APOD_KEY
 window.axios = require("axios");
 
 export default {
-  name: "Perseverance",
+  name: "Spirit",
   data() {
     return {
       results: {}
     };
   },
   mounted(){
-    var url = `https://api.nasa.gov/mars-photos/api/v1/rovers/perseverance/photos?earth_date=${lastYear}-${lastMonth}-${lastDay}&api_key=${api_key}`;
+    var url = "https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=" + random_number + "&api_key=" + api_key;
     console.log(url)
     window.axios
       .get(url)
@@ -101,28 +97,28 @@ export default {
       .catch(error => console.log(error));
   },
   metaInfo: {
-    title: "Rocket Downrange | Perseverance Rover",
+    title: "Rocket Downrange | Spirit Rover",
     meta: [
       { name: "author", content: "Github: @TheKicker" },
       {
         name: "description",
         content:
-          "Nicknamed 'Percy', this rover is similar to its predecessor, Curiosity - however it adds a variety of awesome upgrades to test in the martian landscape like oxygen production and a detachable helicopter.",
+          "The MER-A rover Spirit was a robotic rover (and sibling to Opportunity) that was active on Mars from January 2004 to June 2010 when we lost contact with it.",
       },
       {
         name: "keywords",
         content:
-          "Rocket, Downrange, NASA, JPL, Mars, Rovers, Perseverance",
+          "Rocket, Downrange, NASA, JPL, Mars, Rovers, Spirit",
       },
       // OpenGraph data (Most widely used)
-      { property: "og:title", content: "Rocket Downrange | Perseverance Rover" },
+      { property: "og:title", content: "Rocket Downrange | Spirit Rover" },
       { property: "og:site_name", content: "Rocket Downrange" },
       // The list of types is available here: http://ogp.me/#types
       { property: "og:type", content: "website" },
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/perseverance",
+        content: "https://www.rocketdownrange.com/spirit",
       },
       {
         property: "og:image",
@@ -132,23 +128,23 @@ export default {
       {
         property: "og:description",
         content:
-          "Nicknamed 'Percy', this rover is similar to its predecessor, Curiosity - however it adds a variety of awesome upgrades to test in the martian landscape like oxygen production and a detachable helicopter.",
+          "The MER-A rover Spirit was a robotic rover (and sibling to Opportunity) that was active on Mars from January 2004 to June 2010 when we lost contact with it.",
       },
 
       // Twitter card
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com/perseverance",
+        content: "https://www.rocketdownrange.com/spirit",
       },
       {
         name: "twitter:title",
-        content: "Rocket Downrange | Perseverance Rover",
+        content: "Rocket Downrange | Spirit Rover",
       },
       {
         name: "twitter:description",
         content:
-          "Nicknamed 'Percy', this rover is similar to its predecessor, Curiosity - however it adds a variety of awesome upgrades to test in the martian landscape like oxygen production and a detachable helicopter.",
+          "The MER-A rover Spirit was a robotic rover (and sibling to Opportunity) that was active on Mars from January 2004 to June 2010 when we lost contact with it.",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
@@ -158,11 +154,11 @@ export default {
       },
 
       // Google / Schema.org markup:
-      { itemprop: "name", content: "Rocket Downrange | Perseverance Rover" },
+      { itemprop: "name", content: "Rocket Downrange | Spirit Rover" },
       {
         itemprop: "description",
         content:
-          "Nicknamed 'Percy', this rover is similar to its predecessor, Curiosity - however it adds a variety of awesome upgrades to test in the martian landscape like oxygen production and a detachable helicopter.",
+          "The MER-A rover Spirit was a robotic rover (and sibling to Opportunity) that was active on Mars from January 2004 to June 2010 when we lost contact with it.",
       },
       {
         itemprop: "image",
@@ -288,7 +284,12 @@ export default {
     width: 100%;
     height: 300px;
   }
+  .profile-feed{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .img{
+    height: 300px;
+    width: 300px;
+  }
 }
 </style>
-
-
