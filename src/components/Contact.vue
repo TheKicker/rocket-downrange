@@ -33,6 +33,7 @@
                         class="form-control"
                         id="name"
                         name="name"
+                        aria-label="Form input for your name (first and last) or organization"
                         placeholder="First and Last Name"
                         required
                       />
@@ -50,6 +51,7 @@
                         class="form-control"
                         id="email"
                         name="email"
+                        aria-label="Form input for your email account"
                         placeholder="Email Address"
                         required
                       />
@@ -67,6 +69,7 @@
                         class="form-control"
                         id="subject"
                         name="subject"
+                        aria-label="Form input for the subject of your message"
                         placeholder="Subject"
                         required
                       />
@@ -84,6 +87,7 @@
                         class="form-control"
                         placeholder="Write your message here!"
                         name="message"
+                        aria-label="Form text box for your message"
                         id="message"
                         required
                       ></textarea>
@@ -93,7 +97,7 @@
                   <p class="ohnohoney">
                     <label>
                       Are you happy:
-                      <input type="hidden" name="form-name" value="Contact" />
+                      <input type="hidden" name="form-name" value="Contact" aria-label="No human should ever check this honey pot field." />
                     </label>
                   </p>
 

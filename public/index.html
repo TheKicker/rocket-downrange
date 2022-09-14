@@ -97,11 +97,11 @@
 
   <!-- A little help for the Netlify post-processing bots -->
   <form method="POST" name="Contact" netlify-honeypot="bot-field" data-netlify="true" hidden>
-    <input type="text" id="name" name="name" required />
-    <input type="email" id="email" name="email" required />
-    <input type="text" id="subject" name="subject" required />
-    <textarea name="message" id="message" required></textarea>
-    <p class="ohnohoney">Are you happy:<input type="hidden" name="form-name" value="Contact" /></p>
+    <input type="text" id="name" name="name" required aria-label="Form input for your name (first and last) or organization"/>
+    <input type="email" id="email" name="email" required aria-label="Form input for your email account"/>
+    <input type="text" id="subject" name="subject" required aria-label="Form input for the subject of your message"/>
+    <textarea name="message" id="message" required aria-label="Form text box for your message"></textarea>
+    <p class="ohnohoney">Are you happy:<input type="hidden" name="form-name" value="Contact" aria-label="No human should ever check this honey pot field." /></p>
     <button type="submit" name="submit">submit</button>
   </form>
 
