@@ -1,8 +1,9 @@
 <template>
-  <div class="mx-auto container">
-    <div class="cover">
+<div>
+  <div class="cover">
       <!-- Cover image size set by scoped CSS -->
-    </div>
+  </div>
+  <div class="mx-auto container">
     <div class="profile-head">
       <div class="bio">
         <img src="@/assets/rover/CURI.png" class="profile-image">
@@ -28,7 +29,7 @@
     </div>
     <div class="profile-body">
       <div class="body-3d">
-        <iframe src="https://mars.nasa.gov/gltf_embed/24584" width="100%" height="450px" frameborder="0" />
+        <iframe src="https://mars.nasa.gov/gltf_embed/24584" width="100%" height="100%" frameborder="0" />
       </div>
       <div class="body-bio">
         <h2>ABOUT</h2>
@@ -81,6 +82,7 @@
       </p>
     </div>
   </div>
+</div>
 </template>
 
 
@@ -190,15 +192,15 @@ export default {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 400px;
 }
 .profile-head{
   display: flex;
   justify-content: space-between;
 }
 .profile-image{
-  transform: translateY(-2rem);
-  outline: 5px solid white;
+  transform: translateY(-2.5rem);
+  border: 5px white solid;
   border-radius: 45%;
 }
 .bio{
@@ -230,6 +232,7 @@ export default {
   padding: 1rem;
 }
 .body-3d{
+  height: 450px;
   width: 45%;
 }
 .foobar{
@@ -259,5 +262,45 @@ export default {
   width: 250px;
   object-fit: cover;
 }
-</style>
 
+@media only screen and (max-width: 900px){
+  .cover {
+    height: 200px;
+  }
+  .roverName{
+    font-size: 18px;
+  }
+  .roverLocation{
+    font-size: 12px;
+  }
+  .profile-head{
+    flex-direction: column;
+  }
+  .profile-image{
+    width: 120px;
+  }
+  .stats{
+    justify-content: space-evenly;
+  }
+  .stats-item{
+    margin: auto 0.5rem;
+  }
+  .stats-status{
+    font-size: 12px;
+  }
+  .profile-body{
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .body-bio{
+    width: 100%;
+    padding: 1rem;
+  }
+  .body-3d{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 300px;
+  }
+}
+</style>
