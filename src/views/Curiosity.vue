@@ -36,43 +36,29 @@
         <hr>
         <div class="foobar">
           <p class="foo">Biography:</p>
-          <p class="bar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sequi amet deleniti incidunt voluptatum omnis numquam aspernatur, consequuntur atque recusandae laboriosam aperiam nobis debitis? Rem aperiam quas ab nam deserunt expedita ut amet. Nobis rem voluptatem, quae doloremque fugit, sint similique deserunt veritatis ab nemo vero, laudantium illo suscipit sequi sed blanditiis.</p>
+          <p class="bar">Designed to explore the Gale Crater, the Curiosity Rover is a car sized vehicle designed to study climate and geology on Mars in preparation for human exploration. On the 6th of August 2022, a detailed overview of the many accomplishments made by the Curiosity Rover over the last ten years was released. </p>
         </div>
         <div class="foobar">
           <p class="foo">Launch Date:</p>
-          <p class="bar">01/01/2000</p>
+          <p class="bar">November 26th, 2011</p>
         </div>
         <div class="foobar">
-          <p class="foo">Launch Date:</p>
-          <p class="bar">01/01/2000</p>
+          <p class="foo">Landing Date:</p>
+          <p class="bar">August 6th, 2012</p>
         </div>
         <div class="foobar">
-          <p class="foo">Launch Date:</p>
-          <p class="bar">01/01/2000</p>
+          <p class="foo">Rover Cost:</p>
+          <p class="bar">$2.5 billion</p>
         </div>
       </div>
     </div>
+    <div class="mt-4">
+      <h2>Rover Photo Feed</h2>
+      <p>Photos taken on Earth date {{results.photos[0].earth_date}}, come back tomorrow for a new set!</p>
+    </div>
     <div class="profile-feed">
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
+      <a v-for="(result, index) in results.photos" :key="index" :href="result.img_src" target="_blank" rel="noopener">
+        <img :src="result.img_src" :alt="'Photo id#' + result.id + ' taken by Curiosity Rover in the Gale Crater on Mars'" class="img">
       </a>
     </div>
     <div class="py-3">
@@ -121,12 +107,12 @@ export default {
       {
         name: "description",
         content:
-          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+          "Designed to explore the Gale Crater, the Curiosity Rover is a car sized vehicle designed to study climate and geology on Mars in preparation for human exploration.",
       },
       {
         name: "keywords",
         content:
-          "Rocket, Downrange, NASA, APOD, Astronomy, Picture, Day, Historical, Lookup, Tool, Space, Images, Video, GIF",
+          "Rocket, Downrange, NASA, JPL, Mars, Rovers, Curiosity",
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange | Curiosity Rover" },
@@ -136,7 +122,7 @@ export default {
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/APOD",
+        content: "https://www.rocketdownrange.com/curiosity",
       },
       {
         property: "og:image",
@@ -146,7 +132,7 @@ export default {
       {
         property: "og:description",
         content:
-          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+          "Designed to explore the Gale Crater, the Curiosity Rover is a car sized vehicle designed to study climate and geology on Mars in preparation for human exploration.",
       },
 
       // Twitter card
@@ -162,7 +148,7 @@ export default {
       {
         name: "twitter:description",
         content:
-          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+          "Designed to explore the Gale Crater, the Curiosity Rover is a car sized vehicle designed to study climate and geology on Mars in preparation for human exploration.",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
@@ -176,7 +162,7 @@ export default {
       {
         itemprop: "description",
         content:
-          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+          "Designed to explore the Gale Crater, the Curiosity Rover is a car sized vehicle designed to study climate and geology on Mars in preparation for human exploration.",
       },
       {
         itemprop: "image",

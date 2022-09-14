@@ -18,7 +18,7 @@
           <p class="small">Status</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">5,352 (5,498)</p>
+          <p class="stats-status">555 (571)</p>
           <p class="small">SOLs (DAYs)</p>
         </div>
         <div class="stats-item">
@@ -36,43 +36,29 @@
         <hr>
         <div class="foobar">
           <p class="foo">Biography:</p>
-          <p class="bar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sequi amet deleniti incidunt voluptatum omnis numquam aspernatur, consequuntur atque recusandae laboriosam aperiam nobis debitis? Rem aperiam quas ab nam deserunt expedita ut amet. Nobis rem voluptatem, quae doloremque fugit, sint similique deserunt veritatis ab nemo vero, laudantium illo suscipit sequi sed blanditiis.</p>
+          <p class="bar">Nicknamed "Percy", this rover is similar to its predecessor, <router-link to="/curiosity">Curiosity</router-link> - however it adds a variety of awesome upgrades to test in the martian landscape like oxygen production and a detachable helicopter.  This biography will grow as Percy continues its mission to seek out evidence of microbial life and collecting rock/soil samples for return.</p>
         </div>
         <div class="foobar">
           <p class="foo">Launch Date:</p>
-          <p class="bar">01/01/2000</p>
+          <p class="bar">July 30th, 2020</p>
         </div>
         <div class="foobar">
-          <p class="foo">Launch Date:</p>
-          <p class="bar">01/01/2000</p>
+          <p class="foo">Landing Date:</p>
+          <p class="bar">February 18th, 2021</p>
         </div>
         <div class="foobar">
-          <p class="foo">Launch Date:</p>
-          <p class="bar">01/01/2000</p>
+          <p class="foo">Rover Cost:</p>
+          <p class="bar">$2.4 billion</p>
         </div>
       </div>
     </div>
+    <div class="mt-4">
+      <h2>Rover Photo Feed</h2>
+      <p>Photos taken on Earth date {{results.photos[0].earth_date}}, come back tomorrow for a new set!</p>
+    </div>
     <div class="profile-feed">
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
+      <a v-for="(result, index) in results.photos" :key="index" :href="result.img_src" target="_blank" rel="noopener">
+        <img :src="result.img_src" :alt="'Photo id#' + result.id + ' taken by Perseverance Rover in the Jezero Crater on Mars'" class="img">
       </a>
     </div>
     <div class="py-3">
@@ -121,12 +107,12 @@ export default {
       {
         name: "description",
         content:
-          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+          "Nicknamed 'Percy', this rover is similar to its predecessor, Curiosity - however it adds a variety of awesome upgrades to test in the martian landscape like oxygen production and a detachable helicopter.",
       },
       {
         name: "keywords",
         content:
-          "Rocket, Downrange, NASA, APOD, Astronomy, Picture, Day, Historical, Lookup, Tool, Space, Images, Video, GIF",
+          "Rocket, Downrange, NASA, JPL, Mars, Rovers, Perseverance",
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange | Perseverance Rover" },
@@ -136,7 +122,7 @@ export default {
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/APOD",
+        content: "https://www.rocketdownrange.com/perseverance",
       },
       {
         property: "og:image",
@@ -146,14 +132,14 @@ export default {
       {
         property: "og:description",
         content:
-          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+          "Nicknamed 'Percy', this rover is similar to its predecessor, Curiosity - however it adds a variety of awesome upgrades to test in the martian landscape like oxygen production and a detachable helicopter.",
       },
 
       // Twitter card
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com/APOD",
+        content: "https://www.rocketdownrange.com/perseverance",
       },
       {
         name: "twitter:title",
@@ -162,7 +148,7 @@ export default {
       {
         name: "twitter:description",
         content:
-          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+          "Nicknamed 'Percy', this rover is similar to its predecessor, Curiosity - however it adds a variety of awesome upgrades to test in the martian landscape like oxygen production and a detachable helicopter.",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
@@ -176,7 +162,7 @@ export default {
       {
         itemprop: "description",
         content:
-          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+          "Nicknamed 'Percy', this rover is similar to its predecessor, Curiosity - however it adds a variety of awesome upgrades to test in the martian landscape like oxygen production and a detachable helicopter.",
       },
       {
         itemprop: "image",

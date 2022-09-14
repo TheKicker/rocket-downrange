@@ -22,7 +22,7 @@
           <ul class="navbar-nav mr-auto text-center">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore</a>
-              <div class="dropdown-menu bg-primary text-center" aria-labelledby="exploreDropdown">
+              <div class="dropdown-menu bg-primary text-left" aria-labelledby="exploreDropdown">
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/apod"><i class="fas fa-regular fa-camera"></i> APOD</router-link>
                 </li>
@@ -42,7 +42,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="roversDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rovers</a>
-              <div class="dropdown-menu bg-primary text-center" aria-labelledby="roversDropdown">
+              <div class="dropdown-menu bg-primary text-left" aria-labelledby="roversDropdown">
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/Perseverance">PERSEVERANCE</router-link>
                 </li>
@@ -56,7 +56,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="companiesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Companies</a>
-              <div class="dropdown-menu bg-primary text-center" aria-labelledby="companiesDropdown">
+              <div class="dropdown-menu bg-primary text-left" aria-labelledby="companiesDropdown">
                 <li class="nav-item">
                     <router-link class="nav-link ml-1" to="/astrobotic">ASTROBOTIC</router-link>
                 </li>

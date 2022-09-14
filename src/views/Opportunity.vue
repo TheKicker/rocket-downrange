@@ -36,43 +36,29 @@
         <hr>
         <div class="foobar">
           <p class="foo">Biography:</p>
-          <p class="bar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sequi amet deleniti incidunt voluptatum omnis numquam aspernatur, consequuntur atque recusandae laboriosam aperiam nobis debitis? Rem aperiam quas ab nam deserunt expedita ut amet. Nobis rem voluptatem, quae doloremque fugit, sint similique deserunt veritatis ab nemo vero, laudantium illo suscipit sequi sed blanditiis.</p>
+          <p class="bar">Nicknamed "Oppy", the MER-B or MER-1 rover Opportunity was a robotic rover that was active on Mars from January 2004 to June 2018 when we lost contact with it.  The general consensus is that there was too much build up on its solar panels, causing a lack of power to the rover, mission was declared complete on February 13th of 2019.</p>
         </div>
         <div class="foobar">
           <p class="foo">Launch Date:</p>
-          <p class="bar">01/01/2000</p>
+          <p class="bar">July 8th, 2003</p>
         </div>
         <div class="foobar">
-          <p class="foo">Launch Date:</p>
-          <p class="bar">01/01/2000</p>
+          <p class="foo">Landing Date:</p>
+          <p class="bar">January 25th, 2004</p>
         </div>
         <div class="foobar">
-          <p class="foo">Launch Date:</p>
-          <p class="bar">01/01/2000</p>
+          <p class="foo">Rover Cost:</p>
+          <p class="bar">$400 million</p>
         </div>
       </div>
     </div>
+    <div class="mt-4">
+      <h2>Rover Photo Feed</h2>
+      <p>Photos taken on Earth date {{results.photos[0].earth_date}}, come back tomorrow for a new set!</p>
+    </div>
     <div class="profile-feed">
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
-      </a>
-      <a href="#">
-        <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="img">
+      <a v-for="(result, index) in results.photos" :key="index" :href="result.img_src" target="_blank" rel="noopener">
+        <img :src="result.img_src" :alt="'Photo id#' + result.id + ' taken by Opportunity Rover in the Meridiani Planum on Mars'" class="img">
       </a>
     </div>
     <div class="py-3">
@@ -117,12 +103,12 @@ export default {
       {
         name: "description",
         content:
-          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+          "Nicknamed 'Oppy', the MER-B or MER-1 rover Opportunity was a robotic rover that was active on Mars from January 2004 to June 2018 when we lost contact with it.  RIP Oppy!",
       },
       {
         name: "keywords",
         content:
-          "Rocket, Downrange, NASA, APOD, Astronomy, Picture, Day, Historical, Lookup, Tool, Space, Images, Video, GIF",
+          "Rocket, Downrange, NASA, JPL, Mars, Rovers, Opportunity",
       },
       // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange | Opportunity Rover" },
@@ -132,7 +118,7 @@ export default {
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/APOD",
+        content: "https://www.rocketdownrange.com/opportunity",
       },
       {
         property: "og:image",
@@ -142,14 +128,14 @@ export default {
       {
         property: "og:description",
         content:
-          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+          "Nicknamed 'Oppy', the MER-B or MER-1 rover Opportunity was a robotic rover that was active on Mars from January 2004 to June 2018 when we lost contact with it.  RIP Oppy!",
       },
 
       // Twitter card
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com/APOD",
+        content: "https://www.rocketdownrange.com/opportunity",
       },
       {
         name: "twitter:title",
@@ -158,7 +144,7 @@ export default {
       {
         name: "twitter:description",
         content:
-          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+          "Nicknamed 'Oppy', the MER-B or MER-1 rover Opportunity was a robotic rover that was active on Mars from January 2004 to June 2018 when we lost contact with it.  RIP Oppy!",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
@@ -172,7 +158,7 @@ export default {
       {
         itemprop: "description",
         content:
-          "Missed an Astronomy Picture of the Day? Use the Rocket Downrange Historical APOD Lookup Tool  - NASA's Astronomy Picture of the Day has been around since 1995 so you have plenty to catch up on! ",
+          "Nicknamed 'Oppy', the MER-B or MER-1 rover Opportunity was a robotic rover that was active on Mars from January 2004 to June 2018 when we lost contact with it.  RIP Oppy!",
       },
       {
         itemprop: "image",
