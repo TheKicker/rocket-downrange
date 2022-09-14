@@ -34,7 +34,7 @@
                         id="name"
                         name="name"
                         aria-label="Form input for your name (first and last) or organization"
-                        placeholder="First and Last Name"
+                        placeholder="First and last name (or organization name)"
                         required
                       />
                     </div>
@@ -52,7 +52,25 @@
                         id="email"
                         name="email"
                         aria-label="Form input for your email account"
-                        placeholder="Email Address"
+                        placeholder="Email address"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="fa fa-map-pin text-primary"></i>
+                        </div>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="country"
+                        name="country"
+                        aria-label="Form input for your country of residence"
+                        placeholder="Country"
                         required
                       />
                     </div>
@@ -70,7 +88,7 @@
                         id="subject"
                         name="subject"
                         aria-label="Form input for the subject of your message"
-                        placeholder="Subject"
+                        placeholder="Subject of message"
                         required
                       />
                     </div>
