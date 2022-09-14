@@ -73,9 +73,9 @@
 
 
 <script>
-// Oppy was operational for around 5100 sol days on Mars
+// Spirit was operational for around 1800 sol days on Mars
 // Picture of the day is taken from a cache of these images
-const random_number = Math.floor(Math.random() * 5100);
+const random_number = Math.floor(Math.random() * 1800);
 var api_key = process.env.VUE_APP_APOD_KEY
 window.axios = require("axios");
 
