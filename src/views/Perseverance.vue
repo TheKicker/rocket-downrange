@@ -50,6 +50,9 @@
           <p class="foo">Rover Cost:</p>
           <p class="bar">$2.4 billion</p>
         </div>
+        <div class="foobar text-center">
+          <a href="https://twitter.com/NASAPersevere" target="_blank" rel="noopener"><i class="fab fa-twitter"></i> Follow Perseverance on Twitter</a>
+        </div>
       </div>
     </div>
 
