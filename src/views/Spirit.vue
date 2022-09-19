@@ -52,6 +52,13 @@
         </div>
       </div>
     </div>
+
+    <Quote
+      message="The risk is real, but so is the potential reward of using these advanced rovers to improve our understanding of how planets work."
+      author="Dr. Ed Weiler"
+      significance="Former Associate Administrator for space science at NASA Headquarters"
+    />
+
     <div class="mt-4">
       <h2>Rover Photo Feed</h2>
       <p>Photos taken on Earth date {{results.photos[0].earth_date}}, come back tomorrow for a new set!</p>
@@ -79,8 +86,13 @@ const random_number = Math.floor(Math.random() * 1800);
 var api_key = process.env.VUE_APP_APOD_KEY
 window.axios = require("axios");
 
+import Quote from "@/components/Quotes-Template.vue";
+
 export default {
   name: "Spirit",
+  components:{
+    Quote
+  },
   data() {
     return {
       results: {}

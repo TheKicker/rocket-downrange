@@ -52,6 +52,13 @@
         </div>
       </div>
     </div>
+
+    <Quote
+      message="It was the beginning of a Mars Renaissance... since Pathfinder, there’s been basically a mission to Mars almost every opportunity... [now] we have a flotilla of orbiters, we have three spacecraft, two rovers, and a lander on the surface, I mean, we have a little community up there."
+      author="Matthew Golombek"
+      significance="Former Project Manager for Pathfinder/Sojourner mission"
+    />
+
     <div class="mt-4">
       <h2>Rover Photo Feed</h2>
       <p>Photos taken by Sojourner and Pathfinder base camp.</p>
@@ -106,8 +113,14 @@
 
 
 <script>
+
+import Quote from "@/components/Quotes-Template.vue";
+
 export default {
   name: "Sojourner",
+  components:{
+    Quote
+  },
   metaInfo: {
     title: "Rocket Downrange | Sojourner Rover",
     meta: [

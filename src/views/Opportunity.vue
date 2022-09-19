@@ -52,6 +52,13 @@
         </div>
       </div>
     </div>
+
+    <Quote
+      message="We've cleared two of the big hurdles, building both spacecraft [Spirit & Opportunity] and launching them... now we're coming up on a third, getting them safely onto the ground."
+      author="Peter Theisinger"
+      significance="Former Project Manager at JPL for the Mars Exploration Rover Project"
+    />
+
     <div class="mt-4">
       <h2>Rover Photo Feed</h2>
       <p>Photos taken on Earth date {{results.photos[0].earth_date}}, come back tomorrow for a new set!</p>
@@ -79,8 +86,13 @@ const random_number = Math.floor(Math.random() * 5100);
 var api_key = process.env.VUE_APP_APOD_KEY
 window.axios = require("axios");
 
+import Quote from "@/components/Quotes-Template.vue";
+
 export default {
   name: "Opportunity",
+  components:{
+    Quote
+  },
   data() {
     return {
       results: {}

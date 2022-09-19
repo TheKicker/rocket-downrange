@@ -35,19 +35,19 @@
               <a class="nav-link dropdown-toggle" href="#" id="roversDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rovers</a>
               <div class="dropdown-menu bg-primary text-left" aria-labelledby="roversDropdown">
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/Perseverance">PERSEVERANCE</router-link>
+                  <router-link class="nav-link ml-1" to="/perseverance">PERSEVERANCE</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/Curiosity">CURIOSITY</router-link>
+                  <router-link class="nav-link ml-1" to="/curiosity">CURIOSITY</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/Opportunity">OPPORTUNITY</router-link>
+                  <router-link class="nav-link ml-1" to="/opportunity">OPPORTUNITY</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/Spirit">SPIRIT</router-link>
+                  <router-link class="nav-link ml-1" to="/spirit">SPIRIT</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/Sojourner">SOJOURNER</router-link>
+                  <router-link class="nav-link ml-1" to="/sojourner">SOJOURNER</router-link>
                 </li>
               </div>
             </li>

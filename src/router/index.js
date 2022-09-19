@@ -118,27 +118,27 @@ const routes = [
 		component: () => import(/* webpackChunkName: "about" */ '../views/Vehicles.vue')
 	},
 	{
-		path: '/Perseverance',
+		path: '/perseverance',
 		name: 'Perseverance',
 		component: () => import(/* webpackChunkName: "about" */ '../views/Perseverance.vue')
 	},
 	{
-		path: '/Curiosity',
+		path: '/curiosity',
 		name: 'Curiosity',
 		component: () => import(/* webpackChunkName: "about" */ '../views/Curiosity.vue')
 	},
 	{
-		path: '/Opportunity',
+		path: '/opportunity',
 		name: 'Opportunity',
 		component: () => import(/* webpackChunkName: "about" */ '../views/Opportunity.vue')
 	},
 	{
-		path: '/Spirit',
+		path: '/spirit',
 		name: 'Spirit',
 		component: () => import(/* webpackChunkName: "about" */ '../views/Spirit.vue')
 	},
 	{
-		path: '/Sojourner',
+		path: '/sojourner',
 		name: 'Sojourner',
 		component: () => import(/* webpackChunkName: "about" */ '../views/Sojourner.vue')
 	},

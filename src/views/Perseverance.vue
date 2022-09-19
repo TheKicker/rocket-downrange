@@ -52,6 +52,13 @@
         </div>
       </div>
     </div>
+
+    <Quote
+      message="We welcome more nations taking trips to mars and studying it, delivering and sharing its science with the world... that’s what science is all about, of course, it’s a very uniting kind of thing. For the first time ever, we’re going to fly a helicopter on another planet... in the future, it could transform how we do planetary science on other worlds."
+      author="Jim Bridenstine"
+      significance="Former head of NASA, under President Donald Trump"
+    />
+
     <div class="mt-4">
       <h2>Rover Photo Feed</h2>
       <p>Photos taken on Earth date {{results.photos[0].earth_date}}, come back tomorrow for a new set!</p>
@@ -83,8 +90,13 @@ const lastDay = oneWeekAgo.getDate();
 var api_key = process.env.VUE_APP_APOD_KEY;
 window.axios = require("axios");
 
+import Quote from "@/components/Quotes-Template.vue";
+
 export default {
   name: "Perseverance",
+  components:{
+    Quote
+  },
   data() {
     return {
       results: {},
@@ -180,7 +192,7 @@ export default {
 </script>
 <style scoped>
 .cover {
-    background-image: url("https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/pia2464-mastcam-zs_first_360-degree_panorama2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -52,6 +52,13 @@
         </div>
       </div>
     </div>
+
+    <Quote
+      message="Mount Sharp is the only place we can currently access on Mars where we can investigate this transition in one stratigraphic sequence... the hope of this mission is to find evidence of a habitable environment; the promise is to get the story of an important environmental breakpoint in the deep history of the planet."
+      author="John Grotzinger"
+      significance="Former Chief Scientist of the Curiosity mission"
+    />
+
     <div class="mt-4">
       <h2>Rover Photo Feed</h2>
       <p>Photos taken on Earth date {{results.photos[0].earth_date}}, come back tomorrow for a new set!</p>
@@ -83,8 +90,13 @@ const lastDay = oneWeekAgo.getDate();
 var api_key = process.env.VUE_APP_APOD_KEY
 window.axios = require("axios");
 
+import Quote from "@/components/Quotes-Template.vue";
+
 export default {
   name: "Curiosity",
+  components:{
+    Quote
+  },
   data() {
     return {
       results: {},
