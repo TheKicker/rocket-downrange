@@ -65,40 +65,40 @@
     </div>
     <div class="profile-feed">
       <a href="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_so182_color_an.jpg" target="_blank" rel="noopener">
-        <img src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_so182_color_an.jpg" alt="This image shows the area directly in front of the rover egress ramp and around Yogi." class="img">
+        <VLazyImage src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_so182_color_an.jpg" alt="This image shows the area directly in front of the rover egress ramp and around Yogi." class="img" />
       </a>
       <a href="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_sol30s55.gif" target="_blank" rel="noopener">
-        <img src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_sol30s55.gif" alt="Sojourner rolling over the Mermaid dune " class="img">
+        <VLazyImage src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_sol30s55.gif" alt="Sojourner rolling over the Mermaid dune " class="img" />
       </a>
       <a href="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_sunset3.gif" target="_blank" rel="noopener">
-        <img src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_sunset3.gif" alt="These three images show a sunset on Mars, with false color to enhance details." class="img">
+        <VLazyImage src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_sunset3.gif" alt="These three images show a sunset on Mars, with false color to enhance details." class="img" />
       </a>
       <a href="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_sol22r55.gif" target="_blank" rel="noopener">
-        <img src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_sol22r55.gif" alt="The Sojourner Rover at the end of sol 22 " class="img">
+        <VLazyImage src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_sol22r55.gif" alt="The Sojourner Rover at the end of sol 22 " class="img" />
       </a>
       <a href="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_82467.jpg" target="_blank" rel="noopener">
-        <img src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_82467.jpg" alt="This image shows clear evidence of 'scalloped' features in the soil associated with wind-blown dust." class="img">
+        <VLazyImage src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_82467.jpg" alt="This image shows clear evidence of 'scalloped' features in the soil associated with wind-blown dust." class="img" />
       </a>
       <a href="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_yogi_rov.jpg" target="_blank" rel="noopener">
-        <img src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_yogi_rov.jpg" alt="The Sojourner Rover is taking its Alpha Proton X-ray Spectrometer measurement. It clearly shows the 'two-toned' surface of this large rock." class="img">
+        <VLazyImage src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_yogi_rov.jpg" alt="The Sojourner Rover is taking its Alpha Proton X-ray Spectrometer measurement. It clearly shows the 'two-toned' surface of this large rock." class="img" />
       </a>
       <a href="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_81093.jpg" target="_blank" rel="noopener">
-        <img src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_81093.jpg" alt="Here we see Wedge and Flat Top imaged in color as part of the 'monster panorama'." class="img">
+        <VLazyImage src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_81093.jpg" alt="Here we see Wedge and Flat Top imaged in color as part of the 'monster panorama'." class="img" />
       </a>
       <a href="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_presidential.jpg" target="_blank" rel="noopener">
-        <img src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_presidential.jpg" alt="A full-color panorama of the landing site from the Mars Pathfinder camera." class="img">
+        <VLazyImage src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_presidential.jpg" alt="A full-color panorama of the landing site from the Mars Pathfinder camera." class="img" />
       </a>
       <a href="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_81094.jpg" target="_blank" rel="noopener">
-        <img src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_81094.jpg" alt="A color version of the image of the rover as it left the rear (or right) ramp." class="img">
+        <VLazyImage src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_81094.jpg" alt="A color version of the image of the rover as it left the rear (or right) ramp." class="img" />
       </a>
       <a href="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_80808.jpg" target="_blank" rel="noopener">
-        <img src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_80808.jpg" alt="Large boulders are visible in this enlargement of pictures taken by the Mars Pathfinder lander camera on July 4, 1997." class="img">
+        <VLazyImage src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_80808.jpg" alt="Large boulders are visible in this enlargement of pictures taken by the Mars Pathfinder lander camera on July 4, 1997." class="img" />
       </a>
       <a href="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_80809.jpg" target="_blank" rel="noopener">
-        <img src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_80809.jpg" alt="This closeup picture of the Mars Pathfinder lander shows the front of the small Sojourner rover, perched on a solar panel. " class="img">
+        <VLazyImage src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_80809.jpg" alt="This closeup picture of the Mars Pathfinder lander shows the front of the small Sojourner rover, perched on a solar panel. " class="img" />
       </a>
       <a href="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_80812.jpg" target="_blank" rel="noopener">
-        <img src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_80812.jpg" alt="A hill is visible in the distance (the notch within the hill is an image artifact). Airbags are seen at the lower right." class="img">
+        <VLazyImage src="https://nssdc.gsfc.nasa.gov/planetary/image/marspath_80812.jpg" alt="A hill is visible in the distance (the notch within the hill is an image artifact). Airbags are seen at the lower right." class="img" />
       </a>
     </div>
     <div class="py-3">
@@ -115,11 +115,13 @@
 <script>
 
 import Quote from "@/components/Quotes-Template.vue";
+import VLazyImage from "v-lazy-image/v2";
 
 export default {
   name: "Sojourner",
   components:{
-    Quote
+    Quote,
+    VLazyImage
   },
   metaInfo: {
     title: "Rocket Downrange | Sojourner Rover",

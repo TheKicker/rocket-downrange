@@ -84,7 +84,7 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="externalDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">External Links</a>
+              <a class="nav-link dropdown-toggle" href="#" id="externalDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">External</a>
               <div class="dropdown-menu bg-primary" aria-labelledby="externalDropdown">
                 
                 <li class="nav-item">
@@ -151,6 +151,7 @@
     <div>
       <router-view />
     </div>
+    
     <div class="bg-primary py-5">
       <div id="footer" class="container my-4">
         <router-link to="/" class="footer-child fc-1">ROCKET DOWNRANGE</router-link>
@@ -231,10 +232,6 @@ export default {
 }
 .ml-3 {
   margin-left: 15px;
-}
-.width-limit {
-  max-width: 1632px;
-  margin: auto;
 }
 
 .m-footer{

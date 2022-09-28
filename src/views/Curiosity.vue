@@ -68,7 +68,7 @@
     </div>
     <div class="profile-feed">
       <a v-for="(result, index) in results.photos" :key="index" :href="result.img_src" target="_blank" rel="noopener">
-        <img :src="result.img_src" :alt="'Photo id#' + result.id + ' taken by Curiosity Rover in the Gale Crater on Mars'" class="img">
+        <VLazyImage :src="result.img_src" :alt="'Photo id#' + result.id + ' taken by Curiosity Rover in the Gale Crater on Mars'" class="img" />
       </a>
     </div>
     <div class="py-3">
@@ -94,11 +94,13 @@ var api_key = process.env.VUE_APP_APOD_KEY
 window.axios = require("axios");
 
 import Quote from "@/components/Quotes-Template.vue";
+import VLazyImage from "v-lazy-image/v2";
 
 export default {
   name: "Curiosity",
   components:{
-    Quote
+    Quote,
+    VLazyImage
   },
   data() {
     return {
