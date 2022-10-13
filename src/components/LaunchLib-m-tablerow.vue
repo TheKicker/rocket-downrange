@@ -1,8 +1,8 @@
 <template>
   <div class="card my-3">    
-    <h5 class="card-header text-light" style="background: black;">
+    <h3 class="h4 text-uppercase card-header text-light" style="background: black;">
       {{ mission }}
-    </h5>
+    </h3>
     <div>
       <v-lazy-image :src="image" :alt="mission + ', ' + launchsp + ', ' + location" class='img-fluid rounded mx-auto d-block' style="height: 10rem; max-width: 16rem"/>
     </div>

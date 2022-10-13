@@ -1,12 +1,11 @@
 <template>
   <div class="LaunchLib-News my-4">
       <div>
-        <h5 class="text-left text-secondary">
+        <p class="h5 text-uppercase text-left text-secondary">
           The Space News API (SNAPI):
-        </h5>
+        </p>
         <hr />
-        <h3 class="text-center my-4">Trending News</h3>
-
+        <h2 class="text-center my-4">Trending News</h2>
         <!-- Row 1  -->
         <div class="responsive-row">
           <!-- Article 1 & 2 -->

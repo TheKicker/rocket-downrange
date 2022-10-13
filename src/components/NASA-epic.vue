@@ -2,7 +2,7 @@
   <div class="Insight my-4 mx-4" hidden>
     <div class="card container">
       <div class="card-body p-3 p-md-6 m-md-3">
-        <h5 class="text-left text-secondary">NASA's "Daily Blue Marble" API:</h5>
+        <p class="h5 text-uppercase text-secondary">NASA's "Daily Blue Marble" API:</p>
         <hr />
         <h3 class="text-center my-4">Earth (Enhanced Image)</h3>
         <div class="container">

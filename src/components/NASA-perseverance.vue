@@ -2,11 +2,11 @@
   <div class="Perseverance my-4 mx-lg-4 mx-md-0">
     <div class="card">
       <div class="card-body p-3 p-md-6 m-md-3">
-        <h5 class="text-left text-secondary">
+        <p class="h5 text-uppercase text-left text-secondary">
           NASA & ULA Special Event (2020):
-        </h5>
+        </p>
         <hr />
-        <h3 class="text-center my-4">Perseverance : In Transit to Mars</h3>
+        <h2 class="h3 text-uppercase text-center my-4">Perseverance : In Transit to Mars</h2>
         <div class="row">
           <div class="embed-responsive embed-responsive-16by9 mx-auto">
               <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/gm0b_ijaYMQ" frameborder="0" allowfullscreen></iframe>

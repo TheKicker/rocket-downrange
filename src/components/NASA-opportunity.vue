@@ -2,9 +2,9 @@
   <div class="Opportunity my-4 mx-4">
     <div class="card container">
       <div class="card-body p-3 p-md-6 m-md-3">
-        <h5 class="text-left text-secondary">
+        <p class="h5 text-uppercase text-left text-secondary">
           Mars Opportunity Rover Picture of the Day:
-        </h5>
+        </p>
         <hr />
         <h3 class="text-center my-4">
           Photo ID#{{ Object.values(results.photos)[0].id }}

@@ -2,15 +2,15 @@
   <div id="APOD" class="APOD container">
     <div>
       <div class="py-md-6 my-md-3">
-        <h5 class="text-left text-secondary">
+        <p class="h5 text-uppercase text-left text-secondary">
           NASA Astronomy Picture of the Day:
-        </h5>
+        </p>
         <hr>
         <div v-if="results.media_type == 'video'">
-          <h3 class="text-center my-3">{{ results.title }} (Video)</h3>
+          <h2 class="h3 text-uppercase text-center my-3">{{ results.title }} (Video)</h2>
         </div>
         <div v-else>
-          <h3 class="text-center my-3">{{ results.title }}</h3>
+          <h2 class="h3 text-uppercase text-center my-3">{{ results.title }}</h2>
         </div>
         <div class="d-flex flex-lg-row flex-column">
           <div class="row half" style="display: block; margin: 0 auto;">

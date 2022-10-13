@@ -2,11 +2,11 @@
   <div class="OrganizationNews my-4 mx-lg-4 mx-md-0">
     <div class="card">
       <div class="card-body py-3 p-md-6 m-md-3">
-        <h5 class="text-left text-secondary">
+        <p class="h5 text-uppercase text-left text-secondary">
           {{ company }} ({{ year }}):
-        </h5>
+        </p>
         <hr />
-        <h3 class="text-center my-4">{{ title }}</h3>
+        <h2 class="h3 text-uppercase text-center my-4">{{ title }}</h2>
         <div class="row">
             <div v-if="srcType === 'image'" class="mx-auto">
               <v-lazy-image class="img-fluid" :src="image" :alt="'External link to ' + site" />

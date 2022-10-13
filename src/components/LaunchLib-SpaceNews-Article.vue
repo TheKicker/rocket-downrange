@@ -2,7 +2,7 @@
     <section>
         <div class="col my-2">
           <div class="card shadow-sm">
-            <v-lazy-image id="img" class="card-img img-fluid" :src="imageURL" :alt="'Cover image from ' + newsSite + ' - ' + title" />
+            <v-lazy-image id="img" class="card-img img-fluid" :src="imageURL" :alt="newsSite + ' - ' + title" />
             
             <div class="p-2">
               <strong class="title">{{ title }}</strong>

@@ -2,9 +2,9 @@
   <div class="Perseverance my-4 mx-lg-4 mx-md-0">
     <div class="card">
       <div class="card-body p-3 p-md-6 m-md-3">
-        <h5 class="text-left text-secondary">
+        <p class="h5 text-uppercase text-left text-secondary">
           Mars Perseverance Rover Picture of the Day:
-        </h5>
+        </p>
         <hr />
         <div class="row">
           <div class="mx-auto">
@@ -12,15 +12,14 @@
               id="carouselExampleIndicators"
               class="carousel slide"
               data-ride="carousel"
-            >
-              
+            >   
               <div class="carousel-inner">
                 <!-- START OF CAROUSEL -->
 
                 <div class="carousel-item active">
-                  <h3 class="text-center my-4">
+                  <h2 class="h3 text-uppercase text-center my-4">
                     Photo ID#{{ Object.values(results.photos)[0].id }}
-                  </h3>
+                  </h2>
                   <img
                     class="img-fluid d-block w-100"
                     :src="Object.values(results.photos)[0].img_src"
@@ -73,9 +72,9 @@
 
                 <!-- Carousel Item -->
                 <div class="carousel-item">
-                  <h3 class="text-center my-4">
+                  <h2 class="h3 text-uppercase text-center my-4">
                     Photo ID#{{ Object.values(results.photos)[1].id }}
-                  </h3>
+                  </h2>
                   <img
                     class="img-fluid d-block w-100"
                     :src="Object.values(results.photos)[1].img_src"
@@ -128,9 +127,9 @@
 
                 <!-- Carousel Item -->
                 <div class="carousel-item">
-                  <h3 class="text-center my-4">
+                  <h2 class="h3 text-uppercase text-center my-4">
                     Photo ID#{{ Object.values(results.photos)[2].id }}
-                  </h3>
+                  </h2>
                   <img
                     class="img-fluid d-block w-100"
                     :src="Object.values(results.photos)[2].img_src"
@@ -183,9 +182,9 @@
 
                 <!-- Carousel Item -->
                 <div class="carousel-item">
-                  <h3 class="text-center my-4">
+                  <h2 class="h3 text-uppercase text-center my-4">
                     Photo ID#{{ Object.values(results.photos)[3].id }}
-                  </h3>
+                  </h2>
                   <img
                     class="img-fluid d-block w-100"
                     :src="Object.values(results.photos)[3].img_src"
@@ -238,9 +237,9 @@
 
                 <!-- Carousel Item -->
                 <div class="carousel-item">
-                  <h3 class="text-center my-4">
+                  <h2 class="h3 text-uppercase text-center my-4">
                     Photo ID#{{ Object.values(results.photos)[4].id }}
-                  </h3>
+                  </h2>
                   <img
                     class="img-fluid d-block w-100"
                     :src="Object.values(results.photos)[4].img_src"
@@ -293,9 +292,9 @@
 
                 <!-- Carousel Item -->
                 <div class="carousel-item">
-                  <h3 class="text-center my-4">
+                  <h2 class="h3 text-uppercase text-center my-4">
                     Photo ID#{{ Object.values(results.photos)[5].id }}
-                  </h3>
+                  </h2>
                   <img
                     class="img-fluid d-block w-100"
                     :src="Object.values(results.photos)[5].img_src"
@@ -348,9 +347,9 @@
 
                 <!-- Carousel Item -->
                 <div class="carousel-item">
-                  <h3 class="text-center my-4">
+                  <h2 class="h3 text-uppercase text-center my-4">
                     Photo ID#{{ Object.values(results.photos)[6].id }}
-                  </h3>
+                  </h2>
                   <img
                     class="img-fluid d-block w-100"
                     :src="Object.values(results.photos)[6].img_src"
@@ -403,9 +402,9 @@
 
                 <!-- Carousel Item -->
                 <div class="carousel-item">
-                  <h3 class="text-center my-4">
+                  <h2 class="h3 text-uppercase text-center my-4">
                     Photo ID#{{ Object.values(results.photos)[7].id }}
-                  </h3>
+                  </h2>
                   <img
                     class="img-fluid d-block w-100"
                     :src="Object.values(results.photos)[7].img_src"
@@ -458,9 +457,9 @@
 
                 <!-- Carousel Item -->
                 <div class="carousel-item">
-                  <h3 class="text-center my-4">
+                  <h2 class="h3 text-uppercase text-center my-4">
                     Photo ID#{{ Object.values(results.photos)[8].id }}
-                  </h3>
+                  </h2>
                   <img
                     class="img-fluid d-block w-100"
                     :src="Object.values(results.photos)[8].img_src"
@@ -513,9 +512,9 @@
 
                 <!-- Carousel Item -->
                 <div class="carousel-item">
-                  <h3 class="text-center my-4">
+                  <h2 class="h3 text-uppercase text-center my-4">
                     Photo ID#{{ Object.values(results.photos)[9].id }}
-                  </h3>
+                  </h2>
                   <img
                     class="img-fluid d-block w-100"
                     :src="Object.values(results.photos)[9].img_src"
@@ -568,9 +567,9 @@
 
                 <!-- Carousel Item -->
                 <div class="carousel-item">
-                  <h3 class="text-center my-4">
+                  <h2 class="h3 text-uppercase text-center my-4">
                     Photo ID#{{ Object.values(results.photos)[10].id }}
-                  </h3>
+                  </h2>
                   <img
                     class="img-fluid d-block w-100"
                     :src="Object.values(results.photos)[10].img_src"
@@ -623,9 +622,9 @@
 
                 <!-- Carousel Item -->
                 <div class="carousel-item">
-                  <h3 class="text-center my-4">
+                  <h2 class="h3 text-uppercase text-center my-4">
                     Photo ID#{{ Object.values(results.photos)[11].id }}
-                  </h3>
+                  </h2>
                   <img
                     class="img-fluid d-block w-100"
                     :src="Object.values(results.photos)[11].img_src"
@@ -678,9 +677,9 @@
 
                 <!-- Carousel Item -->
                 <div class="carousel-item">
-                  <h3 class="text-center my-4">
+                  <h2 class="h3 text-uppercase text-center my-4">
                     Photo ID#{{ Object.values(results.photos)[12].id }}
-                  </h3>
+                  </h2>
                   <img
                     class="img-fluid d-block w-100"
                     :src="Object.values(results.photos)[12].img_src"

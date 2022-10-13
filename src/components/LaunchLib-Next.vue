@@ -2,12 +2,12 @@
   <div class="LaunchLibNext my-4 mx-lg-4 mx-md-0">
     <div class="card">
       <div class="card-body">
-        <h5 class="text-left text-secondary">The Launch Library:</h5>
+        <p class="h5 text-uppercase text-left text-secondary">The Launch Library:</p>
         <hr />
         <div class="row" id="desktop">
-          <h3 class="text-center my-4">
+          <h2 class="h3 text-uppercase text-center my-4">
             Upcoming Launches You Don't Want to Miss
-          </h3>
+          </h2>
           <!-- <img
             src="https://rocketdownrange.com/ll-unsplash.jpeg"
             class="img-fluid mx-auto d-block"

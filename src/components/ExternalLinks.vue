@@ -41,6 +41,11 @@
             image="organizations/ESA.png"
             link="https://www.esa.int/"
           />
+          <External
+            site="Roscosmos"
+            image="organizations/roscosmos.jpg"
+            link="https://www.roscosmos.ru/"
+          />
         </div>
         <!-- Row Two -->
         <div class="card-group width-limit mx-auto">

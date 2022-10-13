@@ -2,7 +2,7 @@
   <div class="card my-4 mx-2">
     <v-lazy-image :src="image" :alt="'External link to ' + site" />
     <div class="card-body">
-      <h5 class="card-title">{{site}}</h5>
+      <h3 class="h5 text-uppercase card-title">{{site}}</h3>
       <hr />
       <p class="card-text"></p>
       <p class="card-text text-center">
