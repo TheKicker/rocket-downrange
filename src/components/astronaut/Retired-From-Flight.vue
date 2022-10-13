@@ -2,7 +2,7 @@
   <div class="RetiredAstronauts my-4">
     <div class="card">
       <div class="card-body">
-        <h4 class="text-left">Heroes of the Past</h4>
+        <p class="h4 text-uppercase text-left">Heroes of the Past</p>
         <hr />
         <h2 class="text-center my-4">Retired Status</h2>
         <div class="row my-2">

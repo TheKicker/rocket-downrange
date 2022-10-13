@@ -1,5 +1,5 @@
 <template>
-  <div id="astronautProfile" class="card mx-auto my-2" style="width: 20rem">
+  <div id="astronautProfile" class="card mx-auto my-2" style="width: 16rem">
     <div class="hovereffect rounded">
       <img
         :src="profile_image"
@@ -10,17 +10,17 @@
           width: 100%;
           height: 100%;
         "
-        class="card-img-top img-fluid"
-        :alt="name"
+        class="card-img-top"
+        :alt="name + ' - ' + abbrev + ' (' + country_code + ')'"
       />
       <div class="overlay overflow-hidden">
         <p id="desc">{{ bio }}</p>
       </div>
     </div>
     <div class="card-body bg-primary text-center">
-      <h5 class="text-white">{{ name }}</h5>
+      <p class="h5 text-uppercase text-white">{{ name }}</p>
       <hr style="background-color: white" />
-      <h6 class="text-white">{{ abbrev }}, {{ country_code }}</h6>
+      <p class="h6 text-uppercase text-white">{{ abbrev }}, {{ country_code }}</p>
     </div>
   </div>
 </template>
@@ -57,7 +57,8 @@ export default {
   overflow: hidden;
   top: 0;
   left: 0;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
+  overflow: scroll;
 }
 .hovereffect img {
   display: block;
@@ -80,7 +81,7 @@ export default {
   color: #fff;
   text-align: center;
   position: relative;
-  font-size: 17px;
+  font-size: 16px;
   overflow: hidden;
   padding: 0.5em 0;
   background-color: transparent;

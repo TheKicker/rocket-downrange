@@ -2,7 +2,7 @@
   <div class="ActiveVehicles my-4">
     <div class="card">
       <div class="card-body">
-        <h4 class="text-left">Modern Day Marvels</h4>
+        <p class="h4 text-uppercase text-left">Modern Marvels</p>
         <hr />
         <h2 class="text-center my-4">Active Vehicles</h2>
         <div class="row my-2">

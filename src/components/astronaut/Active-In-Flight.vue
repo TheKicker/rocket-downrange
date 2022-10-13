@@ -2,7 +2,7 @@
   <div class="ActiveAstronauts my-4">
     <div class="card">
       <div class="card-body">
-        <h4 class="text-left">Heroes In Flight</h4>
+        <p class="h4 text-uppercase text-left">Heroes In Flight</p>
         <hr />
         <h2 class="text-center my-4">Active Status</h2>
         <div class="row my-2">

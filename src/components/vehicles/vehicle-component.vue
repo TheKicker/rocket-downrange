@@ -1,5 +1,5 @@
 <template>
-  <div id="vehicleProfile" class="card mx-auto my-2" style="max-width: 20rem">
+  <div id="vehicleProfile" class="card mx-auto my-2" style="max-width: 16rem">
     <div class="hovereffect rounded">
       <img
         :src="image"
@@ -11,16 +11,16 @@
           height: 100%;
         "
         class="card-img-top img-fluid"
-        :alt="name"
+        :alt="name + ' - ' + org"
       />
       <div class="overlay overflow-scroll">
         <p id="desc">{{ bio }}</p>
       </div>
     </div>
     <div class="card-body bg-primary text-center">
-      <h5 class="text-white">{{ name }}</h5>
+      <p class="h4 text-white">{{ name }}</p>
       <hr style="background-color: white" />
-      <h6 class="text-white">{{ org }}</h6>
+      <p class="text-white">{{ org }}</p>
       <br>
     </div>
   </div>
@@ -57,7 +57,7 @@ export default {
   overflow: hidden;
   top: 0;
   left: 0;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }
 .hovereffect img {
   display: block;

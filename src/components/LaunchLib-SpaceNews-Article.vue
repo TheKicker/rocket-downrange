@@ -3,12 +3,11 @@
         <div class="col my-2">
           <div class="card shadow-sm">
             <v-lazy-image id="img" class="card-img img-fluid" :src="imageURL" :alt="newsSite + ' - ' + title" />
-            
             <div class="p-2">
               <strong class="title">{{ title }}</strong>
               <p class="card-text text-muted">{{ newsSite }}</p>
               <div class="d-flex justify-content-between align-items-center">
-                <a :href="articleURL" class="btn btn-sm btn-primary" target="_blank" rel="noopener">Continue Reading</a>
+                <a :href="articleURL" class="btn btn-sm btn-primary" target="_blank" rel="noopener">Read on {{newsSite}}</a>
                 <small class="text-muted">Published: {{timeTranslate(publishedAt)}}</small>
               </div>
             </div>

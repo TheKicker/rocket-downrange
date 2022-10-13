@@ -10,20 +10,20 @@
       </div>
       <div class="child">
         <div class="mb-4">
-          <h5><strong>Location:</strong></h5>
-          <h4>- {{ region }}</h4>
+          <p class="h5 text-capitalize"><strong>Location:</strong></p>
+          <p class="h4 text-uppercase">- {{ region }}</p>
         </div>
         <div class="mb-4">
-          <h5><strong>Primary Operator:</strong></h5>
-          <h4>- {{ operator }}</h4>
+          <p class="h5 text-capitalize"><strong>Primary Operator:</strong></p>
+          <p class="h4 text-uppercase">- {{ operator }}</p>
         </div>
         <div class="mb-4">
-          <h5><strong>Launch Pads:</strong></h5>
-          <h4>- {{ launch_pads }}</h4>
+          <p class="h5 text-capitalize"><strong>Launch Pads:</strong></p>
+          <p class="h4 text-uppercase">- {{ launch_pads }}</p>
         </div>
         <div class="mb-4">
-          <h5><strong>First Launch:</strong></h5>
-          <h4>- {{ first_launch }}</h4>
+          <p class="h5 text-capitalize"><strong>First Launch:</strong></p>
+          <p class="h4 text-uppercase">- {{ first_launch }}</p>
         </div>
       </div>
     </div>

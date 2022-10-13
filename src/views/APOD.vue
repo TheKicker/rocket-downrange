@@ -1,12 +1,12 @@
 <template>
     <section class="container">
         <div id="parent">
-            <h4 class="text-secondary">Historical NASA APOD</h4>
+            <p class="h4 text-uppercase text-secondary">Historical NASA APOD</p>
             <div class="text-center">
                 <date-picker v-model="chosenDate" valueType="format" placeholder="Pick a date"></date-picker>
             </div>
         </div>
-        <h3 class="text-center my-2">{{results.title}} ({{ results.date }})</h3>
+        <h2 class="h3 text-center my-2">{{results.title}} ({{ results.date }})</h2>
         <div id="apod">
             <div class="child my-4">
                 <div v-if="results.media_type == 'video'" class="embed-responsive embed-responsive-16by9">              
@@ -14,7 +14,7 @@
                 </div>
                 <div v-else>
                     <a :href="results.hdurl" target="_blank" rel="noopener">
-                      <img :src="results.url" class="img-fluid d-block mx-auto" style="max-height: 50vh;"/>
+                      <img :src="results.url" class="img-fluid d-block mx-auto" style="max-height: 50vh;" :alt="results.title + ' - NASA APOD (' + results.date + ')'"/>
                     </a>
                 </div>
             </div>

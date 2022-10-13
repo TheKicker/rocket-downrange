@@ -2,7 +2,7 @@
   <div class="RetiredVehicles my-4">
     <div class="card">
       <div class="card-body">
-        <h4 class="text-left">Historical Workhorses</h4>
+        <p class="h4 text-uppercase text-left">Historical Workhorses</p>
         <hr />
         <h2 class="text-center my-4">Inactive Vehicles</h2>
         <div class="row my-2">

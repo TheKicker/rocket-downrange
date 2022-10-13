@@ -113,9 +113,9 @@
           </ul>
           <div>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userModal">
-              <h6 class="my-2 my-lg-0 text-white">
+              <p class="h6 my-2 my-lg-0 text-white">
                 {{ getGreeting }}, {{ username }}
-              </h6>
+              </p>
             </button>
           </div>
         </div>
@@ -127,9 +127,9 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="userModalLabel">
+            <p class="h5 modal-title" id="userModalLabel">
               <i class="fa fa-user"></i> &nbsp; Change username
-            </h5>
+            </p>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
