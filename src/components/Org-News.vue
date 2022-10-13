@@ -27,26 +27,20 @@
           </div>
           <div class="my-2 row justify-content-center">
             <a v-if="link1url == null || undefined" href="#" hidden></a>
-            <a v-else :href="link1url" target="_blank" class="mx-1 py-4 p-3">
-              <button class="btn btn-block btn-primary italic">
+            <a v-else :href="link1url" target="_blank" class="btn btn-inline-block btn-primary italic mx-2">
                 {{link1txt}}
-              </button>
             </a>
             <a v-if="link2url == null || undefined" href="#" hidden></a>
-            <a v-else :href="link2url" target="_blank" class="mx-1 py-4 p-3">
-              <button class="btn btn-block btn-primary italic">
+            <a v-else :href="link2url" target="_blank" class="btn btn-inline-block btn-primary italic mx-2">
                 {{link2txt}}
-              </button>
             </a>
             <a v-if="link3url == null || undefined" href="#" hidden></a>
-            <a v-else :href="link3url" target="_blank" class="mx-1 py-4 p-3">
-              <button class="btn btn-block btn-primary italic">
+            <a v-else :href="link3url" target="_blank" class="btn btn-inline-block btn-primary italic mx-2">
                 {{link3txt}}
-              </button>
             </a>
           </div>
           <hr />
-          <p class="text-center">
+          <p class="text-center" style="color: black;">
             <i>Updated: {{ update }}</i>
           </p>
         </div>
