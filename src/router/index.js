@@ -148,6 +148,16 @@ const routes = [
 		component: () => import(/* webpackChunkName: "Test" */ '../views/Test.vue')
 	},
 	{
+		path: '/error-404',
+		name: 'ERROR-404',
+		component: () => import(/* webpackChunkName: "Test" */ '../views/ERROR-404.vue')
+	},
+	{
+		path: '/error-418',
+		name: 'ERROR-418',
+		component: () => import(/* webpackChunkName: "Test" */ '../views/ERROR-418.vue')
+	},
+	{
 		path: '/*',
 		name: 'Catch All',
 		component: () => import(/* webpackChunkName: "Test" */ '../views/ERROR-404.vue')
