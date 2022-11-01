@@ -1,24 +1,10 @@
 <template>
-  <div class="LaunchLibNext my-4 mx-lg-4 mx-md-0">
-    <div class="card">
-      <div class="card-body">
+  <div class="LaunchLibNext py-3 my-4">
         <p class="h5 text-uppercase text-left text-secondary">The Launch Library:</p>
-        <hr />
-        <div class="row" id="desktop">
-          <h2 class="h3 text-uppercase text-center my-4">
-            Upcoming Launches You Don't Want to Miss
-          </h2>
-          <!-- <img
-            src="https://rocketdownrange.com/ll-unsplash.jpeg"
-            class="img-fluid mx-auto d-block"
-            alt="Upcoming space related launches by companies and organizations that you don't want to miss.  Provided by Rocket Downrange and The Space Devs, image provided by Unsplash. "
-          /> -->
-        </div>
-        <div class="row" id="mobile">
-          <h4 class="text-center my-1">
-            Upcoming Launches You Don't Want to Miss
-          </h4>
-        </div>
+        <hr>
+        <h2 class="h3 text-uppercase mx-auto text-center my-1">
+          Upcoming Launches You Don't Want to Miss
+        </h2>
         <!-- Start Desktop -->
         <div class="row my-2" id="desktop">
           <tablerowD
@@ -85,8 +71,6 @@
             >
           </i>
         </p>
-      </div>
-    </div>
   </div>
 </template>
 

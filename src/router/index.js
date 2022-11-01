@@ -150,7 +150,7 @@ const routes = [
 	{
 		path: '/*',
 		name: 'Catch All',
-		component: Home
+		component: () => import(/* webpackChunkName: "Test" */ '../views/ERROR-404.vue')
 	}
 ];
 

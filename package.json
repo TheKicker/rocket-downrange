@@ -2,10 +2,27 @@
 	"name": "rocket-downrange",
 	"version": "2.0.0",
 	"private": true,
+	"author":{
+		"name" : "Cav Lemasters ( Github: @TheKicker )",
+		"url" : "https://cavlemasters.com"
+	},
+	"engines":{
+		"npm": ">=8.0.0"
+	},
+	"funding":{
+		"type":"individual",
+		"url":"https://www.buymeacoffee.com/cavlemasters"
+	},
+	"description": "Rocket Downrange is a site I am developing to showcase the advancements of humanity in regards to the exploration of outer space. While the core Vue.JS is my own writing, all data you see on the site is returned from various API's." ,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/TheKicker/rocket-downrange.git"
+	  },
+	"homepage": "https://github.com/TheKicker/rocket-downrange",
+	"website": "https://rocketdownrange.com/",
 	"scripts": {
 		"serve": "vue-cli-service serve",
-		"build": "vue-cli-service build",
-		"lint": "vue-cli-service lint"
+		"build": "vue-cli-service build"
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
@@ -20,26 +37,7 @@
 	},
 	"devDependencies": {
 		"@vue/cli-service": "^4.5.13",
-		"@vue/eslint-config-prettier": "^6.0.0",
-		"eslint": "^6.7.2",
-		"eslint-plugin-prettier": "^3.1.1",
-		"eslint-plugin-vue": "^6.2.2",
-		"prettier": "^1.19.1",
 		"vue-template-compiler": "^2.6.11"
-	},
-	"eslintConfig": {
-		"root": true,
-		"env": {
-			"node": true
-		},
-		"extends": [
-			"plugin:vue/essential",
-			"eslint:recommended",
-			"@vue/prettier"
-		],
-		"parserOptions": {
-			"parser": "babel-eslint"
-		}
 	},
 	"browserslist": [
 		"> 1%",

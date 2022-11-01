@@ -1,5 +1,5 @@
 <template>
-  <div class="LaunchLib-News my-4">
+  <div class="LaunchLib-News py-3 my-4">
       <div>
         <p class="h5 text-uppercase text-left text-secondary">
           The Space News API (SNAPI):

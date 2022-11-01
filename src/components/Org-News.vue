@@ -1,50 +1,46 @@
 <template>
-  <div class="OrganizationNews my-4 mx-lg-4 mx-md-0">
-    <div class="card">
-      <div class="card-body py-3 p-md-6 m-md-3">
-        <p class="h5 text-uppercase text-left text-secondary">
-          {{ company }} ({{ year }}):
+  <div class="OrgNews py-3 my-4">
+    <p class="h5 text-uppercase text-left text-secondary">
+      {{ company }} ({{ year }}):
+    </p>
+    <hr />
+    <h2 class="h3 text-uppercase text-center my-3">{{ title }}</h2>
+    <div class="row">
+        <div v-if="srcType === 'image'" class="mx-auto">
+          <v-lazy-image class="img-fluid" :src="image" :alt="'External link to ' + site" />
+          <img class="img-fluid" :src="source" :alt="company + ' - ' + title">
+        </div>
+        <div v-else-if="srcType === 'video'" class="embed-responsive embed-responsive-16by9 mx-auto">
+          <iframe class="embed-responsive-item px-2" :src="source" frameborder="0" allowfullscreen :title="company + ' - ' + title"></iframe>
+        </div>
+    </div>
+    <div class="container">
+      <div class="row my-3">
+        <p>
+          {{ description1 }}
         </p>
-        <hr />
-        <h2 class="h3 text-uppercase text-center my-4">{{ title }}</h2>
-        <div class="row">
-            <div v-if="srcType === 'image'" class="mx-auto">
-              <v-lazy-image class="img-fluid" :src="image" :alt="'External link to ' + site" />
-              <img class="img-fluid" :src="source" :alt="company + ' - ' + title">
-            </div>
-            <div v-else-if="srcType === 'video'" class="embed-responsive embed-responsive-16by9 mx-auto">
-              <iframe class="embed-responsive-item px-2" :src="source" frameborder="0" allowfullscreen :title="company + ' - ' + title"></iframe>
-            </div>
-        </div>
-        <div class="container">
-          <div class="row my-3 para">
-            <p>
-              {{ description1 }}
-            </p>
-            <p>
-              {{ description2 }}
-            </p>
-          </div>
-          <div class="my-2 row justify-content-center">
-            <a v-if="link1url == null || undefined" href="#" hidden></a>
-            <a v-else :href="link1url" target="_blank" class="btn btn-inline-block btn-primary italic mx-2">
-                {{link1txt}}
-            </a>
-            <a v-if="link2url == null || undefined" href="#" hidden></a>
-            <a v-else :href="link2url" target="_blank" class="btn btn-inline-block btn-primary italic mx-2">
-                {{link2txt}}
-            </a>
-            <a v-if="link3url == null || undefined" href="#" hidden></a>
-            <a v-else :href="link3url" target="_blank" class="btn btn-inline-block btn-primary italic mx-2">
-                {{link3txt}}
-            </a>
-          </div>
-          <hr />
-          <p class="text-center" style="color: black;">
-            <i>Updated: {{ update }}</i>
-          </p>
-        </div>
+        <p>
+          {{ description2 }}
+        </p>
       </div>
+      <div class="my-2 row justify-content-center">
+        <a v-if="link1url == null || undefined" href="#" hidden></a>
+        <a v-else :href="link1url" target="_blank" class="btn btn-inline-block btn-primary italic m-1">
+            {{link1txt}}
+        </a>
+        <a v-if="link2url == null || undefined" href="#" hidden></a>
+        <a v-else :href="link2url" target="_blank" class="btn btn-inline-block btn-primary italic m-1">
+            {{link2txt}}
+        </a>
+        <a v-if="link3url == null || undefined" href="#" hidden></a>
+        <a v-else :href="link3url" target="_blank" class="btn btn-inline-block btn-primary italic m-1">
+            {{link3txt}}
+        </a>
+      </div>
+      <hr />
+      <p class="text-center" style="color: black;">
+        <i>Updated: {{ update }}</i>
+      </p>
     </div>
   </div>
 </template>
@@ -75,13 +71,3 @@ export default {
   }
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-.para{
-  color: black;
-  font-size: 14px;
-}
-
-</style>

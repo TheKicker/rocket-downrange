@@ -18,11 +18,11 @@
         description1="Recently, I was invited to join the team at LunCo where we plan to create a space simulation game that features industry real world applications.  While similar to games like Kerbal Space and No Man's Sky, LunCo will be feature two game styles - digital twin mode for engineers, and story mode for casual enthusiasts.  We also plan to allow user generated content (space crafts, trajectories, factories, etc.) and integration with professional tools like CAD, FEA, MBSE, and more. "
         description2="For story mode, you are playing as a CEO & Founder of a Lunar exploration company in the near future.  You will collect resources, build factories, and manufacture robots to create a sustainable lunar base.  From there, it's up to you to turn the Moon into a stepping stone and launch past the stars!"
         update="Aug 10, 2022"
-        link1txt="Itchi.io Profile"
+        link1txt="Itchi.io"
         link1url="https://difint.itch.io/lunco"
-        link2txt="Github Repository"
+        link2txt="Github"
         link2url="https://github.com/LunCoSim"
-        link3txt="Gitcoin Grant"
+        link3txt="Gitcoin"
         link3url="https://gitcoin.co/grants/5939/lunco-full-cycle-space-operations-sim-tool"
       />
       
@@ -36,11 +36,11 @@
         description1="On Wednesday, August 25th of 2021, Rocket Lab began trading on the Nasdaq, becoming the latest space company to close a merger with a special purpose acquisition company and go public. They closed the first day down slightly at $10.45 per share, under the ticker $RKLB."
         description2='“We are super excited to bring a high-quality space asset to the market” Rocket Lab CEO Peter Beck told CNBC. “I don’t think it will take long for investors to differentiate between the company that’s consistently delivering and the ones that have aspirations to deliver sometime in the future” he later added.'
         update="Aug 30, 2021"
-        link1txt="NASDAQ Profile"
+        link1txt="NASDAQ"
         link1url="https://www.nasdaq.com/market-activity/stocks/rklb"
-        link2txt="Space.com Article"
+        link2txt="Space.com"
         link2url="https://www.space.com/rocket-lab-goes-public-spac-merger"
-        link3txt="CNBC Article"
+        link3txt="CNBC"
         link3url="https://www.cnbc.com/2021/08/25/rocket-lab-begins-trading-on-nasdaq-as-rklb-after-spac-merger.html"
       />
       <!-- ASTR goes public section --> 
@@ -53,11 +53,11 @@
         description1="On Wednesday, June 30th of 2021, Astra became the first launch company to be traded publicly on NASDAQ.  Trading under the ticker $ASTR, with shares previously listed under the special purpose acquisition company Holicity, the announcement expects to bring in around $500 million in proceeds. Astra's idea is to use the funding to continue to develop their rockets - with a goal of launching as many of it's 40ft tall rockets as it can, aiming to launch one per day by 2025."
         description2='“Now we have a space company that everyone can invest in on the public markets,” Astra CEO Chris Kemp told CNBC. “The same kinds of things you do to make a rocket great are the same behaviors that you have to invest in to make a company great. You don’t want any inefficiencies.”'
         update="Jul 2, 2021"
-        link1txt="NASDAQ Profile"
+        link1txt="NASDAQ"
         link1url="https://www.nasdaq.com/market-activity/stocks/astr"
-        link2txt="Space.com Article"
+        link2txt="Space.com"
         link2url="https://www.space.com/astra-launch-company-public-nasdaq"
-        link3txt="CNBC Article"
+        link3txt="CNBC"
         link3url="https://www.cnbc.com/2021/07/01/astra-astr-space-company-begins-trading-on-the-nasdaq.html"
       />
       <NASAperseverance/>

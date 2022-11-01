@@ -7,8 +7,8 @@
               <strong class="title">{{ title }}</strong>
               <p class="card-text text-muted">{{ newsSite }}</p>
               <div class="d-flex justify-content-between align-items-center">
-                <a :href="articleURL" class="btn btn-sm btn-primary" target="_blank" rel="noopener">Read on {{newsSite}}</a>
-                <small class="text-muted">Published: {{timeTranslate(publishedAt)}}</small>
+                <a :href="articleURL" class="btn btn-sm btn-primary" target="_blank" rel="noopener">Read {{newsSite}}</a>
+                <small class="text-muted">Pub: {{timeTranslate(publishedAt)}}</small>
               </div>
             </div>
           </div>

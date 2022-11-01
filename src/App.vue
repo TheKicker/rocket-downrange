@@ -224,6 +224,10 @@ export default {
 </script>
 
 <style>
+p{
+  font-size: 16px;
+}
+
 .ml-1 {
   margin-left: 5px;
 }
