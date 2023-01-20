@@ -67,6 +67,9 @@
                   <router-link class="nav-link ml-1" to="/firefly-aerospace">FIREFLY</router-link>
                 </li>
                 <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/relativity-space">RELATIVITY</router-link>
+                </li>
+                <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/rocket-lab">ROCKET LAB</router-link>
                 </li>
                 <li class="nav-item">

@@ -90,6 +90,11 @@ const routes = [
 		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/United-Launch-Alliance.vue')
 	},
 	{
+		path: '/relativity-space',
+		name: 'Relativity Space',
+		component: () => import(/* webpackChunkName: "SpaceX" */ '../views/Relativity-Space.vue')
+	},
+	{
 		path: '/rocket-lab',
 		name: 'Rocket Lab',
 		component: () => import(/* webpackChunkName: "Rocket-Lab" */ '../views/Rocket-Lab.vue')
