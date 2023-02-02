@@ -3,10 +3,12 @@
     <h2>{{ content }}</h2>
     <div id="parent">
       <div class="child">
-        <l-map class="l-map" :zoom="zoom" :center="center">
+        <l-map class="l-map" :zoom="zoom" :center="center" :options="{attributionControl: false}">
           <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
+          <l-control-attribution position="topright" prefix="A custom prefix"></l-control-attribution>
           <l-marker :lat-lng="markerLatLng"><l-popup>{{ content }}</l-popup></l-marker>
         </l-map>
+        <p class="text-right"><a target="_blank" href="https://leafletjs.com/" rel="noopener">Leaflet.js</a> | &copy; <a target="_blank" href="http://osm.org/copyright" rel="noopener">OpenStreetMap</a></p>
       </div>
       <div class="child">
         <div class="mb-4">
