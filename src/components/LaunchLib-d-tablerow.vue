@@ -7,6 +7,23 @@
     <div class="row">
       <div class="col col-md-6 my-3" id="image">
         <v-lazy-image :src="image" :alt="mission + ', ' + launchsp + ', ' + location" class='img-fluid rounded mx-auto d-block' style="height: 14rem; max-width: 20rem"/>
+        <div class="d-flex flex-row">
+          <router-link v-if="launchsp.includes('Astra')" to="/astra" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('Astrobotic')" to="/astrobotic" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('Blue Origin')" to="/blue-origin" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('Firefly')" to="/firefly-aerospace" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('Relativity Space')" to="/relativity-space" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('Rocket Lab')" to="/rocket-lab" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('SpaceX')" to="/spacex" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('Sierra Space')" to="/sierra-space" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('ULA')" to="/united-launch-alliance" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('Virgin')" to="/virgin-galactic" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="location.includes('Baikonur')" to="/locations" class="btn btn-md btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
+          <router-link v-if="location.includes('Corn Ranch')" to="/locations" class="btn btn-md btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
+          <router-link v-if="location.includes('Cape Canaveral')" to="/locations" class="btn btn-md btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
+          <router-link v-if="location.includes('Kennedy Space Center')" to="/locations" class="btn btn-md btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
+          <router-link v-if="location.includes('Vandenberg')" to="/locations" class="btn btn-md btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
+        </div>
       </div>
       <div class=" col col-md-6 my-1">
         <p class="mx-2 my-2">
