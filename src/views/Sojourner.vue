@@ -32,7 +32,7 @@
         <iframe src="https://sketchfab.com/models/79d6dba490864f6d8e44565c8a8f81a8/embed?dnt=1" width="100%" height="100%" frameborder="0" />
       </div>
       <div class="body-bio">
-        <h2>ABOUT</h2>
+        <h2>ABOUT THE ROVER</h2>
         <hr>
         <div class="foobar">
           <p class="foo">Biography:</p>

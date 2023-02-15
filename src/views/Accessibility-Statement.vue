@@ -1,7 +1,7 @@
 <template>
   <div class="AccessibilityPolicy container my-4">
     <div class="container-fluid text-center my-5">
-      <h2>Accessibility Statement for <span class="basic-information website-name">Rocket Downrange website</span></h2>
+      <h1 class="h2">Accessibility Statement for <span class="basic-information website-name">Rocket Downrange website</span></h1>
       <div class="body my-4 text-left">
             <p>
                 This is an accessibility statement from <span class="basic-information organization-name">Rocket Downrange</span>.  It is of our belief that every person has the right to live with dignity, equality, comfort and independence - and to allow seamless, accessible and unhindered use for all.
@@ -12,7 +12,7 @@
             <p class="text-center font-weight-bold py-4">
                     At Rocket Downrange, we are never influenced by issues regarding race, gender, creed, color, age or disability.  We believe that everyone deserves a safe, stable, and secure experience online.
             </p>
-            <h3>Measures to support accessibility</h3>
+            <h2 class="h4">Measures to support accessibility</h2>
             <p>
                 <span class="basic-information organization-name">Rocket Downrange</span>
                 takes the following measures to ensure accessibility of
@@ -23,7 +23,7 @@
                 <li>Provide continual accessibility training for our staff.</li>
                 <li>Assign clear accessibility goals and responsibilities.</li>
             </ul>
-            <h3>Conformance status</h3>
+            <h2 class="h4">Conformance status</h2>
             <p>
                 The <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG)</a> defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA.
                 <span class="basic-information website-name">Rocket Downrange website</span>
@@ -39,7 +39,7 @@
             </p>
             <h4>Additional accessibility considerations</h4>
             <p class="basic-information conformance-additions">Added USERWAY accessibility widget (https://userway.org/)</p>
-            <h3>Feedback</h3>
+            <h2 class="h4">Feedback</h2>
             <p>
                 We welcome your feedback on the accessibility of
                 <span class="basic-information website-name">Rocket Downrange website</span>.
@@ -53,7 +53,7 @@
             <p>
                 We try to respond to feedback within <span class="feedback responsetime">3-5 business days</span>.
             </p>
-            <h3>Compatibility with browsers and assistive technology</h3>
+            <h2 class="h4">Compatibility with browsers and assistive technology</h2>
             <p>
                 <span class="basic-information website-name">Rocket Downrange website</span>
                 is designed to be compatible with the following assistive technologies:
@@ -61,7 +61,7 @@
             <ul class="technical-information compatible-environments">
                 <li>Browsers and devices older than absolutely necessary.</li>
             </ul>
-            <h3>Technical specifications</h3>
+            <h2 class="h4">Technical specifications</h2>
             <p>
                 Accessibility of
                 <span class="basic-information website-name">Rocket Downrange website</span>
@@ -74,7 +74,7 @@
                 <li>Vue.js</li>
             </ul>
             <p>These technologies are relied upon for conformance with the accessibility standards used.</p>
-            <h3>Limitations and alternatives</h3>
+            <h2 class="h4">Limitations and alternatives</h2>
             <p>
                 Despite our best efforts to ensure accessibility of
                 <span class="basic-information website-name">Rocket Downrange website</span> , there may be some limitations. Below is a description of known limitations, and potential solutions. Please contact us if you observe an issue not listed below.
@@ -86,7 +86,7 @@
             <ol class="technical-information accessibility-limitations">
                 <li><strong>Some external generated content (images, videos, articles) from APIs</strong>: might not have alt text, or captions.  Most of the data on this site is generated using free external APIs, because we cannot ensure the quality of contributions - we use Javascript to build work arounds when we can. Send us a message using the contact form on the home page if you need any help.</li>
             </ol>
-            <h3>Assessment approach</h3>
+            <h2 class="h4">Assessment approach</h2>
             <p>
                 <span class="basic-information organization-name">Rocket Downrange</span>
                 assessed the accessibility of

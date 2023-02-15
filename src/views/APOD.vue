@@ -1,7 +1,7 @@
 <template>
     <section class="container">
         <div id="parent">
-            <p class="h4 text-uppercase text-secondary">Historical NASA APOD</p>
+            <h1 class="h4 text-uppercase text-secondary">Historical NASA APOD</h1>
             <div class="text-center">
                 <date-picker v-model="chosenDate" valueType="format" placeholder="Pick a date"></date-picker>
             </div>

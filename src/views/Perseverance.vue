@@ -32,7 +32,7 @@
         <iframe src="https://mars.nasa.gov/gltf_embed/25042" width="100%" height="100%" frameborder="0" />
       </div>
       <div class="body-bio">
-        <h2>ABOUT</h2>
+        <h2>ABOUT THE ROVER</h2>
         <hr>
         <div class="foobar">
           <p class="foo">Biography:</p>
