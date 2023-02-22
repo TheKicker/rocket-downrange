@@ -12,20 +12,24 @@
       </div>
       <div class="child">
         <div class="mb-4">
-          <p class="h5 text-capitalize"><strong>Location:</strong></p>
-          <p class="h4 text-uppercase">- {{ region }}</p>
+          <p class="h5 text-uppercase text-secondary"><strong>Description:</strong></p>
+          <p class="h4">- {{ description }} </p>
         </div>
         <div class="mb-4">
-          <p class="h5 text-capitalize"><strong>Primary Operator:</strong></p>
-          <p class="h4 text-uppercase">- {{ operator }}</p>
+          <p class="h5 text-uppercase text-secondary"><strong>Location:</strong></p>
+          <p class="h4">- {{ region }}</p>
         </div>
         <div class="mb-4">
-          <p class="h5 text-capitalize"><strong>Launch Pads:</strong></p>
-          <p class="h4 text-uppercase">- {{ launch_pads }}</p>
+          <p class="h5 text-uppercase text-secondary"><strong>Primary Operator:</strong></p>
+          <p class="h4">- {{ operator }}</p>
         </div>
         <div class="mb-4">
-          <p class="h5 text-capitalize"><strong>First Launch:</strong></p>
-          <p class="h4 text-uppercase">- {{ first_launch }}</p>
+          <p class="h5 text-uppercase text-secondary"><strong>Launch Pads:</strong></p>
+          <p class="h4">- {{ launch_pads }}</p>
+        </div>
+        <div class="mb-4">
+          <p class="h5 text-uppercase text-secondary"><strong>First Launch:</strong></p>
+          <p class="h4">- {{ first_launch }}</p>
         </div>
       </div>
     </div>
@@ -53,6 +57,7 @@ export default {
         region: String,
         launch_pads: String,
         first_launch: String,
+        description: String
     },
     data() {
         return {
@@ -67,7 +72,7 @@ export default {
 </script>
 <style scoped>
 .l-map{
-  height: 500px;
+  height: 550px;
 }
 
 #parent{
