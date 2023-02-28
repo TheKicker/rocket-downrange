@@ -14,7 +14,7 @@
         :alt="name + ' - ' + abbrev + ' (' + country_code + ')'"
       />
       <div class="overlay overflow-hidden">
-        <p id="desc">{{ bio }}</p>
+        <p id="desc">{{ truncate(bio) }}</p>
       </div>
     </div>
     <div class="card-body bg-primary text-center">
@@ -35,6 +35,38 @@ export default {
     country_code: String,
     bio: String,
   },
+  methods:{
+    truncate(bio){
+      var periods = []
+      var limit = 450
+
+      if(bio.length > limit){
+        for(var i = 0; i < bio.length; i++)
+        {
+          if(bio[i] === ".")
+          {
+            periods.push(i)
+          }
+        }
+        // console.log(`Periods: ${periods}`)
+        return bio.slice(0, this.closest(limit, periods) + 1)
+      } else {
+        return bio
+      }
+    },
+    closest(num, arr){
+      var val = 0;
+      for (var i = 0; i < arr.length; i++)
+      {
+        if (arr[i] < num)
+        {
+          val = arr[i]
+        }
+      }
+      // console.log(`Closest i: ${val}`)
+      return val
+    }
+  }
 };
 </script>
 
