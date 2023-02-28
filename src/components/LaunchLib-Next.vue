@@ -111,7 +111,7 @@ export default {
 #mobile{
   display: none;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 780px) {
   #desktop{ display: none;}
   #mobile{ display: initial;}
 }

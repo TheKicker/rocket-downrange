@@ -100,6 +100,7 @@ export default {
   }
   #content{
     margin-left: 15px; 
+    color: black;
   }
 </style>
 

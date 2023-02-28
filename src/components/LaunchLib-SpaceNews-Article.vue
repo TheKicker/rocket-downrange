@@ -5,8 +5,12 @@
             <v-lazy-image id="img" class="card-img img-fluid" :src="imageURL" :alt="newsSite + ' - ' + title" />
             <div class="p-2">
               <strong class="title">{{ title }}</strong>
-              <p class="card-text text-muted">{{ newsSite }}</p>
-              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex justify-content-between">
+                <p class="text-muted">{{ newsSite }}</p>
+                <p class="text-muted">{{timeTranslate(publishedAt)}}</p>
+              </div>
+              <div class="d-flex justify-content-around align-items-center">
+                  <a :href="articleURL" class="btn btn-md btn-primary" target="_blank" rel="noopener">Read {{newsSite}}</a>
                   <router-link v-if="title.includes('Astra')" to="/astra" class="btn btn-md btn-primary" :aria-label="title + ' page on Rocket Downrange.com'">Company Info</router-link>
                   <router-link v-if="title.includes('Astrobotic')" to="/astrobotic" class="btn btn-md btn-primary" :aria-label="title + ' page on Rocket Downrange.com'">Company Info</router-link>
                   <router-link v-if="title.includes('Blue Origin')" to="/blue-origin" class="btn btn-md btn-primary" :aria-label="title + ' page on Rocket Downrange.com'">Company Info</router-link>
@@ -22,8 +26,6 @@
                   <router-link v-if="title.includes('Opportunity')" to="/opportunity" class="btn btn-md btn-primary" :aria-label="title + ' page on Rocket Downrange.com'">Rover Info</router-link>
                   <router-link v-if="title.includes('Spirit')" to="/spirit" class="btn btn-md btn-primary" :aria-label="title + ' page on Rocket Downrange.com'">Rover Info</router-link>
                   <router-link v-if="title.includes('Sojourner')" to="/sojourner" class="btn btn-md btn-primary" :aria-label="title + ' page on Rocket Downrange.com'">Rover Info</router-link>
-                  <a :href="articleURL" class="btn btn-md btn-primary" target="_blank" rel="noopener">Read via {{newsSite}}</a>
-                <small class="text-muted">Pub: {{timeTranslate(publishedAt)}}</small>
               </div>
             </div>
           </div>
