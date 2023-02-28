@@ -4,7 +4,7 @@
       header="Who's in Space?"
       description="Long before the legendary cosmonaut Yuri Gagarin became the first human
         in space in 1961, humanity has dreamed of flying amongst the stars. To
-        this day, nearly 600 indivuduals have travelled into space with
+        this day, nearly 600 individuals have traveled into space with
         somewhere around 2/3 of that being American. Even fewer, only 12 people
         have visited our celestial neighbor, the moon. Several space agencies
         are working to change that, and with big projects on the horizon this
@@ -30,7 +30,6 @@
 <script>
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
-// import Lost from "@/components/astronaut/LIF.vue";
 import Active from "@/components/astronaut/Active-In-Flight.vue";
 import Retired from "@/components/astronaut/Retired-From-Flight.vue";
 import Lost from "@/components/astronaut/Lost-In-Flight.vue";
