@@ -98,7 +98,7 @@ export default {
       .then((response) => {
         this.launches = response.data.results;
       });
-  },
+  }
 };
 </script>
 

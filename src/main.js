@@ -21,6 +21,9 @@ Vue.config.productionTip = false;
 // Module for SEO purposes
 Vue.use(Meta);
 
+// Module for add to calendar functionality
+
+
 // You can also pass in the default options
 Vue.use(VueScrollTo, {
 	container: "body",

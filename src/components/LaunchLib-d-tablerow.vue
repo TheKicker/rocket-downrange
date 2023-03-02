@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col col-md-6 my-3" id="image">
         <v-lazy-image :src="image" :alt="mission + ', ' + launchsp + ', ' + location" class='img-fluid rounded mx-auto d-block' style="height: 14rem; max-width: 20rem"/>
-        <div class="d-flex flex-row">
+        <div class="d-flex flex-row my-2">
           <router-link v-if="launchsp.includes('Astra')" to="/astra" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
           <router-link v-if="launchsp.includes('Astrobotic')" to="/astrobotic" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
           <router-link v-if="launchsp.includes('Blue Origin')" to="/blue-origin" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
@@ -24,11 +24,24 @@
           <router-link v-if="location.includes('Kennedy Space Center')" to="/locations" class="btn btn-md btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
           <router-link v-if="location.includes('Vandenberg')" to="/locations" class="btn btn-md btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
         </div>
+        <add-to-calendar-button
+            :name="mission + ' by ' + launchsp "
+            :description="description + '. Visit RocketDownrange.com for more information on companies, rovers, launch providers, NASA Astronomy Picture of the Day, and more!'"
+            :startDate="launchtime"
+            :endTime="addHours(launchtime, 3)"
+            :location="location"
+            options="['Apple','Google','iCal','Microsoft365','Outlook.com','Yahoo']"
+            trigger="click"
+            inline
+            listStyle="modal"
+            iCalFileName="Reminder-Event">
+          </add-to-calendar-button>
       </div>
       <div class=" col col-md-6 my-1">
         <p class="mx-2 my-2">
           <span id="header">Launch Date: </span><br>
           <span id="content">{{ utcTranslate(launchtime) }}</span>
+          <span id="content">{{ launchtime }}</span>
         </p>
         <p class="mx-2 my-2">
           <span id="header">Launch Vehicle: </span><br>
@@ -52,6 +65,7 @@
 
 <script>
 import VLazyImage from "v-lazy-image/v2";
+import 'add-to-calendar-button';
 
 export default {
   name: "tablerowD",
@@ -85,6 +99,14 @@ export default {
         return results;
       }
     },
+    addHours(d, h)
+    {
+      var datetime = new Date(d)
+      
+      datetime.setHours(datetime.getTime() + (h*60*60*1000));
+
+      return datetime;
+    }
   },
 };
 </script>

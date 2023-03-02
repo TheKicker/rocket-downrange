@@ -26,6 +26,18 @@
         <span id="content">{{ charCount(description, limit) }}</span>
       </p>
     </div>
+    <add-to-calendar-button
+      :name="mission + ' by ' + launchsp "
+      :description="description + '. Visit RocketDownrange.com for more information on companies, rovers, launch providers, NASA Astronomy Picture of the Day, and more!'"
+      :startDate="launchtime"
+      :endTime="addHours(launchtime, 3)"
+      :location="location"
+      options="['Apple','Google','iCal','Microsoft365','Outlook.com','Yahoo']"
+      trigger="click"
+      inline
+      listStyle="modal"
+      iCalFileName="Reminder-Event">
+    </add-to-calendar-button>
   </div>
 </template>
 
