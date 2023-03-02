@@ -41,7 +41,6 @@
         <p class="mx-2 my-2">
           <span id="header">Launch Date: </span><br>
           <span id="content">{{ utcTranslate(launchtime) }}</span>
-          <span id="content">{{ launchtime }}</span>
         </p>
         <p class="mx-2 my-2">
           <span id="header">Launch Vehicle: </span><br>
