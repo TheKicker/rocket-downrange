@@ -44,6 +44,7 @@
 
 <script>
 import VLazyImage from "v-lazy-image/v2";
+import 'add-to-calendar-button';
 
 export default {
   name: "tablerowM",

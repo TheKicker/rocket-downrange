@@ -22,7 +22,7 @@ Vue.config.productionTip = false;
 Vue.use(Meta);
 
 // Module for add to calendar functionality
-
+// https://www.npmjs.com/package/add-to-calendar-button
 
 // You can also pass in the default options
 Vue.use(VueScrollTo, {
