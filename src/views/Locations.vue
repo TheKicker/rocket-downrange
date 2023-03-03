@@ -136,6 +136,17 @@
         first_launch="29th of January, 1984"
         description="Jiuquan Satellite Launch Center is a Chinese space launch facility located in the Gobi Desert that plays a crucial role in China's space program, including the launches of the country's first manned spacecraft and its lunar exploration missions. With its strategic location and advanced launch infrastructure, Jiuquan Satellite Launch Center is a key player in the global space industry and a symbol of China's growing capabilities in space."
       />
+      <LaunchLocations 
+        x="30.401513379405348" 
+        y="130.97688422868234" 
+        z="11" 
+        content="Yoshinobu Launch Complex"
+        operator="Japan"
+        region="Tanegashima, Japan"
+        launch_pads="3 active"
+        first_launch="9th of September, 1975"
+        description="Japan's main space launch site operated by JAXA, includes several launch complexes and hosting a wide variety of space missions, from scientific and commercial satellites to interplanetary probes and the International Space Station resupply missions. It offers a unique location for space launches, with its proximity to the equator allowing for increased payload capacity and cost-effectiveness."
+      />
     <about />
   </div>
 </template>

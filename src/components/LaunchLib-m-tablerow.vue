@@ -1,5 +1,5 @@
 <template>
-  <div class="card my-3">    
+  <div class="card">    
     <h3 class="h4 text-uppercase card-header text-light" style="background: black;">
       {{ mission }}
     </h3>

@@ -1,12 +1,11 @@
 <template>
-  <div class="LaunchLibNext py-3 my-4">
-        <p class="h5 text-uppercase text-left text-secondary">The Launch Library:</p>
-        <hr>
-        <h2 class="h3 text-uppercase mx-auto text-center my-1">
+  <div class="LaunchLibNext card my-4">
+        <p class="card-header h5 text-uppercase text-left text-secondary">The Launch Library:</p>
+        <h2 class="h3 text-uppercase mx-auto text-center mt-4">
           Upcoming Launches You Don't Want to Miss
         </h2>
         <!-- Start Desktop -->
-        <div class="row my-2" id="desktop">
+        <div class="row my-2 card-body" id="desktop">
           <tablerowD
             v-for="(launch, index) in launches"
             :key="index"
@@ -35,7 +34,7 @@
         <!-- End Desktop --> 
         
         <!-- Start Mobile -->
-        <div class="row my-3" id="mobile">
+        <div class="row my-3 card-body" id="mobile">
           <tablerowM
             v-for="(launch, index) in launches"
             :key="index"
@@ -62,7 +61,6 @@
           />
         </div>
         <!-- End Mobile --> 
-        <hr>
         <p class="text-center">
           <i>
             API Data brought to you by

@@ -1,6 +1,5 @@
 <template>
-  <div class="card my-4">
-    
+  <div class="card">
     <h3 class="h4 text-uppercase card-header text-center text-light" style="background: black;">
       {{ mission }}
     </h3>
@@ -45,6 +44,7 @@
           <router-link v-if="location.includes('Cape Canaveral')" to="/locations" class="btn btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
           <router-link v-if="location.includes('Kennedy Space Center')" to="/locations" class="btn btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
           <router-link v-if="location.includes('Vandenberg')" to="/locations" class="btn btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
+          <router-link v-if="location.includes('Tanegashima')" to="/locations" class="btn btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
           <add-to-calendar-button
             :name="mission + ' by ' + launchsp "
             :description="description + '. Visit RocketDownrange.com for more information on companies, rovers, launch providers, NASA Astronomy Picture of the Day, and more!'"

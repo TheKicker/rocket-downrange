@@ -23,7 +23,7 @@
               {{ description2 }}
             </p>
           </div>
-          <div class="my-2 row justify-content-center">
+          <div class="my-2 row justify-content-around">
             <a v-if="link1url == null || undefined" href="#" hidden></a>
             <a v-else :href="link1url" target="_blank" class="btn btn-inline-block btn-primary italic m-1">
                 {{link1txt}}
