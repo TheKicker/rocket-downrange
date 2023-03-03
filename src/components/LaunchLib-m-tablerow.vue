@@ -3,7 +3,7 @@
     <h3 class="h4 text-uppercase card-header text-light" style="background: black;">
       {{ mission }}
     </h3>
-    <div>
+    <div class="py-3">
       <v-lazy-image :src="image" :alt="mission + ', ' + launchsp + ', ' + location" class='img-fluid rounded mx-auto d-block' style="height: 10rem; max-width: 16rem"/>
     </div>
     <div>
@@ -26,7 +26,8 @@
         <span id="content">{{ charCount(description, limit) }}</span>
       </p>
     </div>
-    <add-to-calendar-button
+    <div style="display: grid; place-items: center; margin: 1rem 0;">
+      <add-to-calendar-button
       :name="mission + ' by ' + launchsp "
       :description="description + '. Visit RocketDownrange.com for more information on companies, rovers, launch providers, NASA Astronomy Picture of the Day, and more!'"
       :startDate="launchtime"
@@ -38,6 +39,7 @@
       listStyle="modal"
       iCalFileName="Reminder-Event">
     </add-to-calendar-button>
+    </div>
   </div>
 </template>
 
@@ -78,6 +80,15 @@ export default {
         return results;
       }
     },
+    addHours(l, d, h)
+    {
+      var startTime = new Date(d);
+      var endTime = new Date(d)
+      endTime = endTime.setHours(endTime.getHours() + h)
+      console.log(`Mission: ${l} \n Original Date: ${startTime} \n New Date: ${new Date(endTime)}`)
+
+      return endTime;
+    }
   },
 };
 </script>

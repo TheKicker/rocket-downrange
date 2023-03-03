@@ -7,35 +7,6 @@
     <div class="row">
       <div class="col col-md-6 my-3" id="image">
         <v-lazy-image :src="image" :alt="mission + ', ' + launchsp + ', ' + location" class='img-fluid rounded mx-auto d-block' style="height: 14rem; max-width: 20rem"/>
-        <div class="d-flex flex-row my-2">
-          <router-link v-if="launchsp.includes('Astra')" to="/astra" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
-          <router-link v-if="launchsp.includes('Astrobotic')" to="/astrobotic" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
-          <router-link v-if="launchsp.includes('Blue Origin')" to="/blue-origin" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
-          <router-link v-if="launchsp.includes('Firefly')" to="/firefly-aerospace" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
-          <router-link v-if="launchsp.includes('Relativity Space')" to="/relativity-space" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
-          <router-link v-if="launchsp.includes('Rocket Lab')" to="/rocket-lab" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
-          <router-link v-if="launchsp.includes('SpaceX')" to="/spacex" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
-          <router-link v-if="launchsp.includes('Sierra Space')" to="/sierra-space" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
-          <router-link v-if="launchsp.includes('ULA')" to="/united-launch-alliance" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
-          <router-link v-if="launchsp.includes('Virgin')" to="/virgin-galactic" class="btn btn-md btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
-          <router-link v-if="location.includes('Baikonur')" to="/locations" class="btn btn-md btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
-          <router-link v-if="location.includes('Corn Ranch')" to="/locations" class="btn btn-md btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
-          <router-link v-if="location.includes('Cape Canaveral')" to="/locations" class="btn btn-md btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
-          <router-link v-if="location.includes('Kennedy Space Center')" to="/locations" class="btn btn-md btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
-          <router-link v-if="location.includes('Vandenberg')" to="/locations" class="btn btn-md btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
-        </div>
-        <add-to-calendar-button
-            :name="mission + ' by ' + launchsp "
-            :description="description + '. Visit RocketDownrange.com for more information on companies, rovers, launch providers, NASA Astronomy Picture of the Day, and more!'"
-            :startDate="launchtime"
-            :endTime="addHours(launchtime, 3)"
-            :location="location"
-            options="['Apple','Google','iCal','Microsoft365','Outlook.com','Yahoo']"
-            trigger="click"
-            inline
-            listStyle="modal"
-            iCalFileName="Reminder-Event">
-          </add-to-calendar-button>
       </div>
       <div class=" col col-md-6 my-1">
         <p class="mx-2 my-2">
@@ -58,6 +29,35 @@
         </p>
       </div>
     </div>
+    <div class="d-flex flex-row my-4 justify-content-around py-1">
+          <router-link v-if="launchsp.includes('Astra')" to="/astra" class="btn btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('Astrobotic')" to="/astrobotic" class="btn btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('Blue Origin')" to="/blue-origin" class="btn btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('Firefly')" to="/firefly-aerospace" class="btn btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('Relativity Space')" to="/relativity-space" class="btn btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('Rocket Lab')" to="/rocket-lab" class="btn btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('SpaceX')" to="/spacex" class="btn btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('Sierra Space')" to="/sierra-space" class="btn btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('ULA')" to="/united-launch-alliance" class="btn btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="launchsp.includes('Virgin')" to="/virgin-galactic" class="btn btn-primary mx-3" :aria-label="launchsp + ' page on Rocket Downrange.com'">Company Info</router-link>
+          <router-link v-if="location.includes('Baikonur')" to="/locations" class="btn btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
+          <router-link v-if="location.includes('Corn Ranch')" to="/locations" class="btn btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
+          <router-link v-if="location.includes('Cape Canaveral')" to="/locations" class="btn btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
+          <router-link v-if="location.includes('Kennedy Space Center')" to="/locations" class="btn btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
+          <router-link v-if="location.includes('Vandenberg')" to="/locations" class="btn btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
+          <add-to-calendar-button
+            :name="mission + ' by ' + launchsp "
+            :description="description + '. Visit RocketDownrange.com for more information on companies, rovers, launch providers, NASA Astronomy Picture of the Day, and more!'"
+            :startDate="launchtime"
+            :endTime="addHours(mission, launchtime, 3)"
+            :location="location"
+            options="['Apple','Google','iCal','Microsoft365','Outlook.com','Yahoo']"
+            trigger="click"
+            inline
+            listStyle="modal"
+            iCalFileName="Reminder-Event">
+          </add-to-calendar-button>
+        </div>
   </div>
 </template>
 
@@ -98,13 +98,14 @@ export default {
         return results;
       }
     },
-    addHours(d, h)
+    addHours(l, d, h)
     {
-      var datetime = new Date(d)
-      
-      datetime.setHours(datetime.getTime() + (h*60*60*1000));
+      var startTime = new Date(d);
+      var endTime = new Date(d)
+      endTime = endTime.setHours(endTime.getHours() + h)
+      console.log(`Mission: ${l} \n Original Date: ${startTime} \n New Date: ${new Date(endTime)}`)
 
-      return datetime;
+      return endTime;
     }
   },
 };
@@ -122,6 +123,9 @@ export default {
   #content{
     margin-left: 15px; 
     color: black;
+  }
+  .btn{
+    max-height: 47px; 
   }
 </style>
 
