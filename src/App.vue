@@ -86,6 +86,14 @@
                 </li>
               </div>
             </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="locationsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">locations</a>
+              <div class="dropdown-menu bg-primary text-left" aria-labelledby="locationsDropdown">
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/locations/baikonur-cosmodrome">Baikonur</router-link>
+                </li>
+              </div>
+            </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="externalDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">External</a>
               <div class="dropdown-menu bg-primary" aria-labelledby="externalDropdown">
@@ -104,9 +112,6 @@
                 </li>
                 <li class="nav-item">
                   <a href="https://www.ivoyager.dev/" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-sun"></i> I, VOYAGER</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.moonwards.com/gameplay/" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-trophy"></i> MOONWARD</a>
                 </li>
                 <li class="nav-item">
                   <a href="https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-globe-americas"></i> PIXEL SPACE</a>
