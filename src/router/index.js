@@ -163,6 +163,11 @@ const routes = [
 		component: () => import(/* webpackChunkName: "Test" */ '../views/ERROR-418.vue')
 	},
 	{
+		path: '/locations/baikonur-cosmodrome',
+		name: "Baikonur",
+		component: () => import(/* webpackChunkName: "Test" */'../views/locations/baikonur-cosmodrome.vue')
+	},
+	{
 		path: '/*',
 		name: 'Catch All',
 		component: () => import(/* webpackChunkName: "Test" */ '../views/ERROR-404.vue')

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" v-cloak>
     <div id="marqueecontainer">
       <p id="marquee"> LOVE ROCKET DOWNRANGE? SUPPORT THE PROJECT AND <a class="marquee-btn" href="https://www.buymeacoffee.com/cavlemasters" target="_blank" rel="noopener"><i class="fas fa-coffee"></i>&nbsp;BUY ME A COFFEE</a></p>
     </div>
@@ -86,14 +86,14 @@
                 </li>
               </div>
             </li>
-            <!-- <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="locationsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">locations</a>
               <div class="dropdown-menu bg-primary text-left" aria-labelledby="locationsDropdown">
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/locations/baikonur-cosmodrome">Baikonur</router-link>
+                  <router-link class="nav-link ml-1" to="/locations/baikonur-cosmodrome">BAIKONUR</router-link>
                 </li>
               </div>
-            </li> -->
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="externalDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">External</a>
               <div class="dropdown-menu bg-primary" aria-labelledby="externalDropdown">
@@ -232,6 +232,10 @@ export default {
 </script>
 
 <style>
+#app[v-cloak] {
+  display: none
+}
+
 p{
   font-size: 16px;
 }

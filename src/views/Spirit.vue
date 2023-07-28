@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="cover">
+  <div class="cover container">
       <!-- Cover image size set by scoped CSS -->
   </div>
   <div class="mx-auto container">
