@@ -168,6 +168,11 @@ const routes = [
 		component: () => import(/* webpackChunkName: "Test" */'../views/locations/baikonur-cosmodrome.vue')
 	},
 	{
+		path: '/locations/kennedy-space-center',
+		name: "Kennedy",
+		component: () => import(/* webpackChunkName: "Test" */'../views/locations/kennedy-space-center.vue')
+	},
+	{
 		path: '/*',
 		name: 'Catch All',
 		component: () => import(/* webpackChunkName: "Test" */ '../views/ERROR-404.vue')

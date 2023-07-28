@@ -5,21 +5,21 @@
       <div class="bio">
         <img src="https://rocketdownrange.com/app-icon.png" class="profile-image" alt="Rocket Downrange Rover profile image">
         <div class="name">
-          <h1 class="h2">Baikonur Cosmodrome</h1>
-          <p><i class="fas fa-map-marker-alt mr-2"></i> Kazakh Steppe, Kazakhstan</p>
+          <h1 class="h2">Kennedy Space Center</h1>
+          <p><i class="fas fa-map-marker-alt mr-2"></i> Cape Canaveral, Florida, USA</p>
         </div>
       </div>
       <div class="stats">
         <div class="stats-item">
-          <p class="stats-status">Oct 4, 1957</p>
+          <p class="stats-status">Nov 9th, 1967</p>
           <p class="small">FIRST LAUNCH</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">ROSCOSMOS</p>
+          <p class="stats-status">NASA</p>
           <p class="small">PRIMARY OPERATOR</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">71</p>
+          <p class="stats-status">4</p>
           <p class="small">LAUNCH PADS</p>
         </div>
       </div>
@@ -38,27 +38,29 @@
         <hr>
         <div class="foobar">
           <p class="foo">Description:</p>
-            <p class="bar">Baikonur Cosmodrome, located in the desert steppes of Kazakhstan, is the world's oldest and largest space launch facility and has been the launch site for numerous historic space missions, including the first human spaceflight by Yuri Gagarin. With its unparalleled history and infrastructure, Baikonur Cosmodrome remains a vital component of the global space industry and a symbol of humanity's quest for exploration and discovery.</p>
+          <p class="bar">Kennedy Space Center, located on the east coast of Florida, is NASA's primary launch facility and a hub for human spaceflight, scientific research, and space exploration. With its rich history, state-of-the-art facilities, and proximity to Cape Canaveral Air Force Station, Kennedy Space Center is a world-renowned center for space innovation and discovery.</p>
         </div>
         <figure>
           <figcaption>Quick Facts:</figcaption>
           <ul>
-            <li>It covers an area of approximately 6,717 square kilometers (2,600 square miles) and is situated near the city of Baikonur.</li>
-            <li>It was originally constructed by the Soviet Union in the late 1950s and became the launch site for the iconic space missions, including Yuri Gagarin's historic flight, which made him the first human to orbit the Earth on April 12, 1961.</li>
-            <li>Despite being located in Kazakhstan, Baikonur Cosmodrome is not part of the Kazakh Space Agency. Instead, it is operated under a lease agreement between Russia and Kazakhstan.</li>
+            <li>NASA's Kennedy Space Center in Cape Canaveral, Florida, is a historic launch site renowned for its crucial role in crewed space missions like Apollo moon landings and Space Shuttle launches.</li>
+            <li>The center houses multiple launch complexes, including LC-39A, which has been utilized by private companies like SpaceX for commercial launches.</li>
+            <li>Serving as a gateway to space, the Kennedy Space Center continues to play a vital role in space exploration, supporting missions like the Artemis program's development of the Space Launch System and providing a visitor complex for public engagement with space history and future endeavors.</li>
+            
           </ul>
         </figure>
       </div>
     </div>
 
     <Quote
-      message="Orbiting Earth in the spaceship, I saw how beautiful our planet is. People, let us preserve and increase this beauty, and not destroy it!"
-      author="Yuri Gagarin"
-      significance="The first person in space (1961)"
+      message="We welcome more nations taking trips to mars and studying it, delivering and sharing its science with the world... that’s what science is all about, of course, it’s a very uniting kind of thing. For the first time ever, we’re going to fly a helicopter on another planet... in the future, it could transform how we do planetary science on other worlds."
+      author="Jim Bridenstine"
+      significance="Former head of NASA, under President Donald Trump"
     />
-
+    
+    <!-- <img :src="images.collection.items[0].links[0].href"/> -->
     <div class="profile-feed mb-4">
-      <img v-for="X in 32" :key="X" :src="images.collection.items[X].links[0].href" class="img" :alt="images.collection.items[X].data[0].title"/>
+        <img v-for="X in 32" :key="X" :src="images.collection.items[X].links[0].href" class="img" :alt="images.collection.items[X].data[0].title"/>
     </div>
   </div>
 </template>
@@ -70,7 +72,7 @@ import { LMap, LTileLayer, LMarker, LPopup } from "vue2-leaflet";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {
-  name: "Kennedy",
+  name: "Baikonur",
   components: {
         LMap,
         LTileLayer,
@@ -80,12 +82,12 @@ export default {
     },
   data() {
     return {
-        location: "Baikonur Cosmodrome",
+        location: "Kennedy Space Center VAB",
         url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         attribution: '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
         zoom: 11,
-        center: [45.965, 63.305],
-        markerLatLng: [45.965, 63.305],
+        center: [28.524, -80.650],
+        markerLatLng: [28.524, -80.650],
         images: []
     };
   },
@@ -94,7 +96,8 @@ export default {
   },
   methods: {
     async fetchImages() {
-      const image_url = `https://images-api.nasa.gov/search?q=baikonur%20cosmodrome&page=1`;
+      let computeString = this.location.replace(/ /g, '%20');
+      const image_url = `https://images-api.nasa.gov/search?q=${computeString}&page=1`;
       console.log(image_url)
       try {
         const response = await fetch(image_url);
@@ -116,7 +119,7 @@ figcaption{
     font-size: 16px;
 }
 .cover {
-    background-image: url("https://images-assets.nasa.gov/image/NHQ201903140002/NHQ201903140002~thumb.jpg");
+    background-image: url("https://images-assets.nasa.gov/image/KSC-20201027-PH-JBS02_0051/KSC-20201027-PH-JBS02_0051~thumb.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -92,6 +92,9 @@
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/locations/baikonur-cosmodrome">BAIKONUR</router-link>
                 </li>
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/locations/kennedy-space-center">KENNEDY</router-link>
+                </li>
               </div>
             </li>
             <li class="nav-item dropdown">

@@ -27,7 +27,12 @@
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://rocketdownrange.com/baikonur-cosmodrome</loc>
+  <loc>https://rocketdownrange.com/locations/baikonur-cosmodrome</loc>
+  <lastmod>2023-07-27T21:15:15.743Z</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rocketdownrange.com/locations/kennedy-space-center</loc>
   <lastmod>2023-07-27T21:15:15.743Z</lastmod>
   <priority>0.80</priority>
 </url>
