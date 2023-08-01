@@ -37,6 +37,21 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://rocketdownrange.com/locations/starbase</loc>
+  <lastmod>2023-07-27T21:15:15.743Z</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rocketdownrange.com/locations/wallops-island</loc>
+  <lastmod>2023-07-27T21:15:15.743Z</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rocketdownrange.com/locations/vandenberg</loc>
+  <lastmod>2023-07-27T21:15:15.743Z</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://rocketdownrange.com/solar-system</loc>
   <lastmod>2023-07-27T21:15:15.743Z</lastmod>
   <priority>0.90</priority>
