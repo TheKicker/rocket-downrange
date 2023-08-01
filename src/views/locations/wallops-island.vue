@@ -5,21 +5,21 @@
       <div class="bio">
         <img src="https://rocketdownrange.com/app-icon.png" class="profile-image" alt="Rocket Downrange Rover profile image">
         <div class="name">
-          <h1 class="h2">Baikonur Cosmodrome</h1>
-          <p><i class="fas fa-map-marker-alt mr-2"></i> Kazakh Steppe, Kazakhstan</p>
+          <h1 class="h2">Wallops Island & Flight Facility</h1>
+          <p><i class="fas fa-map-marker-alt mr-2"></i> Wallops Island, Virginia, USA</p>
         </div>
       </div>
       <div class="stats">
         <div class="stats-item">
-          <p class="stats-status">Oct 4, 1957</p>
+          <p class="stats-status">Jul 4th, 1945</p>
           <p class="small">FIRST LAUNCH</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">ROSCOSMOS</p>
+          <p class="stats-status">NASA</p>
           <p class="small">PRIMARY OPERATOR</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">71</p>
+          <p class="stats-status">3</p>
           <p class="small">LAUNCH PADS</p>
         </div>
       </div>
@@ -38,27 +38,29 @@
         <hr>
         <div class="foobar">
           <p class="foo">Description:</p>
-            <p class="bar">Baikonur Cosmodrome, located in the desert steppes of Kazakhstan, is the world's oldest and largest space launch facility and has been the launch site for numerous historic space missions, including the first human spaceflight by Yuri Gagarin. With its unparalleled history and infrastructure, Baikonur Cosmodrome remains a vital component of the global space industry and a symbol of humanity's quest for exploration and discovery.</p>
+          <p class="bar">Wallops Island and Flight Facility, located on the eastern shore of Virginia, is a NASA-run launch site that supports a wide range of scientific, commercial, and military missions, including the testing of new rocket systems and payloads. With its unique coastal location, cutting-edge technology, and experienced workforce, Wallops Island and Flight Facility is a vital hub for space innovation and exploration.</p>
         </div>
         <figure>
           <figcaption>Quick Facts:</figcaption>
           <ul>
-            <li>It covers an area of approximately 6,717 square kilometers (2,600 square miles) and is situated near the city of Baikonur.</li>
-            <li>It was originally constructed by the Soviet Union in the late 1950s and became the launch site for the iconic space missions, including Yuri Gagarin's historic flight, which made him the first human to orbit the Earth on April 12, 1961.</li>
-            <li>Despite being located in Kazakhstan, Baikonur Cosmodrome is not part of the Kazakh Space Agency. Instead, it is operated under a lease agreement between Russia and Kazakhstan.</li>
+            <li>During the Apollo program, Wallops Island was utilized for testing the Lunar Module (LM), which played a pivotal role in landing astronauts on the Moon. </li>
+            <li>On February 15, 1961, Wallops Island became the site of a significant achievement when the Explorer 9 satellite was launched into orbit. It was the first successful satellite launch from the facility and played a crucial role in advancing space exploration.</li>
+            <li>Wallops Island has hosted a range of scientific missions and resupply missions to the ISS, making it a significant center for space research and exploration.</li>
+            
           </ul>
         </figure>
       </div>
     </div>
 
     <Quote
-      message="Orbiting Earth in the spaceship, I saw how beautiful our planet is. People, let us preserve and increase this beauty, and not destroy it!"
-      author="Yuri Gagarin"
-      significance="The first person in space (1961)"
+      message="From this location, we have launched more than 16,000 rockets, many of them being milestones in the development of space exploration. "
+      author="David Pierce"
+      significance="Former director of NASA's Wallops Flight Facility"
     />
-
+    
+    <!-- <img :src="images.collection.items[0].links[0].href"/> -->
     <div class="profile-feed mb-4">
-      <img v-for="X in 32" :key="X" :src="images.collection.items[X].links[0].href" class="img" :alt="images.collection.items[X].data[0].title"/>
+        <img v-for="X in 32" :key="X" :src="images.collection.items[X].links[0].href" class="img" :alt="images.collection.items[X].data[0].title"/>
     </div>
   </div>
 </template>
@@ -70,7 +72,7 @@ import { LMap, LTileLayer, LMarker, LPopup } from "vue2-leaflet";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {
-  name: "Kennedy",
+  name: "Wallops",
   components: {
         LMap,
         LTileLayer,
@@ -80,12 +82,12 @@ export default {
     },
   data() {
     return {
-        location: "Baikonur Cosmodrome",
+        location: "Wallops Island",
         url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         attribution: '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
         zoom: 11,
-        center: [45.965, 63.305],
-        markerLatLng: [45.965, 63.305],
+        center: [37.93751126741556, -75.47042545896504],
+        markerLatLng: [37.93751126741556, -75.47042545896504],
         images: []
     };
   },
@@ -94,7 +96,8 @@ export default {
   },
   methods: {
     async fetchImages() {
-      const image_url = `https://images-api.nasa.gov/search?q=baikonur%20cosmodrome&page=1`;
+      let computeString = this.location.replace(/ /g, '%20');
+      const image_url = `https://images-api.nasa.gov/search?q=${computeString}&page=1`;
       console.log(image_url)
       try {
         const response = await fetch(image_url);
@@ -108,28 +111,28 @@ export default {
     }
   },
   metaInfo: {
-    title: "Rocket Downrange | Baikonur Cosmodrome",
+    title: "Rocket Downrange | Wallops Island",
     meta: [
       { name: "author", content: "Github: @TheKicker" },
       {
         name: "description",
         content:
-          "Located in the desert steppes of Kazakhstan, is the world's oldest and largest space launch facility - the Baikonur Cosmodrome, and it has been the launch site for numerous historic space missions. ",
+          "Located on the eastern shore of Virginia, is a NASA-run launch site that supports a wide range of scientific, commercial, and military missions, including the testing of new rocket systems and payloads. With its unique coastal location, cutting-edge technology, and experienced workforce, Wallops Island and Flight Facility is a vital hub for space innovation and exploration. ",
       },
       {
         name: "keywords",
         content:
-          "Rocket, Downrange, Baikonur, Cosmodrome, Yuri Gagarin, RosCos",
+          "Rocket, Downrange, Wallops, Island, Virginia, NASA, Flight Facility, ISS, Washington DC",
       },
       // OpenGraph data (Most widely used)
-      { property: "og:title", content: "Rocket Downrange | Baikonur Cosmodrome" },
+      { property: "og:title", content: "Rocket Downrange | Wallops Island" },
       { property: "og:site_name", content: "Rocket Downrange" },
       // The list of types is available here: http://ogp.me/#types
       { property: "og:type", content: "website" },
       // Should the the same as your canonical link, see below.
       {
         property: "og:url",
-        content: "https://www.rocketdownrange.com/locations/baikonur-cosmodrome",
+        content: "https://www.rocketdownrange.com/locations/wallops-island",
       },
       {
         property: "og:image",
@@ -139,23 +142,23 @@ export default {
       {
         property: "og:description",
         content:
-          "Located in the desert steppes of Kazakhstan, is the world's oldest and largest space launch facility - the Baikonur Cosmodrome, and it has been the launch site for numerous historic space missions. ",
+          "Located on the eastern shore of Virginia, is a NASA-run launch site that supports a wide range of scientific, commercial, and military missions, including the testing of new rocket systems and payloads. With its unique coastal location, cutting-edge technology, and experienced workforce, Wallops Island and Flight Facility is a vital hub for space innovation and exploration. ",
       },
 
       // Twitter card
       { name: "twitter:card", content: "summary" },
       {
         name: "twitter:site",
-        content: "https://www.rocketdownrange.com/locations/baikonur-cosmodrome",
+        content: "https://www.rocketdownrange.com/locations/wallops-island",
       },
       {
         name: "twitter:title",
-        content: "Rocket Downrange | Baikonur Cosmodrome",
+        content: "Rocket Downrange | Wallops Island",
       },
       {
         name: "twitter:description",
         content:
-          "Located in the desert steppes of Kazakhstan, is the world's oldest and largest space launch facility - the Baikonur Cosmodrome, and it has been the launch site for numerous historic space missions. ",
+          "Located on the eastern shore of Virginia, is a NASA-run launch site that supports a wide range of scientific, commercial, and military missions, including the testing of new rocket systems and payloads. With its unique coastal location, cutting-edge technology, and experienced workforce, Wallops Island and Flight Facility is a vital hub for space innovation and exploration. ",
       },
       // Your twitter handle, if you have one.
       { name: "twitter:creator", content: "Github: @TheKicker" },
@@ -165,11 +168,11 @@ export default {
       },
 
       // Google / Schema.org markup:
-      { itemprop: "name", content: "Rocket Downrange | Baikonur Cosmodrome" },
+      { itemprop: "name", content: "Rocket Downrange | Wallops Island" },
       {
         itemprop: "description",
         content:
-          "Located in the desert steppes of Kazakhstan, is the world's oldest and largest space launch facility - the Baikonur Cosmodrome, and it has been the launch site for numerous historic space missions. ",
+          "Located on the eastern shore of Virginia, is a NASA-run launch site that supports a wide range of scientific, commercial, and military missions, including the testing of new rocket systems and payloads. With its unique coastal location, cutting-edge technology, and experienced workforce, Wallops Island and Flight Facility is a vital hub for space innovation and exploration. ",
       },
       {
         itemprop: "image",
@@ -186,7 +189,7 @@ figcaption{
     font-size: 16px;
 }
 .cover {
-    background-image: url("https://images-assets.nasa.gov/image/NHQ201903140002/NHQ201903140002~thumb.jpg");
+    background-image: url("https://images-assets.nasa.gov/image/LRC-1960-B701_P-07626/LRC-1960-B701_P-07626~thumb.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

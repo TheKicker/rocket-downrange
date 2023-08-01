@@ -90,10 +90,19 @@
               <a class="nav-link dropdown-toggle" href="#" id="locationsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">locations</a>
               <div class="dropdown-menu bg-primary text-left" aria-labelledby="locationsDropdown">
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/locations/baikonur-cosmodrome">BAIKONUR</router-link>
+                  <router-link class="nav-link ml-1" to="/locations/baikonur-cosmodrome">BAIKONUR, RU</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link ml-1" to="/locations/kennedy-space-center">KENNEDY</router-link>
+                  <router-link class="nav-link ml-1" to="/locations/kennedy-space-center">KENNEDY, FL</router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/locations/starbase">STARBASE, TX</router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/locations/vandenberg">VANDENBERG, CA</router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/locations/wallops-island">WALLOPS, VA</router-link>
                 </li>
               </div>
             </li>

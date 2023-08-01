@@ -72,7 +72,7 @@ import { LMap, LTileLayer, LMarker, LPopup } from "vue2-leaflet";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {
-  name: "Baikonur",
+  name: "Kennedy",
   components: {
         LMap,
         LTileLayer,
@@ -109,7 +109,77 @@ export default {
         console.log("Error", error)
       }
     }
-  }
+  },
+  metaInfo: {
+    title: "Rocket Downrange | Kennedy Space Center",
+    meta: [
+      { name: "author", content: "Github: @TheKicker" },
+      {
+        name: "description",
+        content:
+          "With its rich history, state-of-the-art facilities, and proximity to Cape Canaveral Air Force Station, Kennedy Space Center is a world-renowned center for space innovation and discovery. ",
+      },
+      {
+        name: "keywords",
+        content:
+          "Rocket, Downrange, NASA, Cap Canaveral, Air Force Station, Space Force, KSC, Kennedy Space Center, Florida",
+      },
+      // OpenGraph data (Most widely used)
+      { property: "og:title", content: "Rocket Downrange | Kennedy Space Center" },
+      { property: "og:site_name", content: "Rocket Downrange" },
+      // The list of types is available here: http://ogp.me/#types
+      { property: "og:type", content: "website" },
+      // Should the the same as your canonical link, see below.
+      {
+        property: "og:url",
+        content: "https://www.rocketdownrange.com/locations/kennedy-space-center",
+      },
+      {
+        property: "og:image",
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
+      },
+      // Often the same as your meta description, but not always.
+      {
+        property: "og:description",
+        content:
+          "With its rich history, state-of-the-art facilities, and proximity to Cape Canaveral Air Force Station, Kennedy Space Center is a world-renowned center for space innovation and discovery. ",
+      },
+
+      // Twitter card
+      { name: "twitter:card", content: "summary" },
+      {
+        name: "twitter:site",
+        content: "https://www.rocketdownrange.com/locations/kennedy-space-center",
+      },
+      {
+        name: "twitter:title",
+        content: "Rocket Downrange | Kennedy Space Center",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "With its rich history, state-of-the-art facilities, and proximity to Cape Canaveral Air Force Station, Kennedy Space Center is a world-renowned center for space innovation and discovery. ",
+      },
+      // Your twitter handle, if you have one.
+      { name: "twitter:creator", content: "Github: @TheKicker" },
+      {
+        name: "twitter:image:src",
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
+      },
+
+      // Google / Schema.org markup:
+      { itemprop: "name", content: "Rocket Downrange | Kennedy Space Center" },
+      {
+        itemprop: "description",
+        content:
+          "With its rich history, state-of-the-art facilities, and proximity to Cape Canaveral Air Force Station, Kennedy Space Center is a world-renowned center for space innovation and discovery. ",
+      },
+      {
+        itemprop: "image",
+        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
+      },
+    ],
+  },
 };
 </script>
 

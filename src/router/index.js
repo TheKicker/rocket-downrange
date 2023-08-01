@@ -173,6 +173,21 @@ const routes = [
 		component: () => import(/* webpackChunkName: "Test" */'../views/locations/kennedy-space-center.vue')
 	},
 	{
+		path: '/locations/starbase',
+		name: "Starbase",
+		component: () => import(/* webpackChunkName: "Test" */'../views/locations/starbase.vue')
+	},
+	{
+		path: '/locations/wallops-island',
+		name: "Wallops Island",
+		component: () => import(/* webpackChunkName: "Test" */'../views/locations/wallops-island.vue')
+	},
+	{
+		path: '/locations/vandenberg',
+		name: "Vandenberg",
+		component: () => import(/* webpackChunkName: "Test" */'../views/locations/vandenberg.vue')
+	},
+	{
 		path: '/*',
 		name: 'Catch All',
 		component: () => import(/* webpackChunkName: "Test" */ '../views/ERROR-404.vue')

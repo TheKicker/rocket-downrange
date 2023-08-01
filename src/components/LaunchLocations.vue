@@ -31,6 +31,10 @@
           <p class="h5 text-uppercase text-secondary"><strong>First Launch:</strong></p>
           <p class="h4">- {{ first_launch }}</p>
         </div>
+        <!-- <div class="mb-4">
+          <p class="h5 text-uppercase text-secondary"><strong>X / Y:</strong></p>
+          <p class="h4">[{{ x }}, {{ y }}]</p>
+        </div> -->
       </div>
     </div>
     <hr class="my-4">
