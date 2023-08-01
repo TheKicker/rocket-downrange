@@ -72,7 +72,7 @@ import { LMap, LTileLayer, LMarker, LPopup } from "vue2-leaflet";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {
-  name: "Kennedy",
+  name: "Kennedy Space Center",
   components: {
         LMap,
         LTileLayer,

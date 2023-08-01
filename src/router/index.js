@@ -164,12 +164,12 @@ const routes = [
 	},
 	{
 		path: '/locations/baikonur-cosmodrome',
-		name: "Baikonur",
+		name: "Baikonur Cosmodrome",
 		component: () => import(/* webpackChunkName: "Test" */'../views/locations/baikonur-cosmodrome.vue')
 	},
 	{
 		path: '/locations/kennedy-space-center',
-		name: "Kennedy",
+		name: "Kennedy Space Center",
 		component: () => import(/* webpackChunkName: "Test" */'../views/locations/kennedy-space-center.vue')
 	},
 	{
@@ -184,7 +184,7 @@ const routes = [
 	},
 	{
 		path: '/locations/vandenberg',
-		name: "Vandenberg",
+		name: "Vandenberg Space Force Base",
 		component: () => import(/* webpackChunkName: "Test" */'../views/locations/vandenberg.vue')
 	},
 	{

@@ -71,7 +71,7 @@ import { LMap, LTileLayer, LMarker, LPopup } from "vue2-leaflet";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {
-  name: "Wallops",
+  name: "Vandenberg Space Force Base",
   components: {
         LMap,
         LTileLayer,

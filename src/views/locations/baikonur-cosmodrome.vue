@@ -19,7 +19,7 @@
           <p class="small">PRIMARY OPERATOR</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">71</p>
+          <p class="stats-status">15</p>
           <p class="small">LAUNCH PADS</p>
         </div>
       </div>
@@ -70,7 +70,7 @@ import { LMap, LTileLayer, LMarker, LPopup } from "vue2-leaflet";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {
-  name: "Kennedy",
+  name: "Baikonur Cosmodrome",
   components: {
         LMap,
         LTileLayer,
