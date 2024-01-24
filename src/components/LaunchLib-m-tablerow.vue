@@ -26,27 +26,12 @@
         <span id="content">{{ charCount(description, limit) }}</span>
       </p>
     </div>
-    <div style="display: grid; place-items: center; margin: 1rem 0;">
-      <add-to-calendar-button
-      :name="mission + ' by ' + launchsp "
-      :description="description + '. Visit RocketDownrange.com for more information on companies, rovers, launch providers, NASA Astronomy Picture of the Day, and more!'"
-      :startDate="launchtime"
-      :endTime="addHours(launchtime, 3)"
-      :location="location"
-      options="['Apple','Google','iCal','Microsoft365','Outlook.com','Yahoo']"
-      trigger="click"
-      inline
-      listStyle="modal"
-      iCalFileName="Reminder-Event">
-    </add-to-calendar-button>
-    </div>
   </div>
 </template>
 
 
 <script>
 import VLazyImage from "v-lazy-image/v2";
-import 'add-to-calendar-button';
 
 export default {
   name: "tablerowM",

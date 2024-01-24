@@ -68,7 +68,7 @@ export default {
       .get(url)
       .then(response => {
         this.results = response.data;
-        console.log(url)
+        // console.log(url)
       })
       .catch(error => console.log(error));
   }

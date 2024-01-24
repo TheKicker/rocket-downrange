@@ -45,18 +45,6 @@
           <router-link v-if="location.includes('Kennedy Space Center')" to="/locations" class="btn btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
           <router-link v-if="location.includes('Vandenberg')" to="/locations" class="btn btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
           <router-link v-if="location.includes('Tanegashima')" to="/locations" class="btn btn-primary mx-3" :aria-label="location + ' on Rocket Downrange.com'">Location Info</router-link>
-          <add-to-calendar-button
-            :name="mission + ' by ' + launchsp "
-            :description="description + '. Visit RocketDownrange.com for more information on companies, rovers, launch providers, NASA Astronomy Picture of the Day, and more!'"
-            :startDate="launchtime"
-            :endTime="addHours(mission, launchtime, 3)"
-            :location="location"
-            options="['Apple','Google','iCal','Microsoft365','Outlook.com','Yahoo']"
-            trigger="click"
-            inline
-            listStyle="modal"
-            iCalFileName="Reminder-Event">
-          </add-to-calendar-button>
         </div>
   </div>
 </template>
@@ -64,7 +52,6 @@
 
 <script>
 import VLazyImage from "v-lazy-image/v2";
-import 'add-to-calendar-button';
 
 export default {
   name: "tablerowD",
