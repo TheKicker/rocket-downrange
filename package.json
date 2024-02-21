@@ -25,7 +25,7 @@
 		"build": "vue-cli-service build"
 	},
 	"dependencies": {
-		"axios": "^0.21.1",
+		"axios": "^0.28.0",
 		"leaflet": "^1.7.1",
 		"v-lazy-image": "^2.1.1",
 		"vue": "^2.6.11",
