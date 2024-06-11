@@ -1,7 +1,7 @@
 <template>
   <div id="app" v-cloak>
     <div id="marqueecontainer">
-      <p id="marquee"> LOVE ROCKET DOWNRANGE? SUPPORT THE PROJECT AND <a class="marquee-btn" href="https://github.com/TheKicker/rocket-downrange/stargazers" target="_blank" rel="noopener"><i class="fas fa-star"></i>&nbsp; STAR ON GITHUB <span id="star">&nbsp;6&nbsp;</span></a></p>
+      <p id="marquee"> LOVE ROCKET DOWNRANGE? SUPPORT THE PROJECT AND <a class="marquee-btn" href="https://github.com/TheKicker/rocket-downrange/stargazers" target="_blank" rel="noopener"><i class="fas fa-star"></i>&nbsp; STAR ON GITHUB <span id="star">&nbsp;7&nbsp;</span></a></p>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-center">
       <div class="container">
