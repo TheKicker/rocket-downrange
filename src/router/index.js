@@ -202,7 +202,7 @@ const routes = [
   {
     path: '/:pathMatch(.*)*', // Vue 3 syntax for catch-all
     name: 'Catch All',
-    component: () => import(/* webpackChunkName: "errors" */ '../views/ERROR-404.vue'),
+    component: () => import('../views/ERROR-404.vue'),
     meta: { title: 'Rocket Downrange - 404 Not Found' },
   },
 ];
