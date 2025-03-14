@@ -391,3 +391,13 @@ export default {
 <hr>
 <br>
 Hey! No known issues to show! :) If you found something, send me a message on the site!
+
+</br>
+<hr>
+<div align="center">
+<h2>Mar 2025</h2>
+Updates from Vue 2 to Vue 3 finally coming!
+
+- Uninstalled v-lazy-load/v2
+- Installed v-lazy-load (https://www.npmjs.com/package/v-lazy-image)
+- Uninstalled Leaflet  

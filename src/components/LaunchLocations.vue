@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import { LMap, LTileLayer, LMarker, LPopup } from "vue2-leaflet";
+import { LMap, LTileLayer, LMarker, LPopup } from 'vue3-leaflet';
 
 export default {
     name: "LaunchLocations",

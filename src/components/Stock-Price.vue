@@ -4,7 +4,7 @@
       <div class="text-center bg-primary text-white py-2">
         <div class="col-md-10 p-lg-5 p-sm-3 mx-auto my-5">
           <h2 class="font-weight-normal text-white">{{ORG}} (<span class="text-info">${{TICKER}}</span>)</h2>
-          <p>All data comes from an API provided by <a href="https://finnhub.io/" target="_blank" rel="noopener" class="text-light" style="text-decoration: underline">Finnhub</a>, please consult your financial representative or personal accountant for advice before making any decisions. Rocket Downrange does not endorse any stock. 
+          <p>All data comes from an API provided by <a href="https://finnhub.io/" target="_blank" rel="noopener" class="text-light" style="text-decoration: underline">Finnhub</a>, please consult your financial representative or personal accountant for advice before making any decisions. Rocket Downrange does not endorse any stock.</p> 
           <hr color="white" />
           <div id="data">
             <iframe id="frames" frameborder="2" :src="FINN"></iframe>

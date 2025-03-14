@@ -1,45 +1,47 @@
-import Vue from 'vue';
+import { createApp } from 'vue';
 import App from './App.vue';
-import Meta from 'vue-meta';
-import VueScrollTo from 'vue-scrollto';
 import router from './router';
-import { Icon }  from 'leaflet'
-import "leaflet/dist/leaflet.css";
+import VueScrollTo from 'vue-scrollto';
+import { Icon } from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+import VLazyImage from "v-lazy-image";
 
-// this part resolve an issue where the markers would not appear
+// Fix Leaflet marker icons (same as before)
 delete Icon.Default.prototype._getIconUrl;
-
 Icon.Default.mergeOptions({
-    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-    iconUrl: require('leaflet/dist/images/marker-icon.png'),
-    shadowUrl: require('leaflet/dist/images/marker-shadow.png')
+  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+  iconUrl: require('leaflet/dist/images/marker-icon.png'),
+  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
 });
 
+// Create the Vue 3 app
+const app = createApp(App);
 
-Vue.config.productionTip = false;
+// Disable production tip
+app.config.productionTip = false;
 
-// Module for SEO purposes
-Vue.use(Meta);
+// Use Vue Router
+app.use(router);
 
-// Module for add to calendar functionality
-// https://www.npmjs.com/package/add-to-calendar-button
+// Use VueScrollTo with options
+app.use(VueScrollTo, {
+  container: 'body',
+  duration: 1500,
+  easing: 'ease',
+  offset: 0,
+  force: true,
+  cancelable: true,
+  onStart: false,
+  onDone: false,
+  onCancel: false,
+  x: false,
+  y: true,
+});
 
-// You can also pass in the default options
-Vue.use(VueScrollTo, {
-	container: "body",
-	duration: 1500,
-	easing: "ease",
-	offset: 0,
-	force: true,
-	cancelable: true,
-	onStart: false,
-	onDone: false,
-	onCancel: false,
-	x: false,
-	y: true
-})
+app.use(VLazyImage, {
+  preLoad: 1.3,
+  attempt: 1,
+});
 
-new Vue({
-	router,
-	render: (h) => h(App)
-}).$mount('#app');
+// Mount the app
+app.mount('#app');

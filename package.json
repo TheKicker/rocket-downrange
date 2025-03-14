@@ -25,13 +25,14 @@
 		"build": "vue-cli-service build"
 	},
 	"dependencies": {
+		"@vuepic/vue-datepicker": "^8.0.0",
 		"axios": "^1.4.0",
-		"leaflet": "^1.7.1",
+		"leaflet": "^1.9.4",
+		"v-lazy-image": "^2.1.1",
 		"vue": "^3.3.4",
 		"vue-router": "^4.2.0",
 		"vue-scrollto": "^2.20.0",
-		"vue2-datepicker": "TODO",
-		"vue2-leaflet": "TODO"
+		"vue3-leaflet": "^1.0.50"
 	},
 	"devDependencies": {
 		"@vue/cli-service": "^5.0.0",

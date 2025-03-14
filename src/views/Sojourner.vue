@@ -115,7 +115,7 @@
 <script>
 
 import Quote from "@/components/Quotes-Template.vue";
-import VLazyImage from "v-lazy-image/v2";
+import VLazyImage from "v-lazy-image";
 
 export default {
   name: "Sojourner",

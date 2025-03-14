@@ -87,7 +87,7 @@ var api_key = process.env.VUE_APP_APOD_KEY
 window.axios = require("axios");
 
 import Quote from "@/components/Quotes-Template.vue";
-import VLazyImage from "v-lazy-image/v2";
+import VLazyImage from "v-lazy-image";
 
 export default {
   name: "Spirit",

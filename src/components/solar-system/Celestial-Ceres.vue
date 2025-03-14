@@ -53,7 +53,7 @@
 
 <script>
 console.log("The dwarf planet Ceres is spinning! ");
-import VLazyImage from "v-lazy-image/v2";
+import VLazyImage from "v-lazy-image";
 
 export default {
   name: "Ceres",

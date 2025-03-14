@@ -67,7 +67,7 @@
 
 <script>
 // @ is an alias to /src
-import { LMap, LTileLayer, LMarker, LPopup } from "vue2-leaflet";
+import { LMap, LTileLayer, LMarker, LPopup } from 'vue3-leaflet';
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {
