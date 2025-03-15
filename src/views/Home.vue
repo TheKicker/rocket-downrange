@@ -4,7 +4,7 @@
     <section class="container">
       <NASAapod />
       <br>
-      <SNAPI />
+      <!-- <SNAPI /> -->
       <br>
       <LLNextLaunch />
 
@@ -60,9 +60,9 @@
         link3txt="CNBC"
         link3url="https://www.cnbc.com/2021/07/01/astra-astr-space-company-begins-trading-on-the-nasdaq.html"
       />
-      <NASAperseverance/>
+      <!-- <NASAperseverance/>
       <NASAcuriosity />
-      <NASAopportunity />
+      <NASAopportunity /> -->
     </section>
     <ExternalLinks />
     <Contact />
@@ -86,15 +86,15 @@ export default {
   name: "Home",
   components: {
     Homepage,
-    OrgNews,
     NASAapod,
+    // SNAPI,
     LLNextLaunch,
-    NASAcuriosity,
-    NASAopportunity,
-    NASAperseverance,
+    OrgNews,
+    // NASAcuriosity,
+    // NASAopportunity,
+    // NASAperseverance,
     ExternalLinks,
-    Contact,
-    SNAPI,
+    Contact
   },
   metaInfo: {
     title: "Rocket Downrange",

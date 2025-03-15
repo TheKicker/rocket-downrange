@@ -1,7 +1,7 @@
 <template>
   <div id="app" v-cloak>
     <div id="marqueecontainer">
-      <p id="marquee"> LOVE ROCKET DOWNRANGE? SUPPORT THE PROJECT AND <a class="marquee-btn" href="https://github.com/TheKicker/rocket-downrange/stargazers" target="_blank" rel="noopener"><i class="fas fa-star"></i>&nbsp; STAR ON GITHUB <span id="star">&nbsp;7&nbsp;</span></a></p>
+      <p id="marquee"> LOVE ROCKET DOWNRANGE? SUPPORT THE PROJECT AND <a class="marquee-btn" href="https://github.com/TheKicker/rocket-downrange/stargazers" target="_blank" rel="noopener"><i class="fas fa-star"></i>  STAR ON GITHUB <span id="star"> 7 </span></a></p>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-center">
       <div class="container">
@@ -109,7 +109,6 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="externalDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">External</a>
               <div class="dropdown-menu bg-primary" aria-labelledby="externalDropdown">
-                
                 <li class="nav-item">
                   <a href="https://github.com/TheKicker/rocket-downrange" target="_blank" rel="noopener" class="nav-link ml-1"><i class="fas fa-code"></i> GITHUB</a>
                 </li>
@@ -148,20 +147,20 @@
         <div class="modal-content">
           <div class="modal-header">
             <p class="h5 modal-title" id="userModalLabel">
-              <i class="fa fa-user"></i> &nbsp; Change username
+              <i class="fa fa-user"></i>   Change username
             </p>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+              <span aria-hidden="true">×</span>
             </button>
           </div>
           <div class="modal-body">
             <label class="col-form-label" for="inputDefault">Let's be friends, what should I call you?</label>
-            <input type="text" class="form-control" placeholder="Buzz Lightyear" id="inputDefault" v-model="username"/>      
+            <input type="text" class="form-control" placeholder="Buzz Lightyear" id="inputDefault" v-model="tempUsername"/>      
           </div>
           <div class="modal-footer">
-              <div class="m-footer">
-                <button type="button" @click="validate()" class="btn btn-success" data-dismiss="modal">Save changes</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close lightbox</button>
+            <div class="m-footer">
+              <button type="button" @click="saveUsername" class="btn btn-success" data-dismiss="modal">Save changes</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close lightbox</button>
             </div>
           </div>
         </div>
@@ -176,17 +175,16 @@
       <div id="footer" class="container my-4">
         <router-link to="/" class="footer-child fc-1">ROCKET DOWNRANGE</router-link>
         <div class="footer-child fc-2">
-            <a href="https://cavlemasters.com" target="_blank" rel="noopener" class="text-light">{{trademark}} &copy; {{copy}}</a><br>
-            <a href="https://twitter.com/RocketDownrange" target="_blank" rel="noopener" class="mx-2 text-light" aria-label="Rocket Downrange - Twitter link"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="https://www.buymeacoffee.com/cavlemasters" target="_blank" rel="noopener" class="mx-2 text-light" aria-label="Rocket Downrange - Link to support the project on Buy Me a Coffee"><i class="fas fa-coffee fa-2x"></i></a>
+          <a href="https://cavlemasters.com" target="_blank" rel="noopener" class="text-light">{{trademark}} © {{copy}}</a><br>
+          <a href="https://twitter.com/RocketDownrange" target="_blank" rel="noopener" class="mx-2 text-light" aria-label="Rocket Downrange - Twitter link"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="https://www.buymeacoffee.com/cavlemasters" target="_blank" rel="noopener" class="mx-2 text-light" aria-label="Rocket Downrange - Link to support the project on Buy Me a Coffee"><i class="fas fa-coffee fa-2x"></i></a>
         </div>
-         <div class="footer-child fc-3">
-            <router-link to="/accessibility-statement" class="text-light">Accessibility Statement</router-link><br>
-            <router-link to="/privacy-policy" class="text-light">Privacy Policy</router-link>
+        <div class="footer-child fc-3">
+          <router-link to="/accessibility-statement" class="text-light">Accessibility Statement</router-link><br>
+          <router-link to="/privacy-policy" class="text-light">Privacy Policy</router-link>
         </div>
       </div>
     </div>
-    
   </div>
 </template>
 
@@ -195,6 +193,7 @@ export default {
   data() {
     return {
       username: "",
+      tempUsername: "", // New temporary variable for modal input
       org: "Rocket Downrange",
       greeting: "",
       copy: `${new Date().getFullYear().toString()}`,
@@ -204,8 +203,10 @@ export default {
   mounted() {
     if (window.localStorage.username) {
       this.username = window.localStorage.username;
+      this.tempUsername = this.username; // Initialize temp with current username
     } else {
       this.username = "Guest";
+      this.tempUsername = "Guest";
     }
   },
   computed: {
@@ -226,19 +227,22 @@ export default {
     },
   },
   methods: {
-    validate() {
-      // Regex validation
+    validate(name) {
       var regName = /^[a-z ,.'-]+$/i;
-      // Eventually need to add a way to revert to previous given name.
-      if (!regName.test(this.username)) {
+      if (!regName.test(name)) {
         alert("Please enter a proper name.");
-        return (this.username = "Guest");
-      } else {
-        console.log("Valid name given, saved. ");
-        window.localStorage.setItem("username", `${this.username}`);
-        return this.username;
+        return false;
       }
+      return true;
     },
+    saveUsername() {
+      if (this.validate(this.tempUsername)) {
+        this.username = this.tempUsername;
+        window.localStorage.setItem("username", this.username);
+      } else {
+        this.tempUsername = this.username; // Revert tempUsername if invalid
+      }
+    }
   },
 };
 </script>
@@ -360,5 +364,4 @@ p{
     text-align: center;
 }
 }
-
 </style>
