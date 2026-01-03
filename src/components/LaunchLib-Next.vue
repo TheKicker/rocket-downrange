@@ -1,117 +1,83 @@
 <template>
-  <div class="LaunchLibNext card my-4">
-        <p class="card-header h5 text-uppercase text-left text-secondary">The Launch Library:</p>
-        <h2 class="h3 text-uppercase mx-auto text-center mt-4">
-          Upcoming Launches You Don't Want to Miss
-        </h2>
-        <!-- Start Desktop -->
-        <div class="row my-2 card-body" id="desktop">
-          <tablerowD
-            v-for="(launch, index) in launches"
-            :key="index"
-            :mission="
-              launch.mission && launch.mission.name != null
-                ? launch.mission.name
-                : launch.name
-            "
-            :image="launch.image != null || undefined ? launch.image : 'apple-icon.png'"
-            :rocket="launch.rocket.configuration.name"
-            :launchsp="launch.launch_service_provider.name"
-            :launchtime="launch.net != null ? launch.net : 'N/A'"
-            :pad="launch.pad.name != null ? launch.pad.name : 'N/A'"
-            :location="
-              launch.pad.location && launch.pad.location.name != null
-                ? launch.pad.location.name
-                : 'N/A'
-            "
-            :description="
-              launch.mission && launch.mission.description != null
-                ? launch.mission.description
-                : 'This mission is classified or no overview is available at this time.'
-            "
-          />
-        </div>
-        <!-- End Desktop --> 
-        
-        <!-- Start Mobile -->
-        <div class="row my-3 card-body" id="mobile">
-          <tablerowM
-            v-for="(launch, index) in launches"
-            :key="index"
-            :mission="
-              launch.mission && launch.mission.name != null
-                ? launch.mission.name
-                : launch.name
-            "
-            :image="launch.image != null || undefined ? launch.image : 'apple-icon.png'"
-            :rocket="launch.rocket.configuration.name"
-            :launchsp="launch.launch_service_provider.name"
-            :launchtime="launch.net != null ? launch.net : 'N/A'"
-            :pad="launch.pad.name != null ? launch.pad.name : 'N/A'"
-            :location="
-              launch.pad.location && launch.pad.location.name != null
-                ? launch.pad.location.name
-                : 'N/A'
-            "
-            :description="
-              launch.mission && launch.mission.description != null
-                ? launch.mission.description
-                : 'This mission is classified or no overview is available at this time.'
-            "
-          />
-        </div>
-        <!-- End Mobile --> 
-        <p class="text-center">
-          <i>
-            API Data brought to you by
-            <a href="https://thespacedevs.com" target="_blank" rel="noopener"
-              >The Space Devs</a
-            >
-          </i>
-        </p>
+  <div class="LaunchLibNext py-3my-4">
+    <p class="card-header h5 text-uppercase text-left text-secondary">The Launch Library:</p>
+    <h2 class="h3 text-uppercase mx-auto text-center mt-4">
+      Upcoming Launches You Don't Want to Miss
+    </h2>
+
+    <!-- Launches Grid -->
+    <div class="launches-grid card-body">
+      <LaunchCard
+        v-for="(launch, index) in launches"
+        :key="index"
+        :mission="launch.mission?.name || launch.name"
+        :image="launch.image"
+        :rocket="launch.rocket?.configuration?.name || 'N/A'"
+        :launchsp="launch.launch_service_provider?.name || 'N/A'"
+        :launchtime="launch.net || 'N/A'"
+        :pad="launch.pad?.name || 'N/A'"
+        :location="launch.pad?.location?.name || 'N/A'"
+        :description="launch.mission?.description || 'This mission is classified or no overview is available at this time.'"
+      />
+    </div>
+
+    <p class="text-center mt-3">
+      <i>
+        API Data brought to you by
+        <a href="https://thespacedevs.com" target="_blank" rel="noopener">
+          The Space Devs
+        </a>
+      </i>
+    </p>
   </div>
 </template>
 
 <script>
-import tablerowD from "@/components/LaunchLib-d-tablerow.vue";
-import tablerowM from "@/components/LaunchLib-m-tablerow.vue";
-
+import LaunchCard from "@/components/LaunchCard.vue";
 window.axios = require("axios");
+
 export default {
   name: "LLNextLaunch",
+  components: { LaunchCard },
   data() {
-    return {
-      launches: [],
-    };
-  },
-  components: {
-    tablerowD,
-    tablerowM
+    return { launches: [] };
   },
   mounted() {
-    window.axios
-      .get(
-        "https://ll.thespacedevs.com/2.0.0/launch/upcoming/?format=json&limit=5"
-      )
-      .then((response) => {
-        this.launches = response.data.results;
-      });
+    const fetchLaunches = () => {
+      window.axios
+        .get("https://lldev.thespacedevs.com/2.0.0/launch/upcoming/?format=json&limit=6")
+        .then(response => {
+          this.launches = response.data.results || [];
+        })
+        .catch(error => {
+          if (error.response?.status === 429) {
+            setTimeout(fetchLaunches, 5000);
+          } else {
+            console.error("Failed to fetch launches:", error);
+          }
+        });
+    };
+    fetchLaunches();
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-#desktop{
-  display: initial;
-}
-#mobile{
-  display: none;
-}
-@media only screen and (max-width: 780px) {
-  #desktop{ display: none;}
-  #mobile{ display: initial;}
+.launches-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
+.launches-grid > * {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .launches-grid {
+    grid-template-columns: repeat(auto-fit, minmax(95%, 1fr));
+  }
+}
 </style>

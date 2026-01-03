@@ -3,26 +3,26 @@
 	"version": "2.0.0",
 	"private": true,
 	"author": {
-	  "name": "Cav Lemasters (Github: @TheKicker)",
-	  "url": "https://cavlemasters.com"
+		"name": "Cav Lemasters (Github: @TheKicker)",
+		"url": "https://cavlemasters.com"
 	},
 	"engines": {
-	  "npm": ">=8.0.0"
+		"npm": ">=8.0.0"
 	},
 	"funding": {
-	  "type": "individual",
-	  "url": "https://www.buymeacoffee.com/cavlemasters"
+		"type": "individual",
+		"url": "https://www.buymeacoffee.com/cavlemasters"
 	},
 	"description": "Rocket Downrange is a site showcasing humanity's advancements in space exploration, built with Vue.js and powered by various APIs.",
 	"repository": {
-	  "type": "git",
-	  "url": "https://github.com/TheKicker/rocket-downrange.git"
+		"type": "git",
+		"url": "https://github.com/TheKicker/rocket-downrange.git"
 	},
 	"homepage": "https://github.com/TheKicker/rocket-downrange",
 	"website": "https://rocketdownrange.com/",
 	"scripts": {
-	  "serve": "vue-cli-service serve",
-	  "build": "vue-cli-service build"
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build"
 	},
 	"dependencies": {
 		"@vuepic/vue-datepicker": "8.0.0",
@@ -35,18 +35,18 @@
 		"vue3-leaflet": "1.0.50"
 	},
 	"devDependencies": {
-	  "@vue/cli-service": "5.0.8",
-	  "@vue/compiler-sfc": "3.3.4",
-	  "vue-loader": "17.4.2"
+		"@vue/cli-service": "^5.0.9",
+		"@vue/compiler-sfc": "3.3.4",
+		"vue-loader": "17.4.2"
 	},
 	"overrides": {
-	  "@vue/component-compiler-utils": {
-		"postcss": "8.4.31"
-	  }
+		"@vue/component-compiler-utils": {
+			"postcss": "8.4.31"
+		}
 	},
 	"browserslist": [
-	  "> 1%",
-	  "last 2 versions",
-	  "not dead"
+		"> 1%",
+		"last 2 versions",
+		"not dead"
 	]
-  }
+}

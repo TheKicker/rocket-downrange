@@ -4,7 +4,7 @@
     <section class="container">
       <NASAapod />
       <br>
-      <!-- <SNAPI /> -->
+      <SNAPI />
       <br>
       <LLNextLaunch />
 
@@ -87,7 +87,7 @@ export default {
   components: {
     Homepage,
     NASAapod,
-    // SNAPI,
+    SNAPI,
     LLNextLaunch,
     OrgNews,
     // NASAcuriosity,
