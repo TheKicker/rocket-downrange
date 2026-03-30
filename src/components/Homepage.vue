@@ -1,12 +1,10 @@
 <template>
   <div class="hello">
-    <div class="jumbotron img-fluid viewporth">
-      <div class="container text-center viewportText">
-        <div class="my-5">
-          <h1 id="text-shadow-dark" class="display-5 text-white">Rocket Downrange</h1>      
-          <hr class="my-4" />
-          <p id="text-shadow-dark" class="lead text-white">From a space nerd, for the space nerds.</p>
-        </div>
+    <div class="jumbotron viewporth">
+      <div class="viewportText">
+        <h1 id="text-shadow-dark" class="hero-title text-white">Rocket Downrange</h1>
+        <hr class="hero-divider" />
+        <p id="text-shadow-dark" class="hero-subtitle text-white">From a space nerd, for the space nerds.</p>
       </div>
     </div>
   </div>
@@ -19,36 +17,70 @@ export default {name: "Homepage"};
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #text-shadow-dark {
-  text-shadow: 1px 1px 1px black;
-}
-.marketingImage {
-  height: 15rem;
-}
-.jumbotron {
-  background: #282c2b url("../assets/rocketdownrange.webp") no-repeat center center/cover;
-  background-attachment: fixed;
-  max-width: 100%;
-  height: auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-@media only screen and (max-width: 720px) {
-  .jumbotron{
-    background-attachment: unset;
-  }
+.jumbotron {
+  background: #282c2b url("../assets/rocketdownrange.webp") no-repeat center center / cover;
+  background-attachment: fixed;
+  width: 100%;
+  overflow: hidden;
 }
 
 .viewporth {
+  min-height: 90vh;
   height: 90vh;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .viewportText {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  vertical-align: middle;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 800px;
 }
-.width-limit {
-  max-width: 1632px;
-  margin: auto;
+
+.hero-title {
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.hero-divider {
+  width: clamp(60px, 20%, 200px);
+  border-color: rgba(255, 255, 255, 0.6);
+  margin: 1rem auto;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  margin-bottom: 0;
+}
+
+/* Disable parallax on mobile — prevents background clipping issues */
+@media only screen and (max-width: 720px) {
+  .jumbotron {
+    background-attachment: scroll;
+  }
+
+  .viewporth {
+    min-height: 60vh;
+    height: 60vh;
+  }
+}
+
+/* Landscape phones */
+@media only screen and (max-height: 500px) and (orientation: landscape) {
+  .viewporth {
+    min-height: 100vh;
+    height: 100vh;
+  }
 }
 </style>

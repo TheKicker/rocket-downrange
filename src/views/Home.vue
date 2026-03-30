@@ -10,6 +10,24 @@
 
       <!-- Lunco Space section --> 
       <OrgNews 
+        company="NASA"
+        year="2026"
+        title="Artemis II: First Crewed Mission to the Moon in 50 Years"
+        srcType="image"
+        source="https://images-assets.nasa.gov/image/KSC-20230920-PH-FMX01_0467/KSC-20230920-PH-FMX01_0467~large.jpg?w=1920&h=1280&fit=crop&crop=faces%2Cfocalpoint"
+        description1="In 2026, NASA's Artemis II mission will mark a historic milestone as the first crewed mission to the Moon in over 50 years. Building on the success of the Artemis I uncrewed test flight, Artemis II will send astronauts on a journey around the Moon, paving the way for future lunar exploration and establishing a sustainable human presence on the lunar surface."
+        description2="The launch will take place from Kennedy Space Center in Florida, with a crew of four astronauts embarking on a mission that will include a lunar flyby and return to Earth. This mission is a crucial step in NASA's Artemis program, which aims"
+        update="March 30, 2026"
+        link1txt="EverydayAstronaut"
+        link1url="https://www.youtube.com/watch?v=o593JmtLyMU"
+        link2txt="NASASpaceFlight"
+        link2url="https://www.youtube.com/@NASASpaceflight"
+        link3txt="NASA"
+        link3url="https://www.nasa.gov/mission/artemis-ii/"
+      />
+
+      <!-- Lunco Space section --> 
+      <OrgNews 
         company="Space Industry & Godot"
         year="2022"
         title="Help wanted: LunCo Space"

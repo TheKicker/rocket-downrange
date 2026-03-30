@@ -45,7 +45,7 @@ export default {
   mounted() {
     const fetchLaunches = () => {
       window.axios
-        .get("https://lldev.thespacedevs.com/2.0.0/launch/upcoming/?format=json&limit=6")
+        .get("https://ll.thespacedevs.com/2.0.0/launch/upcoming/?format=json&limit=6")
         .then(response => {
           this.launches = response.data.results || [];
         })
