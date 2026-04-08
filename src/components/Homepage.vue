@@ -29,7 +29,13 @@ export default {name: "Homepage"};
 
 .viewporth {
   min-height: 90vh;
+  /* Use dvh (dynamic viewport height) where supported to handle Safari's
+     collapsing/expanding browser chrome correctly. Falls back to svh, then vh. */
+  min-height: 90svh;
+  min-height: 90dvh;
   height: 90vh;
+  height: 90svh;
+  height: 90dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,23 +70,48 @@ export default {name: "Homepage"};
   margin-bottom: 0;
 }
 
-/* Disable parallax on mobile — prevents background clipping issues */
-@media only screen and (max-width: 720px) {
+/* Disable parallax on mobile/tablet — Safari on iOS/iPadOS does not support
+   background-attachment: fixed and renders it incorrectly. This covers all
+   touch devices up to and including iPad landscape (1024px). */
+@media only screen and (max-width: 1024px) {
   .jumbotron {
     background-attachment: scroll;
   }
+}
 
+/* Smaller phones in portrait */
+@media only screen and (max-width: 480px) {
   .viewporth {
     min-height: 60vh;
+    min-height: 60svh;
+    min-height: 60dvh;
     height: 60vh;
+    height: 60svh;
+    height: 60dvh;
   }
 }
 
-/* Landscape phones */
+/* Landscape phones (short screens) */
 @media only screen and (max-height: 500px) and (orientation: landscape) {
   .viewporth {
     min-height: 100vh;
+    min-height: 100svh;
+    min-height: 100dvh;
     height: 100vh;
+    height: 100svh;
+    height: 100dvh;
+  }
+}
+
+/* iPad portrait & landscape — explicit Safari-safe overrides */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .viewporth {
+    min-height: 90vh;
+    min-height: 90svh;
+    min-height: 90dvh;
+    height: 90vh;
+    height: 90svh;
+    height: 90dvh;
   }
 }
 </style>
