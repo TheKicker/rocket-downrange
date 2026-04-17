@@ -9,7 +9,7 @@
       youtube="https://www.youtube.com/relativityspace"
     />
 
-    <NextLaunch />
+    <NextLaunch company="Relativity Space" />
 
     <Quote
       message="I strongly believe that the team we’ve built has never been set up for better success than at this point in time, and we are nearly there with delivering on our foundational goal of building an entirely 3D printed rocket."
@@ -58,7 +58,7 @@
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
 import OrgNews from "@/components/Org-News.vue";
-import NextLaunch from "@/components/relativity/Relativity-NextLaunch.vue";
+import NextLaunch from "@/components/NextLaunch.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {

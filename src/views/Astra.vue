@@ -9,7 +9,7 @@
       stock="https://www.nasdaq.com/market-activity/stocks/astr"
     />
 
-    <NextLaunch />
+    <NextLaunch company="Astra" />
 
     <Quote
       message="Things don't become impossible, they just take a little bit more time. "
@@ -17,13 +17,13 @@
       significance="Co-Founder of Astra"
     />
 
-    <Stock 
+    <!-- <Stock 
       START="June 30th, 2021"
       ORG="Astra" 
       TICKER="ASTR" 
       LINK="https://www.nasdaq.com/market-activity/stocks/astr" 
       FINN="https://widget.finnhub.io/widgets/stocks/chart?symbol=ASTR&amp;watermarkColor=%231db954&amp;backgroundColor=%23222222&amp;textColor=white" 
-    />
+    /> -->
 
     <!-- ASTR goes public section --> 
     <OrgNews 
@@ -73,9 +73,9 @@
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
 import OrgNews from "@/components/Org-News.vue";
-import NextLaunch from "@/components/astra/Astra-NextLaunch.vue";
+import NextLaunch from "@/components/NextLaunch.vue";
 import Quote from "@/components/Quotes-Template.vue";
-import Stock from "@/components/Stock-Price.vue";
+// import Stock from "@/components/Stock-Price.vue";
 
 export default {
   name: "Astra",
@@ -83,8 +83,8 @@ export default {
     Info,
     OrgNews,
     NextLaunch,
-    Quote,
-    Stock
+    Quote
+    // Stock
   },
   metaInfo: {
     title: "Rocket Downrange | Astra",

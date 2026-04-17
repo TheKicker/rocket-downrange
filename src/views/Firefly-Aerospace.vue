@@ -13,7 +13,8 @@
       instagram="https://www.instagram.com/fireflyaerospace/"
       youtube="https://www.youtube.com/channel/UC31UF9oKANw77yxBLxN852A"
     />
-    <NextLaunch />
+
+    <NextLaunch company="Firefly" />
     
     <Quote
       message="We're really excited and confident about our upcoming launch (December 2020), all great companies start with a great team - and we have an amazing one with plenty of experience. This ain't our first rodeo."
@@ -51,7 +52,7 @@
 <script>
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
-import NextLaunch from "@/components/firefly/Firefly-NextLaunch.vue";
+import NextLaunch from "@/components/NextLaunch.vue";
 import OrgNews from "@/components/Org-News.vue";
 import Quote from "@/components/Quotes-Template.vue";
 

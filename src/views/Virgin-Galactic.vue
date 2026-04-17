@@ -9,7 +9,9 @@
       youtube="https://www.youtube.com/channel/UClcvOr7LV8tlJwJvkNMmnKg"
       stock="https://www.nasdaq.com/market-activity/stocks/spce"
     />
-    <NextLaunch />
+
+    <NextLaunch company="Virgin Galactic" />
+
     <Quote
       message="There are millions of people out there who would love to become astronauts, who'd love to go to space - they'd love to look back at this wonderful world from space. That will be the engine that will enable us then to develop spaceships to transport people around the world at tremendous speeds in an environmentally friendly way."
       author="Sir Richard Branson"
@@ -54,7 +56,7 @@
 <script>
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
-import NextLaunch from "@/components/virgin/Virgin-NextLaunch.vue";
+import NextLaunch from "@/components/NextLaunch.vue";
 import Quote from "@/components/Quotes-Template.vue";
 import OrgNews from "@/components/Org-News.vue";
 import Stock from "@/components/Stock-Price.vue";

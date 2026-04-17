@@ -11,9 +11,10 @@
 
     <LaunchLocations x="25.985752215917778" y="-97.18223317068392" z="12.5" content="Boca Chica Starbase" hidden/>
     
-    <NextLaunch />
+    <NextLaunch company="SpaceX" />
 
     <LatestLaunch hidden/>
+
     <Quote
       message="Life cannot be just about solving one problem after another. There need to be things that inspire you, that make you glad to wake up and be a part of humanity."
       author="Elon Musk"
@@ -102,7 +103,7 @@
 import Info from "@/components/Info-Template.vue";
 import OrgNews from "@/components/Org-News.vue";
 import LaunchLocations from "@/components/LaunchLocations.vue";
-import NextLaunch from "@/components/spacex/SpaceX-NextLaunch.vue";
+import NextLaunch from "@/components/NextLaunch.vue";
 import LatestLaunch from "@/components/spacex/SpaceX-LatestLaunch.vue";
 import Starman from "@/components/spacex/SpaceX-Starman.vue";
 import Quote from "@/components/Quotes-Template.vue";

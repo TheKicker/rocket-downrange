@@ -8,8 +8,11 @@
       instagram="https://www.instagram.com/ulalaunch/"
       youtube="https://www.youtube.com/user/UnitedLaunchAlliance"
     />
+
     <ULAInfo />
-    <NextLaunch />
+
+    <NextLaunch company="United Launch Alliance" />
+
     <Quote
       message="Every rocket launch is a leap towards humankind’s destiny and an act of defiance against the tyranny of gravity."
       author="Tory Bruno"
@@ -47,7 +50,7 @@
 <script>
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
-import NextLaunch from "@/components/ula/ULA-NextLaunch.vue";
+import NextLaunch from "@/components/NextLaunch.vue";
 import OrgNews from "@/components/Org-News.vue";
 import NASAperseverance from "@/components/NASA-perseverance.vue";
 import Quote from "@/components/Quotes-Template.vue";

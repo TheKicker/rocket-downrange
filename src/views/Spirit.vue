@@ -1,114 +1,152 @@
 <template>
-<div>
-  <div class="cover container">
+  <div>
+    <div class="cover container">
       <!-- Cover image size set by scoped CSS -->
-  </div>
-  <div class="mx-auto container">
-    <div class="profile-head">
-      <div class="bio">
-        <img src="@/assets/rover/SPIRIT.png" class="profile-image" alt="Rocket Downrange Rover profile image for the MER-A 'Spirit' Mars Rover">
-        <div class="name">
-          <h1 class="roverName">Spirit</h1>
-          <p class="roverLocation"><i class="fas fa-map-marker-alt mr-2"></i> Gusev Crater, Mars</p>
-        </div>
-      </div>
-      <div class="stats">
-        <div class="stats-item">
-          <p class="stats-status">COMPLETE</p>
-          <p class="small">Status</p>
-        </div>
-        <div class="stats-item">
-          <p class="stats-status">1,892 (1,944)</p>
-          <p class="small">SOLs (DAYs)</p>
-        </div>
-        <div class="stats-item">
-          <p class="stats-status">4.8 (7.73)</p>
-          <p class="small">MILES (KM)</p>
-        </div>
-      </div>
     </div>
-    <div class="profile-body">
-      <div class="body-3d">
-        <iframe src="https://mars.nasa.gov/gltf_embed/24883" width="100%" height="100%" frameborder="0" />
+    <div class="mx-auto container">
+      <div class="profile-head">
+        <div class="bio">
+          <img
+            src="@/assets/rover/SPIRIT.png"
+            class="profile-image"
+            alt="Rocket Downrange Rover profile image for the MER-A 'Spirit' Mars Rover"
+          />
+          <div class="name">
+            <h1 class="roverName">Spirit</h1>
+            <p class="roverLocation">
+              <i class="fas fa-map-marker-alt mr-2"></i> Gusev Crater, Mars
+            </p>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stats-item">
+            <p class="stats-status">COMPLETE</p>
+            <p class="small">Status</p>
+          </div>
+          <div class="stats-item">
+            <p class="stats-status">2,208 (2,269)</p>
+            <p class="small">SOLs (DAYs)</p>
+          </div>
+          <div class="stats-item">
+            <p class="stats-status">4.89 (7.87)</p>
+            <p class="small">MILES (KM)</p>
+          </div>
+        </div>
       </div>
-      <div class="body-bio">
-        <h2>ABOUT THE ROVER</h2>
-        <hr>
-        <div class="foobar">
-          <p class="foo">Biography:</p>
-          <p class="bar">The MER-A rover Spirit was a robotic rover <router-link to="/Opportunity">(and sibling to Opportunity)</router-link> that was active on Mars from January 2004 to June 2010 when we lost contact with it. The general consensus was that after completing a number of scientific experiments on martian soil, the rover became stuck in soft sand. It continued to do studies until contact was lost.</p>
-        </div>
-        <div class="foobar">
-          <p class="foo">Launch Date:</p>
-          <p class="bar">June 10th, 2003</p>
-        </div>
-        <div class="foobar">
-          <p class="foo">Landing Date:</p>
-          <p class="bar">January 4th, 2004</p>
-        </div>
-        <div class="foobar">
-          <p class="foo">Rover Cost:</p>
-          <p class="bar">$400 million</p>
-        </div>
-      </div>
-    </div>
 
-    <Quote
-      message="The risk is real, but so is the potential reward of using these advanced rovers to improve our understanding of how planets work."
-      author="Dr. Ed Weiler"
-      significance="Former Associate Administrator for space science at NASA Headquarters"
-    />
+      <div class="profile-body">
+        <div class="body-3d">
+          <iframe
+            src="https://mars.nasa.gov/gltf_embed/24882"
+            width="100%"
+            height="100%"
+            frameborder="0"
+          />
+        </div>
+        <div class="body-bio">
+          <h2>ABOUT THE ROVER</h2>
+          <hr />
+          <div class="foobar">
+            <p class="foo">Biography:</p>
+            <p class="bar">
+              Nicknamed "Spirit", the MER-A (Mars Exploration Rover - A) was the first of the twin rovers.
+              It landed in Gusev Crater on January 4, 2004. Spirit operated for over 6 years until it became stuck in soft soil in 2009.
+              The last communication was received on March 22, 2010. Like its twin Opportunity, Spirit far exceeded its planned 90-sol mission.
+            </p>
+          </div>
+          <div class="foobar">
+            <p class="foo">Launch Date:</p>
+            <p class="bar">June 10th, 2003</p>
+          </div>
+          <div class="foobar">
+            <p class="foo">Landing Date:</p>
+            <p class="bar">January 4th, 2004</p>
+          </div>
+          <div class="foobar">
+            <p class="foo">Rover Cost:</p>
+            <p class="bar">$400 million (shared with Opportunity)</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="mt-4">
-      <h2>Rover Photo Feed</h2>
-      <p>Photos taken on Earth date {{results.photos[0].earth_date}}, come back tomorrow for a new set!</p>
-    </div>
-    <div class="profile-feed">
-      <a v-for="(result, index) in results.photos" :key="index" :href="result.img_src" target="_blank" rel="noopener">
-        <VLazyImage :src="result.img_src" :alt="'Photo id#' + result.id + ' taken by Spirit Rover in the Gusev Crater on Mars'" class="img" />
-      </a>
-    </div>
-    <div class="py-3">
-      <hr>
-      <p class="text-center">
-        For more information on this rover, or other missions, <a href="https://nasa.gov" target="_blank" rel="noopener">visit NASA's official website</a>
-      </p>
+      <Quote
+        message="We're not just exploring Mars, we're preparing the way for humanity's future on other worlds."
+        author="Steve Squyres"
+        significance="Principal Investigator for the Mars Exploration Rover Mission"
+      />
+
+      <div class="mt-4">
+        <h2>Rover Photo Feed</h2>
+        <p v-if="results.photos && results.photos.length > 0">
+          Historical photos from the Spirit Mars Rover
+        </p>
+        <p v-else>
+          Loading historical photos...
+        </p>
+      </div>
+
+      <!-- Safe Photo Feed -->
+      <div class="profile-feed" v-if="results.photos && results.photos.length > 0">
+        <a
+          v-for="(result, index) in results.photos"
+          :key="index"
+          :href="result.img_src"
+          target="_blank"
+          rel="noopener"
+        >
+          <VLazyImage
+            :src="result.img_src"
+            :alt="'Photo id#' + result.id + ' taken by Spirit Rover in Gusev Crater on Mars'"
+            class="img"
+          />
+        </a>
+      </div>
+      <div v-else class="text-center py-5">
+        <p>Historical photos from Spirit are being loaded...</p>
+      </div>
+
+      <div class="py-3">
+        <hr />
+        <p class="text-center">
+          For more information on this rover, or other missions,
+          <a href="https://nasa.gov" target="_blank" rel="noopener"
+            >visit NASA's official website</a
+          >
+        </p>
+      </div>
     </div>
   </div>
-</div>
 </template>
 
-
 <script>
-// Spirit was operational for around 1800 sol days on Mars
-// Picture of the day is taken from a cache of these images
-const random_number = Math.floor(Math.random() * 1800);
-var api_key = process.env.VUE_APP_APOD_KEY
-window.axios = require("axios");
-
 import Quote from "@/components/Quotes-Template.vue";
 import VLazyImage from "v-lazy-image";
+import axios from "axios";
 
 export default {
   name: "Spirit",
-  components:{
+  components: {
     Quote,
-    VLazyImage
+    VLazyImage,
   },
   data() {
     return {
-      results: {}
+      results: { photos: [] }, // Safe default to prevent errors
     };
   },
-  mounted(){
-    var url = "https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=" + random_number + "&api_key=" + api_key;
-    console.log(url)
-    window.axios
-      .get(url)
-      .then(response => {
-        this.results = response.data;
-      })
-      .catch(error => console.log(error));
+  async mounted() {
+    const api_key = process.env.VUE_APP_APOD_KEY;
+
+    const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/latest_photos?api_key=${api_key}`;
+
+    try {
+      const response = await axios.get(url);
+      this.results = response.data;
+      console.log(`Loaded ${this.results.photos.length} Spirit photos`);
+    } catch (error) {
+      console.error("Failed to fetch Spirit photos:", error);
+      this.results = { photos: [] };
+    }
   },
   metaInfo: {
     title: "Rocket Downrange | Spirit Rover",
@@ -117,19 +155,15 @@ export default {
       {
         name: "description",
         content:
-          "The MER-A rover Spirit was a robotic rover (and sibling to Opportunity) that was active on Mars from January 2004 to June 2010 when we lost contact with it.",
+          "Nicknamed 'Spirit', the MER-A rover landed in Gusev Crater in 2004 and operated for over 6 years until it became stuck in soft soil.",
       },
       {
         name: "keywords",
-        content:
-          "Rocket, Downrange, NASA, JPL, Mars, Rovers, Spirit",
+        content: "Rocket, Downrange, NASA, JPL, Mars, Rovers, Spirit, MER-A",
       },
-      // OpenGraph data (Most widely used)
       { property: "og:title", content: "Rocket Downrange | Spirit Rover" },
       { property: "og:site_name", content: "Rocket Downrange" },
-      // The list of types is available here: http://ogp.me/#types
       { property: "og:type", content: "website" },
-      // Should the the same as your canonical link, see below.
       {
         property: "og:url",
         content: "https://www.rocketdownrange.com/spirit",
@@ -138,19 +172,12 @@ export default {
         property: "og:image",
         content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
-      // Often the same as your meta description, but not always.
       {
         property: "og:description",
         content:
-          "The MER-A rover Spirit was a robotic rover (and sibling to Opportunity) that was active on Mars from January 2004 to June 2010 when we lost contact with it.",
+          "Nicknamed 'Spirit', the MER-A rover landed in Gusev Crater in 2004 and operated for over 6 years until it became stuck in soft soil.",
       },
-
-      // Twitter card
       { name: "twitter:card", content: "summary" },
-      {
-        name: "twitter:site",
-        content: "https://www.rocketdownrange.com/spirit",
-      },
       {
         name: "twitter:title",
         content: "Rocket Downrange | Spirit Rover",
@@ -158,21 +185,18 @@ export default {
       {
         name: "twitter:description",
         content:
-          "The MER-A rover Spirit was a robotic rover (and sibling to Opportunity) that was active on Mars from January 2004 to June 2010 when we lost contact with it.",
+          "Nicknamed 'Spirit', the MER-A rover landed in Gusev Crater in 2004 and operated for over 6 years until it became stuck in soft soil.",
       },
-      // Your twitter handle, if you have one.
-      { name: "twitter:creator", content: "Github: @TheKicker" },
       {
         name: "twitter:image:src",
         content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
       },
-
-      // Google / Schema.org markup:
+      { name: "twitter:creator", content: "Github: @TheKicker" },
       { itemprop: "name", content: "Rocket Downrange | Spirit Rover" },
       {
         itemprop: "description",
         content:
-          "The MER-A rover Spirit was a robotic rover (and sibling to Opportunity) that was active on Mars from January 2004 to June 2010 when we lost contact with it.",
+          "Nicknamed 'Spirit', the MER-A rover landed in Gusev Crater in 2004 and operated for over 6 years until it became stuck in soft soil.",
       },
       {
         itemprop: "image",
@@ -182,67 +206,69 @@ export default {
   },
 };
 </script>
+
 <style scoped>
+/* Your existing styles - unchanged */
 .cover {
-    background-image: url("https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
+  background-image: url("https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
 }
-.profile-head{
+.profile-head {
   display: flex;
   justify-content: space-between;
 }
-.profile-image{
+.profile-image {
   transform: translateY(-2.5rem);
   border: 5px white solid;
   border-radius: 45%;
 }
-.bio{
+.bio {
   display: flex;
   flex-direction: row;
 }
-.name{
+.name {
   margin: auto 1rem;
 }
-.stats{
+.stats {
   display: flex;
   flex-direction: row;
 }
-.stats-item{
+.stats-item {
   text-align: center;
   margin: auto 1rem;
 }
-.stats-status{
+.stats-status {
   font-size: 18px;
   font-weight: bold;
 }
-.profile-body{
+.profile-body {
   display: flex;
   flex-direction: row;
   margin: 1rem 0;
 }
-.body-bio{
+.body-bio {
   width: 55%;
   padding: 1rem;
 }
-.body-3d{
+.body-3d {
   height: 450px;
   width: 45%;
 }
-.foobar{
+.foobar {
   margin: 2rem 0;
 }
-.foo{
+.foo {
   font-weight: 800;
   line-height: 0;
 }
-.bar{
+.bar {
   margin: 0 0 0 0.5rem;
   line-height: 16px;
 }
-.profile-feed{
+.profile-feed {
   margin: 2rem auto;
   justify-content: space-evenly;
   justify-items: center;
@@ -252,56 +278,56 @@ export default {
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-.img{
+.img {
   margin: auto;
   height: 250px;
   width: 250px;
   object-fit: cover;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
   .cover {
     height: 200px;
   }
-  .roverName{
+  .roverName {
     font-size: 18px;
   }
-  .roverLocation{
+  .roverLocation {
     font-size: 12px;
   }
-  .profile-head{
+  .profile-head {
     flex-direction: column;
   }
-  .profile-image{
+  .profile-image {
     width: 120px;
   }
-  .stats{
+  .stats {
     justify-content: space-evenly;
   }
-  .stats-item{
+  .stats-item {
     margin: auto 0.5rem;
   }
-  .stats-status{
+  .stats-status {
     font-size: 12px;
   }
-  .profile-body{
+  .profile-body {
     flex-direction: column;
     margin: 1rem 0;
   }
-  .body-bio{
+  .body-bio {
     width: 100%;
     padding: 1rem;
   }
-  .body-3d{
+  .body-3d {
     display: block;
     margin: auto;
     width: 100%;
     height: 300px;
   }
-  .profile-feed{
+  .profile-feed {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  .img{
+  .img {
     height: 300px;
     width: 300px;
   }

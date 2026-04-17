@@ -8,7 +8,9 @@
       instagram="https://www.instagram.com/blueorigin/"
       youtube="https://www.youtube.com/user/blueoriginchannel"
     />
-    <NextLaunch />
+
+    <NextLaunch company="Blue Origin" />
+
     <Quote
       message="Our motto at Blue Origin is 'Gradatim Ferociter' or 'Step by Step, Ferociously.'"
       author="Jeff Bezos"
@@ -64,7 +66,7 @@
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
 import OrgNews from "@/components/Org-News.vue";
-import NextLaunch from "@/components/blue-origin/Blue-Origin-NextLaunch.vue";
+import NextLaunch from "@/components/NextLaunch.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
 export default {

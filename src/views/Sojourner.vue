@@ -197,7 +197,7 @@ export default {
 </script>
 <style scoped>
 .cover {
-    background-image: url("https://nssdc.gsfc.nasa.gov/planetary/image/marspath_presidential_med.jpg");
+    background-image: url("@/assets/rover/sojourner.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

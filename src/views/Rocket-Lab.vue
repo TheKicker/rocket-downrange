@@ -10,7 +10,7 @@
       stock="https://www.nasdaq.com/market-activity/stocks/rklb"
     />
 
-    <NextLaunch />
+    <NextLaunch company="Rocket Lab" />
 
     <Quote
       message="We set out to really make space accessible and make space kind of the third domain where you can innovate and provide your services to everybody here on earth and Rocket Lab's Photon is really kind of the next logical step to doing that."
@@ -89,7 +89,7 @@
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
 import OrgNews from "@/components/Org-News.vue";
-import NextLaunch from "@/components/rocketlab/RocketLab-NextLaunch.vue";
+import NextLaunch from "@/components/NextLaunch.vue";
 import Quote from "@/components/Quotes-Template.vue";
 import Stock from "@/components/Stock-Price.vue";
 

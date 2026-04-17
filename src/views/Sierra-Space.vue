@@ -8,6 +8,8 @@
       instagram="https://www.instagram.com/sierraspaceco/"
       youtube="https://www.youtube.com/c/SierraSpace"
     />
+
+    <NextLaunch company="Sierra Space Corp" />
     
     <Quote
       message="We are building the future space transportation system and amazing new destination habitats. We will enable humanity to live, work, explore, and vacation in Space! "
@@ -15,7 +17,21 @@
       significance="CEO of Sierra Space"
     />
 
-  <!-- Firefly Alpha first test section --> 
+    <OrgNews 
+      company="Sierra Space Special Event"
+      year="2026"
+      title="Dream Chaser has successfully completed acoustic testing"
+      srcType="image"
+      source="@/assets/company/sierra-space-1.jpg"
+      description1="The spacecraft successfully withstood the intense vibrations produced from sound waves during a rocket launch as it prepares for its first flight to Low Earth Orbit (LEO)."
+      description2="Acoustic testing at NASA’s SSPF utilized an array of 90 stacked speakers to simulate sound and airborne vibrations experienced during a rocket launch. The successful test validated the durability of Dream Chaser’s critical electronic systems and confirmed the structural integrity of the spacecraft."
+      update="Apr 14, 2026"
+      link1txt="Sierra Space Website"
+      link1url="https://www.sierraspace.com/"
+      link2txt="@SierraSpaceCo on X"
+      link2url="https://x.com/SierraSpaceCo/status/2044139075406532799?s=20"
+    />
+
     <OrgNews 
       company="Sierra Space Special Event"
       year="2022"
@@ -45,6 +61,7 @@
 <script>
 // @ is an alias to /src
 import Info from "@/components/Info-Template.vue";
+import NextLaunch from "@/components/NextLaunch.vue";
 import OrgNews from "@/components/Org-News.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
@@ -52,6 +69,7 @@ export default {
   name: "Sierra",
   components: {
     Info,
+    NextLaunch,
     OrgNews,
     Quote,
   },
