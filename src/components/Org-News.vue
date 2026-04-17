@@ -8,7 +8,7 @@
         <div class="row">
             <div v-if="srcType === 'image'" class="mx-auto">
               <v-lazy-image class="img-fluid" :src="image" :alt="'External link to ' + site" />
-              <img class="img-fluid" :src="source" :alt="company + ' - ' + title" style="max-height: 650px;">
+              <img class="img-fluid" :src="source" :alt="company + ' - ' + title" style="max-width: 875px;">
             </div>
             <div v-else-if="srcType === 'video'" class="embed-responsive embed-responsive-16by9 mx-auto">
               <iframe class="embed-responsive-item px-2" :src="source" frameborder="0" allowfullscreen :title="company + ' - ' + title"></iframe>

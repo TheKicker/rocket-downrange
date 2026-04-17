@@ -131,8 +131,8 @@ export default {
   },
   async mounted() {
     const filter = encodeURIComponent(this.company);
-    const url = `https://lldev.thespacedevs.com/2.2.0/launch/upcoming/?format=json&rocket__configuration__manufacturer__name__icontains=${filter}&limit=1`;
-
+    const url = `https://ll.thespacedevs.com/2.2.0/launch/upcoming/?format=json&rocket__configuration__manufacturer__name__icontains=${filter}&limit=1`;
+    
     try {
       const response = await axios.get(url);
       const results = response.data.results || [];

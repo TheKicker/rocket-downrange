@@ -22,7 +22,7 @@
       year="2026"
       title="Dream Chaser has successfully completed acoustic testing"
       srcType="image"
-      source="@/assets/company/sierra-space-1.jpg"
+      :source="sierraSpaceImage"
       description1="The spacecraft successfully withstood the intense vibrations produced from sound waves during a rocket launch as it prepares for its first flight to Low Earth Orbit (LEO)."
       description2="Acoustic testing at NASA’s SSPF utilized an array of 90 stacked speakers to simulate sound and airborne vibrations experienced during a rocket launch. The successful test validated the durability of Dream Chaser’s critical electronic systems and confirmed the structural integrity of the spacecraft."
       update="Apr 14, 2026"
@@ -65,6 +65,9 @@ import NextLaunch from "@/components/NextLaunch.vue";
 import OrgNews from "@/components/Org-News.vue";
 import Quote from "@/components/Quotes-Template.vue";
 
+// Assets
+import sierraSpaceImage from '@/assets/company/sierra-space-1.jpg'
+
 export default {
   name: "Sierra",
   components: {
@@ -72,6 +75,11 @@ export default {
     NextLaunch,
     OrgNews,
     Quote,
+  },
+  data() {
+    return {
+      sierraSpaceImage
+    }
   },
   metaInfo: {
     title: "Rocket Downrange | Sierra Space",
