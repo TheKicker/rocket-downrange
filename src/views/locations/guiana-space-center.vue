@@ -10,21 +10,21 @@
           alt="Rocket Downrange profile image"
         >
         <div class="name">
-          <h1 class="h2">Vandenberg AFB</h1>
-          <p><i class="fas fa-map-marker-alt mr-2"></i> Santa Barbara County, California, USA</p>
+          <h1 class="h2">Guiana Space Centre</h1>
+          <p><i class="fas fa-map-marker-alt mr-2"></i> Kourou, French Guiana</p>
         </div>
       </div>
       <div class="stats">
         <div class="stats-item">
-          <p class="stats-status">Dec 16th, 1958</p>
+          <p class="stats-status">Mar 10th, 1970</p>
           <p class="small">FIRST LAUNCH</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">NASA / USSF</p>
+          <p class="stats-status">ESA / Arianespace</p>
           <p class="small">PRIMARY OPERATOR</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">11</p>
+          <p class="stats-status">7+</p>
           <p class="small">LAUNCH PADS</p>
         </div>
       </div>
@@ -50,24 +50,24 @@
         <div class="foobar">
           <p class="foo">Description:</p>
           <p class="bar">
-            Vandenberg Space Force Base is a major U.S. military installation located on the central coast of California. It serves as the primary West Coast launch site for polar and sun-synchronous orbits, supporting both national security and commercial satellite launches.
+            The Guiana Space Centre, located near Kourou in French Guiana, is Europe's primary spaceport. Its near-equatorial location provides a significant performance advantage for launches into geostationary and other orbits. Operated by ESA and Arianespace, it has supported hundreds of missions with Ariane, Vega, and Soyuz rockets.
           </p>
         </div>
         <figure>
           <figcaption>Quick Facts:</figcaption>
           <ul>
-            <li>It was established in 1941 and became the primary location for testing and launching ballistic missiles during the Cold War era.</li>
-            <li>On February 17, 1959, Vandenberg launched the first successful American polar-orbiting satellite, Discoverer 1.</li>
-            <li>Vandenberg is uniquely positioned to support a wide range of launch azimuths, making it ideal for polar, sun-synchronous, and high-inclination orbits.</li>
+            <li>Strategically positioned just 5° north of the equator, giving rockets a major boost from Earth's rotational speed.</li>
+            <li>Home to the Ariane family of launch vehicles and the smaller Vega rocket, supporting both commercial and scientific missions.</li>
+            <li>The site features modern infrastructure along a coastal stretch bordered by the Atlantic Ocean and dense jungle.</li>
           </ul>
         </figure>
       </div>
     </div>
 
     <Quote
-      message="I believe that Vandenberg has and will continue to play a key role in the future of space. It is one of the most critical launch sites in our nation, contributing significantly to our national security and the advancement of space exploration."
-      author="General Jay Raymond"
-      significance="Former Chief of Space Operations, United States Space Force"
+      message="The Guiana Space Centre is the jewel in Europe’s space crown, offering unrivalled access to space thanks to its ideal location."
+      author="Josef Aschbacher"
+      significance="Director General of ESA"
     />
 
     <!-- NASA Image Gallery -->
@@ -84,7 +84,7 @@
           :key="index"
           :src="item.links?.[0]?.href" 
           class="img" 
-          :alt="item.data?.[0]?.title || 'Vandenberg image'"
+          :alt="item.data?.[0]?.title || 'Guiana Space Centre image'"
           loading="lazy"
         />
       </div>
@@ -105,9 +105,9 @@ const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 const attribution = '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 
 const zoom = 11
-const center = [34.732778, -120.568056]
-const markerLatLng = [34.732778, -120.568056]
-const content = 'Vandenberg Space Force Base'
+const center = [5.169, -52.690]
+const markerLatLng = [5.169, -52.690]
+const content = 'Guiana Space Centre, Kourou'
 
 const images = ref(null)
 const loading = ref(true)
@@ -118,10 +118,10 @@ const galleryImages = computed(() => {
 })
 
 const fetchImages = async () => {
-  const computeString = "Vandenberg Space Force Base".replace(/ /g, '%20')
+  const computeString = "Guiana Space Centre Kourou".replace(/ /g, '%20')
   const image_url = `https://images-api.nasa.gov/search?q=${computeString}&page=1`
   
-  console.log('Fetching NASA images for Vandenberg:', image_url)
+  console.log('Fetching NASA images for Guiana Space Centre:', image_url)
 
   try {
     const response = await fetch(image_url)
@@ -130,7 +130,7 @@ const fetchImages = async () => {
     const data = await response.json()
     images.value = data
   } catch (error) {
-    console.error("Error fetching NASA images for Vandenberg:", error)
+    console.error("Error fetching NASA images for Guiana Space Centre:", error)
     images.value = null
   } finally {
     loading.value = false
@@ -143,15 +143,16 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* Existing styles + small improvements */
+/* Reuse the exact same styles from your Starbase template */
 .cover {
-  background-image: url("https://www.jpl.nasa.gov/news/press_kits/sentinel-6/assets/images/mission/launch/launch-site-vehicle_sm.jpg");
+  background-image: url("https://i0.wp.com/spacenews.com/wp-content/uploads/2020/04/vega1.jpg?fit=2000%2C992&ssl=1");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
 }
 
+/* All other styles (profile-head, bio, stats, body-map, image-grid, etc.) are identical to your Starbase page */
 .profile-head {
   display: flex;
   justify-content: space-between;
@@ -237,7 +238,7 @@ onMounted(() => {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Mobile Responsiveness */
+/* Mobile Responsiveness - same as Starbase */
 @media only screen and (max-width: 900px) {
   .cover { height: 220px; }
   .profile-head { flex-direction: column; align-items: center; text-align: center; }

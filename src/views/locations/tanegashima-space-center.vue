@@ -10,21 +10,21 @@
           alt="Rocket Downrange profile image"
         >
         <div class="name">
-          <h1 class="h2">Vandenberg AFB</h1>
-          <p><i class="fas fa-map-marker-alt mr-2"></i> Santa Barbara County, California, USA</p>
+          <h1 class="h2">Tanegashima Space Center</h1>
+          <p><i class="fas fa-map-marker-alt mr-2"></i> Tanegashima Island, Kagoshima, Japan</p>
         </div>
       </div>
       <div class="stats">
         <div class="stats-item">
-          <p class="stats-status">Dec 16th, 1958</p>
+          <p class="stats-status">Sep 17th, 1968</p>
           <p class="small">FIRST LAUNCH</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">NASA / USSF</p>
+          <p class="stats-status">JAXA</p>
           <p class="small">PRIMARY OPERATOR</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">11</p>
+          <p class="stats-status">2+</p>
           <p class="small">LAUNCH PADS</p>
         </div>
       </div>
@@ -50,24 +50,24 @@
         <div class="foobar">
           <p class="foo">Description:</p>
           <p class="bar">
-            Vandenberg Space Force Base is a major U.S. military installation located on the central coast of California. It serves as the primary West Coast launch site for polar and sun-synchronous orbits, supporting both national security and commercial satellite launches.
+            Tanegashima Space Center (TNSC), located on the scenic southeastern coast of Tanegashima Island in Japan, is the country's largest and most important rocket launch facility. Operated by JAXA, it is renowned for its beautiful oceanfront setting and serves as the primary launch site for Japan's heavy-lift H-IIA and H3 rockets, supporting Earth observation, scientific, and exploration missions.
           </p>
         </div>
         <figure>
           <figcaption>Quick Facts:</figcaption>
           <ul>
-            <li>It was established in 1941 and became the primary location for testing and launching ballistic missiles during the Cold War era.</li>
-            <li>On February 17, 1959, Vandenberg launched the first successful American polar-orbiting satellite, Discoverer 1.</li>
-            <li>Vandenberg is uniquely positioned to support a wide range of launch azimuths, making it ideal for polar, sun-synchronous, and high-inclination orbits.</li>
+            <li>Japan’s flagship spaceport, often called one of the most beautiful launch sites in the world due to its subtropical island location.</li>
+            <li>Home to the Yoshinobu Launch Complex, which supports the H3 rocket — Japan’s next-generation medium-to-heavy lift vehicle.</li>
+            <li>The site has enabled numerous successful missions, including satellite deployments, lunar exploration support, and international collaborations.</li>
           </ul>
         </figure>
       </div>
     </div>
 
     <Quote
-      message="I believe that Vandenberg has and will continue to play a key role in the future of space. It is one of the most critical launch sites in our nation, contributing significantly to our national security and the advancement of space exploration."
-      author="General Jay Raymond"
-      significance="Former Chief of Space Operations, United States Space Force"
+      message="Space activities are not only for scientists and engineers, but also for all humankind"
+      author="Naoki Okumura"
+      significance="Former President of the Japan Aerospace Exploration Agency (JAXA)"
     />
 
     <!-- NASA Image Gallery -->
@@ -84,7 +84,7 @@
           :key="index"
           :src="item.links?.[0]?.href" 
           class="img" 
-          :alt="item.data?.[0]?.title || 'Vandenberg image'"
+          :alt="item.data?.[0]?.title || 'Tanegashima Space Center image'"
           loading="lazy"
         />
       </div>
@@ -105,9 +105,9 @@ const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 const attribution = '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 
 const zoom = 11
-const center = [34.732778, -120.568056]
-const markerLatLng = [34.732778, -120.568056]
-const content = 'Vandenberg Space Force Base'
+const center = [30.400, 130.970]
+const markerLatLng = [30.400, 130.970]
+const content = 'Tanegashima Space Center'
 
 const images = ref(null)
 const loading = ref(true)
@@ -118,10 +118,10 @@ const galleryImages = computed(() => {
 })
 
 const fetchImages = async () => {
-  const computeString = "Vandenberg Space Force Base".replace(/ /g, '%20')
+  const computeString = "Tanegashima Space Center JAXA".replace(/ /g, '%20')
   const image_url = `https://images-api.nasa.gov/search?q=${computeString}&page=1`
   
-  console.log('Fetching NASA images for Vandenberg:', image_url)
+  console.log('Fetching NASA images for Tanegashima Space Center:', image_url)
 
   try {
     const response = await fetch(image_url)
@@ -130,7 +130,7 @@ const fetchImages = async () => {
     const data = await response.json()
     images.value = data
   } catch (error) {
-    console.error("Error fetching NASA images for Vandenberg:", error)
+    console.error("Error fetching NASA images for Tanegashima Space Center:", error)
     images.value = null
   } finally {
     loading.value = false
@@ -143,9 +143,9 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* Existing styles + small improvements */
+/* Exact same styles as your Starbase template */
 .cover {
-  background-image: url("https://www.jpl.nasa.gov/news/press_kits/sentinel-6/assets/images/mission/launch/launch-site-vehicle_sm.jpg");
+  background-image: url("https://images-assets.nasa.gov/image/201402210001HQ/201402210001HQ~medium.jpg"); 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -237,7 +237,7 @@ onMounted(() => {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Mobile Responsiveness */
+/* Mobile Responsiveness - identical to Starbase */
 @media only screen and (max-width: 900px) {
   .cover { height: 220px; }
   .profile-head { flex-direction: column; align-items: center; text-align: center; }

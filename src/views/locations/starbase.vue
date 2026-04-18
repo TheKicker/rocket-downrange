@@ -1,9 +1,14 @@
 <template>
   <div class="container">
     <div class="cover"></div>
+
     <div class="profile-head">
       <div class="bio">
-        <img src="https://rocketdownrange.com/app-icon.png" class="profile-image" alt="Rocket Downrange Rover profile image">
+        <img 
+          src="https://rocketdownrange.com/app-icon.png" 
+          class="profile-image" 
+          alt="Rocket Downrange profile image"
+        >
         <div class="name">
           <h1 class="h2">Starbase</h1>
           <p><i class="fas fa-map-marker-alt mr-2"></i> Boca Chica, Texas, USA</p>
@@ -24,299 +29,231 @@
         </div>
       </div>
     </div>
+
     <div class="profile-body pb-4">
       <div class="body-map">
-        <l-map class="l-map" :zoom="zoom" :center="center" :options="{attributionControl: false}">
+        <l-map class="l-map" :zoom="zoom" :center="center" :options="{ attributionControl: false }">
           <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-          <l-control-attribution position="topright" prefix="A custom prefix"></l-control-attribution>
-          <l-marker :lat-lng="markerLatLng"><l-popup>{{ content }}</l-popup></l-marker>
+          <l-marker :lat-lng="markerLatLng">
+            <l-popup>{{ content }}</l-popup>
+          </l-marker>
         </l-map>
-        <p class="text-right"><a target="_blank" href="https://leafletjs.com/" rel="noopener">Leaflet.js</a> | &copy; <a target="_blank" href="http://osm.org/copyright" rel="noopener">OpenStreetMap</a></p>
+        <p class="text-right mt-2">
+          <a target="_blank" href="https://leafletjs.com/" rel="noopener">Leaflet.js</a> 
+          | &copy; <a target="_blank" href="http://osm.org/copyright" rel="noopener">OpenStreetMap</a>
+        </p>
       </div>
+
       <div class="body-bio">
         <h2>ABOUT THE LAUNCH SITE</h2>
         <hr>
         <div class="foobar">
           <p class="foo">Description:</p>
-          <p class="bar">SpaceX Starbase, located in Boca Chica, Texas, is a cutting-edge rocket production and launch facility that plays a key role in SpaceX's ambitious plans to colonize Mars and make human life multi-planetary. With its innovative engineering and pioneering spirit, SpaceX Starbase is at the forefront of the commercial space race.</p>
+          <p class="bar">
+            SpaceX Starbase, located in Boca Chica, Texas, is a cutting-edge rocket production and launch facility that plays a key role in SpaceX's ambitious plans to colonize Mars and make human life multi-planetary. With its innovative engineering and pioneering spirit, SpaceX Starbase is at the forefront of the commercial space race.
+          </p>
         </div>
         <figure>
           <figcaption>Quick Facts:</figcaption>
           <ul>
-            <li>NASA's Kennedy Space Center in Cape Canaveral, Florida, is a historic launch site renowned for its crucial role in crewed space missions like Apollo moon landings and Space Shuttle launches.</li>
-            <li>The center houses multiple launch complexes, including LC-39A, which has been utilized by private companies like SpaceX for commercial launches.</li>
-            <li>Serving as a gateway to space, the Kennedy Space Center continues to play a vital role in space exploration, supporting missions like the Artemis program's development of the Space Launch System and providing a visitor complex for public engagement with space history and future endeavors.</li>
-            
+            <li>Starbase is SpaceX’s private launch and manufacturing facility dedicated to the development and testing of the Starship vehicle.</li>
+            <li>It features orbital launch pads, massive production bays, and a rocket engine test stand (the "Massey's Test Site").</li>
+            <li>The site continues to evolve rapidly with new infrastructure being added regularly as SpaceX pushes toward frequent Starship flights and eventual Mars missions.</li>
           </ul>
         </figure>
       </div>
     </div>
 
     <Quote
-      message="If something is important enough, you should try.  Even if the probable outcome is failure. "
+      message="If something is important enough, you should try. Even if the probable outcome is failure."
       author="Elon Musk"
       significance="CEO of SpaceX"
     />
-    
-    <!-- <img :src="images.collection.items[0].links[0].href"/> -->
+
+    <!-- NASA Image Gallery -->
     <div class="profile-feed mb-4">
-        <img v-for="X in 32" :key="X" :src="images.collection.items[X].links[0].href" class="img" :alt="images.collection.items[X].data[0].title"/>
+      <h3 class="mb-3">Image Gallery</h3>
+      
+      <div v-if="loading" class="text-center py-5">
+        <p class="text-muted">Loading images from NASA...</p>
+      </div>
+      
+      <div v-else-if="galleryImages.length" class="image-grid">
+        <img 
+          v-for="(item, index) in galleryImages" 
+          :key="index"
+          :src="item.links?.[0]?.href" 
+          class="img" 
+          :alt="item.data?.[0]?.title || 'Starbase image'"
+          loading="lazy"
+        />
+      </div>
+      
+      <div v-else class="text-center py-5">
+        <p class="text-muted">No images available right now. Please check back later.</p>
+      </div>
     </div>
   </div>
 </template>
 
+<script setup>
+import { ref, onMounted, computed } from 'vue'
+import { LMap, LTileLayer, LMarker, LPopup } from 'vue3-leaflet'
+import Quote from "@/components/Quotes-Template.vue"
 
-<script>
-// @ is an alias to /src
-import { LMap, LTileLayer, LMarker, LPopup } from 'vue3-leaflet';
-import Quote from "@/components/Quotes-Template.vue";
+const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+const attribution = '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 
-export default {
-  name: "Starbase",
-  components: {
-        LMap,
-        LTileLayer,
-        LMarker,
-        LPopup,
-        Quote
-    },
-  data() {
-    return {
-        location: "Texas SpaceX",
-        url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        attribution: '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-        zoom: 11,
-        center: [25.985752215917778, -97.18223317068392],
-        markerLatLng: [25.985752215917778, -97.18223317068392],
-        images: []
-    };
-  },
-  mounted() {
-    this.fetchImages();
-  },
-  methods: {
-    async fetchImages() {
-      let computeString = this.location.replace(/ /g, '%20');
-      const image_url = `https://images-api.nasa.gov/search?q=${computeString}&page=1`;
-      console.log(image_url)
-      try {
-        const response = await fetch(image_url);
-        const data = await response.json();
-        
-        return this.images = data
-      }
-      catch {
-        console.log("Error", error)
-      }
-    }
-  },
-  metaInfo: {
-    title: "Rocket Downrange | Starbase",
-    meta: [
-      { name: "author", content: "Github: @TheKicker" },
-      {
-        name: "description",
-        content:
-          "Located in Boca Chica, Texas, is a cutting-edge rocket production and launch facility that plays a key role in SpaceX's ambitious plans to colonize Mars and make human life multi-planetary. ",
-      },
-      {
-        name: "keywords",
-        content:
-          "Rocket, Downrange, Starbase, SpaceX, Starship, Falcon, Falcon Heavy, Mars, Elon Musk, Boca Chica, Texas",
-      },
-      // OpenGraph data (Most widely used)
-      { property: "og:title", content: "Rocket Downrange | Starbase" },
-      { property: "og:site_name", content: "Rocket Downrange" },
-      // The list of types is available here: http://ogp.me/#types
-      { property: "og:type", content: "website" },
-      // Should the the same as your canonical link, see below.
-      {
-        property: "og:url",
-        content: "https://www.rocketdownrange.com/locations/starbase",
-      },
-      {
-        property: "og:image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
-      },
-      // Often the same as your meta description, but not always.
-      {
-        property: "og:description",
-        content:
-          "Located in Boca Chica, Texas, is a cutting-edge rocket production and launch facility that plays a key role in SpaceX's ambitious plans to colonize Mars and make human life multi-planetary. ",
-      },
+const zoom = 11
+const center = [25.985752215917778, -97.18223317068392]
+const markerLatLng = [25.985752215917778, -97.18223317068392]
+const content = 'SpaceX Starbase, Boca Chica'
 
-      // Twitter card
-      { name: "twitter:card", content: "summary" },
-      {
-        name: "twitter:site",
-        content: "https://www.rocketdownrange.com/locations/starbase",
-      },
-      {
-        name: "twitter:title",
-        content: "Rocket Downrange | Starbase",
-      },
-      {
-        name: "twitter:description",
-        content:
-          "Located in Boca Chica, Texas, is a cutting-edge rocket production and launch facility that plays a key role in SpaceX's ambitious plans to colonize Mars and make human life multi-planetary. ",
-      },
-      // Your twitter handle, if you have one.
-      { name: "twitter:creator", content: "Github: @TheKicker" },
-      {
-        name: "twitter:image:src",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
-      },
+const images = ref(null)
+const loading = ref(true)
 
-      // Google / Schema.org markup:
-      { itemprop: "name", content: "Rocket Downrange | Starbase" },
-      {
-        itemprop: "description",
-        content:
-          "Located in Boca Chica, Texas, is a cutting-edge rocket production and launch facility that plays a key role in SpaceX's ambitious plans to colonize Mars and make human life multi-planetary. ",
-      },
-      {
-        itemprop: "image",
-        content: "https://www.rocketdownrange.com/rocketdownrange.jpg",
-      },
-    ],
-  },
-};
+const galleryImages = computed(() => {
+  if (!images.value?.collection?.items) return []
+  return images.value.collection.items.slice(0, 12)
+})
+
+const fetchImages = async () => {
+  const computeString = "Starbase Boca Chica".replace(/ /g, '%20')
+  const image_url = `https://images-api.nasa.gov/search?q=${computeString}&page=1`
+  
+  console.log('Fetching NASA images for Starbase:', image_url)
+
+  try {
+    const response = await fetch(image_url)
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`)
+    
+    const data = await response.json()
+    images.value = data
+  } catch (error) {
+    console.error("Error fetching NASA images for Starbase:", error)
+    images.value = null
+  } finally {
+    loading.value = false
+  }
+}
+
+onMounted(() => {
+  fetchImages()
+})
 </script>
 
 <style scoped>
-figcaption{
-    font-weight: 800;
-    font-size: 16px;
-}
+/* Existing styles + small improvements */
 .cover {
-    background-image: url("https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,q_60,w_1315/ac8ffc8ac67cfc99a069184833593c8b.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
+  background-image: url("https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,q_60,w_1315/ac8ffc8ac67cfc99a069184833593c8b.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
 }
-.profile-head{
+
+.profile-head {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-.profile-image{
+
+.profile-image {
   transform: translateY(-2.5rem);
-  border: 5px white solid;
+  border: 5px solid white;
   border-radius: 25%;
   height: 150px;
+  flex-shrink: 0;
 }
-.bio{
+
+.bio {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
-.name{
+
+.name {
   margin: auto 1rem;
 }
-.stats{
+
+.stats {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.5rem;
 }
-.stats-item{
+
+.stats-item {
   text-align: center;
-  margin: auto 1rem;
 }
-.stats-status{
+
+.stats-status {
   font-size: 18px;
   font-weight: bold;
 }
-.profile-body{
+
+.profile-body {
   display: flex;
   flex-direction: row;
+  gap: 2rem;
   margin: 1rem 0;
 }
-.body-bio{
-  width: 55%;
-  padding: 1rem;
+
+.body-bio {
+  flex: 1;
+  min-width: 300px;
 }
-.body-map{
+
+.body-map {
+  flex: 1;
+  min-width: 300px;
   height: 450px;
-  width: 45%;
 }
-.l-map{
-  height: 500px;
+
+.l-map {
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
 }
-.foobar{
-  margin: 2rem 0;
+
+.profile-feed h3 {
+  font-weight: 600;
 }
-.foo{
-  font-weight: 800;
-  line-height: 0;
-  font-size: 16px;
-}
-.bar{
-  margin: 0 0 0 0.5rem;
-  line-height: 16px;
-}
-.profile-feed{
-  margin: 2rem auto;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-content: space-evenly;
-  align-items: center;
+
+.image-grid {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
 }
-.img{
-  margin: auto;
+
+.img {
   height: 250px;
   width: 250px;
   object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-@media only screen and (max-width: 900px){
-  .cover {
-    height: 200px;
-  }
-  .roverName{
-    font-size: 18px;
-  }
-  .roverLocation{
-    font-size: 12px;
-  }
-  .profile-head{
-    flex-direction: column;
-  }
-  .profile-image{
-    width: 120px;
+/* Mobile Responsiveness */
+@media only screen and (max-width: 900px) {
+  .cover { height: 220px; }
+  .profile-head { flex-direction: column; align-items: center; text-align: center; }
+  .profile-image { transform: none; margin-bottom: 1rem; }
+  .profile-body { flex-direction: column; }
+  .body-map { height: 320px; }
+  .l-map { height: 320px; }
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
   .stats{
-    justify-content: space-evenly;
+    padding-top: 0.5rem;
   }
-  .stats-item{
-    margin: auto 0.5rem;
-  }
-  .stats-status{
-    font-size: 12px;
-  }
-  .profile-body{
-    flex-direction: column;
-    margin: 1rem 0;
-  }
-  .body-bio{
-    width: 100%;
-    padding: 1rem;
-  }
-  .body-map{
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: 300px;
-  }
-  .l-map{
-    height: 300px;
-    }
-  .profile-feed{
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-  .img{
-    height: 300px;
-    width: 300px;
+  .img {
+    height: 280px;
+    width: 280px;
   }
 }
 </style>

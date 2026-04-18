@@ -93,10 +93,25 @@
                   <router-link class="nav-link ml-1" to="/locations/baikonur-cosmodrome">BAIKONUR, RU</router-link>
                 </li>
                 <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/locations/corn-ranch">CORN RANCH, TX</router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/locations/guiana-space-center">GUIANA, FR</router-link>
+                </li>
+                <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/locations/kennedy-space-center">KENNEDY, FL</router-link>
                 </li>
                 <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/locations/launch-complex-1">LAUNCH COMPLEX 1, NZ</router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/locations/pacific-spaceport">PACIFIC SPACEPORT, AK</router-link>
+                </li>
+                <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/locations/starbase">STARBASE, TX</router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link ml-1" to="/locations/tanegashima-space-center">TANEGASHIMA, JP</router-link>
                 </li>
                 <li class="nav-item">
                   <router-link class="nav-link ml-1" to="/locations/vandenberg">VANDENBERG, CA</router-link>

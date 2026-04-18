@@ -86,7 +86,7 @@
           </h6>
         </div>
 
-        <div class="text-center mt-4">
+        <div class="text-center mt-4" hidden>
           <a
             v-if="launch.url"
             :href="launch.url"

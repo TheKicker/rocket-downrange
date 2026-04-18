@@ -18,6 +18,7 @@
         <div class="mb-4">
           <p class="h5 text-uppercase text-secondary"><strong>Location:</strong></p>
           <p class="h4">- {{ region }}</p>
+          <p class="h4">({{ x }}, {{ y }})</p>
         </div>
         <div class="mb-4">
           <p class="h5 text-uppercase text-secondary"><strong>Primary Operator:</strong></p>
@@ -31,10 +32,9 @@
           <p class="h5 text-uppercase text-secondary"><strong>First Launch:</strong></p>
           <p class="h4">- {{ first_launch }}</p>
         </div>
-        <!-- <div class="mb-4">
-          <p class="h5 text-uppercase text-secondary"><strong>X / Y:</strong></p>
-          <p class="h4">[{{ x }}, {{ y }}]</p>
-        </div> -->
+        <div class="mb-4">
+          <router-link v-if="link != null" :to="link" class="btn btn-primary">Learn More</router-link>
+        </div>
       </div>
     </div>
     <hr class="my-4">
@@ -42,6 +42,7 @@
 </template>
 
 <script>
+import { RouterLink } from 'vue-router';  
 import { LMap, LTileLayer, LMarker, LPopup } from 'vue3-leaflet';
 
 export default {
@@ -61,7 +62,8 @@ export default {
         region: String,
         launch_pads: String,
         first_launch: String,
-        description: String
+        description: String,
+        link: String,
     },
     data() {
         return {

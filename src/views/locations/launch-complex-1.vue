@@ -10,21 +10,21 @@
           alt="Rocket Downrange profile image"
         >
         <div class="name">
-          <h1 class="h2">Vandenberg AFB</h1>
-          <p><i class="fas fa-map-marker-alt mr-2"></i> Santa Barbara County, California, USA</p>
+          <h1 class="h2">Launch Complex 1</h1>
+          <p><i class="fas fa-map-marker-alt mr-2"></i> Mahia Peninsula, New Zealand</p>
         </div>
       </div>
       <div class="stats">
         <div class="stats-item">
-          <p class="stats-status">Dec 16th, 1958</p>
+          <p class="stats-status">May 25th, 2017</p>
           <p class="small">FIRST LAUNCH</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">NASA / USSF</p>
+          <p class="stats-status">ROCKET LAB</p>
           <p class="small">PRIMARY OPERATOR</p>
         </div>
         <div class="stats-item">
-          <p class="stats-status">11</p>
+          <p class="stats-status">2</p>
           <p class="small">LAUNCH PADS</p>
         </div>
       </div>
@@ -50,24 +50,24 @@
         <div class="foobar">
           <p class="foo">Description:</p>
           <p class="bar">
-            Vandenberg Space Force Base is a major U.S. military installation located on the central coast of California. It serves as the primary West Coast launch site for polar and sun-synchronous orbits, supporting both national security and commercial satellite launches.
+            Rocket Lab's Launch Complex 1, located on the remote and scenic Māhia Peninsula in New Zealand, is the world's first private spaceport to successfully reach orbit. Dedicated to the lightweight Electron rocket, it specializes in rapid-response small satellite launches for commercial, government, and scientific customers.
           </p>
         </div>
         <figure>
           <figcaption>Quick Facts:</figcaption>
           <ul>
-            <li>It was established in 1941 and became the primary location for testing and launching ballistic missiles during the Cold War era.</li>
-            <li>On February 17, 1959, Vandenberg launched the first successful American polar-orbiting satellite, Discoverer 1.</li>
-            <li>Vandenberg is uniquely positioned to support a wide range of launch azimuths, making it ideal for polar, sun-synchronous, and high-inclination orbits.</li>
+            <li>The first private orbital launch site in the Southern Hemisphere and the first in New Zealand.</li>
+            <li>Features two pads (LC-1A and LC-1B) optimized for frequent Electron launches into sun-synchronous and other orbits.</li>
+            <li>Its coastal location on the rugged Māhia Peninsula provides excellent launch trajectories with minimal risk to populated areas.</li>
           </ul>
         </figure>
       </div>
     </div>
 
     <Quote
-      message="I believe that Vandenberg has and will continue to play a key role in the future of space. It is one of the most critical launch sites in our nation, contributing significantly to our national security and the advancement of space exploration."
-      author="General Jay Raymond"
-      significance="Former Chief of Space Operations, United States Space Force"
+      message="We chose New Zealand because it gives us one of the best locations on the planet for launching small satellites."
+      author="Peter Beck"
+      significance="Founder & CEO of Rocket Lab"
     />
 
     <!-- NASA Image Gallery -->
@@ -84,7 +84,7 @@
           :key="index"
           :src="item.links?.[0]?.href" 
           class="img" 
-          :alt="item.data?.[0]?.title || 'Vandenberg image'"
+          :alt="item.data?.[0]?.title || 'Rocket Lab Launch Complex 1 image'"
           loading="lazy"
         />
       </div>
@@ -104,10 +104,10 @@ import Quote from "@/components/Quotes-Template.vue"
 const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 const attribution = '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 
-const zoom = 11
-const center = [34.732778, -120.568056]
-const markerLatLng = [34.732778, -120.568056]
-const content = 'Vandenberg Space Force Base'
+const zoom = 13
+const center = [-39.261, 177.866]
+const markerLatLng = [-39.261, 177.866]
+const content = 'Rocket Lab Launch Complex 1, Mahia'
 
 const images = ref(null)
 const loading = ref(true)
@@ -118,10 +118,10 @@ const galleryImages = computed(() => {
 })
 
 const fetchImages = async () => {
-  const computeString = "Vandenberg Space Force Base".replace(/ /g, '%20')
+  const computeString = "Rocket Lab Launch Complex 1 Mahia".replace(/ /g, '%20')
   const image_url = `https://images-api.nasa.gov/search?q=${computeString}&page=1`
   
-  console.log('Fetching NASA images for Vandenberg:', image_url)
+  console.log('Fetching NASA images for Rocket Lab LC-1:', image_url)
 
   try {
     const response = await fetch(image_url)
@@ -130,7 +130,7 @@ const fetchImages = async () => {
     const data = await response.json()
     images.value = data
   } catch (error) {
-    console.error("Error fetching NASA images for Vandenberg:", error)
+    console.error("Error fetching NASA images for Rocket Lab LC-1:", error)
     images.value = null
   } finally {
     loading.value = false
@@ -143,9 +143,9 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* Existing styles + small improvements */
+/* Exact same styles as your Starbase template */
 .cover {
-  background-image: url("https://www.jpl.nasa.gov/news/press_kits/sentinel-6/assets/images/mission/launch/launch-site-vehicle_sm.jpg");
+  background-image: url("https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2026/03/rocket_lab_s_mahia_launch_complex_in_new_zealand/27139923-1-eng-GB/Rocket_Lab_s_Mahia_Launch_Complex_in_New_Zealand.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -237,7 +237,7 @@ onMounted(() => {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Mobile Responsiveness */
+/* Mobile Responsiveness - identical to Starbase */
 @media only screen and (max-width: 900px) {
   .cover { height: 220px; }
   .profile-head { flex-direction: column; align-items: center; text-align: center; }

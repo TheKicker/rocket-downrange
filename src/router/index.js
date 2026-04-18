@@ -182,6 +182,36 @@ const routes = [
     meta: { title: 'Rocket Downrange - Kennedy Space Center' },
   },
   {
+    path: '/locations/guiana-space-center',
+    name: 'Guiana Space Center',
+    component: () => import(/* webpackChunkName: "locations" */ '../views/locations/guiana-space-center.vue'),
+    meta: { title: 'Rocket Downrange - Guiana Space Center' },
+  },
+  {
+    path: '/locations/tanegashima-space-center',
+    name: 'Tanegashima Space Center',
+    component: () => import(/* webpackChunkName: "locations" */ '../views/locations/tanegashima-space-center.vue'),
+    meta: { title: 'Rocket Downrange - Tanegashima Space Center' },
+  },
+  {
+    path: '/locations/pacific-spaceport',
+    name: 'Pacific Spaceport Complex',
+    component: () => import(/* webpackChunkName: "locations" */ '../views/locations/pacific-spaceport.vue'),
+    meta: { title: 'Rocket Downrange - Pacific Spaceport Complex' },
+  },
+  {
+    path: '/locations/launch-complex-1',
+    name: 'Launch Complex 1',
+    component: () => import(/* webpackChunkName: "locations" */ '../views/locations/launch-complex-1.vue'),
+    meta: { title: 'Rocket Downrange - Launch Complex 1' },
+  },
+  {
+    path: '/locations/corn-ranch',
+    name: 'Corn Ranch',
+    component: () => import(/* webpackChunkName: "locations" */ '../views/locations/corn-ranch.vue'),
+    meta: { title: 'Rocket Downrange - Corn Ranch' },
+  },
+  {
     path: '/locations/starbase',
     name: 'Starbase',
     component: () => import(/* webpackChunkName: "locations" */ '../views/locations/starbase.vue'),
