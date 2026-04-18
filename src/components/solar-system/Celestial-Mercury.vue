@@ -26,7 +26,7 @@
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Diameter:</i>
-                <br />3,030 miles
+                <br />3,032 miles
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Surface Temp:</i>

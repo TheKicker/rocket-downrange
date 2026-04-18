@@ -26,7 +26,7 @@
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Surface Temp:</i>
-                <br />-37ºF (avg)
+                <br />-100°F to -160°F (avg)
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Gravity:</i>
