@@ -300,6 +300,7 @@ p{
 #marquee {
   padding: 0.5rem 0rem;
   color: white;
+  font-size: 14px;
 }
 
 #marquee a{
