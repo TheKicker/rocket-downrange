@@ -26,7 +26,7 @@
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Diameter:</i>
-                <br />34,503 miles
+                <br />30,775 miles
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Surface Temp:</i>
@@ -182,12 +182,12 @@ p {
 }
 
 .glitch:after {
-  animation: glitchBotom 1.5s linear infinite;
+  animation: glitchBottom 1.5s linear infinite;
   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
 
-@keyframes glitchBotom {
+@keyframes glitchBottom {
   2%,
   64% {
     transform: translate(-3px, 0);

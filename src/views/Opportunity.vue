@@ -58,7 +58,7 @@
           </div>
           <div class="foobar">
             <p class="foo">Launch Date:</p>
-            <p class="bar">July 8th, 2003</p>
+            <p class="bar">July 7th, 2003</p>
           </div>
           <div class="foobar">
             <p class="foo">Landing Date:</p>

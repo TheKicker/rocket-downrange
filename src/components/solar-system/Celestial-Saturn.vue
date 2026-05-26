@@ -182,12 +182,12 @@ p {
 }
 
 .glitch:after {
-  animation: glitchBotom 1.5s linear infinite;
+  animation: glitchBottom 1.5s linear infinite;
   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
 
-@keyframes glitchBotom {
+@keyframes glitchBottom {
   2%,
   64% {
     transform: translate(-3px, 0);

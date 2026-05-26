@@ -9,7 +9,7 @@
         <div class="col mx-4">
           <div class="mx-2">
             <h1 class="glitch">Ceres & Asteroid Belt</h1>
-            <p>The dwarf planet Ceres is the largest object in the asteroid belt between Mars and Jupiter and the only dwarf planet located in the inner solar system. Considered an asteroid for far too long, Ceres makes up about 25% of the mass in the asteroid belt - but is still far smaller than Pluto. Ceres made history in 2015 by being the first dwarf planet to be visited by spacecraft.</p>
+            <p>The dwarf planet Ceres is the largest object in the asteroid belt between Mars and Jupiter and the only dwarf planet located in the inner solar system. Considered an asteroid for far too long, Ceres makes up about one-third of the mass in the asteroid belt - but is still far smaller than Pluto. Ceres made history in 2015 by being the first dwarf planet to be visited by spacecraft.</p>
             <hr />
             <div class="stats">
               <div class="col-sm">
@@ -177,12 +177,12 @@ p {
 }
 
 .glitch:after {
-  animation: glitchBotom 1.5s linear infinite;
+  animation: glitchBottom 1.5s linear infinite;
   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
 
-@keyframes glitchBotom {
+@keyframes glitchBottom {
   2%,
   64% {
     transform: translate(-3px, 0);

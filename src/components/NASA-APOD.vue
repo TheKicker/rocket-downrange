@@ -22,40 +22,37 @@
 
     <!-- Success State -->
     <template v-else>
-      <div v-if="results.media_type === 'video'">
-        <h2 class="h3 text-uppercase text-center my-3">{{ results.title }} (Video)</h2>
-      </div>
-      <div v-else>
-        <h2 class="h3 text-uppercase text-center my-3">{{ results.title }}</h2>
-      </div>
+      <h2 class="h3 text-uppercase text-center my-3">
+        {{ results.title }}
+        <span v-if="mediaKind === 'youtube' || mediaKind === 'video'" class="text-muted h5"> (Video)</span>
+        <span v-else-if="mediaKind === 'gif'" class="text-muted h5"> (GIF)</span>
+      </h2>
 
       <div class="d-flex flex-lg-row flex-column">
         <!-- Media Column -->
         <div class="half">
-          <!-- Video -->
-          <div v-if="results.media_type === 'video'" class="embed-responsive embed-responsive-16by9">
-            <iframe 
-              class="embed-responsive-item" 
-              :src="results.url" 
-              frameborder="0" 
+          <!-- YouTube or other iframe video -->
+          <div v-if="mediaKind === 'youtube' || mediaKind === 'video'" class="video-wrapper">
+            <iframe
+              :src="results.url"
+              frameborder="0"
               allowfullscreen
               :title="results.title"
             ></iframe>
           </div>
 
-          <!-- Image -->
+          <!-- Image (jpg/png) or GIF -->
           <div v-else-if="results.url">
             <a :href="results.hdurl || results.url" target="_blank" rel="noopener">
-              <img 
-                :src="results.url" 
-                class="img-fluid" 
-                style="margin: auto; max-height: 55vh;"
+              <img
+                :src="results.url"
+                class="apod-img img-fluid"
                 :alt="results.title + ' - NASA Astronomy Picture of the Day'"
               />
             </a>
           </div>
 
-          <!-- Rare fallback -->
+          <!-- Fallback -->
           <div v-else class="text-center text-muted py-4">
             <p>Unable to display media</p>
           </div>
@@ -66,26 +63,26 @@
           <p class="text-primary">{{ results.explanation }}</p>
 
           <div class="d-block text-center w-100 mt-3">
-            <div v-if="results.media_type === 'video'">
-              <a
-                :href="results.url"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-block btn-outline-primary"
-              >
-                Watch on YouTube
-              </a>
-            </div>
-            <div v-else>
-              <a
-                :href="results.hdurl || results.url"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-block btn-outline-primary"
-              >
-                View HD Image on NASA.gov
-              </a>
-            </div>
+            <a v-if="mediaKind === 'youtube'"
+              :href="results.url" target="_blank" rel="noopener"
+              class="btn btn-block btn-outline-primary">
+              Watch on YouTube
+            </a>
+            <a v-else-if="mediaKind === 'video'"
+              :href="results.url" target="_blank" rel="noopener"
+              class="btn btn-block btn-outline-primary">
+              Watch Video
+            </a>
+            <a v-else-if="mediaKind === 'gif'"
+              :href="results.url" target="_blank" rel="noopener"
+              class="btn btn-block btn-outline-primary">
+              View Full Animation
+            </a>
+            <a v-else
+              :href="results.hdurl || results.url" target="_blank" rel="noopener"
+              class="btn btn-block btn-outline-primary">
+              View HD Image on NASA.gov
+            </a>
           </div>
         </div>
       </div>
@@ -94,7 +91,7 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import axios from 'axios';
 
 const api_key = process.env.VUE_APP_APOD_KEY;
@@ -143,6 +140,16 @@ export default {
       fetchAPOD();
     };
 
+    const mediaKind = computed(() => {
+      const url = results.value.url || '';
+      const type = results.value.media_type;
+      if (type === 'video') {
+        return url.includes('youtube.com') || url.includes('youtu.be') ? 'youtube' : 'video';
+      }
+      if (url.toLowerCase().endsWith('.gif')) return 'gif';
+      return 'image';
+    });
+
     // Initial fetch on mount
     onMounted(() => {
       fetchAPOD();
@@ -153,6 +160,7 @@ export default {
       loading,
       error,
       retryFetch,
+      mediaKind,
     };
   }
 };
@@ -164,17 +172,38 @@ export default {
   padding: 1rem 1.5rem;
 }
 
-@media screen and (max-width: 650px) {
+/* Match Bootstrap's flex-lg-row breakpoint (992px) so .half goes full-width
+   whenever the two columns stack vertically */
+@media screen and (max-width: 991px) {
   .half {
     width: 100%;
     padding: 0.5rem 0;
   }
-}
-
-/* Optional: Make the explanation text a bit more readable on mobile */
-@media screen and (max-width: 650px) {
   .text-primary {
     font-size: 0.95rem;
   }
+}
+
+/* Responsive iframe for YouTube / video — replaces Bootstrap 4's embed-responsive */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.apod-img {
+  display: block;
+  margin: auto;
+  max-height: 55vh;
+  width: 100%;
+  object-fit: contain;
 }
 </style>

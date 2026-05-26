@@ -66,18 +66,12 @@ export default {
 .launches-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
 .launches-grid > * {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-@media (max-width: 768px) {
-  .launches-grid {
-    grid-template-columns: repeat(auto-fit, minmax(95%, 1fr));
-  }
 }
 </style>

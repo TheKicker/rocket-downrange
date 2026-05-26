@@ -57,7 +57,7 @@
           <figcaption>Quick Facts:</figcaption>
           <ul>
             <li>It was established in 1941 and became the primary location for testing and launching ballistic missiles during the Cold War era.</li>
-            <li>On February 17, 1959, Vandenberg launched the first successful American polar-orbiting satellite, Discoverer 1.</li>
+            <li>On February 28, 1959, Vandenberg launched the first successful American polar-orbiting satellite, Discoverer 1.</li>
             <li>Vandenberg is uniquely positioned to support a wide range of launch azimuths, making it ideal for polar, sun-synchronous, and high-inclination orbits.</li>
           </ul>
         </figure>

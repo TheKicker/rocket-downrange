@@ -6,7 +6,7 @@
         <img
           src="../../assets/mars.png"
           class="img-fluid"
-          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- This mosaic of Mars is a compilation of images captured by the Viking Orbiter 1. The center of the scene shows the entire Valles Marineris canyon system, more than 2,000 miles (3,000 kilometers) long, 370 miles (600 kilometers) wide and 5 miles (8 kilometers) deep."
+          alt="CREDIT: SOLARSYSTEM.NASA.GOV -- This mosaic of Mars is a compilation of images captured by the Viking Orbiter 1. The center of the scene shows the entire Valles Marineris canyon system, more than 2,500 miles (4,000 kilometers) long, 370 miles (600 kilometers) wide and 5 miles (8 kilometers) deep."
         />
       </div>
       <div class="celestialText">
@@ -26,7 +26,7 @@
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Diameter:</i>
-                <br />4,222 miles
+                <br />4,212 miles
               </div>
               <div class="col-sm">
                 <i class="text-secondary">Surface Temp:</i>
@@ -182,12 +182,12 @@ p {
 }
 
 .glitch:after {
-  animation: glitchBotom 1.5s linear infinite;
+  animation: glitchBottom 1.5s linear infinite;
   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
 
-@keyframes glitchBotom {
+@keyframes glitchBottom {
   2%,
   64% {
     transform: translate(-3px, 0);

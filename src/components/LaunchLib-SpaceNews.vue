@@ -70,7 +70,7 @@ export default {
 .articles-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
 /* Ensure all cards are same height by forcing flex column stretch */
@@ -78,11 +78,5 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-@media (max-width: 768px) {
-  .articles-grid {
-    grid-template-columns: repeat(auto-fit, minmax(95%, 1fr));
-  }
 }
 </style>
