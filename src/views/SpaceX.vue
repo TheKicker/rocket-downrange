@@ -21,8 +21,26 @@
       significance="CEO of SpaceX"
     />
 
-    <!-- New Starship Animation --> 
-      <OrgNews 
+    <!-- Starship IFT-4 -->
+    <OrgNews
+      company="SpaceX Special Event"
+      year="2024"
+      title="Starship IFT-4 - First Successful Return of Super Heavy"
+      srcType="video"
+      source="https://www.youtube.com/embed/O0bYCeQ3bqQ"
+      description1="On June 6, 2024, SpaceX launched Integrated Flight Test 4 (IFT-4) of Starship from Starbase in Boca Chica, Texas. For the first time, both the Super Heavy booster and the Starship upper stage successfully survived reentry and splashed down in their intended ocean zones — a landmark demonstration of full-stack reusability."
+      description2="The Super Heavy booster executed a controlled splashdown in the Gulf of Mexico while the Starship upper stage completed a controlled reentry over the Indian Ocean. The flight validated heat shield tiles, propellant venting, and reentry attitude control ahead of future catch attempts by the launch tower arms."
+      update="Jun 6, 2024"
+      link1txt="Livestream Replay"
+      link1url="https://www.youtube.com/watch?v=O0bYCeQ3bqQ"
+      link2txt="SpaceX Starship"
+      link2url="https://www.spacex.com/vehicles/starship/"
+      link3txt="Space.com Article"
+      link3url="https://www.space.com/spacex-starship-flight-4-test-launch-success"
+    />
+
+    <!-- New Starship Animation -->
+      <OrgNews
         company="SpaceX Special Event"
         year="2022"
         title="New Starship animation released"
@@ -70,8 +88,26 @@
       link2url="https://www.spacex.com/vehicles/starship/"
     />
 
-    <!-- Crew Dragon first use --> 
-    <OrgNews 
+    <!-- Crew-1 Resilience -->
+    <OrgNews
+      company="SpaceX Special Event"
+      year="2020"
+      title="Crew-1 - Resilience Carries First Operational Crew Dragon Crew"
+      srcType="video"
+      source="https://www.youtube.com/embed/VlTYJNB5-cg"
+      description1="On November 15, 2020, SpaceX and NASA launched the first fully operational Crew Dragon mission, Crew-1, aboard Falcon 9 from Kennedy Space Center. The spacecraft, named Resilience, carried NASA astronauts Mike Hopkins, Victor Glover, and Shannon Walker, plus JAXA astronaut Soichi Noguchi to the International Space Station."
+      description2="The crew spent 168 days aboard the ISS and safely splashed down on May 2, 2021. Crew-1 certified the Crew Dragon system for routine crewed flights and marked NASA's first fully operational commercial crew rotation mission, cementing SpaceX as a cornerstone of America's human spaceflight program."
+      update="Nov 15, 2020"
+      link1txt="Livestream Replay"
+      link1url="https://www.youtube.com/watch?v=VlTYJNB5-cg"
+      link2txt="NASA Crew-1 Page"
+      link2url="https://www.nasa.gov/mission/spacex-crew-1/"
+      link3txt="Space.com Article"
+      link3url="https://www.space.com/spacex-crew-1-launch-success"
+    />
+
+    <!-- Crew Dragon first use -->
+    <OrgNews
       company="SpaceX Special Event"
       year="2020"
       title="NASA & SPACEX - CREW DRAGON DEMO-2 MISSION"
@@ -83,6 +119,24 @@
       link1url="https://www.youtube.com/watch?v=xY96v0OIcK4"
       link2txt="Part 2 - Return Home"
       link2url="https://www.youtube.com/watch?v=sl2jo1bSxl8"
+    />
+
+    <!-- Falcon Heavy Demo Flight -->
+    <OrgNews
+      company="SpaceX Special Event"
+      year="2018"
+      title="Falcon Heavy Demo Flight - Starman Heads to Space"
+      srcType="video"
+      source="https://www.youtube.com/embed/wbSwFU6tY1c"
+      description1="On February 6, 2018, SpaceX launched the inaugural flight of the Falcon Heavy — at the time, the world's most powerful operational rocket — from historic Launch Complex 39A at Kennedy Space Center. As a test payload, SpaceX sent CEO Elon Musk's personal Tesla Roadster with a mannequin in a spacesuit (nicknamed 'Starman') into a heliocentric orbit around the Sun."
+      description2="The side boosters made simultaneous synchronized landings back at Cape Canaveral in a breathtaking sequence that captured the world's attention. The center core attempted a drone ship landing but missed. The Roadster and Starman are still out there today — you can track their position in real time using the link below."
+      update="Feb 6, 2018"
+      link1txt="Livestream Replay"
+      link1url="https://www.youtube.com/watch?v=wbSwFU6tY1c"
+      link2txt="Where is Starman?"
+      link2url="https://www.whereisroadster.com/"
+      link3txt="SpaceX Falcon Heavy"
+      link3url="https://www.spacex.com/vehicles/falcon-heavy/"
     />
 
     <Starman msg="Where is Starman? " />

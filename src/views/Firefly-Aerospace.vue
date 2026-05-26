@@ -22,8 +22,62 @@
       significance="CEO of Firefly Aerospace"
     />
 
-  <!-- Firefly Alpha first test section --> 
-    <OrgNews 
+  <!-- Blue Ghost lunar landing -->
+    <OrgNews
+      company="Firefly Special Event"
+      year="2025"
+      title="Blue Ghost - First Commercial Lunar Lander to Successfully Touch Down"
+      srcType="video"
+      source="https://www.youtube.com/embed/bW6lEpFiuFg"
+      description1="On March 2, 2025, Firefly Aerospace's Blue Ghost lander successfully touched down on the Moon's Mare Crisium region, becoming the first commercial lunar lander in history to achieve a successful soft landing. Blue Ghost carried 10 NASA payloads to the surface under the Commercial Lunar Payload Services (CLPS) program, operating on the lunar surface for a full lunar day (about 14 Earth days)."
+      description2="Blue Ghost transmitted high-definition video of a total solar eclipse as seen from the Moon's surface, a first-ever feat. The mission was an extraordinary success for Firefly and for NASA's strategy of using commercial partners for lunar surface access. It positioned Firefly as a leader in the commercial lunar economy and a key partner for future Artemis-era surface operations."
+      update="Mar 2, 2025"
+      link1txt="Landing Livestream"
+      link1url="https://www.youtube.com/watch?v=bW6lEpFiuFg"
+      link2txt="Firefly Article"
+      link2url="https://firefly.com/blue-ghost-mission-1/"
+      link3txt="NASA CLPS Page"
+      link3url="https://www.nasa.gov/commercial-lunar-payload-services/"
+    />
+
+  <!-- Victus Nox responsive launch -->
+    <OrgNews
+      company="Firefly Special Event"
+      year="2023"
+      title="Victus Nox - Fastest Commercial Launch Ever for US Space Force"
+      srcType="video"
+      source="https://www.youtube.com/embed/2TdFTGqMTaE"
+      description1="On September 14-15, 2023, Firefly launched the Victus Nox mission for the US Space Force from Vandenberg Space Force Base — setting a new record for the fastest commercial launch ever conducted. After receiving a 27-hour notice-to-launch order, Firefly's team fueled and launched an Alpha rocket carrying the Millennium Space Systems VICTUS NOX satellite in under 27 hours."
+      description2="The mission demonstrated a critical new national security capability: the ability to rapidly reconstitute satellite coverage in response to a threat or on-orbit failure. It validated Firefly's Tactically Responsive Space (TacRS) capability and earned the company significant credibility with US government customers seeking assured access to space on short notice."
+      update="Sep 15, 2023"
+      link1txt="Launch Video"
+      link1url="https://www.youtube.com/watch?v=2TdFTGqMTaE"
+      link2txt="Space Force Article"
+      link2url="https://www.spaceforce.mil/News/Article/3521771/us-space-force-firefly-aerospace-launch-victus-nox/"
+      link3txt="Space.com Article"
+      link3url="https://www.space.com/firefly-aerospace-victus-nox-launch-record-speed"
+    />
+
+  <!-- Alpha Flight 2 reaches orbit -->
+    <OrgNews
+      company="Firefly Special Event"
+      year="2022"
+      title="Alpha Flight 2 - To The Black - Firefly Reaches Orbit"
+      srcType="video"
+      source="https://www.youtube.com/embed/ghHpyynlqpI"
+      description1="On October 1, 2022, Firefly Aerospace's Alpha rocket successfully reached orbit on its second ever flight, launching from Vandenberg Space Force Base and delivering a DREAM (Dedicated Research and Education Accelerator Mission) payload of three CubeSats for educational institutions. The mission, named 'To The Black,' redeemed the program after the 2021 first-flight failure."
+      description2="Alpha's second flight demonstrated rapid iteration in rocket development — Firefly analyzed the failure mode, redesigned the affected system, and returned to flight in just over a year. Reaching orbit on only the second attempt of a new rocket is an exceptional achievement in the launch industry and validated Firefly's engineering approach and manufacturing in Cedar Park, Texas."
+      update="Oct 1, 2022"
+      link1txt="Launch Video"
+      link1url="https://www.youtube.com/watch?v=ghHpyynlqpI"
+      link2txt="Firefly Article"
+      link2url="https://firefly.com/to-the-black/"
+      link3txt="Space.com Article"
+      link3url="https://www.space.com/firefly-alpha-rocket-second-launch-orbit-success"
+    />
+
+  <!-- Firefly Alpha first test section -->
+    <OrgNews
       company="Firefly Special Event"
       year="2021"
       title="First Alpha rocket comes up short"

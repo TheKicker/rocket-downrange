@@ -26,8 +26,44 @@
       FINN="https://widget.finnhub.io/widgets/stocks/chart?symbol=RKLB&amp;watermarkColor=%231db954&amp;backgroundColor=%23222222&amp;textColor=white"
     />
 
-  <!-- RKLB Goes Public section --> 
-    <OrgNews 
+  <!-- Electron booster helicopter catch -->
+    <OrgNews
+      company="Rocket Lab Special Event"
+      year="2024"
+      title="No Time To Fly - First Successful Helicopter Booster Catch"
+      srcType="video"
+      source="https://www.youtube.com/embed/GBDFaGONbcs"
+      description1="On November 4, 2024, Rocket Lab made history by successfully catching an Electron first stage booster mid-air using a Sikorsky S-92 helicopter during the 'No Time To Fly' mission from Launch Complex 1 in New Zealand. The helicopter snagged the parachute-equipped booster as it descended at approximately 10 meters per second, making Rocket Lab the only company besides SpaceX to recover an orbital rocket booster."
+      description2="This was the culmination of years of practice catches and two earlier near-misses. Once the booster was confirmed structurally sound after inspection, it represented proof that Electron reusability is operationally viable. Rocket Lab aims to refurbish and refly recovered boosters to increase launch cadence and reduce per-launch costs."
+      update="Nov 4, 2024"
+      link1txt="Livestream Replay"
+      link1url="https://www.youtube.com/watch?v=GBDFaGONbcs"
+      link2txt="Rocket Lab Article"
+      link2url="https://www.rocketlabusa.com/updates/rocket-lab-successfully-catches-electron-rocket-mid-air-with-helicopter/"
+      link3txt="Space.com Article"
+      link3url="https://www.space.com/rocket-lab-electron-helicopter-catch-success-no-time-to-fly"
+    />
+
+  <!-- CAPSTONE mission -->
+    <OrgNews
+      company="Rocket Lab Special Event"
+      year="2022"
+      title="CAPSTONE - Rocket Lab Sends NASA Satellite to the Moon"
+      srcType="video"
+      source="https://www.youtube.com/embed/OtTXaJBcFtk"
+      description1="On June 28, 2022, Rocket Lab launched NASA's CAPSTONE (Cislunar Autonomous Positioning System Technology Operations and Navigation Experiment) spacecraft aboard an Electron rocket from Launch Complex 1 in New Zealand. CAPSTONE was the first spacecraft to fly a near-rectilinear halo orbit (NRHO) around the Moon — the same orbit planned for NASA's Gateway lunar outpost."
+      description2="Rocket Lab's Photon spacecraft bus provided the propulsion to send CAPSTONE on a ballistic lunar transfer trajectory, arriving at lunar orbit in November 2022. The mission demonstrated Rocket Lab's capability to deliver payloads beyond Earth orbit and validated critical navigation technology for the Artemis program."
+      update="Jun 28, 2022"
+      link1txt="Livestream Replay"
+      link1url="https://www.youtube.com/watch?v=OtTXaJBcFtk"
+      link2txt="NASA CAPSTONE Page"
+      link2url="https://www.nasa.gov/mission/capstone/"
+      link3txt="Rocket Lab Article"
+      link3url="https://www.rocketlabusa.com/missions/completed-missions/capstone/"
+    />
+
+  <!-- RKLB Goes Public section -->
+    <OrgNews
       company="Rocket Lab Special Event"
       year="2021"
       title="Rocket Lab ($RKLB) goes public"

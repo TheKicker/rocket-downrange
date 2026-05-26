@@ -17,8 +17,44 @@
       significance="Founder of Blue Origin and Amazon"
     />
 
-    <!-- Blue Origin second commercial launch --> 
-    <OrgNews 
+    <!-- New Glenn maiden flight -->
+    <OrgNews
+      company="Blue Origin Special Event"
+      year="2025"
+      title="New Glenn NG-1 - Maiden Flight of Blue Origin's Orbital Rocket"
+      srcType="video"
+      source="https://www.youtube.com/embed/I_ANGpXFiOk"
+      description1="On January 16, 2025, Blue Origin launched New Glenn for the first time from Launch Complex 36 at Cape Canaveral Space Force Station. The 320-foot two-stage rocket successfully delivered its BE-4-powered first stage through max-q and achieved orbit, marking Blue Origin's long-awaited entry into the orbital launch market."
+      description2="The BE-4 first stage attempted a landing on the drone ship Jacklyn but did not survive. Blue Origin and mission teams celebrated the orbital insertion as a major success after years of development. New Glenn is designed to compete with SpaceX's Falcon 9 and carry payloads including national security satellites and commercial missions."
+      update="Jan 16, 2025"
+      link1txt="Livestream Replay"
+      link1url="https://www.youtube.com/watch?v=I_ANGpXFiOk"
+      link2txt="Blue Origin Article"
+      link2url="https://www.blueorigin.com/news/new-glenn-reaches-orbit-on-inaugural-flight"
+      link3txt="Space.com Article"
+      link3url="https://www.space.com/blue-origin-new-glenn-launch-success"
+    />
+
+    <!-- NS-23 In-flight abort -->
+    <OrgNews
+      company="Blue Origin Special Event"
+      year="2022"
+      title="NS-23 - New Shepard In-Flight Abort System Activates"
+      srcType="video"
+      source="https://www.youtube.com/embed/CuMBaGCKnQg"
+      description1="On September 12, 2022, during the cargo-only NS-23 mission, New Shepard's crew capsule abort system activated at approximately 1 minute 4 seconds into flight — the first in-flight abort in the program's history. The capsule safely separated from the booster and parachuted to a safe landing in the Texas desert."
+      description2="The booster was destroyed in the anomaly. Because no crew was aboard, no personnel were harmed. The event demonstrated that the escape system designed to protect future astronauts functions as intended under real conditions. New Shepard returned to flight in May 2023 after an FAA investigation was completed."
+      update="Sep 12, 2022"
+      link1txt="Abort Sequence Video"
+      link1url="https://www.youtube.com/watch?v=CuMBaGCKnQg"
+      link2txt="FAA Summary"
+      link2url="https://www.faa.gov/newsroom/faa-anomaly-investigation-blue-origin-ns-23"
+      link3txt="Space.com Article"
+      link3url="https://www.space.com/blue-origin-new-shepard-anomaly-abort-system"
+    />
+
+    <!-- Blue Origin second commercial launch -->
+    <OrgNews
       company="Blue Origin Special Event"
       year="2021"
       title="Four More Commercial Astronauts Return from Space"

@@ -20,8 +20,44 @@
     />
     <NASAperseverance />
 
-    <!-- Parker Solar Probe --> 
-    <OrgNews 
+    <!-- Vulcan Centaur debut flight -->
+    <OrgNews
+      company="ULA Special Event"
+      year="2024"
+      title="Vulcan Centaur VC2S - Maiden Flight Carries Peregrine Lunar Lander"
+      srcType="video"
+      source="https://www.youtube.com/embed/FNaUxYPFsOE"
+      description1="On January 8, 2024, United Launch Alliance successfully launched the inaugural flight of the Vulcan Centaur rocket from Space Launch Complex 41 at Cape Canaveral Space Force Station. The VC2S configuration — powered by two BE-4 engines from Blue Origin — carried Astrobotic's Peregrine Mission One lunar lander toward the Moon, validating Vulcan's first stage performance."
+      description2="Vulcan Centaur is designed to replace ULA's legacy Atlas V and Delta IV rockets with a next-generation vehicle capable of supporting national security, NASA, and commercial missions. The maiden flight demonstrated the new BE-4 engine's performance in an operational mission and opened a new chapter for ULA after years of development delays."
+      update="Jan 8, 2024"
+      link1txt="Launch Video"
+      link1url="https://www.youtube.com/watch?v=FNaUxYPFsOE"
+      link2txt="ULA Mission Overview"
+      link2url="https://www.ulalaunch.com/missions/missions-details/2024/01/08/united-launch-alliance-vulcan-centaur-certification-1-launch"
+      link3txt="Space.com Article"
+      link3url="https://www.space.com/ula-vulcan-centaur-first-launch-success"
+    />
+
+    <!-- Final Delta IV Heavy launch -->
+    <OrgNews
+      company="ULA Special Event"
+      year="2024"
+      title="Final Delta IV Heavy Launch - End of an Era for NROL-70"
+      srcType="video"
+      source="https://www.youtube.com/embed/ynxMPqPUCR8"
+      description1="On April 9, 2024, United Launch Alliance launched the final Delta IV Heavy rocket from Space Launch Complex 37B at Cape Canaveral, carrying the National Reconnaissance Office's NROL-70 classified payload. The rocket — first flown in 2004 — flew its 16th and final mission, closing the chapter on one of the most powerful American rockets ever built."
+      description2="The Delta IV Heavy used three common booster cores with RS-68A engines to deliver payloads to geosynchronous and highly elliptical orbits. It launched many of America's most critical national security payloads, including the first Orion spacecraft test flight (EFT-1) in 2014. With its retirement, ULA transitions fully to the Atlas V (until its retirement) and the new Vulcan Centaur as its primary launch vehicles."
+      update="Apr 9, 2024"
+      link1txt="Final Launch Video"
+      link1url="https://www.youtube.com/watch?v=ynxMPqPUCR8"
+      link2txt="ULA Mission Overview"
+      link2url="https://www.ulalaunch.com/missions/missions-details/2024/04/09/united-launch-alliance-successfully-launches-nrol-70-mission-for-the-national-reconnaissance-office"
+      link3txt="Space.com Article"
+      link3url="https://www.space.com/ula-delta-iv-heavy-final-launch-nrol-70"
+    />
+
+    <!-- Parker Solar Probe -->
+    <OrgNews
       company="ULA Special Event"
       year="2018"
       title="THE PARKER SOLAR PROBE - DELTA IV HEAVY"

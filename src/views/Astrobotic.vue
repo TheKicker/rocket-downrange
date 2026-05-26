@@ -17,6 +17,42 @@
       significance="CEO of Astrobotic"
     />
 
+    <!-- Peregrine Mission One launch and anomaly -->
+    <OrgNews
+      company="Astrobotic Special Event"
+      year="2024"
+      title="Peregrine Mission One - Launch and Propulsion Anomaly"
+      srcType="video"
+      source="https://www.youtube.com/embed/FNaUxYPFsOE"
+      description1="On January 8, 2024, Astrobotic's Peregrine Mission One launched aboard United Launch Alliance's brand-new Vulcan Centaur rocket from Cape Canaveral — the first American lunar lander attempt in over 50 years. Hours after launch, Astrobotic reported a critical propulsion anomaly that caused a propellant leak, preventing the spacecraft from achieving the stable orientation needed for a lunar landing."
+      description2="Despite the anomaly, the team kept Peregrine operational for 10 days, gathering valuable data and completing several payload experiments in space. The spacecraft re-entered Earth's atmosphere on January 18, 2024, burning up over the Pacific Ocean. The mission was a painful but important learning experience, and Astrobotic pressed forward with development of its larger Griffin lander for NASA's VIPER rover mission."
+      update="Jan 18, 2024"
+      link1txt="Launch Video"
+      link1url="https://www.youtube.com/watch?v=FNaUxYPFsOE"
+      link2txt="Astrobotic Updates"
+      link2url="https://www.astrobotic.com/lunar-delivery/missions/peregrine-mission-one/"
+      link3txt="Space.com Article"
+      link3url="https://www.space.com/astrobotic-peregrine-lunar-lander-mission-one-results"
+    />
+
+    <!-- NASA CLPS contract award -->
+    <OrgNews
+      company="Astrobotic Special Event"
+      year="2019"
+      title="NASA Awards $79.5M CLPS Contract to Astrobotic"
+      srcType="image"
+      source="https://img.youtube.com/vi/BQ2OiGgtopo/maxresdefault.jpg"
+      description1="In February 2019, NASA selected Astrobotic as one of nine companies to receive task orders under the Commercial Lunar Payload Services (CLPS) program, awarding the Pittsburgh company a $79.5 million contract to deliver 14 NASA payloads to the Moon's Lacus Mortis region aboard the Peregrine lander. This was the largest contract in Astrobotic's history at the time."
+      description2="The CLPS program represents NASA's strategy to leverage commercial partners for routine lunar payload delivery, freeing the agency to focus on human exploration under the Artemis program. The Astrobotic award helped validate Pittsburgh as a serious hub for aerospace innovation and enabled the company to dramatically expand its workforce and facilities."
+      update="Feb 28, 2019"
+      link1txt="NASA CLPS Page"
+      link1url="https://www.nasa.gov/commercial-lunar-payload-services/"
+      link2txt="Astrobotic Article"
+      link2url="https://www.astrobotic.com/2019/05/31/nasa-selects-astrobotic-for-clps/"
+      link3txt="Space.com Article"
+      link3url="https://www.space.com/nasa-commercial-lunar-payload-services-astrobotic-contract"
+    />
+
     <!-- Astrobotic News / Special Event -->
     <OrgNews
       company="Astrobotic Special Event"

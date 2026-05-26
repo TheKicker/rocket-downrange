@@ -26,7 +26,43 @@
       FINN="https://widget.finnhub.io/widgets/stocks/chart?symbol=spce&amp;watermarkColor=%231db954&amp;backgroundColor=%23222222&amp;textColor=white" 
     />
 
-    <OrgNews 
+    <!-- Galactic 01 first commercial flight -->
+    <OrgNews
+      company="Virgin Galactic Special Event"
+      year="2023"
+      title="Galactic 01 - First Commercial Spaceflight"
+      srcType="video"
+      source="https://www.youtube.com/embed/p8oGLpDlk9M"
+      description1="On June 29, 2023, Virgin Galactic flew its first commercial spaceflight, Galactic 01, carrying three Italian Air Force researchers from Spaceport America in New Mexico. VSS Unity and its mothership VMS Eve carried the crew to space for experiments on fluid dynamics, plant biology, and human physiology in microgravity — the first paying customers to fly aboard a Virgin Galactic vehicle."
+      description2="The mission fulfilled a long-standing promise to paying customers who had waited over a decade for service to begin. Virgin Galactic subsequently flew regular monthly flights through 2023, completing several more commercial missions before announcing plans to retire VSS Unity and transition to a next-generation Delta-class spaceplane."
+      update="Jun 29, 2023"
+      link1txt="Livestream Replay"
+      link1url="https://www.youtube.com/watch?v=p8oGLpDlk9M"
+      link2txt="Virgin Galactic Article"
+      link2url="https://www.virgingalactic.com/articles/galactic-01"
+      link3txt="Space.com Article"
+      link3url="https://www.space.com/virgin-galactic-galactic-01-first-commercial-spaceflight"
+    />
+
+    <!-- VSS Unity retirement -->
+    <OrgNews
+      company="Virgin Galactic Special Event"
+      year="2023"
+      title="VSS Unity Retires After Final Flight"
+      srcType="video"
+      source="https://www.youtube.com/embed/U0SbHdvRDwM"
+      description1="On November 2, 2023, VSS Unity flew its final spaceflight on the Galactic 07 mission, officially retiring the pioneering vehicle that carried Sir Richard Branson to space in 2021 and completed Virgin Galactic's first commercial flights. The vehicle completed a total of 6 commercial flights in 2023 before being stood down."
+      description2="Virgin Galactic announced it would pause spaceflight operations after Unity's retirement and focus resources on developing its next-generation Delta-class spaceplane, designed for higher flight frequency and improved economics. The Delta-class vehicle is expected to support a significantly higher annual launch cadence than VSS Unity was capable of achieving."
+      update="Nov 2, 2023"
+      link1txt="Final Flight Video"
+      link1url="https://www.youtube.com/watch?v=U0SbHdvRDwM"
+      link2txt="Virgin Galactic Article"
+      link2url="https://www.virgingalactic.com/articles/galactic-07"
+      link3txt="Space.com Article"
+      link3url="https://www.space.com/virgin-galactic-unity-retirement-galactic-07"
+    />
+
+    <OrgNews
       company="Virgin Galactic"
       year="2021"
       title="Richard Branson goes to space on VSS Unity"

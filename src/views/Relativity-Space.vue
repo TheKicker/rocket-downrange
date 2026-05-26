@@ -17,7 +17,43 @@
       significance="Co-Founder of Relativity Space"
     />
 
-    <OrgNews 
+    <!-- GLHF actual flight results -->
+    <OrgNews
+      company="Relativity Space Special Event"
+      year="2023"
+      title="GLHF - Terran 1 Flies But Stage 2 Falls Short of Orbit"
+      srcType="video"
+      source="https://www.youtube.com/embed/hQn9vHEJdtk"
+      description1="On March 8, 2023, Relativity Space launched Terran 1 on the GLHF (Good Luck, Have Fun) mission from Launch Complex 16 at Cape Canaveral. The rocket's first stage performed flawlessly — becoming the first entirely 3D-printed rocket to survive max-q — but the second stage failed to ignite properly, leaving the vehicle short of orbit."
+      description2="Despite not reaching orbit, the mission was celebrated as a partial success: Terran 1 became the first 3D-printed rocket to reach space and withstand the forces of powered flight. Relativity Space announced shortly after the flight that it would retire Terran 1 entirely and focus all resources on the much larger, reusable Terran R — a bold pivot that reshaped the company's identity."
+      update="Mar 8, 2023"
+      link1txt="Launch Video"
+      link1url="https://www.youtube.com/watch?v=hQn9vHEJdtk"
+      link2txt="Space.com Article"
+      link2url="https://www.space.com/relativity-space-terran-1-launch-glhf-results"
+      link3txt="Relativity Space"
+      link3url="https://www.relativityspace.com/terran-r"
+    />
+
+    <!-- Terran R pivot -->
+    <OrgNews
+      company="Relativity Space Special Event"
+      year="2023"
+      title="Relativity Space Retires Terran 1, Goes All-In on Terran R"
+      srcType="image"
+      source="https://img.youtube.com/vi/3_9xFE_Bgrg/maxresdefault.jpg"
+      description1="On June 26, 2023, Relativity Space announced it was permanently retiring the Terran 1 rocket after its single flight attempt and redirecting the company's full engineering talent and capital toward Terran R — a fully reusable, medium-to-heavy lift rocket designed to compete with SpaceX's Falcon 9 and deliver payloads of up to 33,500 lbs (15,200 kg) to low Earth orbit."
+      description2="The pivot was a defining moment for Relativity: rather than refining a small rocket with a limited market, CEO Tim Ellis bet the company on the reusable medium-lift segment. Terran R is being developed at Relativity's Long Beach factory using its massive Stargate 3D printers. The decision signaled a broader industry trend toward larger, reusable rockets as the economics of expendable small launch vehicles proved challenging."
+      update="Jun 26, 2023"
+      link1txt="Terran R Page"
+      link1url="https://www.relativityspace.com/terran-r"
+      link2txt="Space.com Article"
+      link2url="https://www.space.com/relativity-space-terran-1-retirement-terran-r-focus"
+      link3txt="CNBC Article"
+      link3url="https://www.cnbc.com/2023/06/26/relativity-space-ditches-terran-1-rocket-pivots-to-terran-r.html"
+    />
+
+    <OrgNews
       company="Relativity Space Special Event"
       year="2023"
       title="GOOD LUCK, HAVE FUN (MAIDEN FLIGHT)"

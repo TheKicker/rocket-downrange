@@ -25,8 +25,26 @@
       FINN="https://widget.finnhub.io/widgets/stocks/chart?symbol=ASTR&amp;watermarkColor=%231db954&amp;backgroundColor=%23222222&amp;textColor=white" 
     /> -->
 
-    <!-- ASTR goes public section --> 
-    <OrgNews 
+    <!-- Rocket 3.3 reaches orbit -->
+    <OrgNews
+      company="Astra Special Event"
+      year="2021"
+      title="Rocket 3.3 - Astra Reaches Orbit for the First Time"
+      srcType="video"
+      source="https://www.youtube.com/embed/lJDFQN6Znck"
+      description1="On November 20, 2021, Astra's Rocket 3.3 successfully reached orbit for the first time, launching from Pacific Spaceport Complex in Kodiak, Alaska on the LV0007 mission. The rocket carried a NASA payload — four CubeSats as part of the TROPICS weather-monitoring constellation — and demonstrated that Astra's low-cost, streamlined approach to rocket manufacturing could deliver results."
+      description2="The achievement came after a series of close attempts by earlier Rocket 3 variants. However, Astra's subsequent missions in 2022 failed to successfully deploy payloads, and in July 2022 the company announced it would halt Rocket 3 production to focus on a larger next-generation vehicle. Astra later suspended launch operations entirely in 2023."
+      update="Nov 20, 2021"
+      link1txt="Livestream Replay"
+      link1url="https://www.youtube.com/watch?v=lJDFQN6Znck"
+      link2txt="Space.com Article"
+      link2url="https://www.space.com/astra-rocket-3-3-reaches-orbit-first-time"
+      link3txt="Astra Blog"
+      link3url="https://astra.com/blog/lv0007-mission-success/"
+    />
+
+    <!-- ASTR goes public section -->
+    <OrgNews
       company="Astra Special Event"
       year="2021"
       title="Astra ($ASTR) goes public"
