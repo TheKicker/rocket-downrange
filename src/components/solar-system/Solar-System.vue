@@ -63,8 +63,7 @@ export default {
     this.createTwinklingStars();
   },
 
-  beforeDestroy() {
-    // Clean up interval when component is destroyed
+  beforeUnmount() {
     if (this.shootingStarInterval) {
       clearInterval(this.shootingStarInterval);
     }
@@ -161,7 +160,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css?family=Abel|Space+Mono&display=swap");
 
 html {
@@ -194,8 +193,9 @@ html {
   z-index: 0;
 }
 
-/* Twinkling stars layers */
-.stars {
+/* Twinkling stars layers — :deep() required because these elements are created
+   via document.createElement and don't receive Vue's scoped data attribute */
+:deep(.stars) {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -211,7 +211,7 @@ html {
 }
 
 /* Individual star */
-.star {
+:deep(.star) {
   position: absolute;
   background: #fff;
   border-radius: 50%;
@@ -229,7 +229,7 @@ html {
 }
 
 /* Shooting star */
-.shooting-star {
+:deep(.shooting-star) {
   position: absolute;
   width: 120px;
   height: 2px;
