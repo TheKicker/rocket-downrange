@@ -21,18 +21,36 @@
       significance="CEO of SpaceX"
     />
 
+    <!-- Starship V3 Flight 12 -->
+    <OrgNews
+      company="SpaceX Special Event"
+      year="2026"
+      title="Starship V3 Flight 12 - First Flight of Version 3 Starship"
+      srcType="video"
+      source="https://www.youtube.com/watch?v=hhrkosRjwVI"
+      description1="On May 22, 2026, SpaceX launched Starship Flight 12 from the new Pad 2 at Starbase in Boca Chica, Texas. This was the debut flight of the upgraded Starship Version 3 (V3) hardware, featuring more powerful Raptor 3 engines, an upgraded Super Heavy booster, and Starship upper stage."
+      description2="The Super Heavy booster (Booster 19) experienced engine issues during the boostback burn and resulted in a hard splashdown in the Gulf of Mexico. The Starship upper stage (Ship 39) successfully deployed 22 Starlink simulators (including camera-equipped units), survived reentry despite losing one Rvac engine, and achieved a controlled splashdown in the Indian Ocean."
+      update="May 22, 2026"
+      link1txt="Livestream Replay"
+      link1url="https://www.youtube.com/watch?v=U4alF1JasLo"
+      link2txt="Space.com Article"
+      link2url="https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-v3-megarocket-first-test-flight"
+      link3txt="Full Mission Details"
+      link3url="https://starship-spacex.fandom.com/wiki/Starship_Flight_Test_12"
+    />
+
     <!-- Starship IFT-4 -->
     <OrgNews
       company="SpaceX Special Event"
       year="2024"
       title="Starship IFT-4 - First Successful Return of Super Heavy"
       srcType="video"
-      source="https://www.youtube.com/embed/O0bYCeQ3bqQ"
+      source="https://www.youtube.com/watch?v=j2BdNDTlWbo"
       description1="On June 6, 2024, SpaceX launched Integrated Flight Test 4 (IFT-4) of Starship from Starbase in Boca Chica, Texas. For the first time, both the Super Heavy booster and the Starship upper stage successfully survived reentry and splashed down in their intended ocean zones — a landmark demonstration of full-stack reusability."
       description2="The Super Heavy booster executed a controlled splashdown in the Gulf of Mexico while the Starship upper stage completed a controlled reentry over the Indian Ocean. The flight validated heat shield tiles, propellant venting, and reentry attitude control ahead of future catch attempts by the launch tower arms."
       update="Jun 6, 2024"
       link1txt="Livestream Replay"
-      link1url="https://www.youtube.com/watch?v=O0bYCeQ3bqQ"
+      link1url="https://www.youtube.com/watch?v=j2BdNDTlWbo"
       link2txt="SpaceX Starship"
       link2url="https://www.spacex.com/vehicles/starship/"
       link3txt="Space.com Article"
@@ -45,7 +63,7 @@
         year="2022"
         title="New Starship animation released"
         srcType="video"
-        source="https://www.youtube.com/embed/-Oox2w5sMcA"
+        source="https://www.youtube.com/watch?v=CyxGL_D-XD0"
         description1="Just a few days before Valentine's Day, and SpaceX is doing everything they can to steal our hearts! A new animation video has been released that illustrates the company's dedication to catch the Super Heavy booster with a massive tower and it's 'chopstick' arms. "
         update="Feb 14, 2021"
         link1txt="SpaceX Starship"
