@@ -21,6 +21,24 @@
       significance="CEO of SpaceX"
     />
 
+    <!-- SpaceX Public section --> 
+      <OrgNews 
+        company="SpaceX Special Event"
+        year="2026"
+        title="SpaceX Is Going Public at $1.8 Trillion."
+        srcType="image"
+        source="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png"
+        description1="In a landmark moment for the space industry, SpaceX has announced its plans to go public with an initial public offering (IPO) that values the company at an astounding $1.8 trillion. This move is expected to be one of the largest IPOs in history, reflecting the immense growth and potential of SpaceX as a leader in space exploration and technology."
+        description2="The IPO will allow investors to buy shares in SpaceX, providing the company with additional capital to fund its ambitious projects, including the development of the Starship spacecraft, lunar missions, and Mars colonization efforts. The decision to go public comes as SpaceX continues to achieve significant milestones in spaceflight and expand its commercial satellite internet service, Starlink."
+        update="June 9, 2026"
+        link1txt="Reuters"
+        link1url="https://www.reuters.com/world/spacex-ipo-demand-is-approaching-four-times-oversubscribed-source-says-2026-06-09/"
+        link2txt="Yahoo Finance"
+        link2url="https://finance.yahoo.com/markets/stocks/articles/spacex-going-public-1-8-150500128.html"
+        link3txt="CNBC"
+        link3url="https://www.cnbc.com/2026/06/09/spacex-ipo-explained-stock-price-date.html"
+      />
+
     <!-- Starship V3 Flight 12 -->
     <OrgNews
       company="SpaceX Special Event"
