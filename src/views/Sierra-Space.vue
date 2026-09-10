@@ -50,7 +50,7 @@
       link2txt="Sierra Space Article"
       link2url="https://www.sierraspace.com/newsroom/press-releases/sierra-space-completes-full-scale-life-habitat-ultimate-burst-pressure-test/"
       link3txt="Space.com Article"
-      link3url="https://www.space.com/sierra-space-life-habitat-burst-test-success"
+      link3url="https://www.space.com/sierra-space-explosion-inflatable-life-habitat-space-station"
     />
 
     <OrgNews

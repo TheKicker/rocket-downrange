@@ -29,19 +29,19 @@
   <!-- Electron booster helicopter catch -->
     <OrgNews
       company="Rocket Lab Special Event"
-      year="2024"
-      title="No Time To Fly - First Successful Helicopter Booster Catch"
+      year="2022"
+      title="There And Back Again - First Mid-Air Helicopter Booster Catch"
       srcType="video"
-      source="https://www.youtube.com/embed/GBDFaGONbcs"
-      description1="On November 4, 2024, Rocket Lab made history by successfully catching an Electron first stage booster mid-air using a Sikorsky S-92 helicopter during the 'No Time To Fly' mission from Launch Complex 1 in New Zealand. The helicopter snagged the parachute-equipped booster as it descended at approximately 10 meters per second, making Rocket Lab the only company besides SpaceX to recover an orbital rocket booster."
-      description2="This was the culmination of years of practice catches and two earlier near-misses. Once the booster was confirmed structurally sound after inspection, it represented proof that Electron reusability is operationally viable. Rocket Lab aims to refurbish and refly recovered boosters to increase launch cadence and reduce per-launch costs."
-      update="Nov 4, 2024"
-      link1txt="Livestream Replay"
-      link1url="https://www.youtube.com/watch?v=GBDFaGONbcs"
+      source="https://www.youtube.com/embed/lc6RfKlM4QU"
+      description1="On May 2, 2022, Rocket Lab launched the 'There And Back Again' mission from Launch Complex 1 on New Zealand's Mahia Peninsula, delivering 34 satellites to sun-synchronous orbit. Roughly fifteen minutes after liftoff, a Sikorsky S-92 helicopter met the returning Electron first stage as it descended under parachute and snagged its line - the first time a helicopter had ever caught an orbital-class booster in mid-air."
+      description2="The catch did not hold. The pilots found the load beneath them behaved differently from their test drops and released the line as a precaution, and the booster splashed down safely in the Pacific and was recovered by ship. A second attempt on the 'Catch Me If You Can' mission that November was called off mid-descent after telemetry from the stage dropped out. Rocket Lab has since moved its Electron recovery programme toward marine recovery rather than helicopter capture."
+      update="May 2, 2022"
+      link1txt="Launch &amp; Recovery Video"
+      link1url="https://www.youtube.com/watch?v=lc6RfKlM4QU"
       link2txt="Rocket Lab Article"
       link2url="https://www.rocketlabusa.com/updates/rocket-lab-successfully-catches-electron-rocket-mid-air-with-helicopter/"
       link3txt="Space.com Article"
-      link3url="https://www.space.com/rocket-lab-electron-helicopter-catch-success-no-time-to-fly"
+      link3url="https://www.space.com/rocket-lab-helicopter-booster-catch-satellite-launch"
     />
 
   <!-- CAPSTONE mission -->

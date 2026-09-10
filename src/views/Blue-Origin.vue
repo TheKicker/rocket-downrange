@@ -32,7 +32,7 @@
       link2txt="Blue Origin Article"
       link2url="https://www.blueorigin.com/news/new-glenn-reaches-orbit-on-inaugural-flight"
       link3txt="Space.com Article"
-      link3url="https://www.space.com/blue-origin-new-glenn-launch-success"
+      link3url="https://www.space.com/space-exploration/launches-spacecraft/jeff-bezos-blue-origin-launches-massive-new-glenn-rocket-into-orbit-on-1st-flight-video"
     />
 
     <!-- NS-23 In-flight abort -->
@@ -46,11 +46,9 @@
       description2="The booster was destroyed in the anomaly. Because no crew was aboard, no personnel were harmed. The event demonstrated that the escape system designed to protect future astronauts functions as intended under real conditions. New Shepard returned to flight in May 2023 after an FAA investigation was completed."
       update="Sep 12, 2022"
       link1txt="Abort Sequence Video"
-      link1url="https://www.youtube.com/watch?v=SqAVWvOT-1c"
-      link2txt="FAA Summary"
-      link2url="https://www.faa.gov/newsroom/faa-anomaly-investigation-blue-origin-ns-23"
+      link1url="https://www.youtube.com/watch?v=SqAVWvOT-1c"
       link3txt="Space.com Article"
-      link3url="https://www.space.com/blue-origin-new-shepard-anomaly-abort-system"
+      link3url="https://www.space.com/blue-origin-ns-23-mission-launch-preview"
     />
 
     <!-- Blue Origin second commercial launch -->

@@ -30,7 +30,7 @@
       link1txt="Launch Video"
       link1url="https://www.youtube.com/watch?v=m0F81NHwkZ0"
       link2txt="Space.com Article"
-      link2url="https://www.space.com/relativity-space-terran-1-launch-glhf-results"
+      link2url="https://www.space.com/relativity-space-terran-1-test-launch-failure"
       link3txt="Relativity Space"
       link3url="https://www.relativityspace.com/terran-r"
     />
@@ -48,7 +48,7 @@
       link1txt="Watch Video"
       link1url="https://www.youtube.com/watch?v=2oLEtWeTowo"
       link2txt="Space.com Article"
-      link2url="https://www.space.com/relativity-space-terran-1-retirement-terran-r-focus"
+      link2url="https://www.space.com/relativity-space-shelves-terran-1-rocket"
       link3txt="CNBC Article"
       link3url="https://www.cnbc.com/2023/06/26/relativity-space-ditches-terran-1-rocket-pivots-to-terran-r.html"
     />

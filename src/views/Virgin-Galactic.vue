@@ -37,11 +37,9 @@
       description2="The mission fulfilled a long-standing promise to paying customers who had waited over a decade for service to begin. Virgin Galactic subsequently flew regular monthly flights through 2023, completing several more commercial missions before announcing plans to retire VSS Unity and transition to a next-generation Delta-class spaceplane."
       update="Jun 29, 2023"
       link1txt="Livestream Replay"
-      link1url="https://www.youtube.com/watch?v=psUcNR7h4FA"
-      link2txt="Virgin Galactic Article"
-      link2url="https://www.virgingalactic.com/articles/galactic-01"
+      link1url="https://www.youtube.com/watch?v=psUcNR7h4FA"
       link3txt="Space.com Article"
-      link3url="https://www.space.com/virgin-galactic-galactic-01-first-commercial-spaceflight"
+      link3url="https://www.space.com/virgin-galactic-first-commercial-mission-success"
     />
 
     <!-- VSS Unity retirement -->
@@ -55,11 +53,9 @@
       description2="Virgin Galactic announced it would pause spaceflight operations after Unity's retirement and focus resources on developing its next-generation Delta-class spaceplane, designed for higher flight frequency and improved economics. The Delta-class vehicle is expected to support a significantly higher annual launch cadence than VSS Unity was capable of achieving."
       update="Nov 2, 2023"
       link1txt="Final Flight Video"
-      link1url="https://www.youtube.com/watch?v=yVJGKuLwKGo"
-      link2txt="Virgin Galactic Article"
-      link2url="https://www.virgingalactic.com/articles/galactic-07"
+      link1url="https://www.youtube.com/watch?v=yVJGKuLwKGo"
       link3txt="Space.com Article"
-      link3url="https://www.space.com/virgin-galactic-unity-retirement-galactic-07"
+      link3url="https://www.space.com/virgin-galactic-07-final-vss-unity-commercial-spaceflight"
     />
 
     <OrgNews

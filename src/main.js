@@ -5,6 +5,13 @@ import VueScrollTo from 'vue-scrollto';
 import { Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import VLazyImage from "v-lazy-image";
+import {
+  formatLaunchTime,
+  formatUtc,
+  isoAttr,
+  viewerTimeZone,
+  viewerTimeZoneLabel,
+} from './utils/datetime';
 
 // Fix Leaflet marker icons (same as before)
 delete Icon.Default.prototype._getIconUrl;
@@ -42,6 +49,14 @@ app.use(VLazyImage, {
   preLoad: 1.3,
   attempt: 1,
 });
+
+// Launch-time helpers, available in every template without a local import.
+// All of them render in the viewer's own timezone and name that zone.
+app.config.globalProperties.$launchTime = formatLaunchTime;
+app.config.globalProperties.$launchUtc = formatUtc;
+app.config.globalProperties.$isoAttr = isoAttr;
+app.config.globalProperties.$tz = viewerTimeZone;
+app.config.globalProperties.$tzLabel = viewerTimeZoneLabel;
 
 // Mount the app
 app.mount('#app');

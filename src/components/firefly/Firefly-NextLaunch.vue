@@ -35,7 +35,7 @@
                   
                     this.results.results[0].net != null ||
                   undefined
-                    ? new Date(this.results.results[0].net).toLocaleString() : "N/A"
+                    ? $launchTime(this.results.results[0].net) : "N/A"
                 }}
               </span>
             </h6>

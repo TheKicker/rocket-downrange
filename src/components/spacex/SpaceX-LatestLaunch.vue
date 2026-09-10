@@ -20,7 +20,7 @@
           <div class="col-md-8 col-sm-12 my-2">
             <h6 class="my-2 text-primary">
               <span class="text-secondary">Launch Date:</span>
-              {{ launch.date_utc ? new Date(launch.date_utc).toLocaleString() : "N/A" }}
+              {{ launch.date_utc ? $launchTime(launch.date_utc) : "N/A" }}
             </h6>
 
             <h6 class="my-2">
@@ -70,7 +70,7 @@
 
         <hr />
         <p class="text-center">
-          <i>Last Update: {{ launch.last_date_update ? new Date(launch.last_date_update).toLocaleString() : "N/A" }}</i>
+          <i>Last Update: {{ launch.last_date_update ? $launchTime(launch.last_date_update) : "N/A" }}</i>
         </p>
       </div>
     </div>

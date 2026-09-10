@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import { applySeo } from '@/utils/seo';
 
 const routes = [
   {
@@ -152,12 +153,6 @@ const routes = [
     meta: { title: 'Rocket Downrange - Sojourner' },
   },
   {
-    path: '/test',
-    name: 'Test',
-    component: () => import(/* webpackChunkName: "test" */ '../views/Test.vue'),
-    meta: { title: 'Rocket Downrange - Test' },
-  },
-  {
     path: '/error-404',
     name: 'ERROR-404',
     component: () => import(/* webpackChunkName: "errors" */ '../views/ERROR-404.vue'),
@@ -242,10 +237,10 @@ const router = createRouter({
   routes,
 });
 
-// Handle meta titles
-router.beforeEach((to, from, next) => {
-  document.title = to.meta.title || 'Rocket Downrange';
-  next();
+// Title, description, canonical, Open Graph and JSON-LD, per route.
+// afterEach so the URL has already committed when the canonical is written.
+router.afterEach((to) => {
+  applySeo(to.path);
 });
 
 export default router;

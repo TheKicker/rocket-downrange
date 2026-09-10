@@ -28,11 +28,9 @@
       description2="Despite the anomaly, the team kept Peregrine operational for 10 days, gathering valuable data and completing several payload experiments in space. The spacecraft re-entered Earth's atmosphere on January 18, 2024, burning up over the Pacific Ocean. The mission was a painful but important learning experience, and Astrobotic pressed forward with development of its larger Griffin lander for NASA's VIPER rover mission."
       update="Jan 18, 2024"
       link1txt="Launch Video"
-      link1url="https://www.youtube.com/watch?v=wXzxKScQLjw"
-      link2txt="Astrobotic Updates"
-      link2url="https://www.astrobotic.com/lunar-delivery/missions/peregrine-mission-one/"
+      link1url="https://www.youtube.com/watch?v=wXzxKScQLjw"
       link3txt="Space.com Article"
-      link3url="https://www.space.com/astrobotic-peregrine-lunar-lander-mission-one-results"
+      link3url="https://www.space.com/astrobotic-peregrine-moon-lander-mission-conclusion"
     />
 
     <!-- NASA CLPS contract award -->
@@ -48,9 +46,7 @@
       link1txt="NASA CLPS Page"
       link1url="https://www.nasa.gov/commercial-lunar-payload-services/"
       link2txt="Astrobotic Article"
-      link2url="https://www.astrobotic.com/2019/05/31/nasa-selects-astrobotic-for-clps/"
-      link3txt="Space.com Article"
-      link3url="https://www.space.com/nasa-commercial-lunar-payload-services-astrobotic-contract"
+      link2url="https://www.astrobotic.com/2019/05/31/nasa-selects-astrobotic-for-clps/"
     />
 
     <!-- Astrobotic News / Special Event -->

@@ -31,11 +31,9 @@
       description2="Vulcan Centaur is designed to replace ULA's legacy Atlas V and Delta IV rockets with a next-generation vehicle capable of supporting national security, NASA, and commercial missions. The maiden flight demonstrated the new BE-4 engine's performance in an operational mission and opened a new chapter for ULA after years of development delays."
       update="Jan 8, 2024"
       link1txt="Launch Video"
-      link1url="https://www.youtube.com/watch?v=xi78Xd0b4lo"
-      link2txt="ULA Mission Overview"
-      link2url="https://www.ulalaunch.com/missions/missions-details/2024/01/08/united-launch-alliance-vulcan-centaur-certification-1-launch"
+      link1url="https://www.youtube.com/watch?v=xi78Xd0b4lo"
       link3txt="Space.com Article"
-      link3url="https://www.space.com/ula-vulcan-centaur-first-launch-success"
+      link3url="https://www.space.com/ula-vulcan-centaur-first-launch-peregrine-celestis-moon-mission"
     />
 
     <!-- Final Delta IV Heavy launch -->
@@ -49,11 +47,9 @@
       description2="The Delta IV Heavy used three common booster cores with RS-68A engines to deliver payloads to geosynchronous and highly elliptical orbits. It launched many of America's most critical national security payloads, including the first Orion spacecraft test flight (EFT-1) in 2014. With its retirement, ULA transitions fully to the Atlas V (until its retirement) and the new Vulcan Centaur as its primary launch vehicles."
       update="Apr 9, 2024"
       link1txt="Final Launch Video"
-      link1url="https://www.youtube.com/watch?v=ga-tjU9oM98"
-      link2txt="ULA Mission Overview"
-      link2url="https://www.ulalaunch.com/missions/missions-details/2024/04/09/united-launch-alliance-successfully-launches-nrol-70-mission-for-the-national-reconnaissance-office"
+      link1url="https://www.youtube.com/watch?v=ga-tjU9oM98"
       link3txt="Space.com Article"
-      link3url="https://www.space.com/ula-delta-iv-heavy-final-launch-nrol-70"
+      link3url="https://www.space.com/final-delta-4-heavy-rocket-launch-nrol-70"
     />
 
     <!-- Parker Solar Probe -->

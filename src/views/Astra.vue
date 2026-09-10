@@ -38,9 +38,7 @@
       link1txt="Livestream Replay"
       link1url="https://www.youtube.com/watch?v=8NDEp9aHlDw"
       link2txt="Space.com Article"
-      link2url="https://www.space.com/astra-rocket-3-3-reaches-orbit-first-time"
-      link3txt="Astra Blog"
-      link3url="https://astra.com/blog/lv0007-mission-success/"
+      link2url="https://www.space.com/astra-reaches-orbit-first-time-lv0007"
     />
 
     <!-- ASTR goes public section -->
@@ -69,9 +67,7 @@
       srcType="image"
       source="https://rocketdownrange.com/organizations/astra-test-2.jpeg"
       description1="Only three months after their previous attempt, on Tuesday, December 15 of 2020 - Astra officially passed the Karman Line in an amazing show of progress! Rocket 3.2 lifted off from Astra's private Kodiak Spaceport : Pad LP-3B in Alaska during their preferred launch window.  Following its targeted flight trajectory nearly dead on, a couple of minutes into flight, the main engines shut down, and the second stage separated. This upper stage then burnt out of all of its propellant and simulated the deployment of a payload into space - unfortunately, missing orbit by just a few seconds or 500m/s by some reports. "
-      update="Dec 16, 2020"
-      link1txt="Mission Overview"
-      link1url="https://astra.com/blog/rocket-3-2-ready-to-launch/"
+      update="Dec 16, 2020"
       link2txt="Twitter Recap Video"
       link2url="https://twitter.com/Astra/status/1338999451893915649?s=20"
     />

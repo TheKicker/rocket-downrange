@@ -30,10 +30,10 @@
             <p>As the project begins to mature, I have had some people support the project in a variety of ways.  While not necessary to use and enjoy the site, I appreciate the investment into my skills and the continuation of working on such an awesome project.  For a platform, I've chosen <a href="https://www.buymeacoffee.com/cavlemasters" target="_blank" rel="noopener nofollow" class="link">Buy Me a Coffee</a> because of it's easy to use and clean interface - plus the ability to write little mini blogs about things I've changed or added to the site as time goes on.  </p>
             <p>Donations are not necessary, but are greatly appreciated. If you choose to donate, you accept that you are not getting any direct products or services in return and cannot be refunded. </p>
             <div id="desktop" class="mx-auto my-3">
-              <a href="https://www.buymeacoffee.com/cavlemasters" target="_BLANK" rel="noopener"><img class="img-fluid" src="@/assets/bmcbrand/bmc-button.png" border="0"></a>
+              <a href="https://www.buymeacoffee.com/cavlemasters" target="_BLANK" rel="noopener"><img class="img-fluid" src="@/assets/bmcbrand/bmc-button.png" border="0" alt="Buy Me a Coffee - support Rocket Downrange"></a>
             </div>
             <div id="mobile" class="mx-auto my-2">
-              <a href="https://www.buymeacoffee.com/cavlemasters" target="_BLANK" rel="noopener"><img style="max-width: 100%;" src="@/assets/bmcbrand/bmc-button.png" border="0"></a>
+              <a href="https://www.buymeacoffee.com/cavlemasters" target="_BLANK" rel="noopener"><img style="max-width: 100%;" src="@/assets/bmcbrand/bmc-button.png" border="0" alt="Buy Me a Coffee - support Rocket Downrange"></a>
             </div>
         </div>
         <br>
@@ -41,10 +41,10 @@
             <h4>Edabit</h4>
             <p>The basis of this website is to continue learning and refining my skills as a junior developer. <a href="https://edabit.com/?ref=cavanlemasters" target="_blank" rel="noopener nofollow" class="link">Edabit</a> is a site comprised of byte-sized (haha lame computer joke) challenges in a variety of languages that you can use to practice the fundamentals.  At the end of 2020, I was invited to be an affiliate, this means that any links you see are sponsored. I would not support them if I did not fully believe in how beneficial they are to learning the basics of programming. </p>
             <div id="desktop" class="mx-auto my-3">
-              <a href="https://edabit.com?ref=cavanlemasters" target="_BLANK" rel="noopener"><img src="@/assets/webp/edabit-wide.webp" border="0"></a>
+              <a href="https://edabit.com?ref=cavanlemasters" target="_BLANK" rel="noopener"><img src="@/assets/webp/edabit-wide.webp" border="0" alt="Edabit - learn to code with interactive challenges"></a>
             </div>
             <div id="mobile" class="mx-auto my-2">
-              <a href="https://edabit.com?ref=cavanlemasters" target="_BLANK" rel="noopener"><img src="@/assets/webp/edabit-short.webp" border="0"></a>
+              <a href="https://edabit.com?ref=cavanlemasters" target="_BLANK" rel="noopener"><img src="@/assets/webp/edabit-short.webp" border="0" alt="Edabit - learn to code with interactive challenges"></a>
             </div>
             <p class="mx-auto">Start your development journey today, and tomorrow you can directly contribute to Rocket Downrange!</p>
         </div>

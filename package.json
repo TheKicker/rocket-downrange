@@ -22,7 +22,8 @@
 	"website": "https://rocketdownrange.com/",
 	"scripts": {
 		"serve": "vue-cli-service serve",
-		"build": "vue-cli-service build"
+		"build": "vue-cli-service build",
+		"sitemap": "node scripts/generate-sitemap.js"
 	},
 	"dependencies": {
 		"@vuepic/vue-datepicker": "8.0.0",

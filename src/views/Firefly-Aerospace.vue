@@ -9,7 +9,7 @@
         primary launch vehicle, Alpha, is capable of lifting one metric ton with
         more vehicles in research and development."
       website="https://firefly.com/"
-      twitter="https://twitter.com/Firefly_Space"
+      twitter="https://x.com/FireflySpace"
       instagram="https://www.instagram.com/fireflyaerospace/"
       youtube="https://www.youtube.com/channel/UC31UF9oKANw77yxBLxN852A"
     />
@@ -55,7 +55,7 @@
       link2txt="Space Force Article"
       link2url="https://www.spaceforce.mil/News/Article/3521771/us-space-force-firefly-aerospace-launch-victus-nox/"
       link3txt="Space.com Article"
-      link3url="https://www.space.com/firefly-aerospace-victus-nox-launch-record-speed"
+      link3url="https://www.space.com/firefly-aerospace-rapid-launch-space-force-success"
     />
 
   <!-- Alpha Flight 2 reaches orbit -->
@@ -73,7 +73,7 @@
       link2txt="Firefly Article"
       link2url="https://firefly.com/to-the-black/"
       link3txt="Space.com Article"
-      link3url="https://www.space.com/firefly-alpha-rocket-second-launch-orbit-success"
+      link3url="https://www.space.com/firefly-first-successful-alpha-rocket-launch-video"
     />
 
   <!-- Firefly Alpha first test section -->
@@ -85,9 +85,7 @@
       source="https://www.youtube.com/embed/-HfHAazNM3Q"
       description1="Firefly's Alpha rocket launched on the company's first ever orbital test flight on September 2nd, lifting off from Vandenberg Space Force Base in California at 9:59pm EDT. Everything was looking great for the first 2 minutes and 25 seconds until the rocket rapidly disassembled itself in spectacular fashion high up in the California sky."
       description2="While not successful, congratulations to everyone at Firefly Aerospace for an incredible first attempt and we look forward to the next one! "
-      update="Sep 3, 2021"
-      link1txt="Mission Overview"
-      link1url="https://astra.com/blog/rocket-3-2-ready-to-launch/"
+      update="Sep 3, 2021"
       link2txt="Space.com Article"
       link2url="https://www.space.com/firefly-aerospace-first-alpha-rocket-launch-failure"
     />

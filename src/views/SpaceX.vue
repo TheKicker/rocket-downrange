@@ -78,10 +78,10 @@
     <!-- New Starship Animation -->
       <OrgNews
         company="SpaceX Special Event"
-        year="2022"
+        year="2021"
         title="New Starship animation released"
         srcType="video"
-        source="https://www.youtube.com/watch?v=CyxGL_D-XD0"
+        source="https://www.youtube.com/embed/Y-k8QjIF-uI"
         description1="Just a few days before Valentine's Day, and SpaceX is doing everything they can to steal our hearts! A new animation video has been released that illustrates the company's dedication to catch the Super Heavy booster with a massive tower and it's 'chopstick' arms. "
         update="Feb 14, 2021"
         link1txt="SpaceX Starship"
@@ -130,16 +130,16 @@
       year="2020"
       title="Crew-1 - Resilience Carries First Operational Crew Dragon Crew"
       srcType="video"
-      source="https://www.youtube.com/embed/VlTYJNB5-cg"
+      source="https://www.youtube.com/embed/E_FIaPBOJgc"
       description1="On November 15, 2020, SpaceX and NASA launched the first fully operational Crew Dragon mission, Crew-1, aboard Falcon 9 from Kennedy Space Center. The spacecraft, named Resilience, carried NASA astronauts Mike Hopkins, Victor Glover, and Shannon Walker, plus JAXA astronaut Soichi Noguchi to the International Space Station."
       description2="The crew spent 168 days aboard the ISS and safely splashed down on May 2, 2021. Crew-1 certified the Crew Dragon system for routine crewed flights and marked NASA's first fully operational commercial crew rotation mission, cementing SpaceX as a cornerstone of America's human spaceflight program."
       update="Nov 15, 2020"
       link1txt="Livestream Replay"
-      link1url="https://www.youtube.com/watch?v=VlTYJNB5-cg"
+      link1url="https://www.youtube.com/watch?v=E_FIaPBOJgc"
       link2txt="NASA Crew-1 Page"
-      link2url="https://www.nasa.gov/mission/spacex-crew-1/"
+      link2url="https://www.nasa.gov/nasas-spacex-crew-1-resources-archive/"
       link3txt="Space.com Article"
-      link3url="https://www.space.com/spacex-crew-1-launch-success"
+      link3url="https://www.space.com/spacex-crew-1-astronaut-nasa-launch-success"
     />
 
     <!-- Crew Dragon first use -->

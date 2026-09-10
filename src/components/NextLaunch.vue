@@ -44,7 +44,7 @@
             <h6 class="text-secondary">
               <span class="text-primary">Launch Date:</span><br />
               <span class="mx-4">
-                {{ launch.net ? new Date(launch.net).toLocaleString() : "TBD" }}
+                {{ launch.net ? $launchTime(launch.net) : "TBD" }}
               </span>
             </h6>
 

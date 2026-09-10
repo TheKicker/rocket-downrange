@@ -31,7 +31,7 @@
               <span class="text-primary">Launch Date:</span><br />
               <span class="mx-4">
                 {{                
-                    this.results.results[0].net != null || undefined ? new Date(this.results.results[0].net).toLocaleString() : "N/A"
+                    this.results.results[0].net != null || undefined ? $launchTime(this.results.results[0].net) : "N/A"
                 }}
               </span>
             </h6>

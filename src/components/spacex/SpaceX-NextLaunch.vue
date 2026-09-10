@@ -21,7 +21,7 @@
           <div class="col-md-6 col-sm-12 my-2 mx-1">
             <h6 class="text-secondary">
               <span class="text-primary">Launch Date:</span><br />
-              <span class="mx-4">{{ launch.net ? new Date(launch.net).toLocaleString() : "N/A" }}</span>
+              <span class="mx-4">{{ launch.net ? $launchTime(launch.net) : "N/A" }}</span>
             </h6>
 
             <h6 class="text-secondary my-3">

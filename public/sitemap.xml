@@ -1,185 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-<url>
-  <loc>https://rocketdownrange.com/</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/APOD</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/astronaut</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/locations</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/locations/baikonur-cosmodrome</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/locations/kennedy-space-center</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/locations/guiana-space-center</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/locations/launch-complex-1</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/locations/pacific-spaceport</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/locations/tanegashima-space-center</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/locations/starbase</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/locations/corn-ranch</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/locations/wallops-island</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/locations/vandenberg</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/solar-system</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/vehicles</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/perseverance</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/curiosity</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/opportunity</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/spirit</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/sojourner</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/astrobotic</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/astra</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/blue-origin</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/firefly-aerospace</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/rocket-lab</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/relativity-space</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/sierra-space</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/spacex</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/united-launch-alliance</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/virgin-galactic</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/privacy-policy</loc>
-  <lastmod>2022-11-01T09:15:15.743Z</lastmod>
-  <priority>0.5</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/accessibility-statement</loc>
-  <lastmod>2022-11-01T09:15:15.743Z</lastmod>
-  <priority>0.5</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/error-404</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.5</priority>
-</url>
-<url>
-  <loc>https://rocketdownrange.com/error-418</loc>
-  <lastmod>2026-04-18T14:35:15.743Z</lastmod>
-  <priority>0.5</priority>
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://rocketdownrange.com/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/about</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/apod</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/accessibility-statement</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/privacy-policy</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/spacex</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/sierra-space</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/astrobotic</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/astra</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/blue-origin</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/firefly-aerospace</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/virgin-galactic</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/united-launch-alliance</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/relativity-space</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/rocket-lab</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/solar-system</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/astronaut</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/locations</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/vehicles</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/perseverance</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/curiosity</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/opportunity</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/spirit</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/sojourner</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/locations/baikonur-cosmodrome</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/locations/kennedy-space-center</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/locations/guiana-space-center</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/locations/tanegashima-space-center</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/locations/pacific-spaceport</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/locations/launch-complex-1</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/locations/corn-ranch</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/locations/starbase</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/locations/wallops-island</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rocketdownrange.com/locations/vandenberg</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

@@ -762,7 +762,7 @@
         </div>
         <div class="row">
           <p>
-            Need more Curiosity? You can learn more about the rover on <a href="https://www.nasa.gov/mission_pages/msl/overview/index.html" target="_blank" rel="noopener"> NASA's official site </a> or watch this incredible video on YouTube put together by <a href="https://www.youtube.com/watch?v=8DcPcGpdV3A" target="_blank" rel="noopener">Curiosityandbeyond</a> that features a year in 4K.
+            Need more Curiosity? You can learn more about the rover on <a href="https://science.nasa.gov/mission/msl-curiosity/" target="_blank" rel="noopener"> NASA's official site </a> or watch this incredible video on YouTube put together by <a href="https://www.youtube.com/watch?v=8DcPcGpdV3A" target="_blank" rel="noopener">Curiosityandbeyond</a> that features a year in 4K.
           </p>
         </div>
         <div style="display: grid; place-items: center; margin: 2rem;">

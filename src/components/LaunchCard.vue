@@ -59,6 +59,7 @@
 
 <script setup>
 import { computed } from 'vue'
+import { formatLaunchTime } from '@/utils/datetime'
 
 // List of providers that have dedicated pages
 const knownProviders = [
@@ -108,22 +109,8 @@ const providerPage = computed(() => {
   return mapping[normalized] || null
 })
 
-// Format launch time safely
-const formatLocalTime = (utcString) => {
-  if (!utcString) return "TBD"
-
-  try {
-    const date = new Date(utcString)
-    if (isNaN(date.getTime())) return "TBD"
-
-    return date.toLocaleString(undefined, {
-      dateStyle: "medium",
-      timeStyle: "short"
-    })
-  } catch (e) {
-    return "TBD"
-  }
-}
+// Format launch time safely, in the viewer's timezone and naming that zone.
+const formatLocalTime = (utcString) => formatLaunchTime(utcString, "TBD")
 </script>
 
 <style scoped>
